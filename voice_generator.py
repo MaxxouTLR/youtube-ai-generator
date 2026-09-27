@@ -2,8 +2,19 @@
 import asyncio
 import json
 import os
+import random
 import edge_tts
 import config
+
+
+def _pick_voice() -> tuple[str, str]:
+    """Tire une (voix, rythme) au hasard dans config.TTS_VOICE_POOL, pondere pour garder la voix
+    principale dominante. Un choix par appel = une seule voix pour toute la duree d'UNE video
+    (coherence narrative), mais pas la meme voix a chaque video."""
+    choice = random.choices(
+        config.TTS_VOICE_POOL, weights=[v["weight"] for v in config.TTS_VOICE_POOL], k=1
+    )[0]
+    return choice["voice"], choice["rate"]
 
 
 async def _synthesize(text: str, out_path: str, voice: str, rate: str) -> None:
@@ -14,7 +25,8 @@ async def _synthesize(text: str, out_path: str, voice: str, rate: str) -> None:
 def generate_voice(text: str, out_path: str | None = None) -> str:
     os.makedirs(config.AUDIO_DIR, exist_ok=True)
     out_path = out_path or os.path.join(config.AUDIO_DIR, "voiceover.mp3")
-    asyncio.run(_synthesize(text, out_path, config.TTS_VOICE, config.TTS_RATE))
+    voice, rate = _pick_voice()
+    asyncio.run(_synthesize(text, out_path, voice, rate))
     return out_path
 
 
@@ -39,7 +51,9 @@ def generate_voice_with_timing(text: str, out_path: str | None = None, timing_pa
     os.makedirs(config.AUDIO_DIR, exist_ok=True)
     out_path = out_path or os.path.join(config.AUDIO_DIR, "voiceover.mp3")
     timing_path = timing_path or f"{out_path}.words.json"
-    boundaries = asyncio.run(_synthesize_with_timing(text, out_path, config.TTS_VOICE, config.TTS_RATE))
+    voice, rate = _pick_voice()
+    print(f"    Voix off : {voice} ({rate})")
+    boundaries = asyncio.run(_synthesize_with_timing(text, out_path, voice, rate))
     with open(timing_path, "w", encoding="utf-8") as f:
         json.dump(boundaries, f, ensure_ascii=False)
     return out_path, timing_path

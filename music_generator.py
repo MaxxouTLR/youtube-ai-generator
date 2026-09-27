@@ -15,10 +15,15 @@ SAMPLE_RATE = 44100
 LOOP_SECONDS = 60
 
 # Quelques accords doux et lents (frequences en Hz : fondamentale grave + tierce/quinte + octave).
+# 6 pistes (au lieu de 3) : plus de variete d'une video a l'autre, ca reste tres discret (mixe a
+# MUSIC_VOLUME=0.08) mais reduit encore un peu la sensation de "meme habillage sonore partout".
 CHORDS = [
     [130.81, 164.81, 196.00, 261.63],   # Cmaj (C3 E3 G3 C4)
     [146.83, 174.61, 220.00, 293.66],   # Dm (D3 F3 A3 D4)
     [174.61, 220.00, 261.63, 349.23],   # F (F3 A3 C4 F4)
+    [110.00, 130.81, 164.81, 220.00],   # Am (A2 C3 E3 A3)
+    [98.00, 123.47, 146.83, 196.00],    # G (G2 B2 D3 G3)
+    [82.41, 98.00, 123.47, 164.81],     # Em (E2 G2 B2 E3)
 ]
 
 

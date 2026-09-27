@@ -153,7 +153,7 @@ la photo de profil/bannière automatiquement par script — c'est un glisser-dé
 Tout se change dans `config.py` (ouvrable avec le Bloc-notes) :
 - `TARGET_MINUTES_MIN` / `TARGET_MINUTES_MAX` : durée des vidéos longues (actuellement 15-20 min).
 - `SHORTS_TARGET_SECONDS` / `SHORTS_MAX_SECONDS` : durée des Shorts (actuellement ~50s, plafond 59s).
-- `TTS_VOICE` : la voix (liste d'alternatives en commentaire à côté).
+- `TTS_VOICE_POOL` : les voix utilisées en rotation (une par vidéo), avec leur poids relatif.
 - `YOUTUBE_PRIVACY_STATUS` : actuellement `"public"`. Repassez à `"private"` si vous voulez relire
   chaque vidéo avant de la publier vous-même dans YouTube Studio.
 - `MUSIC_ENABLED` / `MUSIC_VOLUME` : musique de fond ambiante (générée localement, gratuite, sans

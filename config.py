@@ -22,8 +22,16 @@ OLLAMA_URL = "http://localhost:11434/api/generate"
 # --- Voix off (edge-tts, gratuit, sans compte) ---
 # Script en anglais pour toucher l'audience internationale (marche pub plus grand, meilleur RPM).
 # Voix "Multilingual" = generation plus recente et expressive que les neural classiques.
-TTS_VOICE = "en-US-AndrewMultilingualNeural"   # masculin, "Warm/Confident" - alt: en-US-GuyNeural ("Passion")
-TTS_RATE = "+12%"   # rythme plus soutenu, moins plat, plus "YouTube"
+# Rotation ponderee entre plusieurs voix (pas une seule voix fixe partout) : reduit le risque que la
+# chaine soit percue comme "mass-produced/repetitive" par la politique de monetisation YouTube Partner
+# Program (voir notes du 27/09/2026), tout en gardant Andrew comme voix principale/dominante pour
+# l'identite de la chaine. Toutes masculines, registre confiant/motivant coherent avec le ton actuel.
+TTS_VOICE_POOL = [
+    {"voice": "en-US-AndrewMultilingualNeural", "rate": "+12%", "weight": 4},  # voix principale, "Warm/Confident"
+    {"voice": "en-US-GuyNeural", "rate": "+8%", "weight": 2},                  # "Passion"
+    {"voice": "en-US-ChristopherNeural", "rate": "+6%", "weight": 2},         # "Reliable, Authority"
+    {"voice": "en-US-BrianMultilingualNeural", "rate": "+10%", "weight": 2},  # "Approachable, Sincere"
+]
 
 SCRIPT_LANGUAGE = "en"
 
