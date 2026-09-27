@@ -120,6 +120,11 @@ FALLBACK_TOPICS = [
 ]
 
 TOPIC_HISTORY_FILE = os.path.join(config.OUTPUT_DIR, "used_topics.json")
+# File d'attente prioritaire : sujets a utiliser en premier, dans l'ordre, avant de repasser sur la
+# generation Ollama habituelle. Alimentee manuellement (ex: idees suggerees par YouTube Studio) - le
+# workflow GitHub Actions commite ce fichier comme used_topics.json pour qu'il survive entre deux runs
+# ephemeres.
+PRIORITY_TOPICS_FILE = os.path.join(config.OUTPUT_DIR, "priority_topics.json")
 # A 8 videos/jour (7 shorts + 1 longue), les 30 sujets de FALLBACK_TOPICS seraient epuises en moins
 # de 4 jours si on tournait juste dessus. On genere donc un nouveau sujet via Ollama a chaque appel
 # (source infinie), et FALLBACK_TOPICS ne sert plus que d'exemples de style + repli si Ollama echoue.
@@ -152,10 +157,45 @@ def _generate_new_topic(used: list[str]) -> str:
     return topic
 
 
+def _pop_priority_topic() -> str | None:
+    """Retire et retourne le premier sujet de la file d'attente prioritaire, ou None si vide/absente."""
+    if not os.path.exists(PRIORITY_TOPICS_FILE):
+        return None
+    try:
+        with open(PRIORITY_TOPICS_FILE, "r", encoding="utf-8") as f:
+            queue = json.load(f)
+    except Exception:
+        return None
+    if not queue:
+        return None
+    topic = queue.pop(0)
+    with open(PRIORITY_TOPICS_FILE, "w", encoding="utf-8") as f:
+        json.dump(queue, f, ensure_ascii=False)
+    return topic
+
+
 def _pick_topic() -> str:
-    """Retourne un sujet inedit genere par Ollama (evite les repetitions recentes). Si Ollama ne
-    repond pas ou ne varie pas (glitch), repli sur une rotation classique de FALLBACK_TOPICS."""
+    """Retourne d'abord les sujets de la file prioritaire (s'il y en a), sinon un sujet inedit genere
+    par Ollama (evite les repetitions recentes). Si Ollama ne repond pas ou ne varie pas (glitch),
+    repli sur une rotation classique de FALLBACK_TOPICS."""
     import random
+
+    priority = _pop_priority_topic()
+    if priority:
+        used = []
+        if os.path.exists(TOPIC_HISTORY_FILE):
+            try:
+                with open(TOPIC_HISTORY_FILE, "r", encoding="utf-8") as f:
+                    used = json.load(f)
+            except Exception:
+                used = []
+        used.append(priority)
+        used = used[-MAX_TOPIC_HISTORY:]
+        os.makedirs(os.path.dirname(TOPIC_HISTORY_FILE), exist_ok=True)
+        with open(TOPIC_HISTORY_FILE, "w", encoding="utf-8") as f:
+            json.dump(used, f, ensure_ascii=False)
+        return priority
+
     used = []
     if os.path.exists(TOPIC_HISTORY_FILE):
         try:

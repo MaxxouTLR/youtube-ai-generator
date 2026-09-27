@@ -155,12 +155,12 @@ jobs:
         if: always()
         run: |
           rm -f client_secret.json token.json
-          if git diff --quiet -- output/used_topics.json output/used_titles.json; then
+          if git diff --quiet -- output/used_topics.json output/used_titles.json output/priority_topics.json; then
             echo "Rien de nouveau a committer."
             exit 0
           fi
           git config user.name "youtube-ai-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add output/used_topics.json output/used_titles.json
+          git add output/used_topics.json output/used_titles.json output/priority_topics.json
           git commit -m "chore: mise a jour historique sujets/titres [skip ci]"
           git push
