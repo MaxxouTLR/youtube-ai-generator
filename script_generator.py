@@ -208,6 +208,57 @@ def generate_visual_keyword(segment_text: str) -> str:
     return keyword[:80] if keyword else "cinematic nature background"
 
 
+# Plusieurs gabarits de titre distincts, pas juste des synonymes du meme moule "Are you...?".
+# Le modele 3B a tendance a retomber sur LE style le plus fortement suggere dans le prompt, meme
+# quand on lui demande explicitement de "varier" - constate en pratique (titres quasi tous identiques
+# en structure, feedback utilisateur direct le 27/09/2026). Fix : le CODE choisit un style au hasard
+# (pondere pour garder "question_tension" dominant car c'est le style avec la meilleure retention
+# mesuree, cf. analyse du 26/09/2026 dans les notes projet) et n'injecte QUE ce style dans le prompt,
+# ce qui force mecaniquement la variete au lieu d'esperer que le modele varie de lui-meme.
+TITLE_STYLES = [
+    {
+        "name": "question_tension",
+        "weight": 3,
+        "guidance": 'A direct SECOND-PERSON question ("Are you...", "Why do you...", "Are you actually...") '
+                    "paired with a paradox or tension word (trapped, illusion, lying, sabotaging, addicted, "
+                    "broken, lie, prison).",
+        "example": "Are You Trapped in the Perfect Illusion?",
+    },
+    {
+        "name": "you_are_not",
+        "weight": 2,
+        "guidance": 'A reframe in the form "You\'re Not X, You\'re Just Y" that challenges a common '
+                    "negative self-label with a more honest, sympathetic explanation.",
+        "example": "You're Not Lazy, You're Just Terrified",
+    },
+    {
+        "name": "real_reason",
+        "weight": 2,
+        "guidance": 'A curiosity-gap statement in the form "The Real Reason You Keep [X]-ing" or '
+                    '"Nobody Tells You This About [X]", implying a hidden truth the video reveals.',
+        "example": "The Real Reason You Keep Sabotaging Your Own Success",
+    },
+    {
+        "name": "stop_start",
+        "weight": 2,
+        "guidance": 'A short, imperative two-part command in the form "Stop [X]. Start [Y]." that '
+                    "contrasts a common bad habit with the better alternative taught in the video.",
+        "example": "Stop Chasing Motivation. Start Building Discipline.",
+    },
+    {
+        "name": "numbered_signs",
+        "guidance": "A specific-number list-style title in the form \"N Signs You're [X] (And Don't Know It)\".",
+        "weight": 2,
+        "example": "3 Signs You're Sabotaging Your Own Success",
+    },
+]
+
+
+def _pick_title_style() -> dict:
+    import random
+    return random.choices(TITLE_STYLES, weights=[s["weight"] for s in TITLE_STYLES], k=1)[0]
+
+
 METADATA_PROMPT = """You are a YouTube SEO expert for a motivation / self-improvement channel.
 
 Here is the video script:
@@ -219,11 +270,8 @@ Generate optimized YouTube metadata for this exact video. Follow this EXACT form
 no markdown, no extra commentary, no quotation marks around the values:
 
 TITLE: a punchy, curiosity-driven title under 90 characters that accurately reflects the video content.
-Best-performing pattern observed on this channel: a direct SECOND-PERSON question ("Are you...",
-"Why do you...", "Are you actually...") paired with a paradox or tension word (trapped, illusion, lying,
-sabotaging, addicted, broken, lie, prison). Example that performed very well: "Are You Trapped in the
-Perfect Illusion?". Prefer this style when it genuinely fits the script's content; vary the exact
-wording and paradox word each time so titles do not become repetitive.
+Required style for THIS title: {title_style_guidance}
+Example (do not reuse, just illustrates the style): "{title_style_example}".
 Do NOT reuse any of these titles already used on the channel, not even reworded with a synonym:
 {recent_titles}
 DESCRIPTION: a 3 to 5 sentence description in plain text: hook the reader in the first sentence, summarize what they will get from the video, end with a call to subscribe for more
@@ -266,8 +314,12 @@ def generate_metadata(topic: str, script: str) -> dict:
 
     raw, title, description, tags_raw = "", "", "", ""
     for _ in range(3):
+        style = _pick_title_style()
         try:
-            raw = _call_ollama(METADATA_PROMPT.format(script=script[:2000], recent_titles=recent_titles_block))
+            raw = _call_ollama(METADATA_PROMPT.format(
+                script=script[:2000], recent_titles=recent_titles_block,
+                title_style_guidance=style["guidance"], title_style_example=style["example"],
+            ))
         except Exception:
             raw = ""
         title = _extract_field(raw, "TITLE").strip('"')
