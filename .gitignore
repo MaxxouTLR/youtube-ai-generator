@@ -1,0 +1,27 @@
+# Secrets - jamais dans le depot, meme prive (client_secret.json et token.json vont dans les
+# Secrets GitHub Actions pour le workflow, et restent en local ici pour les runs sur ce PC).
+client_secret.json
+token.json
+.env
+
+# Genere a chaque run, pas utile a committer
+__pycache__/
+*.pyc
+logs/
+logs_*.txt
+oauth_test.log
+ollama_serve.log
+assets/stock/
+_tmp_*
+*TEMP_MPY*
+
+# output/ : tout est jetable (scripts/audio/video de travail) SAUF l'historique des sujets/titres
+# deja utilises, qui doit survivre entre deux runs (le workflow GitHub Actions le commite/pousse
+# a chaque execution pour eviter les repetitions de sujets malgre des runners ephemeres).
+output/scripts/
+output/audio/
+output/video/
+
+# Assets de marque generes une seule fois localement (banniere/photo de profil de la chaine),
+# pas utilises par le pipeline quotidien -> pas besoin dans le depot du pipeline.
+branding_kit/

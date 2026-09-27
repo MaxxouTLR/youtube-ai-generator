@@ -1,0 +1,137 @@
+name: Daily YouTube videos
+
+on:
+  workflow_dispatch:
+    inputs:
+      run_type:
+        description: "Type de video a generer"
+        type: choice
+        options: [short, long]
+        default: short
+      publish:
+        description: "Publier sur YouTube (decoche pour un run de test)"
+        type: boolean
+        default: false
+  schedule:
+    # Toutes les heures ci-dessous sont en UTC. Converties depuis l'horaire local Europe/Paris
+    # (Romance Standard Time, UTC+2 en heure d'ete / UTC+1 en heure d'hiver) au moment ou ce
+    # planning a ete cree en CEST (27/09/2026). Un cron GitHub Actions est fixe en UTC et ne suit
+    # PAS le changement d'heure automatiquement : a chaque bascule ete/hiver, les horaires reels
+    # deriveront d'1h tant que ces lignes ne sont pas ajustees a la main (-1h en octobre pour
+    # repasser en heure d'hiver, +1h en mars).
+    - cron: "0 6 * * *"   # 08h Paris (CEST) -> short
+    - cron: "0 7 * * *"   # 09h Paris (CEST) -> long
+    - cron: "0 8 * * *"   # 10h Paris (CEST) -> short
+    - cron: "0 10 * * *"  # 12h Paris (CEST) -> short
+    - cron: "0 12 * * *"  # 14h Paris (CEST) -> short
+    - cron: "0 14 * * *"  # 16h Paris (CEST) -> short
+    - cron: "0 16 * * *"  # 18h Paris (CEST) -> short
+    - cron: "0 18 * * *"  # 20h Paris (CEST) -> short
+
+permissions:
+  contents: write
+
+# GitHub ne rattrape jamais un cron manque (contrairement au Planificateur de taches Windows) : si le
+# runner est indisponible au moment prevu, ce declenchement est simplement saute, pas mis en file
+# d'attente pour plus tard. Ce concurrency group empeche seulement un chevauchement improbable entre
+# deux declenchements presque simultanes (ex: un run manuel de test pendant un cron).
+concurrency:
+  group: youtube-pipeline
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Determiner le type de run (long/short) et si on publie
+        id: pick
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "run_type=${{ inputs.run_type }}" >> "$GITHUB_OUTPUT"
+            echo "publish=${{ inputs.publish }}" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.schedule }}" = "0 7 * * *" ]; then
+            echo "run_type=long" >> "$GITHUB_OUTPUT"
+            echo "publish=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run_type=short" >> "$GITHUB_OUTPUT"
+            echo "publish=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installer les dependances Python
+        run: pip install -r requirements.txt
+
+      - name: Installer une police de secours pour les sous-titres/miniatures (Arial Black/Impact n'existent pas sur Linux)
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y fonts-dejavu-core
+          fc-cache -f
+
+      # Place AVANT l'installation d'Ollama : si le cache existe deja, "ollama pull" plus bas
+      # detectera les blobs deja presents et ne retelechargera que ce qui manque (au lieu de
+      # retelecharger le modele ~2 Go a chaque run).
+      - name: Restaurer le cache du modele Ollama
+        uses: actions/cache@v4
+        with:
+          path: ~/.ollama/models
+          key: ollama-models-llama3.2-3b
+
+      - name: Installer et demarrer Ollama, telecharger le modele
+        run: |
+          curl -fsSL https://ollama.com/install.sh | sh
+          nohup ollama serve > ollama_serve.log 2>&1 &
+          for i in $(seq 1 30); do
+            curl -sf http://localhost:11434/ >/dev/null && break
+            sleep 1
+          done
+          ollama pull llama3.2:3b
+
+      - name: Preparer les secrets YouTube/Pexels
+        env:
+          YOUTUBE_CLIENT_SECRET_B64: ${{ secrets.YOUTUBE_CLIENT_SECRET_B64 }}
+          YOUTUBE_TOKEN_B64: ${{ secrets.YOUTUBE_TOKEN_B64 }}
+        run: |
+          echo "$YOUTUBE_CLIENT_SECRET_B64" | base64 -d > client_secret.json
+          echo "$YOUTUBE_TOKEN_B64" | base64 -d > token.json
+
+      - name: Lancer le pipeline (video longue)
+        if: steps.pick.outputs.run_type == 'long'
+        env:
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          SUBTITLE_FONT_NAME: "DejaVu Sans"
+          PUBLISHED_DIR: ${{ runner.temp }}/published
+        run: |
+          ARGS="--publish"
+          if [ "${{ steps.pick.outputs.publish }}" != "true" ]; then ARGS=""; fi
+          python run_pipeline.py $ARGS
+
+      - name: Lancer le pipeline (short)
+        if: steps.pick.outputs.run_type == 'short'
+        env:
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          SUBTITLE_FONT_NAME: "DejaVu Sans"
+          PUBLISHED_DIR: ${{ runner.temp }}/published
+        run: |
+          ARGS="--publish"
+          if [ "${{ steps.pick.outputs.publish }}" != "true" ]; then ARGS=""; fi
+          python run_shorts_pipeline.py $ARGS
+
+      - name: Sauvegarder l'historique des sujets/titres (evite les repetitions entre deux runs)
+        if: always()
+        run: |
+          rm -f client_secret.json token.json
+          if git diff --quiet -- output/used_topics.json output/used_titles.json; then
+            echo "Rien de nouveau a committer."
+            exit 0
+          fi
+          git config user.name "youtube-ai-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add output/used_topics.json output/used_titles.json
+          git commit -m "chore: mise a jour historique sujets/titres [skip ci]"
+          git push
