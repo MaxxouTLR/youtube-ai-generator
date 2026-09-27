@@ -308,12 +308,18 @@ def generate_metadata(topic: str, script: str) -> dict:
     """Genere titre/description/tags optimises via Ollama a partir du script reel. Retombe sur des
     valeurs generiques si le modele ne repond pas dans le format attendu. Reessaie si le titre est un
     doublon exact d'un titre recent (le modele 3B a tendance a retomber sur les memes exemples du
-    prompt, ex: 'Are You Sabotaging Your Dreams?' genere deux fois de suite le 26/09/2026)."""
+    prompt, ex: 'Are You Sabotaging Your Dreams?' genere deux fois de suite le 26/09/2026, et
+    'Are You Trapped in the Perfect Illusion?' reproduit a l'identique le 27/09/2026 - l'exemple donne
+    dans le prompt pour le style question_tension EST cette phrase, le modele l'a recopiee telle
+    quelle malgre la consigne explicite de ne pas la reutiliser)."""
     used_titles = _load_used_titles()
+    used_titles_lower = {t.strip().lower() for t in used_titles}
+    all_example_titles_lower = {s["example"].strip().lower() for s in TITLE_STYLES}
     recent_titles_block = "\n".join(f"- {t}" for t in used_titles[-20:]) if used_titles else "(none yet)"
 
     raw, title, description, tags_raw = "", "", "", ""
-    for _ in range(3):
+    is_duplicate = True
+    for _ in range(5):
         style = _pick_title_style()
         try:
             raw = _call_ollama(METADATA_PROMPT.format(
@@ -325,10 +331,18 @@ def generate_metadata(topic: str, script: str) -> dict:
         title = _extract_field(raw, "TITLE").strip('"')
         description = _extract_field(raw, "DESCRIPTION").strip('"')
         tags_raw = _extract_field(raw, "TAGS")
-        if title and title.strip().lower() not in {t.strip().lower() for t in used_titles}:
+        title_lower = title.strip().lower()
+        # Rejette aussi bien un doublon d'un titre deja publie qu'un simple recopiage verbatim de
+        # l'exemple donne dans le prompt (qui n'est peut-etre pas encore dans used_titles s'il s'agit
+        # d'un exemple different de celui reellement deja publie, mais reste un signe que le modele
+        # n'a rien invente).
+        is_duplicate = (not title) or title_lower in used_titles_lower or title_lower in all_example_titles_lower
+        if not is_duplicate:
             break
 
-    if not title:
+    if is_duplicate:
+        # Tous les essais ont produit un titre vide ou deja utilise/copie de l'exemple : mieux vaut
+        # un titre generique jamais publie qu'un vrai doublon de contenu sur la chaine.
         title = f"{topic.strip().capitalize()} | Motivation"
     if not description:
         description = script[:400] + "..."
