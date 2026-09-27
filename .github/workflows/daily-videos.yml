@@ -22,8 +22,13 @@ on:
     # moment du run et decide quoi faire - celui des deux jeux qui ne correspond pas a la saison en
     # cours se resout juste en "skip" (quelques secondes, aucun cout sur un repo public). Plus jamais
     # besoin de toucher ces lignes a la main.
-    - cron: "0 7,11,15,18,20 * * *"  # hypothese heure d'hiver (UTC+1)
-    - cron: "0 6,10,14,17,19 * * *"  # hypothese heure d'ete (UTC+2)
+    # Minute decalee a :07 (pas :00) : GitHub documente que le debut de chaque heure est la periode
+    # de plus forte charge pour les cron, avec un risque de retard/saut plus eleve pile a la minute 0 -
+    # constate en pratique le 27/09/2026 (0 run planifie declenche de la journee malgre un planning
+    # correct, probablement du a la fois a ce pic de charge et au fait que le planning venait d'etre
+    # cree/modifie plusieurs fois le jour meme).
+    - cron: "7 7,11,15,18,20 * * *"  # hypothese heure d'hiver (UTC+1)
+    - cron: "7 6,10,14,17,19 * * *"  # hypothese heure d'ete (UTC+2)
 
 permissions:
   contents: write
