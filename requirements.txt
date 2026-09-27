@@ -4,10 +4,10 @@ google-api-python-client==2.196.0
 google-auth==2.53.0
 google-auth-httplib2==0.4.0
 google-auth-oauthlib==1.4.1
-httplib2==0.31.2
+httplib2==0.32.0
 imageio==2.37.4
 imageio-ffmpeg==0.6.0
 moviepy==2.2.1
 numpy==2.4.4
-Pillow==10.0.1
+Pillow==11.3.0
 uritemplate==4.2.0
