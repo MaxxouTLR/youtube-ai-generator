@@ -79,7 +79,7 @@ NICHE = "motivation et developpement personnel"
 # d'affiliation), le remplir ici applique le CTA automatiquement a toutes les prochaines videos, sans
 # toucher au reste du pipeline. Exemple :
 # PRODUCT_CTA = "Free discipline system + tracker: https://votre-lien-gumroad.com"
-PRODUCT_CTA = ""
+PRODUCT_CTA = "Want the full system? Get The Discipline Reset (ebook + weekly tracker): https://payhip.com/b/WZtyq"
 
 # --- YouTube upload (necessite client_secret.json, voir README) ---
 YOUTUBE_CLIENT_SECRET_FILE = os.path.join(BASE_DIR, "client_secret.json")
