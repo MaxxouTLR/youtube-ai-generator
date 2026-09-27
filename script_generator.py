@@ -361,7 +361,11 @@ def generate_metadata(topic: str, script: str) -> dict:
             seen.add(tag)
             hashtags.append(f"#{tag}")
 
-    full_description = f"{description}\n\n{' '.join(hashtags)}"
+    # Bloc produit/affiliation optionnel (config.PRODUCT_CTA) : vide par defaut, n'affecte aucune
+    # video tant qu'il n'est pas rempli. Place AVANT les hashtags (les hashtags doivent rester la
+    # toute derniere ligne pour que YouTube les affiche comme tags cliquables).
+    cta_block = f"\n\n{config.PRODUCT_CTA}" if config.PRODUCT_CTA else ""
+    full_description = f"{description}{cta_block}\n\n{' '.join(hashtags)}"
     return {"title": title[:100], "description": full_description[:5000], "tags": tags[:15]}
 
 

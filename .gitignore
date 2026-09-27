@@ -25,3 +25,9 @@ output/video/
 # Assets de marque generes une seule fois localement (banniere/photo de profil de la chaine),
 # pas utilises par le pipeline quotidien -> pas besoin dans le depot du pipeline.
 branding_kit/
+
+# Produits payants (ebook, tracker...) : le depot est PUBLIC (choisi pour les minutes GitHub Actions
+# gratuites illimitees). Ne JAMAIS y commiter le contenu de produits vendus, sinon n'importe qui peut
+# les telecharger gratuitement depuis l'historique git. Ces fichiers restent uniquement en local /
+# sur la plateforme de vente choisie (Gumroad ou equivalent), jamais dans ce depot.
+products/

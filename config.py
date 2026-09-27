@@ -73,6 +73,14 @@ SUBTITLE_FONT_NAME = os.environ.get("SUBTITLE_FONT_NAME", "Arial Black")
 # --- Chaine / niche ---
 NICHE = "motivation et developpement personnel"
 
+# --- Produits / affiliation (27/09/2026) ---
+# Bloc optionnel insere en fin de description de CHAQUE video (avant les hashtags). Vide par defaut :
+# n'a aucun effet tant que non rempli. Une fois un lien pret (produit vendu directement ou lien
+# d'affiliation), le remplir ici applique le CTA automatiquement a toutes les prochaines videos, sans
+# toucher au reste du pipeline. Exemple :
+# PRODUCT_CTA = "Free discipline system + tracker: https://votre-lien-gumroad.com"
+PRODUCT_CTA = ""
+
 # --- YouTube upload (necessite client_secret.json, voir README) ---
 YOUTUBE_CLIENT_SECRET_FILE = os.path.join(BASE_DIR, "client_secret.json")
 YOUTUBE_TOKEN_FILE = os.path.join(BASE_DIR, "token.json")
