@@ -100,6 +100,9 @@ jobs:
           echo "$YOUTUBE_CLIENT_SECRET_B64" | base64 -d > client_secret.json
           echo "$YOUTUBE_TOKEN_B64" | base64 -d > token.json
 
+      # edge-tts (voix off) echoue de temps en temps avec "NoAudioReceived" - probleme flaky cote
+      # backend Microsoft, deja rencontre sur le PC (voir run_pipeline_safe.ps1, meme logique de
+      # retry ci-dessous : 3 tentatives, pause 60s entre chaque).
       - name: Lancer le pipeline (video longue)
         if: steps.pick.outputs.run_type == 'long'
         env:
@@ -109,7 +112,12 @@ jobs:
         run: |
           ARGS="--publish"
           if [ "${{ steps.pick.outputs.publish }}" != "true" ]; then ARGS=""; fi
-          python run_pipeline.py $ARGS
+          for attempt in 1 2 3; do
+            python run_pipeline.py $ARGS && break
+            echo "Echec tentative $attempt/3"
+            if [ "$attempt" = "3" ]; then exit 1; fi
+            sleep 60
+          done
 
       - name: Lancer le pipeline (short)
         if: steps.pick.outputs.run_type == 'short'
@@ -120,7 +128,12 @@ jobs:
         run: |
           ARGS="--publish"
           if [ "${{ steps.pick.outputs.publish }}" != "true" ]; then ARGS=""; fi
-          python run_shorts_pipeline.py $ARGS
+          for attempt in 1 2 3; do
+            python run_shorts_pipeline.py $ARGS && break
+            echo "Echec tentative $attempt/3"
+            if [ "$attempt" = "3" ]; then exit 1; fi
+            sleep 60
+          done
 
       - name: Sauvegarder l'historique des sujets/titres (evite les repetitions entre deux runs)
         if: always()
