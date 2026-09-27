@@ -15,13 +15,15 @@ on:
   schedule:
     # Un cron GitHub Actions est fixe en UTC et ne suit PAS le changement d'heure ete/hiver. Plutot
     # que de figer un horaire UTC qui deriverait d'1h a chaque bascule, on declare DEUX jeux de cron
-    # couvrant les 8 horaires locaux Paris (8,9,10,12,14,16,18,20h) : un en supposant l'heure d'hiver
-    # (UTC+1) et un en supposant l'heure d'ete (UTC+2). A chaque declenchement, le step "Determiner le
-    # type de run" recalcule l'heure locale Paris REELLE au moment du run et decide quoi faire -
-    # celui des deux jeux qui ne correspond pas a la saison en cours se resout juste en "skip" (quelques
-    # secondes, aucun cout sur un repo public). Plus jamais besoin de toucher ces lignes a la main.
-    - cron: "0 7,8,9,11,13,15,17,19 * * *"  # hypothese heure d'hiver (UTC+1)
-    - cron: "0 6,7,8,10,12,14,16,18 * * *"  # hypothese heure d'ete (UTC+2)
+    # couvrant les 5 horaires locaux Paris (8,12,16,19,21h - creneaux d'engagement generalement les
+    # plus efficaces : reveil/trajet, pause dejeuner, fin de journee, prime time soir) : un en
+    # supposant l'heure d'hiver (UTC+1) et un en supposant l'heure d'ete (UTC+2). A chaque
+    # declenchement, le step "Determiner le type de run" recalcule l'heure locale Paris REELLE au
+    # moment du run et decide quoi faire - celui des deux jeux qui ne correspond pas a la saison en
+    # cours se resout juste en "skip" (quelques secondes, aucun cout sur un repo public). Plus jamais
+    # besoin de toucher ces lignes a la main.
+    - cron: "0 7,11,15,18,20 * * *"  # hypothese heure d'hiver (UTC+1)
+    - cron: "0 6,10,14,17,19 * * *"  # hypothese heure d'ete (UTC+2)
 
 permissions:
   contents: write
@@ -50,10 +52,10 @@ jobs:
           else
             hour=$(TZ=Europe/Paris date +%H)
             echo "Heure locale Paris actuelle : ${hour}h"
-            if [ "$hour" = "09" ]; then
+            if [ "$hour" = "19" ]; then
               echo "run_type=long" >> "$GITHUB_OUTPUT"
               echo "publish=true" >> "$GITHUB_OUTPUT"
-            elif [[ "$hour" =~ ^(08|10|12|14|16|18|20)$ ]]; then
+            elif [[ "$hour" =~ ^(08|12|16|21)$ ]]; then
               echo "run_type=short" >> "$GITHUB_OUTPUT"
               echo "publish=true" >> "$GITHUB_OUTPUT"
             else
