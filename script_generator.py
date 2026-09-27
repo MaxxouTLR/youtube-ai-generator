@@ -445,6 +445,16 @@ def _call_ollama_with_retry(prompt: str, attempts: int = 3) -> str:
     return ""
 
 
+def _append_spoken_cta(script: str) -> str:
+    """Ajoute le CTA produit parle (config.PRODUCT_CTA_SPOKEN) a la toute fin de la narration, pour
+    qu'il soit dit a voix haute (et sous-titre) sur chaque video, en plus du lien deja present dans la
+    description. Aucun effet si PRODUCT_CTA_SPOKEN est vide."""
+    cta = config.PRODUCT_CTA_SPOKEN.strip()
+    if not cta:
+        return script
+    return f"{script.rstrip()} {cta}"
+
+
 def _clean_script(text: str) -> str:
     text = re.sub(r"^#+.*$", "", text, flags=re.MULTILINE)   # titres markdown
     text = re.sub(r"\*\*|\*|__|_", "", text)                    # gras/italique
@@ -513,7 +523,7 @@ def generate_script(topic: str | None = None, minutes: int | None = None) -> tup
     if word_count < target_words * 0.8:
         print(f"    [warn] Script final ({word_count} mots) nettement sous la cible "
               f"({target_words} mots) malgre les tentatives : la video sera plus courte que 15-20 min.")
-    return topic, script
+    return topic, _append_spoken_cta(script)
 
 
 def _truncate_to_target(script: str, target_words: int, tolerance: float = 1.3) -> str:
@@ -563,15 +573,20 @@ def generate_short_script(topic: str | None = None, seconds: int | None = None) 
             f"(`ollama pull {config.OLLAMA_MODEL}`)."
         ) from exc
 
+    # Le CTA parle (ajoute apres coup, hors budget de troncature) doit rester dans le gabarit Shorts :
+    # on reserve donc son nombre de mots en reduisant d'autant la cible utilisee pour la troncature.
+    cta_words = len(config.PRODUCT_CTA_SPOKEN.split()) if config.PRODUCT_CTA_SPOKEN.strip() else 0
+    truncation_target = max(words - cta_words, 15)
+
     words_before = len(script.split())
-    script = _truncate_to_target(script, words)
+    script = _truncate_to_target(script, truncation_target)
     if len(script.split()) < words_before:
         print(f"    [warn] Script tronque de {words_before} a {len(script.split())} mots "
-              f"(cible {words}, le modele a largement depasse la consigne de longueur)")
+              f"(cible {truncation_target}, le modele a largement depasse la consigne de longueur)")
 
     if len(script.split()) < 15:
         raise RuntimeError("Le script court genere est trop court, reessaie ou verifie le modele Ollama.")
-    return topic, script
+    return topic, _append_spoken_cta(script)
 
 
 if __name__ == "__main__":

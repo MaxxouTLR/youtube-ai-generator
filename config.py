@@ -81,6 +81,11 @@ NICHE = "motivation et developpement personnel"
 # PRODUCT_CTA = "Free discipline system + tracker: https://votre-lien-gumroad.com"
 PRODUCT_CTA = "Want the full system? Get The Discipline Reset (ebook + weekly tracker): https://payhip.com/b/WZtyq"
 
+# Version courte et parlable du CTA ci-dessus, ajoutee par script_generator.py a la toute fin du texte
+# lu par la voix off (pas d'URL : une URL prononcee a voix haute est illisible/inutile a l'oral, le lien
+# complet reste dans la description ecrite via PRODUCT_CTA). Vide par defaut -> aucun effet.
+PRODUCT_CTA_SPOKEN = "If you want the full system, the link is in the description."
+
 # --- YouTube upload (necessite client_secret.json, voir README) ---
 YOUTUBE_CLIENT_SECRET_FILE = os.path.join(BASE_DIR, "client_secret.json")
 YOUTUBE_TOKEN_FILE = os.path.join(BASE_DIR, "token.json")
