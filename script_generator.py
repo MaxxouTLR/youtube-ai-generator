@@ -295,7 +295,13 @@ TITLE_STYLES = [
 
 
 def _pick_title_style() -> dict:
+    import os
     import random
+    forced = os.environ.get("FORCE_TITLE_STYLE")
+    if forced:
+        for style in TITLE_STYLES:
+            if style["name"] == forced:
+                return style
     return random.choices(TITLE_STYLES, weights=[s["weight"] for s in TITLE_STYLES], k=1)[0]
 
 
