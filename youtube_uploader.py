@@ -53,6 +53,8 @@ def upload_video(video_path: str, title: str, description: str, tags: list[str] 
             "description": description[:5000],
             "tags": tags or [],
             "categoryId": config.YOUTUBE_CATEGORY_ID,
+            "defaultLanguage": config.SCRIPT_LANGUAGE,
+            "defaultAudioLanguage": config.SCRIPT_LANGUAGE,
         },
         "status": {
             "privacyStatus": config.YOUTUBE_PRIVACY_STATUS,

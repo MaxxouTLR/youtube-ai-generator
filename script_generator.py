@@ -23,6 +23,16 @@ HOOK_RULES = """Retention rules (this is a watch-time-optimized script, every li
 - Every few sentences, plant a small forward-pointing line ("but here's the part nobody talks about",
   "and it gets worse before it gets better") to pull the viewer into the next moment."""
 
+LOOP_RULES = """Seamless-loop rule (YouTube Shorts auto-repeat when they end - a script written to loop
+gets rewatched more, which directly boosts watch time and retention):
+- The LAST sentence must flow naturally back into the FIRST sentence, so when the video restarts right
+  after, it feels like one continuous thought rather than a jarring restart or a "the end" style close.
+- Do this by echoing a key word/phrase from the opening line, or by phrasing the last line as a setup
+  that the first line answers (e.g. open with "here's what nobody tells you about X" and close with a
+  line that naturally leads back into wanting to hear that opening line again).
+- Never end on a hard full-stop conclusion word like "in conclusion", "so remember", "that's it" - end
+  on the punchy takeaway itself, worded so it bridges into the loop."""
+
 PROMPT_TEMPLATE = """You are a scriptwriter specialized in long-form YouTube motivation and self-improvement videos,
 in the style of the best US channels (punchy, highly visual, never flat, optimized for maximum watch time).
 
@@ -75,12 +85,15 @@ on the following topic: "{topic}".
 
 {hook_rules}
 
+{loop_rules}
+
 Structure (all of it, in this one short script):
 - First sentence (under 2 seconds to read): an immediate, scroll-stopping hook with an open loop
   the viewer needs resolved (a specific promise, a surprising claim, a "wait for it" moment).
 - One single sharp idea, developed with ONE concrete example or mini-story. Do not try to cover multiple ideas.
   Do NOT resolve the opening hook yet — keep the tension until the very end.
-- Last sentence: resolve the opening hook AND deliver a punchy takeaway line that could work as a caption.
+- Last sentence: resolve the opening hook, deliver a punchy takeaway line, AND loop back into the first
+  sentence per the seamless-loop rule above.
 
 Target length: about {words} words, NOT more. Write ONLY the text to be read aloud
 (no section titles, no stage directions, no markdown, no hashtags). Write in English.
@@ -568,7 +581,8 @@ def generate_short_script(topic: str | None = None, seconds: int | None = None) 
     try:
         raw = _call_ollama_with_retry(
             SHORT_PROMPT_TEMPLATE.format(
-                topic=topic, style_rules=STYLE_RULES, hook_rules=HOOK_RULES, seconds=seconds, words=words
+                topic=topic, style_rules=STYLE_RULES, hook_rules=HOOK_RULES, loop_rules=LOOP_RULES,
+                seconds=seconds, words=words
             )
         )
         script = _clean_script(raw)
