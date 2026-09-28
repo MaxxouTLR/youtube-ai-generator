@@ -23,10 +23,14 @@ on:
     # cours se resout juste en "skip" (quelques secondes, aucun cout sur un repo public). Plus jamais
     # besoin de toucher ces lignes a la main.
     # Minute decalee a :07 (pas :00) : GitHub documente que le debut de chaque heure est la periode
-    # de plus forte charge pour les cron, avec un risque de retard/saut plus eleve pile a la minute 0 -
-    # constate en pratique le 27/09/2026 (0 run planifie declenche de la journee malgre un planning
-    # correct, probablement du a la fois a ce pic de charge et au fait que le planning venait d'etre
-    # cree/modifie plusieurs fois le jour meme).
+    # de plus forte charge pour les cron, avec un risque de retard/saut plus eleve pile a la minute 0.
+    # MALGRE CA, le schedule s'est de nouveau completement tu du 27/09 21h17 au 28/09 07h41+ (aucun
+    # declenchement du tout, meme pas un "skip") - deuxieme fois que ca arrive. Comportement connu et
+    # documente comme peu fiable pour les schedules GitHub Actions nouvellement crees/modifies : ca
+    # semble redemarrer a chaque push touchant le repo. Pas de fix garanti cote GitHub - seul palliatif
+    # trouve : pousser un commit relance le declenchement pour un moment. Voir aussi le matching par
+    # fenetre de tolerance plus bas (protection contre le retard de 50-70min constate en pratique sur
+    # les rares declenchements reels, qui faisait sinon systematiquement tomber en "skip").
     - cron: "7 7,11,15,18,20 * * *"  # hypothese heure d'hiver (UTC+1)
     - cron: "7 6,10,14,17,19 * * *"  # hypothese heure d'ete (UTC+2)
 
@@ -55,18 +59,49 @@ jobs:
             echo "run_type=${{ inputs.run_type }}" >> "$GITHUB_OUTPUT"
             echo "publish=${{ inputs.publish }}" >> "$GITHUB_OUTPUT"
           else
-            hour=$(TZ=Europe/Paris date +%H)
-            echo "Heure locale Paris actuelle : ${hour}h"
-            if [ "$hour" = "19" ]; then
-              echo "run_type=long" >> "$GITHUB_OUTPUT"
-              echo "publish=true" >> "$GITHUB_OUTPUT"
-            elif [[ "$hour" =~ ^(08|12|16|21)$ ]]; then
-              echo "run_type=short" >> "$GITHUB_OUTPUT"
-              echo "publish=true" >> "$GITHUB_OUTPUT"
-            else
-              echo "Heure ${hour}h hors des creneaux prevus (probablement l'hypothese ete/hiver qui ne s'applique pas aujourd'hui) - rien a faire."
+            today=$(TZ=Europe/Paris date +%F)
+            now_min=$(( 10#$(TZ=Europe/Paris date +%H) * 60 + 10#$(TZ=Europe/Paris date +%M) ))
+            echo "Heure locale Paris actuelle : $(TZ=Europe/Paris date +%H:%M) (${today})"
+
+            # GitHub retarde parfois un declenchement planifie de 50-70min (constate en pratique les
+            # 27 et 28/09/2026) - un match strict sur l'heure exacte ratait alors systematiquement le
+            # creneau (tombait en "skip"). On cherche maintenant le creneau cible le plus proche dans
+            # une fenetre de tolerance de 100 minutes, et on garde une trace (output/last_auto_run.json,
+            # commitee comme le reste de l'historique) du dernier creneau deja traite pour ne jamais
+            # publier deux fois le meme creneau si les deux jeux de cron (hiver/ete) finissent par
+            # matcher le meme jour a cause du retard.
+            best_type=""; best_target=""; best_diff=999
+            for entry in "long:19" "short:08" "short:12" "short:16" "short:21"; do
+              type="${entry%%:*}"; target="${entry##*:}"
+              target_min=$(( 10#$target * 60 ))
+              diff=$(( now_min - target_min )); [ "$diff" -lt 0 ] && diff=$(( -diff ))
+              if [ "$diff" -le 100 ] && [ "$diff" -lt "$best_diff" ]; then
+                best_diff=$diff; best_type="$type"; best_target="$target"
+              fi
+            done
+
+            already_done=""
+            if [ -n "$best_target" ] && [ -f output/last_auto_run.json ]; then
+              expected="{\"date\": \"$today\", \"slot\": \"$best_target\"}"
+              if [ "$(cat output/last_auto_run.json)" = "$expected" ]; then
+                already_done="yes"
+              fi
+            fi
+
+            if [ -z "$best_target" ]; then
+              echo "Aucun creneau a moins de 100min de l'heure actuelle - rien a faire."
               echo "run_type=skip" >> "$GITHUB_OUTPUT"
               echo "publish=false" >> "$GITHUB_OUTPUT"
+            elif [ "$already_done" = "yes" ]; then
+              echo "Creneau ${best_target}h deja traite aujourd'hui (protection anti-doublon) - rien a faire."
+              echo "run_type=skip" >> "$GITHUB_OUTPUT"
+              echo "publish=false" >> "$GITHUB_OUTPUT"
+            else
+              echo "Creneau ${best_target}h retenu (ecart ${best_diff}min) -> ${best_type}"
+              echo "run_type=${best_type}" >> "$GITHUB_OUTPUT"
+              echo "publish=true" >> "$GITHUB_OUTPUT"
+              mkdir -p output
+              printf '{"date": "%s", "slot": "%s"}' "$today" "$best_target" > output/last_auto_run.json
             fi
           fi
 
@@ -155,12 +190,13 @@ jobs:
         if: always()
         run: |
           rm -f client_secret.json token.json
-          if git diff --quiet -- output/used_topics.json output/used_titles.json output/priority_topics.json; then
+          git add -- output/used_topics.json output/used_titles.json output/priority_topics.json
+          [ -f output/last_auto_run.json ] && git add -- output/last_auto_run.json
+          if git diff --cached --quiet; then
             echo "Rien de nouveau a committer."
             exit 0
           fi
           git config user.name "youtube-ai-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add output/used_topics.json output/used_titles.json output/priority_topics.json
           git commit -m "chore: mise a jour historique sujets/titres [skip ci]"
           git push
