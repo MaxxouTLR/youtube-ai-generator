@@ -15,8 +15,10 @@ on:
   schedule:
     # Un cron GitHub Actions est fixe en UTC et ne suit PAS le changement d'heure ete/hiver. Plutot
     # que de figer un horaire UTC qui deriverait d'1h a chaque bascule, on declare DEUX jeux de cron
-    # couvrant les 5 horaires locaux Paris (8,12,16,19,21h - creneaux d'engagement generalement les
-    # plus efficaces : reveil/trajet, pause dejeuner, fin de journee, prime time soir) : un en
+    # couvrant les 3 horaires locaux Paris (8h et 21h pour les shorts, 19h pour la longue - reduit de
+    # 5 a 3 videos/jour le 28/09/2026, demande explicite "passe a 3 videos par jour et reste comme ca" ;
+    # on garde les 2 creneaux d'engagement les plus efficaces, reveil/trajet et prime time soir, et on
+    # abandonne la pause dejeuner/fin d'apres-midi) : un en
     # supposant l'heure d'hiver (UTC+1) et un en supposant l'heure d'ete (UTC+2). A chaque
     # declenchement, le step "Determiner le type de run" recalcule l'heure locale Paris REELLE au
     # moment du run et decide quoi faire - celui des deux jeux qui ne correspond pas a la saison en
@@ -31,8 +33,8 @@ on:
     # trouve : pousser un commit relance le declenchement pour un moment. Voir aussi le matching par
     # fenetre de tolerance plus bas (protection contre le retard de 50-70min constate en pratique sur
     # les rares declenchements reels, qui faisait sinon systematiquement tomber en "skip").
-    - cron: "7 7,11,15,18,20 * * *"  # hypothese heure d'hiver (UTC+1)
-    - cron: "7 6,10,14,17,19 * * *"  # hypothese heure d'ete (UTC+2)
+    - cron: "7 7,18,20 * * *"  # hypothese heure d'hiver (UTC+1)
+    - cron: "7 6,17,19 * * *"  # hypothese heure d'ete (UTC+2)
 
 permissions:
   contents: write
@@ -71,7 +73,7 @@ jobs:
             # publier deux fois le meme creneau si les deux jeux de cron (hiver/ete) finissent par
             # matcher le meme jour a cause du retard.
             best_type=""; best_target=""; best_diff=999
-            for entry in "long:19" "short:08" "short:12" "short:16" "short:21"; do
+            for entry in "long:19" "short:08" "short:21"; do
               type="${entry%%:*}"; target="${entry##*:}"
               target_min=$(( 10#$target * 60 ))
               diff=$(( now_min - target_min )); [ "$diff" -lt 0 ] && diff=$(( -diff ))
