@@ -1,10 +1,12 @@
-# Secrets - jamais dans le depot, meme prive (client_secret.json et token.json vont dans les
+# --- Secrets ---
+# Jamais dans le dépôt, même privé (client_secret.json et token.json vont dans les
 # Secrets GitHub Actions pour le workflow, et restent en local ici pour les runs sur ce PC).
 client_secret.json
 token.json
 .env
 
-# Genere a chaque run, pas utile a committer
+# --- Fichiers temporaires & environnement local ---
+# Généré à chaque run, pas utile à committer
 __pycache__/
 *.pyc
 logs/
@@ -15,19 +17,26 @@ assets/stock/
 _tmp_*
 *TEMP_MPY*
 
+# Éditeurs de code et configurations locales (pour éviter d'inclure des chemins absolus)
+.vscode/
+.idea/
+*.log
+
+# --- Dossiers de travail / Output ---
 # output/ : tout est jetable (scripts/audio/video de travail) SAUF l'historique des sujets/titres
-# deja utilises, qui doit survivre entre deux runs (le workflow GitHub Actions le commite/pousse
-# a chaque execution pour eviter les repetitions de sujets malgre des runners ephemeres).
+# déjà utilisés, qui doit survivre entre deux runs (le workflow GitHub Actions le commite/pousse
+# à chaque exécution pour éviter les répétitions de sujets malgré des runners éphémères).
 output/scripts/
 output/audio/
 output/video/
 
-# Assets de marque generes une seule fois localement (banniere/photo de profil de la chaine),
-# pas utilises par le pipeline quotidien -> pas besoin dans le depot du pipeline.
+# --- Assets & Produits ---
+# Assets de marque générés une seule fois localement (bannière/photo de profil de la chaîne),
+# pas utilisés par le pipeline quotidien -> pas besoin dans le dépôt du pipeline.
 branding_kit/
 
-# Produits payants (ebook, tracker...) : le depot est PUBLIC (choisi pour les minutes GitHub Actions
-# gratuites illimitees). Ne JAMAIS y commiter le contenu de produits vendus, sinon n'importe qui peut
-# les telecharger gratuitement depuis l'historique git. Ces fichiers restent uniquement en local /
-# sur la plateforme de vente choisie (Gumroad ou equivalent), jamais dans ce depot.
+# Produits payants (ebook, tracker...) : le dépôt est PUBLIC (choisi pour les minutes GitHub Actions
+# gratuites illimitées). Ne JAMAIS y commiter le contenu de produits vendus, sinon n'importe qui peut
+# les télécharger gratuitement depuis l'historique git. Ces fichiers restent uniquement en local /
+# sur la plateforme de vente choisie (Gumroad ou équivalent), jamais dans ce dépôt.
 products/
