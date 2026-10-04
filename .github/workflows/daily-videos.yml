@@ -77,7 +77,7 @@ jobs:
               type="${entry%%:*}"; target="${entry##*:}"
               target_min=$(( 10#$target * 60 ))
               diff=$(( now_min - target_min )); [ "$diff" -lt 0 ] && diff=$(( -diff ))
-              if [ "$diff" -le 100 ] && [ "$diff" -lt "$best_diff" ]; then
+              if [ "$diff" -le 180 ] && [ "$diff" -lt "$best_diff" ]; then
                 best_diff=$diff; best_type="$type"; best_target="$target"
               fi
             done
