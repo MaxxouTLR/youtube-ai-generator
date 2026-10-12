@@ -7,10 +7,10 @@ cette machine, gratuitement, avec des outils standards (Python, Ollama, ffmpeg).
 
 | Quoi | Où |
 |---|---|
-| Le programme (le "bot") | `C:\Users\ovila\youtube-ai-generator` |
+| Le programme (le "bot") | `%USERPROFILE%\youtube-ai-generator` |
 | Les vidéos finies | `D:\YouTube Videos\<date>_<sujet>\` (un dossier par vidéo : `video.mp4`, `thumbnail.jpg`, `metadata.txt`) |
-| Les assets de chaîne (logo, bannière, description) | `C:\Users\ovila\youtube-ai-generator\branding_kit\` |
-| Les réglages (voix, durée, niche...) | `C:\Users\ovila\youtube-ai-generator\config.py` |
+| Les assets de chaîne (logo, bannière, description) | `%USERPROFILE%\youtube-ai-generator\branding_kit\` |
+| Les réglages (voix, durée, niche...) | `%USERPROFILE%\youtube-ai-generator\config.py` |
 
 ## 2. Ce qui tourne automatiquement, sans rien faire
 
@@ -53,7 +53,7 @@ rattraper le coup automatiquement.
 Ouvrez PowerShell, puis :
 
 ```
-cd C:\Users\ovila\youtube-ai-generator
+cd $env:USERPROFILE\youtube-ai-generator
 
 # Genere tout (script, voix, visuels, sous-titres, miniature) SANS publier sur YouTube
 python run_pipeline.py
@@ -76,7 +76,7 @@ un Reel/TikTok), une seule idée courte et percutante au lieu d'un long récit, 
 un écran étroit. C'est un script séparé, `run_shorts_pipeline.py` :
 
 ```
-cd C:\Users\ovila\youtube-ai-generator
+cd $env:USERPROFILE\youtube-ai-generator
 
 # Genere un Short (~50s) SANS publier sur YouTube
 python run_shorts_pipeline.py
@@ -101,7 +101,7 @@ lancent déjà ça automatiquement, deux fois par jour — voir section 2.
 ## 4. Publication sur YouTube (configuré et actif depuis le 24/09/2026)
 
 Compte Google utilisé : **`totovilaseque@gmail.com`**. `client_secret.json` et `token.json` sont en
-place dans `C:\Users\ovila\youtube-ai-generator\`, les trois tâches planifiées publient automatiquement
+place dans `%USERPROFILE%\youtube-ai-generator\`, les trois tâches planifiées publient automatiquement
 **en public** chaque jour (voir section 2).
 
 **⚠️ Piège rencontré au setup, à connaître si ça se reproduit (ex: après avoir change de PC, ou si

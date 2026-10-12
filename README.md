@@ -57,7 +57,7 @@ de droits → musique de fond générée → miniature IA → publication YouTub
 ## Utilisation locale (test / développement)
 
 ```
-cd C:\Users\ovila\youtube-ai-generator
+cd youtube-ai-generator  # dossier ou vous avez clone le depot
 
 # Variables d'environnement necessaires (ou utiliser celles deja configurees sur cette machine)
 # AZURE_SPEECH_KEY, AZURE_SPEECH_REGION, PEXELS_API_KEY

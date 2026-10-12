@@ -41,7 +41,7 @@ param(
     [int]$SpreadMinutes = 40
 )
 
-$ProjectDir = "C:\Users\ovila\youtube-ai-generator"
+$ProjectDir = $PSScriptRoot
 Set-Location $ProjectDir
 $LogPath = Join-Path $ProjectDir $LogFile
 New-Item -ItemType Directory -Force -Path (Split-Path $LogPath) | Out-Null
