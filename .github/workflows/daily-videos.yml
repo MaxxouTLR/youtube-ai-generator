@@ -153,13 +153,14 @@ jobs:
           echo "$YOUTUBE_CLIENT_SECRET_B64" | base64 -d > client_secret.json
           echo "$YOUTUBE_TOKEN_B64" | base64 -d > token.json
 
-      # edge-tts (voix off) echoue de temps en temps avec "NoAudioReceived" - probleme flaky cote
-      # backend Microsoft, deja rencontre sur le PC (voir run_pipeline_safe.ps1, meme logique de
-      # retry ci-dessous : 3 tentatives, pause 60s entre chaque).
+      # Retry generique (3 tentatives, pause 60s) : garde-fou contre tout alea reseau/API transitoire
+      # (Ollama, Pexels, Azure Speech...), pas specifique a un service en particulier.
       - name: Lancer le pipeline (video longue)
         if: steps.pick.outputs.run_type == 'long'
         env:
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+          AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
           SUBTITLE_FONT_NAME: "DejaVu Sans"
           PUBLISHED_DIR: ${{ runner.temp }}/published
         run: |
@@ -176,6 +177,8 @@ jobs:
         if: steps.pick.outputs.run_type == 'short'
         env:
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+          AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
           SUBTITLE_FONT_NAME: "DejaVu Sans"
           PUBLISHED_DIR: ${{ runner.temp }}/published
         run: |

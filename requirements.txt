@@ -1,4 +1,4 @@
-edge-tts==7.2.8
+azure-cognitiveservices-speech==1.52.0
 google-api-core==2.30.3
 google-api-python-client==2.196.0
 google-auth==2.53.0

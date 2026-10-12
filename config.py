@@ -19,7 +19,9 @@ PUBLISHED_DIR = os.environ.get("PUBLISHED_DIR", r"D:\YouTube Videos")
 OLLAMA_MODEL = "llama3.2:3b"
 OLLAMA_URL = "http://localhost:11434/api/generate"
 
-# --- Voix off (edge-tts, gratuit, sans compte) ---
+# --- Voix off (Azure Cognitive Services Speech, tier gratuit Free F0, ~500k caracteres/mois) ---
+# Remplace edge-tts le 12/10/2026 (bloque par Microsoft sur les IP de datacenter/cloud dont GitHub
+# Actions - voir voice_generator.py). Memes noms de voix neurales, l'API officielle les expose aussi.
 # Script en anglais pour toucher l'audience internationale (marche pub plus grand, meilleur RPM).
 # Voix "Multilingual" = generation plus recente et expressive que les neural classiques.
 # Rotation ponderee entre plusieurs voix (pas une seule voix fixe partout) : reduit le risque que la
