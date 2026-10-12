@@ -6,9 +6,11 @@ Rythme visé : 1 vidéo/jour, 15-20 minutes.
 
 ## Ce qui est déjà installé, configuré et testé
 - **Ollama** (`llama3.2:3b`) — génère le script en local, aucune clé API, aucun compte. Script en anglais.
-- **edge-tts** — voix off gratuite et illimitée, voix `en-US-AndrewMultilingualNeural` (chaleureuse/confiante), +12% de rythme.
+- **Azure Cognitive Services Speech** (tier gratuit Free F0, ~500k caractères/mois) — voix off, voix
+  `en-US-AndrewMultilingualNeural` (chaleureuse/confiante), +12% de rythme. Remplace edge-tts depuis le
+  12/10/2026 (Microsoft bloque désormais edge-tts sur les IP de datacenter/cloud dont GitHub Actions).
 - **Sous-titres dynamiques** — surbrillance mot par mot façon karaoké (`subtitles.py`), synchronisée précisément
-  grâce aux timings edge-tts, gravée via ffmpeg/libass (rapide, ~0.4x la durée de la vidéo).
+  grâce aux timings Azure Speech (WordBoundary), gravée via ffmpeg/libass (rapide, ~0.4x la durée de la vidéo).
 - **Visuels contextuels** — le script est découpé en segments de ~15-20s ; chaque segment génère son propre
   mot-clé de recherche via Ollama (ex: "man walking alone desert") pour trouver un clip Pexels qui correspond
   vraiment à ce qui est raconté, au lieu d'un pool générique pioché au hasard.
@@ -46,7 +48,7 @@ Clé configurée, mais **inutilisable telle quelle** : ElevenLabs bloque désorm
 bibliothèque pour les comptes gratuits (`402 payment_required`). Il faudrait ajouter une voix personnelle
 dans "My Voices" depuis leur dashboard web pour débloquer l'API gratuite — et même alors, le quota gratuit
 (~10k caractères/mois) ne couvre qu'une fraction d'UNE vidéo de 15-20 min. Non viable pour un rythme quotidien
-sans passer sur un forfait payant (~99$/mois). Le pipeline reste donc sur edge-tts par défaut.
+sans passer sur un forfait payant (~99$/mois). Le pipeline reste donc sur Azure Speech par défaut.
 
 ## Utilisation
 
@@ -92,7 +94,7 @@ passez-la à `"public"` une fois que vous avez vérifié la qualité sur quelque
 ## Fichiers du projet
 - `config.py` — tous les réglages (voix, langue, durée cible, dossier de sortie, etc.)
 - `script_generator.py` — script par sections (Ollama), mots-clés visuels par segment, titre/description/tags
-- `voice_generator.py` — synthèse vocale gratuite (edge-tts) + timings mot par mot pour les sous-titres
+- `voice_generator.py` — synthèse vocale gratuite (Azure Speech) + timings mot par mot pour les sous-titres
 - `voice_generator_elevenlabs.py` — alternative ElevenLabs (usage ponctuel seulement, voir limites ci-dessus)
 - `subtitles.py` — génère les sous-titres dynamiques (.ass, style karaoké) à partir des timings
 - `visuals_fetcher.py` — recherche/téléchargement de clips Pexels (par mot-clé ou en lot générique)
