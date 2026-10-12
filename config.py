@@ -23,21 +23,20 @@ OLLAMA_URL = "http://localhost:11434/api/generate"
 # Remplace edge-tts le 12/10/2026 (bloque par Microsoft sur les IP de datacenter/cloud dont GitHub
 # Actions - voir voice_generator.py). Memes noms de voix neurales, l'API officielle les expose aussi.
 # Script en anglais pour toucher l'audience internationale (marche pub plus grand, meilleur RPM).
-# Passe aux voix "HD" (DragonHDLatestNeural) le 12/10/2026 (retour utilisateur direct : la voix
-# standard sonnait "pas assez naturelle/humaine"). Ce sont des voix basees sur un LLM qui detectent
-# les indices emotionnels du texte et ajustent ton/rythme automatiquement - plus naturelles que les
-# neural/Multilingual classiques. Rate laisse a "+0%" (le LLM gere deja son propre rythme, forcer un
-# +X% fixe irait a l'encontre de l'adaptation dynamique). Confirme fonctionnel sur le tier Free F0
-# (pas besoin de passer en Standard S0) et les timings mot-par-mot (WordBoundary) marchent pareil.
-# Andrew et Brian ont un equivalent HD direct (meme voix qu'avant, version amelioree). Guy et
-# Christopher n'ont PAS de version HD - remplaces par Davis et Steffan (les plus proches en registre
-# parmi les voix HD masculines disponibles) : a confirmer/ajuster une fois ecoutes en conditions
-# reelles, ce choix est une approximation faite sans pouvoir ecouter les voix au prealable.
+# Essai des voix "HD" (DragonHDLatestNeural) le 12/10/2026 suite a un retour "pas assez naturel" -
+# ANNULE le meme jour (retour utilisateur : pauses de plusieurs secondes entre certaines phrases,
+# le LLM derriere ces voix HD decide lui-meme du rythme et insere des silences dramatiques pas
+# toujours voulus - voir _trim_long_silences dans voice_generator.py, garde-fou ajoute independamment
+# de ce choix de voix). Revenu ensuite (meme jour, demande explicite "les meme voix qu'il y avait
+# sur les videos precedentes qui ont atteint plusieurs centaines de vues") a la configuration
+# UNIQUE-VOIX d'avant le 27/09/2026 : seulement Andrew Multilingual, rate +12% (le defaut +0%
+# sonnait "plat, aucun rythme" - retour utilisateur du 23/09/2026). La rotation a 4 voix introduite
+# le 27/09/2026 (Guy/Christopher/Brian en plus) visait a reduire le risque de contenu percu comme
+# "mass-produced/repetitive" par la politique de monetisation YouTube Partner Program - compromis
+# explicitement abandonne ici au profit de la voix dont la performance est confirmee. A rediscuter
+# avec l'utilisateur si ce risque YPP redevient une priorite.
 TTS_VOICE_POOL = [
-    {"voice": "en-US-Andrew:DragonHDLatestNeural", "rate": "+0%", "weight": 4},  # voix principale, "Warm/Confident"
-    {"voice": "en-US-Davis:DragonHDLatestNeural", "rate": "+0%", "weight": 2},   # remplace Guy (pas de version HD)
-    {"voice": "en-US-Steffan:DragonHDLatestNeural", "rate": "+0%", "weight": 2}, # remplace Christopher (pas de version HD)
-    {"voice": "en-US-Brian:DragonHDLatestNeural", "rate": "+0%", "weight": 2},
+    {"voice": "en-US-AndrewMultilingualNeural", "rate": "+12%", "weight": 1},
 ]
 
 SCRIPT_LANGUAGE = "en"

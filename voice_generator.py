@@ -11,11 +11,15 @@ Necessite les variables d'environnement AZURE_SPEECH_KEY et AZURE_SPEECH_REGION.
 import json
 import os
 import random
+import subprocess
 import xml.sax.saxutils as saxutils
 
 import azure.cognitiveservices.speech as speechsdk
+import imageio_ffmpeg
 
 import config
+
+TICKS_PER_SECOND = 10_000_000
 
 
 def _pick_voice() -> tuple[str, str]:
@@ -88,6 +92,61 @@ def _synthesize_with_timing(text: str, out_path: str, voice: str, rate: str) -> 
     return word_boundaries
 
 
+def _trim_long_silences(audio_path: str, word_boundaries: list[dict], max_gap_seconds: float = 0.45) -> list[dict]:
+    """Raccourcit a max_gap_seconds tout silence plus long entre deux mots consecutifs, en
+    recoupant physiquement l'audio (ffmpeg atrim+concat) et en decalant les timings en consequence.
+    Voix-agnostique : certaines voix (notamment les voix HD Azure pilotees par LLM, voir config.py)
+    peuvent inserer des pauses dramatiques de plusieurs secondes - ce filet de securite s'applique
+    quelle que soit la voix utilisee, sans dependre d'un reglage specifique a un moteur TTS."""
+    max_gap_ticks = int(max_gap_seconds * TICKS_PER_SECOND)
+
+    removed_ranges = []  # (debut, fin) en ticks, portions a retirer de l'audio d'origine
+    for i in range(len(word_boundaries) - 1):
+        cur_end = word_boundaries[i]["offset"] + word_boundaries[i]["duration"]
+        next_start = word_boundaries[i + 1]["offset"]
+        gap = next_start - cur_end
+        if gap > max_gap_ticks:
+            removed_ranges.append((cur_end + max_gap_ticks, next_start))
+
+    if not removed_ranges:
+        return word_boundaries
+
+    from moviepy import AudioFileClip
+    clip = AudioFileClip(audio_path)
+    total_ticks = int(clip.duration * TICKS_PER_SECOND)
+    clip.close()
+    del clip
+    import gc
+    gc.collect()
+
+    kept_segments = []  # (debut, fin) en secondes, portions a garder
+    cursor = 0
+    for start, end in removed_ranges:
+        if start > cursor:
+            kept_segments.append((cursor / TICKS_PER_SECOND, start / TICKS_PER_SECOND))
+        cursor = end
+    if cursor < total_ticks:
+        kept_segments.append((cursor / TICKS_PER_SECOND, total_ticks / TICKS_PER_SECOND))
+
+    ffmpeg_bin = imageio_ffmpeg.get_ffmpeg_exe()
+    filter_parts = [f"[0:a]atrim={s:.3f}:{e:.3f},asetpts=PTS-STARTPTS[a{i}]" for i, (s, e) in enumerate(kept_segments)]
+    labels = "".join(f"[a{i}]" for i in range(len(kept_segments)))
+    filter_complex = ";".join(filter_parts) + ";" + labels + f"concat=n={len(kept_segments)}:v=0:a=1[outa]"
+
+    tmp_path = f"{audio_path}.trimmed.mp3"
+    cmd = [ffmpeg_bin, "-y", "-i", audio_path, "-filter_complex", filter_complex, "-map", "[outa]", tmp_path]
+    subprocess.run(cmd, check=True, capture_output=True)
+    with open(tmp_path, "rb") as src, open(audio_path, "wb") as dst:
+        dst.write(src.read())
+    os.remove(tmp_path)
+
+    new_boundaries = []
+    for wb in word_boundaries:
+        removed_before = sum(end - start for start, end in removed_ranges if end <= wb["offset"])
+        new_boundaries.append({**wb, "offset": wb["offset"] - removed_before})
+    return new_boundaries
+
+
 def generate_voice_with_timing(text: str, out_path: str | None = None, timing_path: str | None = None) -> tuple[str, str]:
     """Genere la voix off ET un fichier JSON des timings mot-par-mot (pour les sous-titres dynamiques)."""
     os.makedirs(config.AUDIO_DIR, exist_ok=True)
@@ -96,6 +155,7 @@ def generate_voice_with_timing(text: str, out_path: str | None = None, timing_pa
     voice, rate = _pick_voice()
     print(f"    Voix off : {voice} ({rate})")
     boundaries = _synthesize_with_timing(text, out_path, voice, rate)
+    boundaries = _trim_long_silences(out_path, boundaries)
     with open(timing_path, "w", encoding="utf-8") as f:
         json.dump(boundaries, f, ensure_ascii=False)
     return out_path, timing_path
