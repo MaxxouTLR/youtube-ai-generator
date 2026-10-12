@@ -23,16 +23,21 @@ OLLAMA_URL = "http://localhost:11434/api/generate"
 # Remplace edge-tts le 12/10/2026 (bloque par Microsoft sur les IP de datacenter/cloud dont GitHub
 # Actions - voir voice_generator.py). Memes noms de voix neurales, l'API officielle les expose aussi.
 # Script en anglais pour toucher l'audience internationale (marche pub plus grand, meilleur RPM).
-# Voix "Multilingual" = generation plus recente et expressive que les neural classiques.
-# Rotation ponderee entre plusieurs voix (pas une seule voix fixe partout) : reduit le risque que la
-# chaine soit percue comme "mass-produced/repetitive" par la politique de monetisation YouTube Partner
-# Program (voir notes du 27/09/2026), tout en gardant Andrew comme voix principale/dominante pour
-# l'identite de la chaine. Toutes masculines, registre confiant/motivant coherent avec le ton actuel.
+# Passe aux voix "HD" (DragonHDLatestNeural) le 12/10/2026 (retour utilisateur direct : la voix
+# standard sonnait "pas assez naturelle/humaine"). Ce sont des voix basees sur un LLM qui detectent
+# les indices emotionnels du texte et ajustent ton/rythme automatiquement - plus naturelles que les
+# neural/Multilingual classiques. Rate laisse a "+0%" (le LLM gere deja son propre rythme, forcer un
+# +X% fixe irait a l'encontre de l'adaptation dynamique). Confirme fonctionnel sur le tier Free F0
+# (pas besoin de passer en Standard S0) et les timings mot-par-mot (WordBoundary) marchent pareil.
+# Andrew et Brian ont un equivalent HD direct (meme voix qu'avant, version amelioree). Guy et
+# Christopher n'ont PAS de version HD - remplaces par Davis et Steffan (les plus proches en registre
+# parmi les voix HD masculines disponibles) : a confirmer/ajuster une fois ecoutes en conditions
+# reelles, ce choix est une approximation faite sans pouvoir ecouter les voix au prealable.
 TTS_VOICE_POOL = [
-    {"voice": "en-US-AndrewMultilingualNeural", "rate": "+12%", "weight": 4},  # voix principale, "Warm/Confident"
-    {"voice": "en-US-GuyNeural", "rate": "+8%", "weight": 2},                  # "Passion"
-    {"voice": "en-US-ChristopherNeural", "rate": "+6%", "weight": 2},         # "Reliable, Authority"
-    {"voice": "en-US-BrianMultilingualNeural", "rate": "+10%", "weight": 2},  # "Approachable, Sincere"
+    {"voice": "en-US-Andrew:DragonHDLatestNeural", "rate": "+0%", "weight": 4},  # voix principale, "Warm/Confident"
+    {"voice": "en-US-Davis:DragonHDLatestNeural", "rate": "+0%", "weight": 2},   # remplace Guy (pas de version HD)
+    {"voice": "en-US-Steffan:DragonHDLatestNeural", "rate": "+0%", "weight": 2}, # remplace Christopher (pas de version HD)
+    {"voice": "en-US-Brian:DragonHDLatestNeural", "rate": "+0%", "weight": 2},
 ]
 
 SCRIPT_LANGUAGE = "en"
