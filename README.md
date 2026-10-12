@@ -1,105 +1,139 @@
-# Générateur vidéo IA — YouTube format long (100% gratuit)
+# Générateur vidéo IA — chaîne YouTube MAXXOU (100% automatisé, coût quasi nul)
 
-Pipeline automatisé : script IA local → voix off → montage avec visuels libres de droits → publication YouTube.
-Niche : motivation / développement personnel, **en anglais** (audience internationale, meilleur RPM que le marché FR).
-Rythme visé : 1 vidéo/jour, 15-20 minutes.
+Pipeline entièrement automatisé : script IA local → voix off → sous-titres karaoké → visuels libres
+de droits → musique de fond générée → miniature IA → publication YouTube. Tourne en continu sur
+**GitHub Actions** (pas besoin que le PC soit allumé). Niche : motivation / développement personnel,
+**en anglais** (audience internationale, meilleur RPM que le marché FR).
 
-## Ce qui est déjà installé, configuré et testé
-- **Ollama** (`llama3.2:3b`) — génère le script en local, aucune clé API, aucun compte. Script en anglais.
-- **Azure Cognitive Services Speech** (tier gratuit Free F0, ~500k caractères/mois) — voix off, voix
-  `en-US-AndrewMultilingualNeural` (chaleureuse/confiante), +12% de rythme. Remplace edge-tts depuis le
-  12/10/2026 (Microsoft bloque désormais edge-tts sur les IP de datacenter/cloud dont GitHub Actions).
-- **Sous-titres dynamiques** — surbrillance mot par mot façon karaoké (`subtitles.py`), synchronisée précisément
-  grâce aux timings Azure Speech (WordBoundary), gravée via ffmpeg/libass (rapide, ~0.4x la durée de la vidéo).
-- **Visuels contextuels** — le script est découpé en segments de ~15-20s ; chaque segment génère son propre
-  mot-clé de recherche via Ollama (ex: "man walking alone desert") pour trouver un clip Pexels qui correspond
-  vraiment à ce qui est raconté, au lieu d'un pool générique pioché au hasard.
-- **Titre/description/tags optimisés** — générés par Ollama à partir du script réel, sauvegardés en note
-  `.txt` à côté de chaque vidéo, réutilisés automatiquement pour la publication YouTube.
-- **Miniature automatique** — une frame forte extraite de la vidéo + texte accrocheur en surimpression
-  (`thumbnail_generator.py`), générée pour chaque vidéo et appliquée automatiquement sur YouTube si le compte
-  est éligible (voir limite ci-dessous).
-- **Identité de chaîne** (`branding_kit/`, générée une fois, pas par vidéo) — nom **"Elevate Your Self"**
-  (+ 8 alternatives dans `channel_name_options.txt`), 4 photos de profil, 4 bannières, et une description de
-  chaîne, générées par IA (Pollinations.ai + Ollama, gratuit, sans compte) via `channel_branding.py`.
-  À téléverser manuellement dans YouTube Studio (Personnalisation → Image de marque) : c'est une action
-  ponctuelle (pas quotidienne), l'API YouTube pour ça est plus complexe qu'un simple glisser-déposer.
-  **Voir `GUIDE_UTILISATION.md`** pour la marche à suivre complète, pensé pour piloter le bot sans aide.
-- **Clé Pexels** — configurée (variable d'environnement `PEXELS_API_KEY`), visuels stock réels fonctionnels.
-- **ffmpeg + moviepy** — montage automatique testé en 1080p/30fps.
-- **Tâche planifiée Windows** `YouTubeAI-DailyVideo` — déclenchement quotidien à 9h, upload YouTube en **privé**.
-- **Stockage** : toutes les vidéos finies vont dans `D:\YouTube Videos` (disque 2To), nommées
-  `AAAA-MM-JJ_sujet-de-la-video.mp4` + leur note `.txt` jumelle — pas d'accumulation sur le disque système.
-- Le pipeline complet script→voix→visuels ciblés→montage→sous-titres→métadonnées→upload a été testé de bout en bout.
+## État actuel (en production)
 
-## Ce qu'il reste à faire
+- **3 vidéos/jour**, publiées automatiquement et **publiquement** sur la chaîne :
+  - 1 vidéo longue (15-20 min) à **19h** (heure de Paris)
+  - 2 Shorts (~50s) à **8h** et **21h**
+- Hébergé sur **GitHub Actions** (dépôt public `MaxxouTLR/youtube-ai-generator`, choisi pour les
+  minutes Actions gratuites illimitées). Le workflow `.github/workflows/daily-videos.yml` gère deux
+  jeux de cron (heure d'hiver/été) et recalcule l'heure réelle de Paris à chaque déclenchement.
+- Secrets GitHub Actions configurés : `AZURE_SPEECH_KEY`, `AZURE_SPEECH_REGION`, `PEXELS_API_KEY`,
+  `YOUTUBE_CLIENT_SECRET_B64`, `YOUTUBE_TOKEN_B64`.
+- OAuth YouTube en statut **Production** (pas Testing) — évite l'expiration du token à 7 jours,
+  nécessaire pour un hébergement headless.
+- Produit associé (affiliation/CTA) : lien inséré automatiquement en fin de description de chaque
+  vidéo via `config.PRODUCT_CTA`.
 
-### Accès YouTube Data API (pour la publication automatique) — obligatoire
-1. Aller sur https://console.cloud.google.com/ , créer un projet.
-2. Menu "API et services" → activer **YouTube Data API v3**.
-3. "Identifiants" → créer des identifiants OAuth → type **Application de bureau**.
-4. Télécharger le fichier JSON, le renommer `client_secret.json` et le placer dans ce dossier
-   (`C:\Users\ovila\youtube-ai-generator\client_secret.json`).
-5. Au premier lancement avec `--publish`, une fenêtre Google s'ouvrira pour vous connecter (une seule fois) —
-   nécessaire aussi pour que la tâche planifiée quotidienne puisse publier automatiquement.
+## Composants du pipeline
 
-### ElevenLabs (optionnel, testé — non retenu par défaut)
-Clé configurée, mais **inutilisable telle quelle** : ElevenLabs bloque désormais l'accès API aux voix de sa
-bibliothèque pour les comptes gratuits (`402 payment_required`). Il faudrait ajouter une voix personnelle
-dans "My Voices" depuis leur dashboard web pour débloquer l'API gratuite — et même alors, le quota gratuit
-(~10k caractères/mois) ne couvre qu'une fraction d'UNE vidéo de 15-20 min. Non viable pour un rythme quotidien
-sans passer sur un forfait payant (~99$/mois). Le pipeline reste donc sur Azure Speech par défaut.
+- **Script** — Ollama local (`llama3.2:3b`), aucune clé API, aucun compte. Sujets générés à l'infini
+  par Ollama lui-même (`script_generator._generate_new_topic`, évite les ~60 derniers sujets utilisés),
+  avec repli sur `FALLBACK_TOPICS` si Ollama échoue 3 fois de suite. Règles de rétention (hooks,
+  rythme, pas de répétition) injectées dans le prompt (`HOOK_RULES`).
+- **Titres** — 5 gabarits distincts (`TITLE_STYLES` : question_tension, you_are_not, real_reason,
+  stop_start, numbered_signs) choisis aléatoirement pondéré par Ollama à partir du script réel, pour
+  éviter la convergence vers un seul style répétitif.
+- **Voix off** — **Azure Cognitive Services Speech** (tier gratuit Free F0, ~500k caractères/mois).
+  Voix unique `en-US-AndrewMultilingualNeural` (+12% de rythme) — configuration qui a produit les
+  meilleures performances mesurées sur la chaîne. Remplace edge-tts depuis le 12/10/2026 (Microsoft
+  bloque désormais edge-tts sur les IP de datacenter/cloud, dont GitHub Actions). Un garde-fou
+  (`_trim_long_silences`) recadre automatiquement tout silence de plus de 0.45s entre deux mots,
+  quelle que soit la voix utilisée.
+- **Sous-titres dynamiques** — surbrillance mot par mot façon karaoké (`subtitles.py`), synchronisée
+  sur les timings Azure Speech (`WordBoundary`), gravée via le filtre natif ffmpeg/libass (rapide,
+  ~0.4x la durée de la vidéo).
+- **Visuels contextuels** — le script est découpé en segments (~15-25s pour le format long, plus
+  courts pour les Shorts) ; chaque segment génère son propre mot-clé de recherche via Ollama pour
+  trouver un clip Pexels pertinent, au lieu d'un pool générique.
+- **Musique de fond** — générée localement par synthèse numpy (`music_generator.py`, nappes
+  ambiantes, 6 pistes), zéro risque de droits d'auteur, mixée à bas volume sous la voix off. Activée
+  par défaut (`config.MUSIC_ENABLED = True`).
+- **Miniature** — fond généré par IA (Pollinations.ai, gratuit) avec un prompt adapté au sujet exact
+  de la vidéo, texte accrocheur en surimpression (mot-clé fort en couleur de marque). Repli
+  automatique sur une frame extraite de la vidéo si la génération IA échoue.
+- **Identité de chaîne** (`channel_branding.py`, usage ponctuel) — nom de chaîne, photo de profil,
+  bannière générés par IA (Ollama + Pollinations.ai).
+- **Titre/description/tags** — générés par Ollama à partir du script réel, sauvegardés en note
+  `.txt`/`metadata.txt` à côté de chaque vidéo, réutilisés pour la publication YouTube.
+- **Publication** — YouTube Data API, miniature personnalisée appliquée automatiquement (nécessite un
+  compte vérifié par téléphone, sinon avertissement sans bloquer le pipeline).
 
-## Utilisation
+## Utilisation locale (test / développement)
 
 ```
 cd C:\Users\ovila\youtube-ai-generator
 
-# Générer script + voix + vidéo (sans publier)
+# Variables d'environnement necessaires (ou utiliser celles deja configurees sur cette machine)
+# AZURE_SPEECH_KEY, AZURE_SPEECH_REGION, PEXELS_API_KEY
+
+# Video longue : genere tout, ne publie pas
 python run_pipeline.py
 
-# Générer ET publier automatiquement sur YouTube (en privé par défaut, voir config.py)
+# Video longue : genere ET publie sur YouTube (public par defaut, voir config.py)
 python run_pipeline.py --publish
 
-# Imposer un sujet précis
+# Short : genere tout, ne publie pas
+python run_shorts_pipeline.py
+
+# Imposer un sujet precis
 python run_pipeline.py --topic "how to build unshakeable confidence" --publish
 ```
 
-La tâche planifiée `YouTubeAI-DailyVideo` (visible dans le Planificateur de tâches Windows) lance
-`python run_pipeline.py --publish` chaque jour à 9h. Ollama démarre automatiquement avec Windows,
-pas d'action requise de votre part une fois `client_secret.json` en place.
+En production, c'est le workflow GitHub Actions qui lance ces commandes automatiquement — aucune
+action locale n'est nécessaire au quotidien. L'exécution manuelle sert surtout à tester une
+modification avant de la pousser (`workflow_dispatch` sur GitHub avec la case "Publier" décochée pour
+un run de test sans publication réelle).
 
-La vidéo finale est publiée en **privé** par défaut (`YOUTUBE_PRIVACY_STATUS` dans `config.py`) —
-passez-la à `"public"` une fois que vous avez vérifié la qualité sur quelques vidéos.
+### Accès YouTube Data API (déjà configuré, pour référence)
+1. https://console.cloud.google.com/ → créer un projet.
+2. "API et services" → activer **YouTube Data API v3**.
+3. "Identifiants" → créer des identifiants OAuth → type **Application de bureau**.
+4. Télécharger le JSON, le renommer `client_secret.json`.
+5. Authentification unique via `InstalledAppFlow.run_local_server()` (ouvre le navigateur système,
+   hors de portée de l'automatisation) — génère `token.json`, à encoder en base64 pour le secret
+   GitHub `YOUTUBE_TOKEN_B64`.
 
-## Limites connues (honnêteté sur le "100% gratuit")
-- Le modèle local (3B paramètres) écrit correctement en anglais (meilleur qu'en français, plus de données
-  d'entraînement) mais reste en dessous d'un GPT-4/Claude — une répétition occasionnelle de tournure peut
-  apparaître malgré les consignes anti-répétition. Relisez les premières vidéos avant de passer en public.
-- Les visuels sont des vraies vidéos stock (choisies par mot-clé selon le contenu de chaque segment), pas de
-  vrai "avatar IA" ni de scènes générées (le GPU AMD de cette machine ne permet pas cela gratuitement).
-- **Temps d'encodage réel mesuré** : ~3 à 3.5x la durée de la vidéo (goulot d'étranglement = traitement image
-  par image en Python pour le recadrage/redimensionnement, pas l'encodage x264 lui-même). Une vidéo de 15-20 min
-  prend donc environ 50-70 minutes à assembler. Largement compatible avec une tâche planifiée quotidienne
-  (limite fixée à 2h dans la tâche), mais à savoir si vous vouliez un résultat quasi-instantané.
-- **Politique YouTube "spam/contenu généré en masse"** : gardez de la variété entre les vidéos
-  (`FALLBACK_TOPICS` dans `script_generator.py`) et surveillez les premières semaines de publication.
-- Pas de musique de fond par défaut (droits d'auteur) — vous pouvez ajouter des fichiers libres de droits
-  dans `assets/music/` et les mixer manuellement si voulu.
-- **Miniatures personnalisées sur YouTube** : nécessitent un compte vérifié par numéro de téléphone (limite
-  imposée par YouTube, pas par ce script). Si non vérifié, l'upload de la vidéo réussit quand même mais la
-  miniature générée n'est pas appliquée (avertissement affiché, sans bloquer le pipeline) — le fichier
-  `_thumb.jpg` reste disponible dans `D:\YouTube Videos` pour l'ajouter manuellement une fois le compte vérifié.
+### ElevenLabs (optionnel, testé — non retenu)
+Clé configurée (`voice_generator_elevenlabs.py`), mais **inutilisable telle quelle** : ElevenLabs
+bloque l'accès API aux voix de sa bibliothèque pour les comptes gratuits (`402 payment_required`), et
+même en débloquant l'accès le quota gratuit (~10k caractères/mois) ne couvre qu'une fraction d'une
+vidéo de 15-20 min. Non viable sans passer sur un forfait payant (~99$/mois). Le pipeline reste donc
+sur Azure Speech par défaut.
+
+## Limites connues (honnêteté sur le pipeline)
+- Le modèle local (3B paramètres) écrit correctement en anglais (meilleur qu'en français, plus de
+  données d'entraînement) mais reste en dessous d'un GPT-4/Claude — une répétition occasionnelle de
+  tournure peut apparaître malgré les consignes anti-répétition.
+- Les visuels sont des vraies vidéos stock (choisies par mot-clé selon le contenu de chaque segment),
+  pas de vrai "avatar IA" ni de scènes générées (pas de GPU compatible pour ça gratuitement).
+- **Temps d'assemblage** : le goulot d'étranglement est le traitement image par image en Python
+  (recadrage/redimensionnement moviepy), pas l'encodage x264 lui-même. Une vidéo longue prend environ
+  50-70 min à assembler sur un runner GitHub Actions standard.
+- **Politique YouTube "contenu produit en masse"** (YouTube Partner Program) : signaux de variété
+  surveillés (sujets, titres, voix) — voir l'historique du projet pour les ajustements faits suite à
+  cette politique.
+- **Fiabilité du `schedule` GitHub Actions** : peut rester silencieux plusieurs heures sans se
+  déclencher (comportement documenté comme peu fiable pour les schedules nouvellement modifiés) —
+  un matching par fenêtre de tolérance (100 min) et un anti-doublon (`output/last_auto_run.json`)
+  compensent les déclenchements retardés ou ratés.
+- **Miniatures personnalisées** : nécessitent un compte YouTube vérifié par téléphone. Si non
+  vérifié, l'upload réussit quand même mais la miniature générée n'est pas appliquée (avertissement,
+  pipeline non bloqué).
+- Dépôt GitHub **public** : `products/` (contenu payant éventuel) est dans `.gitignore`, ne doit
+  jamais être commité.
 
 ## Fichiers du projet
-- `config.py` — tous les réglages (voix, langue, durée cible, dossier de sortie, etc.)
-- `script_generator.py` — script par sections (Ollama), mots-clés visuels par segment, titre/description/tags
-- `voice_generator.py` — synthèse vocale gratuite (Azure Speech) + timings mot par mot pour les sous-titres
-- `voice_generator_elevenlabs.py` — alternative ElevenLabs (usage ponctuel seulement, voir limites ci-dessus)
+- `config.py` — tous les réglages (voix, langue, durée cible, dossier de sortie, CTA produit, etc.)
+- `script_generator.py` — script par sections (Ollama), rotation de sujets infinie, 5 gabarits de
+  titre, mots-clés visuels par segment, titre/description/tags
+- `voice_generator.py` — synthèse vocale (Azure Cognitive Services Speech) + timings mot par mot pour
+  les sous-titres + garde-fou anti-silences longs
+- `voice_generator_elevenlabs.py` — alternative ElevenLabs (non retenue, voir limites ci-dessus)
 - `subtitles.py` — génère les sous-titres dynamiques (.ass, style karaoké) à partir des timings
 - `visuals_fetcher.py` — recherche/téléchargement de clips Pexels (par mot-clé ou en lot générique)
-- `video_assembler.py` — montage par segments synchronisés (moviepy/ffmpeg) + gravure des sous-titres
-- `thumbnail_generator.py` — miniature (frame vidéo + texte accrocheur en surimpression)
-- `channel_branding.py` — nom de chaîne, photo de profil, bannière (Ollama + Pollinations.ai) — usage ponctuel
+- `music_generator.py` — musique de fond ambiante générée localement (numpy, zéro droits d'auteur)
+- `video_assembler.py` — montage par segments synchronisés (moviepy/ffmpeg) + mixage musique +
+  gravure des sous-titres
+- `thumbnail_generator.py` — miniature (fond généré par IA + texte accrocheur en surimpression)
+- `channel_branding.py` — nom de chaîne, photo de profil, bannière (Ollama + Pollinations.ai) — usage
+  ponctuel
 - `youtube_uploader.py` — publication automatique + miniature (YouTube Data API)
-- `run_pipeline.py` — orchestre tout le pipeline, decoupe le script, ecrit la note titre/description/tags
+- `run_pipeline.py` — orchestre le pipeline vidéo longue
+- `run_shorts_pipeline.py` — orchestre le pipeline Shorts
+- `.github/workflows/daily-videos.yml` — workflow GitHub Actions (planification, retry, secrets)
