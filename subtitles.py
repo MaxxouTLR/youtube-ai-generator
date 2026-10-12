@@ -1,5 +1,5 @@
 """Genere des sous-titres dynamiques (surbrillance mot par mot, style karaoke)
-a partir des timings de mots fournis par edge-tts. Rendu ensuite par ffmpeg/libass
+a partir des timings de mots fournis par Azure Speech. Rendu ensuite par ffmpeg/libass
 (rapide, natif) plutot que par un compositing image-par-image en Python."""
 import json
 

@@ -74,7 +74,7 @@ def main():
         metadata["tags"] = (metadata["tags"] + ["shorts"])[:15]
     print(f"    Titre: {metadata['title']}")
 
-    print("2/6 - Generation de la voix off (edge-tts) + timings mot par mot...")
+    print("2/6 - Generation de la voix off (Azure Speech) + timings mot par mot...")
     raw_audio_path, timing_path = voice_generator.generate_voice_with_timing(
         script, out_path=os.path.join(config.AUDIO_DIR, f"voiceover_{run_id}.mp3")
     )
