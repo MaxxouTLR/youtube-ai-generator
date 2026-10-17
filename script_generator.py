@@ -132,6 +132,105 @@ FALLBACK_TOPICS = [
     "the one habit that separates winners from everyone else",
 ]
 
+PRODUCTIVITY_TOPICS = [
+    "why your morning routine matters more than your to-do list",
+    "the 2-minute rule that beats procrastination",
+    "how to build a habit that actually sticks",
+    "why multitasking is secretly making you slower",
+    "the power of a single daily non-negotiable habit",
+    "how to recover fast after breaking a streak",
+    "why willpower alone always runs out",
+    "the real cost of constant phone checking",
+    "how to stop confusing being busy with being productive",
+    "the planning trap that keeps you from ever starting",
+]
+
+PSYCHOLOGY_TOPICS = [
+    "why we repeat the same relationship patterns",
+    "the real reason silence feels so loud in an argument",
+    "how people-pleasing quietly destroys your self-respect",
+    "why setting a boundary feels like betrayal at first",
+    "the psychology behind why we self-sabotage good things",
+    "how childhood patterns shape who we choose to love",
+    "why validation from others never actually fills the gap",
+    "the hidden reason you overthink every text message",
+    "why it's so hard to accept a genuine compliment",
+    "how to stop mistaking comfort for compatibility",
+]
+
+# Finance volontairement cantonnee a l'etat d'esprit/discipline generale, JAMAIS de conseil
+# d'investissement/fiscal/produit specifique - meme risque de desinformation deja ecarte pour le
+# choix initial de niche (voir [[project_youtube_ai_generator]]).
+FINANCE_TOPICS = [
+    "why saving a little consistently beats one big effort",
+    "the real reason lifestyle inflation keeps you broke",
+    "how delayed gratification quietly builds real wealth",
+    "why most people never recover from one bad money habit",
+    "the hidden cost of buying things to impress people",
+    "how to build financial discipline without feeling deprived",
+    "why an emergency fund changes how you make decisions",
+    "the mindset shift that turns debt into motivation",
+    "why impulse spending is rarely about the money itself",
+    "how financial anxiety quietly shapes every decision you make",
+]
+
+# Scenarios illustratifs presentes comme tels (pas des faits verifiables sur une personne/un
+# evenement reel nomme) pour eviter tout risque de desinformation avec un modele 3B sujet aux
+# hallucinations.
+STORIES_TOPICS = [
+    "the stranger who changed everything with one sentence",
+    "what a janitor once taught about real success",
+    "the rejection that became an unexpected turning point",
+    "a small act of kindness that came back years later",
+    "the moment giving up almost won, and what stopped it",
+    "what losing everything can teach about what actually matters",
+    "the quiet comeback nobody saw coming",
+    "a stranger's offhand advice that outlived the conversation",
+    "the mentor who said the one thing nobody else would",
+    "the failure that only made sense years afterward",
+]
+
+# Chaque entree : poids (sur un total arbitraire) + description injectee dans le prompt de
+# generation de sujet + exemples de style pour ce registre. Le CODE tire la categorie au hasard
+# (pondere) PUIS ne donne que les exemples de cette categorie au modele - meme logique que
+# _pick_title_style()/TITLE_STYLES pour les titres : on force la variete mecaniquement au lieu
+# d'esperer qu'un modele 3B varie de lui-meme entre plusieurs registres a la fois.
+TOPIC_CATEGORIES = {
+    "motivation": {
+        "weight": 30,
+        "description": "motivation and self-improvement: discipline, mindset, overcoming fear, resilience",
+        "examples": FALLBACK_TOPICS,
+    },
+    "productivity": {
+        "weight": 20,
+        "description": "productivity and habits: routines, focus, time management, procrastination, consistency",
+        "examples": PRODUCTIVITY_TOPICS,
+    },
+    "psychology": {
+        "weight": 20,
+        "description": "psychology and relationships: human behavior, communication, boundaries, connection, self-perception",
+        "examples": PSYCHOLOGY_TOPICS,
+    },
+    "finance": {
+        "weight": 15,
+        "description": (
+            "personal finance MINDSET ONLY, in general terms (saving habits, delayed "
+            "gratification, avoiding lifestyle inflation, financial discipline) - NEVER give "
+            "specific investment, stock, crypto, or tax advice"
+        ),
+        "examples": FINANCE_TOPICS,
+    },
+    "stories": {
+        "weight": 15,
+        "description": (
+            "short inspiring narrative scenario about overcoming adversity or a surprising "
+            "realization - phrase it as an illustrative story/scenario, never as a claim about a "
+            "specific real, named, verifiable person or event"
+        ),
+        "examples": STORIES_TOPICS,
+    },
+}
+
 TOPIC_HISTORY_FILE = os.path.join(config.OUTPUT_DIR, "used_topics.json")
 # File d'attente prioritaire : sujets a utiliser en premier, dans l'ordre, avant de repasser sur la
 # generation Ollama habituelle. Alimentee manuellement (ex: idees suggerees par YouTube Studio) - le
@@ -143,9 +242,10 @@ PRIORITY_TOPICS_FILE = os.path.join(config.OUTPUT_DIR, "priority_topics.json")
 # (source infinie), et FALLBACK_TOPICS ne sert plus que d'exemples de style + repli si Ollama echoue.
 MAX_TOPIC_HISTORY = 400  # ~50 jours d'historique a cette cadence, suffisant pour eviter les doublons proches
 
-TOPIC_GENERATION_PROMPT = """You invent topic ideas for a motivation / self-improvement YouTube channel.
+TOPIC_GENERATION_PROMPT = """You invent topic ideas for a YouTube channel. This particular video is in
+the "{category}" register: {category_description}.
 
-Topics are short lowercase phrases like these (style examples, do not reuse them):
+Topics in this register are short lowercase phrases like these (style examples, do not reuse them):
 {examples}
 
 Do NOT reuse any of these already-used topics, even reworded:
@@ -156,14 +256,30 @@ no numbering, nothing else in your reply.
 """
 
 
+def _pick_category() -> str:
+    """Tire une categorie de sujet au hasard, ponderee par TOPIC_CATEGORIES[...]['weight']."""
+    import random
+    names = list(TOPIC_CATEGORIES.keys())
+    weights = [TOPIC_CATEGORIES[n]["weight"] for n in names]
+    return random.choices(names, weights=weights, k=1)[0]
+
+
 def _generate_new_topic(used: list[str]) -> str:
     """Demande a Ollama un sujet inedit, jamais utilise recemment (source infinie de sujets,
-    contrairement a une simple rotation sur une liste fixe)."""
+    contrairement a une simple rotation sur une liste fixe). La categorie est tiree au hasard par
+    le CODE (voir TOPIC_CATEGORIES) puis seule celle-ci est donnee au modele, pour forcer la
+    variete de registre au lieu d'esperer qu'un modele 3B varie de lui-meme."""
+    category = _pick_category()
+    info = TOPIC_CATEGORIES[category]
     recent = used[-60:]
-    examples = "\n".join(f"- {t}" for t in FALLBACK_TOPICS[:8])
+    examples = "\n".join(f"- {t}" for t in info["examples"][:8])
     recent_block = "\n".join(f"- {t}" for t in recent) if recent else "(none yet)"
     raw = _call_ollama_with_retry(
-        TOPIC_GENERATION_PROMPT.format(examples=examples, recent_used=recent_block), attempts=2
+        TOPIC_GENERATION_PROMPT.format(
+            category=category, category_description=info["description"],
+            examples=examples, recent_used=recent_block,
+        ),
+        attempts=2,
     )
     topic = raw.strip().splitlines()[0].strip().strip('."\'').lower()
     topic = re.sub(r"^(topic|idea)\s*:\s*", "", topic)
@@ -225,9 +341,10 @@ def _pick_topic() -> str:
             break
 
     if not topic:
-        available = [t for t in FALLBACK_TOPICS if t not in used]
+        all_fallback_topics = [t for info in TOPIC_CATEGORIES.values() for t in info["examples"]]
+        available = [t for t in all_fallback_topics if t not in used]
         if not available:
-            available = FALLBACK_TOPICS
+            available = all_fallback_topics
         topic = random.choice(available)
 
     used.append(topic)
