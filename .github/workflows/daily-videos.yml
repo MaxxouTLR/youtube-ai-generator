@@ -15,10 +15,10 @@ on:
   schedule:
     # Un cron GitHub Actions est fixe en UTC et ne suit PAS le changement d'heure ete/hiver. Plutot
     # que de figer un horaire UTC qui deriverait d'1h a chaque bascule, on declare DEUX jeux de cron
-    # couvrant les 3 horaires locaux Paris (8h et 21h pour les shorts, 19h pour la longue - reduit de
-    # 5 a 3 videos/jour le 28/09/2026, demande explicite "passe a 3 videos par jour et reste comme ca" ;
-    # on garde les 2 creneaux d'engagement les plus efficaces, reveil/trajet et prime time soir, et on
-    # abandonne la pause dejeuner/fin d'apres-midi) : un en
+    # couvrant les 2 horaires locaux Paris (8h pour le short, 19h pour la longue - reduit de 3 a 2
+    # videos/jour le 17/10/2026, suite a la chute des vues a 0 constatee des le 14/10/2026 sur les
+    # Shorts publies a cadence soutenue ; on garde reveil/trajet le matin et prime time soir, on
+    # abandonne le 2e short de 21h. Voir [[project_youtube_ai_generator]]) : un en
     # supposant l'heure d'hiver (UTC+1) et un en supposant l'heure d'ete (UTC+2). A chaque
     # declenchement, le step "Determiner le type de run" recalcule l'heure locale Paris REELLE au
     # moment du run et decide quoi faire - celui des deux jeux qui ne correspond pas a la saison en
@@ -33,8 +33,8 @@ on:
     # trouve : pousser un commit relance le declenchement pour un moment. Voir aussi le matching par
     # fenetre de tolerance plus bas (protection contre le retard de 50-70min constate en pratique sur
     # les rares declenchements reels, qui faisait sinon systematiquement tomber en "skip").
-    - cron: "7 7,18,20 * * *"  # hypothese heure d'hiver (UTC+1)
-    - cron: "7 6,17,19 * * *"  # hypothese heure d'ete (UTC+2)
+    - cron: "7 7,18 * * *"  # hypothese heure d'hiver (UTC+1)
+    - cron: "7 6,17 * * *"  # hypothese heure d'ete (UTC+2)
 
 permissions:
   contents: write
@@ -73,7 +73,7 @@ jobs:
             # publier deux fois le meme creneau si les deux jeux de cron (hiver/ete) finissent par
             # matcher le meme jour a cause du retard.
             best_type=""; best_target=""; best_diff=999
-            for entry in "long:19" "short:08" "short:21"; do
+            for entry in "long:19" "short:08"; do
               type="${entry%%:*}"; target="${entry##*:}"
               target_min=$(( 10#$target * 60 ))
               diff=$(( now_min - target_min )); [ "$diff" -lt 0 ] && diff=$(( -diff ))

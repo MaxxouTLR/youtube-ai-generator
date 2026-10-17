@@ -61,7 +61,10 @@ MAX_STOCK_CLIPS = 25
 # --- Format Shorts (portrait, video courte) ---
 SHORTS_WIDTH = 1080
 SHORTS_HEIGHT = 1920
-SHORTS_TARGET_SECONDS = 50   # duree visee (marge de securite sous la limite Shorts)
+SHORTS_TARGET_SECONDS = 20   # duree visee - reduit de 50 a 20 le 17/10/2026 : les Shorts qui ont le
+# mieux performe historiquement (200 a 1000+ vues) duraient tous 11-26s, alors que ceux generes a la
+# cible de 50s (37-51s en pratique) sont tombes a 0 vue des le 14/10/2026 - l'algorithme Shorts
+# favorise nettement le format court/swipe rapide sur une petite chaine. Voir [[project_youtube_ai_generator]].
 SHORTS_MAX_SECONDS = 59      # au-dela, YouTube ne garantit plus le classement "Shorts" classique
 SHORTS_WORDS_PER_SEGMENT = 15  # segments courts -> coupes visuelles frequentes malgre la duree reduite
 SHORTS_MIN_SEGMENT_SECONDS = 2.5  # segments plus courts que ca sont fusionnes au voisin (evite le clignotement)
