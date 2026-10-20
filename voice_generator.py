@@ -25,7 +25,10 @@ TICKS_PER_SECOND = 10_000_000
 def _pick_voice() -> tuple[str, str]:
     """Tire une (voix, rythme) au hasard dans config.TTS_VOICE_POOL, pondere pour garder la voix
     principale dominante. Un choix par appel = une seule voix pour toute la duree d'UNE video
-    (coherence narrative), mais pas la meme voix a chaque video."""
+    (coherence narrative), mais pas la meme voix a chaque video.
+    TTS_VOICE / TTS_RATE (variables d'environnement) imposent une voix, ex. pour la chaine FR."""
+    if os.environ.get("TTS_VOICE"):
+        return os.environ["TTS_VOICE"], os.environ.get("TTS_RATE", "+0%")
     choice = random.choices(
         config.TTS_VOICE_POOL, weights=[v["weight"] for v in config.TTS_VOICE_POOL], k=1
     )[0]
@@ -34,8 +37,9 @@ def _pick_voice() -> tuple[str, str]:
 
 def _build_ssml(text: str, voice: str, rate: str) -> str:
     escaped = saxutils.escape(text)
+    lang = voice[:5] if voice[2:3] == "-" else "en-US"   # "fr-FR-RemyMultilingualNeural" -> "fr-FR"
     return (
-        '<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en-US">'
+        f'<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="{lang}">'
         f'<voice name="{voice}"><prosody rate="{rate}">{escaped}</prosody></voice>'
         "</speak>"
     )
