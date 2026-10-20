@@ -121,6 +121,9 @@ jobs:
         run: |
           sudo apt-get update -y
           sudo apt-get install -y fonts-dejavu-core
+          # Police grasse "affiche" pour l'accroche et les sous-titres animes des Shorts (montage.py).
+          # "|| true" : si le paquet manque, libass retombe sur DejaVu, le run ne doit jamais casser pour ca.
+          sudo apt-get install -y fonts-montserrat || true
           fc-cache -f
 
       # Place AVANT l'installation d'Ollama : si le cache existe deja, "ollama pull" plus bas
@@ -162,6 +165,7 @@ jobs:
           AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
           AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
           SUBTITLE_FONT_NAME: "DejaVu Sans"
+          SHORTS_FONT_NAME: "Montserrat Black"
           PUBLISHED_DIR: ${{ runner.temp }}/published
         run: |
           ARGS="--publish"
@@ -180,6 +184,7 @@ jobs:
           AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
           AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
           SUBTITLE_FONT_NAME: "DejaVu Sans"
+          SHORTS_FONT_NAME: "Montserrat Black"
           PUBLISHED_DIR: ${{ runner.temp }}/published
         run: |
           ARGS="--publish"

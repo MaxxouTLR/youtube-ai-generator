@@ -19,6 +19,7 @@ import visuals_fetcher
 import video_assembler
 import subtitles
 import youtube_uploader
+import montage
 from run_pipeline import slugify, chunk_script, write_metadata_note
 
 
@@ -80,9 +81,6 @@ def main():
     )
     print(f"    Audio -> {raw_audio_path}")
 
-    print("    Mixage d'une musique de fond discrete...")
-    audio_path = video_assembler.mix_background_music(raw_audio_path)
-    print(f"    Audio (avec musique) -> {audio_path}")
 
     with open(timing_path, "r", encoding="utf-8") as f:
         word_boundaries = json.load(f)
@@ -99,6 +97,7 @@ def main():
     os.makedirs(run_stock_dir, exist_ok=True)
 
     segments = []
+    shots = []   # (clip, debut du passage narre en s) pour le montage dynamique
     word_idx = 0
     total_boundary_words = len(word_boundaries)
     for i, para in enumerate(paragraphs):
@@ -121,36 +120,43 @@ def main():
               + ("" if clip_path else " -> ECHEC, ignore"))
         if clip_path:
             segments.append((clip_path, duration))
+            shots.append((clip_path, 0.0 if not shots else start))
 
     if not segments:
         raise RuntimeError("Aucun visuel n'a pu etre recupere pour aucun segment du script.")
-
-    segments = _merge_short_segments(segments, config.SHORTS_MIN_SEGMENT_SECONDS)
-    print(f"    {len(segments)} segments visuels apres fusion des coupes trop courtes")
-
-    os.makedirs(config.VIDEO_DIR, exist_ok=True)
-    raw_video_path = video_assembler.assemble_video_from_segments(
-        audio_path, segments, out_path=os.path.join(config.VIDEO_DIR, f"_tmp_short_sans_sous_titres_{run_id}.mp4"),
-        width=config.SHORTS_WIDTH, height=config.SHORTS_HEIGHT,
-    )
-    print(f"    Video (sans sous-titres) -> {raw_video_path}")
-    shutil.rmtree(run_stock_dir, ignore_errors=True)
 
     folder_name = make_output_folder_name(topic)
     video_folder = os.path.join(config.PUBLISHED_DIR, folder_name)
     os.makedirs(video_folder, exist_ok=True)
     print(f"    Dossier de la video -> {video_folder}")
+    os.makedirs(config.VIDEO_DIR, exist_ok=True)
+    final_path = os.path.join(video_folder, "short.mp4")
+    tmp_files = [raw_audio_path, timing_path]
 
-    print("4/6 - Generation et gravure des sous-titres dynamiques (format vertical)...")
-    ass_path = subtitles.build_ass_from_timing_file(
-        timing_path, os.path.join(config.VIDEO_DIR, f"_tmp_short_subtitles_{run_id}.ass"), shorts=True
-    )
-    video_path = video_assembler.burn_subtitles(
-        raw_video_path, ass_path, os.path.join(video_folder, "short.mp4")
-    )
-    print(f"    Video finale (avec sous-titres) -> {video_path}")
+    print("4/6 - Montage dynamique (mouvements camera, transitions, accroche, sous-titres animes, sound design)...")
+    try:
+        video_path = montage.assemble_short(
+            raw_audio_path, shots, word_boundaries, metadata["title"], final_path,
+            work_dir=os.path.join(run_stock_dir, "montage"),
+        )
+    except Exception as exc:
+        # Filet de securite : un Short publie avec l'ancien montage vaut mieux qu'un creneau rate.
+        print(f"    [warn] Montage dynamique en echec ({exc}) -> repli sur le montage classique")
+        audio_path = video_assembler.mix_background_music(raw_audio_path)
+        segments = _merge_short_segments(segments, config.SHORTS_MIN_SEGMENT_SECONDS)
+        raw_video_path = video_assembler.assemble_video_from_segments(
+            audio_path, segments, out_path=os.path.join(config.VIDEO_DIR, f"_tmp_short_sans_sous_titres_{run_id}.mp4"),
+            width=config.SHORTS_WIDTH, height=config.SHORTS_HEIGHT,
+        )
+        ass_path = subtitles.build_ass_from_timing_file(
+            timing_path, os.path.join(config.VIDEO_DIR, f"_tmp_short_subtitles_{run_id}.ass"), shorts=True
+        )
+        video_path = video_assembler.burn_subtitles(raw_video_path, ass_path, final_path)
+        tmp_files += [raw_video_path, ass_path, audio_path]
+    shutil.rmtree(run_stock_dir, ignore_errors=True)
+    print(f"    Video finale -> {video_path}")
 
-    for tmp_file in (raw_video_path, ass_path, raw_audio_path, audio_path, timing_path):
+    for tmp_file in tmp_files:
         try:
             os.remove(tmp_file)
         except OSError:

@@ -66,7 +66,7 @@ SHORTS_TARGET_SECONDS = 20   # duree visee - reduit de 50 a 20 le 17/10/2026 : l
 # cible de 50s (37-51s en pratique) sont tombes a 0 vue des le 14/10/2026 - l'algorithme Shorts
 # favorise nettement le format court/swipe rapide sur une petite chaine. Voir [[project_youtube_ai_generator]].
 SHORTS_MAX_SECONDS = 59      # au-dela, YouTube ne garantit plus le classement "Shorts" classique
-SHORTS_WORDS_PER_SEGMENT = 15  # segments courts -> coupes visuelles frequentes malgre la duree reduite
+SHORTS_WORDS_PER_SEGMENT = 7   # 20/10/2026 : 15 -> 7, un clip different par phrase pour le montage dynamique (montage.py)
 SHORTS_MIN_SEGMENT_SECONDS = 2.5  # segments plus courts que ca sont fusionnes au voisin (evite le clignotement)
 
 # --- Musique de fond (generee localement, gratuite, zero risque de droits d'auteur) ---
