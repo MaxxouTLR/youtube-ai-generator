@@ -106,6 +106,8 @@ function drawStamp(text, x, y, t0, t) {
   const s = 1.7 - 0.7 * easeOut(p);
   cx.save(); cx.translate(x, y); cx.rotate(-0.07); cx.scale(s, s); cx.globalAlpha = Math.min(1, p * 1.5);
   const d = dotify("led", text.toUpperCase(), 40), w = Math.min(720, d.aspect * 46), h = w / d.aspect;
+  // fond sombre : le tampon reste lisible meme pose sur une icone rouge
+  cx.fillStyle = "rgba(7,4,4,.92)"; cx.fillRect(-w / 2 - 22, -h / 2 - 16, w + 44, h + 32);
   cx.strokeStyle = RED; cx.lineWidth = 5; cx.strokeRect(-w / 2 - 22, -h / 2 - 16, w + 44, h + 32);
   drawDots(d, 0, 0, w, -9, 9, { reveal: 0.01 });
   cx.restore(); cx.globalAlpha = 1;
