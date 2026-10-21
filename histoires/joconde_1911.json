@@ -1,0 +1,25 @@
+{
+  "slug": "joconde_1911",
+  "source": "https://fr.wikipedia.org/wiki/Vol_de_La_Joconde",
+  "caption": "En 1911, la Joconde disparaît du Louvre… et le vrai coupable n'est pas celui qu'on croit 🕵️ #histoire #lesaviezvous #joconde #louvre #anecdote",
+  "beats": [
+    {"say": "Le 21 août 1911, la Joconde disparaît du Louvre.", "led": "1911", "led_sub": "Musée du Louvre", "icon": "🖼️"},
+    {"say": "Et personne ne s'en rend compte avant le lendemain matin.", "title": "Personne ne remarque *rien.*", "icon": "🙈"},
+    {"say": "Le voleur ? Vincenzo Peruggia, un vitrier italien.", "title": "Le voleur ? Un *vitrier.*", "icon": "🪟", "stamp": "Ex-employé du Louvre"},
+    {"say": "C'est lui qui avait mis le tableau sous verre.", "title": "Il avait posé *la vitre* du tableau.", "flash": true},
+    {"say": "Un lundi, jour de fermeture, il entre en blouse de travail, décroche le tableau, et repart.", "icon": "🥼", "stamp": "Lundi : fermé", "stamp_at": 0.8},
+    {"say": "La police passe même l'interroger chez lui. Sans fouiller.", "title": "La police passe chez lui…", "icon": "🚪", "stamp": "Pas de fouille", "stamp_at": 1.6},
+    {"say": "Pendant ce temps, deux suspects inattendus.", "title": "Deux suspects *inattendus.*"},
+    {"say": "Le poète Guillaume Apollinaire est envoyé en prison.", "led": "APOLLINAIRE", "led_sub": "prison de la Santé", "icon": "⛓️"},
+    {"say": "Et Pablo Picasso est interrogé.", "led": "PICASSO", "icon": "🎨", "stamp": "Interrogé", "stamp_at": 0.6},
+    {"say": "Sauf qu'ils n'ont rien à voir avec la Joconde.", "title": "*Sauf que…*", "flash": true},
+    {"say": "Ils étaient mêlés à une autre affaire : des statuettes volées au Louvre.", "title": "Une autre affaire : des *statuettes.*", "icon": "🗿"},
+    {"say": "Le vrai voleur, lui, garde le tableau deux ans chez lui, à Paris.", "led": "2 ANS", "led_sub": "chez le voleur", "icon": "🏠"},
+    {"say": "En 1913, il tente de le vendre à un marchand d'art de Florence, qui prévient la police.", "led": "1913", "led_sub": "Florence", "icon": "🚓"},
+    {"say": "Sa peine ? Sept mois de prison.", "led": "7 MOIS", "flash": true},
+    {"say": "Mais attendez.", "title": "MAIS ATTENDEZ.", "flash": true},
+    {"say": "Pendant son absence, plus de visiteurs viennent voir le mur vide que le tableau les années d'avant.", "title": "Ils viennent voir… *le mur vide.*", "array": {"icon": "🧍", "n": 40}},
+    {"say": "Ce vol a rendu la Joconde encore plus célèbre.", "title": "Le vol l'a rendue *encore plus célèbre.*", "icon": "⭐"},
+    {"say": "Tu connaissais cette histoire ?", "title": "Tu connaissais *cette histoire ?*"}
+  ]
+}
