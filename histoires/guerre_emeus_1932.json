@@ -1,0 +1,24 @@
+{
+  "slug": "guerre_emeus_1932",
+  "source": "https://fr.wikipedia.org/wiki/Guerre_des_émeus",
+  "caption": "#CapCut En 1932, l'armée australienne a déclaré la guerre à des oiseaux… et a perdu 🐦 #histoire #lesaviezvous #australie #emeu #anecdote",
+  "beats": [
+    {"say": "En 1932, l'Australie déclare la guerre… à des oiseaux.", "led": "1932", "led_sub": "Australie", "icon": "🐦"},
+    {"say": "Vingt mille émeus envahissent les champs de blé.", "led": "20 000", "led_sub": "émeus", "icon": "🌾"},
+    {"say": "Les fermiers, anciens soldats de 14-18, réclament des mitrailleuses.", "title": "Ils réclament des *mitrailleuses.*", "icon": "🪖", "stamp": "Demande acceptée", "stamp_at": 1.8},
+    {"say": "L'armée envoie deux mitrailleuses et dix mille cartouches.", "led": "10 000", "led_sub": "cartouches", "stamp": "Cible : émeus", "stamp_at": 1.2},
+    {"say": "Sauf que les émeus se dispersent en courant.", "title": "*Sauf que…* ils courent.", "icon": "🏃", "flash": true},
+    {"say": "Un jour, un millier d'émeus fonce droit sur eux.", "title": "Un *millier* fonce sur eux", "array": {"icon": "🐦", "n": 40}},
+    {"say": "Ils en abattent douze… et la mitrailleuse s'enraye.", "led": "12", "led_sub": "puis la mitrailleuse s'enraye", "flash": true},
+    {"say": "Ils essaient même de tirer depuis un camion. Trop de secousses.", "icon": "🚚", "stamp": "Échec", "stamp_at": 1.6},
+    {"say": "Selon l'armée, chaque groupe d'émeus a maintenant un chef qui fait le guet.", "title": "Chaque groupe a un *chef* qui fait le guet.", "icon": "👁️"},
+    {"say": "Après six jours : deux mille cinq cents cartouches, pour cinquante oiseaux.", "led": "2 500", "led_sub": "cartouches pour 50 oiseaux"},
+    {"say": "Ridiculisée, l'armée se retire.", "title": "L'armée *se retire.*", "stamp": "Retraite", "stamp_at": 0.6, "flash": true},
+    {"say": "Mais attendez.", "title": "MAIS ATTENDEZ.", "flash": true},
+    {"say": "Une semaine plus tard, ils reviennent.", "title": "Ils *reviennent.*", "icon": "🪖"},
+    {"say": "Bilan final : neuf mille huit cent soixante cartouches, pour neuf cent quatre-vingt-six émeus.", "led": "10", "led_sub": "balles par émeu"},
+    {"say": "Et les fermiers redemanderont l'armée en 1934, 1943 et 1948.", "title": "Redemandé en 1934, 1943, 1948…", "stamp": "Refusé", "stamp_at": 2.2},
+    {"say": "La vraie solution ? Des clôtures.", "title": "La solution ? Des *clôtures.*", "icon": "🚧", "flash": true},
+    {"say": "Alors, qui a vraiment gagné cette guerre ?", "title": "Alors, qui a *gagné ?*"}
+  ]
+}
