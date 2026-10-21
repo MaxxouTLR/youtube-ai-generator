@@ -212,7 +212,8 @@ def render_frames(data: dict, out_path: str) -> str:
 
 
 def mix_audio(voice: str, cuts: list[float], total: float, out_path: str, music: str | None = None) -> str:
-    """Voix + musique en ducking + whoosh a chaque changement de scene, normalise a -14 LUFS."""
+    """Voix + musique en ducking + whoosh a chaque changement de scene, normalise a -18 LUFS
+    (21/10/2026 : -14 LUFS jugé trop fort par l'utilisateur ; musique et whoosh baissés aussi)."""
     import glob
     if music is None:
         tracks = sorted(glob.glob(os.path.join(config.MUSIC_DIR, "*.mp3")))
@@ -222,19 +223,19 @@ def mix_audio(voice: str, cuts: list[float], total: float, out_path: str, music:
     fc = [f"[0:a]{fmt},asplit=2[voice][sc]"]
     mix = ["[voice]"]
     if music:
-        fc += [f"[1:a]{fmt},volume=0.34,afade=t=in:d=0.5[mus]",
+        fc += [f"[1:a]{fmt},volume=0.22,afade=t=in:d=0.5[mus]",
                "[mus][sc]sidechaincompress=threshold=0.025:ratio=9:attack=15:release=320[duck]"]
         mix.append("[duck]")
     else:
         fc.append("[sc]anullsink")
     if cuts:
         fc.append(f"anoisesrc=d=0.45:c=pink:r=44100:a=0.6,highpass=f=350,lowpass=f=6000,afade=t=in:d=0.18,"
-                  f"afade=t=out:st=0.18:d=0.27,volume=0.24,{fmt},asplit={len(cuts)}" + "".join(f"[w{i}]" for i in range(len(cuts))))
+                  f"afade=t=out:st=0.18:d=0.27,volume=0.14,{fmt},asplit={len(cuts)}" + "".join(f"[w{i}]" for i in range(len(cuts))))
         for i, c in enumerate(cuts):
             ms = max(0, int((c - 0.2) * 1000))
             fc.append(f"[w{i}]adelay={ms}|{ms}[wd{i}]")
             mix.append(f"[wd{i}]")
-    fc.append(f"{''.join(mix)}amix=inputs={len(mix)}:duration=first:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=11,aresample=44100[a]")
+    fc.append(f"{''.join(mix)}amix=inputs={len(mix)}:duration=first:normalize=0,loudnorm=I=-18:TP=-2:LRA=11,aresample=44100[a]")
     r = subprocess.run([FFMPEG, "-y", *inputs, "-filter_complex", ";".join(fc), "-map", "[a]", "-t", f"{total:.3f}",
                         "-c:a", "aac", "-b:a", "192k", out_path], capture_output=True, text=True, encoding="utf-8", errors="replace")
     if r.returncode != 0:
