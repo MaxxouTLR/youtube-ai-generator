@@ -3,20 +3,87 @@
   "source": "https://fr.wikipedia.org/wiki/Massacre_du_17_octobre_1961 + https://fr.wikipedia.org/wiki/Manifestations_du_17_octobre_2026 (consulté le 21/10/2026, bilans 2026 provisoires)",
   "caption": "#CapCut 17 octobre 1961, 17 octobre 2026 : même date, deux histoires très différentes. #histoire #17octobre #paris #lesaviezvous #actualite",
   "beats": [
-    {"say": "Le 17 octobre. Même date, à soixante-cinq ans d'écart.", "led": "17 OCT.", "led_sub": "1961 · 2026"},
-    {"say": "Le 17 octobre 1961, en pleine guerre d'Algérie, Paris impose un couvre-feu aux seuls Algériens.", "led": "1961", "title": "Un couvre-feu pour les *seuls Algériens.*"},
-    {"say": "Le FLN appelle à une manifestation pacifique. Vingt à trente mille personnes défilent, en habits du dimanche.", "title": "Une manifestation *pacifique.*", "icon": "👔", "sub": "20 000 à 30 000 personnes"},
-    {"say": "La police du préfet Maurice Papon réprime. Plus de onze mille arrestations.", "led": "11 518", "led_sub": "arrestations le 17 octobre 1961", "stamp": "Préfet Papon", "stamp_at": 1.4},
-    {"say": "Le lendemain, le bilan officiel parle de deux morts.", "led": "2", "led_sub": "morts selon la préfecture"},
-    {"say": "Les historiens, eux, estiment entre sept et plus de deux cents morts.", "led": "200+", "led_sub": "morts selon certains historiens", "stamp": "Bilan contesté", "stamp_at": 1.6},
-    {"say": "Il faudra attendre 2012 pour que l'État reconnaisse une sanglante répression.", "led": "2012", "led_sub": "reconnaissance par l'État", "icon": "🏛️"},
-    {"say": "Le 17 octobre 2026, la colère porte sur la vie chère.", "title": "2026 : contre la *vie chère.*", "icon": "🛒"},
-    {"say": "Un appel lancé sur TikTok, rejoint par des lycéens, des syndicats et des gilets jaunes.", "icon": "📱", "stamp": "Lancé sur TikTok", "stamp_at": 1.2},
-    {"say": "Cinq cent cinquante mille manifestants selon le ministère, huit cent mille selon les organisateurs.", "led": "550 000", "led_sub": "selon le ministère · 800 000 selon les organisateurs"},
-    {"say": "En marge des cortèges : pillages, incendies, et l'hôtel de ville de Limoges en grande partie détruit.", "icon": "🔥", "stamp": "Limoges", "stamp_at": 2.4},
-    {"say": "Près de mille policiers et gendarmes blessés. Un manifestant meurt après un malaise.", "led": "997", "led_sub": "policiers et gendarmes blessés"},
-    {"say": "Même date. Mais deux histoires très différentes.", "title": "Même date. *Deux histoires.*"},
-    {"say": "En 1961, des manifestants pacifiques tués lors d'une répression. En 2026, une journée de manifestations et d'émeutes, dont le bilan est encore provisoire.", "title": "1961 : une *répression.* 2026 : des *émeutes.*", "sub": "Bilan 2026 provisoire"},
-    {"say": "Tu connaissais l'histoire du 17 octobre 1961 ?", "title": "Tu connaissais *le 17 octobre 1961 ?*"}
+    {
+      "say": "Le 17 octobre. Même date, à soixante-cinq ans d'écart.",
+      "led": "17 OCT.",
+      "led_sub": "1961 · 2026"
+    },
+    {
+      "say": "Le 17 octobre 1961, en pleine guerre d'Algérie, Paris impose un couvre-feu aux seuls Algériens.",
+      "led": "1961",
+      "title": "Un couvre-feu pour les *seuls Algériens.*"
+    },
+    {
+      "say": "Le FLN appelle à une manifestation pacifique. Vingt à trente mille personnes défilent, en habits du dimanche.",
+      "title": "Une manifestation *pacifique.*",
+      "icon": "👔",
+      "sub": "20 000 à 30 000 personnes"
+    },
+    {
+      "say": "La police du préfet Maurice Papon réprime. Plus de onze mille arrestations.",
+      "led": "11 518",
+      "led_sub": "arrestations le 17 octobre 1961",
+      "stamp": "Préfet Papon",
+      "stamp_at": 1.4
+    },
+    {
+      "say": "Le lendemain, le bilan officiel parle de deux morts.",
+      "led": "2",
+      "led_sub": "morts selon la préfecture"
+    },
+    {
+      "say": "Les historiens, eux, estiment entre sept et plus de deux cents morts.",
+      "led": "200+",
+      "led_sub": "morts selon certains historiens",
+      "stamp": "Bilan contesté",
+      "stamp_at": 1.6
+    },
+    {
+      "say": "Il faudra attendre 2012 pour que l'État reconnaisse une sanglante répression.",
+      "led": "2012",
+      "led_sub": "reconnaissance par l'État",
+      "icon": "🏛️"
+    },
+    {
+      "say": "Le 17 octobre 2026, la colère porte sur la vie chère.",
+      "title": "2026 : contre la *vie chère.*",
+      "icon": "🛒"
+    },
+    {
+      "say": "Un appel lancé sur TikTok, rejoint par des lycéens, des syndicats et des gilets jaunes.",
+      "icon": "📱",
+      "stamp": "Lancé sur TikTok",
+      "stamp_at": 1.2
+    },
+    {
+      "say": "Cinq cent cinquante mille manifestants selon le ministère, huit cent mille selon les organisateurs.",
+      "led": "550 000",
+      "led_sub": "selon le ministère",
+      "sub": "800 000 selon les organisateurs"
+    },
+    {
+      "say": "En marge des cortèges : pillages, incendies, et l'hôtel de ville de Limoges en grande partie détruit.",
+      "icon": "🔥",
+      "stamp": "Limoges",
+      "stamp_at": 2.4
+    },
+    {
+      "say": "Près de mille policiers et gendarmes blessés. Un manifestant meurt après un malaise.",
+      "led": "997",
+      "led_sub": "policiers et gendarmes blessés"
+    },
+    {
+      "say": "Même date. Mais deux histoires très différentes.",
+      "title": "Même date. *Deux histoires.*"
+    },
+    {
+      "say": "En 1961, des manifestants pacifiques tués lors d'une répression. En 2026, une journée de manifestations et d'émeutes, dont le bilan est encore provisoire.",
+      "title": "1961 : une *répression.* 2026 : des *émeutes.*",
+      "sub": "Bilan 2026 provisoire"
+    },
+    {
+      "say": "Tu connaissais l'histoire du 17 octobre 1961 ?",
+      "title": "Tu connaissais *le 17 octobre 1961 ?*"
+    }
   ]
 }
