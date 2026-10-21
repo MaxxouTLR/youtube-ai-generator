@@ -1,0 +1,21 @@
+{
+  "slug": "tulipomanie_1637",
+  "source": "https://fr.wikipedia.org/wiki/Tulipomanie",
+  "caption": "#CapCut En 1637, une tulipe valait 10 ans de salaire… mais l'histoire n'est pas celle qu'on raconte 🌷 Tu aurais acheté ? #histoire #lesaviezvous #argent #bourse #anecdote",
+  "beats": [
+    {"say": "1637, aux Pays-Bas. Un bulbe de tulipe vaut une fortune.", "led": "1637", "led_sub": "Pays-Bas", "icon": "🌷"},
+    {"say": "Au sommet de la folie, un seul bulbe s'échange pour dix fois le salaire annuel d'un artisan.", "led": "×10", "led_sub": "le salaire annuel d'un artisan", "flash": true},
+    {"say": "On raconte même qu'une tulipe pouvait valoir cinq hectares de terre.", "title": "Une tulipe = *5 hectares* ?", "icon": "🏡"},
+    {"say": "Puis en février 1637, les prix s'effondrent.", "title": "Février 1637 : *effondrement.*", "icon": "📉", "flash": true},
+    {"say": "On raconte des investisseurs ruinés, une économie entière ébranlée.", "title": "Tout le monde *ruiné* ?", "icon": "💸"},
+    {"say": "On l'appelle souvent la première bulle spéculative de l'histoire.", "led": "BULLE", "led_sub": "la première de l'histoire ?"},
+    {"say": "Sauf que…", "title": "*Sauf que…*", "flash": true},
+    {"say": "Cette version vient surtout d'un livre écrit en 1841, deux siècles plus tard.", "led": "1841", "led_sub": "le livre de Charles Mackay", "icon": "📖"},
+    {"say": "Les économistes d'aujourd'hui la contestent.", "title": "Une version *contestée.*", "stamp": "Contesté", "stamp_at": 0.8},
+    {"say": "Il s'agissait surtout de contrats sur des ventes futures.", "title": "Des *contrats*, pas des bulbes.", "icon": "📜"},
+    {"say": "Mais attendez.", "title": "MAIS ATTENDEZ.", "flash": true},
+    {"say": "Selon l'historienne Anne Goldgar, aucun argent n'a vraiment disparu.", "title": "Aucun argent n'a *disparu.*"},
+    {"say": "La légende de la tulipe était peut-être elle-même… une bulle.", "title": "La légende était *une bulle.*", "flash": true},
+    {"say": "Et toi, tu aurais acheté une tulipe à ce prix-là ?", "title": "Tu aurais *acheté ?*", "sub": "Oui · Non · Seulement pour revendre"}
+  ]
+}

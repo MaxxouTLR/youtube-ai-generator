@@ -1,0 +1,22 @@
+{
+  "slug": "onoda_1974",
+  "source": "https://fr.wikipedia.org/wiki/Hirō_Onoda",
+  "caption": "#CapCut Il a continué la guerre seul dans la jungle… pendant 29 ans 🌴 Toi, tu aurais tenu combien de temps ? #histoire #lesaviezvous #japon #anecdote #onoda",
+  "beats": [
+    {"say": "En 1974, un soldat japonais sort de la jungle pour se rendre.", "led": "1974", "led_sub": "Philippines", "icon": "🌴"},
+    {"say": "Problème : la guerre est finie depuis vingt-neuf ans.", "led": "29 ANS", "led_sub": "après la fin de la guerre", "flash": true},
+    {"say": "Hirō Onoda est envoyé fin 1944 sur l'île de Lubang, aux Philippines.", "title": "Mission : l'île de *Lubang*", "icon": "🏝️"},
+    {"say": "En 1945, le Japon capitule. Lui n'y croit pas.", "title": "Le Japon capitule. *Lui n'y croit pas.*"},
+    {"say": "Pour lui, toutes les tentatives pour le convaincre sont une ruse.", "icon": "📰", "stamp": "Une ruse ?", "stamp_at": 1.4},
+    {"say": "Ses trois camarades se rendent ou sont tués. Il finit seul.", "title": "Il finit *seul.*", "icon": "🪖"},
+    {"say": "En 1959, le Japon le déclare légalement mort.", "led": "1959", "led_sub": "déclaré mort", "stamp": "Décédé", "stamp_at": 1.2},
+    {"say": "Sauf qu'il est toujours là, armé.", "title": "*Sauf qu'*il est toujours là.", "flash": true},
+    {"say": "Pendant ces années, il tue une trentaine d'habitants de l'île.", "led": "30", "led_sub": "habitants de l'île tués, environ"},
+    {"say": "En 1974, un étudiant japonais le retrouve. Onoda refuse de se rendre sans l'ordre de son chef.", "title": "Il exige *l'ordre de son chef.*"},
+    {"say": "Mais attendez.", "title": "MAIS ATTENDEZ.", "flash": true},
+    {"say": "Le Japon retrouve son ancien commandant… devenu libraire.", "icon": "📚", "stamp": "Libraire", "stamp_at": 1.4},
+    {"say": "Il vient sur l'île, et lui ordonne de déposer les armes.", "title": "Il lui *ordonne* de se rendre."},
+    {"say": "Onoda rend son sabre, et son fusil, toujours en état de marche.", "icon": "⚔️", "stamp": "En état de marche", "stamp_at": 1.6},
+    {"say": "Et toi, tu aurais tenu combien de temps seul dans la jungle ?", "title": "Toi, tu aurais tenu *combien de temps ?*", "sub": "1 jour · 1 mois · 1 an · 29 ans"}
+  ]
+}
