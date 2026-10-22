@@ -3,21 +3,77 @@
   "source": "https://fr.wikipedia.org/wiki/Opération_Mincemeat",
   "caption": "#CapCut En 1943, les Britanniques ont piégé Hitler… avec un cadavre 💼 Toi, tu serais tombé dans le piège ? #histoire #lesaviezvous #ww2 #espionnage #anecdote",
   "beats": [
-    {"say": "1943. Les Alliés veulent débarquer en Sicile. Problème : c'est l'objectif évident.", "led": "1943", "led_sub": "Sicile", "icon": "🗺️"},
-    {"say": "Alors les services britanniques ont une idée folle.", "title": "Une idée *folle.*"},
-    {"say": "Utiliser un cadavre.", "title": "Utiliser… *un cadavre.*", "flash": true},
-    {"say": "Le corps d'un homme mort à Londres, Glyndwr Michael, devient un faux officier : le major William Martin.", "led": "MAJOR MARTIN", "led_sub": "un officier qui n'a jamais existé", "icon": "🪪"},
-    {"say": "On lui invente une vie : une fiancée prénommée Pam, sa photo, des lettres.", "icon": "💌", "stamp": "Fiancée : Pam", "stamp_at": 1.4},
-    {"say": "À son poignet, une mallette avec de faux plans : une invasion des Balkans et de la Sardaigne.", "icon": "💼", "stamp": "Top secret", "stamp_at": 1.0},
-    {"say": "Le 30 avril 1943, un sous-marin dépose le corps au large de l'Espagne.", "title": "Largué par un *sous-marin*", "icon": "🌊"},
-    {"say": "Un pêcheur espagnol le retrouve. Les documents finissent chez les Allemands.", "icon": "🎣"},
-    {"say": "Sauf qu'Hitler a des doutes.", "title": "*Sauf qu'*Hitler doute.", "flash": true},
-    {"say": "Une autopsie peu convaincante, aucune épave d'avion…", "title": "Pas d'épave. Une autopsie *louche.*", "stamp": "Suspect", "stamp_at": 1.2},
-    {"say": "Mais d'autres informations confirment la piste. Il finit par y croire.", "title": "Il finit par *y croire.*"},
-    {"say": "Mais attendez.", "title": "MAIS ATTENDEZ.", "flash": true},
-    {"say": "L'armée allemande déplace des divisions loin de la Sicile.", "title": "Des divisions *déplacées.*", "icon": "🪖"},
-    {"say": "Et le débarquement allié en Sicile réussit.", "led": "SICILE", "stamp": "Débarquement réussi", "stamp_at": 0.8},
-    {"say": "Le major Martin, lui, est enterré avec les honneurs militaires en Espagne.", "title": "Enterré avec *les honneurs.*", "icon": "🪦"},
-    {"say": "Et toi, tu serais tombé dans le piège ?", "title": "Tu serais *tombé dans le piège ?*", "sub": "Oui · Non"}
+    {
+      "say": "En 1943, un cadavre a trompé Hitler.",
+      "title": "Un cadavre a *trompé Hitler.*",
+      "sub": "Et la fin est encore plus folle…"
+    },
+    {
+      "say": "Les Alliés veulent débarquer en Sicile. Leur idée : utiliser un cadavre.",
+      "title": "Utiliser… *un cadavre.*",
+      "flash": true
+    },
+    {
+      "say": "Le corps d'un homme mort à Londres, Glyndwr Michael, devient un faux officier : le major William Martin.",
+      "led": "MAJOR MARTIN",
+      "led_sub": "un officier qui n'a jamais existé",
+      "icon": "🪪"
+    },
+    {
+      "say": "On lui invente une vie : une fiancée prénommée Pam, sa photo, des lettres.",
+      "icon": "💌",
+      "stamp": "Fiancée : Pam",
+      "stamp_at": 1.4
+    },
+    {
+      "say": "À son poignet, une mallette avec de faux plans : une invasion des Balkans et de la Sardaigne.",
+      "icon": "💼",
+      "stamp": "Top secret",
+      "stamp_at": 1.0
+    },
+    {
+      "say": "Le 30 avril 1943, un sous-marin dépose le corps au large de l'Espagne.",
+      "title": "Largué par un *sous-marin*",
+      "icon": "🌊"
+    },
+    {
+      "say": "Un pêcheur espagnol le retrouve. Les documents finissent chez les Allemands.",
+      "icon": "🎣"
+    },
+    {
+      "say": "Sauf qu'Hitler a des doutes.",
+      "title": "*Sauf qu'*Hitler doute.",
+      "flash": true
+    },
+    {
+      "say": "Mais d'autres informations confirment la piste. Il finit par y croire.",
+      "title": "Il finit par *y croire.*"
+    },
+    {
+      "say": "Mais attendez.",
+      "title": "MAIS ATTENDEZ.",
+      "flash": true
+    },
+    {
+      "say": "L'armée allemande déplace des divisions loin de la Sicile.",
+      "title": "Des divisions *déplacées.*",
+      "icon": "🪖"
+    },
+    {
+      "say": "Et le débarquement allié en Sicile réussit.",
+      "led": "SICILE",
+      "stamp": "Débarquement réussi",
+      "stamp_at": 0.8
+    },
+    {
+      "say": "Le major Martin, lui, est enterré avec les honneurs militaires en Espagne.",
+      "title": "Enterré avec *les honneurs.*",
+      "icon": "🪦"
+    },
+    {
+      "say": "Et toi, tu serais tombé dans le piège ?",
+      "title": "Tu serais *tombé dans le piège ?*",
+      "sub": "Oui · Non"
+    }
   ]
 }

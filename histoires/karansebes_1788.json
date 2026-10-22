@@ -3,20 +3,79 @@
   "source": "https://fr.wikipedia.org/wiki/Bataille_de_Karánsebes",
   "caption": "#CapCut En 1788, une armée de 100 000 hommes se serait battue… contre elle-même 🍺 Vrai ou faux selon toi ? #histoire #lesaviezvous #autriche #bataille #anecdote",
   "beats": [
-    {"say": "Septembre 1788. L'armée autrichienne campe près de Karánsebes.", "led": "1788", "led_sub": "Karánsebes", "icon": "⛺"},
-    {"say": "Cent mille hommes, face aux Turcs.", "led": "100 000", "led_sub": "soldats autrichiens"},
-    {"say": "Des cavaliers éclaireurs tombent sur de l'alcool, et refusent de le partager avec l'infanterie.", "icon": "🍺", "stamp": "Pas de partage", "stamp_at": 1.8},
-    {"say": "Une dispute éclate. Un coup de feu part.", "title": "Un coup de feu *part.*", "flash": true},
-    {"say": "Dans le noir, quelqu'un crie : les Turcs ! Les Turcs !", "title": "« Les Turcs ! *Les Turcs !* »"},
-    {"say": "Des officiers crient : Halte ! Halte ! Certains comprennent : Allah !", "title": "« Halte ! » compris *« Allah ! »*"},
-    {"say": "Un officier fait tirer l'artillerie… sur son propre camp.", "icon": "💣", "stamp": "Tir ami", "stamp_at": 1.2, "flash": true},
-    {"say": "Toute l'armée fuit devant un ennemi imaginaire.", "title": "Un ennemi *imaginaire.*", "icon": "👻"},
-    {"say": "L'empereur Joseph II tombe de cheval, dans un ruisseau.", "icon": "🐎", "stamp": "L'empereur", "stamp_at": 1.0},
-    {"say": "Les Turcs, en arrivant, auraient trouvé dix mille morts et blessés.", "led": "10 000", "led_sub": "morts et blessés ?"},
-    {"say": "Sauf que…", "title": "*Sauf que…*", "flash": true},
-    {"say": "Le premier récit date de 1843, cinquante-cinq ans après.", "led": "1843", "led_sub": "premier récit, 55 ans après"},
-    {"say": "D'autres auteurs parlent de cent cinquante victimes au maximum.", "led": "150", "led_sub": "victimes selon d'autres auteurs"},
-    {"say": "Aujourd'hui, cette bataille est considérée comme probablement une légende.", "title": "Probablement *une légende.*", "stamp": "Apocryphe ?", "stamp_at": 1.6},
-    {"say": "Alors, vrai ou faux selon toi ?", "title": "Vrai ou *faux ?*", "sub": "Dis-le en commentaire"}
+    {
+      "say": "Une armée de cent mille hommes se serait battue… contre elle-même.",
+      "title": "100 000 soldats… *contre eux-mêmes.*",
+      "sub": "Mais est-ce vraiment arrivé ?"
+    },
+    {
+      "say": "Septembre 1788. L'armée autrichienne campe face aux Turcs.",
+      "led": "1788",
+      "led_sub": "Karánsebes",
+      "icon": "⛺"
+    },
+    {
+      "say": "Des cavaliers éclaireurs tombent sur de l'alcool, et refusent de le partager avec l'infanterie.",
+      "icon": "🍺",
+      "stamp": "Pas de partage",
+      "stamp_at": 1.8
+    },
+    {
+      "say": "Une dispute éclate. Un coup de feu part.",
+      "title": "Un coup de feu *part.*",
+      "flash": true
+    },
+    {
+      "say": "Dans le noir, quelqu'un crie : les Turcs ! Les Turcs !",
+      "title": "« Les Turcs ! *Les Turcs !* »"
+    },
+    {
+      "say": "Des officiers crient : Halte ! Halte ! Certains comprennent : Allah !",
+      "title": "« Halte ! » compris *« Allah ! »*"
+    },
+    {
+      "say": "Un officier fait tirer l'artillerie… sur son propre camp.",
+      "icon": "💣",
+      "stamp": "Tir ami",
+      "stamp_at": 1.2,
+      "flash": true
+    },
+    {
+      "say": "L'empereur Joseph II tombe de cheval, dans un ruisseau.",
+      "icon": "🐎",
+      "stamp": "L'empereur",
+      "stamp_at": 1.0
+    },
+    {
+      "say": "Les Turcs, en arrivant, auraient trouvé dix mille morts et blessés.",
+      "led": "10 000",
+      "led_sub": "morts et blessés ?"
+    },
+    {
+      "say": "Sauf que…",
+      "title": "*Sauf que…*",
+      "flash": true
+    },
+    {
+      "say": "Le premier récit date de 1843, cinquante-cinq ans après.",
+      "led": "1843",
+      "led_sub": "premier récit, 55 ans après"
+    },
+    {
+      "say": "D'autres auteurs parlent de cent cinquante victimes au maximum.",
+      "led": "150",
+      "led_sub": "victimes selon d'autres auteurs"
+    },
+    {
+      "say": "Aujourd'hui, cette bataille est considérée comme probablement une légende.",
+      "title": "Probablement *une légende.*",
+      "stamp": "Apocryphe ?",
+      "stamp_at": 1.6
+    },
+    {
+      "say": "Alors, vrai ou faux selon toi ?",
+      "title": "Vrai ou *faux ?*",
+      "sub": "Dis-le en commentaire"
+    }
   ]
 }

@@ -3,21 +3,80 @@
   "source": "https://fr.wikipedia.org/wiki/Concile_cadavérique",
   "caption": "#CapCut En 897, un pape a fait déterrer un autre pape… pour lui faire un procès 💀 #histoire #lesaviezvous #rome #moyenage #anecdote",
   "beats": [
-    {"say": "En 897, à Rome, un pape fait déterrer… un autre pape.", "led": "897", "led_sub": "Rome", "icon": "⚰️"},
-    {"say": "Le pape Formose est mort depuis huit mois.", "title": "Mort depuis *8 mois.*", "icon": "💀"},
-    {"say": "On l'habille en tenue de pape, et on l'installe sur un trône.", "title": "Habillé en pape. Assis sur un *trône.*", "icon": "👑"},
-    {"say": "Pour le juger.", "title": "Pour le *juger.*", "flash": true},
-    {"say": "Un diacre répond aux questions à la place du cadavre.", "title": "Un avocat parle *à sa place.*", "icon": "🗣️"},
-    {"say": "Le verdict tombe : coupable.", "led": "COUPABLE", "flash": true},
-    {"say": "On lui coupe les doigts qui lui servaient à bénir.", "icon": "✋", "stamp": "Doigts coupés", "stamp_at": 1.2},
-    {"say": "Son élection est annulée, et son corps est jeté dans le Tibre.", "icon": "🌊", "stamp": "Annulé", "stamp_at": 1.0},
-    {"say": "Sauf que Rome se soulève.", "title": "*Sauf que…* Rome se soulève.", "icon": "🔥", "flash": true},
-    {"say": "Le pape juge, Étienne VI, est renversé, puis étranglé en prison.", "led": "ÉTIENNE VI", "led_sub": "étranglé en prison", "icon": "⛓️"},
-    {"say": "Le corps de Formose est repêché, et enterré à Saint-Pierre.", "title": "Enterré à *Saint-Pierre*", "icon": "⛪"},
-    {"say": "Mais attendez.", "title": "MAIS ATTENDEZ.", "flash": true},
-    {"say": "Quelques années plus tard, un autre pape annule à nouveau ses décisions.", "title": "Un autre pape *l'annule encore.*", "stamp": "Annulé ×2", "stamp_at": 2.0},
-    {"say": "Et les actes du procès ? Brûlés.", "title": "Les actes du procès ? *Brûlés.*", "icon": "📜", "flash": true},
-    {"say": "Cet épisode porte un nom : le concile cadavérique.", "led": "CADAVÉRIQUE", "led_sub": "le concile"},
-    {"say": "Tu savais que ça avait existé ?", "title": "Tu savais que *ça a existé ?*"}
+    {
+      "say": "En 897, un pape a fait juger… un cadavre.",
+      "title": "Un pape a fait juger… *un cadavre.*",
+      "sub": "Et la fin est encore plus folle…"
+    },
+    {
+      "say": "Son prédécesseur, Formose, est mort depuis huit mois. On le déterre.",
+      "title": "Mort depuis *8 mois.*",
+      "icon": "💀"
+    },
+    {
+      "say": "On l'habille en tenue de pape, et on l'installe sur un trône.",
+      "title": "Habillé en pape. Assis sur un *trône.*",
+      "icon": "👑"
+    },
+    {
+      "say": "Un diacre répond aux questions à la place du cadavre.",
+      "title": "Un avocat parle *à sa place.*",
+      "icon": "🗣️"
+    },
+    {
+      "say": "Le verdict tombe : coupable.",
+      "led": "COUPABLE",
+      "flash": true
+    },
+    {
+      "say": "On lui coupe les doigts qui lui servaient à bénir.",
+      "icon": "✋",
+      "stamp": "Doigts coupés",
+      "stamp_at": 1.2
+    },
+    {
+      "say": "Son élection est annulée, et son corps est jeté dans le Tibre.",
+      "icon": "🌊",
+      "stamp": "Annulé",
+      "stamp_at": 1.0
+    },
+    {
+      "say": "Sauf que Rome se soulève.",
+      "title": "*Sauf que…* Rome se soulève.",
+      "icon": "🔥",
+      "flash": true
+    },
+    {
+      "say": "Le pape juge, Étienne VI, est renversé, puis étranglé en prison.",
+      "led": "ÉTIENNE VI",
+      "led_sub": "étranglé en prison",
+      "icon": "⛓️"
+    },
+    {
+      "say": "Le corps de Formose est repêché, et enterré à Saint-Pierre.",
+      "title": "Enterré à *Saint-Pierre*",
+      "icon": "⛪"
+    },
+    {
+      "say": "Mais attendez.",
+      "title": "MAIS ATTENDEZ.",
+      "flash": true
+    },
+    {
+      "say": "Quelques années plus tard, un autre pape annule à nouveau ses décisions.",
+      "title": "Un autre pape *l'annule encore.*",
+      "stamp": "Annulé ×2",
+      "stamp_at": 2.0
+    },
+    {
+      "say": "Et les actes du procès ? Brûlés.",
+      "title": "Les actes du procès ? *Brûlés.*",
+      "icon": "📜",
+      "flash": true
+    },
+    {
+      "say": "Tu savais que ça avait existé ?",
+      "title": "Tu savais que *ça a existé ?*"
+    }
   ]
 }

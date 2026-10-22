@@ -3,22 +3,85 @@
   "source": "https://fr.wikipedia.org/wiki/Grande_inondation_de_mélasse_de_Boston",
   "caption": "#CapCut En 1919, une vague de mélasse a déferlé sur Boston à 56 km/h 😳 #histoire #lesaviezvous #boston #catastrophe #anecdote",
   "beats": [
-    {"say": "15 janvier 1919, à Boston.", "led": "1919", "led_sub": "Boston", "icon": "🏭"},
-    {"say": "Une citerne géante remplie de mélasse : huit millions sept cent mille litres.", "led": "8,7 M", "led_sub": "litres de mélasse", "icon": "🛢️"},
-    {"say": "Soudain, les rivets sautent un par un. Comme une mitrailleuse.", "title": "Les rivets sautent… comme une *mitrailleuse.*", "flash": true},
-    {"say": "La citerne s'effondre.", "icon": "💥", "stamp": "Effondrée", "stamp_at": 0.4},
-    {"say": "Une vague de mélasse de plusieurs mètres déferle sur le quartier.", "title": "Une *vague* de mélasse", "icon": "🌊"},
-    {"say": "À cinquante-six kilomètres-heure.", "led": "56 KM/H", "flash": true},
-    {"say": "Elle soulève un train de ses rails, et jette un camion dans le port.", "icon": "🚂", "stamp": "Train soulevé", "stamp_at": 1.0},
-    {"say": "Bilan : vingt et un morts, et cent cinquante blessés.", "title": "*21 morts.* 150 blessés.", "array": {"icon": "💀", "n": 21}},
-    {"say": "Les sauveteurs s'enfoncent dans la mélasse. Ils arrêtent les recherches au quatrième jour.", "title": "Les sauveteurs *s'enlisent.*", "stamp": "4e jour", "stamp_at": 2.4},
-    {"say": "Sauf que le plus fou, c'est la défense de l'entreprise.", "title": "*Sauf que…*", "flash": true},
-    {"say": "Elle accuse des anarchistes d'avoir fait sauter la citerne.", "icon": "💣", "stamp": "Les anarchistes ?", "stamp_at": 1.2},
-    {"say": "Les habitants l'attaquent en justice. Elle paie six cent mille dollars.", "led": "600 000 $", "led_sub": "payés par l'entreprise"},
-    {"say": "Mais attendez.", "title": "MAIS ATTENDEZ.", "flash": true},
-    {"say": "Il faut quatre-vingt-sept mille heures de travail pour tout nettoyer.", "led": "87 000 H", "led_sub": "de nettoyage", "icon": "🧽"},
-    {"say": "L'eau du port reste brune jusqu'à l'été.", "title": "Le port reste *brun* jusqu'à l'été", "icon": "⚓"},
-    {"say": "Et dans les années 1980, des habitants juraient encore sentir la mélasse, les jours de grosse chaleur.", "title": "L'odeur, *60 ans plus tard.*", "icon": "👃"},
-    {"say": "Tu connaissais cette histoire ?", "title": "Tu connaissais *cette histoire ?*"}
+    {
+      "say": "En 1919, une vague de mélasse a tué vingt et une personnes.",
+      "title": "Une vague de *mélasse* a tué 21 personnes.",
+      "sub": "Et la fin est encore plus folle…"
+    },
+    {
+      "say": "À Boston, une citerne géante contient huit millions sept cent mille litres de mélasse.",
+      "led": "8,7 M",
+      "led_sub": "litres de mélasse",
+      "icon": "🛢️"
+    },
+    {
+      "say": "Soudain, les rivets sautent un par un. Comme une mitrailleuse.",
+      "title": "Les rivets sautent… comme une *mitrailleuse.*",
+      "flash": true
+    },
+    {
+      "say": "La citerne s'effondre.",
+      "icon": "💥",
+      "stamp": "Effondrée",
+      "stamp_at": 0.4
+    },
+    {
+      "say": "Une vague de mélasse de plusieurs mètres déferle sur le quartier.",
+      "title": "Une *vague* de mélasse",
+      "icon": "🌊"
+    },
+    {
+      "say": "À cinquante-six kilomètres-heure.",
+      "led": "56 KM/H",
+      "flash": true
+    },
+    {
+      "say": "Elle soulève un train de ses rails, et jette un camion dans le port.",
+      "icon": "🚂",
+      "stamp": "Train soulevé",
+      "stamp_at": 1.0
+    },
+    {
+      "say": "Les sauveteurs s'enfoncent dans la mélasse. Ils arrêtent les recherches au quatrième jour.",
+      "title": "Les sauveteurs *s'enlisent.*",
+      "stamp": "4e jour",
+      "stamp_at": 2.4
+    },
+    {
+      "say": "Sauf que le plus fou, c'est la défense de l'entreprise.",
+      "title": "*Sauf que…*",
+      "flash": true
+    },
+    {
+      "say": "Elle accuse des anarchistes d'avoir fait sauter la citerne.",
+      "icon": "💣",
+      "stamp": "Les anarchistes ?",
+      "stamp_at": 1.2
+    },
+    {
+      "say": "Les habitants l'attaquent en justice. Elle paie six cent mille dollars.",
+      "led": "600 000 $",
+      "led_sub": "payés par l'entreprise"
+    },
+    {
+      "say": "Mais attendez.",
+      "title": "MAIS ATTENDEZ.",
+      "flash": true
+    },
+    {
+      "say": "Il faut quatre-vingt-sept mille heures de travail pour tout nettoyer.",
+      "led": "87 000 H",
+      "led_sub": "de nettoyage",
+      "icon": "🧽"
+    },
+    {
+      "say": "Et dans les années 1980, des habitants juraient encore sentir la mélasse, les jours de grosse chaleur.",
+      "title": "L'odeur, *60 ans plus tard.*",
+      "icon": "👃"
+    },
+    {
+      "say": "Tu connaissais cette histoire ?",
+      "title": "Tu connaissais *cette histoire ?*"
+    }
   ]
 }
