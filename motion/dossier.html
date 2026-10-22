@@ -157,10 +157,10 @@ function drawBeat(b, t) {
     const punch = instant ? 1.06 - 0.06 * clamp(lt / Math.max(1, b.end - t0))   // leger zoom arriere continu : l'image bouge des le debut
                           : 1 + 0.08 * (1 - easeOut(clamp((t - t0) / 0.2)));
     cx.save(); cx.translate(540, 700); cx.scale(punch, punch); cx.translate(-540, -700);
-    drawTitle(b.title, 640, size, instant ? t0 - 1 : t0, t); cx.restore();
+    const th = drawTitle(b.title, 640, size, instant ? t0 - 1 : t0, t); cx.restore();
     if (b.sub) { cx.font = `${instant ? 48 : 40}px ${TITLE_FONT}`; cx.textAlign = "center"; cx.textBaseline = "top";
       cx.globalAlpha = instant ? 1 : clamp((lt - 0.3) / 0.25);
-      cx.fillStyle = instant ? RED : MUTED; cx.fillText(b.sub, 540, instant ? 1010 : 960); cx.globalAlpha = 1; cx.textAlign = "start"; }
+      cx.fillStyle = instant ? RED : MUTED; cx.fillText(b.sub, 540, Math.max(instant ? 1010 : 960, 640 + th * 1.06 + 40)); cx.globalAlpha = 1; cx.textAlign = "start"; }
     return;
   }
   if (b.title) y += drawTitle(b.title, y, b.title.length > 42 ? 58 : 70, instant ? t0 - 1 : t0, t) + 40;
