@@ -1,0 +1,60 @@
+{
+  "slug": "mary_celeste_1872",
+  "num": 22,
+  "source": "https://fr.wikipedia.org/wiki/Mary_Celeste",
+  "caption": "#CapCut 📁 Dossier n°22 — Le navire retrouvé intact… sans personne à bord 👻 Que s'est-il passé selon toi ? #histoire #mystere #halloween #bateaufantome #lesaviezvous #dossier",
+  "beats": [
+    {
+      "say": "Un navire retrouvé intact en pleine mer. Mais personne à bord.",
+      "title": "Intact. *Mais vide.*",
+      "sub": "Personne ne sait pourquoi…"
+    },
+    {
+      "say": "Décembre 1872, au large du Portugal. Le Mary Celeste dérive, voiles déployées.",
+      "led": "1872",
+      "led_sub": "au large du Portugal",
+      "icon": "⛵"
+    },
+    {
+      "say": "Un autre navire s'approche. Les marins montent à bord.",
+      "title": "Les marins *montent à bord.*"
+    },
+    {
+      "say": "Six mois de nourriture. De l'eau potable. Les affaires de l'équipage.",
+      "led": "6 MOIS",
+      "led_sub": "de vivres à bord"
+    },
+    {
+      "say": "Mais aucune trace des dix personnes à bord, dont le capitaine, sa femme et leur fille de deux ans.",
+      "led": "10",
+      "led_sub": "personnes disparues",
+      "flash": true
+    },
+    {
+      "say": "Le canot de sauvetage a disparu.",
+      "icon": "🛶",
+      "stamp": "Disparu",
+      "stamp_at": 0.6
+    },
+    {
+      "say": "La cargaison d'alcool est presque intacte. Pas de pirates, donc.",
+      "title": "Pas de *pirates.*",
+      "icon": "🛢️"
+    },
+    {
+      "say": "Fuite d'alcool, peur d'une explosion, tempête ? Personne n'a jamais su.",
+      "title": "Personne n'a *jamais su.*",
+      "flash": true
+    },
+    {
+      "say": "Et toi, tu penses qu'il s'est passé quoi ?",
+      "title": "Tu penses *quoi ?*",
+      "sub": "Explosion · Tempête · Mutinerie"
+    },
+    {
+      "say": "Abonne-toi, prochain dossier demain matin.",
+      "title": "*Abonne-toi.*",
+      "sub": "Prochain dossier demain 8h"
+    }
+  ]
+}

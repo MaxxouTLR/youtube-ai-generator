@@ -1,0 +1,60 @@
+{
+  "slug": "gengis_khan_descendants",
+  "num": 32,
+  "source": "https://fr.wikipedia.org/wiki/Gengis_Khan",
+  "caption": "#CapCut 📁 Dossier n°32 — Des millions d'hommes descendraient de Gengis Khan 🧬 Toi aussi, peut-être ? #histoire #genghiskhan #adn #mongolie #lesaviezvous #dossier",
+  "beats": [
+    {
+      "say": "Des millions d'hommes vivants descendraient de Gengis Khan.",
+      "title": "Des *millions* de descendants.",
+      "sub": "Et ce n'est pas le plus fou…"
+    },
+    {
+      "say": "Environ seize millions, selon une étude génétique de 2003.",
+      "led": "16 M",
+      "led_sub": "d'hommes, selon une étude de 2003",
+      "flash": true
+    },
+    {
+      "say": "Les chercheurs ont trouvé une même lignée génétique masculine chez environ huit pour cent des hommes d'Asie centrale.",
+      "led": "8 %",
+      "led_sub": "des hommes d'Asie centrale",
+      "icon": "🧬"
+    },
+    {
+      "say": "Soit environ un homme sur deux cents dans le monde.",
+      "led": "1 / 200",
+      "led_sub": "dans le monde"
+    },
+    {
+      "say": "Cette lignée serait apparue il y a environ mille ans, en Mongolie.",
+      "title": "Il y a *1 000 ans,* en Mongolie.",
+      "icon": "🏹"
+    },
+    {
+      "say": "Son origine la plus probable : Gengis Khan et sa famille.",
+      "title": "Gengis Khan *et sa famille.*",
+      "flash": true
+    },
+    {
+      "say": "Son empire s'étendait de la Chine jusqu'à l'Europe de l'Est.",
+      "icon": "🌏",
+      "stamp": "Empire mongol",
+      "stamp_at": 0.8
+    },
+    {
+      "say": "Mais attention, ce n'est qu'une hypothèse : sa tombe n'a jamais été retrouvée.",
+      "title": "Sa tombe : *jamais retrouvée.*"
+    },
+    {
+      "say": "Et toi, tu penses en descendre ?",
+      "title": "Tu penses *en descendre ?*",
+      "sub": "Oui · Non · Je veux un test ADN"
+    },
+    {
+      "say": "Abonne-toi, prochain dossier demain matin.",
+      "title": "*Abonne-toi.*",
+      "sub": "Prochain dossier demain 8h"
+    }
+  ]
+}

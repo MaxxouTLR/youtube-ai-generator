@@ -1,0 +1,59 @@
+{
+  "slug": "yamaguchi_deux_bombes",
+  "num": 23,
+  "source": "https://fr.wikipedia.org/wiki/Tsutomu_Yamaguchi",
+  "caption": "#CapCut 📁 Dossier n°23 — Il a survécu à Hiroshima… puis à Nagasaki, trois jours plus tard ☢️ Tu le connaissais ? #histoire #japon #ww2 #lesaviezvous #dossier",
+  "beats": [
+    {
+      "say": "Cet homme a survécu aux deux bombes atomiques.",
+      "title": "Il a survécu aux *deux bombes.*",
+      "sub": "Et ce n'est pas le plus fou…"
+    },
+    {
+      "say": "Le 6 août 1945, Tsutomu Yamaguchi est à Hiroshima pour son travail.",
+      "led": "6 AOÛT",
+      "led_sub": "Hiroshima, 1945"
+    },
+    {
+      "say": "La bombe explose à environ trois kilomètres de lui. Il est gravement brûlé.",
+      "led": "3 KM",
+      "led_sub": "de l'explosion",
+      "flash": true
+    },
+    {
+      "say": "Le lendemain, il rentre chez lui. À Nagasaki.",
+      "title": "Il rentre chez lui. *À Nagasaki.*",
+      "icon": "🚆"
+    },
+    {
+      "say": "Le 9 août, il raconte à son chef ce qu'il a vécu à Hiroshima.",
+      "led": "9 AOÛT",
+      "led_sub": "Nagasaki"
+    },
+    {
+      "say": "Et à ce moment précis, la deuxième bombe explose.",
+      "title": "La *deuxième* bombe.",
+      "flash": true
+    },
+    {
+      "say": "Il survit encore.",
+      "title": "Il survit *encore.*"
+    },
+    {
+      "say": "Il est officiellement reconnu double survivant en 2009, et meurt en 2010, à 93 ans.",
+      "led": "93 ANS",
+      "stamp": "Double survivant",
+      "stamp_at": 1.4
+    },
+    {
+      "say": "Et toi, tu connaissais son histoire ?",
+      "title": "Tu connaissais *son histoire ?*",
+      "sub": "Oui · Non"
+    },
+    {
+      "say": "Abonne-toi, prochain dossier ce soir.",
+      "title": "*Abonne-toi.*",
+      "sub": "Prochain dossier ce soir 19h"
+    }
+  ]
+}

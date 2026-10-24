@@ -1,0 +1,59 @@
+{
+  "slug": "colomb_terre_ronde",
+  "num": 27,
+  "source": "https://fr.wikipedia.org/wiki/Mythe_de_la_Terre_plate",
+  "caption": "#CapCut 📁 Dossier n°27 — Christophe Colomb n'a pas prouvé que la Terre était ronde 🌍 Tout le monde le savait déjà #histoire #colomb #mythe #lesaviezvous #dossier",
+  "beats": [
+    {
+      "say": "Christophe Colomb n'a pas prouvé que la Terre était ronde.",
+      "title": "Colomb n'a *rien prouvé.*",
+      "sub": "Et ce n'est pas le plus fou…"
+    },
+    {
+      "say": "Tout le monde instruit le savait déjà depuis l'Antiquité.",
+      "title": "On le savait *depuis 2000 ans.*",
+      "icon": "🌍",
+      "flash": true
+    },
+    {
+      "say": "Vers 240 avant Jésus-Christ, le Grec Ératosthène mesure même la taille de la Terre.",
+      "led": "-240",
+      "led_sub": "Ératosthène"
+    },
+    {
+      "say": "Avec des ombres et un bâton. Et il tombe presque juste.",
+      "title": "Avec un *bâton.*",
+      "icon": "📏"
+    },
+    {
+      "say": "Alors pourquoi les savants s'opposaient à Colomb ?",
+      "title": "Alors, *pourquoi* le refus ?"
+    },
+    {
+      "say": "Parce qu'il sous-estimait énormément la taille de la Terre.",
+      "title": "Il se trompait *de distance.*",
+      "flash": true
+    },
+    {
+      "say": "Sans l'Amérique sur sa route, son équipage serait mort de faim en mer.",
+      "stamp": "Coup de chance",
+      "icon": "⛵",
+      "stamp_at": 1.2
+    },
+    {
+      "say": "Le mythe de la Terre plate vient surtout d'un écrivain américain du dix-neuvième siècle.",
+      "led": "1828",
+      "led_sub": "naissance du mythe"
+    },
+    {
+      "say": "Et toi, tu y croyais ?",
+      "title": "Tu y *croyais ?*",
+      "sub": "Oui · Non"
+    },
+    {
+      "say": "Abonne-toi, prochain dossier ce soir.",
+      "title": "*Abonne-toi.*",
+      "sub": "Prochain dossier ce soir 19h"
+    }
+  ]
+}

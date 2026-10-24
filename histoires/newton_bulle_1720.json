@@ -1,0 +1,56 @@
+{
+  "slug": "newton_bulle_1720",
+  "num": 28,
+  "source": "https://fr.wikipedia.org/wiki/Bulle_des_mers_du_Sud",
+  "caption": "#CapCut 📁 Dossier n°28 — Isaac Newton, le génie de la physique, a perdu une fortune en bourse 📉 Tu aurais résisté ? #histoire #newton #argent #bourse #lesaviezvous #dossier",
+  "beats": [
+    {
+      "say": "Isaac Newton, l'un des plus grands génies de l'histoire, a perdu une fortune en bourse.",
+      "title": "Newton a *tout perdu* en bourse.",
+      "sub": "Et ce n'est pas le plus fou…"
+    },
+    {
+      "say": "En 1720, tout Londres achète des actions de la Compagnie des mers du Sud.",
+      "led": "1720",
+      "led_sub": "mers du Sud",
+      "flash": true
+    },
+    {
+      "say": "Newton en achète, revend avec un joli bénéfice.",
+      "title": "Il revend… *avec un bénéfice.*",
+      "icon": "📈"
+    },
+    {
+      "say": "Mais l'action continue de grimper. Il rachète, beaucoup plus cher.",
+      "title": "Il *rachète.* Beaucoup plus cher.",
+      "flash": true
+    },
+    {
+      "say": "Puis la bulle éclate.",
+      "icon": "📉",
+      "stamp": "Krach",
+      "stamp_at": 0.4
+    },
+    {
+      "say": "Il aurait perdu environ vingt mille livres. Une fortune à l'époque.",
+      "led": "20 000 £",
+      "led_sub": "perdues"
+    },
+    {
+      "say": "On lui prête une phrase : je sais calculer le mouvement des astres, mais pas la folie des hommes.",
+      "title": "« Pas la *folie des hommes.* »",
+      "stamp": "Citation douteuse",
+      "stamp_at": 1.8
+    },
+    {
+      "say": "Et toi, tu aurais résisté ?",
+      "title": "Tu aurais *résisté ?*",
+      "sub": "Oui · Non · J'aurais tout misé"
+    },
+    {
+      "say": "Abonne-toi, prochain dossier demain matin.",
+      "title": "*Abonne-toi.*",
+      "sub": "Prochain dossier demain 8h"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "slug": "marie_antoinette_brioche",
+  "num": 16,
+  "source": "https://fr.wikipedia.org/wiki/Qu%27ils_mangent_de_la_brioche",
+  "caption": "#CapCut 📁 Dossier n°16 — Marie-Antoinette n'a jamais dit « qu'ils mangent de la brioche » 🥐 Tu le savais ? #histoire #marieantoinette #revolution #lesaviezvous #dossier",
+  "beats": [
+    {
+      "say": "Marie-Antoinette n'a jamais dit : qu'ils mangent de la brioche.",
+      "title": "Elle n'a *jamais* dit ça.",
+      "sub": "Et ce n'est pas le plus fou…"
+    },
+    {
+      "say": "La phrase apparaît dans un livre de Jean-Jacques Rousseau, écrit quand elle avait une dizaine d'années.",
+      "led": "ROUSSEAU",
+      "led_sub": "écrit vers 1765"
+    },
+    {
+      "say": "À ce moment-là, elle vit encore en Autriche.",
+      "title": "Elle est encore *en Autriche.*",
+      "icon": "🏰"
+    },
+    {
+      "say": "Rousseau parle seulement d'une grande princesse, sans nom.",
+      "title": "« Une grande princesse »… *sans nom.*",
+      "icon": "📖"
+    },
+    {
+      "say": "Elle n'arrive en France qu'en 1770.",
+      "led": "1770",
+      "led_sub": "arrivée en France"
+    },
+    {
+      "say": "Mais pendant la Révolution, on lui colle la phrase sur le dos.",
+      "title": "On lui *colle la phrase.*",
+      "flash": true
+    },
+    {
+      "say": "Elle devient le symbole d'une reine qui méprise le peuple.",
+      "icon": "👑",
+      "stamp": "Propagande",
+      "stamp_at": 1.0
+    },
+    {
+      "say": "Deux siècles plus tard, presque tout le monde croit encore qu'elle l'a dit.",
+      "title": "Une *fausse citation* célèbre"
+    },
+    {
+      "say": "Et toi, tu y croyais ?",
+      "title": "Tu y *croyais ?*",
+      "sub": "Oui · Non"
+    },
+    {
+      "say": "Abonne-toi, prochain dossier demain matin.",
+      "title": "*Abonne-toi.*",
+      "sub": "Prochain dossier demain 8h"
+    }
+  ]
+}

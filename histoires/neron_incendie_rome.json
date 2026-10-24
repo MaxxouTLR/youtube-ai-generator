@@ -1,0 +1,60 @@
+{
+  "slug": "neron_incendie_rome",
+  "num": 18,
+  "source": "https://fr.wikipedia.org/wiki/Grand_incendie_de_Rome",
+  "caption": "#CapCut 📁 Dossier n°18 — Néron n'a pas joué du violon pendant que Rome brûlait 🔥 Tu y croyais ? #histoire #rome #neron #lesaviezvous #dossier",
+  "beats": [
+    {
+      "say": "Néron n'a pas joué du violon pendant que Rome brûlait.",
+      "title": "Néron n'a *pas* joué du violon.",
+      "sub": "Et ce n'est pas le plus fou…"
+    },
+    {
+      "say": "Le violon n'existait même pas. Il sera inventé quinze siècles plus tard.",
+      "title": "Le violon *n'existait pas.*",
+      "icon": "🎻",
+      "flash": true
+    },
+    {
+      "say": "Juillet de l'an 64 : un immense incendie ravage Rome pendant près d'une semaine.",
+      "led": "64",
+      "led_sub": "grand incendie de Rome",
+      "icon": "🔥"
+    },
+    {
+      "say": "Quand le feu éclate, Néron n'est pas à Rome, mais à Antium, à une soixantaine de kilomètres.",
+      "title": "Il est *à 60 km.*",
+      "icon": "🏛️"
+    },
+    {
+      "say": "Il rentre, ouvre ses jardins aux sans-abri, et fait distribuer du blé.",
+      "title": "Il ouvre *ses jardins.*",
+      "icon": "🌾"
+    },
+    {
+      "say": "Mais une rumeur court : il aurait chanté la chute de Troie en regardant les flammes.",
+      "stamp": "Rumeur",
+      "icon": "🎶",
+      "stamp_at": 1.2
+    },
+    {
+      "say": "Même l'historien Tacite la présente comme une simple rumeur.",
+      "title": "Une *simple rumeur.*"
+    },
+    {
+      "say": "Et pour détourner les soupçons, Néron accuse les chrétiens.",
+      "title": "Il accuse *les chrétiens.*",
+      "flash": true
+    },
+    {
+      "say": "Et toi, tu y croyais ?",
+      "title": "Tu y *croyais ?*",
+      "sub": "Oui · Non"
+    },
+    {
+      "say": "Abonne-toi, prochain dossier demain matin.",
+      "title": "*Abonne-toi.*",
+      "sub": "Prochain dossier demain 8h"
+    }
+  ]
+}

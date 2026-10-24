@@ -1,0 +1,58 @@
+{
+  "slug": "momies_medicament",
+  "num": 21,
+  "source": "https://fr.wikipedia.org/wiki/Mumia",
+  "caption": "#CapCut 📁 Dossier n°21 — Pendant des siècles, les Européens ont mangé des momies… comme médicament 💀 Tu aurais testé ? #histoire #egypte #momie #lesaviezvous #dossier",
+  "beats": [
+    {
+      "say": "Pendant des siècles, les Européens ont mangé des momies égyptiennes.",
+      "title": "Ils mangeaient *des momies.*",
+      "sub": "La suite est encore pire…"
+    },
+    {
+      "say": "Réduites en poudre, elles étaient vendues comme médicament.",
+      "title": "En poudre, *comme médicament.*",
+      "icon": "💊",
+      "flash": true
+    },
+    {
+      "say": "On appelait ça la mumia.",
+      "led": "MUMIA"
+    },
+    {
+      "say": "On en avalait contre les maux de tête, les chutes, ou les hémorragies.",
+      "title": "Contre les *maux de tête.*",
+      "icon": "🤕"
+    },
+    {
+      "say": "La demande devient si forte que des trafiquants fabriquent de fausses momies.",
+      "title": "De *fausses momies.*",
+      "stamp": "Contrefaçon",
+      "stamp_at": 1.2
+    },
+    {
+      "say": "Avec des corps récents, séchés au soleil.",
+      "icon": "☀️",
+      "flash": true
+    },
+    {
+      "say": "La pratique dure jusqu'au dix-septième siècle, avant d'être abandonnée.",
+      "led": "XVIIE",
+      "led_sub": "siècle"
+    },
+    {
+      "say": "Et elle ne soignait absolument rien.",
+      "title": "Ça ne soignait *rien.*"
+    },
+    {
+      "say": "Et toi, tu aurais testé ?",
+      "title": "Tu aurais *testé ?*",
+      "sub": "Jamais · Si j'étais désespéré"
+    },
+    {
+      "say": "Abonne-toi, prochain dossier ce soir.",
+      "title": "*Abonne-toi.*",
+      "sub": "Prochain dossier ce soir 19h"
+    }
+  ]
+}

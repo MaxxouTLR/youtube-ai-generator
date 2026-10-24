@@ -1,0 +1,58 @@
+{
+  "slug": "louis_xix_vingt_minutes",
+  "num": 19,
+  "source": "https://fr.wikipedia.org/wiki/Louis-Antoine_d%27Artois",
+  "caption": "#CapCut 📁 Dossier n°19 — Le roi de France qui a régné… 20 minutes 👑 Tu le connaissais ? #histoire #france #roi #lesaviezvous #dossier",
+  "beats": [
+    {
+      "say": "Un roi de France aurait régné vingt minutes.",
+      "title": "Roi pendant *20 minutes.*",
+      "sub": "Et ce n'est pas le plus fou…"
+    },
+    {
+      "say": "Le 2 août 1830, Charles Dix abdique, après la révolution des Trois Glorieuses.",
+      "led": "1830",
+      "led_sub": "les Trois Glorieuses",
+      "flash": true
+    },
+    {
+      "say": "Son fils, Louis-Antoine, devient alors roi. En théorie.",
+      "title": "Son fils devient roi… *en théorie.*",
+      "icon": "👑"
+    },
+    {
+      "say": "Mais une vingtaine de minutes plus tard, il signe à son tour l'abdication.",
+      "led": "20 MIN"
+    },
+    {
+      "say": "Pour les royalistes les plus fidèles, il a donc été Louis Dix-Neuf.",
+      "led": "LOUIS XIX",
+      "stamp": "Selon les légitimistes",
+      "stamp_at": 1.4
+    },
+    {
+      "say": "Le règne le plus court de l'histoire de France.",
+      "title": "Le règne *le plus court.*"
+    },
+    {
+      "say": "Et le trône ne revient même pas à sa famille : c'est Louis-Philippe qui devient roi.",
+      "title": "Le trône part chez *Louis-Philippe.*",
+      "flash": true
+    },
+    {
+      "say": "Louis-Antoine mourra en exil, en Autriche.",
+      "icon": "🏔️",
+      "stamp": "Exil"
+    },
+    {
+      "say": "Et toi, tu le connaissais ?",
+      "title": "Tu le *connaissais ?*",
+      "sub": "Oui · Non"
+    },
+    {
+      "say": "Abonne-toi, prochain dossier ce soir.",
+      "title": "*Abonne-toi.*",
+      "sub": "Prochain dossier ce soir 19h"
+    }
+  ]
+}

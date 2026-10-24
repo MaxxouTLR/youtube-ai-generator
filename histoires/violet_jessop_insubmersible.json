@@ -1,0 +1,58 @@
+{
+  "slug": "violet_jessop_insubmersible",
+  "num": 26,
+  "source": "https://fr.wikipedia.org/wiki/Violet_Jessop",
+  "caption": "#CapCut 📁 Dossier n°26 — Elle a survécu au Titanic… et à ses deux navires jumeaux 🚢 La femme la plus chanceuse (ou malchanceuse) ? #histoire #titanic #survivante #lesaviezvous #dossier",
+  "beats": [
+    {
+      "say": "Cette femme a survécu au Titanic. Et à ses deux navires jumeaux.",
+      "title": "Titanic… *et ses deux jumeaux.*",
+      "sub": "Et ce n'est pas le plus fou…"
+    },
+    {
+      "say": "Violet Jessop est hôtesse à bord des grands paquebots.",
+      "icon": "🛳️",
+      "stamp": "Violet Jessop",
+      "stamp_at": 0.8
+    },
+    {
+      "say": "1911 : elle est sur l'Olympic quand il percute un navire de guerre.",
+      "led": "1911",
+      "led_sub": "Olympic : collision",
+      "flash": true
+    },
+    {
+      "say": "1912 : elle est sur le Titanic. Elle survit, dans le canot numéro seize.",
+      "led": "1912",
+      "led_sub": "Titanic : canot n°16"
+    },
+    {
+      "say": "1916 : elle est infirmière sur le Britannic, transformé en navire-hôpital.",
+      "led": "1916",
+      "led_sub": "Britannic"
+    },
+    {
+      "say": "Il heurte une mine et coule. Elle saute à l'eau, et se cogne la tête contre la coque.",
+      "title": "Elle saute. *Sa tête heurte la coque.*",
+      "flash": true
+    },
+    {
+      "say": "Elle survit encore.",
+      "title": "Elle survit *encore.*"
+    },
+    {
+      "say": "Son surnom : Miss Insubmersible.",
+      "title": "Miss *Insubmersible.*"
+    },
+    {
+      "say": "Et toi, tu dirais chanceuse ou malchanceuse ?",
+      "title": "Chanceuse ou *malchanceuse ?*",
+      "sub": "Chanceuse · Malchanceuse"
+    },
+    {
+      "say": "Abonne-toi, prochain dossier demain matin.",
+      "title": "*Abonne-toi.*",
+      "sub": "Prochain dossier demain 8h"
+    }
+  ]
+}
