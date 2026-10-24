@@ -152,37 +152,39 @@ function drawBeat(b, t) {
   // Accroche (1er beat) : tout est visible des l'image 0, sans fondu ni apparition point par point.
   // Analyse retention du 22/10/2026 : 30 a 70 % des spectateurs partaient avant 3 s, ecran quasi vide au debut.
   const instant = t0 === 0;
+  // 2e beat aussi sans apparition progressive : analyse du 24/10/2026, 1/3 des spectateurs partait entre 1 s et 3 s
+  const fast = instant || b === DATA.beats[1];
   if (textOnly) {   // phrase seule : en gros, au centre de la zone visible (comme "Normal." / "MAIS ATTENDEZ.")
     const size = b.title.length > 30 ? 92 : 118;
     const punch = instant ? 1.06 - 0.06 * clamp(lt / Math.max(1, b.end - t0))   // leger zoom arriere continu : l'image bouge des le debut
                           : 1 + 0.08 * (1 - easeOut(clamp((t - t0) / 0.2)));
     cx.save(); cx.translate(540, 700); cx.scale(punch, punch); cx.translate(-540, -700);
-    const th = drawTitle(b.title, 640, size, instant ? t0 - 1 : t0, t); cx.restore();
+    const th = drawTitle(b.title, 640, size, fast ? t0 - 1 : t0, t); cx.restore();
     if (b.sub) { cx.font = `${instant ? 48 : 40}px ${TITLE_FONT}`; cx.textAlign = "center"; cx.textBaseline = "top";
-      cx.globalAlpha = instant ? 1 : clamp((lt - 0.3) / 0.25);
+      cx.globalAlpha = fast ? 1 : clamp((lt - 0.3) / 0.25);
       cx.fillStyle = instant ? RED : MUTED; cx.fillText(b.sub, 540, Math.max(instant ? 1010 : 960, 640 + th * 1.06 + 40)); cx.globalAlpha = 1; cx.textAlign = "start"; }
     return;
   }
-  if (b.title) y += drawTitle(b.title, y, b.title.length > 42 ? 58 : 70, instant ? t0 - 1 : t0, t) + 40;
+  if (b.title) y += drawTitle(b.title, y, b.title.length > 42 ? 58 : 70, fast ? t0 - 1 : t0, t) + 40;
   if (b.led) {
     const d = dotify("led", b.led, 90), w = Math.min(940, d.aspect * 190), h = w / d.aspect;
-    const ledT = instant ? t0 : t0 + (b.title ? 0.12 : 0);
-    if (t >= ledT) drawDots(d, 540, y + h / 2, w, ledT, t, { reveal: instant ? 0.001 : 0.32, sweep: "left" });
+    const ledT = fast ? t0 : t0 + (b.title ? 0.12 : 0);
+    if (t >= ledT) drawDots(d, 540, y + h / 2, w, ledT, t, { reveal: fast ? 0.001 : 0.32, sweep: "left" });
     if (b.strike && t > t0 + b.strike) { const q = easeOut(clamp((t - t0 - b.strike) / 0.25));
       cx.fillStyle = WHITE; cx.fillRect(540 - w / 2 - 20, y + h / 2 - 6, (w + 40) * q, 12); }
     y += h + 26;
     if (b.led_sub) { cx.font = `34px ${TITLE_FONT}`; cx.textAlign = "center"; cx.textBaseline = "top";
-      cx.globalAlpha = clamp((t - ledT - 0.25) / 0.2); cx.fillStyle = MUTED; cx.fillText(b.led_sub.toUpperCase(), 540, y);
+      cx.globalAlpha = fast ? 1 : clamp((t - ledT - 0.25) / 0.2); cx.fillStyle = MUTED; cx.fillText(b.led_sub.toUpperCase(), 540, y);
       cx.globalAlpha = 1; cx.textAlign = "start"; y += 70; }
   }
   if (b.icon) {
     const size = b.led ? 420 : 560, fl = Math.sin(lt * 2.2) * 6;
-    drawDots(dotify("icon", b.icon, 0), 540, y + size / 2 + 20 + fl, size, instant ? t0 : t0 + 0.05, t, { reveal: instant ? 0.001 : 0.55 });
+    drawDots(dotify("icon", b.icon, 0), 540, y + size / 2 + 20 + fl, size, fast ? t0 : t0 + 0.05, t, { reveal: fast ? 0.001 : 0.55 });
     if (b.stamp) drawStamp(b.stamp, 540 + 150, y + 80, t0 + (b.stamp_at ?? Math.min(1.0, (b.end - t0) * 0.5)), t);
     y += size + 60;
   } else if (b.stamp) { drawStamp(b.stamp, 540, y + 90, t0 + (b.stamp_at ?? 0.25), t); y += 200; }
   if (b.array) drawArray(b.array.icon, b.array.n, y + 60, t0 + 0.1, b.end, t);
-  if (b.sub) { cx.font = `40px ${TITLE_FONT}`; cx.textAlign = "center"; cx.textBaseline = "top"; cx.globalAlpha = clamp((lt - 0.3) / 0.25);
+  if (b.sub) { cx.font = `40px ${TITLE_FONT}`; cx.textAlign = "center"; cx.textBaseline = "top"; cx.globalAlpha = fast ? 1 : clamp((lt - 0.3) / 0.25);
     cx.fillStyle = MUTED; cx.fillText(b.sub, 540, Math.max(y, 1180)); cx.globalAlpha = 1; cx.textAlign = "start"; }
 }
 
@@ -197,6 +199,9 @@ function render(t) {
   // petit indicateur de progression facon "dossier"
   cx.fillStyle = "rgba(255,255,255,.12)"; cx.fillRect(90, 1640, 900, 4);
   cx.fillStyle = RED; cx.fillRect(90, 1640, 900 * clamp(t / DATA.duration), 4);
+  // numero de serie, toujours visible en haut : donne une raison de suivre le compte ("Dossier n°12")
+  if (DATA.num) { cx.font = `34px ${TITLE_FONT}`; cx.textAlign = "center"; cx.textBaseline = "top"; cx.fillStyle = RED;
+    cx.fillText(`DOSSIER N°${DATA.num}`, 540, 96); cx.textAlign = "start"; }
 }
 window.render = render;
 document.fonts.ready.then(() => { window.ready = true; });

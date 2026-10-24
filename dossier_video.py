@@ -41,8 +41,8 @@ def time_beats(beats: list[dict], words: list[dict], total: float) -> list[dict]
     return beats
 
 
-def render(beats: list[dict], total: float, out_path: str) -> str:
-    data = {"duration": total, "beats": beats}
+def render(beats: list[dict], total: float, out_path: str, num: int | None = None) -> str:
+    data = {"duration": total, "beats": beats, "num": num}
     from playwright.sync_api import sync_playwright
     html = open(ENGINE, encoding="utf-8").read().replace("/*DATA*/null", json.dumps(data, ensure_ascii=False))
     n = int(round(total * motion_video.FPS))
@@ -65,13 +65,14 @@ def render(beats: list[dict], total: float, out_path: str) -> str:
     return out_path
 
 
-def make_short(voice_path: str, words: list[dict], beats: list[dict], out_path: str, work_dir: str) -> str:
+def make_short(voice_path: str, words: list[dict], beats: list[dict], out_path: str, work_dir: str,
+               num: int | None = None) -> str:
     os.makedirs(work_dir, exist_ok=True)
     total = motion_video._probe_duration(voice_path)
     beats = time_beats(beats, words, total)
     with open(os.path.join(work_dir, "beats.json"), "w", encoding="utf-8") as f:
         json.dump(beats, f, ensure_ascii=False, indent=1)
-    silent = render(beats, total, os.path.join(work_dir, "video.mp4"))
+    silent = render(beats, total, os.path.join(work_dir, "video.mp4"), num)
     audio = motion_video.mix_audio(voice_path, [b["start"] for b in beats[1:] if b.get("flash")], total,
                                    os.path.join(work_dir, "audio.m4a"))
     r = subprocess.run([motion_video.FFMPEG, "-y", "-i", silent, "-i", audio, "-map", "0:v", "-map", "1:a", "-c", "copy",
