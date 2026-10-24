@@ -40,7 +40,7 @@ function dotify(kind, content, size) {
     o.font = `${size}px ${LED_FONT}`;
     w = Math.ceil(o.measureText(content).width) + 8; h = Math.ceil(size * 1.15);
     off.width = w; off.height = h; o.font = `${size}px ${LED_FONT}`; o.textBaseline = "middle"; o.fillStyle = "#fff";
-    o.fillText(content, 4, h / 2 + size * 0.04); step = Math.max(2, Math.round(size / 11));
+    o.fillText(content, 4, h / 2 + size * 0.04); step = Math.max(2, Math.round(size / 15));   // ~15 points de haut : "1", "," et "6/9" restent lisibles
   }
   const img = o.getImageData(0, 0, w, h).data, dots = [];
   for (let y = 0; y < h; y += step) for (let x = 0; x < w; x += step) {
