@@ -78,7 +78,7 @@ def make_short(voice_path: str, words: list[dict], beats: list[dict], out_path: 
         json.dump(beats, f, ensure_ascii=False, indent=1)
     silent = render(beats, total, os.path.join(work_dir, "video.mp4"), num, words)
     # habillage sonore dedie (25/10/2026) : nappe de suspense, impacts, montees, tampons, voix traitee
-    audio = dossier_audio.mix(voice_path, beats, total, os.path.join(work_dir, "audio.m4a"), work_dir)
+    audio = dossier_audio.mix(voice_path, beats, total, os.path.join(work_dir, "audio.m4a"), work_dir, num)
     r = subprocess.run([motion_video.FFMPEG, "-y", "-i", silent, "-i", audio, "-map", "0:v", "-map", "1:a", "-c", "copy",
                         "-shortest", "-movflags", "+faststart", out_path], capture_output=True, text=True)
     if r.returncode != 0:

@@ -41,7 +41,8 @@ jobs:
           # rend uniquement les histoires ajoutees/modifiees par le dernier push (sinon toutes)
           files=$(git diff --name-only HEAD~1 HEAD -- 'histoires/*.json' 2>/dev/null || true)
           [ -z "$files" ] && files=$(ls histoires/*.json)
-          for f in $files; do python demo_fr.py demo_out "$f"; done
+          # les anciennes histoires sans "num" (deja publiees, videos supprimees du PC) ne sont jamais re-rendues
+          for f in $files; do grep -q '"num"' "$f" || continue; python demo_fr.py demo_out "$f"; done
 
       - name: Renvoyer les videos dans le depot
         run: |
