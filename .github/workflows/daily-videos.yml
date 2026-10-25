@@ -12,8 +12,8 @@ on:
         description: "Publier sur YouTube (decoche pour un run de test)"
         type: boolean
         default: false
-  # EN PAUSE depuis le 20/10/2026 (demande utilisateur : passage a une chaine FR histoire). Pour relancer, decommenter les 3 lignes.
-  # schedule:
+  # Relance le 25/10/2026 (demande utilisateur) apres une pause du 20/10 au 25/10 : 2 Shorts (8h et 13h) + 1 longue (19h) par jour.
+  schedule:
     # Un cron GitHub Actions est fixe en UTC et ne suit PAS le changement d'heure ete/hiver. Plutot
     # que de figer un horaire UTC qui deriverait d'1h a chaque bascule, on declare DEUX jeux de cron
     # couvrant les 2 horaires locaux Paris (8h pour le short, 19h pour la longue - reduit de 3 a 2
@@ -34,8 +34,8 @@ on:
     # trouve : pousser un commit relance le declenchement pour un moment. Voir aussi le matching par
     # fenetre de tolerance plus bas (protection contre le retard de 50-70min constate en pratique sur
     # les rares declenchements reels, qui faisait sinon systematiquement tomber en "skip").
-    # - cron: "7 7,18 * * *"  # hypothese heure d'hiver (UTC+1)
-    # - cron: "7 6,17 * * *"  # hypothese heure d'ete (UTC+2)
+    - cron: "7 7,12,18 * * *"  # hypothese heure d'hiver (UTC+1) : 8h, 13h, 19h Paris
+    - cron: "7 6,11,17 * * *"  # hypothese heure d'ete (UTC+2) : 8h, 13h, 19h Paris
 
 permissions:
   contents: write
@@ -74,7 +74,7 @@ jobs:
             # publier deux fois le meme creneau si les deux jeux de cron (hiver/ete) finissent par
             # matcher le meme jour a cause du retard.
             best_type=""; best_target=""; best_diff=999
-            for entry in "long:19" "short:08"; do
+            for entry in "long:19" "short:08" "short:13"; do
               type="${entry%%:*}"; target="${entry##*:}"
               target_min=$(( 10#$target * 60 ))
               diff=$(( now_min - target_min )); [ "$diff" -lt 0 ] && diff=$(( -diff ))
