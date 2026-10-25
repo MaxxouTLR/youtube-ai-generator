@@ -41,3 +41,5 @@ branding_kit/
 # sur la plateforme de vente choisie (Gumroad ou équivalent), jamais dans ce dépôt.
 products/
 graphify-out/
+.pytest_cache/
+*.part

@@ -2,8 +2,10 @@
 import json
 import os
 import re
+import urllib.error
 import urllib.request
 import config
+import net_retry
 
 
 STYLE_RULES = """Mandatory style rules:
@@ -550,9 +552,13 @@ def _word_target(minutes: int) -> int:
     return minutes * 140
 
 
-def _call_ollama(prompt: str) -> str:
+class OllamaError(RuntimeError):
+    """Echec d'appel a Ollama, avec un message qui dit quoi faire."""
+
+
+def _ollama_request(prompt: str, model: str) -> str:
     payload = json.dumps({
-        "model": config.OLLAMA_MODEL,
+        "model": model,
         "prompt": prompt,
         "stream": False,
         # num_ctx/num_predict explicites : sans ca Ollama peut appliquer des defauts bas
@@ -565,9 +571,41 @@ def _call_ollama(prompt: str) -> str:
         config.OLLAMA_URL, data=payload,
         headers={"Content-Type": "application/json"},
     )
-    with urllib.request.urlopen(req, timeout=600) as resp:
+    with urllib.request.urlopen(req, timeout=config.OLLAMA_TIMEOUT_SECONDS) as resp:
         data = json.loads(resp.read().decode("utf-8"))
+    if data.get("error"):
+        raise OllamaError(f"Ollama a renvoye une erreur pour le modele {model} : {data['error']}")
     return data.get("response", "").strip()
+
+
+def _call_ollama(prompt: str) -> str:
+    """Appel Ollama avec retries (coupure reseau, timeout, 5xx) puis repli sur
+    config.OLLAMA_FALLBACK_MODELS dans l'ordre si le modele principal reste en echec."""
+    models = [config.OLLAMA_MODEL] + [m for m in config.OLLAMA_FALLBACK_MODELS if m != config.OLLAMA_MODEL]
+    last_exc = None
+    for i, model in enumerate(models):
+        if i > 0:
+            print(f"    [fallback] Modele Ollama de repli : {model}")
+        try:
+            return net_retry.with_retry(
+                lambda: _ollama_request(prompt, model), what=f"Ollama ({model})", attempts=3, base_delay=5,
+            )
+        except urllib.error.HTTPError as exc:
+            last_exc = exc  # 404 = modele non telecharge, 5xx persistant : on tente le modele suivant
+        except urllib.error.URLError as exc:
+            # Serveur injoignable : changer de modele n'y changera rien.
+            raise OllamaError(
+                f"Impossible de contacter Ollama ({config.OLLAMA_URL}) : {net_retry.describe_error(exc)}. "
+                "Verifie qu'Ollama tourne (`ollama serve`)."
+            ) from exc
+        except (TimeoutError, OSError, ValueError, OllamaError) as exc:
+            last_exc = exc
+    hint = ""
+    if isinstance(last_exc, urllib.error.HTTPError) and last_exc.code == 404:
+        hint = f" Modele absent ? Lance `ollama pull {config.OLLAMA_MODEL}`."
+    raise OllamaError(
+        f"Echec Ollama avec {', '.join(models)} : {net_retry.describe_error(last_exc)}.{hint}"
+    ) from last_exc
 
 
 def _call_ollama_with_retry(prompt: str, attempts: int = 3) -> str:
@@ -647,7 +685,7 @@ def generate_script(topic: str | None = None, minutes: int | None = None) -> tup
         raise
     except Exception as exc:
         raise RuntimeError(
-            "Impossible de contacter Ollama (http://localhost:11434). "
+            f"Generation du script via Ollama en echec ({net_retry.describe_error(exc)}). "
             "Verifie qu'Ollama tourne (`ollama serve`) et que le modele est telecharge "
             f"(`ollama pull {config.OLLAMA_MODEL}`)."
         ) from exc
@@ -703,9 +741,11 @@ def generate_short_script(topic: str | None = None, seconds: int | None = None) 
             )
         )
         script = _clean_script(raw)
+    except RuntimeError:
+        raise
     except Exception as exc:
         raise RuntimeError(
-            "Impossible de contacter Ollama (http://localhost:11434). "
+            f"Generation du script via Ollama en echec ({net_retry.describe_error(exc)}). "
             "Verifie qu'Ollama tourne (`ollama serve`) et que le modele est telecharge "
             f"(`ollama pull {config.OLLAMA_MODEL}`)."
         ) from exc

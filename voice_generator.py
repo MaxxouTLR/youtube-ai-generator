@@ -18,6 +18,7 @@ import azure.cognitiveservices.speech as speechsdk
 import imageio_ffmpeg
 
 import config
+import net_retry
 
 TICKS_PER_SECOND = 10_000_000
 
@@ -42,9 +43,10 @@ def _build_ssml(text: str, voice: str, rate: str) -> str:
 
 
 def _speech_config() -> speechsdk.SpeechConfig:
+    hint = "Cle et region se trouvent dans le portail Azure, ressource Speech > Keys and Endpoint."
     speech_config = speechsdk.SpeechConfig(
-        subscription=os.environ["AZURE_SPEECH_KEY"],
-        region=os.environ["AZURE_SPEECH_REGION"],
+        subscription=net_retry.require_env("AZURE_SPEECH_KEY", hint),
+        region=net_retry.require_env("AZURE_SPEECH_REGION", hint),
     )
     speech_config.set_speech_synthesis_output_format(
         speechsdk.SpeechSynthesisOutputFormat.Audio24Khz96KBitRateMonoMp3
@@ -52,17 +54,42 @@ def _speech_config() -> speechsdk.SpeechConfig:
     return speech_config
 
 
+class SpeechSynthesisError(RuntimeError):
+    def __init__(self, message: str, transient: bool):
+        super().__init__(message)
+        self.transient = transient
+
+
+# Erreurs Azure passageres (quota/seconde du tier F0, coupure reseau, service surcharge) : on reessaie.
+# AuthenticationFailure/Forbidden/BadRequest ne se corrigeront pas toutes seules : echec immediat.
+_TRANSIENT_CANCELLATION_CODES = {"TooManyRequests", "ConnectionFailure", "ServiceTimeout",
+                                 "ServiceError", "ServiceUnavailable", "ServiceRedirectTemporary"}
+
+
 def _raise_if_failed(result: speechsdk.SpeechSynthesisResult) -> None:
     if result.reason == speechsdk.ResultReason.Canceled:
         details = speechsdk.SpeechSynthesisCancellationDetails(result)
-        raise RuntimeError(f"Azure Speech synthesis annulee : {details.reason} - {details.error_details}")
+        code = getattr(details.error_code, "name", str(details.error_code))
+        message = f"Azure Speech synthesis annulee : {details.reason} / {code} - {details.error_details}"
+        if code in ("AuthenticationFailure", "Forbidden"):
+            message += (" -> verifie AZURE_SPEECH_KEY et AZURE_SPEECH_REGION (la cle doit correspondre a la"
+                        " region de la ressource Speech)")
+        raise SpeechSynthesisError(message, transient=code in _TRANSIENT_CANCELLATION_CODES)
+
+
+def _is_transient_speech_error(exc: BaseException) -> bool:
+    return isinstance(exc, SpeechSynthesisError) and exc.transient
 
 
 def _synthesize(text: str, out_path: str, voice: str, rate: str) -> None:
-    audio_config = speechsdk.audio.AudioOutputConfig(filename=out_path)
-    synthesizer = speechsdk.SpeechSynthesizer(speech_config=_speech_config(), audio_config=audio_config)
-    result = synthesizer.speak_ssml_async(_build_ssml(text, voice, rate)).get()
-    _raise_if_failed(result)
+    def _once():
+        audio_config = speechsdk.audio.AudioOutputConfig(filename=out_path)
+        synthesizer = speechsdk.SpeechSynthesizer(speech_config=_speech_config(), audio_config=audio_config)
+        result = synthesizer.speak_ssml_async(_build_ssml(text, voice, rate)).get()
+        _raise_if_failed(result)
+
+    net_retry.with_retry(_once, what="synthese Azure Speech", attempts=4, base_delay=5,
+                         retry_on=_is_transient_speech_error)
 
 
 def generate_voice(text: str, out_path: str | None = None) -> str:
@@ -74,22 +101,27 @@ def generate_voice(text: str, out_path: str | None = None) -> str:
 
 
 def _synthesize_with_timing(text: str, out_path: str, voice: str, rate: str) -> list[dict]:
-    word_boundaries: list[dict] = []
+    def _once() -> list[dict]:
+        # Liste neuve a chaque essai : un essai interrompu ne doit pas laisser de timings fantomes.
+        word_boundaries: list[dict] = []
 
-    audio_config = speechsdk.audio.AudioOutputConfig(filename=out_path)
-    synthesizer = speechsdk.SpeechSynthesizer(speech_config=_speech_config(), audio_config=audio_config)
+        audio_config = speechsdk.audio.AudioOutputConfig(filename=out_path)
+        synthesizer = speechsdk.SpeechSynthesizer(speech_config=_speech_config(), audio_config=audio_config)
 
-    def _on_word_boundary(evt: speechsdk.SpeechSynthesisWordBoundaryEventArgs) -> None:
-        word_boundaries.append({
-            "text": evt.text,
-            "offset": evt.audio_offset,  # deja en ticks (100ns), meme unite que l'ancien edge-tts
-            "duration": int(evt.duration.total_seconds() * 10_000_000),  # timedelta -> ticks (100ns)
-        })
+        def _on_word_boundary(evt: speechsdk.SpeechSynthesisWordBoundaryEventArgs) -> None:
+            word_boundaries.append({
+                "text": evt.text,
+                "offset": evt.audio_offset,  # deja en ticks (100ns), meme unite que l'ancien edge-tts
+                "duration": int(evt.duration.total_seconds() * 10_000_000),  # timedelta -> ticks (100ns)
+            })
 
-    synthesizer.synthesis_word_boundary.connect(_on_word_boundary)
-    result = synthesizer.speak_ssml_async(_build_ssml(text, voice, rate)).get()
-    _raise_if_failed(result)
-    return word_boundaries
+        synthesizer.synthesis_word_boundary.connect(_on_word_boundary)
+        result = synthesizer.speak_ssml_async(_build_ssml(text, voice, rate)).get()
+        _raise_if_failed(result)
+        return word_boundaries
+
+    return net_retry.with_retry(_once, what="synthese Azure Speech", attempts=4, base_delay=5,
+                                retry_on=_is_transient_speech_error)
 
 
 def _trim_long_silences(audio_path: str, word_boundaries: list[dict], max_gap_seconds: float = 0.45) -> list[dict]:
