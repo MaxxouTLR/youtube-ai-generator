@@ -7,9 +7,10 @@ de droits → musique de fond générée → miniature IA → publication YouTub
 
 ## État actuel (en production)
 
-- **3 vidéos/jour**, publiées automatiquement et **publiquement** sur la chaîne :
-  - 1 vidéo longue (15-20 min) à **19h** (heure de Paris)
-  - 2 Shorts (~50s) à **8h** et **21h**
+- **3 vidéos/jour**, publiées automatiquement et **publiquement** sur la chaîne (grille relancée le
+  25/10/2026 après une pause du 20 au 25/10) :
+  - 2 Shorts (~20s) à **8h** et **13h** (heure de Paris)
+  - 1 vidéo longue (15-20 min) à **19h**
 - Hébergé sur **GitHub Actions** (dépôt public `MaxxouTLR/youtube-ai-generator`, choisi pour les
   minutes Actions gratuites illimitées). Le workflow `.github/workflows/daily-videos.yml` gère deux
   jeux de cron (heure d'hiver/été) et recalcule l'heure réelle de Paris à chaque déclenchement.
@@ -20,9 +21,19 @@ de droits → musique de fond générée → miniature IA → publication YouTub
 - Produit associé (affiliation/CTA) : lien inséré automatiquement en fin de description de chaque
   vidéo via `config.PRODUCT_CTA`.
 
+## Périmètre de ce dépôt (branche `main`)
+
+La branche `main` ne contient **que la chaîne YouTube anglaise** (motivation / développement
+personnel). Le compte TikTok français « Dossiers d'Histoire » est un **projet séparé** depuis le
+25/10/2026 : il vit sur la branche `demo-fr` (worktree local distinct, son propre workflow
+`demo-fr.yml`, ses propres scripts `dossier_*.py` / `motion/`).
+- Ne jamais fusionner `demo-fr` dans `main` ni l'inverse, et ne pas renommer le dépôt ni la branche
+  `demo-fr` : les vidéos TikTok programmées dans Buffer pointent vers des liens `raw` de cette branche.
+- Les notes de travail pour Claude (`CLAUDE.md`) restent en local, hors Git (dépôt public).
+
 ## Composants du pipeline
 
-- **Script** — Ollama local (`llama3.2:3b`), aucune clé API, aucun compte. Sujets générés à l'infini
+- **Script** — Ollama (`llama3.2:3b`, installé sur le runner), aucune clé API, aucun compte. Sujets générés à l'infini
   par Ollama lui-même (`script_generator._generate_new_topic`, évite les ~60 derniers sujets utilisés),
   avec repli sur `FALLBACK_TOPICS` si Ollama échoue 3 fois de suite. Règles de rétention (hooks,
   rythme, pas de répétition) injectées dans le prompt (`HOOK_RULES`).
@@ -38,9 +49,11 @@ de droits → musique de fond générée → miniature IA → publication YouTub
 - **Sous-titres dynamiques** — surbrillance mot par mot façon karaoké (`subtitles.py`), synchronisée
   sur les timings Azure Speech (`WordBoundary`), gravée via le filtre natif ffmpeg/libass (rapide,
   ~0.4x la durée de la vidéo).
-- **Visuels contextuels** — le script est découpé en segments (~15-25s pour le format long, plus
-  courts pour les Shorts) ; chaque segment génère son propre mot-clé de recherche via Ollama pour
+- **Visuels contextuels** — le script est découpé en segments (~15-25s pour le format long, une
+  phrase de ~7 mots pour les Shorts) ; chaque segment génère son propre mot-clé de recherche via Ollama pour
   trouver un clip Pexels pertinent, au lieu d'un pool générique.
+- **Montage dynamique des Shorts** (`montage.py`) — un clip différent par phrase, accroche et
+  sous-titres animés en police grasse (Montserrat Black sur le runner).
 - **Musique de fond** — générée localement par synthèse numpy (`music_generator.py`, nappes
   ambiantes, 6 pistes), zéro risque de droits d'auteur, mixée à bas volume sous la voix off. Activée
   par défaut (`config.MUSIC_ENABLED = True`).
@@ -70,6 +83,9 @@ python run_pipeline.py --publish
 
 # Short : genere tout, ne publie pas
 python run_shorts_pipeline.py
+
+# Short : genere ET publie
+python run_shorts_pipeline.py --publish
 
 # Imposer un sujet precis
 python run_pipeline.py --topic "how to build unshakeable confidence" --publish
@@ -110,7 +126,7 @@ sur Azure Speech par défaut.
   cette politique.
 - **Fiabilité du `schedule` GitHub Actions** : peut rester silencieux plusieurs heures sans se
   déclencher (comportement documenté comme peu fiable pour les schedules nouvellement modifiés) —
-  un matching par fenêtre de tolérance (100 min) et un anti-doublon (`output/last_auto_run.json`)
+  un matching par fenêtre de tolérance (180 min) et un anti-doublon (`output/last_auto_run.json`)
   compensent les déclenchements retardés ou ratés.
 - **Miniatures personnalisées** : nécessitent un compte YouTube vérifié par téléphone. Si non
   vérifié, l'upload réussit quand même mais la miniature générée n'est pas appliquée (avertissement,
@@ -128,6 +144,7 @@ sur Azure Speech par défaut.
 - `subtitles.py` — génère les sous-titres dynamiques (.ass, style karaoké) à partir des timings
 - `visuals_fetcher.py` — recherche/téléchargement de clips Pexels (par mot-clé ou en lot générique)
 - `music_generator.py` — musique de fond ambiante générée localement (numpy, zéro droits d'auteur)
+- `montage.py` — montage dynamique des Shorts (un clip par phrase, accroche et sous-titres animés)
 - `video_assembler.py` — montage par segments synchronisés (moviepy/ffmpeg) + mixage musique +
   gravure des sous-titres
 - `thumbnail_generator.py` — miniature (fond généré par IA + texte accrocheur en surimpression)
@@ -137,3 +154,6 @@ sur Azure Speech par défaut.
 - `run_pipeline.py` — orchestre le pipeline vidéo longue
 - `run_shorts_pipeline.py` — orchestre le pipeline Shorts
 - `.github/workflows/daily-videos.yml` — workflow GitHub Actions (planification, retry, secrets)
+- `run_pipeline_safe.ps1` — ancien wrapper des tâches planifiées Windows (avant GitHub Actions),
+  conservé pour un éventuel retour à l'exécution locale ; plus utilisé en production
+- `GUIDE_UTILISATION.md` — guide pas à pas (vérifier, tester, mettre en pause, dépanner)
