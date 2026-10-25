@@ -1,66 +1,66 @@
 {
-  "slug": "titanic_boulanger_1912",
-  "num": 11,
-  "source": "https://fr.wikipedia.org/wiki/Charles_Joughin",
-  "caption": "#CapCut 📁 Dossier n°11 — Il a survécu au naufrage du Titanic… grâce au whisky ? 🥃 Tu y crois ? #histoire #titanic #lesaviezvous #anecdote #dossier",
-  "beats": [
-    {
-      "say": "Il a survécu deux heures dans l'eau glacée du Titanic. Grâce au whisky ?",
-      "title": "Il a survécu au Titanic… *grâce au whisky ?*",
-      "sub": "Et ce n'est pas le plus fou…"
-    },
-    {
-      "say": "L'eau est à moins deux degrés. On y meurt en quelques minutes.",
-      "led": "-2°C",
-      "led_sub": "l'eau de l'Atlantique"
-    },
-    {
-      "say": "Lui, c'est Charles Joughin, chef boulanger du navire.",
-      "icon": "🥖",
-      "stamp": "Chef boulanger",
-      "stamp_at": 1.0
-    },
-    {
-      "say": "Après la collision, il aide à remplir les canots, puis va boire un verre.",
-      "title": "Puis il va boire *un verre.*",
-      "icon": "🥃"
-    },
-    {
-      "say": "Puis il jette des chaises longues à la mer, pour que d'autres s'y accrochent.",
-      "title": "Il jette des *chaises longues* à la mer",
-      "icon": "🪑"
-    },
-    {
-      "say": "Quand le paquebot sombre, il est tout à l'arrière.",
-      "title": "Il est *tout à l'arrière.*",
-      "icon": "🚢",
-      "flash": true
-    },
-    {
-      "say": "Selon lui, il descend avec la poupe comme dans un ascenseur.",
-      "title": "Comme dans un *ascenseur.*"
-    },
-    {
-      "say": "Puis il reste environ deux heures dans l'eau, avant d'être sauvé.",
-      "led": "2 H",
-      "led_sub": "dans l'eau glacée"
-    },
-    {
-      "say": "Il jurait que c'était grâce à l'alcool. Les médecins en doutent.",
-      "title": "Le whisky ? *Les médecins doutent.*",
-      "stamp": "Mystère",
-      "stamp_at": 1.4
-    },
-    {
-      "say": "Et toi, tu crois à l'effet whisky ?",
-      "title": "Tu crois à *l'effet whisky ?*",
-      "sub": "Oui · Non · Chance pure"
-    },
-    {
-      "say": "Abonne-toi, prochain dossier ce soir.",
-      "title": "*Abonne-toi.*",
-      "sub": "Prochain dossier ce soir 19h"
-    }
-  ],
-  "rev": 2
+ "slug": "titanic_boulanger_1912",
+ "num": 11,
+ "source": "https://fr.wikipedia.org/wiki/Charles_Joughin",
+ "caption": "#CapCut 📁 Dossier n°11 — Il a survécu au naufrage du Titanic… grâce au whisky ? 🥃 Tu y crois ? #histoire #titanic #lesaviezvous #anecdote #dossier",
+ "beats": [
+  {
+   "say": "Deux heures dans l'eau glacée. Il aurait dû mourir en dix minutes.",
+   "title": "Il aurait dû mourir *en 10 minutes.*",
+   "sub": "Son secret ? Attends la fin."
+  },
+  {
+   "say": "L'eau est à moins deux degrés. On y meurt en quelques minutes.",
+   "led": "-2°C",
+   "led_sub": "l'eau de l'Atlantique"
+  },
+  {
+   "say": "Lui, c'est Charles Joughin, chef boulanger du navire.",
+   "icon": "🥖",
+   "stamp": "Chef boulanger",
+   "stamp_at": 1.0
+  },
+  {
+   "say": "Après la collision, il aide à remplir les canots, puis va boire un verre.",
+   "title": "Puis il va boire *un verre.*",
+   "icon": "🥃"
+  },
+  {
+   "say": "Puis il jette des chaises longues à la mer, pour que d'autres s'y accrochent.",
+   "title": "Il jette des *chaises longues* à la mer",
+   "icon": "🪑"
+  },
+  {
+   "say": "Quand le paquebot sombre, il est tout à l'arrière.",
+   "title": "Il est *tout à l'arrière.*",
+   "icon": "🚢",
+   "flash": true
+  },
+  {
+   "say": "Selon lui, il descend avec la poupe comme dans un ascenseur.",
+   "title": "Comme dans un *ascenseur.*"
+  },
+  {
+   "say": "Puis il reste environ deux heures dans l'eau, avant d'être sauvé.",
+   "led": "2 H",
+   "led_sub": "dans l'eau glacée"
+  },
+  {
+   "say": "Il jurait que c'était grâce à l'alcool. Les médecins en doutent.",
+   "title": "Le whisky ? *Les médecins doutent.*",
+   "stamp": "Mystère",
+   "stamp_at": 1.4
+  },
+  {
+   "say": "Et toi, tu crois à l'effet whisky ?",
+   "title": "Tu crois à *l'effet whisky ?*",
+   "sub": "Oui · Non · Chance pure"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier ce soir 19h"
+  }
+ ],
+ "rev": 2
 }

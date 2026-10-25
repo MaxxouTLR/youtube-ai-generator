@@ -1,69 +1,69 @@
 {
-  "slug": "cerveau_einstein_1955",
-  "num": 12,
-  "source": "https://fr.wikipedia.org/wiki/Cerveau_d%27Albert_Einstein",
-  "caption": "#CapCut 📁 Dossier n°12 — Le cerveau d'Einstein a été volé… et gardé 40 ans dans des bocaux 🧠 Toi, tu en aurais fait quoi ? #histoire #einstein #lesaviezvous #anecdote #dossier",
-  "beats": [
-    {
-      "say": "Le cerveau d'Einstein a été volé, par le médecin qui faisait son autopsie.",
-      "title": "Le cerveau d'Einstein a été *volé.*",
-      "sub": "Et ce n'est pas le plus fou…"
-    },
-    {
-      "say": "Il l'a gardé pendant plus de quarante ans, dans des bocaux.",
-      "led": "40 ANS",
-      "led_sub": "dans des bocaux"
-    },
-    {
-      "say": "Avril 1955. Einstein meurt à Princeton. Il voulait être incinéré.",
-      "led": "1955",
-      "led_sub": "Princeton",
-      "stamp": "Incinéré ?",
-      "stamp_at": 1.6
-    },
-    {
-      "say": "Mais le médecin, Thomas Harvey, garde le cerveau. Sans demander à la famille, qui accepte, après coup.",
-      "title": "Il le garde. *Sans demander.*",
-      "icon": "🧠",
-      "flash": true
-    },
-    {
-      "say": "Il le découpe en deux cent quarante morceaux.",
-      "led": "240",
-      "led_sub": "morceaux"
-    },
-    {
-      "say": "Il perd son poste. Mais il garde les bocaux.",
-      "icon": "🏥",
-      "stamp": "Renvoyé",
-      "stamp_at": 0.8
-    },
-    {
-      "say": "En 1978, un journaliste les retrouve dans un carton, dans son bureau.",
-      "title": "Rangé dans *un carton.*",
-      "icon": "📦"
-    },
-    {
-      "say": "Et en 1997, il traverse les États-Unis en voiture, avec le cerveau dans le coffre.",
-      "title": "Le cerveau *dans le coffre.*",
-      "icon": "🚗",
-      "flash": true
-    },
-    {
-      "say": "Il finit par le rendre à l'hôpital de Princeton.",
-      "led": "1998",
-      "led_sub": "rendu à Princeton"
-    },
-    {
-      "say": "Et toi, tu en aurais fait quoi ?",
-      "title": "Toi, tu en aurais fait *quoi ?*",
-      "sub": "Musée · Science · Je l'enterre"
-    },
-    {
-      "say": "Abonne-toi, prochain dossier demain matin.",
-      "title": "*Abonne-toi.*",
-      "sub": "Prochain dossier demain 8h"
-    }
-  ],
-  "rev": 2
+ "slug": "cerveau_einstein_1955",
+ "num": 12,
+ "source": "https://fr.wikipedia.org/wiki/Cerveau_d%27Albert_Einstein",
+ "caption": "#CapCut 📁 Dossier n°12 — Le cerveau d'Einstein a été volé… et gardé 40 ans dans des bocaux 🧠 Toi, tu en aurais fait quoi ? #histoire #einstein #lesaviezvous #anecdote #dossier",
+ "beats": [
+  {
+   "say": "On a volé le cerveau d'Einstein. Et le voleur n'a jamais été poursuivi.",
+   "title": "On a volé *le cerveau d'Einstein.*",
+   "sub": "Pendant 40 ans."
+  },
+  {
+   "say": "Il l'a gardé pendant plus de quarante ans, dans des bocaux.",
+   "led": "40 ANS",
+   "led_sub": "dans des bocaux"
+  },
+  {
+   "say": "Avril 1955. Einstein meurt à Princeton. Il voulait être incinéré.",
+   "led": "1955",
+   "led_sub": "Princeton",
+   "stamp": "Incinéré ?",
+   "stamp_at": 1.6
+  },
+  {
+   "say": "Mais le médecin, Thomas Harvey, garde le cerveau. Sans demander à la famille, qui accepte, après coup.",
+   "title": "Il le garde. *Sans demander.*",
+   "icon": "🧠",
+   "flash": true
+  },
+  {
+   "say": "Il le découpe en deux cent quarante morceaux.",
+   "led": "240",
+   "led_sub": "morceaux"
+  },
+  {
+   "say": "Il perd son poste. Mais il garde les bocaux.",
+   "icon": "🏥",
+   "stamp": "Renvoyé",
+   "stamp_at": 0.8
+  },
+  {
+   "say": "En 1978, un journaliste les retrouve dans un carton, dans son bureau.",
+   "title": "Rangé dans *un carton.*",
+   "icon": "📦"
+  },
+  {
+   "say": "Et en 1997, il traverse les États-Unis en voiture, avec le cerveau dans le coffre.",
+   "title": "Le cerveau *dans le coffre.*",
+   "icon": "🚗",
+   "flash": true
+  },
+  {
+   "say": "Il finit par le rendre à l'hôpital de Princeton.",
+   "led": "1998",
+   "led_sub": "rendu à Princeton"
+  },
+  {
+   "say": "Et toi, tu en aurais fait quoi ?",
+   "title": "Toi, tu en aurais fait *quoi ?*",
+   "sub": "Musée · Science · Je l'enterre"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier demain matin.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier demain 8h"
+  }
+ ],
+ "rev": 2
 }

@@ -19,6 +19,7 @@ import re
 import subprocess
 
 import config
+import dossier_audio
 import motion_video
 
 ENGINE = os.path.join(config.BASE_DIR, "motion", "dossier.html")
@@ -41,8 +42,11 @@ def time_beats(beats: list[dict], words: list[dict], total: float) -> list[dict]
     return beats
 
 
-def render(beats: list[dict], total: float, out_path: str, num: int | None = None) -> str:
-    data = {"duration": total, "beats": beats, "num": num}
+def render(beats: list[dict], total: float, out_path: str, num: int | None = None, words: list[dict] | None = None) -> str:
+    # words : timings mot par mot de la voix, pour les sous-titres karaoke (t = debut, e = fin, en secondes)
+    caps = [{"w": w["text"], "t": w["offset"] / 1e7, "e": (w["offset"] + w.get("duration", 0)) / 1e7}
+            for w in sorted(words or [], key=lambda w: w["offset"]) if _norm(w["text"])]
+    data = {"duration": total, "beats": beats, "num": num, "words": caps}
     from playwright.sync_api import sync_playwright
     html = open(ENGINE, encoding="utf-8").read().replace("/*DATA*/null", json.dumps(data, ensure_ascii=False))
     n = int(round(total * motion_video.FPS))
@@ -72,9 +76,9 @@ def make_short(voice_path: str, words: list[dict], beats: list[dict], out_path: 
     beats = time_beats(beats, words, total)
     with open(os.path.join(work_dir, "beats.json"), "w", encoding="utf-8") as f:
         json.dump(beats, f, ensure_ascii=False, indent=1)
-    silent = render(beats, total, os.path.join(work_dir, "video.mp4"), num)
-    audio = motion_video.mix_audio(voice_path, [b["start"] for b in beats[1:] if b.get("flash")], total,
-                                   os.path.join(work_dir, "audio.m4a"))
+    silent = render(beats, total, os.path.join(work_dir, "video.mp4"), num, words)
+    # habillage sonore dedie (25/10/2026) : nappe de suspense, impacts, montees, tampons, voix traitee
+    audio = dossier_audio.mix(voice_path, beats, total, os.path.join(work_dir, "audio.m4a"), work_dir)
     r = subprocess.run([motion_video.FFMPEG, "-y", "-i", silent, "-i", audio, "-map", "0:v", "-map", "1:a", "-c", "copy",
                         "-shortest", "-movflags", "+faststart", out_path], capture_output=True, text=True)
     if r.returncode != 0:

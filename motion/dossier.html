@@ -188,12 +188,67 @@ function drawBeat(b, t) {
     cx.fillStyle = MUTED; cx.fillText(b.sub, 540, Math.max(y, 1180)); cx.globalAlpha = 1; cx.textAlign = "start"; }
 }
 
+// ---------- sous-titres mot par mot (karaoke) ----------
+// 25/10/2026 : demande utilisateur "meilleure accroche visuelle et auditive" -> on lit en meme temps qu'on ecoute,
+// et la video reste comprehensible sans le son. Groupes de 2 a 4 mots, mot prononce en rouge et grossi.
+let CHUNKS = null;
+function chunks() {
+  if (CHUNKS) return CHUNKS;
+  CHUNKS = [];
+  let cur = [];
+  const ws = DATA.words || [];
+  ws.forEach((w, i) => {
+    cur.push(w);
+    // fin de groupe : ponctuation, pause de la voix (les timings Azure n'ont pas toujours la ponctuation) ou 4 mots
+    const pause = ws[i + 1] ? ws[i + 1].t - w.e > 0.22 : true;
+    const chars = cur.reduce((n, x) => n + x.w.length + 1, 0), next = ws[i + 1] ? ws[i + 1].w.length : 0;
+    if (/[.!?…,:;]$/.test(w.w) || pause || cur.length >= 4 || chars + next > 19) { CHUNKS.push(cur); cur = []; }
+  });
+  if (cur.length) CHUNKS.push(cur);
+  return CHUNKS;
+}
+function drawCaption(t) {
+  const cs = chunks(); if (!cs.length) return;
+  let c = null;
+  for (const k of cs) if (t >= k[0].t - 0.05) c = k;
+  if (!c || t > c[c.length - 1].e + 0.35) return;
+  const size = 66, font = `${size}px ${TITLE_FONT}`;
+  cx.font = font; cx.textBaseline = "middle"; cx.lineJoin = "round";
+  const words = c.map(w => w.w.toUpperCase()), widths = words.map(w => cx.measureText(w).width * 1.1 + 24);   // marge : le mot prononce est agrandi
+  const total = widths.reduce((a, b) => a + b, 0);
+  const fit = Math.min(1, 960 / total);   // groupe trop large : on reduit tout le groupe plutot que de deborder
+  let x = 540 - total * fit / 2;
+  const y = 1350, pop = easeOut(clamp((t - c[0].t + 0.05) / 0.12));
+  words.forEach((w, i) => {
+    const on = t >= c[i].t && t < (c[i + 1] ? c[i + 1].t : c[i].e + 0.3);
+    const s = on ? 1.08 : 1;
+    cx.save(); cx.translate(x + widths[i] * fit / 2, y); cx.scale(s * fit * (0.85 + 0.15 * pop), s * fit * (0.85 + 0.15 * pop));
+    cx.textAlign = "center"; cx.lineWidth = 14; cx.strokeStyle = "rgba(0,0,0,.9)"; cx.strokeText(w, 0, 0);
+    cx.fillStyle = on ? RED : WHITE; cx.fillText(w, 0, 0);
+    cx.restore(); x += widths[i] * fit;
+  });
+  cx.textAlign = "start";
+}
+
 function render(t) {
   const beats = DATA.beats;
   let b = beats[0];
   for (const x of beats) if (t >= x.start) b = x;
   drawBg(t, b);
+  // Accroche : "slam" a l'ouverture (zoom arriere rapide + secousse) cale sur l'impact sonore ; l'image 0 reste nette
+  // (vignette du profil). Puis petit a-coup a chaque changement de plan, secousse sur les retournements.
+  let zoom = 1, sx = 0, sy = 0;
+  if (t >= 0.04 && t < 0.5) { const p = (t - 0.04) / 0.46; zoom = 1 + 0.16 * Math.pow(1 - p, 3);
+    const a = 22 * Math.pow(1 - p, 2); sx = (hash(Math.floor(t * 60)) - .5) * a; sy = (hash(Math.floor(t * 60) + 99) - .5) * a; }
+  if (b.start > 0 && t - b.start < 0.14) zoom *= 1 + 0.045 * (1 - (t - b.start) / 0.14);
+  if (b.flash && b.start > 0 && t - b.start < 0.3) { const a = 16 * Math.pow(1 - (t - b.start) / 0.3, 2);
+    sx += (hash(Math.floor(t * 60) + 7) - .5) * a; sy += (hash(Math.floor(t * 60) + 13) - .5) * a; }
+  cx.save(); cx.translate(540 + sx, 860 + sy); cx.scale(zoom, zoom); cx.translate(-540, -860);
   drawBeat(b, t);
+  cx.restore();
+  drawCaption(t);
+  // eclair blanc puis rouge sur l'impact d'ouverture (images 2 a 5)
+  if (t >= 0.04 && t < 0.17) { cx.fillStyle = t < 0.08 ? "rgba(255,255,255,.35)" : "rgba(229,35,27,.28)"; cx.fillRect(0, 0, 1080, 1920); }
   // flash rouge sur les temps forts (2 images)
   for (const x of beats) if (x.flash && x.start > 0 && t >= x.start && t < x.start + 0.07) { cx.fillStyle = "rgba(229,35,27,.55)"; cx.fillRect(0, 0, 1080, 1920); }
   // petit indicateur de progression facon "dossier"

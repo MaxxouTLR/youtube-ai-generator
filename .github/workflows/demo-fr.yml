@@ -36,7 +36,7 @@ jobs:
           AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
           AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
           TTS_VOICE: fr-FR-RemyMultilingualNeural
-          TTS_RATE: "+6%"
+          TTS_RATE: "+10%"
         run: |
           # rend uniquement les histoires ajoutees/modifiees par le dernier push (sinon toutes)
           files=$(git diff --name-only HEAD~1 HEAD -- 'histoires/*.json' 2>/dev/null || true)
