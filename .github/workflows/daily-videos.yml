@@ -16,10 +16,9 @@ on:
   schedule:
     # Un cron GitHub Actions est fixe en UTC et ne suit PAS le changement d'heure ete/hiver. Plutot
     # que de figer un horaire UTC qui deriverait d'1h a chaque bascule, on declare DEUX jeux de cron
-    # couvrant les 2 horaires locaux Paris (8h pour le short, 19h pour la longue - reduit de 3 a 2
-    # videos/jour le 17/10/2026, suite a la chute des vues a 0 constatee des le 14/10/2026 sur les
-    # Shorts publies a cadence soutenue ; on garde reveil/trajet le matin et prime time soir, on
-    # abandonne le 2e short de 21h. Voir [[project_youtube_ai_generator]]) : un en
+    # couvrant les 3 creneaux locaux Paris (Shorts a 8h et 13h, longue a 19h - grille du 25/10/2026 ;
+    # avant la pause du 20/10 c'etait 8h short + 19h longue, reduit de 3 a 2 videos/jour le 17/10/2026
+    # suite a la chute des vues des Shorts publies a cadence soutenue) : un en
     # supposant l'heure d'hiver (UTC+1) et un en supposant l'heure d'ete (UTC+2). A chaque
     # declenchement, le step "Determiner le type de run" recalcule l'heure locale Paris REELLE au
     # moment du run et decide quoi faire - celui des deux jeux qui ne correspond pas a la saison en
@@ -69,7 +68,7 @@ jobs:
             # GitHub retarde parfois un declenchement planifie de 50-70min (constate en pratique les
             # 27 et 28/09/2026) - un match strict sur l'heure exacte ratait alors systematiquement le
             # creneau (tombait en "skip"). On cherche maintenant le creneau cible le plus proche dans
-            # une fenetre de tolerance de 100 minutes, et on garde une trace (output/last_auto_run.json,
+            # une fenetre de tolerance de 180 minutes, et on garde une trace (output/last_auto_run.json,
             # commitee comme le reste de l'historique) du dernier creneau deja traite pour ne jamais
             # publier deux fois le meme creneau si les deux jeux de cron (hiver/ete) finissent par
             # matcher le meme jour a cause du retard.
@@ -92,7 +91,7 @@ jobs:
             fi
 
             if [ -z "$best_target" ]; then
-              echo "Aucun creneau a moins de 100min de l'heure actuelle - rien a faire."
+              echo "Aucun creneau a moins de 180min de l'heure actuelle - rien a faire."
               echo "run_type=skip" >> "$GITHUB_OUTPUT"
               echo "publish=false" >> "$GITHUB_OUTPUT"
             elif [ "$already_done" = "yes" ]; then

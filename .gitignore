@@ -41,3 +41,6 @@ branding_kit/
 # sur la plateforme de vente choisie (Gumroad ou équivalent), jamais dans ce dépôt.
 products/
 graphify-out/
+
+# Notes de travail locales pour Claude (dépôt public : ne jamais les commiter)
+CLAUDE.md
