@@ -1,60 +1,60 @@
 {
-  "slug": "thermopyles_300",
-  "num": 29,
-  "source": "https://fr.wikipedia.org/wiki/Bataille_des_Thermopyles",
-  "caption": "#CapCut 📁 Dossier n°29 — Les 300 Spartiates n'étaient pas 300… 🛡️ Tu croyais au film ? #histoire #sparte #300 #grece #lesaviezvous #dossier",
-  "beats": [
-    {
-      "say": "Les trois cents Spartiates n'étaient pas trois cents.",
-      "title": "Les 300 n'étaient *pas 300.*",
-      "sub": "Et ce n'est pas le plus fou…"
-    },
-    {
-      "say": "Aux Thermopyles, ils étaient en réalité environ sept mille Grecs.",
-      "led": "7000",
-      "led_sub": "Grecs aux Thermopyles",
-      "flash": true
-    },
-    {
-      "say": "480 avant Jésus-Christ. L'immense armée perse de Xerxès envahit la Grèce.",
-      "led": "-480",
-      "led_sub": "Xerxès envahit la Grèce",
-      "icon": "⚔️"
-    },
-    {
-      "say": "Les Grecs bloquent un passage étroit, entre la montagne et la mer.",
-      "title": "Un passage *étroit.*",
-      "icon": "⛰️"
-    },
-    {
-      "say": "Pendant deux jours, ils tiennent.",
-      "led": "2 JOURS"
-    },
-    {
-      "say": "Puis un traître montre aux Perses un chemin de contournement.",
-      "title": "Un *traître.*",
-      "flash": true
-    },
-    {
-      "say": "Le roi Léonidas renvoie la plupart des Grecs. Il reste avec ses Spartiates, mais aussi des centaines d'autres soldats.",
-      "title": "Ils ne restent *pas seuls.*",
-      "icon": "🛡️"
-    },
-    {
-      "say": "Les Thespiens, par exemple, restent jusqu'à la mort. Et l'histoire les a presque oubliés.",
-      "title": "Les oubliés : *les Thespiens.*",
-      "stamp": "700 Thespiens",
-      "stamp_at": 1.4
-    },
-    {
-      "say": "Et toi, tu croyais au film ?",
-      "title": "Tu croyais *au film ?*",
-      "sub": "Oui · Non"
-    },
-    {
-      "say": "Abonne-toi, prochain dossier ce soir.",
-      "title": "*Abonne-toi.*",
-      "sub": "Prochain dossier ce soir 19h"
-    }
-  ]
+ "slug": "thermopyles_300",
+ "num": 29,
+ "source": "https://fr.wikipedia.org/wiki/Bataille_des_Thermopyles",
+ "caption": "#CapCut 📁 Dossier n°29 — Les 300 Spartiates n'étaient pas 300… 🛡️ Tu croyais au film ? #histoire #sparte #300 #grece #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Les trois cents Spartiates ? Ils n'étaient pas trois cents.",
+   "title": "Les 300 n'étaient *pas 300.*",
+   "sub": "Le film t'a menti."
+  },
+  {
+   "say": "Aux Thermopyles, ils étaient en réalité environ sept mille Grecs.",
+   "led": "7000",
+   "led_sub": "Grecs aux Thermopyles",
+   "flash": true
+  },
+  {
+   "say": "480 avant Jésus-Christ. L'immense armée perse de Xerxès envahit la Grèce.",
+   "led": "-480",
+   "led_sub": "Xerxès envahit la Grèce",
+   "icon": "⚔️"
+  },
+  {
+   "say": "Les Grecs bloquent un passage étroit, entre la montagne et la mer.",
+   "title": "Un passage *étroit.*",
+   "icon": "⛰️"
+  },
+  {
+   "say": "Pendant deux jours, ils tiennent.",
+   "led": "2 JOURS"
+  },
+  {
+   "say": "Puis un traître montre aux Perses un chemin de contournement.",
+   "title": "Un *traître.*",
+   "flash": true
+  },
+  {
+   "say": "Le roi Léonidas renvoie la plupart des Grecs. Il reste avec ses Spartiates, mais aussi des centaines d'autres soldats.",
+   "title": "Ils ne restent *pas seuls.*",
+   "icon": "🛡️"
+  },
+  {
+   "say": "Les Thespiens, par exemple, restent jusqu'à la mort. Et l'histoire les a presque oubliés.",
+   "title": "Les oubliés : *les Thespiens.*",
+   "stamp": "700 Thespiens",
+   "stamp_at": 1.4
+  },
+  {
+   "say": "Et toi, tu croyais au film ?",
+   "title": "Tu croyais *au film ?*",
+   "sub": "Oui · Non"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier ce soir 19h"
+  }
+ ]
 }

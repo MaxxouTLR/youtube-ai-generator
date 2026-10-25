@@ -1,60 +1,60 @@
 {
-  "slug": "napoleon_taille",
-  "num": 13,
-  "source": "https://fr.wikipedia.org/wiki/Napol%C3%A9on_Ier",
-  "caption": "#CapCut 📁 Dossier n°13 — Napoléon n'était pas petit. Et c'est la faute des Anglais 📏 Tu le croyais petit ? #histoire #napoleon #lesaviezvous #anecdote #dossier",
-  "beats": [
-    {
-      "say": "Napoléon n'était pas petit. Et c'est la faute des Anglais.",
-      "title": "Napoléon n'était *pas petit.*",
-      "sub": "Et c'est la faute des Anglais…"
-    },
-    {
-      "say": "Il mesurait environ un mètre soixante-neuf. Plus que la moyenne des Français de son époque.",
-      "led": "1,69 M",
-      "led_sub": "plus que la moyenne"
-    },
-    {
-      "say": "Alors, d'où vient la légende ?",
-      "title": "D'où vient *la légende ?*"
-    },
-    {
-      "say": "D'abord, une histoire de pouces. On note cinq pieds deux pouces. Mais des pouces français, plus longs que les pouces anglais.",
-      "title": "5 pieds 2 pouces… *mais français.*",
-      "icon": "📏"
-    },
-    {
-      "say": "Lus à l'anglaise, ça donne un mètre cinquante-sept.",
-      "led": "1,57 M",
-      "strike": 1.3,
-      "flash": true
-    },
-    {
-      "say": "Ensuite, la propagande. Les caricaturistes anglais le dessinent minuscule et colérique.",
-      "title": "La propagande *anglaise.*",
-      "icon": "✏️",
-      "stamp": "Little Boney",
-      "stamp_at": 1.6
-    },
-    {
-      "say": "Et son surnom, le petit caporal ? C'était affectueux, pas une question de taille.",
-      "title": "« Le petit caporal » : *affectueux.*"
-    },
-    {
-      "say": "En plus, sa garde recrutait de très grands soldats. À côté d'eux, il paraissait petit.",
-      "title": "Entouré de *géants.*",
-      "icon": "💂"
-    },
-    {
-      "say": "Et toi, tu le croyais petit ?",
-      "title": "Tu le croyais *petit ?*",
-      "sub": "Oui · Non"
-    },
-    {
-      "say": "Abonne-toi, prochain dossier ce soir.",
-      "title": "*Abonne-toi.*",
-      "sub": "Prochain dossier ce soir 19h"
-    }
-  ],
-  "rev": 2
+ "slug": "napoleon_taille",
+ "num": 13,
+ "source": "https://fr.wikipedia.org/wiki/Napol%C3%A9on_Ier",
+ "caption": "#CapCut 📁 Dossier n°13 — Napoléon n'était pas petit. Et c'est la faute des Anglais 📏 Tu le croyais petit ? #histoire #napoleon #lesaviezvous #anecdote #dossier",
+ "beats": [
+  {
+   "say": "Napoléon n'était pas petit. On t'a menti pendant deux siècles.",
+   "title": "On t'a *menti* sur Napoléon.",
+   "sub": "Et c'est la faute des Anglais."
+  },
+  {
+   "say": "Il mesurait environ un mètre soixante-neuf. Plus que la moyenne des Français de son époque.",
+   "led": "1,69 M",
+   "led_sub": "plus que la moyenne"
+  },
+  {
+   "say": "Alors, d'où vient la légende ?",
+   "title": "D'où vient *la légende ?*"
+  },
+  {
+   "say": "D'abord, une histoire de pouces. On note cinq pieds deux pouces. Mais des pouces français, plus longs que les pouces anglais.",
+   "title": "5 pieds 2 pouces… *mais français.*",
+   "icon": "📏"
+  },
+  {
+   "say": "Lus à l'anglaise, ça donne un mètre cinquante-sept.",
+   "led": "1,57 M",
+   "strike": 1.3,
+   "flash": true
+  },
+  {
+   "say": "Ensuite, la propagande. Les caricaturistes anglais le dessinent minuscule et colérique.",
+   "title": "La propagande *anglaise.*",
+   "icon": "✏️",
+   "stamp": "Little Boney",
+   "stamp_at": 1.6
+  },
+  {
+   "say": "Et son surnom, le petit caporal ? C'était affectueux, pas une question de taille.",
+   "title": "« Le petit caporal » : *affectueux.*"
+  },
+  {
+   "say": "En plus, sa garde recrutait de très grands soldats. À côté d'eux, il paraissait petit.",
+   "title": "Entouré de *géants.*",
+   "icon": "💂"
+  },
+  {
+   "say": "Et toi, tu le croyais petit ?",
+   "title": "Tu le croyais *petit ?*",
+   "sub": "Oui · Non"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier ce soir 19h"
+  }
+ ],
+ "rev": 2
 }

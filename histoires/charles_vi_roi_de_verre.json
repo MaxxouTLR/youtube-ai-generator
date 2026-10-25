@@ -1,55 +1,55 @@
 {
-  "slug": "charles_vi_roi_de_verre",
-  "num": 24,
-  "source": "https://fr.wikipedia.org/wiki/Charles_VI_(roi_de_France)",
-  "caption": "#CapCut 📁 Dossier n°24 — Le roi de France qui se croyait en verre 👑 Tu connaissais Charles VI ? #histoire #france #roi #moyenage #lesaviezvous #dossier",
-  "beats": [
-    {
-      "say": "Un roi de France croyait qu'il était fait de verre.",
-      "title": "Le roi se croyait *en verre.*",
-      "sub": "Et ce n'est pas le plus fou…"
-    },
-    {
-      "say": "Il avait peur de se briser, et faisait coudre des tiges de fer dans ses vêtements.",
-      "title": "Des *tiges de fer* dans ses habits.",
-      "icon": "🦾",
-      "flash": true
-    },
-    {
-      "say": "C'est Charles Six, roi de 1380 à 1422.",
-      "led": "CHARLES VI",
-      "led_sub": "1380 – 1422"
-    },
-    {
-      "say": "En 1392, il attaque soudain ses propres compagnons, en pleine forêt.",
-      "title": "Il attaque *ses propres hommes.*",
-      "icon": "🗡️"
-    },
-    {
-      "say": "Puis, lors d'un bal costumé, des danseurs déguisés prennent feu. Il échappe de justesse aux flammes.",
-      "title": "Le *bal des ardents.*",
-      "icon": "🔥",
-      "flash": true
-    },
-    {
-      "say": "Il alterne crises de folie et périodes de lucidité pendant trente ans.",
-      "led": "30 ANS",
-      "led_sub": "de crises"
-    },
-    {
-      "say": "Son surnom : Charles le Fou. Mais aussi, Charles le Bien-Aimé.",
-      "title": "Le Fou… *et le Bien-Aimé.*",
-      "icon": "👑"
-    },
-    {
-      "say": "Et toi, tu le connaissais ?",
-      "title": "Tu le *connaissais ?*",
-      "sub": "Oui · Non"
-    },
-    {
-      "say": "Abonne-toi, prochain dossier demain matin.",
-      "title": "*Abonne-toi.*",
-      "sub": "Prochain dossier demain 8h"
-    }
-  ]
+ "slug": "charles_vi_roi_de_verre",
+ "num": 24,
+ "source": "https://fr.wikipedia.org/wiki/Charles_VI_(roi_de_France)",
+ "caption": "#CapCut 📁 Dossier n°24 — Le roi de France qui se croyait en verre 👑 Tu connaissais Charles VI ? #histoire #france #roi #moyenage #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Un roi de France se croyait en verre. Il avait peur de se briser.",
+   "title": "Le roi se croyait *en verre.*",
+   "sub": "Et ce n'était que le début."
+  },
+  {
+   "say": "Il faisait coudre des tiges de fer dans ses vêtements.",
+   "title": "Des *tiges de fer* dans ses habits.",
+   "icon": "🦾",
+   "flash": true
+  },
+  {
+   "say": "C'est Charles Six, roi de 1380 à 1422.",
+   "led": "CHARLES VI",
+   "led_sub": "1380 – 1422"
+  },
+  {
+   "say": "En 1392, il attaque soudain ses propres compagnons, en pleine forêt.",
+   "title": "Il attaque *ses propres hommes.*",
+   "icon": "🗡️"
+  },
+  {
+   "say": "Puis, lors d'un bal costumé, des danseurs déguisés prennent feu. Il échappe de justesse aux flammes.",
+   "title": "Le *bal des ardents.*",
+   "icon": "🔥",
+   "flash": true
+  },
+  {
+   "say": "Il alterne crises de folie et périodes de lucidité pendant trente ans.",
+   "led": "30 ANS",
+   "led_sub": "de crises"
+  },
+  {
+   "say": "Son surnom : Charles le Fou. Mais aussi, Charles le Bien-Aimé.",
+   "title": "Le Fou… *et le Bien-Aimé.*",
+   "icon": "👑"
+  },
+  {
+   "say": "Et toi, tu le connaissais ?",
+   "title": "Tu le *connaissais ?*",
+   "sub": "Oui · Non"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier demain matin.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier demain 8h"
+  }
+ ]
 }

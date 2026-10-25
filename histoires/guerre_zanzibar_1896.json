@@ -1,57 +1,57 @@
 {
-  "slug": "guerre_zanzibar_1896",
-  "num": 17,
-  "source": "https://fr.wikipedia.org/wiki/Guerre_anglo-zanzibarite",
-  "caption": "#CapCut 📁 Dossier n°17 — La guerre la plus courte de l'histoire a duré… 38 minutes ⏱️ Tu devines qui a gagné ? #histoire #guerre #record #lesaviezvous #dossier",
-  "beats": [
-    {
-      "say": "La guerre la plus courte de l'histoire a duré environ trente-huit minutes.",
-      "title": "Une guerre de *38 minutes.*",
-      "sub": "Et ce n'est pas le plus fou…"
-    },
-    {
-      "say": "Le 27 août 1896, à neuf heures du matin, la flotte britannique ouvre le feu sur Zanzibar.",
-      "led": "9:02",
-      "led_sub": "27 août 1896",
-      "flash": true
-    },
-    {
-      "say": "La raison : un nouveau sultan a pris le pouvoir sans l'accord des Britanniques.",
-      "title": "Un sultan *non approuvé.*",
-      "icon": "👳"
-    },
-    {
-      "say": "Les Britanniques lui donnent un ultimatum. Il refuse de partir.",
-      "icon": "⏳",
-      "stamp": "Ultimatum",
-      "stamp_at": 0.8
-    },
-    {
-      "say": "Les navires bombardent le palais.",
-      "icon": "🚢",
-      "flash": true
-    },
-    {
-      "say": "Moins de quarante minutes plus tard, le drapeau du palais tombe.",
-      "led": "38 MIN"
-    },
-    {
-      "say": "Côté zanzibarite, environ cinq cents morts et blessés. Côté britannique : un seul blessé.",
-      "title": "500 victimes contre *1 blessé.*"
-    },
-    {
-      "say": "Le sultan s'enfuit, et se réfugie au consulat allemand.",
-      "icon": "🏃"
-    },
-    {
-      "say": "Et toi, tu connaissais cette guerre ?",
-      "title": "Tu la *connaissais ?*",
-      "sub": "Oui · Non"
-    },
-    {
-      "say": "Abonne-toi, prochain dossier ce soir.",
-      "title": "*Abonne-toi.*",
-      "sub": "Prochain dossier ce soir 19h"
-    }
-  ]
+ "slug": "guerre_zanzibar_1896",
+ "num": 17,
+ "source": "https://fr.wikipedia.org/wiki/Guerre_anglo-zanzibarite",
+ "caption": "#CapCut 📁 Dossier n°17 — La guerre la plus courte de l'histoire a duré… 38 minutes ⏱️ Tu devines qui a gagné ? #histoire #guerre #record #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Cette guerre a duré moins longtemps que ta pause déjeuner.",
+   "title": "Une guerre de *38 minutes.*",
+   "sub": "Et un seul blessé d'un côté."
+  },
+  {
+   "say": "Le 27 août 1896, à neuf heures du matin, la flotte britannique ouvre le feu sur Zanzibar.",
+   "led": "9:02",
+   "led_sub": "27 août 1896",
+   "flash": true
+  },
+  {
+   "say": "La raison : un nouveau sultan a pris le pouvoir sans l'accord des Britanniques.",
+   "title": "Un sultan *non approuvé.*",
+   "icon": "👳"
+  },
+  {
+   "say": "Les Britanniques lui donnent un ultimatum. Il refuse de partir.",
+   "icon": "⏳",
+   "stamp": "Ultimatum",
+   "stamp_at": 0.8
+  },
+  {
+   "say": "Les navires bombardent le palais.",
+   "icon": "🚢",
+   "flash": true
+  },
+  {
+   "say": "Moins de quarante minutes plus tard, le drapeau du palais tombe.",
+   "led": "38 MIN"
+  },
+  {
+   "say": "Côté zanzibarite, environ cinq cents morts et blessés. Côté britannique : un seul blessé.",
+   "title": "500 victimes contre *1 blessé.*"
+  },
+  {
+   "say": "Le sultan s'enfuit, et se réfugie au consulat allemand.",
+   "icon": "🏃"
+  },
+  {
+   "say": "Et toi, tu connaissais cette guerre ?",
+   "title": "Tu la *connaissais ?*",
+   "sub": "Oui · Non"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier ce soir 19h"
+  }
+ ]
 }

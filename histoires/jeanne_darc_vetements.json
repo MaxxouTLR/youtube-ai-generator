@@ -1,60 +1,60 @@
 {
-  "slug": "jeanne_darc_vetements",
-  "num": 33,
-  "source": "https://fr.wikipedia.org/wiki/Jeanne_d%27Arc",
-  "caption": "#CapCut 📁 Dossier n°33 — Jeanne d'Arc a été condamnée… en partie pour avoir porté des habits d'homme 🔥 Tu le savais ? #histoire #jeannedarc #moyenage #france #lesaviezvous #dossier",
-  "beats": [
-    {
-      "say": "Jeanne d'Arc a été condamnée, en partie, pour avoir porté des habits d'homme.",
-      "title": "Condamnée pour *des habits d'homme.*",
-      "sub": "Et ce n'est pas le plus fou…"
-    },
-    {
-      "say": "Elle avait dix-neuf ans.",
-      "led": "19 ANS",
-      "flash": true
-    },
-    {
-      "say": "Capturée en 1430, elle est jugée à Rouen par un tribunal d'Église favorable aux Anglais.",
-      "led": "1431",
-      "led_sub": "procès de Rouen",
-      "icon": "⚖️"
-    },
-    {
-      "say": "Elle signe une abjuration, et promet de porter des vêtements de femme.",
-      "title": "Elle promet de *changer de vêtements.*",
-      "icon": "📜"
-    },
-    {
-      "say": "Quelques jours plus tard, elle reprend ses habits d'homme.",
-      "title": "Elle les *reprend.*",
-      "flash": true
-    },
-    {
-      "say": "Pour ses juges, c'est la rechute. Elle est brûlée vive le 30 mai 1431.",
-      "stamp": "Relapse",
-      "icon": "🔥",
-      "stamp_at": 1.2
-    },
-    {
-      "say": "Vingt-cinq ans plus tard, un nouveau procès l'innocente.",
-      "led": "1456",
-      "led_sub": "réhabilitée"
-    },
-    {
-      "say": "Et en 1920, elle devient sainte.",
-      "led": "1920",
-      "led_sub": "canonisée"
-    },
-    {
-      "say": "Et toi, tu le savais ?",
-      "title": "Tu le *savais ?*",
-      "sub": "Oui · Non"
-    },
-    {
-      "say": "Abonne-toi, prochain dossier ce soir.",
-      "title": "*Abonne-toi.*",
-      "sub": "Prochain dossier ce soir 19h"
-    }
-  ]
+ "slug": "jeanne_darc_vetements",
+ "num": 33,
+ "source": "https://fr.wikipedia.org/wiki/Jeanne_d%27Arc",
+ "caption": "#CapCut 📁 Dossier n°33 — Jeanne d'Arc a été condamnée… en partie pour avoir porté des habits d'homme 🔥 Tu le savais ? #histoire #jeannedarc #moyenage #france #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Jeanne d'Arc a été brûlée vive. En partie à cause de ses vêtements.",
+   "title": "Brûlée… *pour des vêtements ?*",
+   "sub": "Et le procès sera annulé."
+  },
+  {
+   "say": "Elle avait dix-neuf ans.",
+   "led": "19 ANS",
+   "flash": true
+  },
+  {
+   "say": "Capturée en 1430, elle est jugée à Rouen par un tribunal d'Église favorable aux Anglais.",
+   "led": "1431",
+   "led_sub": "procès de Rouen",
+   "icon": "⚖️"
+  },
+  {
+   "say": "Elle signe une abjuration, et promet de porter des vêtements de femme.",
+   "title": "Elle promet de *changer de vêtements.*",
+   "icon": "📜"
+  },
+  {
+   "say": "Quelques jours plus tard, elle reprend ses habits d'homme.",
+   "title": "Elle les *reprend.*",
+   "flash": true
+  },
+  {
+   "say": "Pour ses juges, c'est la rechute. Elle est brûlée vive le 30 mai 1431.",
+   "stamp": "Relapse",
+   "icon": "🔥",
+   "stamp_at": 1.2
+  },
+  {
+   "say": "Vingt-cinq ans plus tard, un nouveau procès l'innocente.",
+   "led": "1456",
+   "led_sub": "réhabilitée"
+  },
+  {
+   "say": "Et en 1920, elle devient sainte.",
+   "led": "1920",
+   "led_sub": "canonisée"
+  },
+  {
+   "say": "Et toi, tu le savais ?",
+   "title": "Tu le *savais ?*",
+   "sub": "Oui · Non"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier ce soir 19h"
+  }
+ ]
 }

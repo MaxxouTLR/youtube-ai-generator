@@ -1,59 +1,59 @@
 {
-  "slug": "vikings_casques_cornes",
-  "num": 20,
-  "source": "https://fr.wikipedia.org/wiki/Casque_%C3%A0_cornes",
-  "caption": "#CapCut 📁 Dossier n°20 — Les Vikings n'avaient pas de casques à cornes ⚔️ D'où vient le mythe ? La réponse va te surprendre #histoire #vikings #mythe #lesaviezvous #dossier",
-  "beats": [
-    {
-      "say": "Les Vikings n'avaient pas de casques à cornes.",
-      "title": "Pas de *cornes.* Jamais.",
-      "sub": "Et ce n'est pas le plus fou…"
-    },
-    {
-      "say": "Le seul casque viking presque entier retrouvé n'a aucune corne.",
-      "led": "1",
-      "led_sub": "casque viking complet retrouvé",
-      "icon": "⛑️"
-    },
-    {
-      "say": "Il a été découvert en Norvège, à Gjermundbu.",
-      "stamp": "Gjermundbu",
-      "icon": "🏔️",
-      "stamp_at": 0.8
-    },
-    {
-      "say": "Alors d'où viennent les cornes ?",
-      "title": "D'où viennent *les cornes ?*"
-    },
-    {
-      "say": "D'un opéra.",
-      "title": "D'un *opéra.*",
-      "flash": true
-    },
-    {
-      "say": "En 1876, pour l'opéra de Wagner, le costumier Carl Emil Doepler dessine des casques à cornes.",
-      "led": "1876",
-      "led_sub": "opéra de Wagner",
-      "icon": "🎭"
-    },
-    {
-      "say": "L'image plaît. Les peintres, puis le cinéma et les bandes dessinées la reprennent.",
-      "title": "Le cinéma *s'en empare.*",
-      "icon": "🎬"
-    },
-    {
-      "say": "Et en combat, des cornes auraient été plutôt gênantes.",
-      "title": "En combat ? *Une très mauvaise idée.*"
-    },
-    {
-      "say": "Et toi, tu y croyais ?",
-      "title": "Tu y *croyais ?*",
-      "sub": "Oui · Non"
-    },
-    {
-      "say": "Abonne-toi, prochain dossier demain matin.",
-      "title": "*Abonne-toi.*",
-      "sub": "Prochain dossier demain 8h"
-    }
-  ]
+ "slug": "vikings_casques_cornes",
+ "num": 20,
+ "source": "https://fr.wikipedia.org/wiki/Casque_%C3%A0_cornes",
+ "caption": "#CapCut 📁 Dossier n°20 — Les Vikings n'avaient pas de casques à cornes ⚔️ D'où vient le mythe ? La réponse va te surprendre #histoire #vikings #mythe #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Les Vikings n'ont jamais porté de casques à cornes. Jamais.",
+   "title": "Pas de *cornes.* Jamais.",
+   "sub": "Le vrai coupable va te surprendre."
+  },
+  {
+   "say": "Le seul casque viking presque entier retrouvé n'a aucune corne.",
+   "led": "1",
+   "led_sub": "casque viking complet retrouvé",
+   "icon": "⛑️"
+  },
+  {
+   "say": "Il a été découvert en Norvège, à Gjermundbu.",
+   "stamp": "Gjermundbu",
+   "icon": "🏔️",
+   "stamp_at": 0.8
+  },
+  {
+   "say": "Alors d'où viennent les cornes ?",
+   "title": "D'où viennent *les cornes ?*"
+  },
+  {
+   "say": "D'un opéra.",
+   "title": "D'un *opéra.*",
+   "flash": true
+  },
+  {
+   "say": "En 1876, pour l'opéra de Wagner, le costumier Carl Emil Doepler dessine des casques à cornes.",
+   "led": "1876",
+   "led_sub": "opéra de Wagner",
+   "icon": "🎭"
+  },
+  {
+   "say": "L'image plaît. Les peintres, puis le cinéma et les bandes dessinées la reprennent.",
+   "title": "Le cinéma *s'en empare.*",
+   "icon": "🎬"
+  },
+  {
+   "say": "Et en combat, des cornes auraient été plutôt gênantes.",
+   "title": "En combat ? *Une très mauvaise idée.*"
+  },
+  {
+   "say": "Et toi, tu y croyais ?",
+   "title": "Tu y *croyais ?*",
+   "sub": "Oui · Non"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier demain matin.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier demain 8h"
+  }
+ ]
 }

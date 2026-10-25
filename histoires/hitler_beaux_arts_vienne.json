@@ -1,59 +1,59 @@
 {
-  "slug": "hitler_beaux_arts_vienne",
-  "num": 37,
-  "source": "https://fr.wikipedia.org/wiki/Adolf_Hitler",
-  "caption": "#CapCut 📁 Dossier n°37 — Avant la guerre, Hitler voulait devenir peintre… et il a été refusé deux fois 🎨 Tu le savais ? #histoire #hitler #vienne #lesaviezvous #dossier",
-  "beats": [
-    {
-      "say": "Cet homme voulait devenir peintre. Et il a été refusé deux fois.",
-      "title": "Refusé *deux fois.*",
-      "sub": "La suite est encore pire…"
-    },
-    {
-      "say": "Cet homme, c'est Adolf Hitler.",
-      "title": "Adolf *Hitler.*",
-      "flash": true
-    },
-    {
-      "say": "En mille neuf cent sept, il passe le concours de l'Académie des beaux-arts de Vienne.",
-      "led": "1907",
-      "led_sub": "Vienne"
-    },
-    {
-      "say": "Ses dessins sont jugés insuffisants.",
-      "icon": "🎨",
-      "stamp": "Recalé",
-      "stamp_at": 1.2
-    },
-    {
-      "say": "L'année suivante, il n'est même pas admis à l'examen.",
-      "led": "1908",
-      "led_sub": "nouvel échec",
-      "flash": true
-    },
-    {
-      "say": "On lui conseille l'architecture, mais il n'a pas le diplôme requis.",
-      "title": "Pas le *diplôme.*",
-      "icon": "📐"
-    },
-    {
-      "say": "Il vit alors pauvrement à Vienne, en vendant des aquarelles de la ville.",
-      "title": "Il vend *des aquarelles.*",
-      "icon": "🖌️"
-    },
-    {
-      "say": "Quelques années plus tard, il deviendra l'un des pires dictateurs de l'Histoire.",
-      "title": "L'un des *pires dictateurs.*"
-    },
-    {
-      "say": "Et toi, tu le savais ?",
-      "title": "Tu le *savais ?*",
-      "sub": "Oui · Non"
-    },
-    {
-      "say": "Abonne-toi, prochain dossier ce soir.",
-      "title": "*Abonne-toi.*",
-      "sub": "Prochain dossier ce soir 19h"
-    }
-  ]
+ "slug": "hitler_beaux_arts_vienne",
+ "num": 37,
+ "source": "https://fr.wikipedia.org/wiki/Adolf_Hitler",
+ "caption": "#CapCut 📁 Dossier n°37 — Avant la guerre, Hitler voulait devenir peintre… et il a été refusé deux fois 🎨 Tu le savais ? #histoire #hitler #vienne #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Cet homme voulait devenir peintre. Et il a été refusé deux fois.",
+   "title": "Refusé *deux fois.*",
+   "sub": "Tu ne devineras jamais qui."
+  },
+  {
+   "say": "Cet homme, c'est Adolf Hitler.",
+   "title": "Adolf *Hitler.*",
+   "flash": true
+  },
+  {
+   "say": "En mille neuf cent sept, il passe le concours de l'Académie des beaux-arts de Vienne.",
+   "led": "1907",
+   "led_sub": "Vienne"
+  },
+  {
+   "say": "Ses dessins sont jugés insuffisants.",
+   "icon": "🎨",
+   "stamp": "Recalé",
+   "stamp_at": 1.2
+  },
+  {
+   "say": "L'année suivante, il n'est même pas admis à l'examen.",
+   "led": "1908",
+   "led_sub": "nouvel échec",
+   "flash": true
+  },
+  {
+   "say": "On lui conseille l'architecture, mais il n'a pas le diplôme requis.",
+   "title": "Pas le *diplôme.*",
+   "icon": "📐"
+  },
+  {
+   "say": "Il vit alors pauvrement à Vienne, en vendant des aquarelles de la ville.",
+   "title": "Il vend *des aquarelles.*",
+   "icon": "🖌️"
+  },
+  {
+   "say": "Quelques années plus tard, il deviendra l'un des pires dictateurs de l'Histoire.",
+   "title": "L'un des *pires dictateurs.*"
+  },
+  {
+   "say": "Et toi, tu le savais ?",
+   "title": "Tu le *savais ?*",
+   "sub": "Oui · Non"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier ce soir 19h"
+  }
+ ]
 }

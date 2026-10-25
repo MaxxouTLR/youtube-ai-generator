@@ -1,64 +1,64 @@
 {
-  "slug": "tour_eiffel_vendue_1925",
-  "num": 15,
-  "source": "https://fr.wikipedia.org/wiki/Victor_Lustig",
-  "caption": "#CapCut 📁 Dossier n°15 — Un escroc a vendu la tour Eiffel… et il a même essayé une deuxième fois 🗼 Tu serais tombé dans le panneau ? #histoire #paris #toureiffel #arnaque #lesaviezvous #dossier",
-  "beats": [
-    {
-      "say": "En 1925, un escroc a vendu la tour Eiffel. Et il a recommencé.",
-      "title": "Il a vendu la *tour Eiffel.*",
-      "sub": "Et ce n'est pas le plus fou…"
-    },
-    {
-      "say": "Il se fait passer pour un haut fonctionnaire, et annonce que la tour va être démontée.",
-      "title": "« La tour va être *démontée.* »",
-      "icon": "🗼"
-    },
-    {
-      "say": "Il s'appelle Victor Lustig.",
-      "icon": "🎩",
-      "stamp": "Victor Lustig",
-      "stamp_at": 0.6
-    },
-    {
-      "say": "Il réunit des ferrailleurs dans un grand hôtel parisien, en secret.",
-      "title": "Une réunion *secrète.*",
-      "icon": "🏨"
-    },
-    {
-      "say": "L'un d'eux, André Poisson, paye. Lustig file avec l'argent.",
-      "title": "Il paye. *Lustig disparaît.*",
-      "icon": "💰",
-      "flash": true
-    },
-    {
-      "say": "Trop honteux, la victime ne porte même pas plainte.",
-      "stamp": "Aucune plainte",
-      "icon": "🤐",
-      "stamp_at": 0.8
-    },
-    {
-      "say": "Alors Lustig revient, et retente le coup avec d'autres ferrailleurs.",
-      "title": "Il *revient.*",
-      "flash": true
-    },
-    {
-      "say": "Cette fois, l'un d'eux prévient la police. Lustig s'enfuit encore.",
-      "icon": "🚓"
-    },
-    {
-      "say": "Il finira arrêté aux États-Unis, et envoyé à Alcatraz.",
-      "led": "ALCATRAZ"
-    },
-    {
-      "say": "Et toi, tu serais tombé dans le panneau ?",
-      "title": "Toi, tu serais *tombé dans le panneau ?*",
-      "sub": "Oui · Non · Peut-être"
-    },
-    {
-      "say": "Abonne-toi, prochain dossier ce soir.",
-      "title": "*Abonne-toi.*",
-      "sub": "Prochain dossier ce soir 19h"
-    }
-  ]
+ "slug": "tour_eiffel_vendue_1925",
+ "num": 15,
+ "source": "https://fr.wikipedia.org/wiki/Victor_Lustig",
+ "caption": "#CapCut 📁 Dossier n°15 — Un escroc a vendu la tour Eiffel… et il a même essayé une deuxième fois 🗼 Tu serais tombé dans le panneau ? #histoire #paris #toureiffel #arnaque #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Un escroc a vendu la tour Eiffel. Deux fois.",
+   "title": "Il a vendu la *tour Eiffel.* Deux fois.",
+   "sub": "Et la victime n'a rien dit."
+  },
+  {
+   "say": "Il se fait passer pour un haut fonctionnaire, et annonce que la tour va être démontée.",
+   "title": "« La tour va être *démontée.* »",
+   "icon": "🗼"
+  },
+  {
+   "say": "Il s'appelle Victor Lustig.",
+   "icon": "🎩",
+   "stamp": "Victor Lustig",
+   "stamp_at": 0.6
+  },
+  {
+   "say": "Il réunit des ferrailleurs dans un grand hôtel parisien, en secret.",
+   "title": "Une réunion *secrète.*",
+   "icon": "🏨"
+  },
+  {
+   "say": "L'un d'eux, André Poisson, paye. Lustig file avec l'argent.",
+   "title": "Il paye. *Lustig disparaît.*",
+   "icon": "💰",
+   "flash": true
+  },
+  {
+   "say": "Trop honteux, la victime ne porte même pas plainte.",
+   "stamp": "Aucune plainte",
+   "icon": "🤐",
+   "stamp_at": 0.8
+  },
+  {
+   "say": "Alors Lustig revient, et retente le coup avec d'autres ferrailleurs.",
+   "title": "Il *revient.*",
+   "flash": true
+  },
+  {
+   "say": "Cette fois, l'un d'eux prévient la police. Lustig s'enfuit encore.",
+   "icon": "🚓"
+  },
+  {
+   "say": "Il finira arrêté aux États-Unis, et envoyé à Alcatraz.",
+   "led": "ALCATRAZ"
+  },
+  {
+   "say": "Et toi, tu serais tombé dans le panneau ?",
+   "title": "Toi, tu serais *tombé dans le panneau ?*",
+   "sub": "Oui · Non · Peut-être"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier ce soir 19h"
+  }
+ ]
 }

@@ -1,53 +1,53 @@
 {
-  "slug": "romains_urine_dents",
-  "num": 34,
-  "source": "https://en.wikipedia.org/wiki/Urine#History",
-  "caption": "#CapCut 📁 Dossier n°34 — Les Romains se brossaient les dents… avec de l'urine 🦷 Tu aurais testé ? #histoire #rome #antiquite #anecdote #lesaviezvous #dossier",
-  "beats": [
-    {
-      "say": "Les Romains se blanchissaient les dents avec de l'urine.",
-      "title": "Les dents à *l'urine.*",
-      "sub": "La suite est encore pire…"
-    },
-    {
-      "say": "L'ammoniac qu'elle contient aide vraiment à nettoyer.",
-      "title": "L'*ammoniac* nettoie vraiment.",
-      "icon": "🦷",
-      "flash": true
-    },
-    {
-      "say": "Le poète Catulle se moque même d'un homme aux dents trop blanches.",
-      "title": "Catulle *se moque.*",
-      "icon": "📜"
-    },
-    {
-      "say": "L'urine servait aussi à laver les vêtements, dans les blanchisseries.",
-      "title": "Et pour *la lessive.*",
-      "icon": "👕"
-    },
-    {
-      "say": "Elle avait tellement de valeur que l'empereur Vespasien a créé un impôt sur l'urine.",
-      "title": "Un *impôt* sur l'urine.",
-      "flash": true
-    },
-    {
-      "say": "Son fils trouvait ça dégoûtant. Vespasien lui a répondu : l'argent n'a pas d'odeur.",
-      "title": "« L'argent n'a *pas d'odeur.* »",
-      "icon": "💰"
-    },
-    {
-      "say": "Et en France, on parle encore de vespasiennes pour les urinoirs publics.",
-      "title": "Les *vespasiennes.*"
-    },
-    {
-      "say": "Et toi, tu aurais testé ?",
-      "title": "Tu aurais *testé ?*",
-      "sub": "Jamais · Pour des dents blanches…"
-    },
-    {
-      "say": "Abonne-toi, prochain dossier demain matin.",
-      "title": "*Abonne-toi.*",
-      "sub": "Prochain dossier demain 8h"
-    }
-  ]
+ "slug": "romains_urine_dents",
+ "num": 34,
+ "source": "https://en.wikipedia.org/wiki/Urine#History",
+ "caption": "#CapCut 📁 Dossier n°34 — Les Romains se brossaient les dents… avec de l'urine 🦷 Tu aurais testé ? #histoire #rome #antiquite #anecdote #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Les Romains se blanchissaient les dents avec de l'urine.",
+   "title": "Les dents à *l'urine.*",
+   "sub": "Et ça marchait vraiment."
+  },
+  {
+   "say": "L'ammoniac qu'elle contient aide vraiment à nettoyer.",
+   "title": "L'*ammoniac* nettoie vraiment.",
+   "icon": "🦷",
+   "flash": true
+  },
+  {
+   "say": "Le poète Catulle se moque même d'un homme aux dents trop blanches.",
+   "title": "Catulle *se moque.*",
+   "icon": "📜"
+  },
+  {
+   "say": "L'urine servait aussi à laver les vêtements, dans les blanchisseries.",
+   "title": "Et pour *la lessive.*",
+   "icon": "👕"
+  },
+  {
+   "say": "Elle avait tellement de valeur que l'empereur Vespasien a créé un impôt sur l'urine.",
+   "title": "Un *impôt* sur l'urine.",
+   "flash": true
+  },
+  {
+   "say": "Son fils trouvait ça dégoûtant. Vespasien lui a répondu : l'argent n'a pas d'odeur.",
+   "title": "« L'argent n'a *pas d'odeur.* »",
+   "icon": "💰"
+  },
+  {
+   "say": "Et en France, on parle encore de vespasiennes pour les urinoirs publics.",
+   "title": "Les *vespasiennes.*"
+  },
+  {
+   "say": "Et toi, tu aurais testé ?",
+   "title": "Tu aurais *testé ?*",
+   "sub": "Jamais · Pour des dents blanches…"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier demain matin.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier demain 8h"
+  }
+ ]
 }

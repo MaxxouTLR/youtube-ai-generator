@@ -1,59 +1,59 @@
 {
-  "slug": "pyramides_sans_esclaves",
-  "num": 25,
-  "source": "https://fr.wikipedia.org/wiki/Pyramides_de_Gizeh",
-  "caption": "#CapCut 📁 Dossier n°25 — Les pyramides n'ont (sans doute) pas été construites par des esclaves 🏜️ Tu y croyais ? #histoire #egypte #pyramides #lesaviezvous #dossier",
-  "beats": [
-    {
-      "say": "Les pyramides n'ont probablement pas été construites par des esclaves.",
-      "title": "Pas *des esclaves.*",
-      "sub": "Et ce n'est pas le plus fou…"
-    },
-    {
-      "say": "En 1990, on découvre près de Gizeh les tombes des ouvriers.",
-      "led": "1990",
-      "led_sub": "tombes des ouvriers",
-      "flash": true
-    },
-    {
-      "say": "Enterrés avec honneur, juste à côté des pyramides du roi.",
-      "title": "Enterrés *avec honneur.*",
-      "icon": "⚱️"
-    },
-    {
-      "say": "On retrouve aussi leur village, leurs boulangeries, leurs brasseries.",
-      "title": "Pain et *bière* pour tous.",
-      "icon": "🍞"
-    },
-    {
-      "say": "Certains squelettes montrent des fractures soignées par des médecins.",
-      "title": "Des fractures *soignées.*",
-      "icon": "🩺"
-    },
-    {
-      "say": "Alors d'où vient le mythe des esclaves ?",
-      "title": "D'où vient *le mythe ?*",
-      "flash": true
-    },
-    {
-      "say": "De récits antiques, puis surtout du cinéma hollywoodien.",
-      "icon": "🎬",
-      "stamp": "Hollywood",
-      "stamp_at": 0.8
-    },
-    {
-      "say": "Les ouvriers travaillaient par équipes, nourris et organisés par l'État.",
-      "title": "Des équipes *organisées.*"
-    },
-    {
-      "say": "Et toi, tu y croyais ?",
-      "title": "Tu y *croyais ?*",
-      "sub": "Oui · Non"
-    },
-    {
-      "say": "Abonne-toi, prochain dossier ce soir.",
-      "title": "*Abonne-toi.*",
-      "sub": "Prochain dossier ce soir 19h"
-    }
-  ]
+ "slug": "pyramides_sans_esclaves",
+ "num": 25,
+ "source": "https://fr.wikipedia.org/wiki/Pyramides_de_Gizeh",
+ "caption": "#CapCut 📁 Dossier n°25 — Les pyramides n'ont (sans doute) pas été construites par des esclaves 🏜️ Tu y croyais ? #histoire #egypte #pyramides #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Les pyramides n'ont pas été bâties par des esclaves. On a retrouvé les ouvriers.",
+   "title": "Pas *des esclaves.*",
+   "sub": "Et ils buvaient de la bière."
+  },
+  {
+   "say": "En 1990, on découvre près de Gizeh les tombes des ouvriers.",
+   "led": "1990",
+   "led_sub": "tombes des ouvriers",
+   "flash": true
+  },
+  {
+   "say": "Enterrés avec honneur, juste à côté des pyramides du roi.",
+   "title": "Enterrés *avec honneur.*",
+   "icon": "⚱️"
+  },
+  {
+   "say": "On retrouve aussi leur village, leurs boulangeries, leurs brasseries.",
+   "title": "Pain et *bière* pour tous.",
+   "icon": "🍞"
+  },
+  {
+   "say": "Certains squelettes montrent des fractures soignées par des médecins.",
+   "title": "Des fractures *soignées.*",
+   "icon": "🩺"
+  },
+  {
+   "say": "Alors d'où vient le mythe des esclaves ?",
+   "title": "D'où vient *le mythe ?*",
+   "flash": true
+  },
+  {
+   "say": "De récits antiques, puis surtout du cinéma hollywoodien.",
+   "icon": "🎬",
+   "stamp": "Hollywood",
+   "stamp_at": 0.8
+  },
+  {
+   "say": "Les ouvriers travaillaient par équipes, nourris et organisés par l'État.",
+   "title": "Des équipes *organisées.*"
+  },
+  {
+   "say": "Et toi, tu y croyais ?",
+   "title": "Tu y *croyais ?*",
+   "sub": "Oui · Non"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier ce soir 19h"
+  }
+ ]
 }

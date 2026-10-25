@@ -1,65 +1,65 @@
 {
-  "slug": "cleopatre_pyramides",
-  "num": 14,
-  "source": "https://fr.wikipedia.org/wiki/Cl%C3%A9op%C3%A2tre_VII",
-  "caption": "#CapCut 📁 Dossier n°14 — Cléopâtre a vécu plus près de nous que de la construction des pyramides 🏜️ Tu le savais ? #histoire #egypte #cleopatre #lesaviezvous #dossier",
-  "beats": [
-    {
-      "say": "Cléopâtre a vécu plus près de nous que de la construction des pyramides.",
-      "title": "Cléopâtre est plus proche de *nous* que des *pyramides.*",
-      "sub": "Et ce n'est pas le plus fou…"
-    },
-    {
-      "say": "La grande pyramide de Gizeh a été construite vers 2560 avant Jésus-Christ.",
-      "led": "-2560",
-      "led_sub": "grande pyramide de Gizeh"
-    },
-    {
-      "say": "Cléopâtre meurt en l'an trente avant Jésus-Christ.",
-      "led": "-30",
-      "led_sub": "mort de Cléopâtre"
-    },
-    {
-      "say": "Entre les deux : plus de deux mille cinq cents ans.",
-      "led": "2530 ANS",
-      "flash": true
-    },
-    {
-      "say": "Entre Cléopâtre et les premiers pas sur la Lune : environ deux mille ans.",
-      "led": "2000 ANS",
-      "led_sub": "jusqu'à la Lune"
-    },
-    {
-      "say": "Pour elle, les pyramides étaient déjà vieilles de vingt-cinq siècles.",
-      "title": "Déjà vieilles de *25 siècles.*",
-      "icon": "🏜️"
-    },
-    {
-      "say": "Mais attendez.",
-      "title": "MAIS ATTENDEZ.",
-      "flash": true
-    },
-    {
-      "say": "Quand les pyramides ont été construites, il restait encore des mammouths sur Terre.",
-      "title": "Il restait des *mammouths.*",
-      "icon": "🐘"
-    },
-    {
-      "say": "Sur une île de Sibérie, ils ont survécu jusqu'à il y a environ quatre mille ans.",
-      "icon": "🏝️",
-      "stamp": "Île Wrangel",
-      "stamp_at": 1.2
-    },
-    {
-      "say": "Et toi, tu le savais ?",
-      "title": "Tu le *savais ?*",
-      "sub": "Oui · Non · Je suis choqué"
-    },
-    {
-      "say": "Abonne-toi, prochain dossier demain matin.",
-      "title": "*Abonne-toi.*",
-      "sub": "Prochain dossier demain 8h"
-    }
-  ],
-  "rev": 2
+ "slug": "cleopatre_pyramides",
+ "num": 14,
+ "source": "https://fr.wikipedia.org/wiki/Cl%C3%A9op%C3%A2tre_VII",
+ "caption": "#CapCut 📁 Dossier n°14 — Cléopâtre a vécu plus près de nous que de la construction des pyramides 🏜️ Tu le savais ? #histoire #egypte #cleopatre #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Cléopâtre est plus proche de toi que des pyramides.",
+   "title": "Cléopâtre est plus proche de *toi* que des *pyramides.*",
+   "sub": "Fais le calcul."
+  },
+  {
+   "say": "La grande pyramide de Gizeh a été construite vers 2560 avant Jésus-Christ.",
+   "led": "-2560",
+   "led_sub": "grande pyramide de Gizeh"
+  },
+  {
+   "say": "Cléopâtre meurt en l'an trente avant Jésus-Christ.",
+   "led": "-30",
+   "led_sub": "mort de Cléopâtre"
+  },
+  {
+   "say": "Entre les deux : plus de deux mille cinq cents ans.",
+   "led": "2530 ANS",
+   "flash": true
+  },
+  {
+   "say": "Entre Cléopâtre et les premiers pas sur la Lune : environ deux mille ans.",
+   "led": "2000 ANS",
+   "led_sub": "jusqu'à la Lune"
+  },
+  {
+   "say": "Pour elle, les pyramides étaient déjà vieilles de vingt-cinq siècles.",
+   "title": "Déjà vieilles de *25 siècles.*",
+   "icon": "🏜️"
+  },
+  {
+   "say": "Mais attendez.",
+   "title": "MAIS ATTENDEZ.",
+   "flash": true
+  },
+  {
+   "say": "Quand les pyramides ont été construites, il restait encore des mammouths sur Terre.",
+   "title": "Il restait des *mammouths.*",
+   "icon": "🐘"
+  },
+  {
+   "say": "Sur une île de Sibérie, ils ont survécu jusqu'à il y a environ quatre mille ans.",
+   "icon": "🏝️",
+   "stamp": "Île Wrangel",
+   "stamp_at": 1.2
+  },
+  {
+   "say": "Et toi, tu le savais ?",
+   "title": "Tu le *savais ?*",
+   "sub": "Oui · Non · Je suis choqué"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier demain matin.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier demain 8h"
+  }
+ ],
+ "rev": 2
 }

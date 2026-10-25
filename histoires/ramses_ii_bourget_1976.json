@@ -1,56 +1,56 @@
 {
-  "slug": "ramses_ii_bourget_1976",
-  "num": 35,
-  "source": "https://fr.wikipedia.org/wiki/Rams%C3%A8s_II",
-  "caption": "#CapCut 📁 Dossier n°35 — En 1976, la momie de Ramsès II a été accueillie à Paris… avec les honneurs militaires 👑 Tu le savais ? #histoire #egypte #ramses #paris #lesaviezvous #dossier",
-  "beats": [
-    {
-      "say": "En 1976, une momie a été accueillie à Paris avec les honneurs militaires.",
-      "title": "Une momie… *avec les honneurs.*",
-      "sub": "Et ce n'est pas le plus fou…"
-    },
-    {
-      "say": "C'était Ramsès Deux, mort il y a plus de trois mille ans.",
-      "led": "3200 ANS",
-      "led_sub": "Ramsès II",
-      "flash": true
-    },
-    {
-      "say": "Sa momie est attaquée par un champignon. L'Égypte accepte de l'envoyer en France pour la soigner.",
-      "title": "Attaquée par *un champignon.*",
-      "icon": "🍄"
-    },
-    {
-      "say": "À l'aéroport du Bourget, une garde militaire l'attend, comme pour un chef d'État.",
-      "title": "Accueillie *comme un chef d'État.*",
-      "icon": "✈️"
-    },
-    {
-      "say": "On raconte même qu'on lui aurait fait un passeport. Profession : roi, décédé.",
-      "title": "Profession : *roi (décédé).*",
-      "stamp": "Légende ?",
-      "stamp_at": 1.6,
-      "flash": true
-    },
-    {
-      "say": "Pendant des mois, des scientifiques l'étudient au musée de l'Homme.",
-      "icon": "🔬",
-      "stamp": "Musée de l'Homme",
-      "stamp_at": 1.0
-    },
-    {
-      "say": "Puis elle est stérilisée par irradiation, et repart en Égypte.",
-      "title": "Soignée… *et rapatriée.*"
-    },
-    {
-      "say": "Et toi, tu le savais ?",
-      "title": "Tu le *savais ?*",
-      "sub": "Oui · Non"
-    },
-    {
-      "say": "Abonne-toi, prochain dossier ce soir.",
-      "title": "*Abonne-toi.*",
-      "sub": "Prochain dossier ce soir 19h"
-    }
-  ]
+ "slug": "ramses_ii_bourget_1976",
+ "num": 35,
+ "source": "https://fr.wikipedia.org/wiki/Rams%C3%A8s_II",
+ "caption": "#CapCut 📁 Dossier n°35 — En 1976, la momie de Ramsès II a été accueillie à Paris… avec les honneurs militaires 👑 Tu le savais ? #histoire #egypte #ramses #paris #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "En 1976, la France a accueilli un pharaon mort avec les honneurs militaires.",
+   "title": "Un pharaon mort… *avec les honneurs.*",
+   "sub": "Avec un passeport ?"
+  },
+  {
+   "say": "C'était Ramsès Deux, mort il y a plus de trois mille ans.",
+   "led": "3200 ANS",
+   "led_sub": "Ramsès II",
+   "flash": true
+  },
+  {
+   "say": "Sa momie est attaquée par un champignon. L'Égypte accepte de l'envoyer en France pour la soigner.",
+   "title": "Attaquée par *un champignon.*",
+   "icon": "🍄"
+  },
+  {
+   "say": "À l'aéroport du Bourget, une garde militaire l'attend, comme pour un chef d'État.",
+   "title": "Accueillie *comme un chef d'État.*",
+   "icon": "✈️"
+  },
+  {
+   "say": "On raconte même qu'on lui aurait fait un passeport. Profession : roi, décédé.",
+   "title": "Profession : *roi (décédé).*",
+   "stamp": "Légende ?",
+   "stamp_at": 1.6,
+   "flash": true
+  },
+  {
+   "say": "Pendant des mois, des scientifiques l'étudient au musée de l'Homme.",
+   "icon": "🔬",
+   "stamp": "Musée de l'Homme",
+   "stamp_at": 1.0
+  },
+  {
+   "say": "Puis elle est stérilisée par irradiation, et repart en Égypte.",
+   "title": "Soignée… *et rapatriée.*"
+  },
+  {
+   "say": "Et toi, tu le savais ?",
+   "title": "Tu le *savais ?*",
+   "sub": "Oui · Non"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier ce soir 19h"
+  }
+ ]
 }

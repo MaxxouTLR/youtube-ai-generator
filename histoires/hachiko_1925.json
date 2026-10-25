@@ -1,58 +1,58 @@
 {
-  "slug": "hachiko_1925",
-  "num": 36,
-  "source": "https://fr.wikipedia.org/wiki/Hachik%C5%8D",
-  "caption": "#CapCut 📁 Dossier n°36 — Hachikō a attendu son maître à la gare… pendant presque 10 ans 🐕 Tu connaissais son histoire ? #histoire #japon #chien #hachiko #lesaviezvous #dossier",
-  "beats": [
-    {
-      "say": "Ce chien a attendu son maître à la gare pendant presque dix ans.",
-      "title": "Il a attendu *presque 10 ans.*",
-      "sub": "Et ce n'est pas le plus fou…"
-    },
-    {
-      "say": "Chaque jour, à l'heure du train du soir.",
-      "title": "Chaque jour, *à la même heure.*",
-      "icon": "🐕",
-      "flash": true
-    },
-    {
-      "say": "Hachikō vit à Tokyo avec le professeur Ueno, qui rentre chaque soir à la gare de Shibuya.",
-      "led": "SHIBUYA",
-      "led_sub": "Tokyo"
-    },
-    {
-      "say": "En mai 1925, le professeur meurt soudainement au travail.",
-      "led": "1925",
-      "led_sub": "mort du professeur"
-    },
-    {
-      "say": "Mais Hachikō continue de venir l'attendre.",
-      "title": "Mais Hachikō *continue.*",
-      "flash": true
-    },
-    {
-      "say": "Pendant près de dix ans.",
-      "led": "10 ANS"
-    },
-    {
-      "say": "En 1934, une statue est même installée devant la gare, de son vivant.",
-      "title": "Une statue… *de son vivant.*",
-      "icon": "🗿"
-    },
-    {
-      "say": "Il meurt en 1935. Sa statue est toujours là, et c'est un point de rendez-vous célèbre de Tokyo.",
-      "title": "Toujours *là.*",
-      "icon": "📍"
-    },
-    {
-      "say": "Et toi, tu connaissais son histoire ?",
-      "title": "Tu connaissais *son histoire ?*",
-      "sub": "Oui · Non · Je pleure"
-    },
-    {
-      "say": "Abonne-toi, prochain dossier demain matin.",
-      "title": "*Abonne-toi.*",
-      "sub": "Prochain dossier demain 8h"
-    }
-  ]
+ "slug": "hachiko_1925",
+ "num": 36,
+ "source": "https://fr.wikipedia.org/wiki/Hachik%C5%8D",
+ "caption": "#CapCut 📁 Dossier n°36 — Hachikō a attendu son maître à la gare… pendant presque 10 ans 🐕 Tu connaissais son histoire ? #histoire #japon #chien #hachiko #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Son maître est mort. Ce chien l'a attendu presque dix ans.",
+   "title": "Il a attendu *presque 10 ans.*",
+   "sub": "Chaque soir, à la même gare."
+  },
+  {
+   "say": "Chaque jour, à l'heure du train du soir.",
+   "title": "Chaque jour, *à la même heure.*",
+   "icon": "🐕",
+   "flash": true
+  },
+  {
+   "say": "Hachikō vit à Tokyo avec le professeur Ueno, qui rentre chaque soir à la gare de Shibuya.",
+   "led": "SHIBUYA",
+   "led_sub": "Tokyo"
+  },
+  {
+   "say": "En mai 1925, le professeur meurt soudainement au travail.",
+   "led": "1925",
+   "led_sub": "mort du professeur"
+  },
+  {
+   "say": "Mais Hachikō continue de venir l'attendre.",
+   "title": "Mais Hachikō *continue.*",
+   "flash": true
+  },
+  {
+   "say": "Pendant près de dix ans.",
+   "led": "10 ANS"
+  },
+  {
+   "say": "En 1934, une statue est même installée devant la gare, de son vivant.",
+   "title": "Une statue… *de son vivant.*",
+   "icon": "🗿"
+  },
+  {
+   "say": "Il meurt en 1935. Sa statue est toujours là, et c'est un point de rendez-vous célèbre de Tokyo.",
+   "title": "Toujours *là.*",
+   "icon": "📍"
+  },
+  {
+   "say": "Et toi, tu connaissais son histoire ?",
+   "title": "Tu connaissais *son histoire ?*",
+   "sub": "Oui · Non · Je pleure"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier demain matin.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier demain 8h"
+  }
+ ]
 }
