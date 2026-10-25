@@ -1,0 +1,55 @@
+{
+  "slug": "caligula_cheval_consul",
+  "num": 38,
+  "source": "https://fr.wikipedia.org/wiki/Incitatus",
+  "caption": "#CapCut 📁 Dossier n°38 — Un empereur romain aurait voulu faire de son cheval un consul 🐎 Folie ou provocation ? #histoire #rome #caligula #lesaviezvous #dossier",
+  "beats": [
+    {
+      "say": "Un empereur romain aurait voulu nommer son cheval consul.",
+      "title": "Son cheval… *consul ?*",
+      "sub": "Et ce n'est pas le plus fou…"
+    },
+    {
+      "say": "Selon Suétone, le cheval avait une écurie en marbre et une mangeoire en ivoire.",
+      "title": "Une écurie *en marbre.*",
+      "icon": "🐎"
+    },
+    {
+      "say": "L'empereur, c'est Caligula. Le cheval : Incitatus.",
+      "led": "CALIGULA",
+      "led_sub": "empereur romain"
+    },
+    {
+      "say": "Il aurait aussi eu un collier de pierres précieuses, et sa propre maison, avec des esclaves.",
+      "title": "Sa propre *maison.*",
+      "icon": "💎"
+    },
+    {
+      "say": "La veille des courses, des soldats imposaient le silence au voisinage pour qu'il dorme.",
+      "title": "Silence… *il dort.*",
+      "icon": "🤫"
+    },
+    {
+      "say": "Sauf que ces récits viennent d'auteurs qui détestaient Caligula.",
+      "title": "Sauf que…",
+      "flash": true,
+      "stamp": "Légende ?",
+      "stamp_at": 1.4
+    },
+    {
+      "say": "Pour beaucoup d'historiens, c'était surtout une provocation pour humilier le Sénat.",
+      "title": "Humilier *le Sénat.*",
+      "icon": "📜"
+    },
+    {
+      "say": "Alors, folie ou provocation ?",
+      "title": "Folie ou *provocation ?*",
+      "sub": "Folie · Provocation"
+    },
+    {
+      "say": "Abonne-toi, prochain dossier demain matin.",
+      "title": "*Abonne-toi.*",
+      "sub": "Prochain dossier demain 8h"
+    }
+  ]
+}
