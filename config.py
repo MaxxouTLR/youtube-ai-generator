@@ -18,6 +18,12 @@ PUBLISHED_DIR = os.environ.get("PUBLISHED_DIR", r"D:\YouTube Videos")
 # --- Generation de script (Ollama local, gratuit, sans cle API) ---
 OLLAMA_MODEL = "llama3.2:3b"
 OLLAMA_URL = "http://localhost:11434/api/generate"
+# Delai max d'UN appel (une section de script sur CPU de runner peut prendre plusieurs minutes).
+OLLAMA_TIMEOUT_SECONDS = int(os.environ.get("OLLAMA_TIMEOUT_SECONDS", "600"))
+# Modeles de repli (deja telecharges via `ollama pull`) essayes dans l'ordre si OLLAMA_MODEL echoue
+# (modele absent, erreurs serveur repetees). Vide par defaut -> aucun changement de comportement.
+# Ex : OLLAMA_FALLBACK_MODELS="llama3.2:1b,qwen2.5:3b"
+OLLAMA_FALLBACK_MODELS = [m.strip() for m in os.environ.get("OLLAMA_FALLBACK_MODELS", "").split(",") if m.strip()]
 
 # --- Voix off (Azure Cognitive Services Speech, tier gratuit Free F0, ~500k caracteres/mois) ---
 # Remplace edge-tts le 12/10/2026 (bloque par Microsoft sur les IP de datacenter/cloud dont GitHub

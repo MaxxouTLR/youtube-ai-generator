@@ -12,6 +12,8 @@ import os
 import urllib.request
 import json
 
+import net_retry
+
 ELEVENLABS_API_KEY = os.environ.get("ELEVENLABS_API_KEY", "")
 ELEVENLABS_VOICE_ID = os.environ.get("ELEVENLABS_VOICE_ID", "21m00Tcm4TlvDq8ikWAM")  # "Rachel", voix par defaut
 ELEVENLABS_URL = f"https://api.elevenlabs.io/v1/text-to-speech/{ELEVENLABS_VOICE_ID}"
@@ -44,8 +46,11 @@ def generate_voice_elevenlabs(text: str, out_path: str) -> str:
             "Accept": "audio/mpeg",
         },
     )
-    with urllib.request.urlopen(req, timeout=120) as resp:
-        audio_bytes = resp.read()
+    def _once():
+        with urllib.request.urlopen(req, timeout=120) as resp:
+            return resp.read()
+
+    audio_bytes = net_retry.with_retry(_once, what="synthese ElevenLabs", attempts=3)
 
     with open(out_path, "wb") as f:
         f.write(audio_bytes)

@@ -14,11 +14,11 @@ import re
 import subprocess
 import textwrap
 import urllib.parse
-import urllib.request
 
 import imageio_ffmpeg
 from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont
 
+import net_retry
 from script_generator import _call_ollama
 
 THUMB_WIDTH = 1280
@@ -107,9 +107,7 @@ def _generate_ai_background(topic: str, out_path: str) -> str:
     url = POLLINATIONS_URL.format(
         prompt=urllib.parse.quote(prompt), w=1568, h=882, seed=seed
     )
-    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-    with urllib.request.urlopen(req, timeout=45) as resp, open(out_path, "wb") as f:
-        f.write(resp.read())
+    net_retry.download_file(url, out_path, timeout=45, attempts=2, what="fond de miniature Pollinations")
     # Verifie que c'est bien une image exploitable (Pollinations peut renvoyer une erreur en JPEG factice)
     Image.open(out_path).verify()
     return out_path

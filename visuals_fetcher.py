@@ -5,15 +5,19 @@ A definir dans la variable d'environnement PEXELS_API_KEY.
 """
 import os
 import random
+import urllib.error
 import urllib.request
 import urllib.parse
 import json
 import config
+import net_retry
 
 
 def _search_videos(query: str, per_page: int = 5, orientation: str = "landscape") -> list[dict]:
     if not config.PEXELS_API_KEY:
-        raise RuntimeError(
+        # MissingSecretError (et pas une simple RuntimeError) : les boucles d'appel ci-dessous la
+        # laissent remonter au lieu de l'avaler en "[warn] recherche echouee" N fois de suite.
+        raise net_retry.MissingSecretError(
             "PEXELS_API_KEY manquante. Cree une cle gratuite sur pexels.com/api "
             "puis: setx PEXELS_API_KEY \"ta_cle\""
         )
@@ -23,8 +27,20 @@ def _search_videos(query: str, per_page: int = 5, orientation: str = "landscape"
         "Authorization": config.PEXELS_API_KEY,
         "User-Agent": "Mozilla/5.0",
     })
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        data = json.loads(resp.read().decode("utf-8"))
+
+    def _once():
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            return json.loads(resp.read().decode("utf-8"))
+
+    try:
+        data = net_retry.with_retry(_once, what=f"recherche Pexels '{query}'", attempts=3)
+    except urllib.error.HTTPError as exc:
+        if exc.code in (401, 403):
+            raise net_retry.MissingSecretError(
+                f"PEXELS_API_KEY refusee par Pexels (HTTP {exc.code}) : cle invalide ou revoquee, "
+                "regenere-la sur pexels.com/api et mets a jour le secret."
+            ) from exc
+        raise
     return data.get("videos", [])
 
 
@@ -54,8 +70,10 @@ def fetch_clips(count: int, out_dir: str | None = None, orientation: str = "land
         term_idx += 1
         try:
             videos = _search_videos(term, per_page=5, orientation=orientation)
+        except net_retry.MissingSecretError:
+            raise
         except Exception as exc:
-            print(f"[warn] recherche '{term}' echouee: {exc}")
+            print(f"[warn] recherche '{term}' echouee: {net_retry.describe_error(exc)}")
             continue
         if not videos:
             continue
@@ -65,13 +83,11 @@ def fetch_clips(count: int, out_dir: str | None = None, orientation: str = "land
             continue
         dest = os.path.join(out_dir, f"clip_{len(paths):03d}.mp4")
         try:
-            dl_req = urllib.request.Request(link, headers={"User-Agent": "Mozilla/5.0"})
-            with urllib.request.urlopen(dl_req, timeout=60) as resp, open(dest, "wb") as out_f:
-                out_f.write(resp.read())
+            net_retry.download_file(link, dest, timeout=60, what="telechargement clip Pexels")
             paths.append(dest)
             print(f"[ok] {term} -> {dest}")
         except Exception as exc:
-            print(f"[warn] telechargement echoue: {exc}")
+            print(f"[warn] telechargement echoue: {net_retry.describe_error(exc)}")
 
     return paths
 
@@ -83,8 +99,10 @@ def fetch_one_clip(query: str, dest_path: str, orientation: str = "landscape") -
     for term in terms_to_try:
         try:
             videos = _search_videos(term, per_page=5, orientation=orientation)
+        except net_retry.MissingSecretError:
+            raise
         except Exception as exc:
-            print(f"[warn] recherche '{term}' echouee: {exc}")
+            print(f"[warn] recherche '{term}' echouee: {net_retry.describe_error(exc)}")
             continue
         if not videos:
             continue
@@ -93,13 +111,11 @@ def fetch_one_clip(query: str, dest_path: str, orientation: str = "landscape") -
         if not link:
             continue
         try:
-            dl_req = urllib.request.Request(link, headers={"User-Agent": "Mozilla/5.0"})
-            with urllib.request.urlopen(dl_req, timeout=60) as resp, open(dest_path, "wb") as out_f:
-                out_f.write(resp.read())
+            net_retry.download_file(link, dest_path, timeout=60, what="telechargement clip Pexels")
             print(f"[ok] '{term}' -> {dest_path}")
             return dest_path
         except Exception as exc:
-            print(f"[warn] telechargement echoue: {exc}")
+            print(f"[warn] telechargement echoue: {net_retry.describe_error(exc)}")
             continue
     return None
 

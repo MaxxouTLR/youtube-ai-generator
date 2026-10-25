@@ -1,0 +1,27 @@
+name: Tests
+
+# Tests unitaires rapides (aucun appel reseau reel, aucun secret necessaire) : retries, messages
+# d'erreur, gestion des secrets manquants. Les commits auto "[skip ci]" du bot ne les relancent pas.
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Installer les dependances
+        run: pip install -r requirements.txt pytest
+      - name: Lancer les tests
+        run: python -m pytest -q
