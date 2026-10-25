@@ -43,3 +43,6 @@ products/
 graphify-out/
 .pytest_cache/
 *.part
+
+# Notes de travail locales pour Claude (dépôt public : ne jamais les commiter)
+CLAUDE.md
