@@ -12,3 +12,5 @@ n°17 | guerre_zanzibar_1896 | 29/10/2026 08:00 | programmé le 25/10/2026 (Buff
 n°18 | neron_incendie_rome | 29/10/2026 19:00 | programmé le 25/10/2026 (Buffer)
 n°19 | louis_xix_vingt_minutes | 30/10/2026 08:00 | programmé le 25/10/2026 (Buffer)
 n°20 | vikings_casques_cornes | 30/10/2026 19:00 | programmé le 25/10/2026 (Buffer)
+n°21 | momies_medicament | 31/10/2026 08:00 | programmé le 26/10/2026 (Buffer)
+n°22 | mary_celeste_1872 | 31/10/2026 19:00 | programmé le 26/10/2026 (Buffer)
