@@ -6,49 +6,55 @@
  "beats": [
   {
    "say": "Un navire retrouvé intact en pleine mer. Mais personne à bord.",
-   "title": "Intact. *Mais vide.*",
-   "sub": "Encore aujourd'hui, un mystère."
+   "title": "Où est passé *l'équipage ?*",
+   "img": "assets/archives/mary_celeste_1872/amazon_1861.jpg",
+   "img_label": "LE NAVIRE EN 1861",
+   "sub": "Le canot avait disparu."
   },
   {
    "say": "Décembre 1872, au large du Portugal. Le Mary Celeste dérive, voiles déployées.",
-   "led": "1872",
-   "led_sub": "au large du Portugal",
+   "title": "Il dérive, *voiles déployées.*",
    "icon": "⛵"
   },
   {
-   "say": "Un autre navire s'approche. Les marins montent à bord.",
-   "title": "Les marins *montent à bord.*"
+   "say": "Des marins montent à bord. Six mois de nourriture. De l'eau. Les affaires de l'équipage.",
+   "title": "Tout est *intact.*",
+   "img": "assets/archives/mary_celeste_1872/pupitre.jpg",
+   "img_label": "LE PUPITRE DU CAPITAINE · RETROUVÉ À BORD"
   },
   {
-   "say": "Six mois de nourriture. De l'eau potable. Les affaires de l'équipage.",
-   "led": "6 MOIS",
-   "led_sub": "de vivres à bord"
-  },
-  {
-   "say": "Mais aucune trace des dix personnes à bord, dont le capitaine, sa femme et leur fille de deux ans.",
-   "led": "10",
-   "led_sub": "personnes disparues",
+   "say": "Mais aucune trace des dix personnes à bord. Dont le capitaine,",
+   "title": "*Personne.*",
+   "img": "assets/archives/mary_celeste_1872/briggs.jpg",
+   "img_label": "LE CAPITAINE BENJAMIN BRIGGS",
    "flash": true
+  },
+  {
+   "say": "sa femme, et leur fille de deux ans.",
+   "title": "Sa femme. *Leur fille.*",
+   "img": "assets/archives/mary_celeste_1872/sarah.jpg",
+   "img_label": "SARAH BRIGGS"
   },
   {
    "say": "Le canot de sauvetage a disparu.",
-   "icon": "🛶",
-   "stamp": "Disparu",
-   "stamp_at": 0.6
+   "title": "Le canot a *disparu.*",
+   "icon": "🛶"
   },
   {
-   "say": "La cargaison d'alcool est presque intacte. Pas de pirates, donc.",
-   "title": "Pas de *pirates.*",
-   "icon": "🛢️"
+   "say": "Le plus fou ? La cargaison d'alcool est presque intacte. Pas des pirates, donc.",
+   "title": "Pas des *pirates.*",
+   "img": "assets/archives/mary_celeste_1872/nyt_1873.jpg",
+   "img_label": "NEW YORK TIMES · 1873",
+   "stamp": "Mystère",
+   "stamp_at": 1.4
   },
   {
    "say": "Fuite d'alcool, peur d'une explosion, tempête ? Personne n'a jamais su.",
-   "title": "Personne n'a *jamais su.*",
-   "flash": true
+   "title": "Personne *n'a jamais su.*"
   },
   {
    "say": "Et toi, tu penses qu'il s'est passé quoi ?",
-   "title": "Tu penses *quoi ?*",
+   "title": "Il s'est passé *quoi ?*",
    "sub": "Explosion · Tempête · Mutinerie"
   },
   {
@@ -56,5 +62,6 @@
    "title": "*Abonne-toi.*",
    "sub": "Prochain dossier demain 8h"
   }
- ]
+ ],
+ "rev": 3
 }

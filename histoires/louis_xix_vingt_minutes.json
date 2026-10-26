@@ -6,43 +6,54 @@
  "beats": [
   {
    "say": "Ce roi de France aurait régné vingt minutes. Montre en main.",
-   "title": "Roi pendant *20 minutes.*",
-   "sub": "Puis il a tout signé."
+   "title": "Le roi qui a régné *20 minutes ?*",
+   "img": "assets/archives/louis_xix_vingt_minutes/angouleme.jpg",
+   "img_label": "LOUIS-ANTOINE, DUC D'ANGOULÊME",
+   "sub": "Il a signé sa propre fin."
   },
   {
-   "say": "Le 2 août 1830, Charles Dix abdique, après la révolution des Trois Glorieuses.",
-   "led": "1830",
-   "led_sub": "les Trois Glorieuses",
+   "say": "Tout se joue en un seul jour : le 2 août 1830.",
+   "title": "Tout se joue *en un jour.*",
+   "led": "2 AOÛT",
+   "led_sub": "1830"
+  },
+  {
+   "say": "Après trois jours de révolution, le roi Charles Dix abdique.",
+   "title": "Charles X *abdique.*",
+   "img": "assets/archives/louis_xix_vingt_minutes/liberte_1830.jpg",
+   "img_label": "LA LIBERTÉ GUIDANT LE PEUPLE · 1830",
    "flash": true
   },
   {
    "say": "Son fils, Louis-Antoine, devient alors roi. En théorie.",
-   "title": "Son fils devient roi… *en théorie.*",
-   "icon": "👑"
+   "title": "Son fils devient roi. *En théorie.*",
+   "img": "assets/archives/louis_xix_vingt_minutes/charles_x.jpg",
+   "img_label": "CHARLES X PAR GÉRARD"
   },
   {
-   "say": "Mais une vingtaine de minutes plus tard, il signe à son tour l'abdication.",
-   "led": "20 MIN"
-  },
-  {
-   "say": "Pour les royalistes les plus fidèles, il a donc été Louis Dix-Neuf.",
-   "led": "LOUIS XIX",
-   "stamp": "Selon les légitimistes",
+   "say": "Problème : une vingtaine de minutes plus tard, il signe à son tour l'abdication.",
+   "title": "20 minutes plus tard : *il signe.*",
+   "img": "assets/archives/louis_xix_vingt_minutes/rambouillet.jpg",
+   "img_label": "RAMBOUILLET, AOÛT 1830",
+   "stamp": "Abdication",
    "stamp_at": 1.4
   },
   {
-   "say": "Le règne le plus court de l'histoire de France.",
-   "title": "Le règne *le plus court.*"
+   "say": "Pour les royalistes fidèles, il a été Louis Dix-Neuf. Le règne le plus court de France.",
+   "title": "*Louis XIX* : le règne le plus court",
+   "icon": "👑"
   },
   {
-   "say": "Et le trône ne revient même pas à sa famille : c'est Louis-Philippe qui devient roi.",
-   "title": "Le trône part chez *Louis-Philippe.*",
-   "flash": true
+   "say": "Le pire ? Le trône échappe à sa famille. C'est Louis-Philippe qui devient roi.",
+   "title": "Le trône ? *Pour Louis-Philippe.*",
+   "img": "assets/archives/louis_xix_vingt_minutes/louis_philippe.jpg",
+   "img_label": "LOUIS-PHILIPPE PAR WINTERHALTER"
   },
   {
    "say": "Louis-Antoine mourra en exil, en Autriche.",
-   "icon": "🏔️",
-   "stamp": "Exil"
+   "title": "Il meurt *en exil.*",
+   "img": "assets/archives/louis_xix_vingt_minutes/angouleme.jpg",
+   "img_label": "LOUIS-ANTOINE"
   },
   {
    "say": "Et toi, tu le connaissais ?",
@@ -50,9 +61,10 @@
    "sub": "Oui · Non"
   },
   {
-   "say": "Abonne-toi, prochain dossier ce soir.",
+   "say": "Abonne-toi, prochain dossier demain matin.",
    "title": "*Abonne-toi.*",
-   "sub": "Prochain dossier ce soir 19h"
+   "sub": "Prochain dossier demain 8h"
   }
- ]
+ ],
+ "rev": 3
 }

@@ -6,18 +6,22 @@
  "beats": [
   {
    "say": "Pendant des siècles, les Européens ont mangé des momies.",
-   "title": "Ils mangeaient *des momies.*",
-   "sub": "Et ça se vendait chez l'apothicaire."
+   "title": "Pourquoi manger *des momies ?*",
+   "img": "assets/archives/momies_medicament/pot_mumia.jpg",
+   "img_label": "POT D'APOTHICAIRE « MUMIA »",
+   "sub": "Ça se vendait en pharmacie."
   },
   {
    "say": "Réduites en poudre, elles étaient vendues comme médicament.",
-   "title": "En poudre, *comme médicament.*",
-   "icon": "💊",
-   "flash": true
+   "title": "En *poudre*, comme médicament.",
+   "img": "assets/archives/momies_medicament/albarello.jpg",
+   "img_label": "POUDRE DE MOMIE · XVIIIᵉ SIÈCLE"
   },
   {
    "say": "On appelait ça la mumia.",
-   "led": "MUMIA"
+   "title": "On appelait ça la *mumia.*",
+   "img": "assets/archives/momies_medicament/mumiae_hambourg.jpg",
+   "img_label": "« PULV. MUMIAE VER. » · HAMBOURG"
   },
   {
    "say": "On en avalait contre les maux de tête, les chutes, ou les hémorragies.",
@@ -25,24 +29,28 @@
    "icon": "🤕"
   },
   {
-   "say": "La demande devient si forte que des trafiquants fabriquent de fausses momies.",
-   "title": "De *fausses momies.*",
-   "stamp": "Contrefaçon",
-   "stamp_at": 1.2
-  },
-  {
-   "say": "Avec des corps récents, séchés au soleil.",
-   "icon": "☀️",
+   "say": "Le pire ? La demande devient si forte que des trafiquants fabriquent de fausses momies.",
+   "title": "Des *fausses momies.*",
+   "img": "assets/archives/momies_medicament/chat_momie.jpg",
+   "img_label": "MOMIE ÉGYPTIENNE",
    "flash": true
   },
   {
-   "say": "La pratique dure jusqu'au dix-septième siècle, avant d'être abandonnée.",
-   "led": "XVIIE",
-   "led_sub": "siècle"
+   "say": "Avec des corps récents, séchés au soleil.",
+   "title": "Des corps *récents.*",
+   "icon": "☀️",
+   "stamp": "Contrefaçon",
+   "stamp_at": 1.0
   },
   {
-   "say": "Et elle ne soignait absolument rien.",
-   "title": "Ça ne soignait *rien.*"
+   "say": "La mode décline enfin au dix-huitième siècle.",
+   "led": "XVIIIᵉ",
+   "led_sub": "déclin de la mode"
+  },
+  {
+   "say": "Et bien sûr, elle ne soignait absolument rien.",
+   "title": "Ça ne soignait *rien.*",
+   "flash": true
   },
   {
    "say": "Et toi, tu aurais testé ?",
@@ -54,5 +62,6 @@
    "title": "*Abonne-toi.*",
    "sub": "Prochain dossier ce soir 19h"
   }
- ]
+ ],
+ "rev": 3
 }

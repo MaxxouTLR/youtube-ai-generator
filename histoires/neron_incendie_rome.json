@@ -6,25 +6,30 @@
  "beats": [
   {
    "say": "Néron n'a pas joué du violon pendant que Rome brûlait. Impossible.",
-   "title": "Néron n'a *pas* joué du violon.",
+   "title": "Néron a-t-il *joué du violon ?*",
+   "img": "assets/archives/neron_incendie_rome/neron_buste.jpg",
+   "img_label": "BUSTE DE NÉRON · ROME",
    "sub": "Le vrai scandale est ailleurs."
   },
   {
-   "say": "Le violon n'existait même pas. Il sera inventé quinze siècles plus tard.",
-   "title": "Le violon *n'existait pas.*",
-   "icon": "🎻",
+   "say": "Le violon n'existait même pas. Il apparaît quinze siècles plus tard.",
+   "title": "Le violon ? *Pas encore inventé.*",
+   "img": "assets/archives/neron_incendie_rome/caricature_violon.jpg",
+   "img_label": "CARICATURE ANGLAISE · XVIIIᵉ SIÈCLE"
+  },
+  {
+   "say": "Juillet 64 : un immense incendie ravage Rome pendant près d'une semaine.",
+   "title": "Rome brûle *6 jours.*",
+   "img": "assets/archives/neron_incendie_rome/incendie_robert.jpg",
+   "img_label": "L'INCENDIE DE ROME · HUBERT ROBERT",
    "flash": true
   },
   {
-   "say": "Juillet de l'an 64 : un immense incendie ravage Rome pendant près d'une semaine.",
-   "led": "64",
-   "led_sub": "grand incendie de Rome",
-   "icon": "🔥"
-  },
-  {
-   "say": "Quand le feu éclate, Néron n'est pas à Rome, mais à Antium, à une soixantaine de kilomètres.",
-   "title": "Il est *à 60 km.*",
-   "icon": "🏛️"
+   "say": "Problème : quand le feu éclate, Néron n'est pas à Rome, mais à Antium.",
+   "title": "Néron est… *ailleurs.*",
+   "icon": "🏛️",
+   "stamp": "Antium",
+   "stamp_at": 1.2
   },
   {
    "say": "Il rentre, ouvre ses jardins aux sans-abri, et fait distribuer du blé.",
@@ -32,18 +37,23 @@
    "icon": "🌾"
   },
   {
-   "say": "Mais une rumeur court : il aurait chanté la chute de Troie en regardant les flammes.",
-   "stamp": "Rumeur",
-   "icon": "🎶",
-   "stamp_at": 1.2
+   "say": "Mais une rumeur court : il aurait chanté la chute de Troie devant les flammes.",
+   "title": "La rumeur : *il chante.*",
+   "img": "assets/archives/neron_incendie_rome/neron_buste.jpg",
+   "img_label": "NÉRON"
   },
   {
    "say": "Même l'historien Tacite la présente comme une simple rumeur.",
-   "title": "Une *simple rumeur.*"
+   "title": "Tacite : *une rumeur.*",
+   "stamp": "Rumeur",
+   "stamp_at": 0.8,
+   "icon": "📜"
   },
   {
-   "say": "Et pour détourner les soupçons, Néron accuse les chrétiens.",
+   "say": "Le pire ? Pour détourner les soupçons, Néron accuse les chrétiens.",
    "title": "Il accuse *les chrétiens.*",
+   "img": "assets/archives/neron_incendie_rome/torches.jpg",
+   "img_label": "LES TORCHES DE NÉRON · SIEMIRADZKI",
    "flash": true
   },
   {
@@ -52,9 +62,10 @@
    "sub": "Oui · Non"
   },
   {
-   "say": "Abonne-toi, prochain dossier demain matin.",
+   "say": "Abonne-toi, prochain dossier ce soir.",
    "title": "*Abonne-toi.*",
-   "sub": "Prochain dossier demain 8h"
+   "sub": "Prochain dossier ce soir 19h"
   }
- ]
+ ],
+ "rev": 3
 }

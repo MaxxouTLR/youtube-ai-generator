@@ -1,0 +1,7 @@
+# Crédits images (Wikimedia Commons)
+
+- angouleme.jpg : Louis Antoine d'Artois, duc d'Angoulême.jpg — Jebulon — Public domain — https://commons.wikimedia.org/wiki/File:Louis_Antoine_d%27Artois,_duc_d%27Angoul%C3%AAme.jpg
+- charles_x.jpg : Portrait de Charles X, roi de France, en costume de sacre, par François Gérard (Château de Versailles).jpg — François Gérard — Public domain — https://commons.wikimedia.org/wiki/File:Portrait_de_Charles_X,_roi_de_France,_en_costume_de_sacre,_par_Fran%C3%A7ois_G%C3%A9rard_(Ch%C3%A2teau_de_Versailles).jpg
+- liberte_1830.jpg : Eugène Delacroix - Liberty Leading the People (28th July 1830) - WGA6177.jpg — Eugène Delacroix — Public domain — https://commons.wikimedia.org/wiki/File:Eug%C3%A8ne_Delacroix_-_Liberty_Leading_the_People_(28th_July_1830)_-_WGA6177.jpg
+- rambouillet.jpg : Arrivée de la duchesse d'angoulême a rambouillet lors de l'abdication. Paris Musées 20230817134130.jpg — Inconnu, dessinateur-lithographe — CC0 — https://commons.wikimedia.org/wiki/File:Arriv%C3%A9e_de_la_duchesse_d%27angoul%C3%AAme_a_rambouillet_lors_de_l%27abdication._Paris_Mus%C3%A9es_20230817134130.jpg
+- louis_philippe.jpg : 1841 portrait painting of Louis Philippe I (King of the French) by Winterhalter (cropped).jpg — Franz Xaver Winterhalter — Public domain — https://commons.wikimedia.org/wiki/File:1841_portrait_painting_of_Louis_Philippe_I_(King_of_the_French)_by_Winterhalter_(cropped).jpg

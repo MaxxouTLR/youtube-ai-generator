@@ -6,44 +6,51 @@
  "beats": [
   {
    "say": "Les Vikings n'ont jamais porté de casques à cornes. Jamais.",
-   "title": "Pas de *cornes.* Jamais.",
-   "sub": "Le vrai coupable va te surprendre."
+   "title": "Les Vikings avaient-ils *des cornes ?*",
+   "img": "assets/archives/vikings_casques_cornes/anlaff.jpg",
+   "img_label": "GRAVURE DU XIXᵉ SIÈCLE",
+   "sub": "Le coupable : un opéra."
   },
   {
-   "say": "Le seul casque viking presque entier retrouvé n'a aucune corne.",
-   "led": "1",
-   "led_sub": "casque viking complet retrouvé",
-   "icon": "⛑️"
+   "say": "Le seul casque viking presque entier jamais retrouvé n'a aucune corne.",
+   "title": "Le vrai casque : *aucune corne.*",
+   "img": "assets/archives/vikings_casques_cornes/gjermundbu.jpg",
+   "img_label": "CASQUE DE GJERMUNDBU · Xᵉ SIÈCLE"
   },
   {
-   "say": "Il a été découvert en Norvège, à Gjermundbu.",
-   "stamp": "Gjermundbu",
-   "icon": "🏔️",
-   "stamp_at": 0.8
+   "say": "Il a été découvert en Norvège, dans une tombe, à Gjermundbu.",
+   "title": "Trouvé dans *une tombe.*",
+   "img": "assets/archives/vikings_casques_cornes/oseberg.jpg",
+   "img_label": "FOUILLES VIKINGS EN NORVÈGE"
   },
   {
    "say": "Alors d'où viennent les cornes ?",
-   "title": "D'où viennent *les cornes ?*"
+   "title": "D'où viennent *les cornes ?*",
+   "icon": "🤔"
   },
   {
    "say": "D'un opéra.",
-   "title": "D'un *opéra.*",
+   "title": "*D'un opéra.*",
    "flash": true
   },
   {
-   "say": "En 1876, pour l'opéra de Wagner, le costumier Carl Emil Doepler dessine des casques à cornes.",
-   "led": "1876",
-   "led_sub": "opéra de Wagner",
-   "icon": "🎭"
+   "say": "En 1876, pour Wagner, le costumier Carl Emil Doepler dessine des casques ailés et à cornes.",
+   "title": "1876 : le costumier de *Wagner.*",
+   "img": "assets/archives/vikings_casques_cornes/doepler_1876.jpg",
+   "img_label": "COSTUME DE DOEPLER · 1876",
+   "stamp": "Opéra",
+   "stamp_at": 1.6
   },
   {
-   "say": "L'image plaît. Les peintres, puis le cinéma et les bandes dessinées la reprennent.",
-   "title": "Le cinéma *s'en empare.*",
+   "say": "L'image plaît. Les peintres, le cinéma et la BD la reprennent.",
+   "title": "Le cinéma *adore.*",
    "icon": "🎬"
   },
   {
-   "say": "Et en combat, des cornes auraient été plutôt gênantes.",
-   "title": "En combat ? *Une très mauvaise idée.*"
+   "say": "Le plus fou ? En combat, des cornes auraient été plutôt gênantes.",
+   "title": "Des cornes ? *Gênantes.*",
+   "icon": "⚔️",
+   "flash": true
   },
   {
    "say": "Et toi, tu y croyais ?",
@@ -55,5 +62,6 @@
    "title": "*Abonne-toi.*",
    "sub": "Prochain dossier demain 8h"
   }
- ]
+ ],
+ "rev": 3
 }

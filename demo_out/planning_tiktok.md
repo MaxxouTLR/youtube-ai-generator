@@ -14,3 +14,4 @@ n°19 | louis_xix_vingt_minutes | 30/10/2026 08:00 | programmé le 25/10/2026 (B
 n°20 | vikings_casques_cornes | 30/10/2026 19:00 | programmé le 25/10/2026 (Buffer)
 n°21 | momies_medicament | 31/10/2026 08:00 | programmé le 26/10/2026 (Buffer)
 n°22 | mary_celeste_1872 | 31/10/2026 19:00 | programmé le 26/10/2026 (Buffer)
+test | test_onoda_methode | 26/10/2026 12:05 | publié ✅ (Buffer) — vidéo test méthode concurrents, n°13 reprogrammé à 19h

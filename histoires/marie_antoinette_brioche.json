@@ -6,43 +6,51 @@
  "beats": [
   {
    "say": "La phrase la plus célèbre de Marie-Antoinette ? Elle ne l'a jamais dite.",
-   "title": "Elle ne l'a *jamais dite.*",
-   "sub": "Le vrai auteur va te surprendre."
+   "title": "Qui a vraiment dit *« la brioche » ?*",
+   "img": "assets/archives/marie_antoinette_brioche/rose.jpg",
+   "img_label": "PAR VIGÉE LE BRUN · 1783",
+   "sub": "Un philosophe très connu."
   },
   {
-   "say": "La phrase apparaît dans un livre de Jean-Jacques Rousseau, écrit quand elle avait une dizaine d'années.",
-   "led": "ROUSSEAU",
-   "led_sub": "écrit vers 1765"
+   "say": "Pire : quand la phrase est écrite, elle n'est qu'une enfant.",
+   "title": "Elle n'est qu'une *enfant.*",
+   "img": "assets/archives/marie_antoinette_brioche/autriche_enfant.jpg",
+   "img_label": "AVEC SES FRÈRE ET SŒURS · VIENNE, 1763"
   },
   {
-   "say": "À ce moment-là, elle vit encore en Autriche.",
-   "title": "Elle est encore *en Autriche.*",
-   "icon": "🏰"
+   "say": "La phrase apparaît dans un livre de Jean-Jacques Rousseau.",
+   "title": "L'auteur : *Rousseau.*",
+   "img": "assets/archives/marie_antoinette_brioche/rousseau.jpg",
+   "img_label": "JEAN-JACQUES ROUSSEAU"
   },
   {
-   "say": "Rousseau parle seulement d'une grande princesse, sans nom.",
+   "say": "Il parle seulement d'une grande princesse, sans nom.",
    "title": "« Une grande princesse »… *sans nom.*",
-   "icon": "📖"
+   "img": "assets/archives/marie_antoinette_brioche/confessions.jpg",
+   "img_label": "LES CONFESSIONS"
   },
   {
-   "say": "Elle n'arrive en France qu'en 1770.",
+   "say": "Marie-Antoinette, elle, n'arrive en France qu'en 1770.",
    "led": "1770",
-   "led_sub": "arrivée en France"
-  },
-  {
-   "say": "Mais pendant la Révolution, on lui colle la phrase sur le dos.",
-   "title": "On lui *colle la phrase.*",
+   "led_sub": "arrivée en France",
    "flash": true
   },
   {
-   "say": "Elle devient le symbole d'une reine qui méprise le peuple.",
-   "icon": "👑",
-   "stamp": "Propagande",
-   "stamp_at": 1.0
+   "say": "Problème : pendant la Révolution, on lui colle la phrase sur le dos.",
+   "title": "On lui *colle la phrase.*",
+   "img": "assets/archives/marie_antoinette_brioche/hyene.jpg",
+   "img_label": "CARICATURE RÉVOLUTIONNAIRE"
   },
   {
-   "say": "Deux siècles plus tard, presque tout le monde croit encore qu'elle l'a dit.",
-   "title": "Une *fausse citation* célèbre"
+   "say": "Elle devient le symbole d'une reine qui méprise le peuple.",
+   "title": "Le symbole du *mépris.*",
+   "icon": "👑"
+  },
+  {
+   "say": "Deux siècles plus tard, presque tout le monde y croit encore.",
+   "title": "Une *fausse citation* célèbre",
+   "img": "assets/archives/marie_antoinette_brioche/ducreux_1769.jpg",
+   "img_label": "PAR DUCREUX · 1769"
   },
   {
    "say": "Et toi, tu y croyais ?",
@@ -50,9 +58,10 @@
    "sub": "Oui · Non"
   },
   {
-   "say": "Abonne-toi, prochain dossier demain matin.",
+   "say": "Abonne-toi, prochain dossier ce soir.",
    "title": "*Abonne-toi.*",
-   "sub": "Prochain dossier demain 8h"
+   "sub": "Prochain dossier ce soir 19h"
   }
- ]
+ ],
+ "rev": 3
 }

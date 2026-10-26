@@ -6,41 +6,51 @@
  "beats": [
   {
    "say": "Cette guerre a duré moins longtemps que ta pause déjeuner.",
-   "title": "Une guerre de *38 minutes.*",
-   "sub": "Et un seul blessé d'un côté."
+   "title": "La guerre la plus *courte ?*",
+   "img": "assets/archives/guerre_zanzibar_1896/palais_detruit.jpg",
+   "img_label": "LE PALAIS APRÈS LA GUERRE · 1896",
+   "sub": "Un seul blessé d'un côté."
   },
   {
-   "say": "Le 27 août 1896, à neuf heures du matin, la flotte britannique ouvre le feu sur Zanzibar.",
-   "led": "9:02",
-   "led_sub": "27 août 1896",
-   "flash": true
+   "say": "Elle commence à neuf heures du matin. Et elle est finie avant dix heures.",
+   "title": "Finie avant *10 heures.*",
+   "img": "assets/archives/guerre_zanzibar_1896/bombardement_iln.jpg",
+   "img_label": "ILLUSTRATED LONDON NEWS · 1896"
   },
   {
-   "say": "La raison : un nouveau sultan a pris le pouvoir sans l'accord des Britanniques.",
-   "title": "Un sultan *non approuvé.*",
-   "icon": "👳"
+   "say": "La cause ? Un nouveau sultan prend le pouvoir sans l'accord des Britanniques.",
+   "title": "Un sultan *non autorisé.*",
+   "img": "assets/archives/guerre_zanzibar_1896/khalid.jpg",
+   "img_label": "LE SULTAN KHALID BIN BARGHASH"
   },
   {
-   "say": "Les Britanniques lui donnent un ultimatum. Il refuse de partir.",
-   "icon": "⏳",
-   "stamp": "Ultimatum",
-   "stamp_at": 0.8
+   "say": "Ultimatum : il doit partir. Il refuse.",
+   "title": "Ultimatum : il *refuse.*",
+   "icon": "⏱️",
+   "stamp": "Refusé",
+   "stamp_at": 1.0
   },
   {
-   "say": "Les navires bombardent le palais.",
-   "icon": "🚢",
+   "say": "Le 27 août 1896, la flotte britannique bombarde le palais.",
+   "title": "La flotte *ouvre le feu.*",
+   "img": "assets/archives/guerre_zanzibar_1896/navires.jpg",
+   "img_label": "NAVIRES BRITANNIQUES À ZANZIBAR",
    "flash": true
   },
   {
    "say": "Moins de quarante minutes plus tard, le drapeau du palais tombe.",
-   "led": "38 MIN"
+   "led": "38 MIN",
+   "led_sub": "environ"
   },
   {
-   "say": "Côté zanzibarite, environ cinq cents morts et blessés. Côté britannique : un seul blessé.",
-   "title": "500 victimes contre *1 blessé.*"
+   "say": "Le pire ? Côté zanzibarite, environ cinq cents morts et blessés. Côté britannique : un seul blessé.",
+   "title": "500 victimes *contre 1 blessé.*",
+   "img": "assets/archives/guerre_zanzibar_1896/zanzibar_1896.jpg",
+   "img_label": "ZANZIBAR, APRÈS LE BOMBARDEMENT"
   },
   {
-   "say": "Le sultan s'enfuit, et se réfugie au consulat allemand.",
+   "say": "Le sultan s'enfuit, et se cache au consulat allemand.",
+   "title": "Il se cache chez *les Allemands.*",
    "icon": "🏃"
   },
   {
@@ -49,9 +59,10 @@
    "sub": "Oui · Non"
   },
   {
-   "say": "Abonne-toi, prochain dossier ce soir.",
+   "say": "Abonne-toi, prochain dossier demain matin.",
    "title": "*Abonne-toi.*",
-   "sub": "Prochain dossier ce soir 19h"
+   "sub": "Prochain dossier demain 8h"
   }
- ]
+ ],
+ "rev": 3
 }

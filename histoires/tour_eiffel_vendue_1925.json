@@ -6,24 +6,32 @@
  "beats": [
   {
    "say": "Un escroc a vendu la tour Eiffel. Deux fois.",
-   "title": "Il a vendu la *tour Eiffel.* Deux fois.",
-   "sub": "Et la victime n'a rien dit."
+   "title": "Comment vendre la *tour Eiffel ?*",
+   "img": "assets/archives/tour_eiffel_vendue_1925/tour_1925.jpg",
+   "img_label": "LA TOUR EIFFEL EN 1925",
+   "sub": "Indice : la victime s'est tue."
   },
   {
-   "say": "Il se fait passer pour un haut fonctionnaire, et annonce que la tour va être démontée.",
+   "say": "Il fait croire que la tour va être démontée, et vendue en ferraille.",
    "title": "« La tour va être *démontée.* »",
-   "icon": "🗼"
+   "img": "assets/archives/tour_eiffel_vendue_1925/construction_1888.jpg",
+   "img_label": "LA TOUR EN CONSTRUCTION · 1888",
+   "stamp": "Ferraille",
+   "stamp_at": 1.4
   },
   {
-   "say": "Il s'appelle Victor Lustig.",
-   "icon": "🎩",
-   "stamp": "Victor Lustig",
-   "stamp_at": 0.6
+   "say": "Son nom : Victor Lustig, escroc de génie.",
+   "title": "*Victor Lustig.*",
+   "img": "assets/archives/tour_eiffel_vendue_1925/lustig_police.jpg",
+   "img_label": "VICTOR LUSTIG · FICHE DE POLICE"
   },
   {
-   "say": "Il réunit des ferrailleurs dans un grand hôtel parisien, en secret.",
+   "say": "Il réunit des ferrailleurs dans un palace parisien, en secret.",
    "title": "Une réunion *secrète.*",
-   "icon": "🏨"
+   "img": "assets/archives/tour_eiffel_vendue_1925/crillon.jpg",
+   "img_label": "HÔTEL DE CRILLON, PARIS",
+   "stamp": "Confidentiel",
+   "stamp_at": 1.2
   },
   {
    "say": "L'un d'eux, André Poisson, paye. Lustig file avec l'argent.",
@@ -32,23 +40,28 @@
    "flash": true
   },
   {
-   "say": "Trop honteux, la victime ne porte même pas plainte.",
-   "stamp": "Aucune plainte",
-   "icon": "🤐",
-   "stamp_at": 0.8
+   "say": "Le plus fou ? Trop honteux, Poisson ne porte même pas plainte.",
+   "title": "La victime se *tait.*",
+   "icon": "🤐"
   },
   {
-   "say": "Alors Lustig revient, et retente le coup avec d'autres ferrailleurs.",
+   "say": "Alors Lustig revient, et retente le coup.",
    "title": "Il *revient.*",
+   "img": "assets/archives/tour_eiffel_vendue_1925/lustig.jpg",
+   "img_label": "« LE PLUS GRAND ESCROC » · PRESSE US",
    "flash": true
   },
   {
-   "say": "Cette fois, l'un d'eux prévient la police. Lustig s'enfuit encore.",
-   "icon": "🚓"
+   "say": "Cette fois, la police est prévenue. Il fuit aux États-Unis, et fabrique des faux billets.",
+   "title": "Nouvelle arnaque : *faux billets.*",
+   "img": "assets/archives/tour_eiffel_vendue_1925/faux_billet.jpg",
+   "img_label": "UN DE SES FAUX BILLETS"
   },
   {
-   "say": "Il finira arrêté aux États-Unis, et envoyé à Alcatraz.",
-   "led": "ALCATRAZ"
+   "say": "Il finit arrêté, et envoyé à Alcatraz.",
+   "title": "Direction *Alcatraz.*",
+   "img": "assets/archives/tour_eiffel_vendue_1925/alcatraz.jpg",
+   "img_label": "PRISON D'ALCATRAZ"
   },
   {
    "say": "Et toi, tu serais tombé dans le panneau ?",
@@ -56,9 +69,10 @@
    "sub": "Oui · Non · Peut-être"
   },
   {
-   "say": "Abonne-toi, prochain dossier ce soir.",
+   "say": "Abonne-toi, prochain dossier demain matin.",
    "title": "*Abonne-toi.*",
-   "sub": "Prochain dossier ce soir 19h"
+   "sub": "Prochain dossier demain 8h"
   }
- ]
+ ],
+ "rev": 3
 }
