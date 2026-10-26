@@ -6,18 +6,22 @@
  "beats": [
   {
    "say": "Cléopâtre est plus proche de toi que des pyramides.",
-   "title": "Cléopâtre est plus proche de *toi* que des *pyramides.*",
+   "title": "Plus proche de *toi* que des *pyramides ?*",
+   "img": "assets/archives/cleopatre_pyramides/buste.jpg",
+   "img_label": "BUSTE DE CLÉOPÂTRE · BERLIN",
    "sub": "Fais le calcul."
   },
   {
-   "say": "La grande pyramide de Gizeh a été construite vers 2560 avant Jésus-Christ.",
-   "led": "-2560",
-   "led_sub": "grande pyramide de Gizeh"
+   "say": "Les pyramides de Gizeh ? Construites vers 2560 avant notre ère.",
+   "title": "Gizeh : vers *-2560.*",
+   "img": "assets/archives/cleopatre_pyramides/gizeh_1870.jpg",
+   "img_label": "GIZEH · PHOTO DU XIXᵉ SIÈCLE"
   },
   {
-   "say": "Cléopâtre meurt en l'an trente avant Jésus-Christ.",
-   "led": "-30",
-   "led_sub": "mort de Cléopâtre"
+   "say": "Cléopâtre, elle, meurt en l'an trente avant notre ère.",
+   "title": "Cléopâtre meurt en *-30.*",
+   "img": "assets/archives/cleopatre_pyramides/mort_cleopatre.jpg",
+   "img_label": "LA MORT DE CLÉOPÂTRE · PEINTURE"
   },
   {
    "say": "Entre les deux : plus de deux mille cinq cents ans.",
@@ -25,28 +29,23 @@
    "flash": true
   },
   {
-   "say": "Entre Cléopâtre et les premiers pas sur la Lune : environ deux mille ans.",
-   "led": "2000 ANS",
-   "led_sub": "jusqu'à la Lune"
+   "say": "Entre elle et les premiers pas sur la Lune : à peine deux mille.",
+   "title": "Jusqu'à la Lune : *2000 ans.*",
+   "img": "assets/archives/cleopatre_pyramides/apollo11.jpg",
+   "img_label": "APOLLO 11 · 1969"
   },
   {
-   "say": "Pour elle, les pyramides étaient déjà vieilles de vingt-cinq siècles.",
-   "title": "Déjà vieilles de *25 siècles.*",
-   "icon": "🏜️"
-  },
-  {
-   "say": "Mais attendez.",
-   "title": "MAIS ATTENDEZ.",
+   "say": "Le plus fou ? Les pyramides ont côtoyé les mammouths.",
+   "title": "Les pyramides ont vu des *mammouths.*",
+   "img": "assets/archives/cleopatre_pyramides/mammouth.jpg",
+   "img_label": "MAMMOUTHS LAINEUX · RECONSTITUTION",
    "flash": true
   },
   {
-   "say": "Quand les pyramides ont été construites, il restait encore des mammouths sur Terre.",
-   "title": "Il restait des *mammouths.*",
-   "icon": "🐘"
-  },
-  {
-   "say": "Sur une île de Sibérie, ils ont survécu jusqu'à il y a environ quatre mille ans.",
-   "icon": "🏝️",
+   "say": "Sur l'île Wrangel, en Sibérie, ils survivent jusqu'à il y a environ quatre mille ans.",
+   "title": "Les derniers : *il y a 4000 ans.*",
+   "img": "assets/archives/cleopatre_pyramides/wrangel.jpg",
+   "img_label": "ÎLE WRANGEL, SIBÉRIE · NASA",
    "stamp": "Île Wrangel",
    "stamp_at": 1.2
   },
@@ -56,10 +55,10 @@
    "sub": "Oui · Non · Je suis choqué"
   },
   {
-   "say": "Abonne-toi, prochain dossier demain matin.",
+   "say": "Abonne-toi, prochain dossier ce soir.",
    "title": "*Abonne-toi.*",
-   "sub": "Prochain dossier demain 8h"
+   "sub": "Prochain dossier ce soir 19h"
   }
  ],
- "rev": 2
+ "rev": 3
 }

@@ -1,0 +1,7 @@
+# Crédits images (Wikimedia Commons)
+
+- david_1812.jpg : Jacques-Louis David - The Emperor Napoleon in His Study at the Tuileries - Google Art Project (3x4 close cropped).jpg — Jacques-Louis David — Public domain — https://commons.wikimedia.org/wiki/File:Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project_(3x4_close_cropped).jpg
+- arcole.jpg : Gros Antoine-Jean - Napoleon Bonaparte on the Bridge at Arcole (cropped).jpg — Antoine-Jean Gros — Public domain — https://commons.wikimedia.org/wiki/File:Gros_Antoine-Jean_-_Napoleon_Bonaparte_on_the_Bridge_at_Arcole_(cropped).jpg
+- gillray.jpg : James Gillray - Maniac Ravings or Little Boney in a Strong Fit - B1974.12.276 - Yale Center for British Art.jpg — James Gillray — CC0 — https://commons.wikimedia.org/wiki/File:James_Gillray_-_Maniac_Ravings_or_Little_Boney_in_a_Strong_Fit_-_B1974.12.276_-_Yale_Center_for_British_Art.jpg
+- revue_garde.jpg : Horace Vernet (1789-1863) - Napoleon Reviewing the Guard in the place du Carrousel - P572 - The Wallace Collection.jpg — Horace Vernet — Public domain — https://commons.wikimedia.org/wiki/File:Horace_Vernet_(1789-1863)_-_Napoleon_Reviewing_the_Guard_in_the_place_du_Carrousel_-_P572_-_The_Wallace_Collection.jpg
+- grenadier.jpg : Grenadier-a-pied-de-la-Vieille-Garde.png — Édouard Detaille — Public domain — https://commons.wikimedia.org/wiki/File:Grenadier-a-pied-de-la-Vieille-Garde.png

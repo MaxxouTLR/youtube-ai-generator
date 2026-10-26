@@ -5,45 +5,49 @@
  "caption": "#CapCut 📁 Dossier n°13 — Napoléon n'était pas petit. Et c'est la faute des Anglais 📏 Tu le croyais petit ? #histoire #napoleon #lesaviezvous #anecdote #dossier",
  "beats": [
   {
-   "say": "Napoléon n'était pas petit. On t'a menti pendant deux siècles.",
-   "title": "On t'a *menti* sur Napoléon.",
-   "sub": "Et c'est la faute des Anglais."
+   "say": "Napoléon n'était pas petit. On t'a menti.",
+   "title": "Pourquoi on le croit *petit ?*",
+   "img": "assets/archives/napoleon_taille/david_1812.jpg",
+   "img_label": "NAPOLÉON PAR DAVID · 1812",
+   "sub": "Indice : les Anglais."
   },
   {
-   "say": "Il mesurait environ un mètre soixante-neuf. Plus que la moyenne des Français de son époque.",
-   "led": "1,69 M",
-   "led_sub": "plus que la moyenne"
+   "say": "Il mesurait environ un mètre soixante-neuf. Plus que la moyenne de son époque.",
+   "title": "*1,69 m.* Plus que la moyenne.",
+   "img": "assets/archives/napoleon_taille/arcole.jpg",
+   "img_label": "BONAPARTE PAR GROS · 1801"
   },
   {
-   "say": "Alors, d'où vient la légende ?",
-   "title": "D'où vient *la légende ?*"
-  },
-  {
-   "say": "D'abord, une histoire de pouces. On note cinq pieds deux pouces. Mais des pouces français, plus longs que les pouces anglais.",
-   "title": "5 pieds 2 pouces… *mais français.*",
+   "say": "Le piège ? On note sa taille en pouces français.",
+   "title": "Le piège : des pouces *français.*",
    "icon": "📏"
   },
   {
-   "say": "Lus à l'anglaise, ça donne un mètre cinquante-sept.",
+   "say": "Lus en pouces anglais, plus courts, ça donne un mètre cinquante-sept.",
    "led": "1,57 M",
    "strike": 1.3,
    "flash": true
   },
   {
-   "say": "Ensuite, la propagande. Les caricaturistes anglais le dessinent minuscule et colérique.",
+   "say": "Ensuite, les caricaturistes anglais le dessinent minuscule et colérique.",
    "title": "La propagande *anglaise.*",
-   "icon": "✏️",
+   "img": "assets/archives/napoleon_taille/gillray.jpg",
+   "img_label": "CARICATURE DE GILLRAY · 1803",
    "stamp": "Little Boney",
-   "stamp_at": 1.6
+   "stamp_at": 1.4
   },
   {
-   "say": "Et son surnom, le petit caporal ? C'était affectueux, pas une question de taille.",
-   "title": "« Le petit caporal » : *affectueux.*"
+   "say": "Son surnom, le petit caporal ? Un mot affectueux, pas une taille.",
+   "title": "« Petit caporal » : *affectueux.*",
+   "img": "assets/archives/napoleon_taille/revue_garde.jpg",
+   "img_label": "HORACE VERNET · LA GARDE EN REVUE"
   },
   {
-   "say": "En plus, sa garde recrutait de très grands soldats. À côté d'eux, il paraissait petit.",
+   "say": "Le pire ? Sa garde recrute des géants. À côté d'eux, il paraît petit.",
    "title": "Entouré de *géants.*",
-   "icon": "💂"
+   "img": "assets/archives/napoleon_taille/grenadier.jpg",
+   "img_label": "GRENADIER DE LA VIEILLE GARDE",
+   "flash": true
   },
   {
    "say": "Et toi, tu le croyais petit ?",
@@ -51,10 +55,10 @@
    "sub": "Oui · Non"
   },
   {
-   "say": "Abonne-toi, prochain dossier ce soir.",
+   "say": "Abonne-toi, prochain dossier demain matin.",
    "title": "*Abonne-toi.*",
-   "sub": "Prochain dossier ce soir 19h"
+   "sub": "Prochain dossier demain 8h"
   }
  ],
- "rev": 2
+ "rev": 3
 }
