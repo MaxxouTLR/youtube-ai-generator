@@ -6,39 +6,47 @@
  "beats": [
   {
    "say": "La Grande Muraille de Chine ? Impossible à voir depuis l'espace.",
-   "title": "Invisible *depuis l'espace.*",
-   "sub": "Même un astronaute chinois l'a avoué."
+   "title": "Visible *depuis l'espace ?*",
+   "img": "assets/archives/muraille_chine_espace/muraille_1917.jpg",
+   "img_label": "LA GRANDE MURAILLE · VERS 1920",
+   "sub": "Un astronaute chinois l'a avoué."
   },
   {
-   "say": "En 2003, le premier astronaute chinois, Yang Liwei, a cherché. Il ne l'a pas vue.",
-   "title": "Le premier Chinois dans l'espace *ne l'a pas vue.*",
-   "icon": "🚀",
+   "say": "Même le premier astronaute chinois, Yang Liwei, l'a cherchée. Il ne l'a pas vue.",
+   "title": "Il l'a cherchée. *Rien.*",
+   "img": "assets/archives/muraille_chine_espace/chine_iss.jpg",
+   "img_label": "LA CHINE VUE DE L'ISS · NASA",
    "flash": true
   },
   {
    "say": "Le problème : la muraille est longue, mais très étroite.",
-   "title": "Longue… *mais étroite.*",
-   "icon": "🧱"
+   "title": "Longue. Mais *étroite.*",
+   "img": "assets/archives/muraille_chine_espace/muraille_child.jpg",
+   "img_label": "PHOTO DE THOMAS CHILD · XIXᵉ SIÈCLE"
   },
   {
    "say": "Quelques mètres de large seulement.",
-   "led": "6 M",
-   "led_sub": "de large environ"
+   "led": "≈ 6 M",
+   "led_sub": "de large, souvent moins"
   },
   {
    "say": "Et sa couleur se confond avec le paysage.",
-   "title": "Elle se *confond* avec le sol."
+   "title": "Elle se *confond* avec le paysage.",
+   "img": "assets/archives/muraille_chine_espace/jiayuguan_1875.jpg",
+   "img_label": "PRÈS DE JIAYUGUAN · 1875"
   },
   {
-   "say": "La voir depuis l'orbite, c'est comme voir un cheveu à plusieurs kilomètres.",
-   "title": "Comme un *cheveu* à 3 km.",
-   "flash": true
+   "say": "Le plus fou ? La voir depuis l'orbite, c'est comme voir un cheveu à plusieurs kilomètres.",
+   "title": "Un cheveu à *plusieurs kilomètres.*",
+   "icon": "🔭"
   },
   {
    "say": "Pourtant, le mythe circulait déjà avant même le premier vol spatial.",
+   "title": "Un mythe *plus vieux que les fusées.*",
+   "img": "assets/archives/muraille_chine_espace/shanhaiguan.jpg",
+   "img_label": "SHANHAIGUAN · DÉBUT XXᵉ SIÈCLE",
    "stamp": "Mythe",
-   "icon": "🛰️",
-   "stamp_at": 0.8
+   "stamp_at": 1.4
   },
   {
    "say": "Et toi, tu y croyais ?",
@@ -50,5 +58,6 @@
    "title": "*Abonne-toi.*",
    "sub": "Prochain dossier ce soir 19h"
   }
- ]
+ ],
+ "rev": 3
 }

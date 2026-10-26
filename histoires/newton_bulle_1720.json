@@ -6,41 +6,45 @@
  "beats": [
   {
    "say": "L'un des plus grands génies de l'histoire a perdu une fortune en bourse.",
-   "title": "Newton a *perdu une fortune* en bourse.",
-   "sub": "Comme beaucoup aujourd'hui."
+   "title": "Comment Newton a-t-il *tout perdu ?*",
+   "img": "assets/archives/newton_bulle_1720/newton.jpg",
+   "img_label": "ISAAC NEWTON PAR KNELLER",
+   "sub": "Il avait gagné. Puis il a rejoué."
   },
   {
-   "say": "En 1720, tout Londres achète des actions de la Compagnie des mers du Sud.",
-   "led": "1720",
-   "led_sub": "mers du Sud",
-   "flash": true
+   "say": "Mille sept cent vingt : tout Londres s'arrache les actions de la Compagnie des mers du Sud.",
+   "title": "Tout Londres *achète.*",
+   "img": "assets/archives/newton_bulle_1720/bublers.jpg",
+   "img_label": "GRAVURE SATIRIQUE · 1720"
   },
   {
-   "say": "Newton en achète, revend avec un joli bénéfice.",
-   "title": "Il revend… *avec un bénéfice.*",
+   "say": "Newton en achète, et revend avec un joli bénéfice.",
+   "title": "Il revend *gagnant.*",
    "icon": "📈"
   },
   {
-   "say": "Mais l'action continue de grimper. Il rachète, beaucoup plus cher.",
-   "title": "Il *rachète.* Beaucoup plus cher.",
-   "flash": true
+   "say": "Problème : l'action continue de grimper. Il rachète, beaucoup plus cher.",
+   "title": "Il rachète. *Beaucoup plus cher.*",
+   "flash": true,
+   "icon": "💸"
   },
   {
    "say": "Puis la bulle éclate.",
-   "icon": "📉",
-   "stamp": "Krach",
-   "stamp_at": 0.4
+   "title": "*La bulle éclate.*",
+   "img": "assets/archives/newton_bulle_1720/south_sea.jpg",
+   "img_label": "LA BULLE DES MERS DU SUD",
+   "flash": true
   },
   {
    "say": "Il aurait perdu environ vingt mille livres. Une fortune à l'époque.",
    "led": "20 000 £",
-   "led_sub": "perdues"
+   "led_sub": "perdues, selon la légende"
   },
   {
    "say": "On lui prête une phrase : je sais calculer le mouvement des astres, mais pas la folie des hommes.",
    "title": "« Pas la *folie des hommes.* »",
-   "stamp": "Citation douteuse",
-   "stamp_at": 1.8
+   "img": "assets/archives/newton_bulle_1720/bulle_gravure.jpg",
+   "img_label": "HOGARTH · LA BULLE · 1721"
   },
   {
    "say": "Et toi, tu aurais résisté ?",
@@ -52,5 +56,6 @@
    "title": "*Abonne-toi.*",
    "sub": "Prochain dossier demain 8h"
   }
- ]
+ ],
+ "rev": 3
 }

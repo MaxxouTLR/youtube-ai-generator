@@ -6,46 +6,56 @@
  "beats": [
   {
    "say": "Napoléon a battu des armées entières. Mais des lapins l'auraient fait fuir.",
-   "title": "Napoléon vs. *des lapins.*",
-   "sub": "Et les lapins ont gagné."
+   "title": "Napoléon *vaincu par des lapins ?*",
+   "img": "assets/archives/napoleon_lapins_1807/lapin.jpg",
+   "img_label": "GRAVURE ZOOLOGIQUE · XIXᵉ SIÈCLE",
+   "sub": "Ils ont foncé sur lui."
   },
   {
-   "say": "Des centaines de lapins, qui foncent droit sur lui.",
-   "title": "Des *centaines* de lapins.",
-   "icon": "🐇",
-   "flash": true
-  },
-  {
-   "say": "1807. Pour fêter la paix, son chef d'état-major organise une partie de chasse.",
-   "led": "1807",
-   "led_sub": "partie de chasse"
-  },
-  {
-   "say": "Il fait lâcher des centaines de lapins.",
+   "say": "Des centaines de lapins, qui foncent droit sur l'empereur.",
+   "title": "Des *centaines*, droit sur lui.",
    "array": {
     "icon": "🐇",
-    "n": 24
+    "n": 40
    }
+  },
+  {
+   "say": "Mille huit cent sept, après la paix de Tilsit. Une partie de chasse est organisée.",
+   "title": "Après la paix : *une chasse.*",
+   "img": "assets/archives/napoleon_lapins_1807/tilsit.jpg",
+   "img_label": "TILSIT · 1807"
+  },
+  {
+   "say": "L'organisateur : Berthier, son chef d'état-major. Il fait lâcher des centaines de lapins.",
+   "title": "*Berthier* lâche les lapins.",
+   "img": "assets/archives/napoleon_lapins_1807/berthier.jpg",
+   "img_label": "LE MARÉCHAL BERTHIER"
   },
   {
    "say": "Problème : ce sont des lapins d'élevage. Ils prennent les chasseurs pour leurs nourrisseurs.",
    "title": "Des lapins *d'élevage.*",
+   "icon": "🥕",
    "flash": true
   },
   {
    "say": "Au lieu de fuir, ils se jettent sur l'empereur.",
-   "title": "Ils foncent sur *l'empereur.*",
-   "icon": "🏃"
+   "title": "Ils *attaquent.*",
+   "img": "assets/archives/napoleon_lapins_1807/fusil_chasse.jpg",
+   "img_label": "FUSIL DE CHASSE DE NAPOLÉON",
+   "stamp": "Assaut",
+   "stamp_at": 0.9
   },
   {
    "say": "Napoléon doit battre en retraite jusqu'à sa voiture.",
-   "stamp": "Retraite",
-   "icon": "🐎",
-   "stamp_at": 0.8
+   "title": "Napoléon *bat en retraite.*",
+   "icon": "🏃"
   },
   {
    "say": "L'anecdote vient des mémoires d'un général. Peut-être un peu enjolivée.",
-   "title": "Peut-être… *enjolivée.*"
+   "title": "Légende ? *Peut-être.*",
+   "stamp": "Selon Thiébault",
+   "stamp_at": 1.2,
+   "icon": "📜"
   },
   {
    "say": "Et toi, tu y crois ?",
@@ -57,5 +67,6 @@
    "title": "*Abonne-toi.*",
    "sub": "Prochain dossier demain 8h"
   }
- ]
+ ],
+ "rev": 3
 }

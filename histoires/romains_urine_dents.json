@@ -6,38 +6,47 @@
  "beats": [
   {
    "say": "Les Romains se blanchissaient les dents avec de l'urine.",
-   "title": "Les dents à *l'urine.*",
+   "title": "Des dents blanches… *à l'urine ?*",
+   "img": "assets/archives/romains_urine_dents/vespasien.jpg",
+   "img_label": "BUSTE ROMAIN · VESPASIEN",
    "sub": "Et ça marchait vraiment."
   },
   {
-   "say": "L'ammoniac qu'elle contient aide vraiment à nettoyer.",
-   "title": "L'*ammoniac* nettoie vraiment.",
-   "icon": "🦷",
-   "flash": true
+   "say": "Pourquoi ? L'ammoniac qu'elle contient aide vraiment à nettoyer.",
+   "title": "Le secret : *l'ammoniac.*",
+   "icon": "🧪"
   },
   {
    "say": "Le poète Catulle se moque même d'un homme aux dents trop blanches.",
    "title": "Catulle *se moque.*",
-   "icon": "📜"
+   "icon": "📜",
+   "stamp": "Catulle",
+   "stamp_at": 1.2
   },
   {
-   "say": "L'urine servait aussi à laver les vêtements, dans les blanchisseries.",
-   "title": "Et pour *la lessive.*",
-   "icon": "👕"
-  },
-  {
-   "say": "Elle avait tellement de valeur que l'empereur Vespasien a créé un impôt sur l'urine.",
-   "title": "Un *impôt* sur l'urine.",
+   "say": "Le pire ? L'urine sert aussi à laver les vêtements, dans les blanchisseries.",
+   "title": "Aussi pour *la lessive.*",
+   "img": "assets/archives/romains_urine_dents/fullonica_bacs.jpg",
+   "img_label": "BLANCHISSERIE DE POMPÉI",
    "flash": true
   },
   {
-   "say": "Son fils trouvait ça dégoûtant. Vespasien lui a répondu : l'argent n'a pas d'odeur.",
-   "title": "« L'argent n'a *pas d'odeur.* »",
-   "icon": "💰"
+   "say": "Elle a tellement de valeur que l'empereur Vespasien crée un impôt sur l'urine.",
+   "title": "Un *impôt* sur l'urine.",
+   "img": "assets/archives/romains_urine_dents/latrines.jpg",
+   "img_label": "LATRINES ROMAINES · OSTIE"
+  },
+  {
+   "say": "Son fils trouve ça dégoûtant. Vespasien répond : l'argent n'a pas d'odeur.",
+   "title": "« L'argent *n'a pas d'odeur.* »",
+   "img": "assets/archives/romains_urine_dents/vespasien.jpg",
+   "img_label": "VESPASIEN"
   },
   {
    "say": "Et en France, on parle encore de vespasiennes pour les urinoirs publics.",
-   "title": "Les *vespasiennes.*"
+   "title": "Les *vespasiennes.*",
+   "img": "assets/archives/romains_urine_dents/urinoir_1865.jpg",
+   "img_label": "VESPASIENNE À PARIS · VERS 1865"
   },
   {
    "say": "Et toi, tu aurais testé ?",
@@ -49,5 +58,6 @@
    "title": "*Abonne-toi.*",
    "sub": "Prochain dossier demain 8h"
   }
- ]
+ ],
+ "rev": 3
 }

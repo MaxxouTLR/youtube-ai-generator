@@ -6,40 +6,46 @@
  "beats": [
   {
    "say": "Un empereur romain aurait voulu faire de son cheval un consul.",
-   "title": "Son cheval… *consul ?*",
-   "sub": "Tu vas comprendre pourquoi."
+   "title": "Un cheval *consul ?*",
+   "img": "assets/archives/caligula_cheval_consul/caligula_incitatus.jpg",
+   "img_label": "CALIGULA ET SON CHEVAL · GRAVURE",
+   "sub": "Ce n'était peut-être pas de la folie."
   },
   {
-   "say": "Selon Suétone, le cheval avait une écurie en marbre et une mangeoire en ivoire.",
-   "title": "Une écurie *en marbre.*",
-   "icon": "🐎"
+   "say": "Selon Suétone, le cheval a une écurie en marbre et une mangeoire en ivoire.",
+   "title": "Écurie en *marbre.*",
+   "img": "assets/archives/caligula_cheval_consul/aurige.jpg",
+   "img_label": "AURIGE ET CHEVAL · MOSAÏQUE ROMAINE"
   },
   {
    "say": "L'empereur, c'est Caligula. Le cheval : Incitatus.",
-   "led": "CALIGULA",
-   "led_sub": "empereur romain"
+   "title": "*Caligula* et Incitatus.",
+   "img": "assets/archives/caligula_cheval_consul/caligula.jpg",
+   "img_label": "BUSTE DE CALIGULA · MET"
   },
   {
-   "say": "Il aurait aussi eu un collier de pierres précieuses, et sa propre maison, avec des esclaves.",
+   "say": "Il aurait aussi un collier de pierres précieuses, et sa propre maison, avec des esclaves.",
    "title": "Sa propre *maison.*",
    "icon": "💎"
   },
   {
-   "say": "La veille des courses, des soldats imposaient le silence au voisinage pour qu'il dorme.",
-   "title": "Silence… *il dort.*",
-   "icon": "🤫"
+   "say": "La veille des courses, des soldats imposent le silence au voisinage pour qu'il dorme.",
+   "title": "Silence : *le cheval dort.*",
+   "icon": "🤫",
+   "stamp": "Silence",
+   "stamp_at": 1.4
   },
   {
-   "say": "Sauf que ces récits viennent d'auteurs qui détestaient Caligula.",
-   "title": "Sauf que…",
+   "say": "Problème : ces récits viennent d'auteurs qui détestaient Caligula.",
+   "title": "Des auteurs *hostiles.*",
    "flash": true,
-   "stamp": "Légende ?",
-   "stamp_at": 1.4
+   "icon": "📜"
   },
   {
    "say": "Pour beaucoup d'historiens, c'était surtout une provocation pour humilier le Sénat.",
    "title": "Humilier *le Sénat.*",
-   "icon": "📜"
+   "img": "assets/archives/caligula_cheval_consul/senat.jpg",
+   "img_label": "LE SÉNAT ROMAIN · MACCARI"
   },
   {
    "say": "Alors, folie ou provocation ?",
@@ -51,5 +57,6 @@
    "title": "*Abonne-toi.*",
    "sub": "Prochain dossier demain 8h"
   }
- ]
+ ],
+ "rev": 3
 }

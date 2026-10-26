@@ -6,45 +6,53 @@
  "beats": [
   {
    "say": "Des millions d'hommes vivants descendraient de Gengis Khan. Peut-être toi.",
-   "title": "Des *millions* de descendants.",
+   "title": "Descends-tu de *Gengis Khan ?*",
+   "img": "assets/archives/gengis_khan_descendants/gengis.jpg",
+   "img_label": "GENGIS KHAN · ALBUM DES EMPEREURS YUAN",
    "sub": "Ton ADN pourrait le dire."
   },
   {
    "say": "Environ seize millions, selon une étude génétique de 2003.",
    "led": "16 M",
-   "led_sub": "d'hommes, selon une étude de 2003",
+   "led_sub": "d'hommes, selon une étude",
    "flash": true
   },
   {
-   "say": "Les chercheurs ont trouvé une même lignée génétique masculine chez environ huit pour cent des hommes d'Asie centrale.",
-   "led": "8 %",
-   "led_sub": "des hommes d'Asie centrale",
-   "icon": "🧬"
+   "say": "Les chercheurs trouvent une même lignée masculine chez huit pour cent des hommes d'Asie centrale.",
+   "title": "Une même lignée chez *8 %* des hommes.",
+   "img": "assets/archives/gengis_khan_descendants/adn.jpg",
+   "img_label": "CHROMOSOME Y · ADN"
   },
   {
    "say": "Soit environ un homme sur deux cents dans le monde.",
-   "led": "1 / 200",
-   "led_sub": "dans le monde"
+   "title": "*1 homme sur 200.*",
+   "icon": "🧬"
   },
   {
    "say": "Cette lignée serait apparue il y a environ mille ans, en Mongolie.",
-   "title": "Il y a *1 000 ans,* en Mongolie.",
-   "icon": "🏹"
+   "title": "Née *en Mongolie.*",
+   "img": "assets/archives/gengis_khan_descendants/archer.jpg",
+   "img_label": "ARCHER MONGOL · MINIATURE"
   },
   {
    "say": "Son origine la plus probable : Gengis Khan et sa famille.",
-   "title": "Gengis Khan *et sa famille.*",
-   "flash": true
+   "title": "Origine probable : *Gengis Khan.*",
+   "img": "assets/archives/gengis_khan_descendants/indus.jpg",
+   "img_label": "L'ARMÉE DE GENGIS KHAN · MINIATURE"
   },
   {
    "say": "Son empire s'étendait de la Chine jusqu'à l'Europe de l'Est.",
-   "icon": "🌏",
-   "stamp": "Empire mongol",
-   "stamp_at": 0.8
+   "title": "De la Chine à *l'Europe.*",
+   "img": "assets/archives/gengis_khan_descendants/mongols_1241.jpg",
+   "img_label": "LES MONGOLS EN HONGRIE · 1241"
   },
   {
-   "say": "Mais attention, ce n'est qu'une hypothèse : sa tombe n'a jamais été retrouvée.",
-   "title": "Sa tombe : *jamais retrouvée.*"
+   "say": "Le problème ? Ce n'est qu'une hypothèse : sa tombe n'a jamais été retrouvée.",
+   "title": "Sa tombe ? *Introuvable.*",
+   "stamp": "Hypothèse",
+   "stamp_at": 1.4,
+   "icon": "⚰️",
+   "flash": true
   },
   {
    "say": "Et toi, tu penses en descendre ?",
@@ -56,5 +64,6 @@
    "title": "*Abonne-toi.*",
    "sub": "Prochain dossier demain 8h"
   }
- ]
+ ],
+ "rev": 3
 }

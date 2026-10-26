@@ -6,43 +6,54 @@
  "beats": [
   {
    "say": "Cette femme a survécu au Titanic. Et à ses deux navires jumeaux.",
-   "title": "Titanic… *et ses deux jumeaux.*",
-   "sub": "Trois catastrophes. Une seule femme."
+   "title": "La femme *insubmersible ?*",
+   "img": "assets/archives/violet_jessop_insubmersible/violet.jpg",
+   "img_label": "VIOLET JESSOP",
+   "sub": "Trois catastrophes."
   },
   {
-   "say": "Violet Jessop est hôtesse à bord des grands paquebots.",
-   "icon": "🛳️",
-   "stamp": "Violet Jessop",
-   "stamp_at": 0.8
-  },
-  {
-   "say": "1911 : elle est sur l'Olympic quand il percute un navire de guerre.",
-   "led": "1911",
-   "led_sub": "Olympic : collision",
+   "say": "Mille neuf cent onze : son paquebot, l'Olympic, percute un navire de guerre.",
+   "title": "1911 : *l'Olympic.*",
+   "img": "assets/archives/violet_jessop_insubmersible/olympic_hawke.jpg",
+   "img_label": "L'OLYMPIC APRÈS LA COLLISION",
    "flash": true
   },
   {
-   "say": "1912 : elle est sur le Titanic. Elle survit, dans le canot numéro seize.",
-   "led": "1912",
-   "led_sub": "Titanic : canot n°16"
+   "say": "Elle est hôtesse sur les grands paquebots de la même compagnie.",
+   "title": "Hôtesse sur *les paquebots.*",
+   "icon": "🛳️"
   },
   {
-   "say": "1916 : elle est infirmière sur le Britannic, transformé en navire-hôpital.",
-   "led": "1916",
-   "led_sub": "Britannic"
+   "say": "Mille neuf cent douze : elle est sur le Titanic.",
+   "title": "1912 : *le Titanic.*",
+   "img": "assets/archives/violet_jessop_insubmersible/titanic_1912.jpg",
+   "img_label": "LE TITANIC À SOUTHAMPTON · 1912"
   },
   {
-   "say": "Il heurte une mine et coule. Elle saute à l'eau, et se cogne la tête contre la coque.",
-   "title": "Elle saute. *Sa tête heurte la coque.*",
+   "say": "Elle survit, dans le canot numéro seize.",
+   "title": "Le canot *n°16.*",
+   "img": "assets/archives/violet_jessop_insubmersible/canots.jpg",
+   "img_label": "CANOTS DU TITANIC · 15 AVRIL 1912"
+  },
+  {
+   "say": "Le pire ? Mille neuf cent seize : elle est infirmière sur le Britannic.",
+   "title": "1916 : *le Britannic.*",
+   "img": "assets/archives/violet_jessop_insubmersible/britannic.jpg",
+   "img_label": "LE BRITANNIC, NAVIRE-HÔPITAL",
    "flash": true
   },
   {
-   "say": "Elle survit encore.",
-   "title": "Elle survit *encore.*"
+   "say": "Il heurte une mine et coule. Elle saute à l'eau, et se cogne la tête.",
+   "title": "Une mine. *Il coule.*",
+   "icon": "💥",
+   "stamp": "Coulé",
+   "stamp_at": 1.0
   },
   {
-   "say": "Son surnom : Miss Insubmersible.",
-   "title": "Miss *Insubmersible.*"
+   "say": "Elle survit encore. Son surnom : Miss Insubmersible.",
+   "title": "*Miss Insubmersible.*",
+   "img": "assets/archives/violet_jessop_insubmersible/violet.jpg",
+   "img_label": "VIOLET JESSOP"
   },
   {
    "say": "Et toi, tu dirais chanceuse ou malchanceuse ?",
@@ -54,5 +65,6 @@
    "title": "*Abonne-toi.*",
    "sub": "Prochain dossier demain 8h"
   }
- ]
+ ],
+ "rev": 3
 }

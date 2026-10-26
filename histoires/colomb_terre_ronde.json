@@ -5,45 +5,54 @@
  "caption": "#CapCut 📁 Dossier n°27 — Christophe Colomb n'a pas prouvé que la Terre était ronde 🌍 Tout le monde le savait déjà #histoire #colomb #mythe #lesaviezvous #dossier",
  "beats": [
   {
-   "say": "Christophe Colomb n'a rien prouvé du tout. On t'a menti à l'école.",
-   "title": "Colomb n'a *rien prouvé.*",
-   "sub": "Et en plus, il s'était trompé."
+   "say": "Christophe Colomb n'a pas prouvé que la Terre était ronde. On t'a menti.",
+   "title": "Colomb a-t-il prouvé que la Terre est *ronde ?*",
+   "img": "assets/archives/colomb_terre_ronde/colomb.jpg",
+   "img_label": "PORTRAIT DIT DE COLOMB",
+   "sub": "En plus, il s'était trompé."
   },
   {
-   "say": "Tout le monde instruit le savait déjà depuis l'Antiquité.",
-   "title": "On le savait *depuis 2000 ans.*",
-   "icon": "🌍",
-   "flash": true
+   "say": "Pire : les savants le savaient déjà depuis l'Antiquité.",
+   "title": "Déjà su *dans l'Antiquité.*",
+   "img": "assets/archives/colomb_terre_ronde/eratosthene.jpg",
+   "img_label": "ÉRATOSTHÈNE"
   },
   {
-   "say": "Vers 240 avant Jésus-Christ, le Grec Ératosthène mesure même la taille de la Terre.",
-   "led": "-240",
-   "led_sub": "Ératosthène"
+   "say": "Vers 240 avant notre ère, le Grec Ératosthène mesure même la taille de la Terre.",
+   "title": "Il mesure *la Terre.*",
+   "icon": "🌍"
   },
   {
    "say": "Avec des ombres et un bâton. Et il tombe presque juste.",
-   "title": "Avec un *bâton.*",
-   "icon": "📏"
+   "title": "Des ombres. *Un bâton.*",
+   "icon": "📏",
+   "stamp": "Presque juste",
+   "stamp_at": 1.4
   },
   {
    "say": "Alors pourquoi les savants s'opposaient à Colomb ?",
-   "title": "Alors, *pourquoi* le refus ?"
+   "title": "Pourquoi *s'opposer* à Colomb ?",
+   "img": "assets/archives/colomb_terre_ronde/santa_maria.jpg",
+   "img_label": "COLOMB SUR LA SANTA MARÍA"
   },
   {
-   "say": "Parce qu'il sous-estimait énormément la taille de la Terre.",
-   "title": "Il se trompait *de distance.*",
-   "flash": true
+   "say": "Problème : il sous-estimait énormément la taille de la Terre.",
+   "title": "Il se trompait *de taille.*",
+   "flash": true,
+   "led": "-25 %",
+   "led_sub": "environ"
   },
   {
    "say": "Sans l'Amérique sur sa route, son équipage serait mort de faim en mer.",
-   "stamp": "Coup de chance",
-   "icon": "⛵",
-   "stamp_at": 1.2
+   "title": "Sauvé par *l'Amérique.*",
+   "img": "assets/archives/colomb_terre_ronde/debarquement.jpg",
+   "img_label": "DÉBARQUEMENT DE COLOMB · VANDERLYN"
   },
   {
-   "say": "Le mythe de la Terre plate vient surtout d'un écrivain américain du dix-neuvième siècle.",
-   "led": "1828",
-   "led_sub": "naissance du mythe"
+   "say": "Le mythe de la Terre plate vient surtout d'un écrivain du dix-neuvième siècle.",
+   "title": "Un mythe du *XIXᵉ siècle.*",
+   "img": "assets/archives/colomb_terre_ronde/flammarion.jpg",
+   "img_label": "GRAVURE DITE DE FLAMMARION · 1888"
   },
   {
    "say": "Et toi, tu y croyais ?",
@@ -55,5 +64,6 @@
    "title": "*Abonne-toi.*",
    "sub": "Prochain dossier ce soir 19h"
   }
- ]
+ ],
+ "rev": 3
 }

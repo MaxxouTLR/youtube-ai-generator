@@ -6,41 +6,55 @@
  "beats": [
   {
    "say": "En 1976, la France a accueilli un pharaon mort avec les honneurs militaires.",
-   "title": "Un pharaon mort… *avec les honneurs.*",
-   "sub": "Avec un passeport ?"
+   "title": "Pourquoi accueillir *un pharaon mort ?*",
+   "img": "assets/archives/ramses_ii_bourget_1976/momie_visage.jpg",
+   "img_label": "LA MOMIE DE RAMSÈS II",
+   "sub": "On parle même d'un passeport."
   },
   {
-   "say": "C'était Ramsès Deux, mort il y a plus de trois mille ans.",
-   "led": "3200 ANS",
-   "led_sub": "Ramsès II",
+   "say": "C'est Ramsès Deux, mort il y a plus de trois mille ans.",
+   "title": "*Ramsès II*, 3000 ans plus tôt.",
+   "img": "assets/archives/ramses_ii_bourget_1976/abu_simbel.jpg",
+   "img_label": "ABOU SIMBEL, SON TEMPLE"
+  },
+  {
+   "say": "Problème : sa momie est attaquée par un champignon.",
+   "title": "Attaquée par *un champignon.*",
+   "img": "assets/archives/ramses_ii_bourget_1976/momie.jpg",
+   "img_label": "LA MOMIE · PHOTO DU MUSÉE DU CAIRE",
    "flash": true
   },
   {
-   "say": "Sa momie est attaquée par un champignon. L'Égypte accepte de l'envoyer en France pour la soigner.",
-   "title": "Attaquée par *un champignon.*",
-   "icon": "🍄"
-  },
-  {
-   "say": "À l'aéroport du Bourget, une garde militaire l'attend, comme pour un chef d'État.",
-   "title": "Accueillie *comme un chef d'État.*",
+   "say": "L'Égypte accepte de l'envoyer en France pour la soigner.",
+   "title": "Direction *la France.*",
    "icon": "✈️"
   },
   {
-   "say": "On raconte même qu'on lui aurait fait un passeport. Profession : roi, décédé.",
-   "title": "Profession : *roi (décédé).*",
+   "say": "Au Bourget, une garde militaire l'attend, comme pour un chef d'État.",
+   "title": "Accueilli comme *un chef d'État.*",
+   "img": "assets/archives/ramses_ii_bourget_1976/garde.jpg",
+   "img_label": "GARDE RÉPUBLICAINE (PHOTO RÉCENTE)",
+   "stamp": "Honneurs",
+   "stamp_at": 1.2
+  },
+  {
+   "say": "Le plus fou ? On raconte qu'on lui aurait fait un passeport. Profession : roi, décédé.",
+   "title": "Profession : *roi, décédé.*",
+   "icon": "🛂",
    "stamp": "Légende ?",
-   "stamp_at": 1.6,
-   "flash": true
+   "stamp_at": 1.6
   },
   {
    "say": "Pendant des mois, des scientifiques l'étudient au musée de l'Homme.",
-   "icon": "🔬",
-   "stamp": "Musée de l'Homme",
-   "stamp_at": 1.0
+   "title": "Étudié au *musée de l'Homme.*",
+   "img": "assets/archives/ramses_ii_bourget_1976/chaillot.jpg",
+   "img_label": "PALAIS DE CHAILLOT, PARIS"
   },
   {
    "say": "Puis elle est stérilisée par irradiation, et repart en Égypte.",
-   "title": "Soignée… *et rapatriée.*"
+   "title": "Irradiée. *Puis renvoyée.*",
+   "icon": "☢️",
+   "flash": true
   },
   {
    "say": "Et toi, tu le savais ?",
@@ -52,5 +66,6 @@
    "title": "*Abonne-toi.*",
    "sub": "Prochain dossier ce soir 19h"
   }
- ]
+ ],
+ "rev": 3
 }

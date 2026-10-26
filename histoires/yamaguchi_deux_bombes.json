@@ -6,44 +6,53 @@
  "beats": [
   {
    "say": "Cet homme a survécu à Hiroshima. Puis à Nagasaki.",
-   "title": "Il a survécu aux *deux bombes.*",
+   "title": "Comment survivre à *deux bombes ?*",
+   "img": "assets/archives/yamaguchi_deux_bombes/hiroshima_nuage.jpg",
+   "img_label": "HIROSHIMA · 6 AOÛT 1945",
    "sub": "Trois jours d'écart."
   },
   {
-   "say": "Le 6 août 1945, Tsutomu Yamaguchi est à Hiroshima pour son travail.",
-   "led": "6 AOÛT",
-   "led_sub": "Hiroshima, 1945"
+   "say": "La bombe explose à trois kilomètres de lui. Il est gravement brûlé.",
+   "title": "À *3 km* de l'explosion.",
+   "img": "assets/archives/yamaguchi_deux_bombes/hiroshima_ruines.jpg",
+   "img_label": "HIROSHIMA APRÈS LA BOMBE",
+   "flash": true
   },
   {
-   "say": "La bombe explose à environ trois kilomètres de lui. Il est gravement brûlé.",
-   "led": "3 KM",
-   "led_sub": "de l'explosion",
-   "flash": true
+   "say": "Il s'appelle Tsutomu Yamaguchi. Il était là pour son travail.",
+   "title": "*Tsutomu Yamaguchi.*",
+   "img": "assets/archives/yamaguchi_deux_bombes/dome.jpg",
+   "img_label": "LE DÔME DE HIROSHIMA"
   },
   {
    "say": "Le lendemain, il rentre chez lui. À Nagasaki.",
    "title": "Il rentre chez lui. *À Nagasaki.*",
-   "icon": "🚆"
+   "icon": "🚆",
+   "stamp": "Nagasaki",
+   "stamp_at": 1.2
   },
   {
-   "say": "Le 9 août, il raconte à son chef ce qu'il a vécu à Hiroshima.",
-   "led": "9 AOÛT",
-   "led_sub": "Nagasaki"
+   "say": "Le 9 août, il raconte à son chef ce qu'il a vécu.",
+   "title": "Il raconte *Hiroshima.*",
+   "icon": "🗣️"
   },
   {
-   "say": "Et à ce moment précis, la deuxième bombe explose.",
-   "title": "La *deuxième* bombe.",
+   "say": "Le pire ? À ce moment précis, la deuxième bombe explose.",
+   "title": "*La deuxième bombe.*",
+   "img": "assets/archives/yamaguchi_deux_bombes/nagasaki_nuage.jpg",
+   "img_label": "NAGASAKI · 9 AOÛT 1945",
    "flash": true
   },
   {
    "say": "Il survit encore.",
-   "title": "Il survit *encore.*"
+   "title": "Il survit *encore.*",
+   "img": "assets/archives/yamaguchi_deux_bombes/hiroshima_octobre.jpg",
+   "img_label": "HIROSHIMA · OCTOBRE 1945"
   },
   {
-   "say": "Il est officiellement reconnu double survivant en 2009, et meurt en 2010, à 93 ans.",
+   "say": "Reconnu double survivant en 2009, il meurt en 2010, à 93 ans.",
    "led": "93 ANS",
-   "stamp": "Double survivant",
-   "stamp_at": 1.4
+   "led_sub": "double survivant"
   },
   {
    "say": "Et toi, tu connaissais son histoire ?",
@@ -55,5 +64,6 @@
    "title": "*Abonne-toi.*",
    "sub": "Prochain dossier ce soir 19h"
   }
- ]
+ ],
+ "rev": 3
 }

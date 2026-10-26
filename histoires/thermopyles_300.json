@@ -6,45 +6,51 @@
  "beats": [
   {
    "say": "Les trois cents Spartiates ? Ils n'étaient pas trois cents.",
-   "title": "Les 300 n'étaient *pas 300.*",
+   "title": "Étaient-ils vraiment *300 ?*",
+   "img": "assets/archives/thermopyles_300/leonidas.jpg",
+   "img_label": "LÉONIDAS PAR DAVID · 1814",
    "sub": "Le film t'a menti."
   },
   {
    "say": "Aux Thermopyles, ils étaient en réalité environ sept mille Grecs.",
-   "led": "7000",
-   "led_sub": "Grecs aux Thermopyles",
+   "led": "7 000",
+   "led_sub": "grecs, environ",
    "flash": true
   },
   {
-   "say": "480 avant Jésus-Christ. L'immense armée perse de Xerxès envahit la Grèce.",
-   "led": "-480",
-   "led_sub": "Xerxès envahit la Grèce",
-   "icon": "⚔️"
+   "say": "480 avant notre ère : l'immense armée perse de Xerxès envahit la Grèce.",
+   "title": "L'armée de *Xerxès.*",
+   "img": "assets/archives/thermopyles_300/bataille.jpg",
+   "img_label": "GRAVURE DU XIXᵉ SIÈCLE"
   },
   {
    "say": "Les Grecs bloquent un passage étroit, entre la montagne et la mer.",
    "title": "Un passage *étroit.*",
-   "icon": "⛰️"
+   "img": "assets/archives/thermopyles_300/passage.jpg",
+   "img_label": "LE DÉFILÉ DES THERMOPYLES"
   },
   {
    "say": "Pendant deux jours, ils tiennent.",
-   "led": "2 JOURS"
+   "title": "Ils tiennent *2 jours.*",
+   "img": "assets/archives/thermopyles_300/fleches.jpg",
+   "img_label": "POINTES DE FLÈCHES TROUVÉES SUR PLACE"
   },
   {
-   "say": "Puis un traître montre aux Perses un chemin de contournement.",
+   "say": "Puis un traître montre aux Perses un chemin pour les contourner.",
    "title": "Un *traître.*",
-   "flash": true
+   "icon": "🐍",
+   "stamp": "Trahison",
+   "stamp_at": 1.0
   },
   {
-   "say": "Le roi Léonidas renvoie la plupart des Grecs. Il reste avec ses Spartiates, mais aussi des centaines d'autres soldats.",
-   "title": "Ils ne restent *pas seuls.*",
+   "say": "Léonidas renvoie la plupart des Grecs. Mais ses Spartiates ne restent pas seuls.",
+   "title": "Pas *seuls.*",
    "icon": "🛡️"
   },
   {
-   "say": "Les Thespiens, par exemple, restent jusqu'à la mort. Et l'histoire les a presque oubliés.",
+   "say": "Le plus fou ? Les Thespiens restent jusqu'à la mort. Et l'histoire les a presque oubliés.",
    "title": "Les oubliés : *les Thespiens.*",
-   "stamp": "700 Thespiens",
-   "stamp_at": 1.4
+   "flash": true
   },
   {
    "say": "Et toi, tu croyais au film ?",
@@ -56,5 +62,6 @@
    "title": "*Abonne-toi.*",
    "sub": "Prochain dossier ce soir 19h"
   }
- ]
+ ],
+ "rev": 3
 }

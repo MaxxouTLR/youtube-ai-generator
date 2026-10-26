@@ -6,44 +6,47 @@
  "beats": [
   {
    "say": "Les pyramides n'ont pas été bâties par des esclaves. On a retrouvé les ouvriers.",
-   "title": "Pas *des esclaves.*",
-   "sub": "Et ils buvaient de la bière."
+   "title": "Qui a *vraiment* bâti les pyramides ?",
+   "img": "assets/archives/pyramides_sans_esclaves/gizeh_bonfils.jpg",
+   "img_label": "GIZEH · PHOTO DE BONFILS",
+   "sub": "Ils buvaient de la bière."
   },
   {
-   "say": "En 1990, on découvre près de Gizeh les tombes des ouvriers.",
+   "say": "Leurs tombes sont juste à côté des pyramides du roi. Un honneur.",
+   "title": "Enterrés *près du roi.*",
+   "img": "assets/archives/pyramides_sans_esclaves/lepsius.jpg",
+   "img_label": "GIZEH · EXPÉDITION LEPSIUS"
+  },
+  {
+   "say": "Elles sont découvertes en 1990, près de Gizeh.",
    "led": "1990",
-   "led_sub": "tombes des ouvriers",
+   "led_sub": "découverte des tombes"
+  },
+  {
+   "say": "Le plus fou ? On retrouve aussi leur village, leurs boulangeries, leurs brasseries.",
+   "title": "Des *brasseries.*",
+   "img": "assets/archives/pyramides_sans_esclaves/brasserie.jpg",
+   "img_label": "MAQUETTE DE BRASSERIE ÉGYPTIENNE",
    "flash": true
-  },
-  {
-   "say": "Enterrés avec honneur, juste à côté des pyramides du roi.",
-   "title": "Enterrés *avec honneur.*",
-   "icon": "⚱️"
-  },
-  {
-   "say": "On retrouve aussi leur village, leurs boulangeries, leurs brasseries.",
-   "title": "Pain et *bière* pour tous.",
-   "icon": "🍞"
   },
   {
    "say": "Certains squelettes montrent des fractures soignées par des médecins.",
    "title": "Des fractures *soignées.*",
-   "icon": "🩺"
+   "icon": "🦴"
   },
   {
-   "say": "Alors d'où vient le mythe des esclaves ?",
-   "title": "D'où vient *le mythe ?*",
-   "flash": true
-  },
-  {
-   "say": "De récits antiques, puis surtout du cinéma hollywoodien.",
-   "icon": "🎬",
-   "stamp": "Hollywood",
-   "stamp_at": 0.8
+   "say": "Alors d'où vient le mythe des esclaves ? De récits antiques, puis du cinéma.",
+   "title": "Le mythe ? *Hollywood.*",
+   "img": "assets/archives/pyramides_sans_esclaves/sphinx_roberts.jpg",
+   "img_label": "DAVID ROBERTS · 1839",
+   "stamp": "Mythe",
+   "stamp_at": 1.6
   },
   {
    "say": "Les ouvriers travaillaient par équipes, nourris et organisés par l'État.",
-   "title": "Des équipes *organisées.*"
+   "title": "Nourris et *organisés.*",
+   "img": "assets/archives/pyramides_sans_esclaves/gizeh_1870.jpg",
+   "img_label": "GIZEH · VERS 1870"
   },
   {
    "say": "Et toi, tu y croyais ?",
@@ -55,5 +58,6 @@
    "title": "*Abonne-toi.*",
    "sub": "Prochain dossier ce soir 19h"
   }
- ]
+ ],
+ "rev": 3
 }

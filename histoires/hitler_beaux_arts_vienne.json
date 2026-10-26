@@ -6,44 +6,53 @@
  "beats": [
   {
    "say": "Cet homme voulait devenir peintre. Et il a été refusé deux fois.",
-   "title": "Refusé *deux fois.*",
-   "sub": "Tu ne devineras jamais qui."
+   "title": "Qui a peint *cette aquarelle ?*",
+   "img": "assets/archives/hitler_beaux_arts_vienne/aquarelle_opera.jpg",
+   "img_label": "L'OPÉRA DE VIENNE · AQUARELLE",
+   "sub": "Tu ne devineras jamais."
   },
   {
    "say": "Cet homme, c'est Adolf Hitler.",
-   "title": "Adolf *Hitler.*",
+   "title": "*Adolf Hitler.*",
    "flash": true
   },
   {
-   "say": "En mille neuf cent sept, il passe le concours de l'Académie des beaux-arts de Vienne.",
-   "led": "1907",
-   "led_sub": "Vienne"
+   "say": "En 1907, il passe le concours de l'Académie des beaux-arts de Vienne.",
+   "title": "1907 : *les Beaux-Arts.*",
+   "img": "assets/archives/hitler_beaux_arts_vienne/academie.jpg",
+   "img_label": "ACADÉMIE DES BEAUX-ARTS DE VIENNE"
   },
   {
    "say": "Ses dessins sont jugés insuffisants.",
-   "icon": "🎨",
-   "stamp": "Recalé",
-   "stamp_at": 1.2
+   "title": "*Insuffisant.*",
+   "stamp": "Refusé",
+   "stamp_at": 0.6,
+   "icon": "✏️"
   },
   {
-   "say": "L'année suivante, il n'est même pas admis à l'examen.",
-   "led": "1908",
-   "led_sub": "nouvel échec",
-   "flash": true
+   "say": "Le pire ? L'année suivante, il n'est même pas admis à l'examen.",
+   "title": "1908 : *pas même admis.*",
+   "stamp": "Refusé",
+   "stamp_at": 1.2,
+   "icon": "🚫"
   },
   {
-   "say": "On lui conseille l'architecture, mais il n'a pas le diplôme requis.",
-   "title": "Pas le *diplôme.*",
-   "icon": "📐"
+   "say": "On lui conseille l'architecture. Mais il n'a pas le diplôme requis.",
+   "title": "Architecture ? *Pas le diplôme.*",
+   "img": "assets/archives/hitler_beaux_arts_vienne/vienne_1900.jpg",
+   "img_label": "VIENNE VERS 1900"
   },
   {
-   "say": "Il vit alors pauvrement à Vienne, en vendant des aquarelles de la ville.",
+   "say": "Il vit alors pauvrement, en vendant des aquarelles de la ville.",
    "title": "Il vend *des aquarelles.*",
-   "icon": "🖌️"
+   "img": "assets/archives/hitler_beaux_arts_vienne/aquarelle_hof.jpg",
+   "img_label": "UNE DE SES AQUARELLES"
   },
   {
    "say": "Quelques années plus tard, il deviendra l'un des pires dictateurs de l'Histoire.",
-   "title": "L'un des *pires dictateurs.*"
+   "title": "L'un des *pires dictateurs.*",
+   "img": "assets/archives/hitler_beaux_arts_vienne/quai_vienne.jpg",
+   "img_label": "VIENNE · DÉBUT DU XXᵉ SIÈCLE"
   },
   {
    "say": "Et toi, tu le savais ?",
@@ -55,5 +64,6 @@
    "title": "*Abonne-toi.*",
    "sub": "Prochain dossier ce soir 19h"
   }
- ]
+ ],
+ "rev": 3
 }

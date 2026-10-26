@@ -6,43 +6,51 @@
  "beats": [
   {
    "say": "Son maître est mort. Ce chien l'a attendu presque dix ans.",
-   "title": "Il a attendu *presque 10 ans.*",
-   "sub": "Chaque soir, à la même gare."
+   "title": "Pourquoi ce chien attend *chaque soir ?*",
+   "img": "assets/archives/hachiko_1925/hachiko_gare.jpg",
+   "img_label": "HACHIKŌ À LA GARE DE SHIBUYA · 1933",
+   "sub": "Son maître ne reviendra jamais."
   },
   {
    "say": "Chaque jour, à l'heure du train du soir.",
-   "title": "Chaque jour, *à la même heure.*",
-   "icon": "🐕",
+   "title": "Chaque jour. *Même heure.*",
+   "img": "assets/archives/hachiko_1925/hachiko_veille.jpg",
+   "img_label": "HACHIKŌ EN ATTENTE"
+  },
+  {
+   "say": "Son maître, c'est le professeur Ueno, qui rentre chaque soir à la gare de Shibuya.",
+   "title": "Le professeur *Ueno.*",
+   "img": "assets/archives/hachiko_1925/ueno.jpg",
+   "img_label": "HIDESABURŌ UENO"
+  },
+  {
+   "say": "Le pire ? En mai 1925, le professeur meurt soudainement au travail.",
+   "title": "Mai 1925 : *il meurt.*",
+   "icon": "🕯️",
    "flash": true
   },
   {
-   "say": "Hachikō vit à Tokyo avec le professeur Ueno, qui rentre chaque soir à la gare de Shibuya.",
-   "led": "SHIBUYA",
-   "led_sub": "Tokyo"
+   "say": "Mais Hachikō continue de venir l'attendre. Pendant près de dix ans.",
+   "led": "≈ 10 ANS",
+   "led_sub": "d'attente"
   },
   {
-   "say": "En mai 1925, le professeur meurt soudainement au travail.",
-   "led": "1925",
-   "led_sub": "mort du professeur"
-  },
-  {
-   "say": "Mais Hachikō continue de venir l'attendre.",
-   "title": "Mais Hachikō *continue.*",
-   "flash": true
-  },
-  {
-   "say": "Pendant près de dix ans.",
-   "led": "10 ANS"
-  },
-  {
-   "say": "En 1934, une statue est même installée devant la gare, de son vivant.",
+   "say": "En 1934, une statue est même installée devant la gare. De son vivant.",
    "title": "Une statue… *de son vivant.*",
-   "icon": "🗿"
+   "img": "assets/archives/hachiko_1925/statue_1934.jpg",
+   "img_label": "LA PREMIÈRE STATUE · 1934"
   },
   {
-   "say": "Il meurt en 1935. Sa statue est toujours là, et c'est un point de rendez-vous célèbre de Tokyo.",
+   "say": "Il meurt en 1935.",
+   "title": "Il meurt en *1935.*",
+   "img": "assets/archives/hachiko_1925/derniere_photo.jpg",
+   "img_label": "SA DERNIÈRE PHOTO"
+  },
+  {
+   "say": "Sa statue est toujours là. C'est un point de rendez-vous célèbre de Tokyo.",
    "title": "Toujours *là.*",
-   "icon": "📍"
+   "img": "assets/archives/hachiko_1925/shibuya_1939.jpg",
+   "img_label": "DEVANT LA GARE DE SHIBUYA · 1939"
   },
   {
    "say": "Et toi, tu connaissais son histoire ?",
@@ -54,5 +62,6 @@
    "title": "*Abonne-toi.*",
    "sub": "Prochain dossier demain 8h"
   }
- ]
+ ],
+ "rev": 3
 }

@@ -6,40 +6,47 @@
  "beats": [
   {
    "say": "Un roi de France se croyait en verre. Il avait peur de se briser.",
-   "title": "Le roi se croyait *en verre.*",
-   "sub": "Et ce n'était que le début."
+   "title": "Le roi qui se croyait *en verre ?*",
+   "img": "assets/archives/charles_vi_roi_de_verre/portrait_fou.jpg",
+   "img_label": "CHARLES VI, DIT LE FOU",
+   "sub": "Il cousait du fer dans ses habits."
   },
   {
-   "say": "Il faisait coudre des tiges de fer dans ses vêtements.",
-   "title": "Des *tiges de fer* dans ses habits.",
-   "icon": "🦾",
+   "say": "Il fait coudre des tiges de fer dans ses vêtements, pour ne pas se casser.",
+   "title": "Du *fer* dans ses vêtements.",
+   "icon": "🧥"
+  },
+  {
+   "say": "C'est Charles Six, roi de France pendant quarante-deux ans.",
+   "title": "*Charles VI*, roi 42 ans.",
+   "img": "assets/archives/charles_vi_roi_de_verre/charles_vi.jpg",
+   "img_label": "MANUSCRIT DU XVᵉ SIÈCLE"
+  },
+  {
+   "say": "Problème : en 1392, en pleine forêt, il attaque ses propres compagnons.",
+   "title": "Il attaque *ses compagnons.*",
+   "img": "assets/archives/charles_vi_roi_de_verre/foret_mans.jpg",
+   "img_label": "FORÊT DU MANS · 1392",
    "flash": true
   },
   {
-   "say": "C'est Charles Six, roi de 1380 à 1422.",
-   "led": "CHARLES VI",
-   "led_sub": "1380 – 1422"
-  },
-  {
-   "say": "En 1392, il attaque soudain ses propres compagnons, en pleine forêt.",
-   "title": "Il attaque *ses propres hommes.*",
-   "icon": "🗡️"
-  },
-  {
-   "say": "Puis, lors d'un bal costumé, des danseurs déguisés prennent feu. Il échappe de justesse aux flammes.",
+   "say": "Le pire ? Lors d'un bal costumé, des danseurs déguisés prennent feu. Il y échappe de justesse.",
    "title": "Le *bal des ardents.*",
-   "icon": "🔥",
-   "flash": true
+   "img": "assets/archives/charles_vi_roi_de_verre/bal_ardents.jpg",
+   "img_label": "LE BAL DES ARDENTS · 1393",
+   "stamp": "En feu",
+   "stamp_at": 1.6
   },
   {
-   "say": "Il alterne crises de folie et périodes de lucidité pendant trente ans.",
+   "say": "Pendant trente ans, il alterne crises de folie et moments de lucidité.",
    "led": "30 ANS",
    "led_sub": "de crises"
   },
   {
    "say": "Son surnom : Charles le Fou. Mais aussi, Charles le Bien-Aimé.",
-   "title": "Le Fou… *et le Bien-Aimé.*",
-   "icon": "👑"
+   "title": "Le Fou. *Et le Bien-Aimé.*",
+   "img": "assets/archives/charles_vi_roi_de_verre/barye_foret.jpg",
+   "img_label": "SCULPTURE DE BARYE"
   },
   {
    "say": "Et toi, tu le connaissais ?",
@@ -51,5 +58,6 @@
    "title": "*Abonne-toi.*",
    "sub": "Prochain dossier demain 8h"
   }
- ]
+ ],
+ "rev": 3
 }

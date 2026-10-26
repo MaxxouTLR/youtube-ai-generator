@@ -6,7 +6,9 @@
  "beats": [
   {
    "say": "Jeanne d'Arc a été brûlée vive. En partie à cause de ses vêtements.",
-   "title": "Brûlée… *pour des vêtements ?*",
+   "title": "Brûlée à cause *de ses vêtements ?*",
+   "img": "assets/archives/jeanne_darc_vetements/jeanne_ingres.jpg",
+   "img_label": "JEANNE D'ARC PAR INGRES · 1854",
    "sub": "Et le procès sera annulé."
   },
   {
@@ -16,35 +18,41 @@
   },
   {
    "say": "Capturée en 1430, elle est jugée à Rouen par un tribunal d'Église favorable aux Anglais.",
-   "led": "1431",
-   "led_sub": "procès de Rouen",
-   "icon": "⚖️"
+   "title": "Un tribunal *pro-anglais.*",
+   "img": "assets/archives/jeanne_darc_vetements/proces.jpg",
+   "img_label": "MANUSCRIT DU PROCÈS · XVᵉ SIÈCLE"
   },
   {
    "say": "Elle signe une abjuration, et promet de porter des vêtements de femme.",
-   "title": "Elle promet de *changer de vêtements.*",
-   "icon": "📜"
+   "title": "Elle promet : *des habits de femme.*",
+   "icon": "👗",
+   "stamp": "Abjuration",
+   "stamp_at": 1.4
   },
   {
-   "say": "Quelques jours plus tard, elle reprend ses habits d'homme.",
-   "title": "Elle les *reprend.*",
+   "say": "Problème : quelques jours plus tard, elle reprend ses habits d'homme.",
+   "title": "Elle reprend *ses habits d'homme.*",
+   "icon": "🛡️",
    "flash": true
   },
   {
    "say": "Pour ses juges, c'est la rechute. Elle est brûlée vive le 30 mai 1431.",
-   "stamp": "Relapse",
-   "icon": "🔥",
-   "stamp_at": 1.2
+   "title": "Brûlée le *30 mai 1431.*",
+   "img": "assets/archives/jeanne_darc_vetements/bodleian.jpg",
+   "img_label": "JEANNE D'ARC · GRAVURE"
   },
   {
-   "say": "Vingt-cinq ans plus tard, un nouveau procès l'innocente.",
-   "led": "1456",
-   "led_sub": "réhabilitée"
+   "say": "Le plus fou ? Vingt-cinq ans plus tard, un nouveau procès l'innocente.",
+   "title": "25 ans après : *innocentée.*",
+   "stamp": "Annulé",
+   "stamp_at": 1.2,
+   "icon": "⚖️"
   },
   {
    "say": "Et en 1920, elle devient sainte.",
-   "led": "1920",
-   "led_sub": "canonisée"
+   "title": "1920 : *sainte.*",
+   "img": "assets/archives/jeanne_darc_vetements/canonisation.jpg",
+   "img_label": "CANONISATION À ROME · 1920"
   },
   {
    "say": "Et toi, tu le savais ?",
@@ -56,5 +64,6 @@
    "title": "*Abonne-toi.*",
    "sub": "Prochain dossier ce soir 19h"
   }
- ]
+ ],
+ "rev": 3
 }
