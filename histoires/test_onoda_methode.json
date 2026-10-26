@@ -1,0 +1,88 @@
+{
+  "slug": "test_onoda_methode",
+  "test": true,
+  "note": "Vidéo test 26/10 : même histoire qu'onoda_1974, refaite avec la méthode des comptes qui marchent (photo dès l'image 0, accroche en question, beat 2 = relance, relances variées). Pas de num : jamais programmée par le Programmateur.",
+  "source": "https://fr.wikipedia.org/wiki/Hirō_Onoda",
+  "caption": "#CapCut Il s'est rendu 29 ans après la fin de la guerre… sur ordre de son ancien chef, devenu libraire 📚 Toi, tu aurais tenu combien de temps ? #histoire #lesaviezvous #japon #anecdote #onoda",
+  "beats": [
+    {
+      "say": "Ce soldat se rend… vingt-neuf ans après la guerre.",
+      "title": "Pourquoi il se rend *29 ans trop tard ?*",
+      "img": "assets/archives/onoda/reddition_1974.jpg",
+      "img_label": "PHOTO RÉELLE · 1974",
+      "sub": "L'ordre vient d'un libraire."
+    },
+    {
+      "say": "Pour lui, la guerre n'est jamais finie.",
+      "title": "Pour lui, *la guerre continue.*",
+      "img": "assets/archives/onoda/onoda_jeune.jpg",
+      "img_label": "HIRŌ ONODA · 1944"
+    },
+    {
+      "say": "Les annonces de la paix ? Une ruse, pense-t-il.",
+      "title": "La paix ? *Une ruse.*",
+      "img": "assets/archives/onoda/rescrit_1945.jpg",
+      "img_label": "JAPON · AOÛT 1945",
+      "stamp": "Une ruse ?",
+      "stamp_at": 1.3
+    },
+    {
+      "say": "Ses camarades se rendent ou meurent. Il finit seul.",
+      "title": "Il finit *seul.*",
+      "img": "assets/archives/onoda/kozuka.jpg",
+      "img_label": "KOZUKA, SON DERNIER CAMARADE",
+      "flash": true
+    },
+    {
+      "say": "Au Japon, on le déclare officiellement mort.",
+      "title": "Déclaré *mort.*",
+      "img": "assets/archives/onoda/freres_1944.jpg",
+      "img_label": "ONODA ET SON FRÈRE · 1944",
+      "stamp": "Décédé",
+      "stamp_at": 1.0
+    },
+    {
+      "say": "Problème : il est bien vivant. Et armé.",
+      "title": "*Problème :* il est armé.",
+      "img": "assets/archives/onoda/fusil.jpg",
+      "img_label": "FUSIL ARISAKA TYPE 99",
+      "flash": true
+    },
+    {
+      "say": "À Lubang, il tue une trentaine d'habitants.",
+      "title": "Une *trentaine* d'habitants tués",
+      "img": "assets/archives/onoda/lubang.jpg",
+      "img_label": "ÎLE DE LUBANG, PHILIPPINES"
+    },
+    {
+      "say": "Un étudiant le retrouve. Onoda refuse : il veut l'ordre de son chef.",
+      "title": "Il exige *l'ordre de son chef.*",
+      "icon": "🪖"
+    },
+    {
+      "say": "Le plus fou ? Ce chef est devenu… libraire.",
+      "title": "Son chef ? *Libraire.*",
+      "icon": "📚",
+      "flash": true
+    },
+    {
+      "say": "Il vient sur l'île, et lui lit l'ordre de se rendre.",
+      "title": "Il lui *lit l'ordre.*",
+      "img": "assets/archives/onoda/reddition_1974.jpg",
+      "img_label": "PHOTO RÉELLE · 1974"
+    },
+    {
+      "say": "Il rend son sabre. Son fusil marche encore.",
+      "title": "Son fusil *marche encore.*",
+      "img": "assets/archives/onoda/marcos_onoda.jpg",
+      "img_label": "AVEC LE PRÉSIDENT MARCOS · 1974",
+      "stamp": "En état de marche",
+      "stamp_at": 1.2
+    },
+    {
+      "say": "Et toi, tu aurais tenu combien de temps ?",
+      "title": "Toi, tu aurais tenu *combien de temps ?*",
+      "sub": "1 jour · 1 mois · 1 an · 29 ans"
+    }
+  ]
+}

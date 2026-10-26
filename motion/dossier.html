@@ -144,9 +144,47 @@ function drawBg(t, beat) {
   v.addColorStop(0, "rgba(0,0,0,0)"); v.addColorStop(1, "rgba(0,0,0,.7)"); cx.fillStyle = v; cx.fillRect(0, 0, 1080, 1920);
 }
 
+// ---------- photos d'archive (champ "img" d'un beat) ----------
+// 26/10/2026 : analyse concurrence, tous les comptes histoire qui marchent ouvrent sur une vraie image.
+// Fond = la photo floutee et assombrie ; devant, le tirage net (bord clair) qui zoome lentement.
+// Les histoires sans "img" gardent exactement le rendu d'avant.
+const IMGS = {};
+const HAS_IMG = !!(DATA && DATA.beats.some(b => b.img));
+function loadImages() {
+  return Promise.all(Object.entries((DATA && DATA.images) || {}).map(([k, src]) => new Promise(res => {
+    const im = new Image(); im.onload = () => { IMGS[k] = im; res(); }; im.onerror = res; im.src = src; })));
+}
+function drawPhoto(b, t, fast) {
+  const im = IMGS[b.img]; if (!im) return;
+  const t0 = b.start, dur = Math.max(0.5, b.end - t0), p = clamp((t - t0) / dur), k = DATA.beats.indexOf(b);
+  // fond : couverture plein ecran, flou + sombre (la DA noir/rouge reste dominante)
+  const cs = Math.max(1080 / im.width, 1920 / im.height) * 1.1;
+  cx.save(); cx.filter = "blur(26px) brightness(.32) saturate(.6)";
+  cx.drawImage(im, 540 - im.width * cs / 2, 960 - im.height * cs / 2, im.width * cs, im.height * cs);
+  cx.restore();
+  const g = cx.createLinearGradient(0, 0, 0, 1920);
+  g.addColorStop(0, "rgba(7,4,4,.85)"); g.addColorStop(.25, "rgba(7,4,4,.2)"); g.addColorStop(.75, "rgba(7,4,4,.2)"); g.addColorStop(1, "rgba(7,4,4,.9)");
+  cx.fillStyle = g; cx.fillRect(0, 0, 1080, 1920);
+  // tirage : tient dans 960 x 860, centre vers y = 860, zoom lent + legere rotation alternee
+  const fit = Math.min(960 / im.width, 860 / im.height), w = im.width * fit, h = im.height * fit;
+  const appear = fast ? 1 : easeOut(clamp((t - t0) / 0.22));
+  const s = (1 + 0.07 * p) * (0.94 + 0.06 * appear), rot = (k % 2 ? 1 : -1) * (0.012 + 0.01 * p);
+  cx.save(); cx.translate(540, 860); cx.rotate(rot); cx.scale(s, s); cx.globalAlpha = appear;
+  cx.shadowColor = "rgba(0,0,0,.8)"; cx.shadowBlur = 50;
+  cx.fillStyle = "#e9e2d8"; cx.fillRect(-w / 2 - 14, -h / 2 - 14, w + 28, h + 28);
+  cx.shadowBlur = 0; cx.filter = "grayscale(.85) sepia(.15) contrast(1.1)";   // teinte unique : photos d'epoques differentes coherentes
+  cx.drawImage(im, -w / 2, -h / 2, w, h); cx.filter = "none";
+  cx.fillStyle = RED; cx.fillRect(-w / 2 - 14, h / 2 + 14 - 8, w + 28, 8);   // liseré rouge "dossier"
+  cx.restore(); cx.globalAlpha = 1;
+  // mention discrete : distingue les vraies archives des images IA
+  cx.font = `26px ${TITLE_FONT}`; cx.textAlign = "left"; cx.textBaseline = "top"; cx.fillStyle = "rgba(244,239,238,.55)";
+  cx.fillText(b.img_label || "PHOTO D'ÉPOQUE", 540 - w / 2 - 6, 860 + h / 2 + 30); cx.textAlign = "start";
+}
+
 // ---------- scene ----------
 function drawBeat(b, t) {
   const t0 = b.start, lt = t - t0;
+  if (b.img && IMGS[b.img]) { drawImgBeat(b, t); return; }
   let y = b.led && !b.title && !b.icon && !b.array ? 520 : 170;   // chiffre/mot LED seul : centre
   const textOnly = b.title && !b.led && !b.icon && !b.array && !b.stamp;
   // Accroche (1er beat) : tout est visible des l'image 0, sans fondu ni apparition point par point.
@@ -188,6 +226,20 @@ function drawBeat(b, t) {
     cx.fillStyle = MUTED; cx.fillText(b.sub, 540, Math.max(y, 1180)); cx.globalAlpha = 1; cx.textAlign = "start"; }
 }
 
+function drawImgBeat(b, t) {
+  // beat avec photo : la photo occupe le centre, titre en haut (ombre portee pour rester lisible), tampon sur la photo
+  const t0 = b.start, fast = t0 === 0 || b === DATA.beats[1];
+  drawPhoto(b, t, fast);
+  let th = 0;
+  if (b.title) { cx.save(); cx.shadowColor = "rgba(0,0,0,.95)"; cx.shadowBlur = 24;
+    th = drawTitle(b.title, 150, b.title.length > 34 ? 64 : 76, fast ? t0 - 1 : t0, t); cx.restore(); }
+  // teaser juste sous le titre, avant la photo (en bas il serait sous l'interface TikTok)
+  if (b.sub) { cx.save(); cx.font = `40px ${TITLE_FONT}`; cx.textAlign = "center"; cx.textBaseline = "top";
+    cx.shadowColor = "rgba(0,0,0,.95)"; cx.shadowBlur = 18; cx.fillStyle = WHITE; cx.globalAlpha = .9;
+    cx.fillText(b.sub, 540, 150 + th + 8); cx.restore(); }
+  if (b.stamp) drawStamp(b.stamp, 600, 1150, t0 + (b.stamp_at ?? Math.min(1.0, (b.end - t0) * 0.5)), t);
+}
+
 // ---------- sous-titres mot par mot (karaoke) ----------
 // 25/10/2026 : demande utilisateur "meilleure accroche visuelle et auditive" -> on lit en meme temps qu'on ecoute,
 // et la video reste comprehensible sans le son. Groupes de 2 a 4 mots, mot prononce en rouge et grossi.
@@ -216,9 +268,10 @@ function drawCaption(t) {
   cx.font = font; cx.textBaseline = "middle"; cx.lineJoin = "round";
   const words = c.map(w => w.w.toUpperCase()), widths = words.map(w => cx.measureText(w).width * 1.1 + 24);   // marge : le mot prononce est agrandi
   const total = widths.reduce((a, b) => a + b, 0);
-  const fit = Math.min(1, 960 / total);   // groupe trop large : on reduit tout le groupe plutot que de deborder
-  let x = 540 - total * fit / 2;
-  const y = 1350, pop = easeOut(clamp((t - c[0].t + 0.05) / 0.12));
+  // avec photos : largeur reduite pour rester hors de la colonne de boutons TikTok (a droite)
+  const fit = Math.min(1, (HAS_IMG ? 840 : 960) / total);   // groupe trop large : on reduit tout le groupe plutot que de deborder
+  let x = (HAS_IMG ? 510 : 540) - total * fit / 2;
+  const y = HAS_IMG ? 1430 : 1350, pop = easeOut(clamp((t - c[0].t + 0.05) / 0.12));
   words.forEach((w, i) => {
     const on = t >= c[i].t && t < (c[i + 1] ? c[i + 1].t : c[i].e + 0.3);
     const s = on ? 1.08 : 1;
@@ -252,14 +305,16 @@ function render(t) {
   // flash rouge sur les temps forts (2 images)
   for (const x of beats) if (x.flash && x.start > 0 && t >= x.start && t < x.start + 0.07) { cx.fillStyle = "rgba(229,35,27,.55)"; cx.fillRect(0, 0, 1080, 1920); }
   // petit indicateur de progression facon "dossier"
-  cx.fillStyle = "rgba(255,255,255,.12)"; cx.fillRect(90, 1640, 900, 4);
-  cx.fillStyle = RED; cx.fillRect(90, 1640, 900 * clamp(t / DATA.duration), 4);
+  // (en bas, elle est cachee par l'interface TikTok : en haut pour les histoires avec photos)
+  const py = HAS_IMG ? 60 : 1640;
+  cx.fillStyle = "rgba(255,255,255,.12)"; cx.fillRect(90, py, 900, 4);
+  cx.fillStyle = RED; cx.fillRect(90, py, 900 * clamp(t / DATA.duration), 4);
   // numero de serie, toujours visible en haut : donne une raison de suivre le compte ("Dossier n°12")
   if (DATA.num) { cx.font = `34px ${TITLE_FONT}`; cx.textAlign = "center"; cx.textBaseline = "top"; cx.fillStyle = RED;
     cx.fillText(`DOSSIER N°${DATA.num}`, 540, 96); cx.textAlign = "start"; }
 }
 window.render = render;
-document.fonts.ready.then(() => { window.ready = true; });
+Promise.all([document.fonts.ready, loadImages()]).then(() => { window.ready = true; });
 </script>
 </body>
 </html>

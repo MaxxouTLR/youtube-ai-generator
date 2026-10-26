@@ -10,9 +10,11 @@ Entree : une liste de "beats" (un moment de narration chacun) :
      "array": {"icon": "💃", "n": 34},  compteur d'icones qui se remplit (optionnel)
      "strike": 1.2,          barre le chiffre LED apres 1,2 s (optionnel)
      "sub": "texte gris",    petite ligne (optionnel)
-     "flash": true}          flash rouge a l'ouverture du beat (optionnel)
+     "flash": true,          flash rouge a l'ouverture du beat (optionnel)
+     "img": "assets/archives/<sujet>/x.jpg"}  photo d'archive au centre, remplace icone/LED (optionnel)
 Le texte lu (say) et le texte affiche sont separes : a l'ecran, seulement la phrase-cle ou le chiffre-cle.
 """
+import base64
 import json
 import os
 import re
@@ -46,7 +48,13 @@ def render(beats: list[dict], total: float, out_path: str, num: int | None = Non
     # words : timings mot par mot de la voix, pour les sous-titres karaoke (t = debut, e = fin, en secondes)
     caps = [{"w": w["text"], "t": w["offset"] / 1e7, "e": (w["offset"] + w.get("duration", 0)) / 1e7}
             for w in sorted(words or [], key=lambda w: w["offset"]) if _norm(w["text"])]
-    data = {"duration": total, "beats": beats, "num": num, "words": caps}
+    # photos d'archive (champ "img", chemin relatif au depot) : integrees en data URI, la page est chargee par set_content
+    images = {}
+    for b in beats:
+        if b.get("img") and b["img"] not in images:
+            with open(os.path.join(config.BASE_DIR, b["img"]), "rb") as f:
+                images[b["img"]] = "data:image/jpeg;base64," + base64.b64encode(f.read()).decode()
+    data = {"duration": total, "beats": beats, "num": num, "words": caps, "images": images}
     from playwright.sync_api import sync_playwright
     html = open(ENGINE, encoding="utf-8").read().replace("/*DATA*/null", json.dumps(data, ensure_ascii=False))
     n = int(round(total * motion_video.FPS))
