@@ -33,7 +33,9 @@
      "text": "*un pharaon mort*",
      "bg": "red",
      "hit": true,
-     "on": "pharaon"
+     "on": "pharaon",
+     "img": "assets/archives/ramses_ii_bourget_1976/chaillot.jpg",
+     "mode": "fade"
     },
     {
      "img": "assets/archives/ramses_ii_bourget_1976/abu_simbel.jpg",
@@ -54,7 +56,9 @@
      "text": "*Ramsès II*",
      "bg": "red",
      "hit": true,
-     "on": "Ramsès"
+     "on": "Ramsès",
+     "img": "assets/archives/ramses_ii_bourget_1976/chaillot.jpg",
+     "mode": "fade"
     },
     {
      "img": "assets/archives/ramses_ii_bourget_1976/abu_simbel.jpg",
@@ -101,7 +105,9 @@
      "text": "*un champignon*",
      "bg": "red",
      "hit": true,
-     "on": "champignon."
+     "on": "champignon.",
+     "img": "assets/archives/ramses_ii_bourget_1976/chaillot.jpg",
+     "mode": "fade"
     }
    ]
   },
@@ -109,14 +115,17 @@
    "say": "L'Égypte accepte de l'envoyer en France pour la soigner.",
    "shots": [
     {
-     "icon": "✈️",
-     "rings": true
+     "rings": true,
+     "img": "assets/archives/ramses_ii_bourget_1976/chaillot.jpg",
+     "mode": "fade"
     },
     {
      "text": "*la France*",
      "bg": "red",
      "hit": true,
-     "on": "France"
+     "on": "France",
+     "img": "assets/archives/ramses_ii_bourget_1976/chaillot.jpg",
+     "mode": "fade"
     },
     {
      "img": "assets/archives/ramses_ii_bourget_1976/garde.jpg",
@@ -161,7 +170,9 @@
      "text": "*un chef d'État*",
      "bg": "red",
      "hit": true,
-     "on": "d'État."
+     "on": "d'État.",
+     "img": "assets/archives/ramses_ii_bourget_1976/chaillot.jpg",
+     "mode": "fade"
     }
    ]
   },
@@ -169,8 +180,9 @@
    "say": "Le plus fou ? On raconte qu'on lui aurait fait un passeport. Profession : roi, décédé.",
    "shots": [
     {
-     "icon": "🛂",
-     "rings": true
+     "rings": true,
+     "img": "assets/archives/ramses_ii_bourget_1976/chaillot.jpg",
+     "mode": "fade"
     },
     {
      "img": "assets/archives/ramses_ii_bourget_1976/momie_visage.jpg",
@@ -199,7 +211,9 @@
      "text": "*roi, décédé*",
      "bg": "red",
      "hit": true,
-     "on": "décédé."
+     "on": "décédé.",
+     "img": "assets/archives/ramses_ii_bourget_1976/chaillot.jpg",
+     "mode": "fade"
     }
    ]
   },
@@ -227,7 +241,9 @@
      "text": "*musée de l'Homme*",
      "bg": "red",
      "hit": true,
-     "on": "l'Homme."
+     "on": "l'Homme.",
+     "img": "assets/archives/ramses_ii_bourget_1976/chaillot.jpg",
+     "mode": "fade"
     }
    ]
   },
@@ -235,16 +251,19 @@
    "say": "Puis elle est stérilisée par irradiation, et repart en Égypte.",
    "shots": [
     {
-     "icon": "☢️",
      "rings": true,
      "bg": "red",
-     "hit": true
+     "hit": true,
+     "img": "assets/archives/ramses_ii_bourget_1976/chaillot.jpg",
+     "mode": "fade"
     },
     {
      "text": "*Puis renvoyée*",
      "bg": "red",
      "hit": true,
-     "on": "Puis"
+     "on": "Puis",
+     "img": "assets/archives/ramses_ii_bourget_1976/chaillot.jpg",
+     "mode": "fade"
     },
     {
      "img": "assets/archives/ramses_ii_bourget_1976/garde.jpg",
@@ -270,7 +289,9 @@
    "shots": [
     {
      "text": "*Abonne-toi.*",
-     "bg": "red"
+     "bg": "red",
+     "img": "assets/archives/ramses_ii_bourget_1976/chaillot.jpg",
+     "mode": "fade"
     }
    ]
   }
