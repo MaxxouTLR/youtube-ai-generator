@@ -4,8 +4,8 @@ name: Demo chaine FR (style dossier)
 # disponibles que dans les secrets GitHub) et recommite les .mp4 dans demo_out/ sur la branche demo-fr.
 on:
   push:
-    branches: [demo-fr]
-    paths: ["histoires/*.json", "demo_fr.py", "dossier_video.py", "motion/dossier.html", ".github/workflows/demo-fr.yml"]
+    branches: [demo-fr, montage-v2]
+    paths: ["histoires/*.json", "demo_fr.py", "dossier_video.py", "motion/dossier.html", "motion/dossier_v2.html", ".github/workflows/demo-fr.yml"]
   workflow_dispatch:
 
 permissions:

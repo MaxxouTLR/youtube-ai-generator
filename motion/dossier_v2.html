@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; }
+  html, body { width: 1080px; height: 1920px; overflow: hidden; background: #0a0807; }
+  canvas { display: block; }
+</style>
+</head>
+<body>
+<canvas id="c" width="1080" height="1920"></canvas>
+<script>
+/* Montage "dynamique" v2 (02/11/2026). Analyse des comptes de reference de l'utilisateur (@dernier.maillon,
+   @cosmo_vibess) : un nouveau visuel toutes les 0,5-0,7 s, sujet seul au centre (gravure/statue detouree, pas de
+   cadre photo), aplats rouges plein ecran sur les mots forts, tampons, crochets de mise au point, halos, zooms,
+   AUCUN titre fixe : a l'ecran seulement le visuel + le sous-titre de 2-3 mots.
+   Entree : DATA.shots = [{start, end, img?, mode?, crop?, text?, led?, icon?, array?, stamp?, bg?, focus?, rings?,
+   hit?, flip?, label?}], deja calees sur la voix par dossier_video.time_shots. Rendu = fonction pure de t. */
+const DATA = /*DATA*/null;
+const RED = "#e5231b", WHITE = "#f4efee", CREAM = "#efe6d6", GOLD = "#d9a441";
+const FONT = '"Archivo Black", "Montserrat Black", "Arial Black", "Segoe UI Black", "Inter Black", sans-serif';
+const EMOJI_FONT = '"Noto Color Emoji", "Segoe UI Emoji", "Apple Color Emoji", sans-serif';
+const cv = document.getElementById("c"), cx = cv.getContext("2d");
+const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const easeOut = p => 1 - Math.pow(1 - p, 3);
+function hash(n) { n = (n ^ 61) ^ (n >>> 16); n = n + (n << 3); n = n ^ (n >>> 4); n = Math.imul(n, 0x27d4eb2d); return ((n ^ (n >>> 15)) >>> 0) / 4294967296; }
+
+// ---------- images : chargement + traitements caches ----------
+const IMGS = {}, PROC = new Map();
+function loadImages() {
+  return Promise.all(Object.entries(DATA.images || {}).map(([k, src]) => new Promise(res => {
+    const im = new Image(); im.onload = () => { IMGS[k] = im; res(); }; im.onerror = res; im.src = src; })));
+}
+function processed(s) {
+  // renvoie un canvas : image recadree (crop), passee en "gravure" (gris chaud contraste) et detouree :
+  //  mode "key"  : fond clair (gravure sur papier, animal sur fond blanc) -> transparent
+  //  mode "fade" (defaut) : tableau/photo -> bords fondus en ovale, le sujet flotte sur le fond sombre
+  //  mode "frame": tirage photo avec bord clair (cartes, documents)
+  const key = s.img + "|" + (s.crop || []).join(",") + "|" + (s.mode || "fade") + "|" + (s.flip ? 1 : 0);
+  if (PROC.has(key)) return PROC.get(key);
+  const im = IMGS[s.img]; if (!im) return null;
+  const [cx0, cy0, cw, ch] = s.crop || [0, 0, 1, 1];
+  const sx = cx0 * im.width, sy = cy0 * im.height, sw = cw * im.width, sh = ch * im.height;
+  const sc = Math.min(1, 900 / Math.max(sw, sh)), W = Math.round(sw * sc), H = Math.round(sh * sc);
+  const o = document.createElement("canvas"); o.width = W; o.height = H;
+  const g = o.getContext("2d", { willReadFrequently: true });
+  if (s.flip) { g.translate(W, 0); g.scale(-1, 1); }
+  g.drawImage(im, sx, sy, sw, sh, 0, 0, W, H); g.setTransform(1, 0, 0, 1, 0, 0);
+  const mode = s.mode || "fade", d = g.getImageData(0, 0, W, H), p = d.data;
+  for (let i = 0; i < p.length; i += 4) {
+    const l = (p[i] * .3 + p[i + 1] * .59 + p[i + 2] * .11) / 255;
+    const c = clamp((l - .5) * 1.35 + .5);                       // contraste
+    p[i] = 25 + 225 * c; p[i + 1] = 20 + 212 * c; p[i + 2] = 16 + 190 * c;   // teinte gravure (creme chaud)
+    if (mode === "key") {
+      const x = (i / 4) % W, y = Math.floor(i / 4 / W);
+      const edge = Math.min(x, y, W - 1 - x, H - 1 - y) / 18;   // bords toujours fondus
+      p[i + 3] = 255 * clamp((0.93 - l) / 0.12) * clamp(edge);
+      p[i] = 40 + 215 * c; p[i + 1] = 34 + 205 * c; p[i + 2] = 28 + 180 * c;
+    }
+  }
+  g.putImageData(d, 0, 0);
+  if (mode === "fade") {
+    g.globalCompositeOperation = "destination-in";
+    // ovale qui s'efface completement avant les bords : aucun angle de cadre visible
+    g.save(); g.translate(W / 2, H / 2); g.scale(W / 2, H / 2);
+    const r = g.createRadialGradient(0, -.06, 0, 0, 0, 1);
+    r.addColorStop(0, "rgba(0,0,0,1)"); r.addColorStop(.55, "rgba(0,0,0,1)"); r.addColorStop(.8, "rgba(0,0,0,.55)"); r.addColorStop(1, "rgba(0,0,0,0)");
+    g.fillStyle = r; g.fillRect(-1, -1, 2, 2); g.restore(); g.globalCompositeOperation = "source-over";
+  }
+  PROC.set(key, o); return o;
+}
+
+// ---------- matrice de points (icones emoji en pixel art, comme le moteur v1) ----------
+const DOTS = new Map();
+function dotify(icon) {
+  if (DOTS.has(icon)) return DOTS.get(icon);
+  const off = document.createElement("canvas"), o = off.getContext("2d", { willReadFrequently: true });
+  off.width = off.height = 128; o.font = `104px ${EMOJI_FONT}`; o.textAlign = "center"; o.textBaseline = "middle"; o.fillText(icon, 64, 70);
+  const img = o.getImageData(0, 0, 128, 128).data, dots = [], step = 3;
+  for (let y = 0; y < 128; y += step) for (let x = 0; x < 128; x += step) {
+    const i = (y * 128 + x) * 4; const a = img[i + 3] / 255, l = (img[i] * .3 + img[i + 1] * .59 + img[i + 2] * .11) / 255;
+    if (a > .35) dots.push({ x: x / 128, y: y / 128, v: .35 + .65 * l });
+  }
+  DOTS.set(icon, dots); return dots;
+}
+function drawIcon(icon, x, y, size, color) {
+  const cell = size / (128 / 3), r = cell * .42;
+  for (const p of dotify(icon)) { cx.fillStyle = color || (p.v > .72 ? WHITE : p.v > .5 ? CREAM : "#8a7f73");
+    cx.fillRect(x - size / 2 + p.x * size - r, y - size / 2 + p.y * size - r, r * 2, r * 2); }
+}
+
+// ---------- elements ----------
+function drawBg(t, red) {
+  if (red) {
+    const g = cx.createRadialGradient(540, 820, 80, 540, 900, 1250);
+    g.addColorStop(0, "#c8211a"); g.addColorStop(.6, "#8e120d"); g.addColorStop(1, "#3a0604");
+    cx.fillStyle = g; cx.fillRect(0, 0, 1080, 1920);
+  } else {
+    cx.fillStyle = "#0b0908"; cx.fillRect(0, 0, 1080, 1920);
+    const g = cx.createRadialGradient(540, 800, 60, 540, 820, 1000);
+    g.addColorStop(0, "rgba(70,56,44,.55)"); g.addColorStop(1, "rgba(0,0,0,0)");
+    cx.fillStyle = g; cx.fillRect(0, 0, 1080, 1920);
+    // texture "papier sombre" : veines tres discretes
+    cx.strokeStyle = "rgba(255,240,220,.025)"; cx.lineWidth = 2;
+    for (let i = 0; i < 14; i++) { cx.beginPath(); let x = hash(i * 7) * 1080, y = hash(i * 13) * 1920; cx.moveTo(x, y);
+      for (let k = 0; k < 6; k++) { x += (hash(i * 31 + k) - .5) * 400; y += (hash(i * 17 + k) - .3) * 300; cx.lineTo(x, y); } cx.stroke(); }
+  }
+  const f = Math.floor(t * 30);   // grain
+  for (let i = 0; i < 700; i++) { cx.fillStyle = `rgba(255,255,255,${.025 + .04 * hash(i + f)})`;
+    cx.fillRect(hash(f * 1000 + i) * 1080, hash(f * 2000 + i * 3) * 1920, 2, 2); }
+  const v = cx.createRadialGradient(540, 880, 560, 540, 880, 1250);
+  v.addColorStop(0, "rgba(0,0,0,0)"); v.addColorStop(1, "rgba(0,0,0,.75)"); cx.fillStyle = v; cx.fillRect(0, 0, 1080, 1920);
+}
+
+function drawRings(x, y, t, red) {
+  for (let k = 0; k < 4; k++) { const r = 230 + k * 95 + 18 * Math.sin(t * 3 + k);
+    cx.strokeStyle = red ? `rgba(255,220,210,${.35 - k * .07})` : `rgba(217,164,65,${.42 - k * .09})`; cx.lineWidth = 4;
+    cx.beginPath(); cx.arc(x, y, r, 0, Math.PI * 2); cx.stroke(); }
+}
+function drawFocus(x, y, w, h, p) {
+  // crochets de mise au point qui se resserrent sur le sujet
+  const k = 1.18 - .18 * easeOut(p), W = w * k / 2, H = h * k / 2, L = 70;
+  cx.strokeStyle = GOLD; cx.lineWidth = 7; cx.globalAlpha = clamp(p * 3);
+  for (const [sx, sy] of [[-1, -1], [1, -1], [-1, 1], [1, 1]]) { cx.beginPath();
+    cx.moveTo(x + sx * W, y + sy * (H - L)); cx.lineTo(x + sx * W, y + sy * H); cx.lineTo(x + sx * (W - L), y + sy * H); cx.stroke(); }
+  cx.globalAlpha = 1;
+}
+function drawStamp(text, x, y, p, red) {
+  if (p <= 0) return;
+  const s = 1.8 - .8 * easeOut(clamp(p / .5));
+  cx.save(); cx.translate(x, y); cx.rotate(-.11); cx.scale(s, s); cx.globalAlpha = clamp(p * 4);
+  cx.font = `78px ${FONT}`; cx.textAlign = "center"; cx.textBaseline = "middle";
+  const w = cx.measureText(text).width + 50, col = red ? WHITE : RED;
+  cx.strokeStyle = col; cx.lineWidth = 8; cx.strokeRect(-w / 2, -58, w, 116);
+  cx.fillStyle = col; cx.fillText(text, 0, 4);
+  // usure du tampon
+  cx.globalCompositeOperation = "destination-out";
+  for (let i = 0; i < 160; i++) { cx.fillStyle = `rgba(0,0,0,${.4 + .5 * hash(i * 3 + text.length)})`;
+    cx.fillRect((hash(i * 7 + text.length) - .5) * w, (hash(i * 11) - .5) * 116, 3 + 6 * hash(i), 3 + 5 * hash(i * 5)); }
+  cx.globalCompositeOperation = "source-over"; cx.restore(); cx.globalAlpha = 1;
+}
+function drawBigText(txt, y, red, p) {
+  // mot ou phrase choc en tres gros ("FAUX.", "0") ; *mot* en rouge (ou en noir sur fond rouge)
+  const words = txt.split(" "), size = txt.length <= 6 ? 230 : txt.length <= 12 ? 150 : 108;
+  cx.font = `${size}px ${FONT}`; cx.textBaseline = "middle";
+  const lines = [[]]; let lw = 0;
+  for (const w of words) { const ww = cx.measureText(w.replace(/\*/g, "") + " ").width;
+    if (lw + ww > 960 && lines[lines.length - 1].length) { lines.push([]); lw = 0; } lines[lines.length - 1].push(w); lw += ww; }
+  const s = 1.25 - .25 * easeOut(clamp(p / .12));
+  cx.save(); cx.translate(540, y); cx.scale(s, s);
+  lines.forEach((ln, i) => {
+    const full = ln.map(w => w.replace(/\*/g, "")).join(" "), W = cx.measureText(full).width;
+    let x = -W / 2; const yy = (i - (lines.length - 1) / 2) * size * 1.05;
+    for (const w of ln) { const hl = w.includes("*"), ww = w.replace(/\*/g, "");
+      cx.shadowColor = red ? "rgba(255,120,100,.6)" : "rgba(229,35,27,.45)"; cx.shadowBlur = 40;
+      cx.fillStyle = hl ? (red ? "#1a0302" : RED) : WHITE; cx.fillText(ww, x, yy); x += cx.measureText(ww + " ").width; }
+  });
+  cx.restore(); cx.shadowBlur = 0;
+}
+
+function drawShot(s, t) {
+  const p = t - s.start, dur = Math.max(.2, s.end - s.start), q = clamp(p / dur), red = s.bg === "red";
+  drawBg(t, red);
+  const cyy = 790;
+  // a-coup d'entree (pop) + poussee lente continue : l'image n'est jamais immobile
+  const pop = 1 + .07 * (1 - easeOut(clamp(p / .14))), push = 1 + .06 * q;
+  let shx = 0, shy = 0;
+  if (s.hit && p < .35) { const a = 26 * Math.pow(1 - p / .35, 2); shx = (hash(Math.floor(t * 60)) - .5) * a; shy = (hash(Math.floor(t * 60) + 9) - .5) * a; }
+  cx.save(); cx.translate(540 + shx, cyy + shy); cx.scale(pop * push, pop * push); cx.translate(-540, -cyy);
+  if (s.rings) drawRings(540, cyy, t, red);
+  let bw = 0, bh = 0;
+  if (s.img) {
+    const o = processed(s);
+    if (o) { const maxW = s.mode === "frame" ? 900 : 1060, maxH = s.mode === "frame" ? 900 : 1100, f = Math.min(maxW / o.width, maxH / o.height) * (s.scale || 1);
+      bw = o.width * f; bh = o.height * f;
+      if (s.mode === "frame") { cx.shadowColor = "rgba(0,0,0,.8)"; cx.shadowBlur = 40; cx.fillStyle = CREAM; cx.fillRect(540 - bw / 2 - 12, cyy - bh / 2 - 12, bw + 24, bh + 24); cx.shadowBlur = 0; }
+      cx.drawImage(o, 540 - bw / 2, cyy - bh / 2, bw, bh); }
+  }
+  if (s.icon) { const size = s.img ? 300 : 620; drawIcon(s.icon, s.img ? 800 : 540, s.img ? cyy - bh / 2 + 80 : cyy, size, red ? WHITE : null); bw = bw || size; bh = bh || size; }
+  if (s.array) {   // n petites icones qui se remplissent tres vite
+    const n = s.array.n, cols = n <= 12 ? 4 : n <= 40 ? 7 : 10, size = n <= 12 ? 170 : n <= 40 ? 118 : 86, gap = size * 1.12;
+    const rows = Math.ceil(n / cols), k = Math.ceil(clamp(p / Math.max(.25, dur * .7)) * n);
+    for (let i = 0; i < k; i++) drawIcon(s.array.icon, 540 + (i % cols - (cols - 1) / 2) * gap, cyy + (Math.floor(i / cols) - (rows - 1) / 2) * gap, size, red ? WHITE : null);
+  }
+  if (s.text) drawBigText(s.text, s.img || s.icon ? cyy + bh / 2 + 40 : cyy, red, p);
+  if (s.led) drawBigText(s.led, cyy, red, p);
+  cx.restore();
+  if (s.focus && (bw || bh)) drawFocus(540, cyy, Math.min(bw, 900) * .78, Math.min(bh, 1000) * .78, clamp(p / .25));
+  if (s.stamp) drawStamp(s.stamp, 560, cyy + (bh ? Math.min(bh / 2 - 60, 330) : 300), p - (s.stamp_at || .12), red);
+  if (s.label) { cx.font = `26px ${FONT}`; cx.textAlign = "left"; cx.textBaseline = "top"; cx.fillStyle = red ? "rgba(255,240,235,.7)" : "rgba(239,230,214,.5)";
+    cx.fillText(s.label, 120, Math.min(1180, cyy + bh / 2 + 18)); cx.textAlign = "start"; }
+}
+
+// ---------- sous-titres : 2-3 mots, mot prononce en couleur ----------
+let CHUNKS = null;
+function chunks() {
+  if (CHUNKS) return CHUNKS;
+  CHUNKS = []; let cur = []; const ws = DATA.words || [];
+  ws.forEach((w, i) => { cur.push(w);
+    const pause = ws[i + 1] ? ws[i + 1].t - w.e > 0.2 : true, chars = cur.reduce((n, x) => n + x.w.length + 1, 0), next = ws[i + 1] ? ws[i + 1].w.length : 0;
+    if (/[.!?…,:;]$/.test(w.w) || pause || cur.length >= 3 || chars + next > 16) { CHUNKS.push(cur); cur = []; } });
+  if (cur.length) CHUNKS.push(cur); return CHUNKS;
+}
+function drawCaption(t, red) {
+  const cs = chunks(); let c = null;
+  for (const k of cs) if (t >= k[0].t - .05) c = k;
+  if (!c || t > c[c.length - 1].e + .3) return;
+  const size = 74; cx.font = `${size}px ${FONT}`; cx.textBaseline = "middle"; cx.lineJoin = "round";
+  const words = c.map(w => w.w.toUpperCase()), widths = words.map(w => cx.measureText(w).width + 26);
+  const total = widths.reduce((a, b) => a + b, 0), fit = Math.min(1, 860 / total);
+  let x = 520 - total * fit / 2; const y = 1330, pop = easeOut(clamp((t - c[0].t + .05) / .1));
+  words.forEach((w, i) => {
+    const on = t >= c[i].t;   // les mots s'affichent au fur et a mesure (comme les references)
+    if (!on && i > 0) { x += widths[i] * fit; return; }
+    const cur = t >= c[i].t && t < (c[i + 1] ? c[i + 1].t : c[i].e + .3);
+    cx.save(); cx.translate(x + widths[i] * fit / 2, y); cx.scale(fit * (.88 + .12 * pop), fit * (.88 + .12 * pop));
+    cx.textAlign = "center"; cx.lineWidth = 16; cx.strokeStyle = "rgba(0,0,0,.92)"; cx.strokeText(w, 0, 0);
+    cx.fillStyle = cur ? (red ? "#ffd9a0" : GOLD) : WHITE; cx.fillText(w, 0, 0); cx.restore(); x += widths[i] * fit;
+  });
+  cx.textAlign = "start";
+}
+
+function render(t) {
+  let s = DATA.shots[0];
+  for (const x of DATA.shots) if (t >= x.start) s = x;
+  drawShot(s, t);
+  drawCaption(t, s.bg === "red");
+  // flash blanc 2 images a chaque aplat rouge et sur les "hit"
+  if ((s.bg === "red" || s.hit) && s.start > 0 && t - s.start < .066) { cx.fillStyle = "rgba(255,255,255,.3)"; cx.fillRect(0, 0, 1080, 1920); }
+  if (DATA.num) { cx.font = `30px ${FONT}`; cx.textAlign = "center"; cx.textBaseline = "top"; cx.fillStyle = s.bg === "red" ? "rgba(255,255,255,.75)" : RED;
+    cx.fillText(`DOSSIER N°${DATA.num}`, 540, 100); cx.textAlign = "start"; }
+  cx.fillStyle = "rgba(255,255,255,.12)"; cx.fillRect(90, 60, 900, 4);
+  cx.fillStyle = s.bg === "red" ? WHITE : RED; cx.fillRect(90, 60, 900 * clamp(t / DATA.duration), 4);
+}
+window.render = render;
+Promise.all([document.fonts.ready, loadImages()]).then(() => { window.ready = true; });
+</script>
+</body>
+</html>
