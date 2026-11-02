@@ -159,7 +159,7 @@ VOICE_CHAIN = ("highpass=f=75,equalizer=f=220:t=q:w=1:g=-2.5,equalizer=f=3200:t=
 
 
 def mix(voice: str, beats: list[dict], total: float, out_path: str, work_dir: str, seed: int | None = None,
-        bed_volume: float = 0.16) -> str:
+        bed_volume: float = 0.16, sfx: bool = True) -> str:
     """Voix traitee + nappe en ducking + impact d'ouverture + impacts/montees sur les retournements + tampons.
     seed : numero du dossier, pour que chaque histoire ait son propre habillage (reproductible)."""
     rng = np.random.default_rng(seed if seed is not None else int(total * 1000))
@@ -180,6 +180,8 @@ def mix(voice: str, beats: list[dict], total: float, out_path: str, work_dir: st
         if b.get("stamp"):
             events.append((f"stamp{k % 2}", b["start"] + b.get("stamp_at", min(1.0, (b["end"] - b["start"]) * 0.5)), 0.55))
             k += 1
+    if not sfx:   # 02/11/2026 : voix seule (bruitages juges "bizarres" avec le montage v2 + son TikTok)
+        events = []
     fmt = "aformat=sample_rates=44100:channel_layouts=stereo"
     inputs = ["-i", voice, "-i", files["bed"]]
     # nappe nettement sous la voix (0.30 -> 0.16) et plus ecrasee quand la voix parle (ratio 7 -> 12)

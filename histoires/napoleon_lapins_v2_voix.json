@@ -1,7 +1,7 @@
 {
  "slug": "napoleon_lapins_v2_voix",
  "test": true,
- "note": "Prototype montage dynamique v2 (02/11/2026), même histoire que le n°30. Pas de num : jamais programmée par le Programmateur. Version sans nappe : le son TikTok « The Scooby Snacks » est ajouté à la publication.",
+ "note": "Prototype montage dynamique v2 (02/11/2026), même histoire que le n°30. Pas de num : jamais programmée par le Programmateur. Version voix seule (sans nappe ni bruitages) : le son TikTok « The Scooby Snacks » est ajouté à la publication.",
  "source": "https://fr.wikipedia.org/wiki/Napol%C3%A9on_Ier",
  "caption": "#CapCut 📁 Dossier n°30 — Napoléon attaqué… par une armée de lapins 🐇 Selon les mémoires d'un général. Tu y crois ? #histoire #napoleon #anecdote #lesaviezvous #dossier",
  "beats": [
@@ -326,5 +326,6 @@
    ]
   }
  ],
- "nappe": false
+ "nappe": false,
+ "bruitages": false
 }
