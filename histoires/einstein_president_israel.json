@@ -1,0 +1,64 @@
+{
+ "slug": "einstein_president_israel",
+ "num": 42,
+ "source": "https://fr.wikipedia.org/wiki/Albert_Einstein",
+ "caption": "#CapCut 📁 Dossier n°42 — On a proposé à Einstein de devenir président d'Israël 📨 Tu aurais accepté ? #histoire #einstein #science #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "On propose à Einstein de devenir président d'un pays.",
+   "title": "Quel pays veut *Einstein ?*",
+   "sub": "Sa réponse va te surprendre.",
+   "img": "assets/archives/einstein_president_israel/einstein_1947.jpg",
+   "img_label": "ALBERT EINSTEIN · 1947"
+  },
+  {
+   "say": "Le pays : Israël. Le poste : président de l'État.",
+   "title": "Président *d'Israël.*",
+   "icon": "📨"
+  },
+  {
+   "say": "Le plus fou ? Il n'est même pas citoyen israélien.",
+   "title": "Même pas *citoyen.*",
+   "flash": true
+  },
+  {
+   "say": "Novembre 1952. Le premier président, Chaïm Weizmann, vient de mourir.",
+   "title": "Weizmann *est mort.*",
+   "img": "assets/archives/einstein_president_israel/weizmann.jpg",
+   "img_label": "CHAÏM WEIZMANN · 1ᵉʳ PRÉSIDENT"
+  },
+  {
+   "say": "Einstein a soixante-treize ans. Il vit à Princeton, aux États-Unis.",
+   "led": "73 ANS",
+   "led_sub": "à Princeton"
+  },
+  {
+   "say": "Et là, il refuse. Par lettre, presque aussitôt.",
+   "title": "Il *refuse.*",
+   "flash": true,
+   "stamp": "Refusé",
+   "stamp_at": 1.0
+  },
+  {
+   "say": "Il écrit qu'il manque d'aptitude et d'expérience pour traiter avec les gens.",
+   "title": "« Pas fait pour *les gens.* »",
+   "img": "assets/archives/einstein_president_israel/einstein_tete.jpg",
+   "img_label": "ALBERT EINSTEIN"
+  },
+  {
+   "say": "Selon une anecdote, le Premier ministre Ben Gourion redoutait surtout… qu'il accepte.",
+   "title": "Il redoutait *un oui.*",
+   "icon": "😅"
+  },
+  {
+   "say": "Toi, tu aurais accepté ?",
+   "title": "Tu aurais *accepté ?*",
+   "sub": "Oui · Non"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier demain matin.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier demain 8h"
+  }
+ ]
+}

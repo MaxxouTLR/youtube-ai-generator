@@ -1,0 +1,66 @@
+{
+ "slug": "mozart_miserere_1770",
+ "num": 48,
+ "source": "https://fr.wikipedia.org/wiki/Miserere_(Allegri)",
+ "caption": "#CapCut 📁 Dossier n°48 — À 14 ans, Mozart a recopié de mémoire une musique interdite 🎼 Tu aurais pu le faire ? #mozart #histoire #musique #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Il entend une musique interdite. Il la recopie de mémoire.",
+   "title": "Comment a-t-il *fait ça ?*",
+   "sub": "Il n'a que quatorze ans.",
+   "img": "assets/archives/mozart_miserere_1770/mozart_1770.jpg",
+   "img_label": "MOZART À 14 ANS · VÉRONE 1770"
+  },
+  {
+   "say": "Le gamin, c'est Mozart. Rome, semaine sainte, 1770.",
+   "title": "*Mozart* à Rome.",
+   "icon": "🎼"
+  },
+  {
+   "say": "La musique : le Miserere d'Allegri, chanté seulement à la chapelle Sixtine.",
+   "title": "Le *Miserere.*",
+   "img": "assets/archives/mozart_miserere_1770/sixtine.jpg",
+   "img_label": "LA CHAPELLE SIXTINE · INGRES"
+  },
+  {
+   "say": "Le pire ? Le recopier est interdit. Selon la légende, sous peine d'excommunication.",
+   "title": "*Interdit.*",
+   "flash": true,
+   "stamp": "Interdit",
+   "stamp_at": 1.2
+  },
+  {
+   "say": "Une seule écoute lui suffit. Il rentre et écrit tout.",
+   "led": "1",
+   "led_sub": "seule écoute"
+  },
+  {
+   "say": "Une douzaine de minutes de musique, à neuf voix.",
+   "led": "9 VOIX",
+   "led_sub": "≈ 12 minutes"
+  },
+  {
+   "say": "Sauf que… le pape l'apprend.",
+   "title": "Le pape *l'apprend.*",
+   "flash": true,
+   "img": "assets/archives/mozart_miserere_1770/allegri.jpg",
+   "img_label": "GREGORIO ALLEGRI · COMPOSITEUR"
+  },
+  {
+   "say": "Quelques mois plus tard, il le fait chevalier de l'Éperon d'or.",
+   "title": "*Chevalier* à 14 ans.",
+   "stamp": "Chevalier",
+   "stamp_at": 1.3
+  },
+  {
+   "say": "Et toi, tu aurais pu le faire ?",
+   "title": "Tu aurais *pu le faire ?*",
+   "sub": "Oui · Impossible"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier demain matin.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier demain 8h"
+  }
+ ]
+}

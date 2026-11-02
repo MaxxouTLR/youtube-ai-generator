@@ -1,0 +1,66 @@
+{
+ "slug": "marie_curie_carnets",
+ "num": 39,
+ "source": "https://fr.wikipedia.org/wiki/Marie_Curie",
+ "caption": "#CapCut 📁 Dossier n°39 — Les carnets de Marie Curie sont encore radioactifs ☢️ Tu oserais les ouvrir ? #histoire #science #mariecurie #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Ses carnets sont encore radioactifs, plus de cent ans après.",
+   "title": "Pourquoi ces carnets sont *dangereux ?*",
+   "sub": "Et c'est documenté.",
+   "img": "assets/archives/marie_curie_carnets/labo_1912.jpg",
+   "img_label": "MARIE CURIE DANS SON LABORATOIRE · 1912"
+  },
+  {
+   "say": "Pour les consulter, il faut signer une décharge.",
+   "title": "Signer une *décharge.*",
+   "img": "assets/archives/marie_curie_carnets/carnet.jpg",
+   "img_label": "UN CARNET DE MARIE CURIE"
+  },
+  {
+   "say": "Ils sont rangés à Paris, dans des boîtes doublées de plomb.",
+   "title": "Des boîtes *en plomb.*",
+   "icon": "📦"
+  },
+  {
+   "say": "Le plus fou ? Leur radium met seize siècles à perdre moitié.",
+   "led": "1600 ANS",
+   "led_sub": "pour perdre la moitié",
+   "flash": true
+  },
+  {
+   "say": "Marie Curie découvre le radium en 1898, avec son mari Pierre.",
+   "title": "Pierre et *Marie.*",
+   "img": "assets/archives/marie_curie_carnets/pierre_marie.jpg",
+   "img_label": "PIERRE ET MARIE CURIE"
+  },
+  {
+   "say": "Elle le manipule à mains nues, sans aucune protection.",
+   "title": "À *mains nues.*",
+   "icon": "🧪"
+  },
+  {
+   "say": "Problème : en 1934, une maladie du sang l'emporte. Sans doute les radiations.",
+   "title": "1934 : *irradiée.*",
+   "flash": true,
+   "stamp": "Irradiée",
+   "stamp_at": 1.4
+  },
+  {
+   "say": "Selon plusieurs sources, même son cercueil au Panthéon est doublé de plomb.",
+   "title": "Un cercueil *en plomb.*",
+   "img": "assets/archives/marie_curie_carnets/nobel.jpg",
+   "img_label": "MARIE CURIE · PRIX NOBEL 1911"
+  },
+  {
+   "say": "Et toi, tu oserais ouvrir ses carnets ?",
+   "title": "Tu oserais *les ouvrir ?*",
+   "sub": "Oui · Jamais"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier ce soir 19h"
+  }
+ ]
+}

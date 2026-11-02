@@ -1,0 +1,65 @@
+{
+ "slug": "pompei_moulages",
+ "num": 50,
+ "source": "https://fr.wikipedia.org/wiki/Pomp%C3%A9i",
+ "caption": "#CapCut 📁 Dossier n°50 — Les corps de Pompéi ne sont pas des statues 🌋 Tu oserais les voir en vrai ? #pompei #histoire #rome #archeologie #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Ces corps de Pompéi ne sont pas des statues.",
+   "title": "Que cache *ce plâtre ?*",
+   "sub": "La vérité est dedans.",
+   "img": "assets/archives/pompei_moulages/moulages.jpg",
+   "img_label": "MOULAGES DE POMPÉI · XIXᵉ SIÈCLE"
+  },
+  {
+   "say": "À l'intérieur, il y a de vrais squelettes.",
+   "title": "De vrais *squelettes.*",
+   "img": "assets/archives/pompei_moulages/fugitifs.jpg",
+   "img_label": "LES VICTIMES DE POMPÉI"
+  },
+  {
+   "say": "An 79. Le Vésuve ensevelit la ville sous la cendre.",
+   "title": "Le Vésuve *explose.*",
+   "img": "assets/archives/pompei_moulages/vesuve.jpg",
+   "img_label": "ÉRUPTION DU VÉSUVE · VOLAIRE"
+  },
+  {
+   "say": "Les corps se décomposent. Leur forme reste creusée dans la cendre.",
+   "title": "Des *creux* dans la cendre.",
+   "icon": "🌋"
+  },
+  {
+   "say": "Le plus fou ? En 1863, un archéologue y coule du plâtre.",
+   "led": "1863",
+   "led_sub": "le premier moulage",
+   "flash": true
+  },
+  {
+   "say": "Le plâtre épouse tout : visages, vêtements, dernières postures.",
+   "title": "Leurs *derniers gestes.*",
+   "icon": "🕯️"
+  },
+  {
+   "say": "Sauf qu'une étude ADN de 2024 bouscule les récits.",
+   "led": "ADN",
+   "led_sub": "étude de 2024",
+   "flash": true
+  },
+  {
+   "say": "La « mère et son enfant » ? Un homme, sans lien avec l'enfant.",
+   "title": "Pas *sa mère.*",
+   "stamp": "Erreur",
+   "stamp_at": 1.4
+  },
+  {
+   "say": "Toi, tu oserais les regarder en vrai ?",
+   "title": "Tu oserais *les voir ?*",
+   "sub": "Oui · Non"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier demain matin.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier demain 8h"
+  }
+ ]
+}

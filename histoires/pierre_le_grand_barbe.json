@@ -1,0 +1,64 @@
+{
+ "slug": "pierre_le_grand_barbe",
+ "num": 45,
+ "source": "https://fr.wikipedia.org/wiki/Taxe_sur_la_barbe",
+ "caption": "#CapCut 📁 Dossier n°45 — Pierre le Grand taxait la barbe de ses sujets ✂️ Tu paierais pour garder la tienne ? #russie #histoire #pierrelegrand #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Ce tsar coupe lui-même la barbe de ses nobles.",
+   "title": "Pourquoi il coupe *leurs barbes ?*",
+   "sub": "Ensuite, il les fait payer.",
+   "img": "assets/archives/pierre_le_grand_barbe/pierre.jpg",
+   "img_label": "PIERRE LE GRAND · VAN DER WERFF"
+  },
+  {
+   "say": "Avec des ciseaux, devant toute la cour.",
+   "title": "Devant *toute la cour.*",
+   "icon": "✂️"
+  },
+  {
+   "say": "Le tsar, c'est Pierre le Grand. Il rentre d'un voyage en Europe.",
+   "title": "*Pierre* le Grand.",
+   "img": "assets/archives/pierre_le_grand_barbe/buste.jpg",
+   "img_label": "BUSTE DE PIERRE LE GRAND · COLLOT"
+  },
+  {
+   "say": "Il veut une Russie moderne. Pour lui, la barbe, c'est le passé.",
+   "title": "La barbe, *c'est le passé.*",
+   "icon": "🧔"
+  },
+  {
+   "say": "Le plus fou ? En 1705, il crée un impôt sur la barbe.",
+   "led": "TAXE",
+   "led_sub": "sur la barbe",
+   "flash": true
+  },
+  {
+   "say": "Tu veux garder ta barbe ? Tu paies. Chaque année.",
+   "title": "Tu *paies.*",
+   "icon": "💰"
+  },
+  {
+   "say": "En échange, un jeton de cuivre, à garder sur soi.",
+   "title": "Un *jeton* de cuivre.",
+   "img": "assets/archives/pierre_le_grand_barbe/jeton.jpg",
+   "img_label": "JETON DE LA TAXE SUR LA BARBE"
+  },
+  {
+   "say": "Gravé dessus, en russe : argent reçu. La preuve que tu as payé.",
+   "title": "« Argent *reçu.* »",
+   "stamp": "Payé",
+   "stamp_at": 1.4
+  },
+  {
+   "say": "Toi, tu paierais pour garder ta barbe ?",
+   "title": "Tu *paierais ?*",
+   "sub": "Oui · Je rase"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier ce soir 19h"
+  }
+ ]
+}

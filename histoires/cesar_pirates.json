@@ -1,0 +1,63 @@
+{
+ "slug": "cesar_pirates",
+ "num": 40,
+ "source": "https://fr.wikipedia.org/wiki/Jules_C%C3%A9sar",
+ "caption": "#CapCut 📁 Dossier n°40 — Des pirates ont enlevé Jules César… et il a exigé une rançon plus haute 🏴‍☠️ Tu l'aurais pris au sérieux ? #histoire #rome #cesar #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Des pirates enlèvent César. Il exige une rançon plus haute.",
+   "title": "Pourquoi il veut *payer plus ?*",
+   "sub": "Les pirates vont le regretter.",
+   "img": "assets/archives/cesar_pirates/pirates.jpg",
+   "img_label": "CÉSAR CHEZ LES PIRATES · GRAVURE"
+  },
+  {
+   "say": "Ils demandent vingt talents. Il répond : j'en vaux cinquante.",
+   "led": "50",
+   "led_sub": "talents d'argent"
+  },
+  {
+   "say": "Il a environ vingt-cinq ans. Captif pendant trente-huit jours.",
+   "title": "*38 jours* captif.",
+   "img": "assets/archives/cesar_pirates/buste.jpg",
+   "img_label": "CÉSAR · BUSTE DE TUSCULUM"
+  },
+  {
+   "say": "Il leur lit ses poèmes. Et les traite de barbares.",
+   "title": "Il leur lit *ses poèmes.*",
+   "icon": "📜"
+  },
+  {
+   "say": "Le pire ? Il leur promet, en riant, de tous les crucifier.",
+   "title": "« Je vous *crucifierai.* »",
+   "flash": true
+  },
+  {
+   "say": "Les pirates rient. Ils croient à une blague.",
+   "title": "Ils *rient.*",
+   "icon": "😂"
+  },
+  {
+   "say": "Rançon payée, César arme des navires et les rattrape.",
+   "title": "Il les *rattrape.*",
+   "img": "assets/archives/cesar_pirates/cilicie.jpg",
+   "img_label": "CÉSAR ET LES PIRATES CILICIENS"
+  },
+  {
+   "say": "Il tient parole. Selon Suétone, il les fait d'abord égorger, par clémence.",
+   "title": "Promesse *tenue.*",
+   "stamp": "Tenue",
+   "stamp_at": 1.2
+  },
+  {
+   "say": "Toi, tu l'aurais pris au sérieux ?",
+   "title": "Tu l'aurais *pris au sérieux ?*",
+   "sub": "Oui · Non"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier demain matin.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier demain 8h"
+  }
+ ]
+}

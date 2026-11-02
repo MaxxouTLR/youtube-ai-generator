@@ -1,0 +1,66 @@
+{
+ "slug": "notre_dame_victor_hugo",
+ "num": 52,
+ "source": "https://fr.wikipedia.org/wiki/Notre-Dame_de_Paris_(roman)",
+ "caption": "#CapCut 📁 Dossier n°52 — Sans un roman, Notre-Dame aurait pu disparaître 📖 Tu as lu le livre ? #notredame #histoire #paris #victorhugo #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Sans un roman, Notre-Dame aurait pu disparaître.",
+   "title": "Quel livre *l'a sauvée ?*",
+   "sub": "Tu l'as sûrement lu.",
+   "img": "assets/archives/notre_dame_victor_hugo/daguerreotype.jpg",
+   "img_label": "NOTRE-DAME · PHOTO DE BAYARD"
+  },
+  {
+   "say": "Au début du dix-neuvième siècle, la cathédrale tombe en ruine.",
+   "title": "Elle tombe *en ruine.*",
+   "icon": "🏚️"
+  },
+  {
+   "say": "Le pire ? À la Révolution, on décapite ses statues de rois.",
+   "title": "Statues *décapitées.*",
+   "flash": true,
+   "stamp": "Décapitées",
+   "stamp_at": 1.3
+  },
+  {
+   "say": "Erreur : ce sont des rois de la Bible, pas de France.",
+   "title": "Des rois *de la Bible.*",
+   "icon": "👑"
+  },
+  {
+   "say": "En 1831, Victor Hugo publie Notre-Dame de Paris.",
+   "title": "Victor *Hugo.*",
+   "img": "assets/archives/notre_dame_victor_hugo/hugo.jpg",
+   "img_label": "VICTOR HUGO · 1829"
+  },
+  {
+   "say": "Quasimodo, Esmeralda… et un cri d'alarme pour le monument.",
+   "title": "Un *cri d'alarme.*",
+   "img": "assets/archives/notre_dame_victor_hugo/quasimodo.jpg",
+   "img_label": "QUASIMODO · ILLUSTRATION"
+  },
+  {
+   "say": "Ça marche : Viollet-le-Duc la restaure pendant vingt ans.",
+   "led": "20 ANS",
+   "led_sub": "de restauration"
+  },
+  {
+   "say": "Sauf que la flèche qu'il ajoute… c'est celle tombée en 2019.",
+   "title": "La flèche *de 2019.*",
+   "flash": true,
+   "stamp": "2019",
+   "stamp_at": 1.3
+  },
+  {
+   "say": "Et toi, tu as lu le roman ?",
+   "title": "Tu as lu *le roman ?*",
+   "sub": "Oui · Pas encore"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier demain matin.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier demain 8h"
+  }
+ ]
+}

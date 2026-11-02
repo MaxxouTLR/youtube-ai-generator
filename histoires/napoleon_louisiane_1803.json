@@ -1,0 +1,63 @@
+{
+ "slug": "napoleon_louisiane_1803",
+ "num": 47,
+ "source": "https://fr.wikipedia.org/wiki/Vente_de_la_Louisiane",
+ "caption": "#CapCut 📁 Dossier n°47 — Napoléon a vendu un territoire 4 fois grand comme la France 🗺️ Bonne affaire ou erreur ? #napoleon #histoire #usa #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Napoléon vend un territoire quatre fois grand comme la France.",
+   "title": "Pourquoi Napoléon *vend tout ?*",
+   "sub": "Il n'y avait jamais mis les pieds.",
+   "img": "assets/archives/napoleon_louisiane_1803/bonaparte.jpg",
+   "img_label": "BONAPARTE PREMIER CONSUL · GÉRARD"
+  },
+  {
+   "say": "Le prix : quinze millions de dollars. Pour deux millions de kilomètres carrés.",
+   "led": "15 M$",
+   "led_sub": "2 millions de km²"
+  },
+  {
+   "say": "Le territoire : la Louisiane. Bien plus grande que l'État actuel.",
+   "title": "La *Louisiane.*",
+   "img": "assets/archives/napoleon_louisiane_1803/carte.jpg",
+   "img_label": "LA LOUISIANE VENDUE EN 1803"
+  },
+  {
+   "say": "L'acheteur : les États-Unis de Thomas Jefferson.",
+   "title": "Acheteur : *Jefferson.*",
+   "img": "assets/archives/napoleon_louisiane_1803/jefferson.jpg",
+   "img_label": "THOMAS JEFFERSON · 1800"
+  },
+  {
+   "say": "Le plus fou ? Les Américains voulaient juste acheter La Nouvelle-Orléans.",
+   "title": "Juste *une ville.*",
+   "flash": true
+  },
+  {
+   "say": "Napoléon a besoin d'argent pour sa guerre contre l'Angleterre.",
+   "title": "L'argent *de la guerre.*",
+   "icon": "⚔️"
+  },
+  {
+   "say": "D'un coup, les États-Unis doublent presque de taille.",
+   "led": "x2",
+   "led_sub": "la taille des USA"
+  },
+  {
+   "say": "Aujourd'hui, ce territoire couvre tout ou partie de quinze États américains.",
+   "title": "*Quinze* États.",
+   "stamp": "Vendu",
+   "stamp_at": 1.4
+  },
+  {
+   "say": "Alors, bonne affaire ou erreur historique ?",
+   "title": "Bonne affaire ou *erreur ?*",
+   "sub": "Bonne affaire · Erreur"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier ce soir 19h"
+  }
+ ]
+}

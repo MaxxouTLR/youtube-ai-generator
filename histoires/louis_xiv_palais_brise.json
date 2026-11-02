@@ -1,0 +1,63 @@
+{
+ "slug": "louis_xiv_palais_brise",
+ "num": 41,
+ "source": "https://fr.wikipedia.org/wiki/Louis_XIV",
+ "caption": "#CapCut 📁 Dossier n°41 — Quand Louis XIV buvait, le vin ressortait par son nez 👃 Roi, à ce prix ? #versailles #histoire #louisxiv #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Quand Louis XIV boit, le vin ressort par son nez.",
+   "title": "Pourquoi le vin sort *par son nez ?*",
+   "sub": "Personne ne t'en a parlé à l'école.",
+   "img": "assets/archives/louis_xiv_palais_brise/rigaud.jpg",
+   "img_label": "LOUIS XIV PAR RIGAUD · 1701"
+  },
+  {
+   "say": "Le Roi-Soleil n'a presque plus de dents en haut.",
+   "title": "Plus de *dents.*",
+   "icon": "🦷"
+  },
+  {
+   "say": "Le pire ? En les arrachant, on lui brise une partie du palais.",
+   "title": "Le palais *brisé.*",
+   "flash": true
+  },
+  {
+   "say": "Résultat : un trou entre la bouche et le nez.",
+   "title": "Un trou vers *le nez.*",
+   "icon": "👃"
+  },
+  {
+   "say": "Le remède ? Le fer rouge, appliqué plusieurs fois sur la plaie.",
+   "title": "Le *fer rouge.*",
+   "icon": "🔥",
+   "stamp": "Brûlé",
+   "stamp_at": 1.3
+  },
+  {
+   "say": "Tout est noté dans son Journal de santé, tenu par ses médecins.",
+   "title": "Son *Journal de santé.*",
+   "img": "assets/archives/louis_xiv_palais_brise/mignard.jpg",
+   "img_label": "LOUIS XIV · ÉCOLE DE MIGNARD"
+  },
+  {
+   "say": "Sauf que le roi reste un ogre à table, selon la princesse Palatine.",
+   "title": "Un *ogre* à table.",
+   "flash": true
+  },
+  {
+   "say": "Il régnera encore trente ans. Soixante-douze ans de règne au total.",
+   "led": "72 ANS",
+   "led_sub": "de règne"
+  },
+  {
+   "say": "Toi, tu aurais voulu être roi, à ce prix ?",
+   "title": "Roi, *à ce prix ?*",
+   "sub": "Oui · Non merci"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier ce soir 19h"
+  }
+ ]
+}

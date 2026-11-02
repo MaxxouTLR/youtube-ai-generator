@@ -1,0 +1,64 @@
+{
+ "slug": "lincoln_booth_sauvetage",
+ "num": 44,
+ "source": "https://fr.wikipedia.org/wiki/Edwin_Booth",
+ "caption": "#CapCut 📁 Dossier n°44 — Le frère de l'assassin de Lincoln a sauvé le fils de Lincoln 🚂 Tu crois au destin ? #lincoln #histoire #usa #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Le frère de l'assassin de Lincoln a sauvé son fils.",
+   "title": "Il a sauvé *qui ?*",
+   "sub": "Le hasard est terrifiant.",
+   "img": "assets/archives/lincoln_booth_sauvetage/edwin.jpg",
+   "img_label": "EDWIN BOOTH · ACTEUR"
+  },
+  {
+   "say": "Sur un quai de gare bondé, un jeune homme tombe vers les rails.",
+   "title": "Il tombe *vers les rails.*",
+   "icon": "🚂"
+  },
+  {
+   "say": "Un inconnu l'attrape par le col et le remonte.",
+   "title": "Rattrapé *par le col.*",
+   "icon": "✋"
+  },
+  {
+   "say": "Le jeune homme, c'est Robert Lincoln. Le fils du président.",
+   "title": "Le fils *du président.*",
+   "img": "assets/archives/lincoln_booth_sauvetage/robert.jpg",
+   "img_label": "ROBERT TODD LINCOLN"
+  },
+  {
+   "say": "Son sauveur : Edwin Booth, star du théâtre américain.",
+   "title": "Edwin *Booth.*",
+   "icon": "🎭"
+  },
+  {
+   "say": "Le pire ? Peu après, son frère John assassine Abraham Lincoln.",
+   "title": "Son frère *tue Lincoln.*",
+   "flash": true,
+   "img": "assets/archives/lincoln_booth_sauvetage/john.jpg",
+   "img_label": "JOHN WILKES BOOTH"
+  },
+  {
+   "say": "Avril 1865. Au théâtre Ford, d'une balle dans la tête.",
+   "led": "1865",
+   "led_sub": "théâtre Ford"
+  },
+  {
+   "say": "Edwin n'apprend que plus tard qui il a sauvé. Ça le réconfortera.",
+   "title": "Un *réconfort.*",
+   "stamp": "Hasard",
+   "stamp_at": 1.3
+  },
+  {
+   "say": "Et toi, tu crois au destin ?",
+   "title": "Tu crois *au destin ?*",
+   "sub": "Oui · Non"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier demain matin.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier demain 8h"
+  }
+ ]
+}

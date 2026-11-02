@@ -1,0 +1,65 @@
+{
+ "slug": "statue_liberte_couleur",
+ "num": 43,
+ "source": "https://fr.wikipedia.org/wiki/Statue_de_la_Libert%C3%A9",
+ "caption": "#CapCut 📁 Dossier n°43 — La statue de la Liberté n'a pas toujours été verte 🗽 Tu la préfères verte ou cuivre ? #histoire #newyork #paris #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "La statue de la Liberté n'a pas toujours été verte.",
+   "title": "De quelle couleur *était-elle ?*",
+   "sub": "Regarde bien la fin.",
+   "img": "assets/archives/statue_liberte_couleur/construction.jpg",
+   "img_label": "CONSTRUCTION À PARIS · VERS 1883"
+  },
+  {
+   "say": "En 1886, elle brille comme une casserole neuve.",
+   "led": "CUIVRE",
+   "led_sub": "sa vraie couleur"
+  },
+  {
+   "say": "Sauf que le cuivre s'oxyde à l'air salé de New York.",
+   "title": "Le sel *la ronge.*",
+   "flash": true
+  },
+  {
+   "say": "En une vingtaine d'années, une couche verte la recouvre.",
+   "led": "≈ 20 ANS",
+   "led_sub": "pour verdir"
+  },
+  {
+   "say": "Et elle est française : construite à Paris, par Bartholdi.",
+   "title": "Construite *à Paris.*",
+   "img": "assets/archives/statue_liberte_couleur/tete_1878.jpg",
+   "img_label": "SA TÊTE EXPOSÉE À PARIS · 1878"
+  },
+  {
+   "say": "Sa charpente intérieure ? Signée Gustave Eiffel.",
+   "title": "Signée *Eiffel.*",
+   "icon": "🗼"
+  },
+  {
+   "say": "Le pire ? En 1906, on envisage de la repeindre.",
+   "title": "La *repeindre ?*",
+   "flash": true,
+   "icon": "🖌️"
+  },
+  {
+   "say": "Le public proteste. Et ce vert la protège de la corrosion.",
+   "title": "Le vert *la protège.*",
+   "stamp": "Sauvée",
+   "stamp_at": 1.4,
+   "img": "assets/archives/statue_liberte_couleur/aujourdhui.jpg",
+   "img_label": "LA STATUE AUJOURD'HUI"
+  },
+  {
+   "say": "Et toi, tu la préfères verte ou cuivre ?",
+   "title": "Verte ou *cuivre ?*",
+   "sub": "Verte · Cuivre"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier ce soir 19h"
+  }
+ ]
+}

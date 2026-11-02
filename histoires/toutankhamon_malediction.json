@@ -1,0 +1,68 @@
+{
+ "slug": "toutankhamon_malediction",
+ "num": 46,
+ "source": "https://fr.wikipedia.org/wiki/Mal%C3%A9diction_de_Tout%C3%A2nkhamon",
+ "caption": "#CapCut 📁 Dossier n°46 — Il a ouvert le tombeau de Toutânkhamon… et il est mort 5 mois après 🦟 Tu crois à la malédiction ? #egypte #histoire #toutankhamon #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Il ouvre le tombeau. Cinq mois après, il est mort.",
+   "title": "La malédiction *existe-t-elle ?*",
+   "sub": "La réponse est dans les chiffres.",
+   "img": "assets/archives/toutankhamon_malediction/tombeau.jpg",
+   "img_label": "CARNARVON ET CARTER AU TOMBEAU · 1922"
+  },
+  {
+   "say": "Lord Carnarvon finance la fouille du tombeau de Toutânkhamon.",
+   "title": "Lord *Carnarvon.*",
+   "img": "assets/archives/toutankhamon_malediction/carnarvon.jpg",
+   "img_label": "LORD CARNARVON"
+  },
+  {
+   "say": "Novembre 1922. Howard Carter découvre des choses merveilleuses.",
+   "title": "Des choses *merveilleuses.*",
+   "img": "assets/archives/toutankhamon_malediction/carter.jpg",
+   "img_label": "HOWARD CARTER DANS LE TOMBEAU"
+  },
+  {
+   "say": "Le pire ? En avril 1923, Carnarvon meurt au Caire.",
+   "title": "Avril 1923 : *il meurt.*",
+   "flash": true,
+   "stamp": "Malédiction ?",
+   "stamp_at": 1.4
+  },
+  {
+   "say": "Les journaux s'enflamment : c'est la malédiction du pharaon.",
+   "title": "La *malédiction ?*",
+   "icon": "📰"
+  },
+  {
+   "say": "Sauf que… il meurt d'une piqûre de moustique infectée.",
+   "title": "Un *moustique.*",
+   "icon": "🦟",
+   "flash": true
+  },
+  {
+   "say": "Et Howard Carter, le premier entré ? Il vit encore seize ans.",
+   "led": "16 ANS",
+   "led_sub": "après l'ouverture"
+  },
+  {
+   "say": "Aucune étude sérieuse n'a jamais prouvé la moindre malédiction.",
+   "title": "Aucune *preuve.*",
+   "stamp": "Mythe",
+   "stamp_at": 1.0,
+   "img": "assets/archives/toutankhamon_malediction/masque.jpg",
+   "img_label": "MASQUE DE TOUTÂNKHAMON · LE CAIRE"
+  },
+  {
+   "say": "Et toi, tu y crois, à la malédiction ?",
+   "title": "Tu y crois, *toi ?*",
+   "sub": "Oui · Non"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier demain matin.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier demain 8h"
+  }
+ ]
+}

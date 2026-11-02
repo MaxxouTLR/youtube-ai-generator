@@ -1,0 +1,64 @@
+{
+ "slug": "churchill_nobel_litterature",
+ "num": 49,
+ "source": "https://fr.wikipedia.org/wiki/Winston_Churchill",
+ "caption": "#CapCut 📁 Dossier n°49 — Churchill a reçu un prix Nobel… mais pas celui de la paix 📚 Tu le savais ? #churchill #histoire #ww2 #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Churchill reçoit un prix Nobel. Pas celui de la paix.",
+   "title": "Quel Nobel pour *Churchill ?*",
+   "sub": "Il n'est même pas venu le chercher.",
+   "img": "assets/archives/churchill_nobel_litterature/churchill.jpg",
+   "img_label": "WINSTON CHURCHILL"
+  },
+  {
+   "say": "1953 : prix Nobel de littérature.",
+   "led": "NOBEL",
+   "led_sub": "de littérature"
+  },
+  {
+   "say": "Le plus fou ? Ses mémoires de guerre font six volumes.",
+   "led": "6 TOMES",
+   "led_sub": "de mémoires",
+   "flash": true
+  },
+  {
+   "say": "Le jury salue aussi ses discours, ceux qui ont tenu l'Angleterre debout.",
+   "title": "Des discours *historiques.*",
+   "img": "assets/archives/churchill_nobel_litterature/ve_day.jpg",
+   "img_label": "VE DAY · LONDRES 1945"
+  },
+  {
+   "say": "« Nous ne nous rendrons jamais. » Juin 1940.",
+   "title": "« Nous ne nous rendrons *jamais.* »",
+   "icon": "📻"
+  },
+  {
+   "say": "Sauf que… il ne vient pas à Stockholm.",
+   "title": "Absent *à Stockholm.*",
+   "flash": true
+  },
+  {
+   "say": "Il est en conférence aux Bermudes. Sa femme Clementine reçoit le prix.",
+   "title": "Clementine *reçoit le prix.*",
+   "icon": "🏆"
+  },
+  {
+   "say": "Et il peignait aussi : plus de cinq cents tableaux.",
+   "led": "500+",
+   "led_sub": "tableaux peints",
+   "stamp": "Artiste",
+   "stamp_at": 1.3
+  },
+  {
+   "say": "Tu savais qu'il était Nobel de littérature ?",
+   "title": "Tu le *savais ?*",
+   "sub": "Oui · Non"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier ce soir 19h"
+  }
+ ]
+}
