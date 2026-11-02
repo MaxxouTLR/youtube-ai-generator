@@ -39,10 +39,11 @@ if __name__ == "__main__":
     # python demo_fr.py <sortie> [histoires/<sujet>.json] : sans fichier, demo 1518 ci-dessus
     out_dir = sys.argv[1]
     os.makedirs(out_dir, exist_ok=True)
-    slug, num = "1518", None
+    slug, num, nappe = "1518", None, True
     if len(sys.argv) > 2:
         story = json.load(open(sys.argv[2], encoding="utf-8"))
         BEATS, slug, num = story["beats"], story["slug"], story.get("num")
+        nappe = story.get("nappe", True)   # false : voix + bruitages seulement (le son de fond est ajoute dans TikTok)
     name = os.environ.get("TTS_VOICE", "voix").split("-")[2].replace("Neural", "").replace("Multilingual", "")
     work = os.path.join(out_dir, f"_work_{name}")
     os.makedirs(work, exist_ok=True)
@@ -51,5 +52,5 @@ if __name__ == "__main__":
         text, out_path=os.path.join(work, "voice.mp3"), timing_path=os.path.join(work, "timing.json"))
     words = json.load(open(timing, encoding="utf-8"))
     out = dossier_video.make_short(audio, words, [dict(b) for b in BEATS],
-                                   os.path.join(out_dir, f"{slug}_{name}.mp4"), work, num)
+                                   os.path.join(out_dir, f"{slug}_{name}.mp4"), work, num, nappe)
     print("OK", out)

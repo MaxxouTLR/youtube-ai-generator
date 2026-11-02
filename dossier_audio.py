@@ -158,7 +158,8 @@ VOICE_CHAIN = ("highpass=f=75,equalizer=f=220:t=q:w=1:g=-2.5,equalizer=f=3200:t=
                "acompressor=threshold=0.08:ratio=3.5:attack=4:release=90:makeup=1.8")
 
 
-def mix(voice: str, beats: list[dict], total: float, out_path: str, work_dir: str, seed: int | None = None) -> str:
+def mix(voice: str, beats: list[dict], total: float, out_path: str, work_dir: str, seed: int | None = None,
+        bed_volume: float = 0.16) -> str:
     """Voix traitee + nappe en ducking + impact d'ouverture + impacts/montees sur les retournements + tampons.
     seed : numero du dossier, pour que chaque histoire ait son propre habillage (reproductible)."""
     rng = np.random.default_rng(seed if seed is not None else int(total * 1000))
@@ -183,7 +184,7 @@ def mix(voice: str, beats: list[dict], total: float, out_path: str, work_dir: st
     inputs = ["-i", voice, "-i", files["bed"]]
     # nappe nettement sous la voix (0.30 -> 0.16) et plus ecrasee quand la voix parle (ratio 7 -> 12)
     fc = [f"[0:a]{fmt},{VOICE_CHAIN},asplit=2[voice][sc]",
-          f"[1:a]{fmt},volume=0.16[bed]",
+          f"[1:a]{fmt},volume={bed_volume}[bed]",   # 0 : pas de nappe (02/11/2026, son TikTok ajoute a la publication)
           "[bed][sc]sidechaincompress=threshold=0.02:ratio=12:attack=15:release=450[duck]"]
     mixin = ["[voice]", "[duck]"]
     for i, (kind, at, vol) in enumerate(events):

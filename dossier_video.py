@@ -110,7 +110,7 @@ def render(beats: list[dict], total: float, out_path: str, num: int | None = Non
 
 
 def make_short(voice_path: str, words: list[dict], beats: list[dict], out_path: str, work_dir: str,
-               num: int | None = None) -> str:
+               num: int | None = None, nappe: bool = True) -> str:
     os.makedirs(work_dir, exist_ok=True)
     total = motion_video._probe_duration(voice_path)
     beats = time_beats(beats, words, total)
@@ -123,7 +123,8 @@ def make_short(voice_path: str, words: list[dict], beats: list[dict], out_path: 
     if any(b.get("shots") for b in beats):
         snd = [{"start": x["start"], "end": x["end"], "flash": x.get("bg") == "red" or bool(x.get("hit")),
                 "stamp": x.get("stamp"), "stamp_at": x.get("stamp_at", 0.12)} for x in time_shots(beats, words, total)]
-    audio = dossier_audio.mix(voice_path, snd, total, os.path.join(work_dir, "audio.m4a"), work_dir, num)
+    audio = dossier_audio.mix(voice_path, snd, total, os.path.join(work_dir, "audio.m4a"), work_dir, num,
+                              bed_volume=0.16 if nappe else 0.0)
     r = subprocess.run([motion_video.FFMPEG, "-y", "-i", silent, "-i", audio, "-map", "0:v", "-map", "1:a", "-c", "copy",
                         "-shortest", "-movflags", "+faststart", out_path], capture_output=True, text=True)
     if r.returncode != 0:
