@@ -1,0 +1,269 @@
+{
+ "slug": "hitler_beaux_arts_vienne_v2",
+ "num": 37,
+ "source": "https://fr.wikipedia.org/wiki/Adolf_Hitler",
+ "caption": "#CapCut 📁 Dossier n°37 — Avant la guerre, Hitler voulait devenir peintre… et il a été refusé deux fois 🎨 Tu le savais ? #histoire #hitler #vienne #lesaviezvous #dossier",
+ "note": "Montage dynamique v2 (v2_convert.py, 02/11/2026) : coupes sur le tempo de « The Scooby Snacks », voix seule. A publier depuis TikTok avec le son, demarre sur un kick.",
+ "bpm": 175.75,
+ "nappe": false,
+ "bruitages": false,
+ "beats": [
+  {
+   "say": "Cet homme voulait devenir peintre. Et il a été refusé deux fois.",
+   "shots": [
+    {
+     "img": "assets/archives/hitler_beaux_arts_vienne/aquarelle_opera.jpg",
+     "mode": "fade",
+     "label": "L'OPÉRA DE VIENNE · AQUARELLE",
+     "focus": true
+    },
+    {
+     "img": "assets/archives/hitler_beaux_arts_vienne/aquarelle_opera.jpg",
+     "mode": "fade",
+     "crop": [
+      0.2,
+      0.1,
+      0.6,
+      0.8
+     ],
+     "rings": true,
+     "on": "devenir"
+    },
+    {
+     "text": "*cette aquarelle*",
+     "bg": "red",
+     "hit": true,
+     "on": "il"
+    },
+    {
+     "img": "assets/archives/hitler_beaux_arts_vienne/academie.jpg",
+     "mode": "fade",
+     "on": "refusé"
+    }
+   ]
+  },
+  {
+   "say": "Cet homme, c'est Adolf Hitler.",
+   "shots": [
+    {
+     "text": "*Adolf Hitler.*",
+     "bg": "red",
+     "hit": true
+    },
+    {
+     "img": "assets/archives/hitler_beaux_arts_vienne/aquarelle_hof.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "c'est"
+    }
+   ]
+  },
+  {
+   "say": "En 1907, il passe le concours de l'Académie des beaux-arts de Vienne.",
+   "shots": [
+    {
+     "img": "assets/archives/hitler_beaux_arts_vienne/academie.jpg",
+     "mode": "fade",
+     "label": "ACADÉMIE DES BEAUX-ARTS DE VIENNE"
+    },
+    {
+     "img": "assets/archives/hitler_beaux_arts_vienne/academie.jpg",
+     "mode": "fade",
+     "crop": [
+      0.25,
+      0.15,
+      0.5,
+      0.45
+     ],
+     "on": "passe"
+    },
+    {
+     "text": "*les Beaux-Arts*",
+     "bg": "red",
+     "hit": true,
+     "on": "beaux-arts"
+    },
+    {
+     "img": "assets/archives/hitler_beaux_arts_vienne/aquarelle_opera.jpg",
+     "mode": "fade",
+     "crop": [
+      0.2,
+      0.1,
+      0.6,
+      0.8
+     ],
+     "on": "beaux-arts"
+    }
+   ]
+  },
+  {
+   "say": "Ses dessins sont jugés insuffisants.",
+   "shots": [
+    {
+     "icon": "✏️",
+     "rings": true
+    },
+    {
+     "text": "*Insuffisant*",
+     "bg": "red",
+     "hit": true,
+     "on": "insuffisants.",
+     "stamp": "REFUSÉ"
+    }
+   ]
+  },
+  {
+   "say": "Le pire ? L'année suivante, il n'est même pas admis à l'examen.",
+   "shots": [
+    {
+     "icon": "🚫",
+     "rings": true
+    },
+    {
+     "img": "assets/archives/hitler_beaux_arts_vienne/quai_vienne.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "même",
+     "stamp": "REFUSÉ"
+    },
+    {
+     "text": "*pas même admis*",
+     "bg": "red",
+     "hit": true,
+     "on": "admis"
+    },
+    {
+     "img": "assets/archives/hitler_beaux_arts_vienne/vienne_1900.jpg",
+     "mode": "fade",
+     "on": "admis"
+    }
+   ]
+  },
+  {
+   "say": "On lui conseille l'architecture. Mais il n'a pas le diplôme requis.",
+   "shots": [
+    {
+     "img": "assets/archives/hitler_beaux_arts_vienne/vienne_1900.jpg",
+     "mode": "fade",
+     "label": "VIENNE VERS 1900"
+    },
+    {
+     "img": "assets/archives/hitler_beaux_arts_vienne/vienne_1900.jpg",
+     "mode": "fade",
+     "crop": [
+      0.45,
+      0.2,
+      0.5,
+      0.7
+     ],
+     "rings": true,
+     "on": "l'architecture."
+    },
+    {
+     "img": "assets/archives/hitler_beaux_arts_vienne/academie.jpg",
+     "mode": "fade",
+     "flip": true,
+     "crop": [
+      0.18,
+      0.04,
+      0.64,
+      0.5
+     ],
+     "on": "le"
+    },
+    {
+     "text": "*Pas le diplôme*",
+     "bg": "red",
+     "hit": true,
+     "on": "diplôme"
+    }
+   ]
+  },
+  {
+   "say": "Il vit alors pauvrement, en vendant des aquarelles de la ville.",
+   "shots": [
+    {
+     "img": "assets/archives/hitler_beaux_arts_vienne/aquarelle_hof.jpg",
+     "mode": "fade",
+     "label": "UNE DE SES AQUARELLES"
+    },
+    {
+     "img": "assets/archives/hitler_beaux_arts_vienne/aquarelle_hof.jpg",
+     "mode": "fade",
+     "crop": [
+      0.2,
+      0.1,
+      0.6,
+      0.8
+     ],
+     "on": "pauvrement,"
+    },
+    {
+     "text": "*des aquarelles*",
+     "bg": "red",
+     "hit": true,
+     "on": "aquarelles"
+    },
+    {
+     "img": "assets/archives/hitler_beaux_arts_vienne/aquarelle_hof.jpg",
+     "mode": "fade",
+     "on": "de"
+    }
+   ]
+  },
+  {
+   "say": "Quelques années plus tard, il deviendra l'un des pires dictateurs de l'Histoire.",
+   "shots": [
+    {
+     "img": "assets/archives/hitler_beaux_arts_vienne/quai_vienne.jpg",
+     "mode": "fade",
+     "label": "VIENNE · DÉBUT DU XXᵉ SIÈCLE"
+    },
+    {
+     "img": "assets/archives/hitler_beaux_arts_vienne/quai_vienne.jpg",
+     "mode": "fade",
+     "crop": [
+      0.05,
+      0.2,
+      0.5,
+      0.7
+     ],
+     "rings": true,
+     "on": "tard,"
+    },
+    {
+     "text": "*pires dictateurs*",
+     "bg": "red",
+     "hit": true,
+     "on": "dictateurs"
+    },
+    {
+     "img": "assets/archives/hitler_beaux_arts_vienne/aquarelle_opera.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "dictateurs"
+    }
+   ]
+  },
+  {
+   "say": "Et toi, tu le savais ?",
+   "shots": [
+    {
+     "text": "Tu le *savais ?*",
+     "img": "assets/archives/hitler_beaux_arts_vienne/quai_vienne.jpg",
+     "mode": "fade",
+     "rings": true
+    }
+   ]
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "shots": [
+    {
+     "text": "*Abonne-toi.*",
+     "bg": "red"
+    }
+   ]
+  }
+ ]
+}

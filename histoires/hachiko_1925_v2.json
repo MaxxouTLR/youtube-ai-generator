@@ -1,0 +1,278 @@
+{
+ "slug": "hachiko_1925_v2",
+ "num": 36,
+ "source": "https://fr.wikipedia.org/wiki/Hachik%C5%8D",
+ "caption": "#CapCut 📁 Dossier n°36 — Hachikō a attendu son maître à la gare… pendant presque 10 ans 🐕 Tu connaissais son histoire ? #histoire #japon #chien #hachiko #lesaviezvous #dossier",
+ "note": "Montage dynamique v2 (v2_convert.py, 02/11/2026) : coupes sur le tempo de « The Scooby Snacks », voix seule. A publier depuis TikTok avec le son, demarre sur un kick.",
+ "bpm": 175.75,
+ "nappe": false,
+ "bruitages": false,
+ "beats": [
+  {
+   "say": "Son maître est mort. Ce chien l'a attendu presque dix ans.",
+   "shots": [
+    {
+     "img": "assets/archives/hachiko_1925/hachiko_gare.jpg",
+     "mode": "fade",
+     "label": "HACHIKŌ À LA GARE DE SHIBUYA · 1933",
+     "focus": true
+    },
+    {
+     "img": "assets/archives/hachiko_1925/hachiko_gare.jpg",
+     "mode": "fade",
+     "crop": [
+      0.2,
+      0.1,
+      0.6,
+      0.8
+     ],
+     "rings": true,
+     "on": "mort."
+    },
+    {
+     "text": "*chaque soir*",
+     "bg": "red",
+     "hit": true,
+     "on": "l'a"
+    },
+    {
+     "img": "assets/archives/hachiko_1925/derniere_photo.jpg",
+     "mode": "fade",
+     "on": "presque"
+    }
+   ]
+  },
+  {
+   "say": "Chaque jour, à l'heure du train du soir.",
+   "shots": [
+    {
+     "img": "assets/archives/hachiko_1925/hachiko_veille.jpg",
+     "mode": "fade",
+     "label": "HACHIKŌ EN ATTENTE"
+    },
+    {
+     "img": "assets/archives/hachiko_1925/hachiko_veille.jpg",
+     "mode": "fade",
+     "crop": [
+      0.05,
+      0.2,
+      0.5,
+      0.7
+     ],
+     "on": "l'heure"
+    },
+    {
+     "text": "*Même heure*",
+     "bg": "red",
+     "hit": true,
+     "on": "train"
+    }
+   ]
+  },
+  {
+   "say": "Son maître, c'est le professeur Ueno, qui rentre chaque soir à la gare de Shibuya.",
+   "shots": [
+    {
+     "img": "assets/archives/hachiko_1925/ueno.jpg",
+     "mode": "fade",
+     "label": "HIDESABURŌ UENO"
+    },
+    {
+     "img": "assets/archives/hachiko_1925/ueno.jpg",
+     "mode": "fade",
+     "crop": [
+      0.18,
+      0.04,
+      0.64,
+      0.5
+     ],
+     "rings": true,
+     "on": "le"
+    },
+    {
+     "text": "*Ueno*",
+     "bg": "red",
+     "hit": true,
+     "on": "Ueno,"
+    },
+    {
+     "img": "assets/archives/hachiko_1925/hachiko_gare.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "soir"
+    },
+    {
+     "img": "assets/archives/hachiko_1925/hachiko_veille.jpg",
+     "mode": "fade",
+     "crop": [
+      0.2,
+      0.1,
+      0.6,
+      0.8
+     ],
+     "on": "gare"
+    }
+   ]
+  },
+  {
+   "say": "Le pire ? En mai 1925, le professeur meurt soudainement au travail.",
+   "shots": [
+    {
+     "icon": "🕯️",
+     "rings": true,
+     "bg": "red",
+     "hit": true
+    },
+    {
+     "img": "assets/archives/hachiko_1925/shibuya_1939.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "professeur"
+    },
+    {
+     "text": "*il meurt*",
+     "bg": "red",
+     "hit": true,
+     "on": "meurt"
+    },
+    {
+     "img": "assets/archives/hachiko_1925/statue_1934.jpg",
+     "mode": "fade",
+     "on": "soudainement"
+    }
+   ]
+  },
+  {
+   "say": "Mais Hachikō continue de venir l'attendre. Pendant près de dix ans.",
+   "shots": [
+    {
+     "led": "*≈ 10 ANS*"
+    },
+    {
+     "img": "assets/archives/hachiko_1925/ueno.jpg",
+     "mode": "fade",
+     "flip": true,
+     "crop": [
+      0.18,
+      0.04,
+      0.64,
+      0.5
+     ],
+     "on": "de"
+    },
+    {
+     "img": "assets/archives/hachiko_1925/hachiko_gare.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "de"
+    },
+    {
+     "img": "assets/archives/hachiko_1925/derniere_photo.jpg",
+     "mode": "fade",
+     "on": "Pendant"
+    }
+   ]
+  },
+  {
+   "say": "En 1934, une statue est même installée devant la gare. De son vivant.",
+   "shots": [
+    {
+     "img": "assets/archives/hachiko_1925/statue_1934.jpg",
+     "mode": "fade",
+     "label": "LA PREMIÈRE STATUE · 1934"
+    },
+    {
+     "img": "assets/archives/hachiko_1925/statue_1934.jpg",
+     "mode": "fade",
+     "crop": [
+      0.2,
+      0.1,
+      0.6,
+      0.8
+     ],
+     "on": "statue"
+    },
+    {
+     "img": "assets/archives/hachiko_1925/hachiko_veille.jpg",
+     "mode": "fade",
+     "crop": [
+      0.2,
+      0.1,
+      0.6,
+      0.8
+     ],
+     "on": "De"
+    },
+    {
+     "text": "*de son vivant*",
+     "bg": "red",
+     "hit": true,
+     "on": "vivant."
+    }
+   ]
+  },
+  {
+   "say": "Il meurt en 1935.",
+   "shots": [
+    {
+     "img": "assets/archives/hachiko_1925/derniere_photo.jpg",
+     "mode": "fade",
+     "label": "SA DERNIÈRE PHOTO"
+    }
+   ]
+  },
+  {
+   "say": "Sa statue est toujours là. C'est un point de rendez-vous célèbre de Tokyo.",
+   "shots": [
+    {
+     "img": "assets/archives/hachiko_1925/shibuya_1939.jpg",
+     "mode": "fade",
+     "label": "DEVANT LA GARE DE SHIBUYA · 1939"
+    },
+    {
+     "img": "assets/archives/hachiko_1925/shibuya_1939.jpg",
+     "mode": "fade",
+     "crop": [
+      0.45,
+      0.2,
+      0.5,
+      0.7
+     ],
+     "on": "toujours"
+    },
+    {
+     "text": "*là*",
+     "bg": "red",
+     "hit": true,
+     "on": "un"
+    },
+    {
+     "img": "assets/archives/hachiko_1925/shibuya_1939.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "célèbre"
+    }
+   ]
+  },
+  {
+   "say": "Et toi, tu connaissais son histoire ?",
+   "shots": [
+    {
+     "text": "Tu connaissais *son histoire ?*",
+     "img": "assets/archives/hachiko_1925/statue_1934.jpg",
+     "mode": "fade",
+     "rings": true
+    }
+   ]
+  },
+  {
+   "say": "Abonne-toi, prochain dossier demain matin.",
+   "shots": [
+    {
+     "text": "*Abonne-toi.*",
+     "bg": "red"
+    }
+   ]
+  }
+ ]
+}

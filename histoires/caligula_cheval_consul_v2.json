@@ -1,0 +1,263 @@
+{
+ "slug": "caligula_cheval_consul_v2",
+ "num": 38,
+ "source": "https://fr.wikipedia.org/wiki/Incitatus",
+ "caption": "#CapCut 📁 Dossier n°38 — Un empereur romain aurait voulu faire de son cheval un consul 🐎 Folie ou provocation ? #histoire #rome #caligula #lesaviezvous #dossier",
+ "note": "Montage dynamique v2 (v2_convert.py, 02/11/2026) : coupes sur le tempo de « The Scooby Snacks », voix seule. A publier depuis TikTok avec le son, demarre sur un kick.",
+ "bpm": 175.75,
+ "nappe": false,
+ "bruitages": false,
+ "beats": [
+  {
+   "say": "Un empereur romain aurait voulu faire de son cheval un consul.",
+   "shots": [
+    {
+     "img": "assets/archives/caligula_cheval_consul/caligula_incitatus.jpg",
+     "mode": "key",
+     "label": "CALIGULA ET SON CHEVAL · GRAVURE",
+     "focus": true
+    },
+    {
+     "img": "assets/archives/caligula_cheval_consul/caligula_incitatus.jpg",
+     "mode": "key",
+     "crop": [
+      0.18,
+      0.04,
+      0.64,
+      0.5
+     ],
+     "rings": true,
+     "on": "aurait"
+    },
+    {
+     "img": "assets/archives/caligula_cheval_consul/cheval_romain.jpg",
+     "mode": "fade",
+     "on": "cheval"
+    },
+    {
+     "text": "*consul*",
+     "bg": "red",
+     "hit": true,
+     "on": "consul."
+    }
+   ]
+  },
+  {
+   "say": "Selon Suétone, le cheval a une écurie en marbre et une mangeoire en ivoire.",
+   "shots": [
+    {
+     "img": "assets/archives/caligula_cheval_consul/aurige.jpg",
+     "mode": "fade",
+     "label": "AURIGE ET CHEVAL · MOSAÏQUE ROMAINE"
+    },
+    {
+     "img": "assets/archives/caligula_cheval_consul/aurige.jpg",
+     "mode": "fade",
+     "crop": [
+      0.25,
+      0.15,
+      0.5,
+      0.45
+     ],
+     "on": "cheval"
+    },
+    {
+     "text": "*marbre*",
+     "bg": "red",
+     "hit": true,
+     "on": "marbre"
+    },
+    {
+     "img": "assets/archives/caligula_cheval_consul/cheval_romain.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "marbre"
+    },
+    {
+     "img": "assets/archives/caligula_cheval_consul/cheval_romain.jpg",
+     "mode": "fade",
+     "crop": [
+      0.25,
+      0.15,
+      0.5,
+      0.45
+     ],
+     "on": "mangeoire"
+    }
+   ]
+  },
+  {
+   "say": "L'empereur, c'est Caligula. Le cheval : Incitatus.",
+   "shots": [
+    {
+     "img": "assets/archives/caligula_cheval_consul/caligula.jpg",
+     "mode": "fade",
+     "label": "BUSTE DE CALIGULA · MET"
+    },
+    {
+     "img": "assets/archives/caligula_cheval_consul/caligula.jpg",
+     "mode": "fade",
+     "crop": [
+      0.18,
+      0.04,
+      0.64,
+      0.5
+     ],
+     "rings": true,
+     "on": "Le"
+    }
+   ]
+  },
+  {
+   "say": "Il aurait aussi un collier de pierres précieuses, et sa propre maison, avec des esclaves.",
+   "shots": [
+    {
+     "icon": "💎",
+     "rings": true
+    },
+    {
+     "img": "assets/archives/caligula_cheval_consul/cheval_romain.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "pierres"
+    },
+    {
+     "img": "assets/archives/caligula_cheval_consul/aurige.jpg",
+     "mode": "fade",
+     "on": "sa"
+    },
+    {
+     "text": "*maison*",
+     "bg": "red",
+     "hit": true,
+     "on": "maison,"
+    },
+    {
+     "img": "assets/archives/caligula_cheval_consul/caligula.jpg",
+     "mode": "fade",
+     "flip": true,
+     "crop": [
+      0.18,
+      0.04,
+      0.64,
+      0.5
+     ],
+     "on": "avec"
+    }
+   ]
+  },
+  {
+   "say": "La veille des courses, des soldats imposent le silence au voisinage pour qu'il dorme.",
+   "shots": [
+    {
+     "icon": "🤫",
+     "rings": true
+    },
+    {
+     "text": "*le cheval dort*",
+     "bg": "red",
+     "hit": true,
+     "on": "courses,",
+     "stamp": "SILENCE"
+    },
+    {
+     "img": "assets/archives/caligula_cheval_consul/caligula_incitatus.jpg",
+     "mode": "key",
+     "on": "imposent"
+    },
+    {
+     "img": "assets/archives/caligula_cheval_consul/senat.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "silence"
+    },
+    {
+     "img": "assets/archives/caligula_cheval_consul/aurige.jpg",
+     "mode": "fade",
+     "crop": [
+      0.25,
+      0.15,
+      0.5,
+      0.45
+     ],
+     "on": "pour"
+    }
+   ]
+  },
+  {
+   "say": "Problème : ces récits viennent d'auteurs qui détestaient Caligula.",
+   "shots": [
+    {
+     "icon": "📜",
+     "rings": true,
+     "bg": "red",
+     "hit": true
+    },
+    {
+     "text": "*hostiles*",
+     "bg": "red",
+     "hit": true,
+     "on": "viennent"
+    },
+    {
+     "img": "assets/archives/caligula_cheval_consul/caligula.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "qui"
+    }
+   ]
+  },
+  {
+   "say": "Pour beaucoup d'historiens, c'était surtout une provocation pour humilier le Sénat.",
+   "shots": [
+    {
+     "img": "assets/archives/caligula_cheval_consul/senat.jpg",
+     "mode": "fade",
+     "label": "LE SÉNAT ROMAIN · MACCARI"
+    },
+    {
+     "img": "assets/archives/caligula_cheval_consul/senat.jpg",
+     "mode": "fade",
+     "crop": [
+      0.2,
+      0.1,
+      0.6,
+      0.8
+     ],
+     "on": "c'était"
+    },
+    {
+     "img": "assets/archives/caligula_cheval_consul/caligula_incitatus.jpg",
+     "mode": "key",
+     "on": "humilier"
+    },
+    {
+     "text": "*le Sénat*",
+     "bg": "red",
+     "hit": true,
+     "on": "Sénat."
+    }
+   ]
+  },
+  {
+   "say": "Alors, folie ou provocation ?",
+   "shots": [
+    {
+     "text": "Folie ou *provocation ?*",
+     "img": "assets/archives/caligula_cheval_consul/cheval_romain.jpg",
+     "mode": "fade",
+     "rings": true
+    }
+   ]
+  },
+  {
+   "say": "Abonne-toi, prochain dossier demain matin.",
+   "shots": [
+    {
+     "text": "*Abonne-toi.*",
+     "bg": "red"
+    }
+   ]
+  }
+ ]
+}
