@@ -15,3 +15,13 @@ n°20 | vikings_casques_cornes | 30/10/2026 19:00 | programmé le 25/10/2026 (Bu
 n°21 | momies_medicament | 31/10/2026 08:00 | programmé le 26/10/2026 (Buffer)
 n°22 | mary_celeste_1872 | 31/10/2026 19:00 | programmé le 26/10/2026 (Buffer)
 test | test_onoda_methode | 26/10/2026 12:05 | publié ✅ (Buffer) — vidéo test méthode concurrents, n°13 reprogrammé à 19h
+n°26 | violet_jessop_insubmersible | 02/11/2026 19:00 | programmé le 02/11/2026 (Buffer)
+n°27 | colomb_terre_ronde | 03/11/2026 08:00 | programmé le 02/11/2026 (Buffer)
+n°28 | newton_bulle_1720 | 03/11/2026 19:00 | programmé le 02/11/2026 (Buffer)
+n°29 | thermopyles_300 | 04/11/2026 08:00 | programmé le 02/11/2026 (Buffer)
+n°30 | napoleon_lapins_1807 | 04/11/2026 19:00 | programmé le 02/11/2026 (Buffer)
+n°31 | muraille_chine_espace | 05/11/2026 08:00 | programmé le 02/11/2026 (Buffer)
+n°32 | gengis_khan_descendants | 05/11/2026 19:00 | programmé le 02/11/2026 (Buffer)
+n°33 | jeanne_darc_vetements | 06/11/2026 08:00 | programmé le 02/11/2026 (Buffer)
+n°34 | romains_urine_dents | 06/11/2026 19:00 | programmé le 02/11/2026 (Buffer)
+n°35 | ramses_ii_bourget_1976 | 07/11/2026 08:00 | programmé le 02/11/2026 (Buffer)
