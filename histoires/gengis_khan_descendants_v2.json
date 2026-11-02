@@ -3,7 +3,7 @@
  "num": 32,
  "source": "https://fr.wikipedia.org/wiki/Gengis_Khan",
  "caption": "#CapCut 📁 Dossier n°32 — Des millions d'hommes descendraient de Gengis Khan 🧬 Toi aussi, peut-être ? #histoire #genghiskhan #adn #mongolie #lesaviezvous #dossier",
- "note": "Montage dynamique v2 (v2_convert.py, 02/11/2026) : coupes sur le tempo de « The Scooby Snacks », voix seule. A publier depuis TikTok avec le son, demarre sur un kick.",
+ "note": "Montage dynamique v2 (v2_convert.py, 02/11/2026) : coupes sur le tempo de « The Scooby Snacks », voix seule. A publier depuis TikTok avec le son, demarre sur un kick. (rev 2 : croquis pales en cadre, question au-dessus de l image)",
  "bpm": 175.75,
  "nappe": false,
  "bruitages": false,
@@ -52,7 +52,7 @@
     },
     {
      "img": "assets/archives/gengis_khan_descendants/archer.jpg",
-     "mode": "key",
+     "mode": "frame",
      "flip": true,
      "on": "génétique"
     }
@@ -127,18 +127,12 @@
    "shots": [
     {
      "img": "assets/archives/gengis_khan_descendants/archer.jpg",
-     "mode": "key",
+     "mode": "frame",
      "label": "ARCHER MONGOL · MINIATURE"
     },
     {
      "img": "assets/archives/gengis_khan_descendants/archer.jpg",
-     "mode": "key",
-     "crop": [
-      0.45,
-      0.2,
-      0.5,
-      0.7
-     ],
+     "mode": "frame",
      "rings": true,
      "on": "apparue"
     },
@@ -235,7 +229,7 @@
     },
     {
      "img": "assets/archives/gengis_khan_descendants/archer.jpg",
-     "mode": "key",
+     "mode": "frame",
      "on": "sa"
     },
     {

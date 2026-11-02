@@ -28,7 +28,12 @@ def _mode(path: str) -> str:
     w, h = im.size
     px = [im.getpixel((x, y)) for x in range(0, w, max(1, w // 40)) for y in (2, h - 3)]
     px += [im.getpixel((x, y)) for y in range(0, h, max(1, h // 40)) for x in (2, w - 3)]
-    return "key" if sum(p > 225 for p in px) / len(px) > 0.85 else "fade"
+    if sum(p > 225 for p in px) / len(px) <= 0.85:
+        return "fade"
+    # fond blanc : croquis tres pale -> carte encadree (sinon rectangle beige) ; photo sombre a marge blanche -> fondu
+    t = im.copy(); t.thumbnail((200, 200)); d = [p < 150 for p in t.getdata()]
+    dark = sum(d) / len(d)
+    return "frame" if dark < 0.1 else "key" if dark < 0.3 else "fade"
 
 
 def _crop(path: str, k: int) -> list:

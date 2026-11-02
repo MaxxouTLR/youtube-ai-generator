@@ -3,7 +3,7 @@
  "num": 26,
  "source": "https://fr.wikipedia.org/wiki/Violet_Jessop",
  "caption": "#CapCut 📁 Dossier n°26 — Elle a survécu au Titanic… et à ses deux navires jumeaux 🚢 La femme la plus chanceuse (ou malchanceuse) ? #histoire #titanic #survivante #lesaviezvous #dossier",
- "note": "Montage dynamique v2 (v2_convert.py, 02/11/2026) : coupes sur le tempo de « The Scooby Snacks », voix seule. A publier depuis TikTok avec le son, demarre sur un kick.",
+ "note": "Montage dynamique v2 (v2_convert.py, 02/11/2026) : coupes sur le tempo de « The Scooby Snacks », voix seule. A publier depuis TikTok avec le son, demarre sur un kick. (rev 2 : croquis pales en cadre, question au-dessus de l image)",
  "bpm": 175.75,
  "nappe": false,
  "bruitages": false,
@@ -142,12 +142,12 @@
    "shots": [
     {
      "img": "assets/archives/violet_jessop_insubmersible/canots.jpg",
-     "mode": "key",
+     "mode": "fade",
      "label": "CANOTS DU TITANIC · 15 AVRIL 1912"
     },
     {
      "img": "assets/archives/violet_jessop_insubmersible/canots.jpg",
-     "mode": "key",
+     "mode": "fade",
      "crop": [
       0.2,
       0.1,
@@ -181,7 +181,7 @@
      "on": "neuf"
     },
     {
-     "img": "assets/archives/violet_jessop_insubmersible/stower.jpg",
+     "img": "assets/archives/violet_jessop_insubmersible/britannic.jpg",
      "mode": "fade",
      "on": "sur"
     },
@@ -208,7 +208,7 @@
      "stamp": "COULÉ"
     },
     {
-     "img": "assets/archives/violet_jessop_insubmersible/stower.jpg",
+     "img": "assets/archives/violet_jessop_insubmersible/canots.jpg",
      "mode": "fade",
      "flip": true,
      "crop": [
@@ -220,12 +220,12 @@
      "on": "Elle"
     },
     {
-     "img": "assets/archives/violet_jessop_insubmersible/stower.jpg",
+     "img": "assets/archives/violet_jessop_insubmersible/olympic_hawke.jpg",
      "mode": "fade",
      "on": "l'eau,"
     },
     {
-     "img": "assets/archives/violet_jessop_insubmersible/stower.jpg",
+     "img": "assets/archives/violet_jessop_insubmersible/titanic_1912.jpg",
      "mode": "fade",
      "flip": true,
      "on": "cogne"

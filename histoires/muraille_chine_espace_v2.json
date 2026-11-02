@@ -3,7 +3,7 @@
  "num": 31,
  "source": "https://fr.wikipedia.org/wiki/Grande_Muraille",
  "caption": "#CapCut 📁 Dossier n°31 — La Grande Muraille n'est pas visible depuis l'espace à l'œil nu 🛰️ Tu y croyais ? #histoire #chine #espace #mythe #lesaviezvous #dossier",
- "note": "Montage dynamique v2 (v2_convert.py, 02/11/2026) : coupes sur le tempo de « The Scooby Snacks », voix seule. A publier depuis TikTok avec le son, demarre sur un kick.",
+ "note": "Montage dynamique v2 (v2_convert.py, 02/11/2026) : coupes sur le tempo de « The Scooby Snacks », voix seule. A publier depuis TikTok avec le son, demarre sur un kick. (rev 2 : croquis pales en cadre, question au-dessus de l image)",
  "bpm": 175.75,
  "nappe": false,
  "bruitages": false,
@@ -160,7 +160,7 @@
     },
     {
      "img": "assets/archives/muraille_chine_espace/shanhaiguan.jpg",
-     "mode": "key",
+     "mode": "fade",
      "on": "voir"
     },
     {
@@ -194,12 +194,12 @@
    "shots": [
     {
      "img": "assets/archives/muraille_chine_espace/shanhaiguan.jpg",
-     "mode": "key",
+     "mode": "fade",
      "label": "SHANHAIGUAN · DÉBUT XXᵉ SIÈCLE"
     },
     {
      "img": "assets/archives/muraille_chine_espace/shanhaiguan.jpg",
-     "mode": "key",
+     "mode": "fade",
      "crop": [
       0.18,
       0.04,

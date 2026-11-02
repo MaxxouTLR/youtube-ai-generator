@@ -3,7 +3,7 @@
  "num": 29,
  "source": "https://fr.wikipedia.org/wiki/Bataille_des_Thermopyles",
  "caption": "#CapCut 📁 Dossier n°29 — Les 300 Spartiates n'étaient pas 300… 🛡️ Tu croyais au film ? #histoire #sparte #300 #grece #lesaviezvous #dossier",
- "note": "Montage dynamique v2 (v2_convert.py, 02/11/2026) : coupes sur le tempo de « The Scooby Snacks », voix seule. A publier depuis TikTok avec le son, demarre sur un kick.",
+ "note": "Montage dynamique v2 (v2_convert.py, 02/11/2026) : coupes sur le tempo de « The Scooby Snacks », voix seule. A publier depuis TikTok avec le son, demarre sur un kick. (rev 2 : croquis pales en cadre, question au-dessus de l image)",
  "bpm": 175.75,
  "nappe": false,
  "bruitages": false,
@@ -47,12 +47,12 @@
     },
     {
      "img": "assets/archives/thermopyles_300/david_thermopyles.jpg",
-     "mode": "key",
+     "mode": "frame",
      "on": "étaient"
     },
     {
      "img": "assets/archives/thermopyles_300/david_thermopyles.jpg",
-     "mode": "key",
+     "mode": "frame",
      "flip": true,
      "on": "sept"
     }
@@ -85,7 +85,7 @@
     },
     {
      "img": "assets/archives/thermopyles_300/david_thermopyles.jpg",
-     "mode": "key",
+     "mode": "frame",
      "on": "envahit"
     }
    ]
@@ -118,7 +118,7 @@
     },
     {
      "img": "assets/archives/thermopyles_300/david_thermopyles.jpg",
-     "mode": "key",
+     "mode": "frame",
      "flip": true,
      "on": "et"
     }
@@ -153,8 +153,8 @@
      "rings": true
     },
     {
-     "img": "assets/archives/thermopyles_300/david_thermopyles.jpg",
-     "mode": "key",
+     "img": "assets/archives/thermopyles_300/bataille.jpg",
+     "mode": "fade",
      "on": "un",
      "stamp": "TRAHISON"
     },
@@ -165,8 +165,8 @@
      "on": "traître"
     },
     {
-     "img": "assets/archives/thermopyles_300/david_thermopyles.jpg",
-     "mode": "key",
+     "img": "assets/archives/thermopyles_300/fleches.jpg",
+     "mode": "fade",
      "flip": true,
      "on": "pour"
     }
@@ -180,13 +180,13 @@
      "rings": true
     },
     {
-     "img": "assets/archives/thermopyles_300/david_thermopyles.jpg",
-     "mode": "key",
+     "img": "assets/archives/thermopyles_300/leonidas.jpg",
+     "mode": "fade",
      "on": "Mais"
     },
     {
-     "img": "assets/archives/thermopyles_300/david_thermopyles.jpg",
-     "mode": "key",
+     "img": "assets/archives/thermopyles_300/passage.jpg",
+     "mode": "fade",
      "flip": true,
      "on": "restent"
     },
@@ -207,24 +207,24 @@
      "hit": true
     },
     {
-     "img": "assets/archives/thermopyles_300/david_thermopyles.jpg",
-     "mode": "key",
+     "img": "assets/archives/thermopyles_300/bataille.jpg",
+     "mode": "fade",
      "on": "Les"
     },
     {
-     "img": "assets/archives/thermopyles_300/david_thermopyles.jpg",
-     "mode": "key",
+     "img": "assets/archives/thermopyles_300/fleches.jpg",
+     "mode": "fade",
      "flip": true,
      "on": "jusqu'à"
     },
     {
-     "img": "assets/archives/thermopyles_300/david_thermopyles.jpg",
-     "mode": "key",
+     "img": "assets/archives/thermopyles_300/leonidas.jpg",
+     "mode": "fade",
      "on": "Et"
     },
     {
-     "img": "assets/archives/thermopyles_300/david_thermopyles.jpg",
-     "mode": "key",
+     "img": "assets/archives/thermopyles_300/passage.jpg",
+     "mode": "fade",
      "flip": true,
      "on": "a"
     }
@@ -236,7 +236,7 @@
     {
      "text": "Tu croyais *au film ?*",
      "img": "assets/archives/thermopyles_300/david_thermopyles.jpg",
-     "mode": "key",
+     "mode": "frame",
      "rings": true
     }
    ]

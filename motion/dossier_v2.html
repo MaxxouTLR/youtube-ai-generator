@@ -55,7 +55,7 @@ function processed(s) {
     if (mode === "key") {
       const x = (i / 4) % W, y = Math.floor(i / 4 / W);
       const edge = Math.min(x, y, W - 1 - x, H - 1 - y) / 18;   // bords toujours fondus
-      p[i + 3] = 255 * clamp((0.93 - l) / 0.12) * clamp(edge);
+      p[i + 3] = 255 * clamp((0.84 - l) / 0.24) * clamp(edge);   // seuil strict : un croquis pale ne devient plus un rectangle beige;
       p[i] = 40 + 215 * c; p[i + 1] = 34 + 205 * c; p[i + 2] = 28 + 180 * c;
     }
   }
@@ -175,7 +175,7 @@ function drawShot(s, t) {
   let bw = 0, bh = 0;
   if (s.img) {
     const o = processed(s);
-    if (o) { const maxW = s.mode === "frame" ? 900 : 1060, maxH = s.mode === "frame" ? 900 : 1100, f = Math.min(maxW / o.width, maxH / o.height) * (s.scale || 1);
+    if (o) { const maxW = s.mode === "frame" ? 900 : 1060, maxH = s.mode === "frame" ? 900 : 1100, f = Math.min(maxW / o.width, maxH / o.height) * (s.scale || 1) * (s.text ? .62 : 1);   // texte + image : image reduite, texte au-dessus
       bw = o.width * f; bh = o.height * f;
       if (s.mode === "frame") { cx.shadowColor = "rgba(0,0,0,.8)"; cx.shadowBlur = 40; cx.fillStyle = CREAM; cx.fillRect(540 - bw / 2 - 12, cyy - bh / 2 - 12, bw + 24, bh + 24); cx.shadowBlur = 0; }
       cx.drawImage(o, 540 - bw / 2, cyy - bh / 2, bw, bh); }
@@ -186,7 +186,7 @@ function drawShot(s, t) {
     const rows = Math.ceil(n / cols), k = Math.ceil(clamp(p / Math.max(.25, dur * .7)) * n);
     for (let i = 0; i < k; i++) drawIcon(s.array.icon, 540 + (i % cols - (cols - 1) / 2) * gap, cyy + (Math.floor(i / cols) - (rows - 1) / 2) * gap, size, red ? WHITE : null);
   }
-  if (s.text) drawBigText(s.text, s.img || s.icon ? cyy + bh / 2 + 40 : cyy, red, p);
+  if (s.text) drawBigText(s.text, s.img || s.icon ? Math.max(250, cyy - bh / 2 - 110) : cyy, red, p);
   if (s.led) drawBigText(s.led, cyy, red, p);
   cx.restore();
   if (s.focus && (bw || bh)) drawFocus(540, cyy, Math.min(bw, 900) * .78, Math.min(bh, 1000) * .78, clamp(p / .25));

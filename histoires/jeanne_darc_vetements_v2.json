@@ -3,7 +3,7 @@
  "num": 33,
  "source": "https://fr.wikipedia.org/wiki/Jeanne_d%27Arc",
  "caption": "#CapCut 📁 Dossier n°33 — Jeanne d'Arc a été condamnée… en partie pour avoir porté des habits d'homme 🔥 Tu le savais ? #histoire #jeannedarc #moyenage #france #lesaviezvous #dossier",
- "note": "Montage dynamique v2 (v2_convert.py, 02/11/2026) : coupes sur le tempo de « The Scooby Snacks », voix seule. A publier depuis TikTok avec le son, demarre sur un kick.",
+ "note": "Montage dynamique v2 (v2_convert.py, 02/11/2026) : coupes sur le tempo de « The Scooby Snacks », voix seule. A publier depuis TikTok avec le son, demarre sur un kick. (rev 2 : croquis pales en cadre, question au-dessus de l image)",
  "bpm": 175.75,
  "nappe": false,
  "bruitages": false,
@@ -206,7 +206,7 @@
      "stamp": "ANNULÉ"
     },
     {
-     "img": "assets/archives/jeanne_darc_vetements/bodleian.jpg",
+     "img": "assets/archives/jeanne_darc_vetements/proces.jpg",
      "mode": "fade",
      "crop": [
       0.25,
@@ -233,7 +233,7 @@
      "label": "CANONISATION À ROME · 1920"
     },
     {
-     "img": "assets/archives/jeanne_darc_vetements/canonisation.jpg",
+     "img": "assets/archives/jeanne_darc_vetements/bodleian.jpg",
      "mode": "fade",
      "crop": [
       0.2,

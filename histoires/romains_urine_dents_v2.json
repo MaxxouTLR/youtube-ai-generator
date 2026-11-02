@@ -3,7 +3,7 @@
  "num": 34,
  "source": "https://en.wikipedia.org/wiki/Urine#History",
  "caption": "#CapCut 📁 Dossier n°34 — Les Romains se brossaient les dents… avec de l'urine 🦷 Tu aurais testé ? #histoire #rome #antiquite #anecdote #lesaviezvous #dossier",
- "note": "Montage dynamique v2 (v2_convert.py, 02/11/2026) : coupes sur le tempo de « The Scooby Snacks », voix seule. A publier depuis TikTok avec le son, demarre sur un kick.",
+ "note": "Montage dynamique v2 (v2_convert.py, 02/11/2026) : coupes sur le tempo de « The Scooby Snacks », voix seule. A publier depuis TikTok avec le son, demarre sur un kick. (rev 2 : croquis pales en cadre, question au-dessus de l image)",
  "bpm": 175.75,
  "nappe": false,
  "bruitages": false,
@@ -152,7 +152,7 @@
      "on": "impôt"
     },
     {
-     "img": "assets/archives/romains_urine_dents/fullonica.jpg",
+     "img": "assets/archives/romains_urine_dents/fullonica_bacs.jpg",
      "mode": "fade",
      "on": "impôt"
     }
@@ -178,7 +178,7 @@
      "on": "ça"
     },
     {
-     "img": "assets/archives/romains_urine_dents/fullonica.jpg",
+     "img": "assets/archives/romains_urine_dents/latrines.jpg",
      "mode": "fade",
      "flip": true,
      "crop": [
@@ -224,7 +224,7 @@
      "on": "vespasiennes"
     },
     {
-     "img": "assets/archives/romains_urine_dents/fullonica.jpg",
+     "img": "assets/archives/romains_urine_dents/urinoir_1865.jpg",
      "mode": "fade",
      "on": "les"
     }
