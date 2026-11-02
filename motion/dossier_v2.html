@@ -154,7 +154,7 @@ function drawBigText(txt, y, red, p) {
     let x = -W / 2; const yy = (i - (lines.length - 1) / 2) * size * 1.05;
     for (const w of ln) { const hl = w.includes("*"), ww = w.replace(/\*/g, "");
       cx.shadowColor = red ? "rgba(255,120,100,.6)" : "rgba(229,35,27,.45)"; cx.shadowBlur = 40;
-      cx.fillStyle = hl ? (red ? "#1a0302" : RED) : WHITE; cx.fillText(ww, x, yy); x += cx.measureText(ww + " ").width; }
+      cx.fillStyle = hl ? (red ? WHITE : RED) : WHITE; cx.fillText(ww, x, yy); x += cx.measureText(ww + " ").width; }
   });
   cx.restore(); cx.shadowBlur = 0;
 }

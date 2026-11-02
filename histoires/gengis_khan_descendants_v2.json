@@ -1,0 +1,270 @@
+{
+ "slug": "gengis_khan_descendants_v2",
+ "num": 32,
+ "source": "https://fr.wikipedia.org/wiki/Gengis_Khan",
+ "caption": "#CapCut 📁 Dossier n°32 — Des millions d'hommes descendraient de Gengis Khan 🧬 Toi aussi, peut-être ? #histoire #genghiskhan #adn #mongolie #lesaviezvous #dossier",
+ "note": "Montage dynamique v2 (v2_convert.py, 02/11/2026) : coupes sur le tempo de « The Scooby Snacks », voix seule. A publier depuis TikTok avec le son, demarre sur un kick.",
+ "bpm": 175.75,
+ "nappe": false,
+ "bruitages": false,
+ "beats": [
+  {
+   "say": "Des millions d'hommes vivants descendraient de Gengis Khan. Peut-être toi.",
+   "shots": [
+    {
+     "img": "assets/archives/gengis_khan_descendants/gengis.jpg",
+     "mode": "fade",
+     "label": "GENGIS KHAN · ALBUM DES EMPEREURS YUAN",
+     "focus": true
+    },
+    {
+     "img": "assets/archives/gengis_khan_descendants/gengis.jpg",
+     "mode": "fade",
+     "crop": [
+      0.18,
+      0.04,
+      0.64,
+      0.5
+     ],
+     "rings": true,
+     "on": "vivants"
+    },
+    {
+     "text": "*Gengis Khan*",
+     "bg": "red",
+     "hit": true,
+     "on": "Gengis"
+    }
+   ]
+  },
+  {
+   "say": "Environ seize millions, selon une étude génétique de 2003.",
+   "shots": [
+    {
+     "led": "*16 M*",
+     "bg": "red",
+     "hit": true
+    },
+    {
+     "img": "assets/archives/gengis_khan_descendants/adn.jpg",
+     "mode": "fade",
+     "on": "selon"
+    },
+    {
+     "img": "assets/archives/gengis_khan_descendants/archer.jpg",
+     "mode": "key",
+     "flip": true,
+     "on": "génétique"
+    }
+   ]
+  },
+  {
+   "say": "Les chercheurs trouvent une même lignée masculine chez huit pour cent des hommes d'Asie centrale.",
+   "shots": [
+    {
+     "img": "assets/archives/gengis_khan_descendants/adn.jpg",
+     "mode": "fade",
+     "label": "CHROMOSOME Y · ADN"
+    },
+    {
+     "img": "assets/archives/gengis_khan_descendants/adn.jpg",
+     "mode": "fade",
+     "crop": [
+      0.05,
+      0.2,
+      0.5,
+      0.7
+     ],
+     "on": "une"
+    },
+    {
+     "text": "*8 %*",
+     "bg": "red",
+     "hit": true,
+     "on": "masculine"
+    },
+    {
+     "img": "assets/archives/gengis_khan_descendants/gengis.jpg",
+     "mode": "fade",
+     "crop": [
+      0.25,
+      0.15,
+      0.5,
+      0.45
+     ],
+     "on": "pour"
+    },
+    {
+     "img": "assets/archives/gengis_khan_descendants/indus.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "hommes"
+    }
+   ]
+  },
+  {
+   "say": "Soit environ un homme sur deux cents dans le monde.",
+   "shots": [
+    {
+     "icon": "🧬",
+     "rings": true
+    },
+    {
+     "text": "*1 homme sur 200*",
+     "bg": "red",
+     "hit": true,
+     "on": "homme"
+    },
+    {
+     "img": "assets/archives/gengis_khan_descendants/mongols_1241.jpg",
+     "mode": "fade",
+     "on": "dans"
+    }
+   ]
+  },
+  {
+   "say": "Cette lignée serait apparue il y a environ mille ans, en Mongolie.",
+   "shots": [
+    {
+     "img": "assets/archives/gengis_khan_descendants/archer.jpg",
+     "mode": "key",
+     "label": "ARCHER MONGOL · MINIATURE"
+    },
+    {
+     "img": "assets/archives/gengis_khan_descendants/archer.jpg",
+     "mode": "key",
+     "crop": [
+      0.45,
+      0.2,
+      0.5,
+      0.7
+     ],
+     "rings": true,
+     "on": "apparue"
+    },
+    {
+     "img": "assets/archives/gengis_khan_descendants/adn.jpg",
+     "mode": "fade",
+     "flip": true,
+     "crop": [
+      0.2,
+      0.1,
+      0.6,
+      0.8
+     ],
+     "on": "ans,"
+    },
+    {
+     "text": "*en Mongolie*",
+     "bg": "red",
+     "hit": true,
+     "on": "Mongolie."
+    }
+   ]
+  },
+  {
+   "say": "Son origine la plus probable : Gengis Khan et sa famille.",
+   "shots": [
+    {
+     "img": "assets/archives/gengis_khan_descendants/indus.jpg",
+     "mode": "fade",
+     "label": "L'ARMÉE DE GENGIS KHAN · MINIATURE"
+    },
+    {
+     "img": "assets/archives/gengis_khan_descendants/indus.jpg",
+     "mode": "fade",
+     "crop": [
+      0.25,
+      0.15,
+      0.5,
+      0.45
+     ],
+     "on": "plus"
+    },
+    {
+     "text": "*Gengis Khan*",
+     "bg": "red",
+     "hit": true,
+     "on": "Gengis"
+    }
+   ]
+  },
+  {
+   "say": "Son empire s'étendait de la Chine jusqu'à l'Europe de l'Est.",
+   "shots": [
+    {
+     "img": "assets/archives/gengis_khan_descendants/mongols_1241.jpg",
+     "mode": "fade",
+     "label": "LES MONGOLS EN HONGRIE · 1241"
+    },
+    {
+     "img": "assets/archives/gengis_khan_descendants/mongols_1241.jpg",
+     "mode": "fade",
+     "crop": [
+      0.05,
+      0.2,
+      0.5,
+      0.7
+     ],
+     "rings": true,
+     "on": "de"
+    },
+    {
+     "text": "*l'Europe*",
+     "bg": "red",
+     "hit": true,
+     "on": "l'Europe"
+    }
+   ]
+  },
+  {
+   "say": "Le problème ? Ce n'est qu'une hypothèse : sa tombe n'a jamais été retrouvée.",
+   "shots": [
+    {
+     "icon": "⚰️",
+     "rings": true,
+     "bg": "red",
+     "hit": true
+    },
+    {
+     "text": "*Introuvable*",
+     "bg": "red",
+     "hit": true,
+     "on": "n'est",
+     "stamp": "HYPOTHÈSE"
+    },
+    {
+     "img": "assets/archives/gengis_khan_descendants/archer.jpg",
+     "mode": "key",
+     "on": "sa"
+    },
+    {
+     "img": "assets/archives/gengis_khan_descendants/gengis.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "jamais"
+    }
+   ]
+  },
+  {
+   "say": "Et toi, tu penses en descendre ?",
+   "shots": [
+    {
+     "text": "Tu penses *en descendre ?*",
+     "img": "assets/archives/gengis_khan_descendants/indus.jpg",
+     "mode": "fade",
+     "rings": true
+    }
+   ]
+  },
+  {
+   "say": "Abonne-toi, prochain dossier demain matin.",
+   "shots": [
+    {
+     "text": "*Abonne-toi.*",
+     "bg": "red"
+    }
+   ]
+  }
+ ]
+}

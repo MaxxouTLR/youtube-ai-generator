@@ -1,0 +1,254 @@
+{
+ "slug": "thermopyles_300_v2",
+ "num": 29,
+ "source": "https://fr.wikipedia.org/wiki/Bataille_des_Thermopyles",
+ "caption": "#CapCut 📁 Dossier n°29 — Les 300 Spartiates n'étaient pas 300… 🛡️ Tu croyais au film ? #histoire #sparte #300 #grece #lesaviezvous #dossier",
+ "note": "Montage dynamique v2 (v2_convert.py, 02/11/2026) : coupes sur le tempo de « The Scooby Snacks », voix seule. A publier depuis TikTok avec le son, demarre sur un kick.",
+ "bpm": 175.75,
+ "nappe": false,
+ "bruitages": false,
+ "beats": [
+  {
+   "say": "Les trois cents Spartiates ? Ils n'étaient pas trois cents.",
+   "shots": [
+    {
+     "img": "assets/archives/thermopyles_300/leonidas.jpg",
+     "mode": "fade",
+     "label": "LÉONIDAS PAR DAVID · 1814",
+     "focus": true
+    },
+    {
+     "img": "assets/archives/thermopyles_300/leonidas.jpg",
+     "mode": "fade",
+     "crop": [
+      0.18,
+      0.04,
+      0.64,
+      0.5
+     ],
+     "rings": true,
+     "on": "Spartiates"
+    },
+    {
+     "text": "*300*",
+     "bg": "red",
+     "hit": true,
+     "on": "pas"
+    }
+   ]
+  },
+  {
+   "say": "Aux Thermopyles, ils étaient en réalité environ sept mille Grecs.",
+   "shots": [
+    {
+     "led": "*7 000*",
+     "bg": "red",
+     "hit": true
+    },
+    {
+     "img": "assets/archives/thermopyles_300/david_thermopyles.jpg",
+     "mode": "key",
+     "on": "étaient"
+    },
+    {
+     "img": "assets/archives/thermopyles_300/david_thermopyles.jpg",
+     "mode": "key",
+     "flip": true,
+     "on": "sept"
+    }
+   ]
+  },
+  {
+   "say": "480 avant notre ère : l'immense armée perse de Xerxès envahit la Grèce.",
+   "shots": [
+    {
+     "img": "assets/archives/thermopyles_300/bataille.jpg",
+     "mode": "fade",
+     "label": "GRAVURE DU XIXᵉ SIÈCLE"
+    },
+    {
+     "img": "assets/archives/thermopyles_300/bataille.jpg",
+     "mode": "fade",
+     "crop": [
+      0.05,
+      0.2,
+      0.5,
+      0.7
+     ],
+     "on": "ère"
+    },
+    {
+     "text": "*Xerxès*",
+     "bg": "red",
+     "hit": true,
+     "on": "Xerxès"
+    },
+    {
+     "img": "assets/archives/thermopyles_300/david_thermopyles.jpg",
+     "mode": "key",
+     "on": "envahit"
+    }
+   ]
+  },
+  {
+   "say": "Les Grecs bloquent un passage étroit, entre la montagne et la mer.",
+   "shots": [
+    {
+     "img": "assets/archives/thermopyles_300/passage.jpg",
+     "mode": "fade",
+     "label": "LE DÉFILÉ DES THERMOPYLES"
+    },
+    {
+     "img": "assets/archives/thermopyles_300/passage.jpg",
+     "mode": "fade",
+     "crop": [
+      0.18,
+      0.04,
+      0.64,
+      0.5
+     ],
+     "rings": true,
+     "on": "un"
+    },
+    {
+     "text": "*étroit*",
+     "bg": "red",
+     "hit": true,
+     "on": "étroit,"
+    },
+    {
+     "img": "assets/archives/thermopyles_300/david_thermopyles.jpg",
+     "mode": "key",
+     "flip": true,
+     "on": "et"
+    }
+   ]
+  },
+  {
+   "say": "Pendant deux jours, ils tiennent.",
+   "shots": [
+    {
+     "img": "assets/archives/thermopyles_300/fleches.jpg",
+     "mode": "fade",
+     "label": "POINTES DE FLÈCHES TROUVÉES SUR PLACE"
+    },
+    {
+     "img": "assets/archives/thermopyles_300/fleches.jpg",
+     "mode": "fade",
+     "crop": [
+      0.2,
+      0.1,
+      0.6,
+      0.8
+     ],
+     "on": "jours,"
+    }
+   ]
+  },
+  {
+   "say": "Puis un traître montre aux Perses un chemin pour les contourner.",
+   "shots": [
+    {
+     "icon": "🐍",
+     "rings": true
+    },
+    {
+     "img": "assets/archives/thermopyles_300/david_thermopyles.jpg",
+     "mode": "key",
+     "on": "un",
+     "stamp": "TRAHISON"
+    },
+    {
+     "text": "*traître*",
+     "bg": "red",
+     "hit": true,
+     "on": "traître"
+    },
+    {
+     "img": "assets/archives/thermopyles_300/david_thermopyles.jpg",
+     "mode": "key",
+     "flip": true,
+     "on": "pour"
+    }
+   ]
+  },
+  {
+   "say": "Léonidas renvoie la plupart des Grecs. Mais ses Spartiates ne restent pas seuls.",
+   "shots": [
+    {
+     "icon": "🛡️",
+     "rings": true
+    },
+    {
+     "img": "assets/archives/thermopyles_300/david_thermopyles.jpg",
+     "mode": "key",
+     "on": "Mais"
+    },
+    {
+     "img": "assets/archives/thermopyles_300/david_thermopyles.jpg",
+     "mode": "key",
+     "flip": true,
+     "on": "restent"
+    },
+    {
+     "text": "*seuls*",
+     "bg": "red",
+     "hit": true,
+     "on": "seuls."
+    }
+   ]
+  },
+  {
+   "say": "Le plus fou ? Les Thespiens restent jusqu'à la mort. Et l'histoire les a presque oubliés.",
+   "shots": [
+    {
+     "text": "Les oubliés : *les Thespiens.*",
+     "bg": "red",
+     "hit": true
+    },
+    {
+     "img": "assets/archives/thermopyles_300/david_thermopyles.jpg",
+     "mode": "key",
+     "on": "Les"
+    },
+    {
+     "img": "assets/archives/thermopyles_300/david_thermopyles.jpg",
+     "mode": "key",
+     "flip": true,
+     "on": "jusqu'à"
+    },
+    {
+     "img": "assets/archives/thermopyles_300/david_thermopyles.jpg",
+     "mode": "key",
+     "on": "Et"
+    },
+    {
+     "img": "assets/archives/thermopyles_300/david_thermopyles.jpg",
+     "mode": "key",
+     "flip": true,
+     "on": "a"
+    }
+   ]
+  },
+  {
+   "say": "Et toi, tu croyais au film ?",
+   "shots": [
+    {
+     "text": "Tu croyais *au film ?*",
+     "img": "assets/archives/thermopyles_300/david_thermopyles.jpg",
+     "mode": "key",
+     "rings": true
+    }
+   ]
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "shots": [
+    {
+     "text": "*Abonne-toi.*",
+     "bg": "red"
+    }
+   ]
+  }
+ ]
+}

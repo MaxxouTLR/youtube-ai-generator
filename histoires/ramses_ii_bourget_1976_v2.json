@@ -1,0 +1,278 @@
+{
+ "slug": "ramses_ii_bourget_1976_v2",
+ "num": 35,
+ "source": "https://fr.wikipedia.org/wiki/Rams%C3%A8s_II",
+ "caption": "#CapCut 📁 Dossier n°35 — En 1976, la momie de Ramsès II a été accueillie à Paris… avec les honneurs militaires 👑 Tu le savais ? #histoire #egypte #ramses #paris #lesaviezvous #dossier",
+ "note": "Montage dynamique v2 (v2_convert.py, 02/11/2026) : coupes sur le tempo de « The Scooby Snacks », voix seule. A publier depuis TikTok avec le son, demarre sur un kick.",
+ "bpm": 175.75,
+ "nappe": false,
+ "bruitages": false,
+ "beats": [
+  {
+   "say": "En 1976, la France a accueilli un pharaon mort avec les honneurs militaires.",
+   "shots": [
+    {
+     "img": "assets/archives/ramses_ii_bourget_1976/momie_visage.jpg",
+     "mode": "key",
+     "label": "LA MOMIE DE RAMSÈS II",
+     "focus": true
+    },
+    {
+     "img": "assets/archives/ramses_ii_bourget_1976/momie_visage.jpg",
+     "mode": "key",
+     "crop": [
+      0.2,
+      0.1,
+      0.6,
+      0.8
+     ],
+     "rings": true,
+     "on": "France"
+    },
+    {
+     "text": "*un pharaon mort*",
+     "bg": "red",
+     "hit": true,
+     "on": "pharaon"
+    },
+    {
+     "img": "assets/archives/ramses_ii_bourget_1976/abu_simbel.jpg",
+     "mode": "fade",
+     "on": "les"
+    }
+   ]
+  },
+  {
+   "say": "C'est Ramsès Deux, mort il y a plus de trois mille ans.",
+   "shots": [
+    {
+     "img": "assets/archives/ramses_ii_bourget_1976/abu_simbel.jpg",
+     "mode": "fade",
+     "label": "ABOU SIMBEL, SON TEMPLE"
+    },
+    {
+     "text": "*Ramsès II*",
+     "bg": "red",
+     "hit": true,
+     "on": "Ramsès"
+    },
+    {
+     "img": "assets/archives/ramses_ii_bourget_1976/abu_simbel.jpg",
+     "mode": "fade",
+     "crop": [
+      0.25,
+      0.15,
+      0.5,
+      0.45
+     ],
+     "on": "mort"
+    },
+    {
+     "img": "assets/archives/ramses_ii_bourget_1976/chaillot.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "trois"
+    }
+   ]
+  },
+  {
+   "say": "Problème : sa momie est attaquée par un champignon.",
+   "shots": [
+    {
+     "img": "assets/archives/ramses_ii_bourget_1976/momie.jpg",
+     "mode": "key",
+     "label": "LA MOMIE · PHOTO DU MUSÉE DU CAIRE",
+     "bg": "red",
+     "hit": true
+    },
+    {
+     "img": "assets/archives/ramses_ii_bourget_1976/momie.jpg",
+     "mode": "key",
+     "crop": [
+      0.18,
+      0.04,
+      0.64,
+      0.5
+     ],
+     "rings": true,
+     "on": "est"
+    },
+    {
+     "text": "*un champignon*",
+     "bg": "red",
+     "hit": true,
+     "on": "champignon."
+    }
+   ]
+  },
+  {
+   "say": "L'Égypte accepte de l'envoyer en France pour la soigner.",
+   "shots": [
+    {
+     "icon": "✈️",
+     "rings": true
+    },
+    {
+     "text": "*la France*",
+     "bg": "red",
+     "hit": true,
+     "on": "France"
+    },
+    {
+     "img": "assets/archives/ramses_ii_bourget_1976/garde.jpg",
+     "mode": "fade",
+     "crop": [
+      0.2,
+      0.1,
+      0.6,
+      0.8
+     ],
+     "on": "pour"
+    }
+   ]
+  },
+  {
+   "say": "Au Bourget, une garde militaire l'attend, comme pour un chef d'État.",
+   "shots": [
+    {
+     "img": "assets/archives/ramses_ii_bourget_1976/garde.jpg",
+     "mode": "fade",
+     "label": "GARDE RÉPUBLICAINE (PHOTO RÉCENTE)"
+    },
+    {
+     "img": "assets/archives/ramses_ii_bourget_1976/garde.jpg",
+     "mode": "fade",
+     "crop": [
+      0.2,
+      0.1,
+      0.6,
+      0.8
+     ],
+     "on": "garde",
+     "stamp": "HONNEURS"
+    },
+    {
+     "img": "assets/archives/ramses_ii_bourget_1976/momie.jpg",
+     "mode": "key",
+     "flip": true,
+     "on": "un"
+    },
+    {
+     "text": "*un chef d'État*",
+     "bg": "red",
+     "hit": true,
+     "on": "d'État."
+    }
+   ]
+  },
+  {
+   "say": "Le plus fou ? On raconte qu'on lui aurait fait un passeport. Profession : roi, décédé.",
+   "shots": [
+    {
+     "icon": "🛂",
+     "rings": true
+    },
+    {
+     "img": "assets/archives/ramses_ii_bourget_1976/momie_visage.jpg",
+     "mode": "key",
+     "on": "lui",
+     "stamp": "LÉGENDE ?"
+    },
+    {
+     "img": "assets/archives/ramses_ii_bourget_1976/abu_simbel.jpg",
+     "mode": "fade",
+     "flip": true,
+     "crop": [
+      0.18,
+      0.04,
+      0.64,
+      0.5
+     ],
+     "on": "fait"
+    },
+    {
+     "img": "assets/archives/ramses_ii_bourget_1976/chaillot.jpg",
+     "mode": "fade",
+     "on": "Profession"
+    },
+    {
+     "text": "*roi, décédé*",
+     "bg": "red",
+     "hit": true,
+     "on": "décédé."
+    }
+   ]
+  },
+  {
+   "say": "Pendant des mois, des scientifiques l'étudient au musée de l'Homme.",
+   "shots": [
+    {
+     "img": "assets/archives/ramses_ii_bourget_1976/chaillot.jpg",
+     "mode": "fade",
+     "label": "PALAIS DE CHAILLOT, PARIS"
+    },
+    {
+     "img": "assets/archives/ramses_ii_bourget_1976/chaillot.jpg",
+     "mode": "fade",
+     "crop": [
+      0.18,
+      0.04,
+      0.64,
+      0.5
+     ],
+     "rings": true,
+     "on": "des"
+    },
+    {
+     "text": "*musée de l'Homme*",
+     "bg": "red",
+     "hit": true,
+     "on": "l'Homme."
+    }
+   ]
+  },
+  {
+   "say": "Puis elle est stérilisée par irradiation, et repart en Égypte.",
+   "shots": [
+    {
+     "icon": "☢️",
+     "rings": true,
+     "bg": "red",
+     "hit": true
+    },
+    {
+     "text": "*Puis renvoyée*",
+     "bg": "red",
+     "hit": true,
+     "on": "Puis"
+    },
+    {
+     "img": "assets/archives/ramses_ii_bourget_1976/garde.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "repart"
+    }
+   ]
+  },
+  {
+   "say": "Et toi, tu le savais ?",
+   "shots": [
+    {
+     "text": "Tu le *savais ?*",
+     "img": "assets/archives/ramses_ii_bourget_1976/momie.jpg",
+     "mode": "key",
+     "rings": true
+    }
+   ]
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "shots": [
+    {
+     "text": "*Abonne-toi.*",
+     "bg": "red"
+    }
+   ]
+  }
+ ]
+}

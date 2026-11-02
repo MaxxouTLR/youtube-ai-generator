@@ -1,0 +1,254 @@
+{
+ "slug": "romains_urine_dents_v2",
+ "num": 34,
+ "source": "https://en.wikipedia.org/wiki/Urine#History",
+ "caption": "#CapCut 📁 Dossier n°34 — Les Romains se brossaient les dents… avec de l'urine 🦷 Tu aurais testé ? #histoire #rome #antiquite #anecdote #lesaviezvous #dossier",
+ "note": "Montage dynamique v2 (v2_convert.py, 02/11/2026) : coupes sur le tempo de « The Scooby Snacks », voix seule. A publier depuis TikTok avec le son, demarre sur un kick.",
+ "bpm": 175.75,
+ "nappe": false,
+ "bruitages": false,
+ "beats": [
+  {
+   "say": "Les Romains se blanchissaient les dents avec de l'urine.",
+   "shots": [
+    {
+     "img": "assets/archives/romains_urine_dents/vespasien.jpg",
+     "mode": "fade",
+     "label": "BUSTE ROMAIN · VESPASIEN",
+     "focus": true
+    },
+    {
+     "img": "assets/archives/romains_urine_dents/vespasien.jpg",
+     "mode": "fade",
+     "crop": [
+      0.18,
+      0.04,
+      0.64,
+      0.5
+     ],
+     "rings": true,
+     "on": "blanchissaient"
+    },
+    {
+     "text": "*à l'urine*",
+     "bg": "red",
+     "hit": true,
+     "on": "l'urine."
+    }
+   ]
+  },
+  {
+   "say": "Pourquoi ? L'ammoniac qu'elle contient aide vraiment à nettoyer.",
+   "shots": [
+    {
+     "icon": "🧪",
+     "rings": true
+    },
+    {
+     "text": "*l'ammoniac*",
+     "bg": "red",
+     "hit": true,
+     "on": "L'ammoniac"
+    },
+    {
+     "img": "assets/archives/romains_urine_dents/fullonica.jpg",
+     "mode": "fade",
+     "on": "vraiment"
+    }
+   ]
+  },
+  {
+   "say": "Le poète Catulle se moque même d'un homme aux dents trop blanches.",
+   "shots": [
+    {
+     "icon": "📜",
+     "rings": true
+    },
+    {
+     "text": "*se moque*",
+     "bg": "red",
+     "hit": true,
+     "on": "moque",
+     "stamp": "CATULLE"
+    },
+    {
+     "img": "assets/archives/romains_urine_dents/fullonica.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "d'un"
+    },
+    {
+     "img": "assets/archives/romains_urine_dents/fullonica.jpg",
+     "mode": "fade",
+     "crop": [
+      0.2,
+      0.1,
+      0.6,
+      0.8
+     ],
+     "on": "dents"
+    }
+   ]
+  },
+  {
+   "say": "Le pire ? L'urine sert aussi à laver les vêtements, dans les blanchisseries.",
+   "shots": [
+    {
+     "img": "assets/archives/romains_urine_dents/fullonica_bacs.jpg",
+     "mode": "fade",
+     "label": "BLANCHISSERIE DE POMPÉI",
+     "bg": "red",
+     "hit": true
+    },
+    {
+     "img": "assets/archives/romains_urine_dents/fullonica_bacs.jpg",
+     "mode": "fade",
+     "crop": [
+      0.05,
+      0.2,
+      0.5,
+      0.7
+     ],
+     "on": "sert"
+    },
+    {
+     "text": "*la lessive*",
+     "bg": "red",
+     "hit": true,
+     "on": "laver"
+    },
+    {
+     "img": "assets/archives/romains_urine_dents/fullonica.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "dans"
+    }
+   ]
+  },
+  {
+   "say": "Elle a tellement de valeur que l'empereur Vespasien crée un impôt sur l'urine.",
+   "shots": [
+    {
+     "img": "assets/archives/romains_urine_dents/latrines.jpg",
+     "mode": "fade",
+     "label": "LATRINES ROMAINES · OSTIE"
+    },
+    {
+     "img": "assets/archives/romains_urine_dents/latrines.jpg",
+     "mode": "fade",
+     "crop": [
+      0.45,
+      0.2,
+      0.5,
+      0.7
+     ],
+     "rings": true,
+     "on": "de"
+    },
+    {
+     "text": "*impôt*",
+     "bg": "red",
+     "hit": true,
+     "on": "impôt"
+    },
+    {
+     "img": "assets/archives/romains_urine_dents/fullonica.jpg",
+     "mode": "fade",
+     "on": "impôt"
+    }
+   ]
+  },
+  {
+   "say": "Son fils trouve ça dégoûtant. Vespasien répond : l'argent n'a pas d'odeur.",
+   "shots": [
+    {
+     "img": "assets/archives/romains_urine_dents/vespasien.jpg",
+     "mode": "fade",
+     "label": "VESPASIEN"
+    },
+    {
+     "img": "assets/archives/romains_urine_dents/vespasien.jpg",
+     "mode": "fade",
+     "crop": [
+      0.25,
+      0.15,
+      0.5,
+      0.45
+     ],
+     "on": "ça"
+    },
+    {
+     "img": "assets/archives/romains_urine_dents/fullonica.jpg",
+     "mode": "fade",
+     "flip": true,
+     "crop": [
+      0.2,
+      0.1,
+      0.6,
+      0.8
+     ],
+     "on": "n'a"
+    },
+    {
+     "text": "*n'a pas d'odeur*",
+     "bg": "red",
+     "hit": true,
+     "on": "d'odeur."
+    }
+   ]
+  },
+  {
+   "say": "Et en France, on parle encore de vespasiennes pour les urinoirs publics.",
+   "shots": [
+    {
+     "img": "assets/archives/romains_urine_dents/urinoir_1865.jpg",
+     "mode": "fade",
+     "label": "VESPASIENNE À PARIS · VERS 1865"
+    },
+    {
+     "img": "assets/archives/romains_urine_dents/urinoir_1865.jpg",
+     "mode": "fade",
+     "crop": [
+      0.05,
+      0.2,
+      0.5,
+      0.7
+     ],
+     "rings": true,
+     "on": "on"
+    },
+    {
+     "text": "*vespasiennes*",
+     "bg": "red",
+     "hit": true,
+     "on": "vespasiennes"
+    },
+    {
+     "img": "assets/archives/romains_urine_dents/fullonica.jpg",
+     "mode": "fade",
+     "on": "les"
+    }
+   ]
+  },
+  {
+   "say": "Et toi, tu aurais testé ?",
+   "shots": [
+    {
+     "text": "Tu aurais *testé ?*",
+     "img": "assets/archives/romains_urine_dents/fullonica.jpg",
+     "mode": "fade",
+     "rings": true
+    }
+   ]
+  },
+  {
+   "say": "Abonne-toi, prochain dossier demain matin.",
+   "shots": [
+    {
+     "text": "*Abonne-toi.*",
+     "bg": "red"
+    }
+   ]
+  }
+ ]
+}

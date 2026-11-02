@@ -1,0 +1,277 @@
+{
+ "slug": "violet_jessop_insubmersible_v2",
+ "num": 26,
+ "source": "https://fr.wikipedia.org/wiki/Violet_Jessop",
+ "caption": "#CapCut 📁 Dossier n°26 — Elle a survécu au Titanic… et à ses deux navires jumeaux 🚢 La femme la plus chanceuse (ou malchanceuse) ? #histoire #titanic #survivante #lesaviezvous #dossier",
+ "note": "Montage dynamique v2 (v2_convert.py, 02/11/2026) : coupes sur le tempo de « The Scooby Snacks », voix seule. A publier depuis TikTok avec le son, demarre sur un kick.",
+ "bpm": 175.75,
+ "nappe": false,
+ "bruitages": false,
+ "beats": [
+  {
+   "say": "Cette femme a survécu au Titanic. Et à ses deux navires jumeaux.",
+   "shots": [
+    {
+     "img": "assets/archives/violet_jessop_insubmersible/violet.jpg",
+     "mode": "fade",
+     "label": "VIOLET JESSOP",
+     "focus": true
+    },
+    {
+     "img": "assets/archives/violet_jessop_insubmersible/violet.jpg",
+     "mode": "fade",
+     "crop": [
+      0.18,
+      0.04,
+      0.64,
+      0.5
+     ],
+     "rings": true,
+     "on": "survécu"
+    },
+    {
+     "text": "*insubmersible*",
+     "bg": "red",
+     "hit": true,
+     "on": "Et"
+    },
+    {
+     "img": "assets/archives/violet_jessop_insubmersible/stower.jpg",
+     "mode": "fade",
+     "on": "deux"
+    }
+   ]
+  },
+  {
+   "say": "Mille neuf cent onze : son paquebot, l'Olympic, percute un navire de guerre.",
+   "shots": [
+    {
+     "img": "assets/archives/violet_jessop_insubmersible/olympic_hawke.jpg",
+     "mode": "fade",
+     "label": "L'OLYMPIC APRÈS LA COLLISION",
+     "bg": "red",
+     "hit": true
+    },
+    {
+     "img": "assets/archives/violet_jessop_insubmersible/olympic_hawke.jpg",
+     "mode": "fade",
+     "crop": [
+      0.25,
+      0.15,
+      0.5,
+      0.45
+     ],
+     "on": "onze"
+    },
+    {
+     "text": "*l'Olympic*",
+     "bg": "red",
+     "hit": true,
+     "on": "l'Olympic,"
+    },
+    {
+     "img": "assets/archives/violet_jessop_insubmersible/stower.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "navire"
+    }
+   ]
+  },
+  {
+   "say": "Elle est hôtesse sur les grands paquebots de la même compagnie.",
+   "shots": [
+    {
+     "icon": "🛳️",
+     "rings": true
+    },
+    {
+     "text": "*les paquebots*",
+     "bg": "red",
+     "hit": true,
+     "on": "paquebots"
+    },
+    {
+     "img": "assets/archives/violet_jessop_insubmersible/stower.jpg",
+     "mode": "fade",
+     "crop": [
+      0.2,
+      0.1,
+      0.6,
+      0.8
+     ],
+     "on": "paquebots"
+    },
+    {
+     "img": "assets/archives/violet_jessop_insubmersible/stower.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "la"
+    }
+   ]
+  },
+  {
+   "say": "Mille neuf cent douze : elle est sur le Titanic.",
+   "shots": [
+    {
+     "img": "assets/archives/violet_jessop_insubmersible/titanic_1912.jpg",
+     "mode": "fade",
+     "label": "LE TITANIC À SOUTHAMPTON · 1912"
+    },
+    {
+     "img": "assets/archives/violet_jessop_insubmersible/titanic_1912.jpg",
+     "mode": "fade",
+     "crop": [
+      0.45,
+      0.2,
+      0.5,
+      0.7
+     ],
+     "rings": true,
+     "on": "douze"
+    },
+    {
+     "text": "*le Titanic*",
+     "bg": "red",
+     "hit": true,
+     "on": "Titanic."
+    }
+   ]
+  },
+  {
+   "say": "Elle survit, dans le canot numéro seize.",
+   "shots": [
+    {
+     "img": "assets/archives/violet_jessop_insubmersible/canots.jpg",
+     "mode": "key",
+     "label": "CANOTS DU TITANIC · 15 AVRIL 1912"
+    },
+    {
+     "img": "assets/archives/violet_jessop_insubmersible/canots.jpg",
+     "mode": "key",
+     "crop": [
+      0.2,
+      0.1,
+      0.6,
+      0.8
+     ],
+     "on": "canot"
+    }
+   ]
+  },
+  {
+   "say": "Le pire ? Mille neuf cent seize : elle est infirmière sur le Britannic.",
+   "shots": [
+    {
+     "img": "assets/archives/violet_jessop_insubmersible/britannic.jpg",
+     "mode": "fade",
+     "label": "LE BRITANNIC, NAVIRE-HÔPITAL",
+     "bg": "red",
+     "hit": true
+    },
+    {
+     "img": "assets/archives/violet_jessop_insubmersible/britannic.jpg",
+     "mode": "fade",
+     "crop": [
+      0.05,
+      0.2,
+      0.5,
+      0.7
+     ],
+     "rings": true,
+     "on": "neuf"
+    },
+    {
+     "img": "assets/archives/violet_jessop_insubmersible/stower.jpg",
+     "mode": "fade",
+     "on": "sur"
+    },
+    {
+     "text": "*le Britannic*",
+     "bg": "red",
+     "hit": true,
+     "on": "Britannic."
+    }
+   ]
+  },
+  {
+   "say": "Il heurte une mine et coule. Elle saute à l'eau, et se cogne la tête.",
+   "shots": [
+    {
+     "icon": "💥",
+     "rings": true
+    },
+    {
+     "text": "*Il coule*",
+     "bg": "red",
+     "hit": true,
+     "on": "coule.",
+     "stamp": "COULÉ"
+    },
+    {
+     "img": "assets/archives/violet_jessop_insubmersible/stower.jpg",
+     "mode": "fade",
+     "flip": true,
+     "crop": [
+      0.2,
+      0.1,
+      0.6,
+      0.8
+     ],
+     "on": "Elle"
+    },
+    {
+     "img": "assets/archives/violet_jessop_insubmersible/stower.jpg",
+     "mode": "fade",
+     "on": "l'eau,"
+    },
+    {
+     "img": "assets/archives/violet_jessop_insubmersible/stower.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "cogne"
+    }
+   ]
+  },
+  {
+   "say": "Elle survit encore. Son surnom : Miss Insubmersible.",
+   "shots": [
+    {
+     "img": "assets/archives/violet_jessop_insubmersible/violet.jpg",
+     "mode": "fade",
+     "label": "VIOLET JESSOP"
+    },
+    {
+     "img": "assets/archives/violet_jessop_insubmersible/violet.jpg",
+     "mode": "fade",
+     "crop": [
+      0.25,
+      0.15,
+      0.5,
+      0.45
+     ],
+     "on": "surnom"
+    }
+   ]
+  },
+  {
+   "say": "Et toi, tu dirais chanceuse ou malchanceuse ?",
+   "shots": [
+    {
+     "text": "Chanceuse ou *malchanceuse ?*",
+     "img": "assets/archives/violet_jessop_insubmersible/stower.jpg",
+     "mode": "fade",
+     "rings": true
+    }
+   ]
+  },
+  {
+   "say": "Abonne-toi, prochain dossier demain matin.",
+   "shots": [
+    {
+     "text": "*Abonne-toi.*",
+     "bg": "red"
+    }
+   ]
+  }
+ ]
+}

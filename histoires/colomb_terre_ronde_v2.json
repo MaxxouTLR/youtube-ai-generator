@@ -1,0 +1,279 @@
+{
+ "slug": "colomb_terre_ronde_v2",
+ "num": 27,
+ "source": "https://fr.wikipedia.org/wiki/Mythe_de_la_Terre_plate",
+ "caption": "#CapCut 📁 Dossier n°27 — Christophe Colomb n'a pas prouvé que la Terre était ronde 🌍 Tout le monde le savait déjà #histoire #colomb #mythe #lesaviezvous #dossier",
+ "note": "Montage dynamique v2 (v2_convert.py, 02/11/2026) : coupes sur le tempo de « The Scooby Snacks », voix seule. A publier depuis TikTok avec le son, demarre sur un kick.",
+ "bpm": 175.75,
+ "nappe": false,
+ "bruitages": false,
+ "beats": [
+  {
+   "say": "Christophe Colomb n'a pas prouvé que la Terre était ronde. On t'a menti.",
+   "shots": [
+    {
+     "img": "assets/archives/colomb_terre_ronde/colomb.jpg",
+     "mode": "fade",
+     "label": "PORTRAIT DIT DE COLOMB",
+     "focus": true
+    },
+    {
+     "img": "assets/archives/colomb_terre_ronde/colomb.jpg",
+     "mode": "fade",
+     "crop": [
+      0.18,
+      0.04,
+      0.64,
+      0.5
+     ],
+     "rings": true,
+     "on": "pas"
+    },
+    {
+     "text": "*ronde*",
+     "bg": "red",
+     "hit": true,
+     "on": "ronde."
+    },
+    {
+     "img": "assets/archives/colomb_terre_ronde/colomb.jpg",
+     "mode": "fade",
+     "on": "On"
+    }
+   ]
+  },
+  {
+   "say": "Pire : les savants le savaient déjà depuis l'Antiquité.",
+   "shots": [
+    {
+     "img": "assets/archives/colomb_terre_ronde/eratosthene.jpg",
+     "mode": "fade",
+     "label": "ÉRATOSTHÈNE"
+    },
+    {
+     "img": "assets/archives/colomb_terre_ronde/eratosthene.jpg",
+     "mode": "fade",
+     "crop": [
+      0.25,
+      0.15,
+      0.5,
+      0.45
+     ],
+     "on": "le"
+    },
+    {
+     "text": "*dans l'Antiquité*",
+     "bg": "red",
+     "hit": true,
+     "on": "l'Antiquité."
+    }
+   ]
+  },
+  {
+   "say": "Vers 240 avant notre ère, le Grec Ératosthène mesure même la taille de la Terre.",
+   "shots": [
+    {
+     "icon": "🌍",
+     "rings": true
+    },
+    {
+     "img": "assets/archives/colomb_terre_ronde/debarquement.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "Grec"
+    },
+    {
+     "img": "assets/archives/colomb_terre_ronde/eratosthene.jpg",
+     "mode": "fade",
+     "crop": [
+      0.25,
+      0.15,
+      0.5,
+      0.45
+     ],
+     "on": "même"
+    },
+    {
+     "img": "assets/archives/colomb_terre_ronde/flammarion.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "de"
+    },
+    {
+     "text": "*la Terre*",
+     "bg": "red",
+     "hit": true,
+     "on": "Terre."
+    }
+   ]
+  },
+  {
+   "say": "Avec des ombres et un bâton. Et il tombe presque juste.",
+   "shots": [
+    {
+     "icon": "📏",
+     "rings": true
+    },
+    {
+     "text": "*Un bâton*",
+     "bg": "red",
+     "hit": true,
+     "on": "bâton.",
+     "stamp": "PRESQUE JUSTE"
+    },
+    {
+     "img": "assets/archives/colomb_terre_ronde/santa_maria.jpg",
+     "mode": "fade",
+     "on": "Et"
+    },
+    {
+     "img": "assets/archives/colomb_terre_ronde/colomb.jpg",
+     "mode": "fade",
+     "flip": true,
+     "crop": [
+      0.18,
+      0.04,
+      0.64,
+      0.5
+     ],
+     "on": "tombe"
+    }
+   ]
+  },
+  {
+   "say": "Alors pourquoi les savants s'opposaient à Colomb ?",
+   "shots": [
+    {
+     "img": "assets/archives/colomb_terre_ronde/santa_maria.jpg",
+     "mode": "fade",
+     "label": "COLOMB SUR LA SANTA MARÍA"
+    },
+    {
+     "img": "assets/archives/colomb_terre_ronde/santa_maria.jpg",
+     "mode": "fade",
+     "crop": [
+      0.45,
+      0.2,
+      0.5,
+      0.7
+     ],
+     "rings": true,
+     "on": "s'opposaient"
+    }
+   ]
+  },
+  {
+   "say": "Problème : il sous-estimait énormément la taille de la Terre.",
+   "shots": [
+    {
+     "led": "*-25 %*",
+     "bg": "red",
+     "hit": true
+    },
+    {
+     "text": "*de taille*",
+     "bg": "red",
+     "hit": true,
+     "on": "taille"
+    },
+    {
+     "img": "assets/archives/colomb_terre_ronde/debarquement.jpg",
+     "mode": "fade",
+     "on": "de"
+    }
+   ]
+  },
+  {
+   "say": "Sans l'Amérique sur sa route, son équipage serait mort de faim en mer.",
+   "shots": [
+    {
+     "img": "assets/archives/colomb_terre_ronde/debarquement.jpg",
+     "mode": "fade",
+     "label": "DÉBARQUEMENT DE COLOMB · VANDERLYN"
+    },
+    {
+     "text": "*l'Amérique*",
+     "bg": "red",
+     "hit": true,
+     "on": "l'Amérique"
+    },
+    {
+     "img": "assets/archives/colomb_terre_ronde/debarquement.jpg",
+     "mode": "fade",
+     "crop": [
+      0.2,
+      0.1,
+      0.6,
+      0.8
+     ],
+     "on": "sa"
+    },
+    {
+     "img": "assets/archives/colomb_terre_ronde/eratosthene.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "faim"
+    }
+   ]
+  },
+  {
+   "say": "Le mythe de la Terre plate vient surtout d'un écrivain du dix-neuvième siècle.",
+   "shots": [
+    {
+     "img": "assets/archives/colomb_terre_ronde/flammarion.jpg",
+     "mode": "fade",
+     "label": "GRAVURE DITE DE FLAMMARION · 1888"
+    },
+    {
+     "img": "assets/archives/colomb_terre_ronde/flammarion.jpg",
+     "mode": "fade",
+     "crop": [
+      0.05,
+      0.2,
+      0.5,
+      0.7
+     ],
+     "rings": true,
+     "on": "la"
+    },
+    {
+     "img": "assets/archives/colomb_terre_ronde/flammarion.jpg",
+     "mode": "fade",
+     "crop": [
+      0.2,
+      0.1,
+      0.6,
+      0.8
+     ],
+     "on": "du"
+    },
+    {
+     "text": "*XIXᵉ siècle*",
+     "bg": "red",
+     "hit": true,
+     "on": "siècle."
+    }
+   ]
+  },
+  {
+   "say": "Et toi, tu y croyais ?",
+   "shots": [
+    {
+     "text": "Tu y *croyais ?*",
+     "img": "assets/archives/colomb_terre_ronde/santa_maria.jpg",
+     "mode": "fade",
+     "rings": true
+    }
+   ]
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "shots": [
+    {
+     "text": "*Abonne-toi.*",
+     "bg": "red"
+    }
+   ]
+  }
+ ]
+}

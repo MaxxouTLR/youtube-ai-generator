@@ -1,0 +1,247 @@
+{
+ "slug": "muraille_chine_espace_v2",
+ "num": 31,
+ "source": "https://fr.wikipedia.org/wiki/Grande_Muraille",
+ "caption": "#CapCut 📁 Dossier n°31 — La Grande Muraille n'est pas visible depuis l'espace à l'œil nu 🛰️ Tu y croyais ? #histoire #chine #espace #mythe #lesaviezvous #dossier",
+ "note": "Montage dynamique v2 (v2_convert.py, 02/11/2026) : coupes sur le tempo de « The Scooby Snacks », voix seule. A publier depuis TikTok avec le son, demarre sur un kick.",
+ "bpm": 175.75,
+ "nappe": false,
+ "bruitages": false,
+ "beats": [
+  {
+   "say": "La Grande Muraille de Chine ? Impossible à voir depuis l'espace.",
+   "shots": [
+    {
+     "img": "assets/archives/muraille_chine_espace/muraille_1917.jpg",
+     "mode": "fade",
+     "label": "LA GRANDE MURAILLE · VERS 1920",
+     "focus": true
+    },
+    {
+     "img": "assets/archives/muraille_chine_espace/muraille_1917.jpg",
+     "mode": "fade",
+     "crop": [
+      0.2,
+      0.1,
+      0.6,
+      0.8
+     ],
+     "rings": true,
+     "on": "de"
+    },
+    {
+     "text": "*depuis l'espace*",
+     "bg": "red",
+     "hit": true,
+     "on": "l'espace."
+    }
+   ]
+  },
+  {
+   "say": "Même le premier astronaute chinois, Yang Liwei, l'a cherchée. Il ne l'a pas vue.",
+   "shots": [
+    {
+     "img": "assets/archives/muraille_chine_espace/chine_iss.jpg",
+     "mode": "fade",
+     "label": "LA CHINE VUE DE L'ISS · NASA",
+     "bg": "red",
+     "hit": true
+    },
+    {
+     "img": "assets/archives/muraille_chine_espace/chine_iss.jpg",
+     "mode": "fade",
+     "crop": [
+      0.05,
+      0.2,
+      0.5,
+      0.7
+     ],
+     "on": "astronaute"
+    },
+    {
+     "text": "*Rien*",
+     "bg": "red",
+     "hit": true,
+     "on": "Liwei,"
+    },
+    {
+     "img": "assets/archives/muraille_chine_espace/jiayuguan_1875.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "l'a"
+    },
+    {
+     "img": "assets/archives/muraille_chine_espace/chine_iss.jpg",
+     "mode": "fade",
+     "on": "cherchée."
+    }
+   ]
+  },
+  {
+   "say": "Le problème : la muraille est longue, mais très étroite.",
+   "shots": [
+    {
+     "img": "assets/archives/muraille_chine_espace/muraille_child.jpg",
+     "mode": "fade",
+     "label": "PHOTO DE THOMAS CHILD · XIXᵉ SIÈCLE"
+    },
+    {
+     "img": "assets/archives/muraille_chine_espace/muraille_child.jpg",
+     "mode": "fade",
+     "crop": [
+      0.45,
+      0.2,
+      0.5,
+      0.7
+     ],
+     "rings": true,
+     "on": "muraille"
+    },
+    {
+     "text": "*étroite*",
+     "bg": "red",
+     "hit": true,
+     "on": "étroite."
+    }
+   ]
+  },
+  {
+   "say": "Quelques mètres de large seulement.",
+   "shots": [
+    {
+     "led": "*≈ 6 M*"
+    },
+    {
+     "img": "assets/archives/muraille_chine_espace/muraille_1917.jpg",
+     "mode": "fade",
+     "crop": [
+      0.2,
+      0.1,
+      0.6,
+      0.8
+     ],
+     "on": "de"
+    }
+   ]
+  },
+  {
+   "say": "Et sa couleur se confond avec le paysage.",
+   "shots": [
+    {
+     "img": "assets/archives/muraille_chine_espace/jiayuguan_1875.jpg",
+     "mode": "fade",
+     "label": "PRÈS DE JIAYUGUAN · 1875"
+    },
+    {
+     "img": "assets/archives/muraille_chine_espace/jiayuguan_1875.jpg",
+     "mode": "fade",
+     "crop": [
+      0.2,
+      0.1,
+      0.6,
+      0.8
+     ],
+     "on": "se"
+    },
+    {
+     "text": "*confond*",
+     "bg": "red",
+     "hit": true,
+     "on": "confond"
+    }
+   ]
+  },
+  {
+   "say": "Le plus fou ? La voir depuis l'orbite, c'est comme voir un cheveu à plusieurs kilomètres.",
+   "shots": [
+    {
+     "icon": "🔭",
+     "rings": true
+    },
+    {
+     "img": "assets/archives/muraille_chine_espace/shanhaiguan.jpg",
+     "mode": "key",
+     "on": "voir"
+    },
+    {
+     "img": "assets/archives/muraille_chine_espace/muraille_child.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "l'orbite,"
+    },
+    {
+     "img": "assets/archives/muraille_chine_espace/chine_iss.jpg",
+     "mode": "fade",
+     "flip": true,
+     "crop": [
+      0.2,
+      0.1,
+      0.6,
+      0.8
+     ],
+     "on": "à"
+    },
+    {
+     "text": "*plusieurs kilomètres*",
+     "bg": "red",
+     "hit": true,
+     "on": "kilomètres."
+    }
+   ]
+  },
+  {
+   "say": "Pourtant, le mythe circulait déjà avant même le premier vol spatial.",
+   "shots": [
+    {
+     "img": "assets/archives/muraille_chine_espace/shanhaiguan.jpg",
+     "mode": "key",
+     "label": "SHANHAIGUAN · DÉBUT XXᵉ SIÈCLE"
+    },
+    {
+     "img": "assets/archives/muraille_chine_espace/shanhaiguan.jpg",
+     "mode": "key",
+     "crop": [
+      0.18,
+      0.04,
+      0.64,
+      0.5
+     ],
+     "rings": true,
+     "on": "circulait",
+     "stamp": "MYTHE"
+    },
+    {
+     "text": "*plus vieux que les fusées*",
+     "bg": "red",
+     "hit": true,
+     "on": "même"
+    },
+    {
+     "img": "assets/archives/muraille_chine_espace/jiayuguan_1875.jpg",
+     "mode": "fade",
+     "on": "premier"
+    }
+   ]
+  },
+  {
+   "say": "Et toi, tu y croyais ?",
+   "shots": [
+    {
+     "text": "Tu y *croyais ?*",
+     "img": "assets/archives/muraille_chine_espace/muraille_1917.jpg",
+     "mode": "fade",
+     "rings": true
+    }
+   ]
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "shots": [
+    {
+     "text": "*Abonne-toi.*",
+     "bg": "red"
+    }
+   ]
+  }
+ ]
+}
