@@ -165,9 +165,12 @@ function drawShot(s, t) {
   const cyy = 790;
   // a-coup d'entree (pop) + poussee lente continue : l'image n'est jamais immobile
   const pop = 1 + .07 * (1 - easeOut(clamp(p / .14))), push = 1 + .06 * q;
+  // tempo du son TikTok : petit "pump" sur chaque kick (1 temps sur 2 de la grille de coupe), comme les montages phonk
+  let beatPump = 1;
+  if (DATA.bpm) { const g = 120 / DATA.bpm, ph = (t % g) / g; beatPump = 1 + .035 * Math.pow(1 - ph, 4); }
   let shx = 0, shy = 0;
   if (s.hit && p < .35) { const a = 26 * Math.pow(1 - p / .35, 2); shx = (hash(Math.floor(t * 60)) - .5) * a; shy = (hash(Math.floor(t * 60) + 9) - .5) * a; }
-  cx.save(); cx.translate(540 + shx, cyy + shy); cx.scale(pop * push, pop * push); cx.translate(-540, -cyy);
+  cx.save(); cx.translate(540 + shx, cyy + shy); cx.scale(pop * push * beatPump, pop * push * beatPump); cx.translate(-540, -cyy);
   if (s.rings) drawRings(540, cyy, t, red);
   let bw = 0, bh = 0;
   if (s.img) {
