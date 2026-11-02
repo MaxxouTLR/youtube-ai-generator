@@ -3,7 +3,7 @@
  "num": 35,
  "source": "https://fr.wikipedia.org/wiki/Rams%C3%A8s_II",
  "caption": "#CapCut 📁 Dossier n°35 — En 1976, la momie de Ramsès II a été accueillie à Paris… avec les honneurs militaires 👑 Tu le savais ? #histoire #egypte #ramses #paris #lesaviezvous #dossier",
- "note": "Montage dynamique v2 (v2_convert.py, 02/11/2026) : coupes sur le tempo de « The Scooby Snacks », voix seule. A publier depuis TikTok avec le son, demarre sur un kick. (rev 2 : croquis pales en cadre, question au-dessus de l image) rev 3",
+ "note": "Montage dynamique v2 (v2_convert.py, 02/11/2026) : coupes sur le tempo de « The Scooby Snacks », voix seule. A publier depuis TikTok avec le son, demarre sur un kick. (rev 2 : croquis pales en cadre, question au-dessus de l image) rev 4",
  "bpm": 175.75,
  "nappe": false,
  "bruitages": false,
@@ -33,9 +33,7 @@
      "text": "*un pharaon mort*",
      "bg": "red",
      "hit": true,
-     "on": "pharaon",
-     "img": "assets/archives/ramses_ii_bourget_1976/chaillot.jpg",
-     "mode": "fade"
+     "on": "pharaon"
     },
     {
      "img": "assets/archives/ramses_ii_bourget_1976/abu_simbel.jpg",
@@ -56,9 +54,7 @@
      "text": "*Ramsès II*",
      "bg": "red",
      "hit": true,
-     "on": "Ramsès",
-     "img": "assets/archives/ramses_ii_bourget_1976/chaillot.jpg",
-     "mode": "fade"
+     "on": "Ramsès"
     },
     {
      "img": "assets/archives/ramses_ii_bourget_1976/abu_simbel.jpg",
@@ -105,9 +101,7 @@
      "text": "*un champignon*",
      "bg": "red",
      "hit": true,
-     "on": "champignon.",
-     "img": "assets/archives/ramses_ii_bourget_1976/chaillot.jpg",
-     "mode": "fade"
+     "on": "champignon."
     }
    ]
   },
@@ -115,17 +109,14 @@
    "say": "L'Égypte accepte de l'envoyer en France pour la soigner.",
    "shots": [
     {
-     "rings": true,
-     "img": "assets/archives/ramses_ii_bourget_1976/chaillot.jpg",
-     "mode": "fade"
+     "icon": "✈️",
+     "rings": true
     },
     {
      "text": "*la France*",
      "bg": "red",
      "hit": true,
-     "on": "France",
-     "img": "assets/archives/ramses_ii_bourget_1976/chaillot.jpg",
-     "mode": "fade"
+     "on": "France"
     },
     {
      "img": "assets/archives/ramses_ii_bourget_1976/garde.jpg",
@@ -170,9 +161,7 @@
      "text": "*un chef d'État*",
      "bg": "red",
      "hit": true,
-     "on": "d'État.",
-     "img": "assets/archives/ramses_ii_bourget_1976/chaillot.jpg",
-     "mode": "fade"
+     "on": "d'État."
     }
    ]
   },
@@ -211,9 +200,7 @@
      "text": "*roi, décédé*",
      "bg": "red",
      "hit": true,
-     "on": "décédé.",
-     "img": "assets/archives/ramses_ii_bourget_1976/chaillot.jpg",
-     "mode": "fade"
+     "on": "décédé."
     }
    ]
   },
@@ -241,9 +228,7 @@
      "text": "*musée de l'Homme*",
      "bg": "red",
      "hit": true,
-     "on": "l'Homme.",
-     "img": "assets/archives/ramses_ii_bourget_1976/chaillot.jpg",
-     "mode": "fade"
+     "on": "l'Homme."
     }
    ]
   },
@@ -251,19 +236,16 @@
    "say": "Puis elle est stérilisée par irradiation, et repart en Égypte.",
    "shots": [
     {
+     "icon": "☢️",
      "rings": true,
      "bg": "red",
-     "hit": true,
-     "img": "assets/archives/ramses_ii_bourget_1976/chaillot.jpg",
-     "mode": "fade"
+     "hit": true
     },
     {
      "text": "*Puis renvoyée*",
      "bg": "red",
      "hit": true,
-     "on": "Puis",
-     "img": "assets/archives/ramses_ii_bourget_1976/chaillot.jpg",
-     "mode": "fade"
+     "on": "Puis"
     },
     {
      "img": "assets/archives/ramses_ii_bourget_1976/garde.jpg",
@@ -289,9 +271,7 @@
    "shots": [
     {
      "text": "*Abonne-toi.*",
-     "bg": "red",
-     "img": "assets/archives/ramses_ii_bourget_1976/chaillot.jpg",
-     "mode": "fade"
+     "bg": "red"
     }
    ]
   }
