@@ -1,5 +1,13 @@
 # Supervision des agents « Dossiers d'Histoire »
 
+## 2026-11-02 09:40 (superviseur unique)
+- ⚠️ PC éteint du 27/10 10h09 au 02/11 9h25 : passages manqués (programmateur jeu. 29/10, newsletter 29/10, scénariste + beacons-libraire dim. 01/11). Rattrapages à 9h32 : programmateur ✅ (n°26–35, 02/11 19h → 07/11 8h), newsletter ✅ (brouillon 02/11), scénariste en cours. beacons-libraire non rattrapé (dernier passage 25/10 en échec).
+- ⚠️ Trou de publication : n°23 yamaguchi_deux_bombes, n°24 charles_vi_roi_de_verre, n°25 pyramides_sans_esclaves jamais programmés (créneaux 01/11 8h, 01/11 19h, 02/11 8h passés). Proposition au rapport général.
+- ✅ Rendu GitHub : les 28 dossiers n°11–38 ont leur _Remy.mp4 (> 1 Mo).
+- ✅ Couverture planning Buffer : dernière date 07/11 8h (+5 j).
+- ⚠️ Couverture écrite : dernière date 08/11 19h (n°38), +6 j < 7 → ALERTE (scénariste en cours de rattrapage).
+- Analyste en pause crédits (désactivé depuis le 26/10). Bon sens : JSON valides, aucun num en double ; toujours 9 JSON hérités sans num/légende (karansebes/onoda gardent un _Remy.mp4, non repris par le programmateur ce matin).
+
 ## 2026-10-25 21:45
 - ⚠️ Erreurs QG (niveau 3, github) : 1 run en échec sur les 10 derniers → c'est « Daily YouTube videos » (main, 25/10 16:04), suivi de succès ; le workflow demo-fr est vert. STATUT : ALERTE.
 - ⚠️ Exécutions : beacons-libraire (dim. 18h10) ÉCHOUÉ — « session limit » à 18:09, page Beacons non mise à jour. Scénariste 10h ✅ (n°37–38 poussés). Analyste et Newsletter ont eu un rattrapage hors planning à 18:04 aussi tombé sur la limite (pas une exécution due ; 1ers passages prévus 27/10 et 29/10). Programmateur : 1er passage demain 26/10 9h.
