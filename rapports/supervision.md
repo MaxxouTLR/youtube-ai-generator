@@ -1,5 +1,13 @@
 # Supervision des agents « Dossiers d'Histoire »
 
+## 2026-11-03 08:45 (superviseur unique, rattrapage du passage de 22h30 du 02/11)
+- ✅ Scénariste rattrapé : n°39–52 écrits et rendus (vidéos toutes > 1 Mo, runs demo-fr verts). Dernière date écrite ≈ 15/11 (+12 j).
+- ✅ Planning Buffer : n°26–38 programmés jusqu'au 07/11 17h (+4 j). Nouveaux créneaux (6h/13h/15h/17h/18h/22h, montage v2 + musique) décidés le 02/11 au soir : la formule 8h/19h n'est plus appliquée.
+- ⚠️ Planning : « étiquette IA cochée » sur n°27–35 alors que la consigne est « jamais d'étiquette IA » → à confirmer par l'utilisateur. n°28 et n°30 publiés à la main (hors Buffer).
+- ⚠️ n°23–25 (yamaguchi, charles_vi, pyramides) toujours jamais programmés (proposition [1]).
+- ⚠️ Analyste : dernier passage 25/10 (> 5 j) ; réactivé le 02/11, prochain passage aujourd'hui 11h. Newsletter 02/11 ✅. Beacons non mis à jour (Chrome non connecté le 02/11).
+- Bon sens : JSON valides, aucun num en double ; toujours 9 JSON hérités sans num/légende.
+
 ## 2026-11-02 09:40 (superviseur unique)
 - ⚠️ PC éteint du 27/10 10h09 au 02/11 9h25 : passages manqués (programmateur jeu. 29/10, newsletter 29/10, scénariste + beacons-libraire dim. 01/11). Rattrapages à 9h32 : programmateur ✅ (n°26–35, 02/11 19h → 07/11 8h), newsletter ✅ (brouillon 02/11), scénariste en cours. beacons-libraire non rattrapé (dernier passage 25/10 en échec).
 - ⚠️ Trou de publication : n°23 yamaguchi_deux_bombes, n°24 charles_vi_roi_de_verre, n°25 pyramides_sans_esclaves jamais programmés (créneaux 01/11 8h, 01/11 19h, 02/11 8h passés). Proposition au rapport général.
