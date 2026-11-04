@@ -1,5 +1,11 @@
 # Supervision des agents « Dossiers d'Histoire »
 
+## 2026-11-04 10:20 (superviseur unique, rattrapage du passage de 22h30 du 03/11, non lancé)
+- ✅ Analyste 03/11 ✅ (rapport stats_2026-11-03, 17 dossiers publiés nettoyés). Newsletter : prochain passage jeu. 05/11.
+- ✅ Planning Buffer jusqu'au 07/11 17h (+3 j). Dernière date écrite ≈ 15/11 (+11 j). Programmateur jeu. 05/11.
+- ✅ Bon sens : JSON valides, aucun num en double, vidéos > 1 Mo ; les vidéos absentes correspondent à des dossiers publiés (suppression volontaire). Runs GitHub verts.
+- ⚠️ n°23–25 toujours jamais programmés (vidéos prêtes) ; étiquette IA cochée sur n°27–35 → propositions [1] et [4] en attente.
+
 ## 2026-11-03 08:45 (superviseur unique, rattrapage du passage de 22h30 du 02/11)
 - ✅ Scénariste rattrapé : n°39–52 écrits et rendus (vidéos toutes > 1 Mo, runs demo-fr verts). Dernière date écrite ≈ 15/11 (+12 j).
 - ✅ Planning Buffer : n°26–38 programmés jusqu'au 07/11 17h (+4 j). Nouveaux créneaux (6h/13h/15h/17h/18h/22h, montage v2 + musique) décidés le 02/11 au soir : la formule 8h/19h n'est plus appliquée.
