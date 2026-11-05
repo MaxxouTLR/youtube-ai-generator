@@ -1,0 +1,246 @@
+{
+ "slug": "cesar_pirates_v2",
+ "num": 40,
+ "source": "https://fr.wikipedia.org/wiki/Jules_C%C3%A9sar",
+ "caption": "#CapCut 📁 Dossier n°40 — Des pirates ont enlevé Jules César… et il a exigé une rançon plus haute 🏴‍☠️ Tu l'aurais pris au sérieux ? #histoire #rome #cesar #lesaviezvous #dossier",
+ "note": "Montage dynamique v2 (v2_convert.py, 02/11/2026) : coupes sur le tempo de « The Scooby Snacks », voix seule. A publier depuis TikTok avec le son, demarre sur un kick.",
+ "bpm": 175.75,
+ "nappe": false,
+ "bruitages": false,
+ "beats": [
+  {
+   "say": "Des pirates enlèvent César. Il exige une rançon plus haute.",
+   "shots": [
+    {
+     "img": "assets/archives/cesar_pirates/pirates.jpg",
+     "mode": "frame",
+     "label": "CÉSAR CHEZ LES PIRATES · GRAVURE",
+     "focus": true
+    },
+    {
+     "img": "assets/archives/cesar_pirates/pirates.jpg",
+     "mode": "frame",
+     "crop": [
+      0.2,
+      0.1,
+      0.6,
+      0.8
+     ],
+     "rings": true,
+     "on": "César."
+    },
+    {
+     "text": "*payer plus*",
+     "bg": "red",
+     "hit": true,
+     "on": "plus"
+    }
+   ]
+  },
+  {
+   "say": "Ils demandent vingt talents. Il répond : j'en vaux cinquante.",
+   "shots": [
+    {
+     "led": "*50*"
+    },
+    {
+     "img": "assets/archives/cesar_pirates/buste.jpg",
+     "mode": "fade",
+     "on": "talents."
+    },
+    {
+     "img": "assets/archives/cesar_pirates/cilicie.jpg",
+     "mode": "key",
+     "flip": true,
+     "on": "j'en"
+    }
+   ]
+  },
+  {
+   "say": "Il a environ vingt-cinq ans. Captif pendant trente-huit jours.",
+   "shots": [
+    {
+     "img": "assets/archives/cesar_pirates/buste.jpg",
+     "mode": "fade",
+     "label": "CÉSAR · BUSTE DE TUSCULUM"
+    },
+    {
+     "img": "assets/archives/cesar_pirates/buste.jpg",
+     "mode": "fade",
+     "crop": [
+      0.25,
+      0.15,
+      0.5,
+      0.45
+     ],
+     "on": "vingt-cinq"
+    },
+    {
+     "text": "*38 jours*",
+     "bg": "red",
+     "hit": true,
+     "on": "jours."
+    }
+   ]
+  },
+  {
+   "say": "Il leur lit ses poèmes. Et les traite de barbares.",
+   "shots": [
+    {
+     "icon": "📜",
+     "rings": true
+    },
+    {
+     "text": "*ses poèmes*",
+     "bg": "red",
+     "hit": true,
+     "on": "poèmes."
+    },
+    {
+     "img": "assets/archives/cesar_pirates/pirates.jpg",
+     "mode": "frame",
+     "crop": [
+      0.2,
+      0.1,
+      0.6,
+      0.8
+     ],
+     "on": "traite"
+    }
+   ]
+  },
+  {
+   "say": "Le pire ? Il leur promet, en riant, de tous les crucifier.",
+   "shots": [
+    {
+     "text": "« Je vous *crucifierai.* »",
+     "bg": "red",
+     "hit": true
+    },
+    {
+     "img": "assets/archives/cesar_pirates/buste.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "leur"
+    },
+    {
+     "img": "assets/archives/cesar_pirates/cilicie.jpg",
+     "mode": "key",
+     "on": "riant,"
+    },
+    {
+     "img": "assets/archives/cesar_pirates/pirates.jpg",
+     "mode": "frame",
+     "flip": true,
+     "crop": [
+      0.2,
+      0.1,
+      0.6,
+      0.8
+     ],
+     "on": "tous"
+    }
+   ]
+  },
+  {
+   "say": "Les pirates rient. Ils croient à une blague.",
+   "shots": [
+    {
+     "icon": "😂",
+     "rings": true
+    },
+    {
+     "text": "*rient*",
+     "bg": "red",
+     "hit": true,
+     "on": "rient."
+    },
+    {
+     "img": "assets/archives/cesar_pirates/pirates.jpg",
+     "mode": "frame",
+     "on": "à"
+    }
+   ]
+  },
+  {
+   "say": "Rançon payée, César arme des navires et les rattrape.",
+   "shots": [
+    {
+     "img": "assets/archives/cesar_pirates/cilicie.jpg",
+     "mode": "key",
+     "label": "CÉSAR ET LES PIRATES CILICIENS"
+    },
+    {
+     "img": "assets/archives/cesar_pirates/cilicie.jpg",
+     "mode": "key",
+     "crop": [
+      0.18,
+      0.04,
+      0.64,
+      0.5
+     ],
+     "rings": true,
+     "on": "arme"
+    },
+    {
+     "text": "*rattrape*",
+     "bg": "red",
+     "hit": true,
+     "on": "rattrape."
+    }
+   ]
+  },
+  {
+   "say": "Il tient parole. Selon Suétone, il les fait d'abord égorger, par clémence.",
+   "shots": [
+    {
+     "text": "Promesse *tenue.*"
+    },
+    {
+     "img": "assets/archives/cesar_pirates/buste.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "Selon",
+     "stamp": "TENUE"
+    },
+    {
+     "img": "assets/archives/cesar_pirates/cilicie.jpg",
+     "mode": "key",
+     "crop": [
+      0.2,
+      0.1,
+      0.6,
+      0.8
+     ],
+     "on": "les"
+    },
+    {
+     "img": "assets/archives/cesar_pirates/pirates.jpg",
+     "mode": "frame",
+     "flip": true,
+     "on": "égorger,"
+    }
+   ]
+  },
+  {
+   "say": "Toi, tu l'aurais pris au sérieux ?",
+   "shots": [
+    {
+     "text": "Tu l'aurais *pris au sérieux ?*",
+     "img": "assets/archives/cesar_pirates/cilicie.jpg",
+     "mode": "key",
+     "rings": true
+    }
+   ]
+  },
+  {
+   "say": "Abonne-toi, prochain dossier demain matin.",
+   "shots": [
+    {
+     "text": "*Abonne-toi.*",
+     "bg": "red"
+    }
+   ]
+  }
+ ]
+}

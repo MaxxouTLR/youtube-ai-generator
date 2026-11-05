@@ -1,0 +1,272 @@
+{
+ "slug": "marie_curie_carnets_v2",
+ "num": 39,
+ "source": "https://fr.wikipedia.org/wiki/Marie_Curie",
+ "caption": "#CapCut 📁 Dossier n°39 — Les carnets de Marie Curie sont encore radioactifs ☢️ Tu oserais les ouvrir ? #histoire #science #mariecurie #lesaviezvous #dossier",
+ "note": "Montage dynamique v2 (v2_convert.py, 02/11/2026) : coupes sur le tempo de « The Scooby Snacks », voix seule. A publier depuis TikTok avec le son, demarre sur un kick.",
+ "bpm": 175.75,
+ "nappe": false,
+ "bruitages": false,
+ "beats": [
+  {
+   "say": "Ses carnets sont encore radioactifs, plus de cent ans après.",
+   "shots": [
+    {
+     "img": "assets/archives/marie_curie_carnets/labo_1912.jpg",
+     "mode": "fade",
+     "label": "MARIE CURIE DANS SON LABORATOIRE · 1912",
+     "focus": true
+    },
+    {
+     "img": "assets/archives/marie_curie_carnets/labo_1912.jpg",
+     "mode": "fade",
+     "crop": [
+      0.2,
+      0.1,
+      0.6,
+      0.8
+     ],
+     "rings": true,
+     "on": "encore"
+    },
+    {
+     "text": "*dangereux*",
+     "bg": "red",
+     "hit": true,
+     "on": "cent"
+    }
+   ]
+  },
+  {
+   "say": "Pour les consulter, il faut signer une décharge.",
+   "shots": [
+    {
+     "img": "assets/archives/marie_curie_carnets/carnet.jpg",
+     "mode": "fade",
+     "label": "UN CARNET DE MARIE CURIE"
+    },
+    {
+     "img": "assets/archives/marie_curie_carnets/carnet.jpg",
+     "mode": "fade",
+     "crop": [
+      0.05,
+      0.2,
+      0.5,
+      0.7
+     ],
+     "on": "il"
+    },
+    {
+     "text": "*décharge*",
+     "bg": "red",
+     "hit": true,
+     "on": "décharge."
+    }
+   ]
+  },
+  {
+   "say": "Ils sont rangés à Paris, dans des boîtes doublées de plomb.",
+   "shots": [
+    {
+     "icon": "📦",
+     "rings": true
+    },
+    {
+     "img": "assets/archives/marie_curie_carnets/carnet.jpg",
+     "mode": "fade",
+     "on": "des"
+    },
+    {
+     "img": "assets/archives/marie_curie_carnets/labo_1912.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "doublées"
+    },
+    {
+     "text": "*en plomb*",
+     "bg": "red",
+     "hit": true,
+     "on": "plomb."
+    }
+   ]
+  },
+  {
+   "say": "Le plus fou ? Leur radium met seize siècles à perdre moitié.",
+   "shots": [
+    {
+     "led": "*1600 ANS*",
+     "bg": "red",
+     "hit": true
+    },
+    {
+     "img": "assets/archives/marie_curie_carnets/nobel.jpg",
+     "mode": "fade",
+     "crop": [
+      0.25,
+      0.15,
+      0.5,
+      0.45
+     ],
+     "on": "Leur"
+    },
+    {
+     "img": "assets/archives/marie_curie_carnets/pierre_marie.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "seize"
+    },
+    {
+     "img": "assets/archives/marie_curie_carnets/carnet.jpg",
+     "mode": "fade",
+     "on": "à"
+    }
+   ]
+  },
+  {
+   "say": "Marie Curie découvre le radium en 1898, avec son mari Pierre.",
+   "shots": [
+    {
+     "img": "assets/archives/marie_curie_carnets/pierre_marie.jpg",
+     "mode": "fade",
+     "label": "PIERRE ET MARIE CURIE"
+    },
+    {
+     "text": "*Marie*",
+     "bg": "red",
+     "hit": true,
+     "on": "Marie"
+    },
+    {
+     "img": "assets/archives/marie_curie_carnets/pierre_marie.jpg",
+     "mode": "fade",
+     "crop": [
+      0.18,
+      0.04,
+      0.64,
+      0.5
+     ],
+     "rings": true,
+     "on": "le"
+    },
+    {
+     "img": "assets/archives/marie_curie_carnets/labo_1912.jpg",
+     "mode": "fade",
+     "flip": true,
+     "crop": [
+      0.2,
+      0.1,
+      0.6,
+      0.8
+     ],
+     "on": "son"
+    }
+   ]
+  },
+  {
+   "say": "Elle le manipule à mains nues, sans aucune protection.",
+   "shots": [
+    {
+     "icon": "🧪",
+     "rings": true
+    },
+    {
+     "text": "*mains nues*",
+     "bg": "red",
+     "hit": true,
+     "on": "mains"
+    },
+    {
+     "img": "assets/archives/marie_curie_carnets/nobel.jpg",
+     "mode": "fade",
+     "on": "sans"
+    }
+   ]
+  },
+  {
+   "say": "Problème : en 1934, une maladie du sang l'emporte. Sans doute les radiations.",
+   "shots": [
+    {
+     "text": "1934 : *irradiée.*",
+     "bg": "red",
+     "hit": true
+    },
+    {
+     "img": "assets/archives/marie_curie_carnets/pierre_marie.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "une",
+     "stamp": "IRRADIÉE"
+    },
+    {
+     "img": "assets/archives/marie_curie_carnets/labo_1912.jpg",
+     "mode": "fade",
+     "crop": [
+      0.2,
+      0.1,
+      0.6,
+      0.8
+     ],
+     "on": "sang"
+    },
+    {
+     "img": "assets/archives/marie_curie_carnets/carnet.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "doute"
+    }
+   ]
+  },
+  {
+   "say": "Selon plusieurs sources, même son cercueil au Panthéon est doublé de plomb.",
+   "shots": [
+    {
+     "img": "assets/archives/marie_curie_carnets/nobel.jpg",
+     "mode": "fade",
+     "label": "MARIE CURIE · PRIX NOBEL 1911"
+    },
+    {
+     "img": "assets/archives/marie_curie_carnets/nobel.jpg",
+     "mode": "fade",
+     "crop": [
+      0.25,
+      0.15,
+      0.5,
+      0.45
+     ],
+     "on": "même"
+    },
+    {
+     "img": "assets/archives/marie_curie_carnets/carnet.jpg",
+     "mode": "fade",
+     "on": "doublé"
+    },
+    {
+     "text": "*en plomb*",
+     "bg": "red",
+     "hit": true,
+     "on": "plomb."
+    }
+   ]
+  },
+  {
+   "say": "Et toi, tu oserais ouvrir ses carnets ?",
+   "shots": [
+    {
+     "text": "Tu oserais *les ouvrir ?*",
+     "img": "assets/archives/marie_curie_carnets/pierre_marie.jpg",
+     "mode": "fade",
+     "rings": true
+    }
+   ]
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "shots": [
+    {
+     "text": "*Abonne-toi.*",
+     "bg": "red"
+    }
+   ]
+  }
+ ]
+}
