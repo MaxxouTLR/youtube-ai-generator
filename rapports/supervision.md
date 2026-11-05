@@ -1,5 +1,11 @@
 # Supervision des agents « Dossiers d'Histoire »
 
+## 2026-11-05 08:30 (superviseur unique, rattrapage du passage de 22h30 du 04/11, non lancé)
+- ✅ Analyste 03/11 (< 5 j). Newsletter et programmateur prévus ce matin (jeu. 05/11).
+- ⚠️ Planning Buffer jusqu'au 07/11 17h (+2,4 j, limite) → le programmateur de 9h doit prolonger. Dernière date écrite ≈ 15/11 (+10 j) ✅.
+- ✅ Bon sens : JSON valides, aucun num en double, légendes OK, n°39–52 rendus (vidéos > 1 Mo).
+- ⚠️ n°23–25 jamais programmés ; étiquette IA cochée sur n°27–35 → propositions [1] et [4] toujours en attente.
+
 ## 2026-11-04 10:20 (superviseur unique, rattrapage du passage de 22h30 du 03/11, non lancé)
 - ✅ Analyste 03/11 ✅ (rapport stats_2026-11-03, 17 dossiers publiés nettoyés). Newsletter : prochain passage jeu. 05/11.
 - ✅ Planning Buffer jusqu'au 07/11 17h (+3 j). Dernière date écrite ≈ 15/11 (+11 j). Programmateur jeu. 05/11.
