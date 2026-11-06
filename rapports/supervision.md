@@ -1,5 +1,11 @@
 # Supervision des agents « Dossiers d'Histoire »
 
+## 2026-11-06 22h40 (superviseur unique)
+- ✅ Analyste 06/11 11h (stats_2026-11-06.md, commit 9d5d57f). Newsletter 05/11. Programmateur prochain lun. 09/11.
+- ✅ Planning : n°39–42 programmés jusqu'au 09/11 13h (+2,6 j). Dernière date écrite ≈ 15/11 19h (+8,9 j).
+- ✅ Bon sens : JSON valides, num max 52, aucun doublon, légendes OK, vidéos > 1 Mo, aucun rendu manquant.
+- ⚠️ n°23–25 toujours non programmés ; n°43–52 en attente (Buffer 10/10) → propositions [1], [4], [5] sans réponse.
+
 ## 2026-11-05 22:40 (superviseur unique)
 - ✅ Programmateur 05/11 9h09 (« Buffer plein 10/10 ») ; planning local indique n°39–42 programmés le 05/11 jusqu'au 09/11 13h (+3,6 j) — modification de planning_tiktok.md non commitée (laissée telle quelle). Dernière date écrite ≈ 15/11 (+10 j).
 - ✅ Newsletter 05/11 (brouillon newsletters/2026-11-05.md). Analyste 03/11 (< 5 j), prochain ven. 06/11.
