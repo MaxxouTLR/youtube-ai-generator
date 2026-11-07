@@ -1,5 +1,11 @@
 # Supervision des agents « Dossiers d'Histoire »
 
+## 2026-11-07 22h40 (superviseur unique)
+- ✅ Analyste 06/11 (< 5 j), newsletter 05/11. Programmateur prochain lun. 09/11 9h.
+- ✅ Planning local : n°43–48 notés « programmé le 07/11 (Buffer) » (hors passage d'agent, fichier modifié à 18h14, non commité — laissé tel quel), dernier créneau 12/11 13h (+4,6 j). Dernière date écrite ≈ 15/11 (+7,9 j). Créneaux 06h/11h/13h/22h ≠ règle 8h/19h (info).
+- ✅ Bon sens : JSON valides, num max 52, aucun doublon, légendes OK, vidéos > 1 Mo, aucun rendu manquant.
+- ⚠️ n°23–25 toujours non programmés ; propositions [1], [4], [5] sans réponse.
+
 ## 2026-11-06 22h40 (superviseur unique)
 - ✅ Analyste 06/11 11h (stats_2026-11-06.md, commit 9d5d57f). Newsletter 05/11. Programmateur prochain lun. 09/11.
 - ✅ Planning : n°39–42 programmés jusqu'au 09/11 13h (+2,6 j). Dernière date écrite ≈ 15/11 19h (+8,9 j).
