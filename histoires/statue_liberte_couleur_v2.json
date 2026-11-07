@@ -1,0 +1,242 @@
+{
+ "slug": "statue_liberte_couleur_v2",
+ "num": 43,
+ "source": "https://fr.wikipedia.org/wiki/Statue_de_la_Libert%C3%A9",
+ "caption": "#CapCut 📁 Dossier n°43 — La statue de la Liberté n'a pas toujours été verte 🗽 Tu la préfères verte ou cuivre ? #histoire #newyork #paris #lesaviezvous #dossier",
+ "note": "Montage dynamique v2 (v2_convert.py, 02/11/2026) : coupes sur le tempo de « The Scooby Snacks », voix seule. A publier depuis TikTok avec le son, demarre sur un kick.",
+ "bpm": 175.75,
+ "nappe": false,
+ "bruitages": false,
+ "beats": [
+  {
+   "say": "La statue de la Liberté n'a pas toujours été verte.",
+   "shots": [
+    {
+     "img": "assets/archives/statue_liberte_couleur/construction.jpg",
+     "mode": "fade",
+     "label": "CONSTRUCTION À PARIS · VERS 1883",
+     "focus": true
+    },
+    {
+     "img": "assets/archives/statue_liberte_couleur/construction.jpg",
+     "mode": "fade",
+     "crop": [
+      0.2,
+      0.1,
+      0.6,
+      0.8
+     ],
+     "rings": true,
+     "on": "la"
+    },
+    {
+     "text": "*était-elle*",
+     "bg": "red",
+     "hit": true,
+     "on": "toujours"
+    }
+   ]
+  },
+  {
+   "say": "En 1886, elle brille comme une casserole neuve.",
+   "shots": [
+    {
+     "led": "*CUIVRE*"
+    },
+    {
+     "img": "assets/archives/statue_liberte_couleur/aujourdhui.jpg",
+     "mode": "fade",
+     "on": "brille"
+    },
+    {
+     "img": "assets/archives/statue_liberte_couleur/construction.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "une"
+    }
+   ]
+  },
+  {
+   "say": "Sauf que le cuivre s'oxyde à l'air salé de New York.",
+   "shots": [
+    {
+     "text": "Le sel *la ronge.*",
+     "bg": "red",
+     "hit": true
+    },
+    {
+     "img": "assets/archives/statue_liberte_couleur/tete_1878.jpg",
+     "mode": "fade",
+     "crop": [
+      0.25,
+      0.15,
+      0.5,
+      0.45
+     ],
+     "on": "cuivre"
+    },
+    {
+     "img": "assets/archives/statue_liberte_couleur/aujourdhui.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "l'air"
+    },
+    {
+     "img": "assets/archives/statue_liberte_couleur/construction.jpg",
+     "mode": "fade",
+     "on": "de"
+    }
+   ]
+  },
+  {
+   "say": "En une vingtaine d'années, une couche verte la recouvre.",
+   "shots": [
+    {
+     "led": "*≈ 20 ANS*"
+    },
+    {
+     "img": "assets/archives/statue_liberte_couleur/tete_1878.jpg",
+     "mode": "fade",
+     "flip": true,
+     "crop": [
+      0.18,
+      0.04,
+      0.64,
+      0.5
+     ],
+     "on": "d'années,"
+    },
+    {
+     "img": "assets/archives/statue_liberte_couleur/aujourdhui.jpg",
+     "mode": "fade",
+     "on": "verte"
+    }
+   ]
+  },
+  {
+   "say": "Et elle est française : construite à Paris, par Bartholdi.",
+   "shots": [
+    {
+     "img": "assets/archives/statue_liberte_couleur/tete_1878.jpg",
+     "mode": "fade",
+     "label": "SA TÊTE EXPOSÉE À PARIS · 1878"
+    },
+    {
+     "img": "assets/archives/statue_liberte_couleur/tete_1878.jpg",
+     "mode": "fade",
+     "crop": [
+      0.25,
+      0.15,
+      0.5,
+      0.45
+     ],
+     "on": "française"
+    },
+    {
+     "text": "*à Paris*",
+     "bg": "red",
+     "hit": true,
+     "on": "Paris,"
+    }
+   ]
+  },
+  {
+   "say": "Sa charpente intérieure ? Signée Gustave Eiffel.",
+   "shots": [
+    {
+     "icon": "🗼",
+     "rings": true
+    },
+    {
+     "text": "*Eiffel*",
+     "bg": "red",
+     "hit": true,
+     "on": "Eiffel."
+    }
+   ]
+  },
+  {
+   "say": "Le pire ? En 1906, on envisage de la repeindre.",
+   "shots": [
+    {
+     "icon": "🖌️",
+     "rings": true,
+     "bg": "red",
+     "hit": true
+    },
+    {
+     "img": "assets/archives/statue_liberte_couleur/tete_1878.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "de"
+    },
+    {
+     "text": "*repeindre*",
+     "bg": "red",
+     "hit": true,
+     "on": "repeindre."
+    }
+   ]
+  },
+  {
+   "say": "Le public proteste. Et ce vert la protège de la corrosion.",
+   "shots": [
+    {
+     "img": "assets/archives/statue_liberte_couleur/aujourdhui.jpg",
+     "mode": "fade",
+     "label": "LA STATUE AUJOURD'HUI"
+    },
+    {
+     "text": "*la protège*",
+     "bg": "red",
+     "hit": true,
+     "on": "proteste.",
+     "stamp": "SAUVÉE"
+    },
+    {
+     "img": "assets/archives/statue_liberte_couleur/aujourdhui.jpg",
+     "mode": "fade",
+     "crop": [
+      0.18,
+      0.04,
+      0.64,
+      0.5
+     ],
+     "rings": true,
+     "on": "Et"
+    },
+    {
+     "img": "assets/archives/statue_liberte_couleur/construction.jpg",
+     "mode": "fade",
+     "crop": [
+      0.25,
+      0.15,
+      0.5,
+      0.45
+     ],
+     "on": "de"
+    }
+   ]
+  },
+  {
+   "say": "Et toi, tu la préfères verte ou cuivre ?",
+   "shots": [
+    {
+     "text": "Verte ou *cuivre ?*",
+     "img": "assets/archives/statue_liberte_couleur/aujourdhui.jpg",
+     "mode": "fade",
+     "rings": true
+    }
+   ]
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "shots": [
+    {
+     "text": "*Abonne-toi.*",
+     "bg": "red"
+    }
+   ]
+  }
+ ]
+}

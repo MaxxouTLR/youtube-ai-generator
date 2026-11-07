@@ -1,0 +1,245 @@
+{
+ "slug": "toutankhamon_malediction_v2",
+ "num": 46,
+ "source": "https://fr.wikipedia.org/wiki/Mal%C3%A9diction_de_Tout%C3%A2nkhamon",
+ "caption": "#CapCut 📁 Dossier n°46 — Il a ouvert le tombeau de Toutânkhamon… et il est mort 5 mois après 🦟 Tu crois à la malédiction ? #egypte #histoire #toutankhamon #lesaviezvous #dossier",
+ "note": "Montage dynamique v2 (v2_convert.py, 02/11/2026) : coupes sur le tempo de « The Scooby Snacks », voix seule. A publier depuis TikTok avec le son, demarre sur un kick.",
+ "bpm": 175.75,
+ "nappe": false,
+ "bruitages": false,
+ "beats": [
+  {
+   "say": "Il ouvre le tombeau. Cinq mois après, il est mort.",
+   "shots": [
+    {
+     "img": "assets/archives/toutankhamon_malediction/tombeau.jpg",
+     "mode": "fade",
+     "label": "CARNARVON ET CARTER AU TOMBEAU · 1922",
+     "focus": true
+    },
+    {
+     "img": "assets/archives/toutankhamon_malediction/tombeau.jpg",
+     "mode": "fade",
+     "crop": [
+      0.2,
+      0.1,
+      0.6,
+      0.8
+     ],
+     "rings": true,
+     "on": "tombeau."
+    },
+    {
+     "text": "*existe-t-elle*",
+     "bg": "red",
+     "hit": true,
+     "on": "il"
+    }
+   ]
+  },
+  {
+   "say": "Lord Carnarvon finance la fouille du tombeau de Toutânkhamon.",
+   "shots": [
+    {
+     "img": "assets/archives/toutankhamon_malediction/carnarvon.jpg",
+     "mode": "fade",
+     "label": "LORD CARNARVON"
+    },
+    {
+     "text": "*Carnarvon*",
+     "bg": "red",
+     "hit": true,
+     "on": "Carnarvon"
+    },
+    {
+     "img": "assets/archives/toutankhamon_malediction/carnarvon.jpg",
+     "mode": "fade",
+     "crop": [
+      0.05,
+      0.2,
+      0.5,
+      0.7
+     ],
+     "on": "la"
+    }
+   ]
+  },
+  {
+   "say": "Novembre 1922. Howard Carter découvre des choses merveilleuses.",
+   "shots": [
+    {
+     "img": "assets/archives/toutankhamon_malediction/carter.jpg",
+     "mode": "fade",
+     "label": "HOWARD CARTER DANS LE TOMBEAU"
+    },
+    {
+     "img": "assets/archives/toutankhamon_malediction/carter.jpg",
+     "mode": "fade",
+     "crop": [
+      0.45,
+      0.2,
+      0.5,
+      0.7
+     ],
+     "rings": true,
+     "on": "Carter"
+    },
+    {
+     "text": "*merveilleuses*",
+     "bg": "red",
+     "hit": true,
+     "on": "merveilleuses."
+    }
+   ]
+  },
+  {
+   "say": "Le pire ? En avril 1923, Carnarvon meurt au Caire.",
+   "shots": [
+    {
+     "text": "Avril 1923 : *il meurt.*",
+     "bg": "red",
+     "hit": true
+    },
+    {
+     "img": "assets/archives/toutankhamon_malediction/carnarvon.jpg",
+     "mode": "fade",
+     "on": "avril",
+     "stamp": "MALÉDICTION ?"
+    },
+    {
+     "img": "assets/archives/toutankhamon_malediction/carter.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "meurt"
+    }
+   ]
+  },
+  {
+   "say": "Les journaux s'enflamment : c'est la malédiction du pharaon.",
+   "shots": [
+    {
+     "icon": "📰",
+     "rings": true
+    },
+    {
+     "text": "*malédiction*",
+     "bg": "red",
+     "hit": true,
+     "on": "malédiction"
+    },
+    {
+     "img": "assets/archives/toutankhamon_malediction/masque.jpg",
+     "mode": "fade",
+     "crop": [
+      0.25,
+      0.15,
+      0.5,
+      0.45
+     ],
+     "on": "malédiction"
+    }
+   ]
+  },
+  {
+   "say": "Sauf que… il meurt d'une piqûre de moustique infectée.",
+   "shots": [
+    {
+     "icon": "🦟",
+     "rings": true,
+     "bg": "red",
+     "hit": true
+    },
+    {
+     "img": "assets/archives/toutankhamon_malediction/tombeau.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "de"
+    },
+    {
+     "text": "*moustique*",
+     "bg": "red",
+     "hit": true,
+     "on": "moustique"
+    }
+   ]
+  },
+  {
+   "say": "Et Howard Carter, le premier entré ? Il vit encore seize ans.",
+   "shots": [
+    {
+     "led": "*16 ANS*"
+    },
+    {
+     "img": "assets/archives/toutankhamon_malediction/carnarvon.jpg",
+     "mode": "fade",
+     "on": "le"
+    },
+    {
+     "img": "assets/archives/toutankhamon_malediction/carter.jpg",
+     "mode": "fade",
+     "flip": true,
+     "crop": [
+      0.2,
+      0.1,
+      0.6,
+      0.8
+     ],
+     "on": "Il"
+    },
+    {
+     "img": "assets/archives/toutankhamon_malediction/masque.jpg",
+     "mode": "fade",
+     "on": "encore"
+    }
+   ]
+  },
+  {
+   "say": "Aucune étude sérieuse n'a jamais prouvé la moindre malédiction.",
+   "shots": [
+    {
+     "img": "assets/archives/toutankhamon_malediction/masque.jpg",
+     "mode": "fade",
+     "label": "MASQUE DE TOUTÂNKHAMON · LE CAIRE"
+    },
+    {
+     "img": "assets/archives/toutankhamon_malediction/masque.jpg",
+     "mode": "fade",
+     "crop": [
+      0.25,
+      0.15,
+      0.5,
+      0.45
+     ],
+     "on": "n'a",
+     "stamp": "MYTHE"
+    },
+    {
+     "text": "*preuve*",
+     "bg": "red",
+     "hit": true,
+     "on": "la"
+    }
+   ]
+  },
+  {
+   "say": "Et toi, tu y crois, à la malédiction ?",
+   "shots": [
+    {
+     "text": "Tu y crois, *toi ?*",
+     "img": "assets/archives/toutankhamon_malediction/tombeau.jpg",
+     "mode": "fade",
+     "rings": true
+    }
+   ]
+  },
+  {
+   "say": "Abonne-toi, prochain dossier demain matin.",
+   "shots": [
+    {
+     "text": "*Abonne-toi.*",
+     "bg": "red"
+    }
+   ]
+  }
+ ]
+}

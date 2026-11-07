@@ -1,0 +1,253 @@
+{
+ "slug": "mozart_miserere_1770_v2",
+ "num": 48,
+ "source": "https://fr.wikipedia.org/wiki/Miserere_(Allegri)",
+ "caption": "#CapCut 📁 Dossier n°48 — À 14 ans, Mozart a recopié de mémoire une musique interdite 🎼 Tu aurais pu le faire ? #mozart #histoire #musique #lesaviezvous #dossier",
+ "note": "Montage dynamique v2 (v2_convert.py, 02/11/2026) : coupes sur le tempo de « The Scooby Snacks », voix seule. A publier depuis TikTok avec le son, demarre sur un kick.",
+ "bpm": 175.75,
+ "nappe": false,
+ "bruitages": false,
+ "beats": [
+  {
+   "say": "Il entend une musique interdite. Il la recopie de mémoire.",
+   "shots": [
+    {
+     "img": "assets/archives/mozart_miserere_1770/mozart_1770.jpg",
+     "mode": "fade",
+     "label": "MOZART À 14 ANS · VÉRONE 1770",
+     "focus": true
+    },
+    {
+     "img": "assets/archives/mozart_miserere_1770/mozart_1770.jpg",
+     "mode": "fade",
+     "crop": [
+      0.18,
+      0.04,
+      0.64,
+      0.5
+     ],
+     "rings": true,
+     "on": "musique"
+    },
+    {
+     "text": "*fait ça*",
+     "bg": "red",
+     "hit": true,
+     "on": "recopie"
+    }
+   ]
+  },
+  {
+   "say": "Le gamin, c'est Mozart. Rome, semaine sainte, 1770.",
+   "shots": [
+    {
+     "icon": "🎼",
+     "rings": true
+    },
+    {
+     "text": "*Mozart*",
+     "bg": "red",
+     "hit": true,
+     "on": "Mozart."
+    },
+    {
+     "img": "assets/archives/mozart_miserere_1770/allegri.jpg",
+     "mode": "fade",
+     "on": "semaine"
+    }
+   ]
+  },
+  {
+   "say": "La musique : le Miserere d'Allegri, chanté seulement à la chapelle Sixtine.",
+   "shots": [
+    {
+     "img": "assets/archives/mozart_miserere_1770/sixtine.jpg",
+     "mode": "fade",
+     "label": "LA CHAPELLE SIXTINE · INGRES"
+    },
+    {
+     "img": "assets/archives/mozart_miserere_1770/sixtine.jpg",
+     "mode": "fade",
+     "crop": [
+      0.05,
+      0.2,
+      0.5,
+      0.7
+     ],
+     "on": "Miserere"
+    },
+    {
+     "text": "*Miserere*",
+     "bg": "red",
+     "hit": true,
+     "on": "Miserere"
+    },
+    {
+     "img": "assets/archives/mozart_miserere_1770/mozart_1770.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "la"
+    }
+   ]
+  },
+  {
+   "say": "Le pire ? Le recopier est interdit. Selon la légende, sous peine d'excommunication.",
+   "shots": [
+    {
+     "text": "*Interdit.*",
+     "bg": "red",
+     "hit": true
+    },
+    {
+     "img": "assets/archives/mozart_miserere_1770/sixtine.jpg",
+     "mode": "fade",
+     "crop": [
+      0.2,
+      0.1,
+      0.6,
+      0.8
+     ],
+     "on": "recopier",
+     "stamp": "INTERDIT"
+    },
+    {
+     "img": "assets/archives/mozart_miserere_1770/allegri.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "Selon"
+    },
+    {
+     "img": "assets/archives/mozart_miserere_1770/mozart_1770.jpg",
+     "mode": "fade",
+     "on": "sous"
+    }
+   ]
+  },
+  {
+   "say": "Une seule écoute lui suffit. Il rentre et écrit tout.",
+   "shots": [
+    {
+     "led": "*1*"
+    },
+    {
+     "img": "assets/archives/mozart_miserere_1770/sixtine.jpg",
+     "mode": "fade",
+     "flip": true,
+     "crop": [
+      0.2,
+      0.1,
+      0.6,
+      0.8
+     ],
+     "on": "lui"
+    },
+    {
+     "img": "assets/archives/mozart_miserere_1770/allegri.jpg",
+     "mode": "fade",
+     "on": "et"
+    }
+   ]
+  },
+  {
+   "say": "Une douzaine de minutes de musique, à neuf voix.",
+   "shots": [
+    {
+     "led": "*9 VOIX*"
+    },
+    {
+     "img": "assets/archives/mozart_miserere_1770/sixtine.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "minutes"
+    },
+    {
+     "img": "assets/archives/mozart_miserere_1770/mozart_1770.jpg",
+     "mode": "fade",
+     "crop": [
+      0.2,
+      0.1,
+      0.6,
+      0.8
+     ],
+     "on": "à"
+    }
+   ]
+  },
+  {
+   "say": "Sauf que… le pape l'apprend.",
+   "shots": [
+    {
+     "img": "assets/archives/mozart_miserere_1770/allegri.jpg",
+     "mode": "fade",
+     "label": "GREGORIO ALLEGRI · COMPOSITEUR",
+     "bg": "red",
+     "hit": true
+    },
+    {
+     "img": "assets/archives/mozart_miserere_1770/allegri.jpg",
+     "mode": "fade",
+     "crop": [
+      0.18,
+      0.04,
+      0.64,
+      0.5
+     ],
+     "rings": true,
+     "on": "le"
+    }
+   ]
+  },
+  {
+   "say": "Quelques mois plus tard, il le fait chevalier de l'Éperon d'or.",
+   "shots": [
+    {
+     "text": "*Chevalier* à 14 ans."
+    },
+    {
+     "img": "assets/archives/mozart_miserere_1770/mozart_1770.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "tard,",
+     "stamp": "CHEVALIER"
+    },
+    {
+     "img": "assets/archives/mozart_miserere_1770/allegri.jpg",
+     "mode": "fade",
+     "on": "fait"
+    },
+    {
+     "img": "assets/archives/mozart_miserere_1770/mozart_1770.jpg",
+     "mode": "fade",
+     "flip": true,
+     "crop": [
+      0.2,
+      0.1,
+      0.6,
+      0.8
+     ],
+     "on": "de"
+    }
+   ]
+  },
+  {
+   "say": "Et toi, tu aurais pu le faire ?",
+   "shots": [
+    {
+     "text": "Tu aurais *pu le faire ?*",
+     "img": "assets/archives/mozart_miserere_1770/allegri.jpg",
+     "mode": "fade",
+     "rings": true
+    }
+   ]
+  },
+  {
+   "say": "Abonne-toi, prochain dossier demain matin.",
+   "shots": [
+    {
+     "text": "*Abonne-toi.*",
+     "bg": "red"
+    }
+   ]
+  }
+ ]
+}

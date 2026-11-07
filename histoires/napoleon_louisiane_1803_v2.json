@@ -1,0 +1,238 @@
+{
+ "slug": "napoleon_louisiane_1803_v2",
+ "num": 47,
+ "source": "https://fr.wikipedia.org/wiki/Vente_de_la_Louisiane",
+ "caption": "#CapCut 📁 Dossier n°47 — Napoléon a vendu un territoire 4 fois grand comme la France 🗺️ Bonne affaire ou erreur ? #napoleon #histoire #usa #lesaviezvous #dossier",
+ "note": "Montage dynamique v2 (v2_convert.py, 02/11/2026) : coupes sur le tempo de « The Scooby Snacks », voix seule. A publier depuis TikTok avec le son, demarre sur un kick.",
+ "bpm": 175.75,
+ "nappe": false,
+ "bruitages": false,
+ "beats": [
+  {
+   "say": "Napoléon vend un territoire quatre fois grand comme la France.",
+   "shots": [
+    {
+     "img": "assets/archives/napoleon_louisiane_1803/bonaparte.jpg",
+     "mode": "fade",
+     "label": "BONAPARTE PREMIER CONSUL · GÉRARD",
+     "focus": true
+    },
+    {
+     "text": "*vend tout*",
+     "bg": "red",
+     "hit": true,
+     "on": "vend"
+    },
+    {
+     "img": "assets/archives/napoleon_louisiane_1803/bonaparte.jpg",
+     "mode": "fade",
+     "crop": [
+      0.18,
+      0.04,
+      0.64,
+      0.5
+     ],
+     "rings": true,
+     "on": "territoire"
+    }
+   ]
+  },
+  {
+   "say": "Le prix : quinze millions de dollars. Pour deux millions de kilomètres carrés.",
+   "shots": [
+    {
+     "led": "*15 M$*"
+    },
+    {
+     "img": "assets/archives/napoleon_louisiane_1803/bonaparte.jpg",
+     "mode": "fade",
+     "on": "millions"
+    },
+    {
+     "img": "assets/archives/napoleon_louisiane_1803/jefferson.jpg",
+     "mode": "fade",
+     "crop": [
+      0.25,
+      0.15,
+      0.5,
+      0.45
+     ],
+     "on": "de"
+    },
+    {
+     "img": "assets/archives/napoleon_louisiane_1803/carte.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "Pour"
+    }
+   ]
+  },
+  {
+   "say": "Le territoire : la Louisiane. Bien plus grande que l'État actuel.",
+   "shots": [
+    {
+     "img": "assets/archives/napoleon_louisiane_1803/carte.jpg",
+     "mode": "fade",
+     "label": "LA LOUISIANE VENDUE EN 1803"
+    },
+    {
+     "img": "assets/archives/napoleon_louisiane_1803/carte.jpg",
+     "mode": "fade",
+     "crop": [
+      0.05,
+      0.2,
+      0.5,
+      0.7
+     ],
+     "on": "Louisiane."
+    },
+    {
+     "text": "*Louisiane*",
+     "bg": "red",
+     "hit": true,
+     "on": "Louisiane."
+    }
+   ]
+  },
+  {
+   "say": "L'acheteur : les États-Unis de Thomas Jefferson.",
+   "shots": [
+    {
+     "img": "assets/archives/napoleon_louisiane_1803/jefferson.jpg",
+     "mode": "fade",
+     "label": "THOMAS JEFFERSON · 1800"
+    },
+    {
+     "img": "assets/archives/napoleon_louisiane_1803/jefferson.jpg",
+     "mode": "fade",
+     "crop": [
+      0.18,
+      0.04,
+      0.64,
+      0.5
+     ],
+     "rings": true,
+     "on": "de"
+    }
+   ]
+  },
+  {
+   "say": "Le plus fou ? Les Américains voulaient juste acheter La Nouvelle-Orléans.",
+   "shots": [
+    {
+     "text": "Juste *une ville.*",
+     "bg": "red",
+     "hit": true
+    },
+    {
+     "img": "assets/archives/napoleon_louisiane_1803/bonaparte.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "Les"
+    },
+    {
+     "img": "assets/archives/napoleon_louisiane_1803/carte.jpg",
+     "mode": "fade",
+     "on": "acheter"
+    }
+   ]
+  },
+  {
+   "say": "Napoléon a besoin d'argent pour sa guerre contre l'Angleterre.",
+   "shots": [
+    {
+     "icon": "⚔️",
+     "rings": true
+    },
+    {
+     "text": "*de la guerre*",
+     "bg": "red",
+     "hit": true,
+     "on": "guerre"
+    },
+    {
+     "img": "assets/archives/napoleon_louisiane_1803/jefferson.jpg",
+     "mode": "fade",
+     "flip": true,
+     "crop": [
+      0.18,
+      0.04,
+      0.64,
+      0.5
+     ],
+     "on": "guerre"
+    }
+   ]
+  },
+  {
+   "say": "D'un coup, les États-Unis doublent presque de taille.",
+   "shots": [
+    {
+     "led": "*x2*"
+    },
+    {
+     "img": "assets/archives/napoleon_louisiane_1803/carte.jpg",
+     "mode": "fade",
+     "on": "États-Unis"
+    },
+    {
+     "img": "assets/archives/napoleon_louisiane_1803/bonaparte.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "presque"
+    }
+   ]
+  },
+  {
+   "say": "Aujourd'hui, ce territoire couvre tout ou partie de quinze États américains.",
+   "shots": [
+    {
+     "text": "*Quinze* États."
+    },
+    {
+     "img": "assets/archives/napoleon_louisiane_1803/bonaparte.jpg",
+     "mode": "fade",
+     "crop": [
+      0.25,
+      0.15,
+      0.5,
+      0.45
+     ],
+     "on": "couvre",
+     "stamp": "VENDU"
+    },
+    {
+     "img": "assets/archives/napoleon_louisiane_1803/jefferson.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "partie"
+    },
+    {
+     "img": "assets/archives/napoleon_louisiane_1803/bonaparte.jpg",
+     "mode": "fade",
+     "on": "quinze"
+    }
+   ]
+  },
+  {
+   "say": "Alors, bonne affaire ou erreur historique ?",
+   "shots": [
+    {
+     "text": "Bonne affaire ou *erreur ?*",
+     "img": "assets/archives/napoleon_louisiane_1803/jefferson.jpg",
+     "mode": "fade",
+     "rings": true
+    }
+   ]
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "shots": [
+    {
+     "text": "*Abonne-toi.*",
+     "bg": "red"
+    }
+   ]
+  }
+ ]
+}

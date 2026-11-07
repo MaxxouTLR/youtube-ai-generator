@@ -1,0 +1,253 @@
+{
+ "slug": "pierre_le_grand_barbe_v2",
+ "num": 45,
+ "source": "https://fr.wikipedia.org/wiki/Taxe_sur_la_barbe",
+ "caption": "#CapCut 📁 Dossier n°45 — Pierre le Grand taxait la barbe de ses sujets ✂️ Tu paierais pour garder la tienne ? #russie #histoire #pierrelegrand #lesaviezvous #dossier",
+ "note": "Montage dynamique v2 (v2_convert.py, 02/11/2026) : coupes sur le tempo de « The Scooby Snacks », voix seule. A publier depuis TikTok avec le son, demarre sur un kick.",
+ "bpm": 175.75,
+ "nappe": false,
+ "bruitages": false,
+ "beats": [
+  {
+   "say": "Ce tsar coupe lui-même la barbe de ses nobles.",
+   "shots": [
+    {
+     "img": "assets/archives/pierre_le_grand_barbe/pierre.jpg",
+     "mode": "fade",
+     "label": "PIERRE LE GRAND · VAN DER WERFF",
+     "focus": true
+    },
+    {
+     "img": "assets/archives/pierre_le_grand_barbe/pierre.jpg",
+     "mode": "fade",
+     "crop": [
+      0.18,
+      0.04,
+      0.64,
+      0.5
+     ],
+     "rings": true,
+     "on": "lui-même"
+    },
+    {
+     "text": "*leurs barbes*",
+     "bg": "red",
+     "hit": true,
+     "on": "barbe"
+    }
+   ]
+  },
+  {
+   "say": "Avec des ciseaux, devant toute la cour.",
+   "shots": [
+    {
+     "icon": "✂️",
+     "rings": true
+    },
+    {
+     "text": "*toute la cour*",
+     "bg": "red",
+     "hit": true,
+     "on": "toute"
+    }
+   ]
+  },
+  {
+   "say": "Le tsar, c'est Pierre le Grand. Il rentre d'un voyage en Europe.",
+   "shots": [
+    {
+     "img": "assets/archives/pierre_le_grand_barbe/buste.jpg",
+     "mode": "fade",
+     "label": "BUSTE DE PIERRE LE GRAND · COLLOT"
+    },
+    {
+     "img": "assets/archives/pierre_le_grand_barbe/buste.jpg",
+     "mode": "fade",
+     "crop": [
+      0.25,
+      0.15,
+      0.5,
+      0.45
+     ],
+     "on": "Pierre"
+    },
+    {
+     "text": "*Pierre*",
+     "bg": "red",
+     "hit": true,
+     "on": "Pierre"
+    },
+    {
+     "img": "assets/archives/pierre_le_grand_barbe/buste.jpg",
+     "mode": "fade",
+     "on": "voyage"
+    }
+   ]
+  },
+  {
+   "say": "Il veut une Russie moderne. Pour lui, la barbe, c'est le passé.",
+   "shots": [
+    {
+     "icon": "🧔",
+     "rings": true
+    },
+    {
+     "img": "assets/archives/pierre_le_grand_barbe/jeton.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "lui,"
+    },
+    {
+     "text": "*c'est le passé*",
+     "bg": "red",
+     "hit": true,
+     "on": "c'est"
+    },
+    {
+     "img": "assets/archives/pierre_le_grand_barbe/pierre.jpg",
+     "mode": "fade",
+     "crop": [
+      0.25,
+      0.15,
+      0.5,
+      0.45
+     ],
+     "on": "c'est"
+    }
+   ]
+  },
+  {
+   "say": "Le plus fou ? En 1705, il crée un impôt sur la barbe.",
+   "shots": [
+    {
+     "led": "*TAXE*",
+     "bg": "red",
+     "hit": true
+    },
+    {
+     "img": "assets/archives/pierre_le_grand_barbe/buste.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "En"
+    },
+    {
+     "img": "assets/archives/pierre_le_grand_barbe/jeton.jpg",
+     "mode": "fade",
+     "on": "crée"
+    },
+    {
+     "img": "assets/archives/pierre_le_grand_barbe/pierre.jpg",
+     "mode": "fade",
+     "flip": true,
+     "crop": [
+      0.18,
+      0.04,
+      0.64,
+      0.5
+     ],
+     "on": "sur"
+    }
+   ]
+  },
+  {
+   "say": "Tu veux garder ta barbe ? Tu paies. Chaque année.",
+   "shots": [
+    {
+     "icon": "💰",
+     "rings": true
+    },
+    {
+     "text": "*paies*",
+     "bg": "red",
+     "hit": true,
+     "on": "paies."
+    },
+    {
+     "img": "assets/archives/pierre_le_grand_barbe/pierre.jpg",
+     "mode": "fade",
+     "on": "paies."
+    }
+   ]
+  },
+  {
+   "say": "En échange, un jeton de cuivre, à garder sur soi.",
+   "shots": [
+    {
+     "img": "assets/archives/pierre_le_grand_barbe/jeton.jpg",
+     "mode": "fade",
+     "label": "JETON DE LA TAXE SUR LA BARBE"
+    },
+    {
+     "img": "assets/archives/pierre_le_grand_barbe/jeton.jpg",
+     "mode": "fade",
+     "crop": [
+      0.18,
+      0.04,
+      0.64,
+      0.5
+     ],
+     "rings": true,
+     "on": "jeton"
+    },
+    {
+     "text": "*jeton*",
+     "bg": "red",
+     "hit": true,
+     "on": "jeton"
+    }
+   ]
+  },
+  {
+   "say": "Gravé dessus, en russe : argent reçu. La preuve que tu as payé.",
+   "shots": [
+    {
+     "text": "« Argent *reçu.* »"
+    },
+    {
+     "img": "assets/archives/pierre_le_grand_barbe/buste.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "russe",
+     "stamp": "PAYÉ"
+    },
+    {
+     "img": "assets/archives/pierre_le_grand_barbe/jeton.jpg",
+     "mode": "fade",
+     "crop": [
+      0.25,
+      0.15,
+      0.5,
+      0.45
+     ],
+     "on": "La"
+    },
+    {
+     "img": "assets/archives/pierre_le_grand_barbe/pierre.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "tu"
+    }
+   ]
+  },
+  {
+   "say": "Toi, tu paierais pour garder ta barbe ?",
+   "shots": [
+    {
+     "text": "Tu *paierais ?*",
+     "img": "assets/archives/pierre_le_grand_barbe/jeton.jpg",
+     "mode": "fade",
+     "rings": true
+    }
+   ]
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "shots": [
+    {
+     "text": "*Abonne-toi.*",
+     "bg": "red"
+    }
+   ]
+  }
+ ]
+}
