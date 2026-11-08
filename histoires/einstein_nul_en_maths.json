@@ -1,0 +1,61 @@
+{
+ "slug": "einstein_nul_en_maths",
+ "num": 55,
+ "source": "https://en.wikipedia.org/wiki/Albert_Einstein",
+ "caption": "#CapCut 📁 Dossier n°55 — Einstein nul en maths ? Un journal l'a inventé 🧮 Maths ou français ? #histoire #einstein #science #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Einstein, mauvais en maths ? Un journal l'a inventé.",
+   "title": "Einstein *nul en maths ?*",
+   "sub": "Tu ne vas pas y croire."
+  },
+  {
+   "say": "Avant quinze ans, il maîtrise déjà le calcul intégral.",
+   "title": "Calcul intégral *avant 15 ans.*",
+   "icon": "🧮"
+  },
+  {
+   "say": "En 1935, un journal américain affirme qu'il a raté ses maths.",
+   "led": "1935",
+   "led_sub": "la rumeur"
+  },
+  {
+   "say": "Einstein en rit : il n'a jamais échoué en maths.",
+   "title": "Il *en rit.*",
+   "stamp": "Faux",
+   "stamp_at": 1.2
+  },
+  {
+   "say": "Sauf que… il a vraiment raté un examen, à seize ans.",
+   "title": "Sauf que…",
+   "flash": true
+  },
+  {
+   "say": "L'entrée de la grande école de Zurich, en 1895.",
+   "title": "Zurich, *1895.*",
+   "icon": "🏫"
+  },
+  {
+   "say": "En maths et en physique, ses notes sont excellentes.",
+   "title": "Maths : *excellent.*",
+   "icon": "📈"
+  },
+  {
+   "say": "Il échoue sur les matières générales, dont le français, selon ses biographes.",
+   "title": "Recalé *en français.*",
+   "stamp": "Français",
+   "stamp_at": 1.2,
+   "flash": true
+  },
+  {
+   "say": "Et toi, plutôt maths ou plutôt français ?",
+   "title": "Maths *ou français ?*",
+   "sub": "Maths · Français"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier ce soir 19h"
+  }
+ ]
+}

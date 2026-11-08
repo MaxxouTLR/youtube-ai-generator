@@ -1,0 +1,60 @@
+{
+ "slug": "sphinx_nez_napoleon",
+ "num": 56,
+ "source": "https://fr.wikipedia.org/wiki/Grand_Sphinx_de_Gizeh",
+ "caption": "#CapCut 📁 Dossier n°56 — Napoléon n'a pas cassé le nez du Sphinx 🗿 Tu y croyais ? #histoire #egypte #napoleon #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Napoléon n'a pas cassé le nez du Sphinx.",
+   "title": "Le nez du Sphinx… *pas Napoléon.*",
+   "sub": "Et c'est documenté."
+  },
+  {
+   "say": "Un dessin de 1737 le montre déjà sans nez.",
+   "led": "1737",
+   "led_sub": "déjà sans nez"
+  },
+  {
+   "say": "Napoléon naît trente-deux ans plus tard.",
+   "title": "32 ans *avant sa naissance.*",
+   "icon": "👶"
+  },
+  {
+   "say": "La légende accuse ses soldats, qui auraient tiré au canon.",
+   "title": "Des boulets *de canon ?*",
+   "icon": "💣",
+   "stamp": "Légende",
+   "stamp_at": 1.2
+  },
+  {
+   "say": "Le pire ? Le nez a été arraché exprès, au burin.",
+   "title": "Arraché *au burin.*",
+   "flash": true
+  },
+  {
+   "say": "On voit encore les traces d'outils sur le visage.",
+   "title": "Des traces *d'outils.*",
+   "icon": "🔨"
+  },
+  {
+   "say": "Un historien arabe du quinzième siècle accuse un homme pieux.",
+   "title": "Un *homme pieux ?*",
+   "icon": "📜"
+  },
+  {
+   "say": "Il aurait mutilé le visage, jugé idolâtre, en 1378.",
+   "led": "1378",
+   "led_sub": "selon al-Maqrizi"
+  },
+  {
+   "say": "Tu y croyais, à l'histoire du boulet ?",
+   "title": "Tu y *croyais ?*",
+   "sub": "Oui · Non"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier demain matin.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier demain 8h"
+  }
+ ]
+}

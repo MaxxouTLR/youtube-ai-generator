@@ -1,0 +1,64 @@
+{
+ "slug": "guillotin_jamais_guillotine",
+ "num": 54,
+ "source": "https://en.wikipedia.org/wiki/Joseph-Ignace_Guillotin",
+ "caption": "#CapCut 📁 Dossier n°54 — Le docteur Guillotin n'a jamais été guillotiné 🩺 Tu le pensais ? #histoire #revolution #france #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Le docteur Guillotin n'a jamais été guillotiné.",
+   "title": "Guillotin… *pas guillotiné.*",
+   "sub": "Le pire arrive après."
+  },
+  {
+   "say": "Et ce n'est même pas lui qui l'a inventée.",
+   "title": "Pas *l'inventeur.*",
+   "icon": "🩺"
+  },
+  {
+   "say": "En 1789, ce médecin veut juste une mort sans souffrance.",
+   "led": "1789",
+   "led_sub": "sa proposition"
+  },
+  {
+   "say": "La machine est conçue par un chirurgien, Antoine Louis.",
+   "title": "Antoine *Louis.*",
+   "stamp": "Inventeur",
+   "stamp_at": 1.2
+  },
+  {
+   "say": "Au début, on l'appelle même la Louisette.",
+   "title": "La *Louisette.*"
+  },
+  {
+   "say": "Mais attendez. Le nom de Guillotin, lui, reste collé.",
+   "title": "MAIS ATTENDEZ.",
+   "flash": true
+  },
+  {
+   "say": "Il meurt dans son lit en 1814, d'une infection.",
+   "led": "1814",
+   "led_sub": "mort naturelle"
+  },
+  {
+   "say": "Sa famille demande à renommer la machine. Refusé.",
+   "title": "Demande *refusée.*",
+   "stamp": "Refusé",
+   "stamp_at": 1.0
+  },
+  {
+   "say": "Alors ce sont eux qui changent de nom.",
+   "title": "Ils changent *de nom.*",
+   "flash": true
+  },
+  {
+   "say": "Et toi, tu pensais qu'il avait fini dessus ?",
+   "title": "Tu le *pensais ?*",
+   "sub": "Oui · Je savais"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier demain matin.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier demain 8h"
+  }
+ ]
+}

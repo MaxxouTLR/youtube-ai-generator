@@ -1,0 +1,63 @@
+{
+ "slug": "tour_eiffel_demolition",
+ "num": 64,
+ "source": "https://fr.wikipedia.org/wiki/Tour_Eiffel",
+ "caption": "#CapCut 📁 Dossier n°64 — La tour Eiffel devait être démolie après 20 ans 🗼 Belle ou moche ? #histoire #toureiffel #paris #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "La tour Eiffel devait être démolie après vingt ans.",
+   "title": "Démolie *après 20 ans ?*",
+   "sub": "Ce qui l'a sauvée va te surprendre."
+  },
+  {
+   "say": "Le permis ne court que jusqu'en 1909.",
+   "led": "1909",
+   "led_sub": "fin du permis"
+  },
+  {
+   "say": "Des artistes la détestent. Maupassant signe une pétition contre elle.",
+   "title": "Maupassant *la déteste.*",
+   "icon": "📜",
+   "stamp": "Pétition",
+   "stamp_at": 1.2
+  },
+  {
+   "say": "Selon la légende, il déjeune dedans… pour ne plus la voir.",
+   "title": "Pour *ne plus la voir.*",
+   "stamp": "Légende ?",
+   "stamp_at": 1.2
+  },
+  {
+   "say": "Sauf que… Eiffel trouve une parade : la science.",
+   "title": "Sauf que…",
+   "flash": true
+  },
+  {
+   "say": "Il y fait installer une antenne de radio militaire.",
+   "title": "Une *antenne radio.*",
+   "icon": "📡"
+  },
+  {
+   "say": "En 1914, elle capte des messages de l'armée allemande.",
+   "led": "1914",
+   "led_sub": "messages captés"
+  },
+  {
+   "say": "Le pire ? Ses écoutes aident à faire arrêter Mata Hari.",
+   "title": "Mata *Hari.*",
+   "flash": true,
+   "stamp": "Arrêtée",
+   "stamp_at": 1.3
+  },
+  {
+   "say": "Tu la trouves belle, ou Maupassant avait raison ?",
+   "title": "Belle, *ou moche ?*",
+   "sub": "Belle · Maupassant a raison"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier demain matin.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier demain 8h"
+  }
+ ]
+}

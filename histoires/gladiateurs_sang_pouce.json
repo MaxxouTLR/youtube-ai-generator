@@ -1,0 +1,60 @@
+{
+ "slug": "gladiateurs_sang_pouce",
+ "num": 59,
+ "source": "https://fr.wikipedia.org/wiki/Gladiateur",
+ "caption": "#CapCut 📁 Dossier n°59 — Des Romains buvaient le sang des gladiateurs 🩸 Pouce levé ou baissé ? #histoire #rome #gladiateur #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Des Romains buvaient le sang encore chaud des gladiateurs.",
+   "title": "Boire le sang *des gladiateurs.*",
+   "sub": "Âmes sensibles, accrochez-vous."
+  },
+  {
+   "say": "Pline l'Ancien le raconte : un remède contre l'épilepsie.",
+   "title": "Un remède *contre l'épilepsie.*",
+   "icon": "🩸"
+  },
+  {
+   "say": "Les malades boivent le sang comme à une coupe vivante.",
+   "title": "Une *coupe vivante.*",
+   "stamp": "Pline",
+   "stamp_at": 1.2
+  },
+  {
+   "say": "Mais attendez. Le pouce baissé, lui, est sûrement un mythe.",
+   "title": "Le pouce baissé… *un mythe ?*",
+   "flash": true
+  },
+  {
+   "say": "Les textes disent « pouce tourné ». Mais dans quel sens ?",
+   "title": "Pouce *tourné.*",
+   "icon": "👍"
+  },
+  {
+   "say": "Notre image vient d'un tableau français de 1872.",
+   "led": "1872",
+   "led_sub": "tableau de Gérôme"
+  },
+  {
+   "say": "Et beaucoup de combats ne finissent pas par une mort.",
+   "title": "Pas toujours *la mort.*",
+   "stamp": "Survivant",
+   "stamp_at": 1.2
+  },
+  {
+   "say": "Un gladiateur coûte cher. On évite de le perdre.",
+   "title": "Il *coûte cher.*",
+   "icon": "💰"
+  },
+  {
+   "say": "Et toi, pouce levé ou pouce baissé ?",
+   "title": "Pouce levé *ou baissé ?*",
+   "sub": "Levé · Baissé"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier ce soir 19h"
+  }
+ ]
+}

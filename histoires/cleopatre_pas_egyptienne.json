@@ -1,0 +1,60 @@
+{
+ "slug": "cleopatre_pas_egyptienne",
+ "num": 65,
+ "source": "https://fr.wikipedia.org/wiki/Cl%C3%A9op%C3%A2tre_VII",
+ "caption": "#CapCut 📁 Dossier n°65 — Cléopâtre, reine d'Égypte… n'était pas égyptienne 🏺 Tu la pensais égyptienne ? #histoire #egypte #cleopatre #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Cléopâtre, reine d'Égypte… n'était pas égyptienne.",
+   "title": "Cléopâtre… *pas égyptienne ?*",
+   "sub": "Et son mariage est pire."
+  },
+  {
+   "say": "Sa famille est grecque, venue de Macédoine.",
+   "title": "Une famille *grecque.*",
+   "icon": "🏺"
+  },
+  {
+   "say": "Son ancêtre ? Ptolémée, un général d'Alexandre le Grand.",
+   "title": "Ptolémée, *général d'Alexandre.*",
+   "stamp": "Grecque",
+   "stamp_at": 1.2
+  },
+  {
+   "say": "Sa dynastie règne près de trois siècles sur l'Égypte.",
+   "led": "275 ANS",
+   "led_sub": "de dynastie"
+  },
+  {
+   "say": "Selon Plutarque, Cléopâtre est la première à parler égyptien.",
+   "title": "La première *à le parler.*",
+   "icon": "📜"
+  },
+  {
+   "say": "Le pire ? Dans sa famille, on épouse ses frères et sœurs.",
+   "title": "Le pire ?",
+   "flash": true
+  },
+  {
+   "say": "Cléopâtre épouse son petit frère… puis son autre petit frère.",
+   "title": "Deux frères, *deux mariages.*",
+   "stamp": "Vrai",
+   "stamp_at": 1.3
+  },
+  {
+   "say": "Et sur ses pièces de monnaie, elle a un nez très marqué.",
+   "title": "Un nez *très marqué.*",
+   "icon": "🪙"
+  },
+  {
+   "say": "Tu la pensais égyptienne, toi aussi ?",
+   "title": "Tu la pensais *égyptienne ?*",
+   "sub": "Oui · Je savais"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier ce soir 19h"
+  }
+ ]
+}

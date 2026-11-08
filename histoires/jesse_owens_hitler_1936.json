@@ -1,0 +1,59 @@
+{
+ "slug": "jesse_owens_hitler_1936",
+ "num": 62,
+ "source": "https://en.wikipedia.org/wiki/Jesse_Owens",
+ "caption": "#CapCut 📁 Dossier n°62 — Le vrai affront à Jesse Owens n'est pas venu d'Hitler 🏅 Tu le savais ? #histoire #jeuxolympiques #berlin1936 #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Le vrai affront à Jesse Owens n'est pas venu d'Hitler.",
+   "title": "Le vrai affront *à Jesse Owens.*",
+   "sub": "Retiens bien la fin."
+  },
+  {
+   "say": "Berlin, 1936. Il gagne quatre médailles d'or devant les nazis.",
+   "led": "4 OR",
+   "led_sub": "Berlin 1936"
+  },
+  {
+   "say": "On raconte qu'Hitler a refusé de lui serrer la main.",
+   "title": "La poignée *de main ?*",
+   "stamp": "Légende ?",
+   "stamp_at": 1.2
+  },
+  {
+   "say": "Le comité olympique lui impose : tous les vainqueurs ou aucun.",
+   "title": "Tous *ou aucun.*",
+   "icon": "🏅"
+  },
+  {
+   "say": "Il choisit aucun. Plus de poignée de main en public.",
+   "title": "Il choisit *aucun.*"
+  },
+  {
+   "say": "Mais attendez. Owens raconte une autre humiliation.",
+   "title": "MAIS ATTENDEZ.",
+   "flash": true
+  },
+  {
+   "say": "Le président américain ne lui envoie même pas un télégramme.",
+   "title": "Pas même *un télégramme.*",
+   "icon": "📩"
+  },
+  {
+   "say": "À New York, pour sa propre fête, il prend l'ascenseur de service.",
+   "title": "L'ascenseur *de service.*",
+   "stamp": "Ségrégation",
+   "stamp_at": 1.3
+  },
+  {
+   "say": "Tu connaissais cette partie de l'histoire ?",
+   "title": "Tu le *savais ?*",
+   "sub": "Oui · Pas du tout"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier demain matin.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier demain 8h"
+  }
+ ]
+}

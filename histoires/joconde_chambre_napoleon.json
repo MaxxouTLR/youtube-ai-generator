@@ -1,0 +1,60 @@
+{
+ "slug": "joconde_chambre_napoleon",
+ "num": 60,
+ "source": "https://fr.wikipedia.org/wiki/La_Joconde",
+ "caption": "#CapCut 📁 Dossier n°60 — La Joconde a dormi dans la chambre de Napoléon 🖼️ Tu dormirais avec elle ? #histoire #louvre #napoleon #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "La Joconde a dormi dans la chambre de Napoléon.",
+   "title": "Dans la chambre *de Napoléon.*",
+   "sub": "Et ce n'est pas le plus fou."
+  },
+  {
+   "say": "Vers 1800, Bonaparte la fait accrocher chez lui, aux Tuileries.",
+   "title": "Accrochée *chez lui.*",
+   "icon": "🌙"
+  },
+  {
+   "say": "Elle y reste environ quatre ans.",
+   "led": "4 ANS",
+   "led_sub": "dans sa chambre"
+  },
+  {
+   "say": "Puis elle retourne au Louvre, alors appelé musée Napoléon.",
+   "title": "Le *musée Napoléon.*",
+   "stamp": "Louvre",
+   "stamp_at": 1.2
+  },
+  {
+   "say": "Sauf que… elle quitte encore le Louvre en 1939.",
+   "title": "Sauf que…",
+   "flash": true
+  },
+  {
+   "say": "La guerre approche. Le Louvre la met à l'abri, loin de Paris.",
+   "title": "Cachée *loin de Paris.*",
+   "icon": "📦"
+  },
+  {
+   "say": "D'abord au château de Chambord.",
+   "led": "1939",
+   "led_sub": "Chambord"
+  },
+  {
+   "say": "Puis elle change plusieurs fois de cachette, jusqu'à la fin de la guerre.",
+   "title": "Plusieurs *cachettes.*",
+   "stamp": "Cachée",
+   "stamp_at": 1.2
+  },
+  {
+   "say": "Et toi, tu dormirais avec son regard sur toi ?",
+   "title": "Tu dormirais *avec elle ?*",
+   "sub": "Oui · Trop flippant"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier demain matin.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier demain 8h"
+  }
+ ]
+}

@@ -1,0 +1,60 @@
+{
+ "slug": "ceinture_chastete_mythe",
+ "num": 61,
+ "source": "https://fr.wikipedia.org/wiki/Ceinture_de_chastet%C3%A9",
+ "caption": "#CapCut 📁 Dossier n°61 — La ceinture de chasteté médiévale est presque sûrement un mythe 🔒 Tu l'avais appris ? #histoire #moyenage #mythe #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Les ceintures de chasteté médiévales ? Presque sûrement un mythe.",
+   "title": "La ceinture de chasteté… *un mythe ?*",
+   "sub": "Les musées se sont trompés."
+  },
+  {
+   "say": "Aucune preuve fiable d'une ceinture portée au Moyen Âge.",
+   "title": "Aucune *preuve.*",
+   "stamp": "Mythe",
+   "stamp_at": 1.2
+  },
+  {
+   "say": "Le premier dessin date de 1405… peut-être une blague.",
+   "led": "1405",
+   "led_sub": "un dessin"
+  },
+  {
+   "say": "Et les ceintures des musées ? Souvent des faux, bien plus récents.",
+   "title": "Des *faux* au musée.",
+   "icon": "🔒"
+  },
+  {
+   "say": "Plusieurs musées les ont retirées ou réétiquetées.",
+   "title": "Retirées *des vitrines.*",
+   "icon": "🔑"
+  },
+  {
+   "say": "Sauf que… au dix-neuvième siècle, on en fabrique vraiment.",
+   "title": "Sauf que…",
+   "flash": true
+  },
+  {
+   "say": "Pour quoi faire ? Empêcher les jeunes de se toucher.",
+   "title": "Contre *les plaisirs solitaires.*",
+   "stamp": "Vrai",
+   "stamp_at": 1.2
+  },
+  {
+   "say": "Des médecins de l'époque les recommandent sérieusement.",
+   "title": "Recommandées *par des médecins.*",
+   "icon": "🩺"
+  },
+  {
+   "say": "Tu l'avais appris comme un fait ?",
+   "title": "Tu l'avais *appris ?*",
+   "sub": "Oui · Jamais"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier ce soir 19h"
+  }
+ ]
+}

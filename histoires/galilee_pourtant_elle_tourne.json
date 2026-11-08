@@ -1,0 +1,60 @@
+{
+ "slug": "galilee_pourtant_elle_tourne",
+ "num": 58,
+ "source": "https://fr.wikipedia.org/wiki/Et_pourtant_elle_tourne",
+ "caption": "#CapCut 📁 Dossier n°58 — Galilée n'a sûrement jamais dit « Et pourtant elle tourne » 🔭 Tu y croyais ? #histoire #galilee #science #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Galilée n'a probablement jamais dit sa phrase culte.",
+   "title": "« Et pourtant *elle tourne » ?*",
+   "sub": "La vraie fin est pire."
+  },
+  {
+   "say": "En 1633, il est jugé pour avoir dit que la Terre tourne.",
+   "led": "1633",
+   "led_sub": "le procès"
+  },
+  {
+   "say": "À genoux, il renie ses idées devant l'Inquisition.",
+   "title": "Il *renie.*",
+   "icon": "📜"
+  },
+  {
+   "say": "La phrase rebelle apparaît plus d'un siècle après sa mort.",
+   "title": "Écrite *un siècle après.*",
+   "stamp": "Légende",
+   "stamp_at": 1.2
+  },
+  {
+   "say": "Sauf qu'il est puni quand même : prison à vie, chez lui.",
+   "title": "Prison *à vie.*",
+   "icon": "🏠",
+   "flash": true
+  },
+  {
+   "say": "Il meurt en résidence surveillée, aveugle, en 1642.",
+   "led": "1642",
+   "led_sub": "mort aveugle"
+  },
+  {
+   "say": "Le pire ? L'Église reconnaît son erreur… en 1992.",
+   "title": "Excuses *en 1992.*",
+   "flash": true
+  },
+  {
+   "say": "Trois cent cinquante-neuf ans après le procès.",
+   "led": "359 ANS",
+   "led_sub": "pour s'excuser"
+  },
+  {
+   "say": "Tu y croyais, à la phrase culte ?",
+   "title": "Tu y *croyais ?*",
+   "sub": "Oui · Je savais"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier demain matin.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier demain 8h"
+  }
+ ]
+}

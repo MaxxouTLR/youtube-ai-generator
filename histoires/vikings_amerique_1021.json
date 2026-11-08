@@ -1,0 +1,64 @@
+{
+ "slug": "vikings_amerique_1021",
+ "num": 66,
+ "source": "https://en.wikipedia.org/wiki/L%27Anse_aux_Meadows",
+ "caption": "#CapCut 📁 Dossier n°66 — Les Vikings ont touché l'Amérique avant Colomb ⛵ À apprendre à l'école ? #histoire #vikings #amerique #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Les Vikings ont touché l'Amérique cinq siècles avant Colomb.",
+   "title": "L'Amérique *avant Colomb.*",
+   "sub": "Et on connaît l'année exacte."
+  },
+  {
+   "say": "Leif Erikson y débarque vers l'an mille.",
+   "led": "AN 1000",
+   "led_sub": "Leif Erikson"
+  },
+  {
+   "say": "Longtemps, ce n'est qu'une saga, une légende nordique.",
+   "title": "Juste *une saga ?*",
+   "stamp": "Légende ?",
+   "stamp_at": 1.2
+  },
+  {
+   "say": "Sauf qu'en 1960, un couple norvégien trouve un village viking.",
+   "title": "Sauf que…",
+   "flash": true
+  },
+  {
+   "say": "Au Canada, à Terre-Neuve : l'Anse aux Meadows.",
+   "title": "L'Anse *aux Meadows.*",
+   "icon": "⛵"
+  },
+  {
+   "say": "Mais attendez. L'année exacte est gravée dans le bois.",
+   "title": "MAIS ATTENDEZ.",
+   "flash": true
+  },
+  {
+   "say": "Une tempête solaire a marqué tous les arbres en 993.",
+   "title": "Une tempête *solaire.*",
+   "icon": "🌞"
+  },
+  {
+   "say": "On compte les cernes : bois coupé en 1021.",
+   "led": "1021",
+   "led_sub": "bois coupé"
+  },
+  {
+   "say": "Quatre cent soixante et onze ans avant Colomb.",
+   "led": "471 ANS",
+   "led_sub": "avant Colomb"
+  },
+  {
+   "say": "On devrait l'apprendre à l'école ?",
+   "title": "À apprendre *à l'école ?*",
+   "sub": "Oui · Non"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier demain matin.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier demain 8h"
+  }
+ ]
+}

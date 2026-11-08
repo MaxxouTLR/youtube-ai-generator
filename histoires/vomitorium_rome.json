@@ -1,0 +1,60 @@
+{
+ "slug": "vomitorium_rome",
+ "num": 53,
+ "source": "https://en.wikipedia.org/wiki/Vomitorium",
+ "caption": "#CapCut 📁 Dossier n°53 — Le vomitorium romain n'a jamais servi à vomir 🤢 Tu y croyais ? #histoire #rome #antiquite #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Les Romains n'ont jamais eu de salle pour vomir.",
+   "title": "Le vomitorium… *un mythe ?*",
+   "sub": "Personne ne t'en a parlé à l'école."
+  },
+  {
+   "say": "Le vomitorium, c'est en fait la sortie d'un stade.",
+   "title": "Une *sortie* de stade.",
+   "icon": "🚪"
+  },
+  {
+   "say": "Le mot vient du latin : ce couloir « vomit » la foule.",
+   "title": "Il *vomit* la foule."
+  },
+  {
+   "say": "Au Colisée, ces couloirs vident cinquante mille spectateurs.",
+   "led": "50000",
+   "led_sub": "spectateurs"
+  },
+  {
+   "say": "Le mythe naît en 1923, dans un roman anglais.",
+   "title": "Né en *1923.*",
+   "stamp": "Mythe",
+   "stamp_at": 1.2
+  },
+  {
+   "say": "Sauf que… les Romains vomissaient parfois vraiment à table.",
+   "title": "Sauf que…",
+   "icon": "🤢",
+   "flash": true
+  },
+  {
+   "say": "Sénèque écrit : ils vomissent pour manger, et mangent pour vomir.",
+   "title": "« Ils vomissent *pour manger.* »",
+   "icon": "📜"
+  },
+  {
+   "say": "Pas de salle spéciale. Juste… à côté de la table.",
+   "title": "Juste *à côté.*",
+   "stamp": "Dégoûtant",
+   "stamp_at": 1.2
+  },
+  {
+   "say": "Tu y croyais aussi, ou tu le savais ?",
+   "title": "Tu y *croyais ?*",
+   "sub": "J'y croyais · Je savais"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier ce soir 19h"
+  }
+ ]
+}

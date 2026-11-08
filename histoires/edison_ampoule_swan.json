@@ -1,0 +1,64 @@
+{
+ "slug": "edison_ampoule_swan",
+ "num": 63,
+ "source": "https://en.wikipedia.org/wiki/Joseph_Swan",
+ "caption": "#CapCut 📁 Dossier n°63 — Edison n'a pas inventé l'ampoule électrique 💡 Tu aurais dit Edison ? #histoire #edison #science #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Edison n'a pas inventé l'ampoule électrique.",
+   "title": "Edison… *pas l'inventeur ?*",
+   "sub": "Et son rival l'a prouvé."
+  },
+  {
+   "say": "Un Anglais, Joseph Swan, fait briller la sienne avant lui.",
+   "title": "Joseph *Swan.*",
+   "icon": "💡"
+  },
+  {
+   "say": "Sa maison devient la première au monde éclairée à l'ampoule.",
+   "title": "La première *maison éclairée.*",
+   "icon": "🏠"
+  },
+  {
+   "say": "Avant eux, des dizaines d'inventeurs avaient déjà essayé.",
+   "title": "Des dizaines *d'essais.*",
+   "stamp": "Avant Edison",
+   "stamp_at": 1.2
+  },
+  {
+   "say": "Sauf qu'Edison fait mieux : une ampoule qui dure.",
+   "title": "Sauf que…",
+   "flash": true
+  },
+  {
+   "say": "Il teste des milliers de matériaux… jusqu'au bambou.",
+   "title": "Du *bambou.*",
+   "icon": "🎋"
+  },
+  {
+   "say": "Le bambou carbonisé brille plus de mille deux cents heures.",
+   "led": "1200 H",
+   "led_sub": "de lumière"
+  },
+  {
+   "say": "Le plus fou ? Les deux rivaux finissent associés.",
+   "title": "*Associés.*",
+   "flash": true
+  },
+  {
+   "say": "Leur entreprise commune s'appelle… Ediswan.",
+   "led": "EDISWAN",
+   "led_sub": "1883"
+  },
+  {
+   "say": "Et toi, tu aurais dit Edison ?",
+   "title": "Tu aurais dit *Edison ?*",
+   "sub": "Oui · Je savais"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier ce soir 19h"
+  }
+ ]
+}
