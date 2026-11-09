@@ -1,5 +1,11 @@
 # Supervision des agents « Dossiers d'Histoire »
 
+## 2026-11-09 22h40 (superviseur unique)
+- ✅ Programmateur : rattrapage du 09/11 terminé (succès) ; aucun nouveau créneau dans le planning local → Buffer sans doute encore plein ; dernier créneau 12/11 13h (+2,6 j).
+- ✅ Dernière date écrite 22/11 (+12,9 j). Analyste 06/11 (< 5 j, prochain mar. 10/11), newsletter 05/11 (prochaine jeu. 12/11).
+- ✅ Bon sens : JSON valides, num max 66, aucun doublon, aucun rendu manquant, vidéos > 1 Mo.
+- ⚠️ n°23–25 toujours non programmés ; propositions [1], [4], [5] sans réponse.
+
 ## 2026-11-09 17h30 (superviseur unique, rattrapage : PC éteint du 08/11 soir au 09/11 17h20)
 - ✅ Scénariste 08/11 : n°53–66 écrits et poussés (dernière date écrite 22/11, +13 j). Vidéos rendues (commit 8a56693), aucun rendu manquant, toutes > 1 Mo.
 - ✅ Beacons 08/11 : page mise à jour (4 livres). Analyste 06/11 (< 5 j), newsletter 05/11 (suivante jeu. 12/11).
