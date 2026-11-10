@@ -1,0 +1,242 @@
+{
+ "slug": "napoleon_roman_clisson_v2",
+ "num": 51,
+ "source": "https://fr.wikipedia.org/wiki/Clisson_et_Eug%C3%A9nie",
+ "caption": "#CapCut 📁 Dossier n°51 — Napoléon a écrit un roman d'amour… pour une femme qui deviendra reine 👑 Qui a gagné ? #napoleon #histoire #amour #lesaviezvous #dossier",
+ "note": "Montage dynamique v2 (v2_convert.py, 02/11/2026) : coupes sur le tempo de « The Scooby Snacks », voix seule. A publier depuis TikTok avec le son, demarre sur un kick.",
+ "bpm": 175.75,
+ "nappe": false,
+ "bruitages": false,
+ "beats": [
+  {
+   "say": "Napoléon a écrit un roman d'amour. Et il finit mal.",
+   "shots": [
+    {
+     "img": "assets/archives/napoleon_roman_clisson/appiani.jpg",
+     "mode": "fade",
+     "label": "NAPOLÉON PAR APPIANI",
+     "focus": true
+    },
+    {
+     "text": "*a-t-il écrit*",
+     "bg": "red",
+     "hit": true,
+     "on": "écrit"
+    },
+    {
+     "img": "assets/archives/napoleon_roman_clisson/appiani.jpg",
+     "mode": "fade",
+     "crop": [
+      0.18,
+      0.04,
+      0.64,
+      0.5
+     ],
+     "rings": true,
+     "on": "un"
+    }
+   ]
+  },
+  {
+   "say": "Il a vingt-six ans. Il écrit une nouvelle : Clisson et Eugénie.",
+   "shots": [
+    {
+     "icon": "✒️",
+     "rings": true
+    },
+    {
+     "img": "assets/archives/napoleon_roman_clisson/appiani.jpg",
+     "mode": "fade",
+     "on": "une"
+    },
+    {
+     "text": "*Clisson*",
+     "bg": "red",
+     "hit": true,
+     "on": "Clisson"
+    },
+    {
+     "img": "assets/archives/napoleon_roman_clisson/desiree.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "Clisson"
+    }
+   ]
+  },
+  {
+   "say": "Eugénie, c'est Désirée Clary. Sa fiancée.",
+   "shots": [
+    {
+     "img": "assets/archives/napoleon_roman_clisson/desiree.jpg",
+     "mode": "fade",
+     "label": "DÉSIRÉE CLARY"
+    },
+    {
+     "img": "assets/archives/napoleon_roman_clisson/desiree.jpg",
+     "mode": "fade",
+     "crop": [
+      0.25,
+      0.15,
+      0.5,
+      0.45
+     ],
+     "on": "Clary."
+    }
+   ]
+  },
+  {
+   "say": "Le pire ? Il la quitte pour Joséphine.",
+   "shots": [
+    {
+     "text": "Il la quitte *pour Joséphine.*",
+     "bg": "red",
+     "hit": true
+    },
+    {
+     "img": "assets/archives/napoleon_roman_clisson/reine.jpg",
+     "mode": "fade",
+     "crop": [
+      0.25,
+      0.15,
+      0.5,
+      0.45
+     ],
+     "on": "quitte"
+    }
+   ]
+  },
+  {
+   "say": "Dans son roman, le héros trahi part mourir au combat. Exprès.",
+   "shots": [
+    {
+     "icon": "⚔️",
+     "rings": true
+    },
+    {
+     "img": "assets/archives/napoleon_roman_clisson/appiani.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "part"
+    },
+    {
+     "img": "assets/archives/napoleon_roman_clisson/desiree.jpg",
+     "mode": "fade",
+     "on": "au"
+    },
+    {
+     "text": "*exprès*",
+     "bg": "red",
+     "hit": true,
+     "on": "Exprès."
+    }
+   ]
+  },
+  {
+   "say": "Le manuscrit est dispersé. Il ne sera publié qu'au vingtième siècle.",
+   "shots": [
+    {
+     "led": "*XXᵉ*"
+    },
+    {
+     "img": "assets/archives/napoleon_roman_clisson/reine.jpg",
+     "mode": "fade",
+     "flip": true,
+     "crop": [
+      0.18,
+      0.04,
+      0.64,
+      0.5
+     ],
+     "on": "dispersé."
+    },
+    {
+     "img": "assets/archives/napoleon_roman_clisson/reine.jpg",
+     "mode": "fade",
+     "on": "sera"
+    },
+    {
+     "img": "assets/archives/napoleon_roman_clisson/appiani.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "qu'au"
+    }
+   ]
+  },
+  {
+   "say": "Sauf que… Désirée prend sa revanche.",
+   "shots": [
+    {
+     "text": "La *revanche.*",
+     "bg": "red",
+     "hit": true
+    },
+    {
+     "img": "assets/archives/napoleon_roman_clisson/reine.jpg",
+     "mode": "fade",
+     "crop": [
+      0.25,
+      0.15,
+      0.5,
+      0.45
+     ],
+     "on": "prend"
+    }
+   ]
+  },
+  {
+   "say": "Elle épouse Bernadotte, un général de Napoléon. Et devient reine de Suède.",
+   "shots": [
+    {
+     "img": "assets/archives/napoleon_roman_clisson/reine.jpg",
+     "mode": "fade",
+     "label": "DÉSIRÉE, REINE DE SUÈDE"
+    },
+    {
+     "img": "assets/archives/napoleon_roman_clisson/reine.jpg",
+     "mode": "fade",
+     "crop": [
+      0.18,
+      0.04,
+      0.64,
+      0.5
+     ],
+     "rings": true,
+     "on": "un",
+     "stamp": "REINE"
+    },
+    {
+     "img": "assets/archives/napoleon_roman_clisson/desiree.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "reine"
+    },
+    {
+     "text": "*de Suède*",
+     "bg": "red",
+     "hit": true,
+     "on": "Suède."
+    }
+   ]
+  },
+  {
+   "say": "Alors, qui a gagné, à la fin ?",
+   "shots": [
+    {
+     "text": "Qui a *gagné ?*",
+     "img": "assets/archives/napoleon_roman_clisson/desiree.jpg",
+     "mode": "fade",
+     "rings": true
+    }
+   ]
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "shots": [
+    {
+     "text": "*Abonne-toi.*",
+     "bg": "red"
+    }
+   ]
+  }
+ ]
+}

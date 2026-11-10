@@ -1,0 +1,253 @@
+{
+ "slug": "pompei_moulages_v2",
+ "num": 50,
+ "source": "https://fr.wikipedia.org/wiki/Pomp%C3%A9i",
+ "caption": "#CapCut 📁 Dossier n°50 — Les corps de Pompéi ne sont pas des statues 🌋 Tu oserais les voir en vrai ? #pompei #histoire #rome #archeologie #lesaviezvous #dossier",
+ "note": "Montage dynamique v2 (v2_convert.py, 02/11/2026) : coupes sur le tempo de « The Scooby Snacks », voix seule. A publier depuis TikTok avec le son, demarre sur un kick.",
+ "bpm": 175.75,
+ "nappe": false,
+ "bruitages": false,
+ "beats": [
+  {
+   "say": "Ces corps de Pompéi ne sont pas des statues.",
+   "shots": [
+    {
+     "img": "assets/archives/pompei_moulages/moulages.jpg",
+     "mode": "fade",
+     "label": "MOULAGES DE POMPÉI · XIXᵉ SIÈCLE",
+     "focus": true
+    },
+    {
+     "img": "assets/archives/pompei_moulages/moulages.jpg",
+     "mode": "fade",
+     "crop": [
+      0.2,
+      0.1,
+      0.6,
+      0.8
+     ],
+     "rings": true,
+     "on": "Pompéi"
+    },
+    {
+     "text": "*ce plâtre*",
+     "bg": "red",
+     "hit": true,
+     "on": "pas"
+    }
+   ]
+  },
+  {
+   "say": "À l'intérieur, il y a de vrais squelettes.",
+   "shots": [
+    {
+     "img": "assets/archives/pompei_moulages/fugitifs.jpg",
+     "mode": "fade",
+     "label": "LES VICTIMES DE POMPÉI"
+    },
+    {
+     "img": "assets/archives/pompei_moulages/fugitifs.jpg",
+     "mode": "fade",
+     "crop": [
+      0.05,
+      0.2,
+      0.5,
+      0.7
+     ],
+     "on": "y"
+    },
+    {
+     "text": "*squelettes*",
+     "bg": "red",
+     "hit": true,
+     "on": "squelettes."
+    }
+   ]
+  },
+  {
+   "say": "An 79. Le Vésuve ensevelit la ville sous la cendre.",
+   "shots": [
+    {
+     "img": "assets/archives/pompei_moulages/vesuve.jpg",
+     "mode": "fade",
+     "label": "ÉRUPTION DU VÉSUVE · VOLAIRE"
+    },
+    {
+     "img": "assets/archives/pompei_moulages/vesuve.jpg",
+     "mode": "fade",
+     "crop": [
+      0.45,
+      0.2,
+      0.5,
+      0.7
+     ],
+     "rings": true,
+     "on": "Vésuve"
+    },
+    {
+     "text": "*explose*",
+     "bg": "red",
+     "hit": true,
+     "on": "sous"
+    }
+   ]
+  },
+  {
+   "say": "Les corps se décomposent. Leur forme reste creusée dans la cendre.",
+   "shots": [
+    {
+     "icon": "🌋",
+     "rings": true
+    },
+    {
+     "img": "assets/archives/pompei_moulages/fugitifs.jpg",
+     "mode": "fade",
+     "on": "reste"
+    },
+    {
+     "text": "*creux*",
+     "bg": "red",
+     "hit": true,
+     "on": "creusée"
+    },
+    {
+     "img": "assets/archives/pompei_moulages/moulages.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "dans"
+    }
+   ]
+  },
+  {
+   "say": "Le plus fou ? En 1863, un archéologue y coule du plâtre.",
+   "shots": [
+    {
+     "led": "*1863*",
+     "bg": "red",
+     "hit": true
+    },
+    {
+     "img": "assets/archives/pompei_moulages/vesuve.jpg",
+     "mode": "fade",
+     "crop": [
+      0.2,
+      0.1,
+      0.6,
+      0.8
+     ],
+     "on": "En"
+    },
+    {
+     "img": "assets/archives/pompei_moulages/fugitifs.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "archéologue"
+    },
+    {
+     "img": "assets/archives/pompei_moulages/moulages.jpg",
+     "mode": "fade",
+     "on": "coule"
+    }
+   ]
+  },
+  {
+   "say": "Le plâtre épouse tout : visages, vêtements, dernières postures.",
+   "shots": [
+    {
+     "icon": "🕯️",
+     "rings": true
+    },
+    {
+     "img": "assets/archives/pompei_moulages/vesuve.jpg",
+     "mode": "fade",
+     "flip": true,
+     "crop": [
+      0.2,
+      0.1,
+      0.6,
+      0.8
+     ],
+     "on": "vêtements,"
+    },
+    {
+     "text": "*derniers gestes*",
+     "bg": "red",
+     "hit": true,
+     "on": "dernières"
+    }
+   ]
+  },
+  {
+   "say": "Sauf qu'une étude ADN de 2024 bouscule les récits.",
+   "shots": [
+    {
+     "led": "*ADN*",
+     "bg": "red",
+     "hit": true
+    },
+    {
+     "img": "assets/archives/pompei_moulages/moulages.jpg",
+     "mode": "fade",
+     "on": "ADN"
+    },
+    {
+     "img": "assets/archives/pompei_moulages/fugitifs.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "bouscule"
+    }
+   ]
+  },
+  {
+   "say": "La « mère et son enfant » ? Un homme, sans lien avec l'enfant.",
+   "shots": [
+    {
+     "text": "Pas *sa mère.*"
+    },
+    {
+     "img": "assets/archives/pompei_moulages/fugitifs.jpg",
+     "mode": "fade",
+     "crop": [
+      0.2,
+      0.1,
+      0.6,
+      0.8
+     ],
+     "on": "son",
+     "stamp": "ERREUR"
+    },
+    {
+     "img": "assets/archives/pompei_moulages/vesuve.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "homme,"
+    },
+    {
+     "img": "assets/archives/pompei_moulages/fugitifs.jpg",
+     "mode": "fade",
+     "on": "lien"
+    }
+   ]
+  },
+  {
+   "say": "Toi, tu oserais les regarder en vrai ?",
+   "shots": [
+    {
+     "text": "Tu oserais *les voir ?*",
+     "img": "assets/archives/pompei_moulages/vesuve.jpg",
+     "mode": "fade",
+     "rings": true
+    }
+   ]
+  },
+  {
+   "say": "Abonne-toi, prochain dossier demain matin.",
+   "shots": [
+    {
+     "text": "*Abonne-toi.*",
+     "bg": "red"
+    }
+   ]
+  }
+ ]
+}

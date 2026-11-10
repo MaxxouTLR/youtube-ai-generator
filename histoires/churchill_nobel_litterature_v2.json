@@ -1,0 +1,228 @@
+{
+ "slug": "churchill_nobel_litterature_v2",
+ "num": 49,
+ "source": "https://fr.wikipedia.org/wiki/Winston_Churchill",
+ "caption": "#CapCut 📁 Dossier n°49 — Churchill a reçu un prix Nobel… mais pas celui de la paix 📚 Tu le savais ? #churchill #histoire #ww2 #lesaviezvous #dossier",
+ "note": "Montage dynamique v2 (v2_convert.py, 02/11/2026) : coupes sur le tempo de « The Scooby Snacks », voix seule. A publier depuis TikTok avec le son, demarre sur un kick.",
+ "bpm": 175.75,
+ "nappe": false,
+ "bruitages": false,
+ "beats": [
+  {
+   "say": "Churchill reçoit un prix Nobel. Pas celui de la paix.",
+   "shots": [
+    {
+     "img": "assets/archives/churchill_nobel_litterature/churchill.jpg",
+     "mode": "fade",
+     "label": "WINSTON CHURCHILL",
+     "focus": true
+    },
+    {
+     "text": "*Churchill*",
+     "bg": "red",
+     "hit": true,
+     "on": "Churchill"
+    },
+    {
+     "img": "assets/archives/churchill_nobel_litterature/churchill.jpg",
+     "mode": "fade",
+     "crop": [
+      0.18,
+      0.04,
+      0.64,
+      0.5
+     ],
+     "rings": true,
+     "on": "prix"
+    }
+   ]
+  },
+  {
+   "say": "1953 : prix Nobel de littérature.",
+   "shots": [
+    {
+     "led": "*NOBEL*"
+    },
+    {
+     "img": "assets/archives/churchill_nobel_litterature/churchill.jpg",
+     "mode": "fade",
+     "on": "Nobel"
+    }
+   ]
+  },
+  {
+   "say": "Le plus fou ? Ses mémoires de guerre font six volumes.",
+   "shots": [
+    {
+     "led": "*6 TOMES*",
+     "bg": "red",
+     "hit": true
+    },
+    {
+     "img": "assets/archives/churchill_nobel_litterature/ve_day.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "Ses"
+    },
+    {
+     "img": "assets/archives/churchill_nobel_litterature/churchill.jpg",
+     "mode": "fade",
+     "crop": [
+      0.25,
+      0.15,
+      0.5,
+      0.45
+     ],
+     "on": "font"
+    }
+   ]
+  },
+  {
+   "say": "Le jury salue aussi ses discours, ceux qui ont tenu l'Angleterre debout.",
+   "shots": [
+    {
+     "img": "assets/archives/churchill_nobel_litterature/ve_day.jpg",
+     "mode": "fade",
+     "label": "VE DAY · LONDRES 1945"
+    },
+    {
+     "img": "assets/archives/churchill_nobel_litterature/ve_day.jpg",
+     "mode": "fade",
+     "crop": [
+      0.05,
+      0.2,
+      0.5,
+      0.7
+     ],
+     "on": "aussi"
+    },
+    {
+     "text": "*historiques*",
+     "bg": "red",
+     "hit": true,
+     "on": "ceux"
+    },
+    {
+     "img": "assets/archives/churchill_nobel_litterature/ve_day.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "tenu"
+    }
+   ]
+  },
+  {
+   "say": "« Nous ne nous rendrons jamais. » Juin 1940.",
+   "shots": [
+    {
+     "icon": "📻",
+     "rings": true
+    },
+    {
+     "text": "*jamais*",
+     "bg": "red",
+     "hit": true,
+     "on": "jamais."
+    }
+   ]
+  },
+  {
+   "say": "Sauf que… il ne vient pas à Stockholm.",
+   "shots": [
+    {
+     "text": "Absent *à Stockholm.*",
+     "bg": "red",
+     "hit": true
+    },
+    {
+     "img": "assets/archives/churchill_nobel_litterature/ve_day.jpg",
+     "mode": "fade",
+     "on": "ne"
+    },
+    {
+     "img": "assets/archives/churchill_nobel_litterature/churchill.jpg",
+     "mode": "fade",
+     "flip": true,
+     "crop": [
+      0.2,
+      0.1,
+      0.6,
+      0.8
+     ],
+     "on": "pas"
+    }
+   ]
+  },
+  {
+   "say": "Il est en conférence aux Bermudes. Sa femme Clementine reçoit le prix.",
+   "shots": [
+    {
+     "icon": "🏆",
+     "rings": true
+    },
+    {
+     "img": "assets/archives/churchill_nobel_litterature/ve_day.jpg",
+     "mode": "fade",
+     "on": "Sa"
+    },
+    {
+     "text": "*reçoit le prix*",
+     "bg": "red",
+     "hit": true,
+     "on": "reçoit"
+    },
+    {
+     "img": "assets/archives/churchill_nobel_litterature/churchill.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "reçoit"
+    }
+   ]
+  },
+  {
+   "say": "Et il peignait aussi : plus de cinq cents tableaux.",
+   "shots": [
+    {
+     "led": "*500+*"
+    },
+    {
+     "img": "assets/archives/churchill_nobel_litterature/ve_day.jpg",
+     "mode": "fade",
+     "crop": [
+      0.25,
+      0.15,
+      0.5,
+      0.45
+     ],
+     "on": "aussi",
+     "stamp": "ARTISTE"
+    },
+    {
+     "img": "assets/archives/churchill_nobel_litterature/churchill.jpg",
+     "mode": "fade",
+     "flip": true,
+     "on": "cinq"
+    }
+   ]
+  },
+  {
+   "say": "Tu savais qu'il était Nobel de littérature ?",
+   "shots": [
+    {
+     "text": "Tu le *savais ?*",
+     "img": "assets/archives/churchill_nobel_litterature/churchill.jpg",
+     "mode": "fade",
+     "rings": true
+    }
+   ]
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "shots": [
+    {
+     "text": "*Abonne-toi.*",
+     "bg": "red"
+    }
+   ]
+  }
+ ]
+}
