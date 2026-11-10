@@ -3,7 +3,7 @@
  "num": 52,
  "source": "https://fr.wikipedia.org/wiki/Notre-Dame_de_Paris_(roman)",
  "caption": "#CapCut 📁 Dossier n°52 — Sans un roman, Notre-Dame aurait pu disparaître 📖 Tu as lu le livre ? #notredame #histoire #paris #victorhugo #lesaviezvous #dossier",
- "note": "Montage dynamique v2 (v2_convert.py, 02/11/2026) : coupes sur le tempo de « The Scooby Snacks », voix seule. A publier depuis TikTok avec le son, demarre sur un kick.",
+ "note": "Montage dynamique v2 (v2_convert.py, 02/11/2026) : coupes sur le tempo de « The Scooby Snacks », voix seule. A publier depuis TikTok avec le son, demarre sur un kick. rev 2",
  "bpm": 175.75,
  "nappe": false,
  "bruitages": false,
@@ -60,11 +60,16 @@
      "hit": true
     },
     {
-     "img": "assets/archives/notre_dame_victor_hugo/hugo.jpg",
+     "img": "assets/archives/notre_dame_victor_hugo/daguerreotype.jpg",
      "mode": "fade",
-     "flip": true,
      "on": "la",
-     "stamp": "DÉCAPITÉES"
+     "stamp": "DÉCAPITÉES",
+     "crop": [
+      0.2,
+      0.3,
+      0.6,
+      0.5
+     ]
     },
     {
      "img": "assets/archives/notre_dame_victor_hugo/quasimodo.jpg",
