@@ -24,15 +24,21 @@ n°31 | muraille_chine_espace | 04/11/2026 06:00 | programmé le 02/11 au soir (
 n°32 | gengis_khan_descendants | 04/11/2026 22:00 | programmé le 02/11 au soir (Buffer) : montage v2 + musique « The Scooby Snacks » intégrée (demo_out/avec_son sur la branche montage-v2), étiquette IA cochée — publié ✅ (fichiers supprimés le 06/11/2026)
 n°33 | jeanne_darc_vetements | 05/11/2026 13:00 | programmé le 02/11 au soir (Buffer) : montage v2 + musique « The Scooby Snacks » intégrée (demo_out/avec_son sur la branche montage-v2), étiquette IA cochée — publié ✅ (fichiers supprimés le 06/11/2026)
 n°34 | romains_urine_dents | 05/11/2026 22:00 | programmé le 02/11 au soir (Buffer) : montage v2 + musique « The Scooby Snacks » intégrée (demo_out/avec_son sur la branche montage-v2), étiquette IA cochée — publié ✅ (fichiers supprimés le 06/11/2026)
-n°35 | ramses_ii_bourget_1976 | 06/11/2026 18:00 | programmé le 02/11 au soir (Buffer) : montage v2 + musique « The Scooby Snacks » intégrée (demo_out/avec_son sur la branche montage-v2), étiquette IA cochée
+n°35 | ramses_ii_bourget_1976 | 06/11/2026 18:00 | programmé le 02/11 au soir (Buffer) : montage v2 + musique « The Scooby Snacks » intégrée (demo_out/avec_son sur la branche montage-v2), étiquette IA cochée — publié ✅ (fichiers supprimés le 10/11/2026)
 
-n°36 | hachiko_1925 | 06/11/2026 22:00 | programmé le 02/11 (Buffer), montage v2 + musique
-n°37 | hitler_beaux_arts_vienne | 07/11/2026 15:00 | programmé le 02/11 (Buffer), montage v2 + musique
-n°38 | caligula_cheval_consul | 07/11/2026 17:00 | programmé le 02/11 (Buffer), montage v2 + musique
+n°36 | hachiko_1925 | 06/11/2026 22:00 | programmé le 02/11 (Buffer), montage v2 + musique — publié ✅ (fichiers supprimés le 10/11/2026)
+n°37 | hitler_beaux_arts_vienne | 07/11/2026 15:00 | programmé le 02/11 (Buffer), montage v2 + musique — publié ✅ (fichiers supprimés le 10/11/2026)
+n°38 | caligula_cheval_consul | 07/11/2026 17:00 | programmé le 02/11 (Buffer), montage v2 + musique — publié ✅ (fichiers supprimés le 10/11/2026)
 
 — | onoda_1974 | 25/10/2026 | publié ✅ (fichiers supprimés le 03/11/2026)
 hors série | test clipping MW4 (mw4_a01_v2, campagne Call of Duty) | 03/11/2026 13:51 | publié ✅ (Buffer) à la demande de l'utilisateur, PAS un dossier histoire : à ignorer dans les stats des dossiers
-n°39 | marie_curie_carnets | 08/11/2026 09:00 | programmé le 05/11 (Buffer), montage v2 + musique
-n°40 | cesar_pirates | 08/11/2026 13:00 | programmé le 05/11 (Buffer), montage v2 + musique
-n°41 | louis_xiv_palais_brise | 09/11/2026 11:00 | programmé le 05/11 (Buffer), montage v2 + musique
-n°42 | einstein_president_israel | 09/11/2026 13:00 | programmé le 05/11 (Buffer), montage v2 + musique
+n°39 | marie_curie_carnets | 08/11/2026 09:00 | programmé le 05/11 (Buffer), montage v2 + musique — publié ✅ (fichiers supprimés le 10/11/2026)
+n°40 | cesar_pirates | 08/11/2026 13:00 | programmé le 05/11 (Buffer), montage v2 + musique — publié ✅ (fichiers supprimés le 10/11/2026)
+n°41 | louis_xiv_palais_brise | 09/11/2026 11:00 | programmé le 05/11 (Buffer), montage v2 + musique — publié ✅ (fichiers supprimés le 10/11/2026)
+n°42 | einstein_president_israel | 09/11/2026 13:00 | programmé le 05/11 (Buffer), montage v2 + musique — publié ✅ (fichiers supprimés le 10/11/2026)
+n°43 | statue_liberte_couleur | 09/11/2026 08:00 | programmé le 07/11 (Buffer), montage v2 + musique — publié ✅ (fichiers supprimés le 10/11/2026)
+n°44 | lincoln_booth_sauvetage | 10/11/2026 06:00 | programmé le 07/11 (Buffer), montage v2 + musique
+n°45 | pierre_le_grand_barbe | 10/11/2026 22:00 | programmé le 07/11 (Buffer), montage v2 + musique
+n°46 | toutankhamon_malediction | 11/11/2026 06:00 | programmé le 07/11 (Buffer), montage v2 + musique
+n°47 | napoleon_louisiane_1803 | 11/11/2026 22:00 | programmé le 07/11 (Buffer), montage v2 + musique
+n°48 | mozart_miserere_1770 | 12/11/2026 13:00 | programmé le 07/11 (Buffer), montage v2 + musique
