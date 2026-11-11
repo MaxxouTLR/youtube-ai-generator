@@ -1,5 +1,11 @@
 # Supervision des agents « Dossiers d'Histoire »
 
+## 2026-11-11 21h10 (superviseur unique ; limite hebdo Claude atteinte le 10/11 ~20h, passage du 10/11 manqué)
+- ✅ Dernier créneau programmé sam. 14/11 17h (+2,8 j) ; dernière date écrite 22/11 (n°66, +11 j).
+- ✅ Analyste 10/11 (commit 1820684), Beacons 08/11, newsletter attendue jeu. 12/11, programmateur prochain jeu. 12/11.
+- ✅ Bon sens : JSON valides, num max 66, aucun doublon, rendus n°59–66 présents et > 1 Mo.
+- ⚠️ n°23–25 toujours non programmés ; propositions [1], [4], [5] sans réponse.
+
 ## 2026-11-09 22h40 (superviseur unique)
 - ✅ Programmateur : rattrapage du 09/11 terminé (succès) ; aucun nouveau créneau dans le planning local → Buffer sans doute encore plein ; dernier créneau 12/11 13h (+2,6 j).
 - ✅ Dernière date écrite 22/11 (+12,9 j). Analyste 06/11 (< 5 j, prochain mar. 10/11), newsletter 05/11 (prochaine jeu. 12/11).
