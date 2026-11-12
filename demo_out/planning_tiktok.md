@@ -42,3 +42,13 @@ n°45 | pierre_le_grand_barbe | 10/11/2026 22:00 | programmé le 07/11 (Buffer),
 n°46 | toutankhamon_malediction | 11/11/2026 06:00 | programmé le 07/11 (Buffer), montage v2 + musique
 n°47 | napoleon_louisiane_1803 | 11/11/2026 22:00 | programmé le 07/11 (Buffer), montage v2 + musique
 n°48 | mozart_miserere_1770 | 12/11/2026 13:00 | programmé le 07/11 (Buffer), montage v2 + musique
+n°49 | churchill_nobel_litterature | jeu 12/11 22h | programmé Buffer (son intégré)
+n°50 | pompei_moulages | ven 13/11 18h | programmé Buffer (son intégré)
+n°51 | napoleon_roman_clisson | ven 13/11 22h | programmé Buffer (son intégré)
+n°52 | notre_dame_victor_hugo | sam 14/11 17h | programmé Buffer (son intégré)
+n°53 | vomitorium_rome | 16/11/2026 08:00 | programmé le 12/11/2026 (Buffer)
+n°54 | guillotin_jamais_guillotine | 16/11/2026 19:00 | programmé le 12/11/2026 (Buffer)
+n°55 | einstein_nul_en_maths | 17/11/2026 08:00 | programmé le 12/11/2026 (Buffer)
+n°56 | sphinx_nez_napoleon | 17/11/2026 19:00 | programmé le 12/11/2026 (Buffer)
+n°57 | louis_xiv_fistule_1686 | 18/11/2026 08:00 | programmé le 12/11/2026 (Buffer)
+n°58 | galilee_pourtant_elle_tourne | 18/11/2026 19:00 | programmé le 12/11/2026 (Buffer)
