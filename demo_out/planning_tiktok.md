@@ -37,12 +37,12 @@ n°40 | cesar_pirates | 08/11/2026 13:00 | programmé le 05/11 (Buffer), montage
 n°41 | louis_xiv_palais_brise | 09/11/2026 11:00 | programmé le 05/11 (Buffer), montage v2 + musique — publié ✅ (fichiers supprimés le 10/11/2026)
 n°42 | einstein_president_israel | 09/11/2026 13:00 | programmé le 05/11 (Buffer), montage v2 + musique — publié ✅ (fichiers supprimés le 10/11/2026)
 n°43 | statue_liberte_couleur | 09/11/2026 08:00 | programmé le 07/11 (Buffer), montage v2 + musique — publié ✅ (fichiers supprimés le 10/11/2026)
-n°44 | lincoln_booth_sauvetage | 10/11/2026 06:00 | programmé le 07/11 (Buffer), montage v2 + musique
-n°45 | pierre_le_grand_barbe | 10/11/2026 22:00 | programmé le 07/11 (Buffer), montage v2 + musique
-n°46 | toutankhamon_malediction | 11/11/2026 06:00 | programmé le 07/11 (Buffer), montage v2 + musique
-n°47 | napoleon_louisiane_1803 | 11/11/2026 22:00 | programmé le 07/11 (Buffer), montage v2 + musique
-n°48 | mozart_miserere_1770 | 12/11/2026 13:00 | programmé le 07/11 (Buffer), montage v2 + musique
-n°49 | churchill_nobel_litterature | jeu 12/11 22h | programmé Buffer (son intégré)
+n°44 | lincoln_booth_sauvetage | 10/11/2026 06:00 | programmé le 07/11 (Buffer), montage v2 + musique — publié ✅ (fichiers supprimés le 13/11/2026)
+n°45 | pierre_le_grand_barbe | 10/11/2026 22:00 | programmé le 07/11 (Buffer), montage v2 + musique — publié ✅ (fichiers supprimés le 13/11/2026)
+n°46 | toutankhamon_malediction | 11/11/2026 06:00 | programmé le 07/11 (Buffer), montage v2 + musique — publié ✅ (fichiers supprimés le 13/11/2026)
+n°47 | napoleon_louisiane_1803 | 11/11/2026 22:00 | programmé le 07/11 (Buffer), montage v2 + musique — publié ✅ (fichiers supprimés le 13/11/2026)
+n°48 | mozart_miserere_1770 | 12/11/2026 13:00 | programmé le 07/11 (Buffer), montage v2 + musique — publié ✅ (fichiers supprimés le 13/11/2026)
+n°49 | churchill_nobel_litterature | jeu 12/11 22h | programmé Buffer (son intégré) — publié ✅ (fichiers supprimés le 13/11/2026)
 n°50 | pompei_moulages | ven 13/11 18h | programmé Buffer (son intégré)
 n°51 | napoleon_roman_clisson | ven 13/11 22h | programmé Buffer (son intégré)
 n°52 | notre_dame_victor_hugo | sam 14/11 17h | programmé Buffer (son intégré)
