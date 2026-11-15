@@ -1,0 +1,67 @@
+{
+ "slug": "napoleon_la_perouse_1785",
+ "num": 78,
+ "source": "https://fr.wikipedia.org/wiki/Exp%C3%A9dition_de_La_P%C3%A9rouse",
+ "caption": "#CapCut 📁 Dossier n°78 — À 16 ans, Napoléon a failli disparaître en mer 🚢 Sans ce refus, pas d'Empire ? #histoire #napoleon #explorateurs #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "À seize ans, Napoléon a failli disparaître en mer.",
+   "title": "Napoléon… *disparu en mer ?*",
+   "sub": "Son destin a tenu à un refus."
+  },
+  {
+   "say": "L'expédition qu'il voulait rejoindre n'est jamais revenue.",
+   "title": "Jamais *revenue.*",
+   "icon": "🚢"
+  },
+  {
+   "say": "1785. Louis XVI envoie La Pérouse autour du monde.",
+   "led": "1785",
+   "led_sub": "La Pérouse"
+  },
+  {
+   "say": "Selon la tradition, le jeune Bonaparte se porte candidat.",
+   "title": "Candidat *Bonaparte.*",
+   "stamp": "Tradition",
+   "stamp_at": 1.2
+  },
+  {
+   "say": "Il n'est pas retenu.",
+   "title": "Pas *retenu.*"
+  },
+  {
+   "say": "Mais attendez. En 1788, les deux navires disparaissent.",
+   "title": "MAIS ATTENDEZ.",
+   "flash": true
+  },
+  {
+   "say": "Plus aucune nouvelle. Pendant des années.",
+   "title": "Plus aucune *nouvelle.*"
+  },
+  {
+   "say": "Le jour de sa mort, Louis XVI aurait posé une question.",
+   "title": "Une dernière *question.*"
+  },
+  {
+   "say": "A-t-on des nouvelles de La Pérouse ?",
+   "title": "Des nouvelles *de La Pérouse ?*",
+   "stamp": "Selon",
+   "stamp_at": 1.2
+  },
+  {
+   "say": "Les épaves ne sont retrouvées qu'en 1826, à Vanikoro.",
+   "led": "1826",
+   "led_sub": "Vanikoro"
+  },
+  {
+   "say": "Sans ce refus, pas d'Empire ?",
+   "title": "Sans ce refus, *pas d'Empire ?*",
+   "sub": "Oui · Non"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier demain matin.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier demain 8h"
+  }
+ ]
+}

@@ -1,0 +1,70 @@
+{
+ "slug": "roosevelt_balle_discours_1912",
+ "num": 67,
+ "source": "https://fr.wikipedia.org/wiki/Tentative_d%27assassinat_de_Theodore_Roosevelt",
+ "caption": "#CapCut 📁 Dossier n°67 — Il prend une balle… et continue son discours 🎤 Tu serais monté sur scène ? #histoire #roosevelt #usa #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Cet ancien président prend une balle et continue son discours.",
+   "title": "Une balle… *et il continue.*",
+   "sub": "Le plus fou, c'est la suite."
+  },
+  {
+   "say": "La balle reste plantée dans sa poitrine.",
+   "title": "Dans la *poitrine.*",
+   "stamp": "Vrai",
+   "stamp_at": 1.0
+  },
+  {
+   "say": "Milwaukee, 1912. Theodore Roosevelt est en pleine campagne.",
+   "led": "1912",
+   "led_sub": "Milwaukee"
+  },
+  {
+   "say": "Il refuse l'hôpital et monte sur scène.",
+   "title": "Il refuse *l'hôpital.*",
+   "icon": "🎤"
+  },
+  {
+   "say": "Mais attendez. Pourquoi est-il encore vivant ?",
+   "title": "MAIS ATTENDEZ.",
+   "flash": true
+  },
+  {
+   "say": "Dans sa poche : son discours, plié, cinquante pages.",
+   "led": "50 PAGES",
+   "led_sub": "de discours"
+  },
+  {
+   "say": "Et un étui à lunettes en métal. Ils ont freiné la balle.",
+   "title": "Un étui *à lunettes.*",
+   "icon": "👓"
+  },
+  {
+   "say": "Il parle environ quatre-vingt-dix minutes, la chemise en sang.",
+   "led": "90 MIN",
+   "led_sub": "de discours"
+  },
+  {
+   "say": "Le pire ? Les médecins ne retirent jamais la balle.",
+   "title": "Le pire ?",
+   "flash": true
+  },
+  {
+   "say": "Il la garde dans la poitrine jusqu'à sa mort.",
+   "title": "Jusqu'à *sa mort.*",
+   "stamp": "Vrai",
+   "stamp_at": 1.2
+  },
+  {
+   "say": "Toi, tu serais monté sur scène ?",
+   "title": "Tu serais *monté sur scène ?*",
+   "sub": "Scène · Hôpital"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier ce soir 19h"
+  }
+ ]
+}

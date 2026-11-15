@@ -1,0 +1,63 @@
+{
+ "slug": "titanic_cle_jumelles",
+ "num": 74,
+ "source": "https://en.wikipedia.org/wiki/David_Blair_(sailor)",
+ "caption": "#CapCut 📁 Dossier n°74 — Une clé oubliée aurait pu sauver le Titanic 🔑 Une clé aurait tout changé ? #histoire #titanic #1912 #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Une clé oubliée aurait pu sauver le Titanic.",
+   "title": "Une clé *oubliée.*",
+   "sub": "Et cette clé existe encore."
+  },
+  {
+   "say": "Sans elle, les vigies n'ont pas de jumelles.",
+   "title": "Pas de *jumelles.*",
+   "icon": "🔭"
+  },
+  {
+   "say": "Avant le départ, l'officier David Blair est retiré de l'équipage.",
+   "led": "1912",
+   "led_sub": "David Blair"
+  },
+  {
+   "say": "Il part avec une clé dans sa poche.",
+   "title": "Une clé *en poche.*",
+   "icon": "🔑"
+  },
+  {
+   "say": "Celle du coffre aux jumelles, pour le nid-de-pie.",
+   "title": "Le coffre *aux jumelles.*"
+  },
+  {
+   "say": "Sauf que… le 14 avril, les vigies guettent à l'œil nu.",
+   "title": "Sauf que…",
+   "flash": true
+  },
+  {
+   "say": "Selon la vigie Fred Fleet, des jumelles auraient tout changé.",
+   "title": "À *l'œil nu.*",
+   "stamp": "Débattu",
+   "stamp_at": 1.3
+  },
+  {
+   "say": "Plus de mille cinq cents personnes meurent.",
+   "led": "1500",
+   "led_sub": "victimes"
+  },
+  {
+   "say": "En 2007, la clé est vendue quatre-vingt-dix mille livres.",
+   "led": "90 000",
+   "led_sub": "livres en 2007"
+  },
+  {
+   "say": "Une clé aurait-elle tout changé ?",
+   "title": "Une clé *aurait suffi ?*",
+   "sub": "Oui · Non"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier demain matin.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier demain 8h"
+  }
+ ]
+}

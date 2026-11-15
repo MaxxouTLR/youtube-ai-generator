@@ -1,0 +1,68 @@
+{
+ "slug": "bach_400_km_1705",
+ "num": 77,
+ "source": "https://fr.wikipedia.org/wiki/Jean-S%C3%A9bastien_Bach",
+ "caption": "#CapCut 📁 Dossier n°77 — Bach a marché 400 km pour un concert 🥾 Tu le ferais ? #histoire #bach #musique #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Bach marche quatre cents kilomètres pour écouter un concert.",
+   "title": "400 km *à pied.*",
+   "sub": "Son patron n'a pas apprécié."
+  },
+  {
+   "say": "À pied, en automne, d'Arnstadt jusqu'à Lübeck.",
+   "title": "Arnstadt → *Lübeck.*",
+   "icon": "🥾"
+  },
+  {
+   "say": "Il a vingt ans. Il veut entendre l'organiste Buxtehude.",
+   "led": "20 ANS",
+   "led_sub": "en 1705"
+  },
+  {
+   "say": "Environ quatre cents kilomètres, aller simple.",
+   "led": "400 KM",
+   "led_sub": "aller simple"
+  },
+  {
+   "say": "Il a obtenu quatre semaines de congé.",
+   "title": "Quatre semaines *de congé.*"
+  },
+  {
+   "say": "Sauf que… il reste presque quatre mois.",
+   "title": "Sauf que…",
+   "flash": true
+  },
+  {
+   "say": "À son retour, ses employeurs le convoquent pour s'expliquer.",
+   "title": "Convoqué.",
+   "stamp": "Vrai",
+   "stamp_at": 1.2
+  },
+  {
+   "say": "Le pire ? Buxtehude cherchait un successeur.",
+   "title": "Le pire ?",
+   "flash": true
+  },
+  {
+   "say": "Une condition : épouser sa fille.",
+   "title": "Épouser *sa fille.*"
+  },
+  {
+   "say": "Selon les historiens, Bach refuse… comme Haendel avant lui.",
+   "title": "Bach *refuse.*",
+   "stamp": "Selon",
+   "stamp_at": 1.2
+  },
+  {
+   "say": "Toi, tu ferais quatre cents kilomètres pour un concert ?",
+   "title": "400 km *pour un concert ?*",
+   "sub": "Oui · Jamais"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier ce soir 19h"
+  }
+ ]
+}

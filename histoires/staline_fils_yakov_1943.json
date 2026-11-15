@@ -1,0 +1,61 @@
+{
+ "slug": "staline_fils_yakov_1943",
+ "num": 80,
+ "source": "https://fr.wikipedia.org/wiki/Iakov_Djougachvili",
+ "caption": "#CapCut 📁 Dossier n°80 — Staline a refusé d'échanger son propre fils 📰 Courage ou cruauté ? #histoire #staline #ww2 #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Staline refuse d'échanger son propre fils prisonnier.",
+   "title": "Il refuse *son fils.*",
+   "sub": "Sa réponse glace le sang."
+  },
+  {
+   "say": "Son fils aîné, Yakov, est aux mains des nazis.",
+   "title": "Prisonnier *des nazis.*"
+  },
+  {
+   "say": "Juillet 1941 : le lieutenant Yakov Djougachvili est capturé.",
+   "led": "1941",
+   "led_sub": "capturé"
+  },
+  {
+   "say": "Les Allemands savent qui il est. Ils l'utilisent pour leur propagande.",
+   "title": "Arme *de propagande.*",
+   "icon": "📰"
+  },
+  {
+   "say": "Mais attendez. Après Stalingrad, ils proposent un échange.",
+   "title": "MAIS ATTENDEZ.",
+   "flash": true
+  },
+  {
+   "say": "Yakov contre le maréchal Paulus, capturé par les Soviétiques.",
+   "title": "Contre *le maréchal Paulus.*"
+  },
+  {
+   "say": "Staline aurait répondu : je n'échange pas un soldat contre un maréchal.",
+   "title": "Un soldat… *contre un maréchal ?*",
+   "stamp": "Attribué",
+   "stamp_at": 1.4
+  },
+  {
+   "say": "En 1943, Yakov meurt au camp de Sachsenhausen.",
+   "led": "1943",
+   "led_sub": "Sachsenhausen"
+  },
+  {
+   "say": "Abattu par un garde, près des barbelés électrifiés.",
+   "title": "Près *des barbelés.*"
+  },
+  {
+   "say": "Ce refus : courage ou cruauté ?",
+   "title": "Courage *ou cruauté ?*",
+   "sub": "Courage · Cruauté"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier demain matin.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier demain 8h"
+  }
+ ]
+}

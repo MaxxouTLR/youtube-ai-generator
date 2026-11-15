@@ -1,0 +1,68 @@
+{
+ "slug": "chaplin_cercueil_vole_1978",
+ "num": 71,
+ "source": "https://fr.wikipedia.org/wiki/Charlie_Chaplin",
+ "caption": "#CapCut 📁 Dossier n°71 — On a volé le cercueil de Charlie Chaplin 🪦 Tu aurais payé la rançon ? #histoire #chaplin #cinema #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "On a volé le cercueil de Charlie Chaplin.",
+   "title": "Le cercueil *volé.*",
+   "sub": "Attends de savoir où il était."
+  },
+  {
+   "say": "Deux mois après sa mort, sa tombe suisse est vide.",
+   "title": "Une tombe *vide.*",
+   "icon": "🪦"
+  },
+  {
+   "say": "Mars 1978, Corsier-sur-Vevey, en Suisse.",
+   "led": "1978",
+   "led_sub": "Suisse"
+  },
+  {
+   "say": "Les voleurs réclament une rançon à sa veuve, Oona.",
+   "title": "Une *rançon.*"
+  },
+  {
+   "say": "Six cent mille francs suisses.",
+   "led": "600 000",
+   "led_sub": "francs suisses"
+  },
+  {
+   "say": "Sauf que… Oona refuse de payer.",
+   "title": "Sauf que…",
+   "flash": true
+  },
+  {
+   "say": "Selon elle, Charlie aurait trouvé ça ridicule.",
+   "title": "« *Ridicule.* »",
+   "stamp": "Selon",
+   "stamp_at": 1.2
+  },
+  {
+   "say": "La police surveille des centaines de cabines téléphoniques.",
+   "title": "Les cabines *surveillées.*",
+   "icon": "📞"
+  },
+  {
+   "say": "Les voleurs sont arrêtés. Le cercueil était enterré dans un champ.",
+   "title": "Dans *un champ.*",
+   "stamp": "Vrai",
+   "stamp_at": 1.4
+  },
+  {
+   "say": "Chaplin est alors réenterré… sous du béton.",
+   "title": "Sous *du béton.*"
+  },
+  {
+   "say": "Toi, tu aurais payé la rançon ?",
+   "title": "Tu aurais *payé ?*",
+   "sub": "Oui · Jamais"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier ce soir 19h"
+  }
+ ]
+}

@@ -1,0 +1,65 @@
+{
+ "slug": "alexandre_corps_intact",
+ "num": 79,
+ "source": "https://en.wikipedia.org/wiki/Death_of_Alexander_the_Great",
+ "caption": "#CapCut 📁 Dossier n°79 — Le corps d'Alexandre le Grand n'a pas pourri pendant six jours 🧠 Tu crois à l'hypothèse ? #histoire #alexandrelegrand #antiquite #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Mort, Alexandre le Grand ne pourrit pas pendant six jours.",
+   "title": "Six jours *sans pourrir.*",
+   "sub": "La science a peut-être une réponse."
+  },
+  {
+   "say": "En pleine chaleur de Babylone, son corps reste intact.",
+   "title": "Le corps *reste intact.*",
+   "icon": "🔥"
+  },
+  {
+   "say": "Babylone, 323 avant notre ère. Il a trente-deux ans.",
+   "led": "-323",
+   "led_sub": "Babylone"
+  },
+  {
+   "say": "Selon Plutarque, ses soldats y voient un signe divin.",
+   "title": "Un signe *divin ?*",
+   "stamp": "Plutarque",
+   "stamp_at": 1.2
+  },
+  {
+   "say": "Sauf que… en 2018, une chercheuse propose une autre explication.",
+   "title": "Sauf que…",
+   "flash": true
+  },
+  {
+   "say": "Une maladie, le syndrome de Guillain-Barré, l'aurait paralysé.",
+   "title": "Guillain-*Barré.*",
+   "icon": "🧠"
+  },
+  {
+   "say": "Le pire ? Il aurait été vivant quand on l'a déclaré mort.",
+   "title": "Le pire ?",
+   "flash": true,
+   "stamp": "Hypothèse",
+   "stamp_at": 1.3
+  },
+  {
+   "say": "Plus tard, son corps est détourné par son général Ptolémée.",
+   "title": "Corps *détourné.*"
+  },
+  {
+   "say": "Et son tombeau, en Égypte, n'a jamais été retrouvé.",
+   "led": "PERDU",
+   "led_sub": "le tombeau"
+  },
+  {
+   "say": "Toi, tu crois à cette hypothèse ?",
+   "title": "Tu y *crois ?*",
+   "sub": "Oui · Non"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier ce soir 19h"
+  }
+ ]
+}

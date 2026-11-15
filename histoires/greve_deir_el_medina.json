@@ -1,0 +1,66 @@
+{
+ "slug": "greve_deir_el_medina",
+ "num": 70,
+ "source": "https://fr.wikipedia.org/wiki/Papyrus_de_la_gr%C3%A8ve",
+ "caption": "#CapCut 📁 Dossier n°70 — La première grève de l'histoire a eu lieu chez pharaon 🌾 Tu aurais fait grève ? #histoire #egypte #pharaon #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "La première grève de l'histoire ? Des ouvriers de pharaon.",
+   "title": "La première *grève.*",
+   "sub": "Et c'est écrit sur papyrus."
+  },
+  {
+   "say": "Ils creusent les tombes royales… et posent leurs outils.",
+   "title": "Outils *posés.*",
+   "icon": "🔨"
+  },
+  {
+   "say": "Égypte, vers 1157 avant notre ère, sous Ramsès III.",
+   "led": "-1157",
+   "led_sub": "Ramsès III"
+  },
+  {
+   "say": "Les artisans de la Vallée des Rois ne sont plus payés.",
+   "title": "Plus de *paie.*"
+  },
+  {
+   "say": "Leur salaire ? Des rations de grain.",
+   "title": "Payés *en grain.*",
+   "icon": "🌾"
+  },
+  {
+   "say": "Mais attendez. Ils ne restent pas les bras croisés.",
+   "title": "MAIS ATTENDEZ.",
+   "flash": true
+  },
+  {
+   "say": "Ils s'assoient devant les temples et refusent de travailler.",
+   "title": "Assis *devant les temples.*",
+   "stamp": "Grève",
+   "stamp_at": 1.2
+  },
+  {
+   "say": "Selon le papyrus, ils lancent : nous avons faim.",
+   "title": "« Nous avons *faim.* »"
+  },
+  {
+   "say": "Et ça marche : on finit par leur livrer leurs rations.",
+   "title": "Et ça *marche.*"
+  },
+  {
+   "say": "Ce papyrus existe encore, au musée de Turin.",
+   "led": "TURIN",
+   "led_sub": "papyrus de la grève"
+  },
+  {
+   "say": "Toi, tu aurais fait grève pour pharaon ?",
+   "title": "Grève *pour pharaon ?*",
+   "sub": "Oui · Non"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier demain matin.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier demain 8h"
+  }
+ ]
+}

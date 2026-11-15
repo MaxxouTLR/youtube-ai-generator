@@ -1,0 +1,63 @@
+{
+ "slug": "newton_aiguille_oeil",
+ "num": 72,
+ "source": "https://en.wikipedia.org/wiki/Isaac_Newton",
+ "caption": "#CapCut 📁 Dossier n°72 — Newton s'est planté une aiguille dans l'œil 🌈 Tu ferais ça pour la science ? #histoire #newton #science #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Newton s'enfonce une aiguille derrière l'œil. Exprès.",
+   "title": "Une aiguille *dans l'œil.*",
+   "sub": "Et il l'a noté lui-même."
+  },
+  {
+   "say": "Il la glisse entre son œil et l'os, le plus loin possible.",
+   "title": "Entre l'œil *et l'os.*",
+   "stamp": "Vrai",
+   "stamp_at": 1.2
+  },
+  {
+   "say": "Isaac Newton, vers 1666. Il étudie la lumière.",
+   "led": "1666",
+   "led_sub": "Isaac Newton"
+  },
+  {
+   "say": "Sa question : la couleur naît-elle dans l'œil ?",
+   "title": "D'où vient *la couleur ?*",
+   "icon": "🌈"
+  },
+  {
+   "say": "Alors il appuie sur son œil, pour voir ce qui change.",
+   "title": "Il *appuie.*"
+  },
+  {
+   "say": "Résultat : des cercles colorés apparaissent.",
+   "title": "Des cercles *colorés.*"
+  },
+  {
+   "say": "Le pire ? Il a aussi fixé le soleil.",
+   "title": "Le pire ?",
+   "flash": true
+  },
+  {
+   "say": "Ébloui, il doit rester enfermé dans le noir plusieurs jours.",
+   "title": "Enfermé *dans le noir.*",
+   "icon": "🌞"
+  },
+  {
+   "say": "Et le croquis de l'expérience existe encore, dessiné de sa main.",
+   "title": "Le croquis *existe.*",
+   "stamp": "Archive",
+   "stamp_at": 1.4
+  },
+  {
+   "say": "Toi, tu ferais ça pour la science ?",
+   "title": "Pour *la science ?*",
+   "sub": "Oui · Jamais"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier demain matin.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier demain 8h"
+  }
+ ]
+}

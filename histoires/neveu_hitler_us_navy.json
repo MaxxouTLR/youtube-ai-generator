@@ -1,0 +1,69 @@
+{
+ "slug": "neveu_hitler_us_navy",
+ "num": 76,
+ "source": "https://fr.wikipedia.org/wiki/William_Patrick_Hitler",
+ "caption": "#CapCut 📁 Dossier n°76 — Le neveu d'Hitler a combattu contre lui ⚓ Tu aurais changé de nom ? #histoire #hitler #ww2 #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Le neveu d'Hitler s'engage contre lui.",
+   "title": "Le neveu *d'Hitler.*",
+   "sub": "Et sa lettre existe encore."
+  },
+  {
+   "say": "Il porte l'uniforme de la marine américaine.",
+   "title": "Marine *américaine.*",
+   "icon": "⚓"
+  },
+  {
+   "say": "William Patrick Hitler naît à Liverpool, en 1911.",
+   "led": "1911",
+   "led_sub": "Liverpool"
+  },
+  {
+   "say": "Dans les années trente, il travaille en Allemagne, grâce à son oncle.",
+   "title": "Pistonné *par Adolf.*"
+  },
+  {
+   "say": "Sauf que… il fuit, et publie : pourquoi je hais mon oncle.",
+   "title": "Sauf que…",
+   "flash": true
+  },
+  {
+   "say": "En 1942, il écrit à Roosevelt pour pouvoir s'engager.",
+   "title": "Une lettre *à Roosevelt.*",
+   "icon": "📨"
+  },
+  {
+   "say": "En 1944, la Navy l'accepte comme aide-soignant.",
+   "led": "1944",
+   "led_sub": "US Navy"
+  },
+  {
+   "say": "Le pire ? Après la guerre, il change de nom.",
+   "title": "Le pire ?",
+   "flash": true
+  },
+  {
+   "say": "Il vit discrètement près de New York, sous le nom de Stuart-Houston.",
+   "title": "Stuart-*Houston.*",
+   "stamp": "Vrai",
+   "stamp_at": 1.4
+  },
+  {
+   "say": "Et aucun de ses quatre fils n'a eu d'enfant.",
+   "title": "Aucun *enfant.*",
+   "stamp": "Rumeur ?",
+   "stamp_at": 1.2
+  },
+  {
+   "say": "Toi, tu aurais changé de nom ?",
+   "title": "Tu aurais *changé de nom ?*",
+   "sub": "Oui · Non"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier demain matin.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier demain 8h"
+  }
+ ]
+}

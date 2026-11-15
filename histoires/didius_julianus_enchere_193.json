@@ -1,0 +1,67 @@
+{
+ "slug": "didius_julianus_enchere_193",
+ "num": 69,
+ "source": "https://fr.wikipedia.org/wiki/Didius_Julianus",
+ "caption": "#CapCut 📁 Dossier n°69 — Rome a mis son trône aux enchères 💰 Tu aurais acheté le trône ? #histoire #rome #empereur #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Rome met son trône impérial aux enchères.",
+   "title": "L'empire *aux enchères.*",
+   "sub": "Et le prix est connu."
+  },
+  {
+   "say": "Les gardes viennent de tuer l'empereur, et vendent sa place.",
+   "title": "Vendu *au plus offrant.*",
+   "icon": "💰"
+  },
+  {
+   "say": "Année 193. La garde prétorienne assassine l'empereur Pertinax.",
+   "led": "AN 193",
+   "led_sub": "Rome"
+  },
+  {
+   "say": "Selon l'historien Cassius Dio, elle organise une vente.",
+   "title": "Une *vente.*",
+   "stamp": "Vrai",
+   "stamp_at": 1.2
+  },
+  {
+   "say": "Un riche sénateur, Didius Julianus, surenchérit.",
+   "title": "Didius *Julianus.*"
+  },
+  {
+   "say": "Son offre : vingt-cinq mille sesterces par soldat.",
+   "led": "25 000",
+   "led_sub": "sesterces par soldat"
+  },
+  {
+   "say": "Il gagne. Il devient empereur.",
+   "title": "Empereur *acheté.*",
+   "icon": "👑"
+  },
+  {
+   "say": "Et le Sénat, terrifié, est forcé de le reconnaître.",
+   "title": "Le Sénat *s'incline.*"
+  },
+  {
+   "say": "Sauf que… le peuple le hait. Une armée marche sur Rome.",
+   "title": "Sauf que…",
+   "flash": true
+  },
+  {
+   "say": "Il règne soixante-six jours, puis il est tué dans son palais.",
+   "led": "66 JOURS",
+   "led_sub": "de règne"
+  },
+  {
+   "say": "Toi, tu aurais acheté le trône ?",
+   "title": "Tu aurais *acheté le trône ?*",
+   "sub": "Oui · Jamais"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier ce soir 19h"
+  }
+ ]
+}

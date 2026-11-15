@@ -1,0 +1,65 @@
+{
+ "slug": "beethoven_neuvieme_1824",
+ "num": 75,
+ "source": "https://fr.wikipedia.org/wiki/Symphonie_n%C2%BA_9_de_Beethoven",
+ "caption": "#CapCut 📁 Dossier n°75 — Beethoven dirige sa plus grande œuvre… sans l'entendre 🎻 Tu aurais pleuré ? #histoire #beethoven #musique #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Beethoven dirige sa plus grande symphonie… sans l'entendre.",
+   "title": "Il dirige… *sans entendre.*",
+   "sub": "La fin va te donner des frissons."
+  },
+  {
+   "say": "Il est totalement sourd, debout face à l'orchestre.",
+   "title": "Totalement *sourd.*",
+   "icon": "🎻"
+  },
+  {
+   "say": "Vienne, 7 mai 1824 : première de la Neuvième Symphonie.",
+   "led": "1824",
+   "led_sub": "Vienne"
+  },
+  {
+   "say": "Il bat la mesure, mais un second chef guide vraiment les musiciens.",
+   "title": "Un *second chef.*"
+  },
+  {
+   "say": "Selon les témoins, il dirige encore quand la musique s'arrête.",
+   "title": "Il *continue.*",
+   "stamp": "Témoins",
+   "stamp_at": 1.3
+  },
+  {
+   "say": "Le public applaudit. Lui n'entend rien.",
+   "title": "Il n'entend *rien.*"
+  },
+  {
+   "say": "Mais attendez. Une chanteuse le prend par la manche.",
+   "title": "MAIS ATTENDEZ.",
+   "flash": true
+  },
+  {
+   "say": "Elle le retourne doucement vers la salle.",
+   "title": "Retourné *vers la salle.*",
+   "icon": "👏"
+  },
+  {
+   "say": "Il découvre des chapeaux et des mouchoirs agités pour lui.",
+   "title": "Des mouchoirs *agités.*"
+  },
+  {
+   "say": "Le public applaudit avec les mains… pour qu'il puisse le voir.",
+   "title": "Applaudir *pour être vu.*"
+  },
+  {
+   "say": "Toi, tu aurais pleuré à sa place ?",
+   "title": "Tu aurais *pleuré ?*",
+   "sub": "Oui · Non"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier ce soir 19h"
+  }
+ ]
+}

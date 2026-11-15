@@ -1,0 +1,67 @@
+{
+ "slug": "napoleon_turc_mecanique_1809",
+ "num": 68,
+ "source": "https://fr.wikipedia.org/wiki/Turc_m%C3%A9canique",
+ "caption": "#CapCut 📁 Dossier n°68 — Napoléon contre une machine aux échecs 🤖 Tu aurais deviné le truc ? #histoire #napoleon #echecs #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Napoléon perd aux échecs contre une machine.",
+   "title": "Battu par *une machine ?*",
+   "sub": "Mais elle cachait un secret."
+  },
+  {
+   "say": "Le robot balaie les pièces d'un revers de bras.",
+   "title": "Les pièces *balayées.*",
+   "icon": "🤖"
+  },
+  {
+   "say": "1809, palais de Schönbrunn, près de Vienne.",
+   "led": "1809",
+   "led_sub": "Schönbrunn"
+  },
+  {
+   "say": "Face à lui : le Turc mécanique, un automate en turban.",
+   "title": "Le Turc *mécanique.*"
+  },
+  {
+   "say": "Selon les récits, Napoléon triche exprès, plusieurs fois.",
+   "title": "Il *triche.*",
+   "stamp": "Récit",
+   "stamp_at": 1.2
+  },
+  {
+   "say": "La machine remet les pièces en place, puis renverse tout.",
+   "title": "La machine *se fâche.*"
+  },
+  {
+   "say": "Sauf que… ce n'est pas une machine.",
+   "title": "Sauf que…",
+   "flash": true
+  },
+  {
+   "say": "Un vrai joueur d'échecs est caché dans le meuble.",
+   "title": "Un homme *caché dedans.*",
+   "stamp": "Vrai",
+   "stamp_at": 1.2
+  },
+  {
+   "say": "Le Turc trompe l'Europe pendant des décennies.",
+   "led": "1770",
+   "led_sub": "année de création"
+  },
+  {
+   "say": "Benjamin Franklin l'aurait même affronté à Paris.",
+   "title": "Même *Benjamin Franklin.*"
+  },
+  {
+   "say": "Toi, tu aurais deviné le truc ?",
+   "title": "Tu aurais *deviné ?*",
+   "sub": "Oui · Non"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier demain matin.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier demain 8h"
+  }
+ ]
+}

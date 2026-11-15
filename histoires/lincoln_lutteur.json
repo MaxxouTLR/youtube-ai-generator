@@ -1,0 +1,68 @@
+{
+ "slug": "lincoln_lutteur",
+ "num": 73,
+ "source": "https://en.wikipedia.org/wiki/Abraham_Lincoln%27s_wrestling_career",
+ "caption": "#CapCut 📁 Dossier n°73 — Abraham Lincoln, champion de lutte 🤼 Tu l'aurais affronté ? #histoire #lincoln #usa #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Abraham Lincoln : trois cents combats, une seule défaite.",
+   "title": "300 combats, *1 défaite.*",
+   "sub": "Personne ne t'en a parlé à l'école."
+  },
+  {
+   "say": "Avant la politique, Lincoln est un lutteur redouté.",
+   "title": "Un lutteur *redouté.*",
+   "icon": "🤼"
+  },
+  {
+   "say": "Il mesure un mètre quatre-vingt-treize, avec des bras immenses.",
+   "led": "193 CM",
+   "led_sub": "Lincoln"
+  },
+  {
+   "say": "En 1831, il affronte la brute du village, Jack Armstrong.",
+   "title": "Contre *Jack Armstrong.*"
+  },
+  {
+   "say": "Selon le récit, il défie ensuite toute la foule.",
+   "title": "Il défie *la foule.*",
+   "stamp": "Légende ?",
+   "stamp_at": 1.2
+  },
+  {
+   "say": "Mais attendez. Il y a environ trois cents combats.",
+   "title": "MAIS ATTENDEZ.",
+   "flash": true
+  },
+  {
+   "say": "Une seule défaite connue, en 1832.",
+   "led": "1",
+   "led_sub": "seule défaite"
+  },
+  {
+   "say": "Et là, tout bascule.",
+   "title": "Et là…",
+   "flash": true
+  },
+  {
+   "say": "En 1992, il entre au panthéon américain de la lutte.",
+   "title": "Panthéon *de la lutte.*",
+   "stamp": "Vrai",
+   "stamp_at": 1.2
+  },
+  {
+   "say": "Un président élu… pour ses prises de lutte.",
+   "title": "Pour ses *prises.*"
+  },
+  {
+   "say": "Toi, tu l'aurais affronté ?",
+   "title": "Tu l'aurais *affronté ?*",
+   "sub": "Oui · Jamais"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier ce soir 19h"
+  }
+ ]
+}
