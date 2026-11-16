@@ -52,3 +52,8 @@ n°55 | einstein_nul_en_maths | 17/11/2026 08:00 | programmé le 12/11/2026 (Buf
 n°56 | sphinx_nez_napoleon | 17/11/2026 19:00 | programmé le 12/11/2026 (Buffer)
 n°57 | louis_xiv_fistule_1686 | 18/11/2026 08:00 | programmé le 12/11/2026 (Buffer)
 n°58 | galilee_pourtant_elle_tourne | 18/11/2026 19:00 | programmé le 12/11/2026 (Buffer)
+n°59 | gladiateurs_sang_pouce | 19/11/2026 08:00 | programmé le 16/11/2026 (Buffer)
+n°60 | joconde_chambre_napoleon | 19/11/2026 19:00 | programmé le 16/11/2026 (Buffer)
+n°61 | ceinture_chastete_mythe | 20/11/2026 08:00 | programmé le 16/11/2026 (Buffer)
+n°62 | jesse_owens_hitler_1936 | 20/11/2026 19:00 | programmé le 16/11/2026 (Buffer)
+n°63 | edison_ampoule_swan | 21/11/2026 08:00 | programmé le 16/11/2026 (Buffer)
