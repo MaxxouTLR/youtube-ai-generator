@@ -1,5 +1,11 @@
 # Supervision des agents « Dossiers d'Histoire »
 
+## 2026-11-17 12h55 (superviseur unique, rattrapage du 16/11)
+- ✅ Programmateur 16/11 : n°59–63 programmés, dernier créneau sam. 21/11 8h (+4 j) ; dernière date écrite 29/11 (n°80, +12 j).
+- ✅ Vidéos n°64–80 toutes présentes et > 1 Mo ; JSON valides, aucun doublon.
+- ✅ Analyste en cours (dernier rapport 13/11), newsletter 12/11, Beacons 15/11.
+- ⚠️ JSON hérités sans num ; n°23–25 non programmés ; propositions [1], [4], [5] sans réponse.
+
 ## 2026-11-15 22h40 (superviseur unique)
 - ✅ Scénariste 15/11 : n°67–80 écrits (jusqu'au 29/11, +14 j), rendus GitHub demo-fr en succès (10h17 UTC), toutes les vidéos présentes et > 1 Mo.
 - ✅ Dernier créneau programmé mer. 18/11 19h (n°58, +3 j) ; programmateur prévu lun. 16/11 9h.
