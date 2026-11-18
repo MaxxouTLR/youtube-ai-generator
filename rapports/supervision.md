@@ -110,3 +110,6 @@
 - ✅ Couverture planning : dernière date programmée 07/11 19h (n°36), soit +14 j ; dernière date écrite 07/11 (+14 j).
 - ✅ Fraîcheur : pas encore de rapport analyste ni de newsletter (1res exécutions 27/10 et 29/10) — normal.
 - ⚠️ Bon sens : 9 JSON hérités sans "num" ni légende « #CapCut 📁 Dossier n° » (concile_cadaverique_897, deux_17_octobre, guerre_emeus_1932, joconde_1911, karansebes_1788, melasse_boston_1919, onoda_1974, operation_mincemeat_1943, tulipomanie_1637) ; karansebes/onoda ont encore un _Remy.mp4 → risque que le programmateur les reprogramme en doublon lundi. JSON valides, aucun num en double, vidéos toutes > 1 Mo.
+
+## 2026-11-18 (superviseur-general)
+Planning Buffer jusqu'au 21/11 08:00 (n°63), JSON jusqu'au n°80 (~29/11) : OK. 80 JSON valides, aucun num en double, MP4 > 1 Mo. Programmateur (16/11), analyste (17/11), scénariste (15/11) passés. Rien à signaler.
