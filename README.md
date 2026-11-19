@@ -52,7 +52,11 @@ personnel). Le compte TikTok français « Dossiers d'Histoire » est un **projet
 - **Visuels contextuels** — le script est découpé en segments (~15-25s pour le format long, une
   phrase de ~7 mots pour les Shorts) ; chaque segment génère son propre mot-clé de recherche via Ollama pour
   trouver un clip Pexels pertinent, au lieu d'un pool générique.
-- **Montage dynamique des Shorts** (`montage.py`) — un clip différent par phrase, accroche et
+- **Montage Motion des Shorts** (`motion_video.py` + `motion/engine.html`, par défaut) — motion design
+  codé, une scène animée par phrase (mots qui jaillissent au rythme de la voix, emoji, compteurs, mot-clé
+  qui percute l'écran), rendu image par image par Chromium (Playwright). Aucun clip stock nécessaire.
+  `SHORTS_ENGINE=montage` repasse sur l'ancien montage ; en cas d'échec de Motion le pipeline y retombe seul.
+- **Montage dynamique des Shorts** (`montage.py`, repli) — un clip différent par phrase, accroche et
   sous-titres animés en police grasse (Montserrat Black sur le runner).
 - **Musique de fond** — générée localement par synthèse numpy (`music_generator.py`, nappes
   ambiantes, 6 pistes), zéro risque de droits d'auteur, mixée à bas volume sous la voix off. Activée
@@ -144,7 +148,8 @@ sur Azure Speech par défaut.
 - `subtitles.py` — génère les sous-titres dynamiques (.ass, style karaoké) à partir des timings
 - `visuals_fetcher.py` — recherche/téléchargement de clips Pexels (par mot-clé ou en lot générique)
 - `music_generator.py` — musique de fond ambiante générée localement (numpy, zéro droits d'auteur)
-- `montage.py` — montage dynamique des Shorts (un clip par phrase, accroche et sous-titres animés)
+- `motion_video.py` + `motion/engine.html` — montage Motion des Shorts (motion design, rendu Playwright)
+- `montage.py` — montage dynamique des Shorts, repli (un clip par phrase, accroche et sous-titres animés)
 - `video_assembler.py` — montage par segments synchronisés (moviepy/ffmpeg) + mixage musique +
   gravure des sous-titres
 - `thumbnail_generator.py` — miniature (fond généré par IA + texte accrocheur en surimpression)

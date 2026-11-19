@@ -1,4 +1,4 @@
-"""Pipeline Shorts : script court -> voix -> visuels portrait -> montage vertical -> (option) publication.
+"""Pipeline Shorts : script court -> voix -> montage vertical Motion (ou clips stock en repli) -> (option) publication.
 
 Usage:
     python run_shorts_pipeline.py                     # genere un short, ne publie pas
@@ -20,6 +20,7 @@ import video_assembler
 import subtitles
 import youtube_uploader
 import montage
+import motion_video
 from run_pipeline import slugify, chunk_script, write_metadata_note
 
 
@@ -41,6 +42,67 @@ def _merge_short_segments(segments: list[tuple[str, float]], min_seconds: float)
         merged.pop()
 
     return [(c, d) for c, d in merged]
+
+
+def _stock_clip_montage(script, word_boundaries, raw_audio_path, timing_path, title, final_path, run_id, tmp_files):
+    """Ancien montage : clips stock Pexels par phrase (montage.py), repli sur le montage classique.
+    Sert quand SHORTS_ENGINE=montage, ou de filet de securite si le rendu Motion echoue."""
+    print("3/6 - Recherche de visuels portrait pertinents (Pexels)...")
+    paragraphs = chunk_script(script, target_words=config.SHORTS_WORDS_PER_SEGMENT)
+    run_stock_dir = os.path.join(config.STOCK_DIR, f"_shorts_run_{run_id}")
+    os.makedirs(run_stock_dir, exist_ok=True)
+
+    segments = []
+    shots = []   # (clip, debut du passage narre en s) pour le montage dynamique
+    word_idx = 0
+    total_boundary_words = len(word_boundaries)
+    for i, para in enumerate(paragraphs):
+        n_words = len(para.split())
+        if word_idx >= total_boundary_words:
+            break
+        para_words = word_boundaries[word_idx: word_idx + n_words]
+        word_idx += n_words
+        if not para_words:
+            continue
+
+        start = para_words[0]["offset"] / 10_000_000
+        end = (para_words[-1]["offset"] + para_words[-1]["duration"]) / 10_000_000
+        duration = max(1.0, end - start)
+
+        keyword = script_generator.generate_visual_keyword(para)
+        dest = os.path.join(run_stock_dir, f"seg_{i:03d}.mp4")
+        clip_path = visuals_fetcher.fetch_one_clip(keyword, dest, orientation="portrait")
+        print(f"    Segment {i + 1}/{len(paragraphs)}: \"{keyword}\" ({duration:.1f}s)"
+              + ("" if clip_path else " -> ECHEC, ignore"))
+        if clip_path:
+            segments.append((clip_path, duration))
+            shots.append((clip_path, 0.0 if not shots else start))
+
+    if not segments:
+        raise RuntimeError("Aucun visuel n'a pu etre recupere pour aucun segment du script.")
+
+    print("4/6 - Montage dynamique (mouvements camera, transitions, accroche, sous-titres animes, sound design)...")
+    try:
+        video_path = montage.assemble_short(
+            raw_audio_path, shots, word_boundaries, title, final_path,
+            work_dir=os.path.join(run_stock_dir, "montage"),
+        )
+    except Exception as exc:
+        # Filet de securite : un Short publie avec l'ancien montage vaut mieux qu'un creneau rate.
+        print(f"    [warn] Montage dynamique en echec ({exc}) -> repli sur le montage classique")
+        audio_path = video_assembler.mix_background_music(raw_audio_path)
+        segments = _merge_short_segments(segments, config.SHORTS_MIN_SEGMENT_SECONDS)
+        raw_video_path = video_assembler.assemble_video_from_segments(
+            audio_path, segments, out_path=os.path.join(config.VIDEO_DIR, f"_tmp_short_sans_sous_titres_{run_id}.mp4"),
+            width=config.SHORTS_WIDTH, height=config.SHORTS_HEIGHT,
+        )
+        ass_path = subtitles.build_ass_from_timing_file(
+            timing_path, os.path.join(config.VIDEO_DIR, f"_tmp_short_subtitles_{run_id}.ass"), shorts=True
+        )
+        video_path = video_assembler.burn_subtitles(raw_video_path, ass_path, final_path)
+        tmp_files += [raw_video_path, ass_path, audio_path]
+    shutil.rmtree(run_stock_dir, ignore_errors=True)
+    return video_path
 
 
 def make_output_folder_name(topic: str) -> str:
@@ -91,40 +153,6 @@ def main():
             print(f"    [warn] Duree ({total_seconds:.1f}s) au-dela de {config.SHORTS_MAX_SECONDS}s : "
                   "YouTube pourrait ne plus classer cette video comme Short.")
 
-    print("3/6 - Recherche de visuels portrait pertinents (Pexels)...")
-    paragraphs = chunk_script(script, target_words=config.SHORTS_WORDS_PER_SEGMENT)
-    run_stock_dir = os.path.join(config.STOCK_DIR, f"_shorts_run_{run_id}")
-    os.makedirs(run_stock_dir, exist_ok=True)
-
-    segments = []
-    shots = []   # (clip, debut du passage narre en s) pour le montage dynamique
-    word_idx = 0
-    total_boundary_words = len(word_boundaries)
-    for i, para in enumerate(paragraphs):
-        n_words = len(para.split())
-        if word_idx >= total_boundary_words:
-            break
-        para_words = word_boundaries[word_idx: word_idx + n_words]
-        word_idx += n_words
-        if not para_words:
-            continue
-
-        start = para_words[0]["offset"] / 10_000_000
-        end = (para_words[-1]["offset"] + para_words[-1]["duration"]) / 10_000_000
-        duration = max(1.0, end - start)
-
-        keyword = script_generator.generate_visual_keyword(para)
-        dest = os.path.join(run_stock_dir, f"seg_{i:03d}.mp4")
-        clip_path = visuals_fetcher.fetch_one_clip(keyword, dest, orientation="portrait")
-        print(f"    Segment {i + 1}/{len(paragraphs)}: \"{keyword}\" ({duration:.1f}s)"
-              + ("" if clip_path else " -> ECHEC, ignore"))
-        if clip_path:
-            segments.append((clip_path, duration))
-            shots.append((clip_path, 0.0 if not shots else start))
-
-    if not segments:
-        raise RuntimeError("Aucun visuel n'a pu etre recupere pour aucun segment du script.")
-
     folder_name = make_output_folder_name(topic)
     video_folder = os.path.join(config.PUBLISHED_DIR, folder_name)
     os.makedirs(video_folder, exist_ok=True)
@@ -133,27 +161,24 @@ def main():
     final_path = os.path.join(video_folder, "short.mp4")
     tmp_files = [raw_audio_path, timing_path]
 
-    print("4/6 - Montage dynamique (mouvements camera, transitions, accroche, sous-titres animes, sound design)...")
-    try:
-        video_path = montage.assemble_short(
-            raw_audio_path, shots, word_boundaries, metadata["title"], final_path,
-            work_dir=os.path.join(run_stock_dir, "montage"),
+    video_path = None
+    if config.SHORTS_ENGINE == "motion":
+        print("3/6 - Montage Motion (motion design code : scenes animees, sous-titres, sound design)...")
+        motion_dir = os.path.join(config.VIDEO_DIR, f"_motion_{run_id}")
+        try:
+            video_path = motion_video.make_short(
+                raw_audio_path, word_boundaries, metadata["title"], final_path, work_dir=motion_dir,
+            )
+            print("4/6 - Pas de visuels stock necessaires avec Motion")
+        except Exception as exc:
+            # Filet de securite : un Short publie avec l'ancien montage vaut mieux qu'un creneau rate.
+            print(f"    [warn] Rendu Motion en echec ({exc}) -> repli sur le montage clips stock")
+        finally:
+            shutil.rmtree(motion_dir, ignore_errors=True)
+    if video_path is None:
+        video_path = _stock_clip_montage(
+            script, word_boundaries, raw_audio_path, timing_path, metadata["title"], final_path, run_id, tmp_files,
         )
-    except Exception as exc:
-        # Filet de securite : un Short publie avec l'ancien montage vaut mieux qu'un creneau rate.
-        print(f"    [warn] Montage dynamique en echec ({exc}) -> repli sur le montage classique")
-        audio_path = video_assembler.mix_background_music(raw_audio_path)
-        segments = _merge_short_segments(segments, config.SHORTS_MIN_SEGMENT_SECONDS)
-        raw_video_path = video_assembler.assemble_video_from_segments(
-            audio_path, segments, out_path=os.path.join(config.VIDEO_DIR, f"_tmp_short_sans_sous_titres_{run_id}.mp4"),
-            width=config.SHORTS_WIDTH, height=config.SHORTS_HEIGHT,
-        )
-        ass_path = subtitles.build_ass_from_timing_file(
-            timing_path, os.path.join(config.VIDEO_DIR, f"_tmp_short_subtitles_{run_id}.ass"), shorts=True
-        )
-        video_path = video_assembler.burn_subtitles(raw_video_path, ass_path, final_path)
-        tmp_files += [raw_video_path, ass_path, audio_path]
-    shutil.rmtree(run_stock_dir, ignore_errors=True)
     print(f"    Video finale -> {video_path}")
 
     for tmp_file in tmp_files:
