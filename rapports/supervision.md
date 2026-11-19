@@ -118,3 +118,6 @@
 ## 2026-11-18 (superviseur-general)
 Planning Buffer jusqu'au 21/11 08:00 (nÂ°63), JSON jusqu'au nÂ°80 (~29/11) : OK. 80 JSON valides, aucun num en double, MP4 > 1 Mo. Programmateur (16/11), analyste (17/11), scÃ©nariste (15/11) passÃ©s. Rien Ã  signaler.
 
+
+## 2026-11-19 soir (superviseur-general)
+Planning Buffer toujours jusqu'au 21/11 08:00 (n°63) : ALERTE <2 j. 80 JSON, MP4 présents. Programmateur passé 19/11 08h45 sans mise à jour du planning.
