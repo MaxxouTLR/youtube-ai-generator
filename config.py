@@ -63,6 +63,13 @@ TARGET_MINUTES_MAX = 20
 TARGET_MINUTES = 17  # valeur par defaut si --minutes non precise et hors tirage aleatoire
 SECONDS_PER_CLIP = 90  # duree visee par clip stock affiche (plus la video est longue, plus on varie les visuels)
 MAX_STOCK_CLIPS = 25
+# Montage du format long : "dynamic" = long_montage.py (plan toutes les ~2,5-4,5 s, zooms/panos,
+# transitions, mots-cles animes, barre de progression) ; "classic" = ancien montage (un clip fixe par
+# paragraphe). Si "dynamic" echoue, le pipeline retombe automatiquement sur "classic".
+LONG_ENGINE = os.environ.get("LONG_ENGINE", "dynamic").strip().lower()
+LONG_CLIPS_PER_SEGMENT = 3     # clips differents telecharges par paragraphe (~25 s de voix)
+LONG_SHOT_MIN_SECONDS = 2.5    # duree d'un plan (tiree au hasard entre min et max)
+LONG_SHOT_MAX_SECONDS = 4.5
 
 # --- Format Shorts (portrait, video courte) ---
 SHORTS_WIDTH = 1080

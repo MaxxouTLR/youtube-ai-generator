@@ -120,6 +120,39 @@ def fetch_one_clip(query: str, dest_path: str, orientation: str = "landscape") -
     return None
 
 
+def fetch_clips_for_query(query: str, count: int, out_dir: str, prefix: str,
+                          orientation: str = "landscape") -> list[str]:
+    """Telecharge jusqu'a `count` clips DIFFERENTS pour un meme passage (montage long dynamique :
+    plusieurs plans par paragraphe). Garantit au moins un clip via fetch_one_clip (repli generique)."""
+    os.makedirs(out_dir, exist_ok=True)
+    paths = []
+    try:
+        videos = _search_videos(query, per_page=max(8, count * 3), orientation=orientation)
+    except net_retry.MissingSecretError:
+        raise
+    except Exception as exc:
+        print(f"[warn] recherche '{query}' echouee: {net_retry.describe_error(exc)}")
+        videos = []
+    random.shuffle(videos)
+    for video in videos:
+        if len(paths) >= count:
+            break
+        link = _best_file(video)
+        if not link:
+            continue
+        dest = os.path.join(out_dir, f"{prefix}_{len(paths)}.mp4")
+        try:
+            net_retry.download_file(link, dest, timeout=60, what="telechargement clip Pexels")
+            paths.append(dest)
+        except Exception as exc:
+            print(f"[warn] telechargement echoue: {net_retry.describe_error(exc)}")
+    if not paths:
+        one = fetch_one_clip(query, os.path.join(out_dir, f"{prefix}_0.mp4"), orientation=orientation)
+        if one:
+            paths.append(one)
+    return paths
+
+
 if __name__ == "__main__":
     clips = fetch_clips(8)
     print(f"{len(clips)} clips telecharges dans {config.STOCK_DIR}")

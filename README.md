@@ -54,8 +54,8 @@ personnel). Le compte TikTok français « Dossiers d'Histoire » est un **projet
   trouver un clip Pexels pertinent, au lieu d'un pool générique.
 - **Montage dynamique des Shorts** (`montage.py`) — un clip différent par phrase, accroche et
   sous-titres animés en police grasse (Montserrat Black sur le runner).
-- **Musique de fond** — générée localement par synthèse numpy (`music_generator.py`, nappes
-  ambiantes, 6 pistes), zéro risque de droits d'auteur, mixée à bas volume sous la voix off. Activée
+- **Musique de fond** — composée et synthétisée localement (`music_generator.py`, 6 morceaux
+  lo-fi/cinématiques : piano, nappe, basse, batterie douce), zéro risque de droits d'auteur, mixée à bas volume sous la voix off. Activée
   par défaut (`config.MUSIC_ENABLED = True`).
 - **Miniature** — fond généré par IA (Pollinations.ai, gratuit) avec un prompt adapté au sujet exact
   de la vidéo, texte accrocheur en surimpression (mot-clé fort en couleur de marque). Repli
@@ -144,6 +144,9 @@ sur Azure Speech par défaut.
 - `subtitles.py` — génère les sous-titres dynamiques (.ass, style karaoké) à partir des timings
 - `visuals_fetcher.py` — recherche/téléchargement de clips Pexels (par mot-clé ou en lot générique)
 - `music_generator.py` — musique de fond ambiante générée localement (numpy, zéro droits d'auteur)
+- `long_montage.py` — montage dynamique du format long (plan toutes les ~2,5-4,5 s, zooms/panos,
+  transitions, mots-clés animés, barre de progression ; `LONG_ENGINE=classic` pour l'ancien montage,
+  repli automatique en cas d'erreur ; `python long_montage.py --demo` rend un extrait de 45 s)
 - `montage.py` — montage dynamique des Shorts (un clip par phrase, accroche et sous-titres animés)
 - `video_assembler.py` — montage par segments synchronisés (moviepy/ffmpeg) + mixage musique +
   gravure des sous-titres
