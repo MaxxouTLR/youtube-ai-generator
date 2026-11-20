@@ -49,11 +49,11 @@ n°52 | notre_dame_victor_hugo | sam 14/11 17h | programmé Buffer (son intégr�
 n°53 | vomitorium_rome | 16/11/2026 08:00 | programmé le 12/11/2026 (Buffer) — publié ✅ (fichiers supprimés le 17/11/2026)
 n°54 | guillotin_jamais_guillotine | 16/11/2026 19:00 | programmé le 12/11/2026 (Buffer) — publié ✅ (fichiers supprimés le 17/11/2026)
 n°55 | einstein_nul_en_maths | 17/11/2026 08:00 | programmé le 12/11/2026 (Buffer) — publié ✅ (fichiers supprimés le 17/11/2026)
-n°56 | sphinx_nez_napoleon | 17/11/2026 19:00 | programmé le 12/11/2026 (Buffer)
-n°57 | louis_xiv_fistule_1686 | 18/11/2026 08:00 | programmé le 12/11/2026 (Buffer)
-n°58 | galilee_pourtant_elle_tourne | 18/11/2026 19:00 | programmé le 12/11/2026 (Buffer)
-n°59 | gladiateurs_sang_pouce | 19/11/2026 08:00 | programmé le 16/11/2026 (Buffer)
-n°60 | joconde_chambre_napoleon | 19/11/2026 19:00 | programmé le 16/11/2026 (Buffer)
-n°61 | ceinture_chastete_mythe | 20/11/2026 08:00 | programmé le 16/11/2026 (Buffer)
-n°62 | jesse_owens_hitler_1936 | 20/11/2026 19:00 | programmé le 16/11/2026 (Buffer)
-n°63 | edison_ampoule_swan | 21/11/2026 08:00 | programmé le 16/11/2026 (Buffer)
+n°56 | sphinx_nez_napoleon | 17/11/2026 19:00 | programmé le 12/11/2026 (Buffer) — publié ✅ (fichiers supprimés le 20/11/2026)
+n°57 | louis_xiv_fistule_1686 | 18/11/2026 08:00 | programmé le 12/11/2026 (Buffer) — ⚠️ absent de Buffer le 20/11 (ni envoyé ni programmé), fichiers conservés
+n°58 | galilee_pourtant_elle_tourne | 18/11/2026 19:00 | programmé le 12/11/2026 (Buffer) — ⚠️ absent de Buffer le 20/11 (ni envoyé ni programmé), fichiers conservés
+n°59 | gladiateurs_sang_pouce | 19/11/2026 08:00 | programmé le 16/11/2026 (Buffer) — ⚠️ absent de Buffer le 20/11 (ni envoyé ni programmé), fichiers conservés
+n°60 | joconde_chambre_napoleon | 19/11/2026 19:00 | programmé le 16/11/2026 (Buffer) — ⚠️ absent de Buffer le 20/11 (ni envoyé ni programmé), fichiers conservés
+n°61 | ceinture_chastete_mythe | 20/11/2026 08:00 | programmé le 16/11/2026 (Buffer) — ⚠️ absent de Buffer le 20/11 (ni envoyé ni programmé), fichiers conservés
+n°62 | jesse_owens_hitler_1936 | 20/11/2026 19:00 | programmé le 16/11/2026 (Buffer) — ⚠️ absent de Buffer le 20/11 (ni envoyé ni programmé), fichiers conservés
+n°63 | edison_ampoule_swan | 21/11/2026 08:00 | programmé le 16/11/2026 (Buffer) — ⚠️ absent de Buffer le 20/11 (ni envoyé ni programmé), fichiers conservés

@@ -1,9 +1,9 @@
-# Conseils de l'analyste pour le Scénariste — 17/11/2026
+# Conseils de l'analyste pour le Scénariste — 20/11/2026
 
-Source : métriques Buffer du 17/11/2026 10:35 UTC (dossiers n°50 à 55, comparés aux n°35-49). Objectifs : temps moyen > 10 s, > 25 % de la durée vue, engagement > 4 %. Nouveaux dossiers : 7,0 s ❌, 20,8 % ❌, 2,77 % ❌ (recul par rapport à la semaine d'avant : 9,1 s, 26,5 %).
+Source : Buffer, dossiers n°52-56 (métriques du 18/11) : 6,58 s moyen ❌, 21,7 % de la durée vue ❌, engagement 2,25 % ❌. Aucun dossier publié depuis le 17/11 (n°57-63 retirés de Buffer ; la chaîne publie de la motivation EN).
 
-1. **Revenir à « personnage célèbre + décision ou situation absurde »** (17/11). Toujours les seuls au-dessus de 10 s : Napoléon vend la Louisiane (11,8 s, 34 %), César et les pirates (11,2 s), Louis XIV (11,0 s), Ramsès II (10,9 s). La série « X n'a jamais… » de cette semaine fait 17-25 %.
-2. **Ne pas donner la réponse dans l'accroche** (17/11) : « Guillotin n'a jamais été guillotiné » (17,7 %, 0 j'aime) et « Einstein nul en maths ? Un journal l'a inventé » (18,4 %) livrent tout dès la 1re phrase. Poser l'énigme (« Le médecin qui a donné son nom à la guillotine… a-t-il fini dessous ? ») et garder la réponse pour le milieu.
-3. **Si c'est un mythe démenti, qu'il soit visuel ou dégoûtant** (17/11) : le vomitorium (25,2 %, meilleur de la semaine) et Notre-Dame sauvée par un roman (24,2 %, 3,7 % d'engagement) tiennent ; les mythes « de culture générale » abstraits décrochent.
-4. **Viser 30-32 s** (17/11) : Pompéi (34,0 s, 21,3 %) et Napoléon romancier (34,4 s, 19,5 %) perdent le public ; les 31-32 s retiennent mieux. Couper le contexte, garder un seul rebondissement.
-5. **Finir par une question à deux camps** (17/11) : 0 commentaire sur les 6 derniers dossiers. Une question fermée et clivante à l'écran (« Tu l'aurais guillotiné, toi ? Oui / Non »). Les sujets à danger physique ou exploit restent ceux qui font aimer (Marie Curie 57 j'aime, Pompéi 25, Mozart 26).
+1. **Personnage célèbre + décision ou situation absurde** (20/11). Seuls dossiers > 10 s historiquement : Napoléon/Louisiane (11,8 s), César et les pirates (11,2 s), Louis XIV (11,0 s), Ramsès II (10,9 s). La série « X n'a jamais… » reste à 17-24 %.
+2. **Ne pas donner la réponse dans l'accroche** (20/11) : Guillotin (16,9 %, 0 j'aime) et Einstein (17,4 %) disent tout dès la 1re phrase. Poser l'énigme, garder la réponse pour le milieu.
+3. **Mythe démenti = mythe visuel ou dégoûtant** (20/11) : Notre-Dame (24,2 %), vomitorium (23,8 %), Sphinx (22,1 %) tiennent ; les mythes abstraits décrochent.
+4. **Viser 29-32 s** (20/11) : les 34 s (Pompéi, Napoléon romancier) perdent le public ; un seul rebondissement, contexte coupé.
+5. **Finir par une question à deux camps** (20/11) : 0 commentaire sur les 11 derniers dossiers. À titre de repère, les motivation avec appel « Comment MONEY » font 23-51 j'aime pour ~750 vues : un appel à l'action explicite fait réagir, mais retient moins (2,5-4 s).
