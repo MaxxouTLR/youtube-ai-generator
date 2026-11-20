@@ -144,6 +144,9 @@ sur Azure Speech par défaut.
 - `subtitles.py` — génère les sous-titres dynamiques (.ass, style karaoké) à partir des timings
 - `visuals_fetcher.py` — recherche/téléchargement de clips Pexels (par mot-clé ou en lot générique)
 - `music_generator.py` — musique de fond ambiante générée localement (numpy, zéro droits d'auteur)
+- `long_montage.py` — montage dynamique du format long (plan toutes les ~2,5-4,5 s, zooms/panos,
+  transitions, mots-clés animés, barre de progression ; `LONG_ENGINE=classic` pour l'ancien montage,
+  repli automatique en cas d'erreur ; `python long_montage.py --demo` rend un extrait de 45 s)
 - `montage.py` — montage dynamique des Shorts (un clip par phrase, accroche et sous-titres animés)
 - `video_assembler.py` — montage par segments synchronisés (moviepy/ffmpeg) + mixage musique +
   gravure des sous-titres

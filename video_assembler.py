@@ -23,6 +23,9 @@ def cleanup_stale_temp_files() -> None:
     ]
     for pattern in patterns:
         for path in glob.glob(pattern):
+            if os.path.isdir(path):  # dossier de travail du montage dynamique (long_montage.py)
+                shutil.rmtree(path, ignore_errors=True)
+                continue
             try:
                 os.remove(path)
             except OSError:
