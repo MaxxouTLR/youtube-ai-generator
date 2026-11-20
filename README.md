@@ -54,8 +54,8 @@ personnel). Le compte TikTok français « Dossiers d'Histoire » est un **projet
   trouver un clip Pexels pertinent, au lieu d'un pool générique.
 - **Montage dynamique des Shorts** (`montage.py`) — un clip différent par phrase, accroche et
   sous-titres animés en police grasse (Montserrat Black sur le runner).
-- **Musique de fond** — générée localement par synthèse numpy (`music_generator.py`, nappes
-  ambiantes, 6 pistes), zéro risque de droits d'auteur, mixée à bas volume sous la voix off. Activée
+- **Musique de fond** — composée et synthétisée localement (`music_generator.py`, 6 morceaux
+  lo-fi/cinématiques : piano, nappe, basse, batterie douce), zéro risque de droits d'auteur, mixée à bas volume sous la voix off. Activée
   par défaut (`config.MUSIC_ENABLED = True`).
 - **Miniature** — fond généré par IA (Pollinations.ai, gratuit) avec un prompt adapté au sujet exact
   de la vidéo, texte accrocheur en surimpression (mot-clé fort en couleur de marque). Repli

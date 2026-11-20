@@ -173,7 +173,7 @@ ScaledBorderAndShadow: yes
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Sub,{font},68,&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,4,2,2,120,120,90,1
+Style: Sub,{font},86,&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,5,2,2,120,120,80,1
 Style: Kicker,{font},120,&H00111111,&H00111111,&H00000000,&H00000000,-1,0,0,0,100,100,2,0,3,22,0,8,100,100,110,1
 Style: Bar,{font},10,&H0000D4FF,&H0000D4FF,&H0000D4FF,&H00000000,0,0,0,0,100,100,0,0,1,0,0,7,0,0,0,1
 
@@ -189,7 +189,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
         cur.append(t)
         gap = toks[i + 1][1] - t[2] if i + 1 < len(toks) else 9
         chars = sum(len(c[0]) + 1 for c in cur)
-        if len(cur) >= 5 or chars >= 26 or (len(cur) >= 3 and re.search(r"[.,!?;:]$", t[0])) or gap > 0.4:
+        if len(cur) >= 5 or chars >= 24 or (len(cur) >= 3 and re.search(r"[.,!?;:]$", t[0])) or gap > 0.4:
             lines.append(cur)
             cur = []
     if cur:

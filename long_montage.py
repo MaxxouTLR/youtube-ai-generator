@@ -120,8 +120,9 @@ def _motion_filter(motion: str, frames: int, punch: bool) -> str:
     cover = f"fps={FPS},scale={2 * W}:{2 * H}:force_original_aspect_ratio=increase,crop={2 * W}:{2 * H},setsar=1"
     zp = (f"zoompan=z='{z}':x='(iw-iw/zoom)*{px}':y='(ih-ih/zoom)*{py}':d=1:s={W}x{H}:fps={FPS}")
     flash = "0.22*max(0\\,1-t/0.12)" if punch else "0"
-    grade = (f"eq=contrast=1.07:saturation=1.15:brightness='0.01+{flash}':eval=frame,"
-             "vignette=angle=PI/5,noise=alls=4:allf=t")
+    # 20/11/2026 : image jugee trop sombre sur l'extrait -> gamma releve, contraste et vignette adoucis
+    grade = (f"eq=contrast=1.04:saturation=1.15:gamma=1.10:brightness='0.03+{flash}':eval=frame,"
+             "vignette=angle=PI/7,noise=alls=3:allf=t")
     return f"{cover},{zp},{grade},format=yuv420p"
 
 
@@ -151,7 +152,7 @@ def mix_audio(voice: str, transitions: list[float], total: float, out_path: str,
     fc = [f"[0:a]{fmt},asplit=2[voice][sc]"]
     mix = ["[voice]"]
     if music:
-        fc += [f"[1:a]{fmt},volume=0.20,afade=t=in:d=1.0[mus]",
+        fc += [f"[1:a]{fmt},volume=0.24,afade=t=in:d=1.0[mus]",
                "[mus][sc]sidechaincompress=threshold=0.03:ratio=8:attack=20:release=400[duck]"]
         mix.append("[duck]")
     else:
