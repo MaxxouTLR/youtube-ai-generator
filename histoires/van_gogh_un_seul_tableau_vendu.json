@@ -1,0 +1,50 @@
+{
+ "slug": "van_gogh_un_seul_tableau_vendu",
+ "num": 90,
+ "source": "https://fr.wikipedia.org/wiki/La_Vigne_rouge",
+ "caption": "#CapCut 📁 Dossier n°90 — Van Gogh n'a vendu qu'un seul tableau ? 🎨 La légende est fausse… en partie #vangogh #peinture #legende #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Van Gogh n'a vendu qu'un seul tableau. Vraiment ?",
+   "title": "Un seul tableau vendu ? *Vraiment ?*",
+   "sub": "La légende est fausse… en partie."
+  },
+  {
+   "say": "On répète qu'il est mort pauvre, après avoir vendu La Vigne rouge.",
+   "led": "1 SEUL",
+   "led_sub": "tableau vendu, dit-on",
+   "stamp": "Légende",
+   "stamp_at": 1.5
+  },
+  {
+   "say": "Elle est achetée en mille huit cent quatre-vingt-dix par Anna Boch, peintre belge.",
+   "icon": "🍇"
+  },
+  {
+   "say": "Sauf que… ce n'est sûrement pas la seule vente.",
+   "title": "Sauf que… *pas la seule vente.*",
+   "flash": true
+  },
+  {
+   "say": "Des historiens citent d'autres ventes et des échanges de toiles."
+  },
+  {
+   "say": "Une certitude : il vendait très peu. Son frère Théo, marchand d'art, le soutenait chaque mois."
+  },
+  {
+   "say": "Il meurt à trente-sept ans, en juillet mille huit cent quatre-vingt-dix.",
+   "led": "37 ANS",
+   "led_sub": "âge de sa mort"
+  },
+  {
+   "say": "Sa gloire n'est venue qu'après. Légende ou réalité ?",
+   "title": "Légende ou *réalité ?*",
+   "sub": "Légende · Réalité"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier demain matin.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier demain 8h"
+  }
+ ]
+}

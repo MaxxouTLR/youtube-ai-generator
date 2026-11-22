@@ -1,0 +1,53 @@
+{
+ "slug": "henri_iv_tete_retrouvee_2010",
+ "num": 89,
+ "source": "https://fr.wikipedia.org/wiki/T%C3%AAte_d%27Henri_IV",
+ "caption": "#CapCut 📁 Dossier n°89 — La tête d'Henri IV retrouvée chez un retraité 👑 Vraie ou fausse ? #henri4 #roi #histoire #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "La tête d'Henri IV a été retrouvée chez un retraité.",
+   "title": "La tête d'Henri IV *chez un retraité.*",
+   "sub": "Et la science a tranché… ou pas."
+  },
+  {
+   "say": "En mille sept cent quatre-vingt-treize, les révolutionnaires ouvrent les tombes royales de Saint-Denis.",
+   "led": "1793",
+   "led_sub": "tombes profanées"
+  },
+  {
+   "say": "La tête embaumée du roi disparaît.",
+   "icon": "👑"
+  },
+  {
+   "say": "Elle réapparaît des siècles plus tard, vendue entre collectionneurs."
+  },
+  {
+   "say": "En deux mille dix, une équipe annonce l'avoir identifiée : cicatrice, boucle d'oreille, barbiche.",
+   "stamp": "Identifiée 2010",
+   "stamp_at": 1.5
+  },
+  {
+   "say": "Sauf que… ça reste contesté.",
+   "title": "Sauf que… *ça reste contesté.*",
+   "flash": true
+  },
+  {
+   "say": "Une étude génétique de deux mille treize la remet en cause. Le débat continue.",
+   "stamp": "Débattu",
+   "stamp_at": 1.5
+  },
+  {
+   "say": "Le roi du « Paris vaut bien une messe » a été assassiné en seize cent dix. Quatre siècles plus tard, sa tête fait encore débat."
+  },
+  {
+   "say": "Vrai roi ou fausse tête ?",
+   "title": "Vrai roi ou *fausse tête ?*",
+   "sub": "Vrai · Faux"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier ce soir 19h"
+  }
+ ]
+}

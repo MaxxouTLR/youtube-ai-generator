@@ -1,0 +1,49 @@
+{
+ "slug": "elagabal_roses_empereur_222",
+ "num": 92,
+ "source": "https://fr.wikipedia.org/wiki/%C3%89lagabal",
+ "caption": "#CapCut 📁 Dossier n°92 — Cet empereur étouffait ses invités sous des roses 🌹 Vrai ou légende ? #rome #elagabal #empereur #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Cet empereur romain aurait étouffé ses invités sous des roses.",
+   "title": "Étouffés sous *des roses.*",
+   "sub": "Mais est-ce vrai ?"
+  },
+  {
+   "say": "Il s'appelle Élagabal, empereur à quatorze ans, en deux cent dix-huit.",
+   "led": "14 ANS",
+   "led_sub": "âge à son arrivée",
+   "icon": "👑"
+  },
+  {
+   "say": "Grand prêtre d'un dieu-soleil syrien, il impose son culte à Rome."
+  },
+  {
+   "say": "Selon l'Histoire Auguste, il fait tomber des pétales depuis le plafond. Certains invités auraient suffoqué.",
+   "title": "Une pluie *de pétales.*"
+  },
+  {
+   "say": "Mais attendez. Cette source est connue pour inventer des scandales.",
+   "title": "Mais attendez… *source douteuse.*",
+   "flash": true,
+   "stamp": "Douteux",
+   "stamp_at": 1.5
+  },
+  {
+   "say": "Élagabal est assassiné à dix-huit ans, en deux cent vingt-deux."
+  },
+  {
+   "say": "Les Romains l'ont détesté. Sa mort a été violente, et son nom a été effacé des monuments. Reste une histoire trop belle pour être vérifiée."
+  },
+  {
+   "say": "Vrai ou légende ?",
+   "title": "Vrai ou *légende ?*",
+   "sub": "Vrai · Légende"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier demain matin.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier demain 8h"
+  }
+ ]
+}

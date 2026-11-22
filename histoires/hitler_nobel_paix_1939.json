@@ -1,0 +1,51 @@
+{
+ "slug": "hitler_nobel_paix_1939",
+ "num": 82,
+ "source": "https://fr.wikipedia.org/wiki/Erik_Gottfrid_Christian_Brandt",
+ "caption": "#CapCut 📁 Dossier n°82 — Hitler nommé pour le prix Nobel de la paix 📜 Blague ou scandale ? #hitler #nobel #1939 #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Hitler a été nommé pour le prix Nobel de la paix.",
+   "title": "Hitler. *Prix Nobel de la paix.*",
+   "sub": "Et c'est documenté."
+  },
+  {
+   "say": "Son nom figure dans les archives du comité Nobel, en janvier mille neuf cent trente-neuf.",
+   "led": "1939",
+   "led_sub": "archives du comité Nobel"
+  },
+  {
+   "say": "Un député suédois, Erik Brandt, l'a proposé.",
+   "icon": "📜"
+  },
+  {
+   "say": "Sauf que… ce n'était pas sérieux.",
+   "title": "Sauf que… *c'était une satire.*",
+   "flash": true
+  },
+  {
+   "say": "Brandt visait la nomination d'un autre homme : Neville Chamberlain.",
+   "title": "Une satire contre *Chamberlain.*"
+  },
+  {
+   "say": "Il a retiré sa proposition quelques jours plus tard.",
+   "led": "RETIRÉE",
+   "led_sub": "quelques jours après"
+  },
+  {
+   "say": "Cette année-là, le prix de la paix n'a finalement pas été décerné.",
+   "stamp": "Pas de prix",
+   "stamp_at": 1.2
+  },
+  {
+   "say": "Une blague de très mauvais goût, qui a choqué jusqu'en Suède.",
+   "title": "Une blague *de mauvais goût ?*",
+   "sub": "Oui · Non"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier demain matin.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier demain 8h"
+  }
+ ]
+}

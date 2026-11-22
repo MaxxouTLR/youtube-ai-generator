@@ -1,0 +1,48 @@
+{
+ "slug": "lenine_cerveau_30000_tranches",
+ "num": 88,
+ "source": "https://fr.wikipedia.org/wiki/Oskar_Vogt",
+ "caption": "#CapCut 📁 Dossier n°88 — Le cerveau de Lénine découpé en 30 000 tranches 🧠 Pour quoi faire ? #lenine #urss #cerveau #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "On a coupé le cerveau de Lénine en trente mille tranches.",
+   "title": "Son cerveau, *30 000 tranches.*",
+   "sub": "Le résultat est étrange."
+  },
+  {
+   "say": "Plus exactement, trente mille neuf cent cinquante-trois tranches.",
+   "led": "30 953",
+   "led_sub": "tranches de cerveau"
+  },
+  {
+   "say": "Lénine meurt en janvier mille neuf cent vingt-quatre.",
+   "icon": "🧠"
+  },
+  {
+   "say": "Le Kremlin fait venir un neurologue allemand, Oskar Vogt. Sa mission : trouver ce qui rendait Lénine génial."
+  },
+  {
+   "say": "Sauf que… rien n'a été prouvé.",
+   "title": "Sauf que… *rien de prouvé.*",
+   "flash": true,
+   "stamp": "Non prouvé",
+   "stamp_at": 1.5
+  },
+  {
+   "say": "Vogt décrit de grandes cellules, un cerveau d'élite. Cette théorie n'a jamais été confirmée."
+  },
+  {
+   "say": "Un institut du cerveau naît à Moscou pour conserver ces tranches."
+  },
+  {
+   "say": "Un cerveau peut-il expliquer le génie ?",
+   "title": "Le génie est-il *dans le cerveau ?*",
+   "sub": "Oui · Non"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier demain matin.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier demain 8h"
+  }
+ ]
+}

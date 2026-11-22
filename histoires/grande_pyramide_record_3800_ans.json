@@ -1,0 +1,50 @@
+{
+ "slug": "grande_pyramide_record_3800_ans",
+ "num": 86,
+ "source": "https://fr.wikipedia.org/wiki/Pyramide_de_Kh%C3%A9ops",
+ "caption": "#CapCut 📁 Dossier n°86 — Pendant 3800 ans, rien n'a dépassé la Grande Pyramide 🔺 #pyramide #egypte #khéops #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Pendant trois mille huit cents ans, rien n'a été plus haut.",
+   "title": "*3 800 ans* sans rival",
+   "sub": "Regarde bien les chiffres."
+  },
+  {
+   "say": "La Grande Pyramide de Khéops mesurait cent quarante-six mètres.",
+   "led": "146 M",
+   "led_sub": "hauteur d'origine"
+  },
+  {
+   "say": "Elle est construite vers deux mille cinq cent soixante avant notre ère.",
+   "icon": "🔺"
+  },
+  {
+   "say": "Elle reste le plus haut édifice du monde jusqu'au quatorzième siècle."
+  },
+  {
+   "say": "Sauf que… le record tombe en Angleterre.",
+   "title": "Sauf que… *en Angleterre.*",
+   "flash": true
+  },
+  {
+   "say": "En treize cent onze, la flèche de la cathédrale de Lincoln la dépasse.",
+   "stamp": "1311",
+   "stamp_at": 1.5
+  },
+  {
+   "say": "Aujourd'hui, la pyramide a perdu environ huit mètres : pillage du revêtement et érosion.",
+   "led": "138 M",
+   "led_sub": "hauteur actuelle"
+  },
+  {
+   "say": "Tu l'aurais cru ?",
+   "title": "Tu l'aurais *cru ?*",
+   "sub": "Oui · Non"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier demain matin.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier demain 8h"
+  }
+ ]
+}

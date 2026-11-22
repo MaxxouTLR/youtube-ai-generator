@@ -1,0 +1,48 @@
+{
+ "slug": "rome_beton_autoreparant_2023",
+ "num": 94,
+ "source": "https://fr.wikipedia.org/wiki/B%C3%A9ton_romain",
+ "caption": "#CapCut 📁 Dossier n°94 — Le béton romain se répare tout seul 🏛 Et ça marche encore #rome #beton #antiquite #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Les Romains ont fait un béton qui se répare tout seul.",
+   "title": "Un béton *qui se répare seul.*",
+   "sub": "Et ça marche encore."
+  },
+  {
+   "say": "Le Panthéon de Rome tient debout depuis près de deux mille ans.",
+   "led": "2000 ANS",
+   "led_sub": "et il tient toujours",
+   "icon": "🏛"
+  },
+  {
+   "say": "Sa coupole en béton non armé reste la plus grande du monde."
+  },
+  {
+   "say": "Le secret : de la chaux vive mélangée à de la cendre volcanique."
+  },
+  {
+   "say": "Sauf que… ce n'est pas tout.",
+   "title": "Sauf que… *ce n'est pas tout.*",
+   "flash": true
+  },
+  {
+   "say": "En deux mille vingt-trois, une équipe du MIT trouve de petits morceaux de chaux dans ce béton.",
+   "stamp": "Étude 2023",
+   "stamp_at": 1.5
+  },
+  {
+   "say": "Au contact de l'eau, ils colmatent les fissures. Cette recette est testée pour nos bétons modernes."
+  },
+  {
+   "say": "Les Romains étaient-ils en avance ?",
+   "title": "Les Romains, *en avance ?*",
+   "sub": "Oui · Non"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier demain matin.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier demain 8h"
+  }
+ ]
+}

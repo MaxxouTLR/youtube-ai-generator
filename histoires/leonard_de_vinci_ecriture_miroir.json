@@ -1,0 +1,51 @@
+{
+ "slug": "leonard_de_vinci_ecriture_miroir",
+ "num": 91,
+ "source": "https://fr.wikipedia.org/wiki/L%C3%A9onard_de_Vinci",
+ "caption": "#CapCut 📁 Dossier n°91 — Léonard de Vinci écrivait à l'envers 🪞 Code secret ? #leonardodevinci #renaissance #carnets #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Léonard de Vinci écrivait à l'envers.",
+   "title": "Il écrivait *à l'envers.*",
+   "sub": "Le secret n'est pas celui qu'on croit."
+  },
+  {
+   "say": "Ses carnets sont écrits de droite à gauche, lisibles seulement dans un miroir.",
+   "icon": "🪞"
+  },
+  {
+   "say": "Environ sept mille pages de ses carnets ont survécu.",
+   "led": "7 000",
+   "led_sub": "pages conservées"
+  },
+  {
+   "say": "On a longtemps cru à un code secret."
+  },
+  {
+   "say": "Sauf que… la vraie raison est plus simple.",
+   "title": "Sauf que… *bien plus simple.*",
+   "flash": true
+  },
+  {
+   "say": "Léonard était gaucher. Écrire de droite à gauche évitait d'étaler l'encre.",
+   "stamp": "Probable",
+   "stamp_at": 1.5
+  },
+  {
+   "say": "Pour ses lettres, il écrivait normalement. Les carnets, c'était pour lui seul."
+  },
+  {
+   "say": "Il a aussi dessiné des machines volantes, un char et des ponts. Presque tout est resté sur le papier, à l'envers."
+  },
+  {
+   "say": "Génie ou simple gaucher ?",
+   "title": "Génie ou *simple gaucher ?*",
+   "sub": "Génie · Gaucher"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier ce soir 19h"
+  }
+ ]
+}

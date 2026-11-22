@@ -1,0 +1,49 @@
+{
+ "slug": "cesar_vingt_trois_coups_44",
+ "num": 85,
+ "source": "https://fr.wikipedia.org/wiki/Jules_C%C3%A9sar",
+ "caption": "#CapCut 📁 Dossier n°85 — Vingt-trois coups de couteau, un seul mortel ⚔️ Jules César, vraie histoire #cesar #rome #antiquite #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Vingt-trois coups de couteau. Un seul était mortel.",
+   "title": "*23 coups.* Un seul mortel.",
+   "sub": "Tu ne vas pas y croire."
+  },
+  {
+   "say": "Aux ides de mars, quarante-quatre avant notre ère, des sénateurs encerclent César.",
+   "led": "23",
+   "led_sub": "coups de poignard"
+  },
+  {
+   "say": "Plus de soixante conspirateurs, selon l'historien Suétone.",
+   "icon": "🗡"
+  },
+  {
+   "say": "Le médecin Antistius examine le corps. Une seule blessure, au thorax, est mortelle.",
+   "title": "Une seule blessure *mortelle.*"
+  },
+  {
+   "say": "Mais attendez. « Toi aussi, mon fils » est probablement une invention.",
+   "title": "« Toi aussi, *mon fils ? »*",
+   "flash": true,
+   "stamp": "Légende",
+   "stamp_at": 1.5
+  },
+  {
+   "say": "Autre version : il couvre son visage de sa toge pour mourir avec dignité."
+  },
+  {
+   "say": "Le meurtre devait sauver la République. Il précipite sa fin."
+  },
+  {
+   "say": "Le geste de Brutus était-il justifié ?",
+   "title": "Brutus avait-il *raison ?*",
+   "sub": "Oui · Non"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier ce soir 19h"
+  }
+ ]
+}

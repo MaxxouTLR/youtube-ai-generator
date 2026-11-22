@@ -1,0 +1,54 @@
+{
+ "slug": "louis_xvi_rien_1789",
+ "num": 81,
+ "source": "https://fr.wikipedia.org/wiki/Louis_XVI",
+ "caption": "#CapCut 📁 Dossier n°81 — Le jour de la Bastille, le roi écrit « Rien » 👑 Il ignorait tout ? #louisxvi #revolution #bastille #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Le jour où la Bastille tombe, le roi écrit : rien.",
+   "title": "Le roi écrit *« Rien. »*",
+   "sub": "Attends la fin."
+  },
+  {
+   "say": "Dans son journal, à la date du quatorze juillet mille sept cent quatre-vingt-neuf, une seule ligne : rien.",
+   "led": "RIEN",
+   "led_sub": "journal du roi, 14 juillet 1789"
+  },
+  {
+   "say": "Louis XVI y notait surtout ses parties de chasse.",
+   "icon": "🏹"
+  },
+  {
+   "say": "Ce jour-là, il n'a rien tué. Le mot voulait dire : pas de gibier.",
+   "title": "*Rien* = pas de gibier"
+  },
+  {
+   "say": "Sauf que… il n'était pas aveugle.",
+   "title": "Sauf que… *il savait.*",
+   "flash": true
+  },
+  {
+   "say": "La nuit, un duc le réveille. « C'est une révolte ? » demande le roi.",
+   "title": "« C'est une *révolte ?* »"
+  },
+  {
+   "say": "Réponse : « Non, Sire, c'est une révolution. »",
+   "title": "« C'est une *révolution.* »",
+   "stamp": "Attesté",
+   "stamp_at": 1.2
+  },
+  {
+   "say": "Le mot rien parlait de chasse, pas de politique. Le malentendu a traversé les siècles."
+  },
+  {
+   "say": "Et toi, tu le savais ?",
+   "title": "Tu le savais *déjà ?*",
+   "sub": "Oui · Non"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier ce soir 19h"
+  }
+ ]
+}

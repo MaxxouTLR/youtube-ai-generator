@@ -1,0 +1,53 @@
+{
+ "slug": "einstein_nobel_pas_relativite_1921",
+ "num": 87,
+ "source": "https://fr.wikipedia.org/wiki/Albert_Einstein",
+ "caption": "#CapCut 📁 Dossier n°87 — Einstein n'a pas eu le Nobel pour la relativité 🧠 Et l'argent partait où ? #einstein #nobel #physique #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Einstein n'a pas reçu le Nobel pour la relativité.",
+   "title": "Pas de Nobel *pour la relativité.*",
+   "sub": "La vraie raison surprend."
+  },
+  {
+   "say": "Il reçoit le prix en mille neuf cent vingt et un, pour l'effet photoélectrique.",
+   "led": "1921",
+   "led_sub": "Nobel de physique"
+  },
+  {
+   "say": "Le comité jugeait la relativité encore trop controversée.",
+   "icon": "🧪"
+  },
+  {
+   "say": "Sauf que… l'argent part ailleurs.",
+   "title": "Sauf que… *l'argent part ailleurs.*",
+   "flash": true
+  },
+  {
+   "say": "Dès mille neuf cent dix-neuf, il promet la somme à son ex-femme, Mileva, dans leur divorce.",
+   "stamp": "Promis d'avance",
+   "stamp_at": 1.5
+  },
+  {
+   "say": "Elle s'en servira pour élever leurs deux fils."
+  },
+  {
+   "say": "Il n'était même pas à Stockholm pour la cérémonie : il voyageait au Japon.",
+   "led": "JAPON",
+   "led_sub": "il était en voyage"
+  },
+  {
+   "say": "Mileva a donc reçu bien plus que de la gloire. Le physicien le plus célèbre du siècle a payé son divorce avec un prix."
+  },
+  {
+   "say": "Tu aurais tenu parole ?",
+   "title": "Tu aurais *tenu parole ?*",
+   "sub": "Oui · Non"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier ce soir 19h"
+  }
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "slug": "napoleon_waterloo_volcan_tambora",
+ "num": 93,
+ "source": "https://fr.wikipedia.org/wiki/%C3%89ruption_du_Tambora_en_1815",
+ "caption": "#CapCut 📁 Dossier n°93 — Un volcan a-t-il fait perdre Napoléon à Waterloo ? 🌋 #napoleon #waterloo #volcan #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Un volcan a peut-être fait perdre Napoléon.",
+   "title": "Un volcan a-t-il *battu Napoléon ?*",
+   "sub": "Une théorie sérieuse."
+  },
+  {
+   "say": "En avril mille huit cent quinze, le volcan Tambora explose, en Indonésie.",
+   "led": "1815",
+   "led_sub": "éruption du Tambora",
+   "icon": "🌋"
+  },
+  {
+   "say": "C'est la plus puissante éruption des temps modernes."
+  },
+  {
+   "say": "Les cendres dans l'atmosphère refroidissent le climat de la planète."
+  },
+  {
+   "say": "Sauf que… Waterloo, c'est deux mois plus tard.",
+   "title": "Sauf que… *Waterloo.*",
+   "flash": true
+  },
+  {
+   "say": "Il pleut fort en Belgique la nuit du dix-sept juin. Le sol détrempé retarde l'artillerie.",
+   "stamp": "Hypothèse",
+   "stamp_at": 1.5
+  },
+  {
+   "say": "Napoléon attaque tard dans la matinée. Mais les historiens restent prudents : le lien avec le volcan n'est pas prouvé."
+  },
+  {
+   "say": "Le volcan, coupable ou innocent ?",
+   "title": "Le volcan, *coupable ?*",
+   "sub": "Oui · Non"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier ce soir 19h"
+  }
+ ]
+}

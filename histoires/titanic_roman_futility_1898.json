@@ -1,0 +1,52 @@
+{
+ "slug": "titanic_roman_futility_1898",
+ "num": 83,
+ "source": "https://fr.wikipedia.org/wiki/Futility,_or_the_Wreck_of_the_Titan",
+ "caption": "#CapCut 📁 Dossier n°83 — Un roman avait décrit le naufrage du Titanic 14 ans avant 🚢 Coïncidence ? #titanic #1912 #roman #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Un roman décrit le naufrage du Titanic quatorze ans avant.",
+   "title": "Le roman *l'avait prédit.*",
+   "sub": "Personne ne t'en a parlé à l'école."
+  },
+  {
+   "say": "Il s'appelle Futility et paraît en mille huit cent quatre-vingt-dix-huit.",
+   "led": "1898",
+   "led_sub": "le roman Futility"
+  },
+  {
+   "say": "Son paquebot se nomme le Titan. Géant, présenté comme insubmersible.",
+   "icon": "🚢",
+   "stamp": "Le Titan",
+   "stamp_at": 1.2
+  },
+  {
+   "say": "Il heurte un iceberg en avril, de nuit, dans l'Atlantique Nord.",
+   "title": "Un iceberg, *en avril.*"
+  },
+  {
+   "say": "Pas assez de canots de sauvetage : la plupart des passagers meurent.",
+   "title": "Pas assez *de canots.*"
+  },
+  {
+   "say": "Sauf que… il n'y a pas de magie.",
+   "title": "Sauf que… *pas de magie.*",
+   "flash": true
+  },
+  {
+   "say": "L'auteur, Morgan Robertson, était un ancien marin. Il connaissait les paquebots de son époque.",
+   "stamp": "Ancien marin",
+   "stamp_at": 1.5
+  },
+  {
+   "say": "Coïncidence ou flair de marin ?",
+   "title": "Coïncidence ou *flair ?*",
+   "sub": "Coïncidence · Flair"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier ce soir.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier ce soir 19h"
+  }
+ ]
+}

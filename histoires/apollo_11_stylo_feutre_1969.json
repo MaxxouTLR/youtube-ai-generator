@@ -1,0 +1,53 @@
+{
+ "slug": "apollo_11_stylo_feutre_1969",
+ "num": 84,
+ "source": "https://fr.wikipedia.org/wiki/Apollo_11",
+ "caption": "#CapCut 📁 Dossier n°84 — Un stylo-feutre a sauvé Apollo 11 🌕 Tu l'aurais osé ? #apollo11 #lune #nasa #lesaviezvous #dossier",
+ "beats": [
+  {
+   "say": "Un simple stylo-feutre a sauvé les astronautes d'Apollo onze.",
+   "title": "Un *stylo-feutre* les a sauvés.",
+   "sub": "Le pire arrive après."
+  },
+  {
+   "say": "Sur la Lune, le sac à dos de Buzz Aldrin casse un disjoncteur.",
+   "icon": "🌕"
+  },
+  {
+   "say": "Ce disjoncteur arme le moteur qui doit les ramener en orbite.",
+   "led": "1 SEUL",
+   "led_sub": "moteur pour rentrer"
+  },
+  {
+   "say": "Sans lui, ils risquaient de rester bloqués.",
+   "title": "Sans lui, *pas de retour.*"
+  },
+  {
+   "say": "Sauf que… Aldrin a une idée.",
+   "title": "Sauf que… *une idée.*",
+   "flash": true
+  },
+  {
+   "say": "Il enfonce un stylo-feutre dans le trou.",
+   "icon": "🖊"
+  },
+  {
+   "say": "Le circuit se ferme. Le moteur s'allume. Ils décollent.",
+   "stamp": "Ça marche",
+   "stamp_at": 1.5
+  },
+  {
+   "say": "Le stylo est resté célèbre. Sans lui, la mission aurait peut-être mal fini. Ils reviennent sains et saufs, après huit jours dans l'espace."
+  },
+  {
+   "say": "L'astronaute raconte l'épisode lui-même dans ses mémoires.",
+   "title": "Tu aurais osé *le stylo ?*",
+   "sub": "Oui · Non"
+  },
+  {
+   "say": "Abonne-toi, prochain dossier demain matin.",
+   "title": "*Abonne-toi.*",
+   "sub": "Prochain dossier demain 8h"
+  }
+ ]
+}
