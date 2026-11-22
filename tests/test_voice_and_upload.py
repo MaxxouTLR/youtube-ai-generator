@@ -58,3 +58,34 @@ def test_corrupt_token_has_clear_message(monkeypatch, tmp_path):
     monkeypatch.setattr(config, "YOUTUBE_TOKEN_FILE", str(token))
     with pytest.raises(RuntimeError, match="illisible"):
         youtube_uploader._get_credentials()
+
+
+def test_publish_at_envoie_en_prive_programme(monkeypatch, tmp_path):
+    import youtube_uploader
+
+    captured = {}
+
+    class FakeRequest:
+        def next_chunk(self, num_retries=0):
+            return None, {"id": "abc123"}
+
+    class FakeVideos:
+        def insert(self, part, body, media_body):
+            captured["body"] = body
+            return FakeRequest()
+
+    class FakeYoutube:
+        def videos(self):
+            return FakeVideos()
+
+    monkeypatch.setattr(youtube_uploader, "_get_credentials", lambda: object())
+    monkeypatch.setattr(youtube_uploader, "build", lambda *a, **k: FakeYoutube())
+    monkeypatch.setattr(youtube_uploader, "MediaFileUpload", lambda *a, **k: None)
+
+    youtube_uploader.upload_video("v.mp4", "t", "d", publish_at="2026-11-23T07:00:00Z")
+    assert captured["body"]["status"]["privacyStatus"] == "private"
+    assert captured["body"]["status"]["publishAt"] == "2026-11-23T07:00:00Z"
+
+    youtube_uploader.upload_video("v.mp4", "t", "d")
+    assert captured["body"]["status"]["privacyStatus"] == "public"
+    assert "publishAt" not in captured["body"]["status"]

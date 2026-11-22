@@ -11,7 +11,7 @@ Actions, gratuitement, avec des outils standards (Python, Ollama, ffmpeg) ; le P
 | Ce qui tourne chaque jour | Workflow GitHub Actions `.github/workflows/daily-videos.yml` (onglet **Actions** du dépôt) |
 | Les clés (Azure, Pexels, YouTube) | Secrets GitHub Actions du dépôt (et variables d'environnement locales pour les tests) |
 | Les vidéos finies (runs locaux) | `D:\YouTube Videos\<date>_<sujet>\` (un dossier par vidéo : `video.mp4`, `thumbnail.jpg`, `metadata.txt`). Sur GitHub Actions, dossier jetable du runner : la vidéo est déjà sur YouTube. |
-| L'historique des sujets/titres | `output/used_topics.json`, `output/used_titles.json`, `output/last_auto_run.json` (recommités par le workflow à chaque run) |
+| L'historique des sujets/titres | `output/used_topics.json`, `output/used_titles.json`, `output/scheduled_slots.json` (recommités par le workflow à chaque run) |
 | Les assets de chaîne (logo, bannière, description) | `%USERPROFILE%\youtube-ai-generator\branding_kit\` (local uniquement, hors Git) |
 | Les réglages (voix, durée, niche...) | `config.py` |
 
@@ -36,9 +36,12 @@ si vous voulez repasser en privé pour relire avant publication, changez
 `config.YOUTUBE_PRIVACY_STATUS` en `"private"` (section 6).
 
 **Bon à savoir sur le planificateur GitHub :**
-- Un cron GitHub ne rattrape jamais un créneau manqué, et peut avoir 50-70 min de retard. Le
-  workflow accepte donc un déclenchement jusqu'à 180 min autour du créneau, et
-  `output/last_auto_run.json` empêche de publier deux fois le même créneau.
+- Un cron GitHub peut avoir plusieurs heures de retard (constaté : le Short de 8h ne sortait
+  jamais). Le workflow tourne donc toutes les heures : `slot_planner.py` prépare la vidéo du
+  prochain créneau non couvert (jusqu'à 30h à l'avance) et l'envoie à YouTube en privé avec une
+  mise en ligne programmée, que YouTube rend publique pile à 8h, 13h ou 19h. Un créneau raté de
+  moins de 4h est publié tout de suite, au-delà il est abandonné. `output/scheduled_slots.json`
+  liste les créneaux déjà couverts.
 - Il arrive que le planificateur reste silencieux plusieurs heures ; pousser un commit le relance.
 
 **Pour vérifier / lancer à la main** : sur GitHub → onglet **Actions** → `Daily YouTube videos` →

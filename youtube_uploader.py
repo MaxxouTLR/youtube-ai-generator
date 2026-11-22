@@ -100,7 +100,10 @@ def _explain_http_error(exc: HttpError, action: str) -> RuntimeError:
     return RuntimeError(f"{action} refuse par YouTube (HTTP {status}) : {reason}.{hint}")
 
 
-def upload_video(video_path: str, title: str, description: str, tags: list[str] | None = None) -> str:
+def upload_video(video_path: str, title: str, description: str, tags: list[str] | None = None,
+                 publish_at: str | None = None) -> str:
+    """publish_at (RFC 3339 UTC, ex. "2026-11-23T07:00:00Z") : la video est envoyee en privee et YouTube
+    la rend publique tout seul a cette heure (voir slot_planner.py). Sans publish_at : visibilite de config."""
     creds = _get_credentials()
     youtube = build("youtube", "v3", credentials=creds)
 
@@ -118,6 +121,10 @@ def upload_video(video_path: str, title: str, description: str, tags: list[str] 
             "selfDeclaredMadeForKids": False,
         },
     }
+    if publish_at:
+        # YouTube n'accepte publishAt que sur une video privee jamais publiee.
+        body["status"]["privacyStatus"] = "private"
+        body["status"]["publishAt"] = publish_at
 
     media = MediaFileUpload(video_path, chunksize=-1, resumable=True, mimetype="video/mp4")
     request = youtube.videos().insert(part="snippet,status", body=body, media_body=media)
@@ -132,7 +139,10 @@ def upload_video(video_path: str, title: str, description: str, tags: list[str] 
         raise _explain_http_error(exc, "Upload de la video") from exc
 
     video_id = response["id"]
-    print(f"Video publiee: https://youtu.be/{video_id}")
+    if publish_at:
+        print(f"Video envoyee, mise en ligne programmee a {publish_at} (UTC): https://youtu.be/{video_id}")
+    else:
+        print(f"Video publiee: https://youtu.be/{video_id}")
     return video_id
 
 
