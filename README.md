@@ -126,8 +126,9 @@ sur Azure Speech par défaut.
   cette politique.
 - **Fiabilité du `schedule` GitHub Actions** : peut rester silencieux plusieurs heures sans se
   déclencher (comportement documenté comme peu fiable pour les schedules nouvellement modifiés) —
-  un matching par fenêtre de tolérance (180 min) et un anti-doublon (`output/last_auto_run.json`)
-  compensent les déclenchements retardés ou ratés.
+  un cron horaire + `slot_planner.py` préparent chaque vidéo à l'avance et l'envoient à YouTube
+  avec une mise en ligne programmée (`publishAt`) ; `output/scheduled_slots.json` liste les
+  créneaux déjà couverts.
 - **Miniatures personnalisées** : nécessitent un compte YouTube vérifié par téléphone. Si non
   vérifié, l'upload réussit quand même mais la miniature générée n'est pas appliquée (avertissement,
   pipeline non bloqué).

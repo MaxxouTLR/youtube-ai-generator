@@ -12,29 +12,15 @@ on:
         description: "Publier sur YouTube (decoche pour un run de test)"
         type: boolean
         default: false
-  # Relance le 25/10/2026 (demande utilisateur) apres une pause du 20/10 au 25/10 : 2 Shorts (8h et 13h) + 1 longue (19h) par jour.
+  # 2 Shorts (8h et 13h) + 1 longue (19h) par jour, heure de Paris.
+  # 22/11/2026 : les cron GitHub de ce depot tombent avec 2 a 15h de retard (voire pas du tout), si bien que
+  # l'ancien systeme "publier quand le cron tombe" ne sortait qu'UN Short par jour vers 15h30 (le 8h
+  # n'arrivait jamais). Desormais un cron horaire (minute :17, hors pic de debut d'heure) appelle
+  # slot_planner.py, qui prepare la video du prochain creneau non couvert et l'envoie a YouTube avec une
+  # mise en ligne programmee (publishAt) : YouTube la publie pile a l'heure, quel que soit le retard du
+  # cron. Heure d'ete/hiver geree en Python (Europe/Paris). Un run sans rien a faire dure ~10s.
   schedule:
-    # Un cron GitHub Actions est fixe en UTC et ne suit PAS le changement d'heure ete/hiver. Plutot
-    # que de figer un horaire UTC qui deriverait d'1h a chaque bascule, on declare DEUX jeux de cron
-    # couvrant les 3 creneaux locaux Paris (Shorts a 8h et 13h, longue a 19h - grille du 25/10/2026 ;
-    # avant la pause du 20/10 c'etait 8h short + 19h longue, reduit de 3 a 2 videos/jour le 17/10/2026
-    # suite a la chute des vues des Shorts publies a cadence soutenue) : un en
-    # supposant l'heure d'hiver (UTC+1) et un en supposant l'heure d'ete (UTC+2). A chaque
-    # declenchement, le step "Determiner le type de run" recalcule l'heure locale Paris REELLE au
-    # moment du run et decide quoi faire - celui des deux jeux qui ne correspond pas a la saison en
-    # cours se resout juste en "skip" (quelques secondes, aucun cout sur un repo public). Plus jamais
-    # besoin de toucher ces lignes a la main.
-    # Minute decalee a :07 (pas :00) : GitHub documente que le debut de chaque heure est la periode
-    # de plus forte charge pour les cron, avec un risque de retard/saut plus eleve pile a la minute 0.
-    # MALGRE CA, le schedule s'est de nouveau completement tu du 27/09 21h17 au 28/09 07h41+ (aucun
-    # declenchement du tout, meme pas un "skip") - deuxieme fois que ca arrive. Comportement connu et
-    # documente comme peu fiable pour les schedules GitHub Actions nouvellement crees/modifies : ca
-    # semble redemarrer a chaque push touchant le repo. Pas de fix garanti cote GitHub - seul palliatif
-    # trouve : pousser un commit relance le declenchement pour un moment. Voir aussi le matching par
-    # fenetre de tolerance plus bas (protection contre le retard de 50-70min constate en pratique sur
-    # les rares declenchements reels, qui faisait sinon systematiquement tomber en "skip").
-    - cron: "7 7,12,18 * * *"  # hypothese heure d'hiver (UTC+1) : 8h, 13h, 19h Paris
-    - cron: "7 6,11,17 * * *"  # hypothese heure d'ete (UTC+2) : 8h, 13h, 19h Paris
+    - cron: "17 * * * *"
 
 permissions:
   contents: write
@@ -60,51 +46,12 @@ jobs:
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "run_type=${{ inputs.run_type }}" >> "$GITHUB_OUTPUT"
             echo "publish=${{ inputs.publish }}" >> "$GITHUB_OUTPUT"
+            echo "slot=" >> "$GITHUB_OUTPUT"
+            echo "publish_at=" >> "$GITHUB_OUTPUT"
           else
-            today=$(TZ=Europe/Paris date +%F)
-            now_min=$(( 10#$(TZ=Europe/Paris date +%H) * 60 + 10#$(TZ=Europe/Paris date +%M) ))
-            echo "Heure locale Paris actuelle : $(TZ=Europe/Paris date +%H:%M) (${today})"
-
-            # GitHub retarde parfois un declenchement planifie de 50-70min (constate en pratique les
-            # 27 et 28/09/2026) - un match strict sur l'heure exacte ratait alors systematiquement le
-            # creneau (tombait en "skip"). On cherche maintenant le creneau cible le plus proche dans
-            # une fenetre de tolerance de 180 minutes, et on garde une trace (output/last_auto_run.json,
-            # commitee comme le reste de l'historique) du dernier creneau deja traite pour ne jamais
-            # publier deux fois le meme creneau si les deux jeux de cron (hiver/ete) finissent par
-            # matcher le meme jour a cause du retard.
-            best_type=""; best_target=""; best_diff=999
-            for entry in "long:19" "short:08" "short:13"; do
-              type="${entry%%:*}"; target="${entry##*:}"
-              target_min=$(( 10#$target * 60 ))
-              diff=$(( now_min - target_min )); [ "$diff" -lt 0 ] && diff=$(( -diff ))
-              if [ "$diff" -le 180 ] && [ "$diff" -lt "$best_diff" ]; then
-                best_diff=$diff; best_type="$type"; best_target="$target"
-              fi
-            done
-
-            already_done=""
-            if [ -n "$best_target" ] && [ -f output/last_auto_run.json ]; then
-              expected="{\"date\": \"$today\", \"slot\": \"$best_target\"}"
-              if [ "$(cat output/last_auto_run.json)" = "$expected" ]; then
-                already_done="yes"
-              fi
-            fi
-
-            if [ -z "$best_target" ]; then
-              echo "Aucun creneau a moins de 180min de l'heure actuelle - rien a faire."
-              echo "run_type=skip" >> "$GITHUB_OUTPUT"
-              echo "publish=false" >> "$GITHUB_OUTPUT"
-            elif [ "$already_done" = "yes" ]; then
-              echo "Creneau ${best_target}h deja traite aujourd'hui (protection anti-doublon) - rien a faire."
-              echo "run_type=skip" >> "$GITHUB_OUTPUT"
-              echo "publish=false" >> "$GITHUB_OUTPUT"
-            else
-              echo "Creneau ${best_target}h retenu (ecart ${best_diff}min) -> ${best_type}"
-              echo "run_type=${best_type}" >> "$GITHUB_OUTPUT"
-              echo "publish=true" >> "$GITHUB_OUTPUT"
-              mkdir -p output
-              printf '{"date": "%s", "slot": "%s"}' "$today" "$best_target" > output/last_auto_run.json
-            fi
+            # Ecrit run_type / slot / publish_at (voir slot_planner.py, stdlib uniquement).
+            python3 slot_planner.py pick
+            echo "publish=true" >> "$GITHUB_OUTPUT"
           fi
 
       - uses: actions/setup-python@v5
@@ -167,8 +114,10 @@ jobs:
           SUBTITLE_FONT_NAME: "DejaVu Sans"
           SHORTS_FONT_NAME: "Montserrat Black"
           PUBLISHED_DIR: ${{ runner.temp }}/published
+          PUBLISH_AT: ${{ steps.pick.outputs.publish_at }}
         run: |
           ARGS="--publish"
+          if [ -n "$PUBLISH_AT" ]; then ARGS="--publish --publish-at $PUBLISH_AT"; fi
           if [ "${{ steps.pick.outputs.publish }}" != "true" ]; then ARGS=""; fi
           for attempt in 1 2 3; do
             python run_pipeline.py $ARGS && break
@@ -186,8 +135,10 @@ jobs:
           SUBTITLE_FONT_NAME: "DejaVu Sans"
           SHORTS_FONT_NAME: "Montserrat Black"
           PUBLISHED_DIR: ${{ runner.temp }}/published
+          PUBLISH_AT: ${{ steps.pick.outputs.publish_at }}
         run: |
           ARGS="--publish"
+          if [ -n "$PUBLISH_AT" ]; then ARGS="--publish --publish-at $PUBLISH_AT"; fi
           if [ "${{ steps.pick.outputs.publish }}" != "true" ]; then ARGS=""; fi
           for attempt in 1 2 3; do
             python run_shorts_pipeline.py $ARGS && break
@@ -196,12 +147,18 @@ jobs:
             sleep 60
           done
 
+      # Seulement apres un upload reussi : un creneau en echec sera retente au prochain cron horaire
+      # (tant qu'il n'a pas plus de 4h de retard).
+      - name: Marquer le creneau comme couvert
+        if: success() && steps.pick.outputs.slot != ''
+        run: python3 slot_planner.py done "${{ steps.pick.outputs.slot }}"
+
       - name: Sauvegarder l'historique des sujets/titres (evite les repetitions entre deux runs)
         if: always()
         run: |
           rm -f client_secret.json token.json
           git add -- output/used_topics.json output/used_titles.json output/priority_topics.json
-          [ -f output/last_auto_run.json ] && git add -- output/last_auto_run.json
+          [ -f output/scheduled_slots.json ] && git add -- output/scheduled_slots.json
           if git diff --cached --quiet; then
             echo "Rien de nouveau a committer."
             exit 0

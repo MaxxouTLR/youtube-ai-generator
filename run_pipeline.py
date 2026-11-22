@@ -65,6 +65,8 @@ def main():
     parser.add_argument("--topic", default=None, help="Sujet impose du script")
     parser.add_argument("--minutes", type=int, default=None, help="Duree cible en minutes")
     parser.add_argument("--publish", action="store_true", help="Publie automatiquement sur YouTube")
+    parser.add_argument("--publish-at", default=None,
+                        help="Avec --publish : programme la mise en ligne a cette date RFC 3339 UTC (slot_planner.py)")
     args = parser.parse_args()
 
     # Identifiant unique de run : les fichiers de travail intermediaires (audio, video brute, .ass)
@@ -170,6 +172,7 @@ def main():
         print("7/7 - Publication sur YouTube...")
         video_id = youtube_uploader.upload_video(
             video_path, metadata["title"], metadata["description"], tags=metadata["tags"],
+            publish_at=args.publish_at,
         )
         try:
             youtube_uploader.set_thumbnail(video_id, thumb_path)

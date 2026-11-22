@@ -53,6 +53,8 @@ def main():
     parser.add_argument("--topic", default=None, help="Sujet impose du script")
     parser.add_argument("--seconds", type=int, default=None, help="Duree cible en secondes")
     parser.add_argument("--publish", action="store_true", help="Publie automatiquement sur YouTube")
+    parser.add_argument("--publish-at", default=None,
+                        help="Avec --publish : programme la mise en ligne a cette date RFC 3339 UTC (slot_planner.py)")
     args = parser.parse_args()
 
     # Identifiant unique de run (voir run_pipeline.py pour le pourquoi : deux pipelines lances en
@@ -171,6 +173,7 @@ def main():
         print("6/6 - Publication sur YouTube...")
         video_id = youtube_uploader.upload_video(
             video_path, metadata["title"], metadata["description"], tags=metadata["tags"],
+            publish_at=args.publish_at,
         )
         print(f"    Video publiee: https://youtu.be/{video_id}")
     else:
