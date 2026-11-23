@@ -134,3 +134,8 @@ Planning Buffer toujours jusqu'au 21/11 08:00 (n°63) : ALERTE <2 j. 80 JSON, MP
 Planning : n°60-63 notés absents de Buffer le 20/11 par l'analyste, dernier créneau 21/11 : ALERTE. 80 JSON, dernier écrit 15/11. Analyste passé 20/11.
 
 
+
+## 2026-11-23 soir (superviseur unique)
+- ALERTE planning : dernière date programmée = n°71 le 25/11 08:00 (< 2 jours) ; n°72-94 écrits, prochain programmateur jeu 26/11.
+- JSON 81-94 écrits le 22/11, dates > 7 jours OK. 9 JSON hérités sans num (déjà signalé).
+- Rapports analyste/newsletter/libraire absents depuis > 5 jours (agents non planifiés).
