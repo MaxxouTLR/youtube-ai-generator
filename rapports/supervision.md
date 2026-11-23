@@ -1,5 +1,9 @@
 ﻿# Supervision des agents Â« Dossiers d'Histoire Â»
 
+## 2026-11-23 (superviseur unique)
+- ⚠️ Planning : plus aucun créneau Buffer après 21/11 ; programmateur 23/11 en 'running' bloqué ?
+- ⚠️ 9 JSON hérités sans num.
+
 ## 2026-11-21 (superviseur unique)
 - ⚠️ Planning : dernier créneau Buffer 21/11 8h (n°63) ; n°58-63 absents de Buffer le 20/11 ; dernière date JSON ≈ 29/11.
 - ⚠️ 9 JSON hérités sans num (déjà signalé).
@@ -128,4 +132,5 @@ Planning Buffer toujours jusqu'au 21/11 08:00 (n°63) : ALERTE <2 j. 80 JSON, MP
 
 ## 2026-11-20 soir (superviseur-general)
 Planning : n°60-63 notés absents de Buffer le 20/11 par l'analyste, dernier créneau 21/11 : ALERTE. 80 JSON, dernier écrit 15/11. Analyste passé 20/11.
+
 
