@@ -57,3 +57,8 @@ n°60 | joconde_chambre_napoleon | 19/11/2026 19:00 | programmé le 16/11/2026 (
 n°61 | ceinture_chastete_mythe | 20/11/2026 08:00 | programmé le 16/11/2026 (Buffer) — ⚠️ absent de Buffer le 20/11 (ni envoyé ni programmé), fichiers conservés
 n°62 | jesse_owens_hitler_1936 | 20/11/2026 19:00 | programmé le 16/11/2026 (Buffer) — ⚠️ absent de Buffer le 20/11 (ni envoyé ni programmé), fichiers conservés
 n°63 | edison_ampoule_swan | 21/11/2026 08:00 | programmé le 16/11/2026 (Buffer) — ⚠️ absent de Buffer le 20/11 (ni envoyé ni programmé), fichiers conservés
+
+n°68 | napoleon_turc_mecanique_1809 | 23/11/2026 19:00 | programmé le 23/11/2026 (Buffer)
+n°69 | didius_julianus_enchere_193 | 24/11/2026 08:00 | programmé le 23/11/2026 (Buffer)
+n°70 | greve_deir_el_medina | 24/11/2026 19:00 | programmé le 23/11/2026 (Buffer)
+n°71 | chaplin_cercueil_vole_1978 | 25/11/2026 08:00 | programmé le 23/11/2026 (Buffer)
