@@ -74,6 +74,10 @@ SHORTS_TARGET_SECONDS = 20   # duree visee - reduit de 50 a 20 le 17/10/2026 : l
 SHORTS_MAX_SECONDS = 59      # au-dela, YouTube ne garantit plus le classement "Shorts" classique
 SHORTS_WORDS_PER_SEGMENT = 7   # 20/10/2026 : 15 -> 7, un clip different par phrase pour le montage dynamique (montage.py)
 SHORTS_MIN_SEGMENT_SECONDS = 2.5  # segments plus courts que ca sont fusionnes au voisin (evite le clignotement)
+# Moteur de montage des Shorts : "motion" = motion design code (motion_video.py + motion/engine.html,
+# rendu par Chromium/Playwright, aucun clip stock) ; "montage" = ancien montage de clips Pexels (montage.py).
+# Si Motion echoue, le pipeline retombe automatiquement sur "montage" puis sur le montage classique.
+SHORTS_ENGINE = os.environ.get("SHORTS_ENGINE", "motion").strip().lower()
 
 # --- Musique de fond (generee localement, gratuite, zero risque de droits d'auteur) ---
 MUSIC_ENABLED = True

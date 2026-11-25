@@ -71,7 +71,14 @@ jobs:
           # Police grasse "affiche" pour l'accroche et les sous-titres animes des Shorts (montage.py).
           # "|| true" : si le paquet manque, libass retombe sur DejaVu, le run ne doit jamais casser pour ca.
           sudo apt-get install -y fonts-montserrat || true
+          # Emoji en couleur pour les scenes "emoji" du montage Motion (motion/engine.html).
+          sudo apt-get install -y fonts-noto-color-emoji || true
           fc-cache -f
+
+      - name: Installer Chromium pour le montage Motion des Shorts (rendu image par image via Playwright)
+        if: steps.pick.outputs.run_type != 'skip'
+        # Sans Chromium, run_shorts_pipeline.py retombe sur le montage clips stock : on ne bloque pas le run.
+        run: python -m playwright install --with-deps chromium || echo "::warning::Chromium indisponible, repli sur le montage clips stock"
 
       # Place AVANT l'installation d'Ollama : si le cache existe deja, "ollama pull" plus bas
       # detectera les blobs deja presents et ne retelechargera que ce qui manque (au lieu de

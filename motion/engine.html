@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1080px; height: 1920px; overflow: hidden; background: #000; }
+  body { font-family: "Montserrat Black", "Montserrat", "Arial Black", "Segoe UI Black", sans-serif; font-weight: 900; color: #fff; }
+  #bg { position: absolute; inset: 0; }
+  .scene { position: absolute; inset: 0; display: none; will-change: transform, opacity; }
+  .lines { position: absolute; left: 70px; right: 70px; text-align: center; line-height: 1.12; }
+  .w { display: inline-block; margin: 0 0.13em; position: relative; text-transform: uppercase; will-change: transform, opacity;
+       text-shadow: 0 8px 0 rgba(0,0,0,.35), 0 0 40px rgba(0,0,0,.35); }
+  .w .hl { position: absolute; left: -0.12em; right: -0.12em; top: 0.08em; bottom: 0.02em; z-index: -1; border-radius: .12em;
+           transform-origin: left center; background: var(--accent); }
+  .w.emph { color: var(--ink); text-shadow: none; }
+  .w .strike { position: absolute; left: -0.05em; right: -0.05em; top: 52%; height: 0.11em; background: var(--bad);
+               transform-origin: left center; border-radius: 99px; }
+  .emoji { position: absolute; left: 0; right: 0; text-align: center; font-family: "Noto Color Emoji", "Segoe UI Emoji", "Apple Color Emoji", sans-serif; }
+  .ring { position: absolute; border: 10px solid var(--accent); border-radius: 50%; }
+  .slam { position: absolute; left: 30px; right: 30px; text-align: center; text-transform: uppercase; line-height: 1; color: var(--accent);
+          will-change: transform; }
+  .counter { position: absolute; left: 0; right: 0; text-align: center; color: var(--accent); font-size: 420px; line-height: 1; }
+  .qmark { position: absolute; left: 0; right: 0; text-align: center; font-size: 1300px; line-height: 1; color: var(--accent); opacity: .13; }
+  #wipe { position: absolute; left: -50%; top: -20%; width: 200%; height: 140%; background: var(--accent); display: none; }
+  #wipe2 { position: absolute; left: -50%; top: -20%; width: 200%; height: 140%; background: var(--accent2); display: none; }
+  #iris { position: absolute; inset: 0; background: var(--accent); display: none; }
+  #flash { position: absolute; inset: 0; background: #fff; opacity: 0; }
+  #bar { position: absolute; left: 0; top: 0; height: 14px; background: var(--accent); }
+  #chip { position: absolute; top: 250px; left: 0; right: 0; text-align: center; }
+  #chip span { display: inline-block; padding: 18px 34px; border-radius: 22px; background: var(--accent); color: var(--ink);
+               font-size: 62px; line-height: 1.1; text-transform: uppercase; max-width: 920px; box-shadow: 0 14px 0 rgba(0,0,0,.3); }
+</style>
+</head>
+<body>
+<canvas id="bg" width="1080" height="1920"></canvas>
+<div id="stage"></div>
+<div id="chip"><span></span></div>
+<div id="wipe"></div><div id="wipe2"></div><div id="iris"></div><div id="flash"></div>
+<div id="bar"></div>
+<script>
+const DATA = /*DATA*/null;
+
+// ---------- utilitaires (tout est une fonction pure du temps t : rendu image par image deterministe) ----------
+const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const easeOutCubic = p => 1 - Math.pow(1 - p, 3);
+const easeInOut = p => p < .5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2;
+const easeOutBack = p => { const c = 1.9; return 1 + (c + 1) * Math.pow(p - 1, 3) + c * Math.pow(p - 1, 2); };
+const spring = p => p <= 0 ? 0 : 1 - Math.exp(-7 * p) * Math.cos(11 * p);
+function rng(seed) { let s = seed >>> 0; return () => ((s = (s * 1664525 + 1013904223) >>> 0) / 4294967296); }
+
+const P = DATA.palette;
+document.documentElement.style.setProperty("--accent", P.accent);
+document.documentElement.style.setProperty("--accent2", P.accent2);
+document.documentElement.style.setProperty("--ink", P.ink);
+document.documentElement.style.setProperty("--bad", P.bad);
+
+// ---------- fond anime ----------
+const cv = document.getElementById("bg"), cx = cv.getContext("2d");
+const R = rng(DATA.seed);
+const parts = Array.from({ length: 70 }, () => ({ x: R() * 1080, y: R() * 1920, r: 2 + R() * 6, sp: 30 + R() * 90, ph: R() * 6.28 }));
+const blobs = [0, 1, 2].map(i => ({ ax: 300 + R() * 500, ay: 400 + R() * 1100, fx: .15 + R() * .25, fy: .1 + R() * .25, ph: R() * 6.28, r: 520 + R() * 300, c: [P.blob1, P.blob2, P.blob3][i] }));
+
+function drawBg(t) {
+  const g = cx.createLinearGradient(0, 0, 0, 1920);
+  g.addColorStop(0, P.bg1); g.addColorStop(1, P.bg2);
+  cx.fillStyle = g; cx.fillRect(0, 0, 1080, 1920);
+  for (const b of blobs) {
+    const x = b.ax + Math.sin(t * b.fx * 6.28 + b.ph) * 260, y = b.ay + Math.cos(t * b.fy * 6.28 + b.ph) * 320;
+    const rg = cx.createRadialGradient(x, y, 0, x, y, b.r);
+    rg.addColorStop(0, b.c); rg.addColorStop(1, "rgba(0,0,0,0)");
+    cx.fillStyle = rg; cx.fillRect(0, 0, 1080, 1920);
+  }
+  // grille en perspective qui defile vers le bas
+  cx.save(); cx.strokeStyle = P.grid; cx.lineWidth = 2;
+  const off = (t * 90) % 120;
+  for (let y = -120 + off; y < 1920; y += 120) { cx.beginPath(); cx.moveTo(0, y); cx.lineTo(1080, y); cx.stroke(); }
+  for (let x = -60; x < 1140; x += 120) { cx.beginPath(); cx.moveTo(x + Math.sin(t * .6) * 30, 0); cx.lineTo(x - Math.sin(t * .6) * 30, 1920); cx.stroke(); }
+  cx.restore();
+  for (const p of parts) {
+    const y = ((p.y - t * p.sp) % 1920 + 1920) % 1920, a = .25 + .35 * Math.sin(t * 3 + p.ph);
+    cx.fillStyle = `rgba(255,255,255,${a})`; cx.beginPath(); cx.arc(p.x + Math.sin(t + p.ph) * 20, y, p.r, 0, 6.28); cx.fill();
+  }
+  // vignette
+  const v = cx.createRadialGradient(540, 960, 500, 540, 960, 1250);
+  v.addColorStop(0, "rgba(0,0,0,0)"); v.addColorStop(1, "rgba(0,0,0,.55)");
+  cx.fillStyle = v; cx.fillRect(0, 0, 1080, 1920);
+}
+
+// ---------- construction des scenes ----------
+const stage = document.getElementById("stage");
+const built = DATA.scenes.map((sc, i) => {
+  const el = document.createElement("div"); el.className = "scene"; stage.appendChild(el);
+  const n = sc.words.length, fs = sc.type === "emoji" || sc.type === "slam" || sc.type === "counter"
+    ? (n <= 4 ? 96 : n <= 7 ? 84 : 72) : (n <= 3 ? 170 : n <= 5 ? 140 : n <= 8 ? 116 : 98);
+  const lines = document.createElement("div"); lines.className = "lines"; lines.style.fontSize = fs + "px";
+  const top = { kinetic: 720, question: 760, split: 700, emoji: 1180, slam: 520, counter: 1250 }[sc.type] || 720;
+  lines.style.top = top + "px";
+  const ws = sc.words.map((w, j) => {
+    const s = document.createElement("span"); s.className = "w" + (j === sc.emph && sc.type !== "slam" ? " emph" : "");
+    if (j === sc.emph && sc.type !== "slam") { const h = document.createElement("i"); h.className = "hl"; s.appendChild(h); }
+    if (sc.type === "split" && j < sc.pivot) { const k = document.createElement("i"); k.className = "strike"; s.appendChild(k); }
+    s.appendChild(document.createTextNode(w.w)); lines.appendChild(s); return s;
+  });
+  el.appendChild(lines);
+  const extra = {};
+  if (sc.type === "emoji") {
+    for (let r = 0; r < 3; r++) { const ring = document.createElement("div"); ring.className = "ring"; el.insertBefore(ring, lines); (extra.rings ||= []).push(ring); }
+    const e = document.createElement("div"); e.className = "emoji"; e.textContent = sc.emoji; e.style.fontSize = "400px"; e.style.top = "480px";
+    el.insertBefore(e, lines); extra.emoji = e;
+  }
+  if (sc.type === "slam") {
+    const word = sc.words[sc.emph].w.toUpperCase();
+    const s = document.createElement("div"); s.className = "slam"; s.textContent = word;
+    s.style.fontSize = Math.min(250, Math.floor(1700 / Math.max(3, word.length))) + "px"; s.style.top = "960px";
+    el.appendChild(s); extra.slam = s; ws[sc.emph].style.display = "none"; ws[sc.emph].dataset.hidden = 1;
+  }
+  if (sc.type === "counter") {
+    const c = document.createElement("div"); c.className = "counter"; c.style.top = "620px"; el.insertBefore(c, lines); extra.counter = c;
+  }
+  if (sc.type === "question") {
+    const q = document.createElement("div"); q.className = "qmark"; q.textContent = "?"; q.style.top = "260px"; el.insertBefore(q, lines); extra.q = q;
+  }
+  return { sc, el, lines, ws, extra, i };
+});
+
+const chip = document.getElementById("chip"), chipSpan = chip.querySelector("span");
+chipSpan.textContent = DATA.hook || "";
+chipSpan.style.fontSize = ((DATA.hook || "").length > 34 ? 50 : (DATA.hook || "").length > 24 ? 58 : 66) + "px";
+const wipe = document.getElementById("wipe"), wipe2 = document.getElementById("wipe2"), iris = document.getElementById("iris"),
+      flash = document.getElementById("flash"), bar = document.getElementById("bar");
+
+// ---------- rendu a l'instant t ----------
+function renderWords(b, t, base) {
+  const { sc, ws } = b;
+  ws.forEach((s, j) => {
+    if (s.dataset.hidden) return;
+    const w = sc.words[j], p = clamp((t - w.s + 0.06) / 0.28);
+    const e = easeOutBack(p), speaking = t >= w.s && t < w.e + 0.05;
+    const sc2 = (0.35 + 0.65 * e) * (speaking ? 1.08 : 1);
+    s.style.opacity = clamp(p * 2.2);
+    s.style.transform = `translateY(${(1 - easeOutCubic(p)) * 90}px) scale(${sc2}) rotate(${(1 - e) * (j % 2 ? 7 : -7)}deg)`;
+    s.style.color = j === sc.emph ? "" : (speaking ? P.speak : "#fff");
+    const hl = s.querySelector(".hl");
+    if (hl) hl.style.transform = `scaleX(${easeOutCubic(clamp((t - w.s - 0.05) / 0.3))})`;
+    const k = s.querySelector(".strike");
+    if (k) {
+      const pv = sc.words[sc.pivot].s, q = easeOutCubic(clamp((t - pv) / 0.35));
+      k.style.transform = `scaleX(${q})`; s.style.opacity = clamp(p * 2.2) * (1 - 0.45 * q);
+    }
+  });
+}
+
+function render(t) {
+  drawBg(t);
+  for (const b of built) {
+    const { sc, el, lines, extra } = b, a = sc.start, z = sc.end;
+    const vis = t >= a - 0.02 && t < z + 0.02;
+    el.style.display = vis ? "block" : "none";
+    if (!vis) continue;
+    const lt = t - a, out = clamp((t - (z - 0.18)) / 0.18);
+    // la scene entiere respire : zoom lent + sortie en zoom/flou rapide
+    el.style.transform = `scale(${1 + 0.035 * lt + 0.25 * easeInOut(out)}) rotate(${Math.sin(lt * 1.3) * 0.6}deg)`;
+    el.style.opacity = 1 - out;
+    el.style.filter = out > 0 ? `blur(${out * 14}px)` : "none";
+    renderWords(b, t, a);
+    if (extra.emoji) {
+      const p = spring(clamp(lt / 0.7));
+      extra.emoji.style.transform = `translateY(${Math.sin(lt * 3.2) * 18}px) scale(${p}) rotate(${(1 - p) * -35 + Math.sin(lt * 2.1) * 6}deg)`;
+      extra.rings.forEach((r, k) => {
+        const q = ((lt * 0.9 + k / 3) % 1), size = 380 + q * 700;
+        r.style.width = r.style.height = size + "px"; r.style.left = (540 - size / 2) + "px"; r.style.top = (680 - size / 2) + "px";
+        r.style.opacity = (1 - q) * 0.7 * clamp(lt / 0.3);
+      });
+    }
+    if (extra.slam) {
+      const w = sc.words[sc.emph], p = clamp((t - w.s + 0.08) / 0.22), e = easeOutCubic(p);
+      const sh = clamp(1 - (t - w.s - 0.12) / 0.35) * (p >= 1 ? 1 : 0);
+      extra.slam.style.opacity = p > 0 ? 1 : 0;
+      extra.slam.style.transform = `translate(${Math.sin(t * 90) * 26 * sh}px, ${Math.cos(t * 77) * 20 * sh}px) scale(${3.2 - 2.2 * e + Math.sin(lt * 4) * 0.015})`;
+      extra.slam.style.textShadow = `${-10 * sh - 4}px 0 0 ${P.accent2}, ${10 * sh + 4}px 0 0 #ff2e63, 0 14px 0 rgba(0,0,0,.35)`;
+    }
+    if (extra.counter) {
+      const p = easeOutCubic(clamp((lt - 0.05) / 0.9));
+      extra.counter.textContent = Math.round(sc.number * p) + (sc.suffix || "");
+      extra.counter.style.transform = `scale(${0.6 + 0.4 * spring(clamp(lt / 0.6))})`;
+    }
+    if (extra.q) extra.q.style.transform = `rotate(${Math.sin(lt * 1.5) * 12}deg) scale(${1 + Math.sin(lt * 2.5) * 0.05})`;
+  }
+  // accroche : la question du titre en bandeau, les 2,6 premieres secondes
+  const hp = clamp(t / 0.35), ho = clamp((t - 2.3) / 0.3);
+  chip.style.display = DATA.hook && t < 2.6 ? "block" : "none";
+  chip.style.transform = `translateY(${-(1 - easeOutBack(hp)) * 200 - ho * 260}px) scale(${0.7 + 0.3 * easeOutBack(hp)}) rotate(-2deg)`;
+  chip.style.opacity = 1 - ho;
+  // transitions entre scenes : balayage diagonal ou iris, en alternance
+  wipe.style.display = wipe2.style.display = iris.style.display = "none";
+  let fl = 0;
+  DATA.scenes.forEach((sc, i) => {
+    if (i === 0) return;
+    const d = t - sc.start;
+    if (d > -0.2 && d < 0.2) {
+      const p = (d + 0.2) / 0.4;
+      if (i % 2) {
+        wipe.style.display = wipe2.style.display = "block";
+        wipe.style.transform = `rotate(-18deg) translateX(${(-1.1 + 2.2 * easeInOut(p)) * 100}%)`;
+        wipe2.style.transform = `rotate(-18deg) translateX(${(-1.25 + 2.2 * easeInOut(clamp(p - 0.08))) * 100}%)`;
+      } else {
+        iris.style.display = "block";
+        const r = p < .5 ? easeInOut(p * 2) * 75 : (1 - easeInOut((p - .5) * 2)) * 75;
+        iris.style.clipPath = `circle(${r}% at 50% 50%)`;
+      }
+    }
+    if (d >= 0 && d < 0.12) fl = Math.max(fl, 0.35 * (1 - d / 0.12));
+  });
+  flash.style.opacity = fl;
+  bar.style.width = (clamp(t / DATA.duration) * 1080) + "px";
+}
+window.render = render;
+window.ready = true;
+</script>
+</body>
+</html>
