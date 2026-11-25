@@ -139,3 +139,6 @@ Planning : n°60-63 notés absents de Buffer le 20/11 par l'analyste, dernier cr
 - ALERTE planning : dernière date programmée = n°71 le 25/11 08:00 (< 2 jours) ; n°72-94 écrits, prochain programmateur jeu 26/11.
 - JSON 81-94 écrits le 22/11, dates > 7 jours OK. 9 JSON hérités sans num (déjà signalé).
 - Rapports analyste/newsletter/libraire absents depuis > 5 jours (agents non planifiés).
+
+## 2026-11-25
+ALERTE : n°71 (25/11 08:00) dernier créneau programmé, n°72-94 non programmés ; programmateur jeudi 26/11. Analyste OK (24/11). 9 JSON hérités sans num.
