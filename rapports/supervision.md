@@ -142,3 +142,6 @@ Planning : n°60-63 notés absents de Buffer le 20/11 par l'analyste, dernier cr
 
 ## 2026-11-25
 ALERTE : n°71 (25/11 08:00) dernier créneau programmé, n°72-94 non programmés ; programmateur jeudi 26/11. Analyste OK (24/11). 9 JSON hérités sans num.
+
+## 2026-11-26 (superviseur unique)
+- ⚠️ Planning à sec (dernier créneau n°71 le 25/11) ; 9 JSON hérités sans num ; agents Fiverr/Upwork/arène/pc absents.
