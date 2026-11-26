@@ -145,3 +145,6 @@ ALERTE : n°71 (25/11 08:00) dernier créneau programmé, n°72-94 non programm�
 
 ## 2026-11-26 (superviseur unique)
 - ⚠️ Planning à sec (dernier créneau n°71 le 25/11) ; 9 JSON hérités sans num ; agents Fiverr/Upwork/arène/pc absents.
+
+## 2026-11-26 (soir)
+ALERTE : dernier dossier programmé n°77 (28/11) ; n°70/71 absents de Buffer ; 9 JSON hérités sans num ; scénariste prévu dim 29/11.
