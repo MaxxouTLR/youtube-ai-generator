@@ -62,3 +62,8 @@ n°68 | napoleon_turc_mecanique_1809 | 23/11/2026 19:00 | programmé le 23/11/20
 n°69 | didius_julianus_enchere_193 | 24/11/2026 08:00 | programmé le 23/11/2026 (Buffer)
 n°70 | greve_deir_el_medina | 24/11/2026 19:00 | programmé le 23/11/2026 (Buffer)
 n°71 | chaplin_cercueil_vole_1978 | 25/11/2026 08:00 | programmé le 23/11/2026 (Buffer)
+n°70 | greve_deir_el_medina | 24/11/2026 19:00 | ⚠️ absent de Buffer le 26/11 (ni envoyé ni programmé), date passée, fichiers conservés
+n°71 | chaplin_cercueil_vole_1978 | 25/11/2026 08:00 | ⚠️ absent de Buffer le 26/11 (ni envoyé ni programmé), date passée, fichiers conservés
+n°75 | beethoven_neuvieme_1824 | 27/11/2026 08:00 | programmé le 26/11/2026 (Buffer)
+n°76 | neveu_hitler_us_navy | 27/11/2026 19:00 | programmé le 26/11/2026 (Buffer)
+n°77 | bach_400_km_1705 | 28/11/2026 08:00 | programmé le 26/11/2026 (Buffer)
