@@ -17,6 +17,7 @@ import script_generator
 import voice_generator
 import visuals_fetcher
 import video_assembler
+import long_montage
 import subtitles
 import thumbnail_generator
 import youtube_uploader
@@ -91,10 +92,6 @@ def main():
     )
     print(f"    Audio -> {raw_audio_path}")
 
-    print("    Mixage d'une musique de fond discrete...")
-    audio_path = video_assembler.mix_background_music(raw_audio_path)
-    print(f"    Audio (avec musique) -> {audio_path}")
-
     print("3/7 - Analyse du script par segment + recherche de visuels pertinents (Pexels)...")
     with open(timing_path, "r", encoding="utf-8") as f:
         word_boundaries = json.load(f)
@@ -103,7 +100,10 @@ def main():
     run_stock_dir = os.path.join(config.STOCK_DIR, f"_run_{run_id}")
     os.makedirs(run_stock_dir, exist_ok=True)
 
-    segments = []
+    dynamic = config.LONG_ENGINE == "dynamic"
+    n_clips = config.LONG_CLIPS_PER_SEGMENT if dynamic else 1
+    segments = []      # (premier clip, duree) : ancien montage
+    scenes = []        # {"start", "clips"} : montage dynamique
     word_idx = 0
     total_boundary_words = len(word_boundaries)
     for i, para in enumerate(paragraphs):
@@ -120,20 +120,38 @@ def main():
         duration = max(1.0, end - start)
 
         keyword = script_generator.generate_visual_keyword(para)
-        dest = os.path.join(run_stock_dir, f"seg_{i:03d}.mp4")
-        clip_path = visuals_fetcher.fetch_one_clip(keyword, dest)
-        print(f"    Segment {i + 1}/{len(paragraphs)}: \"{keyword}\" ({duration:.1f}s)"
-              + ("" if clip_path else " -> ECHEC, ignore"))
-        if clip_path:
-            segments.append((clip_path, duration))
+        clips = visuals_fetcher.fetch_clips_for_query(keyword, n_clips, run_stock_dir, f"seg_{i:03d}")
+        print(f"    Segment {i + 1}/{len(paragraphs)}: \"{keyword}\" ({duration:.1f}s, {len(clips)} clip(s))"
+              + ("" if clips else " -> ECHEC, ignore"))
+        if clips:
+            segments.append((clips[0], duration))
+            scenes.append({"start": start, "clips": clips})
 
     if not segments:
         raise RuntimeError("Aucun visuel n'a pu etre recupere pour aucun segment du script.")
 
     os.makedirs(config.VIDEO_DIR, exist_ok=True)
-    raw_video_path = video_assembler.assemble_video_from_segments(
-        audio_path, segments, out_path=os.path.join(config.VIDEO_DIR, f"_tmp_sans_sous_titres_{run_id}.mp4")
-    )
+    raw_video_path = os.path.join(config.VIDEO_DIR, f"_tmp_sans_sous_titres_{run_id}.mp4")
+    audio_path = raw_audio_path
+    montage_info = None
+    if dynamic:
+        print("    Montage dynamique (plans courts, mouvements, transitions)...")
+        work_dir = os.path.join(config.VIDEO_DIR, f"_tmp_montage_{run_id}")
+        try:
+            montage_info = long_montage.assemble_dynamic(
+                raw_audio_path, scenes, [w["offset"] / 10_000_000 for w in word_boundaries],
+                raw_video_path, work_dir,
+            )
+            print(f"    {len(montage_info['shots'])} plans, {len(montage_info['scene_starts'])} scenes")
+        except Exception as exc:
+            print(f"    [warn] Montage dynamique echoue, repli sur l'ancien montage : {exc}")
+            montage_info = None
+        finally:
+            shutil.rmtree(work_dir, ignore_errors=True)
+    if montage_info is None:
+        print("    Mixage d'une musique de fond discrete...")
+        audio_path = video_assembler.mix_background_music(raw_audio_path)
+        raw_video_path = video_assembler.assemble_video_from_segments(audio_path, segments, out_path=raw_video_path)
     print(f"    Video (sans sous-titres) -> {raw_video_path}")
     shutil.rmtree(run_stock_dir, ignore_errors=True)
 
@@ -150,14 +168,19 @@ def main():
     print(f"    Miniature -> {thumb_path}")
 
     print("5/7 - Generation et gravure des sous-titres dynamiques...")
-    ass_path = subtitles.build_ass_from_timing_file(timing_path, os.path.join(config.VIDEO_DIR, f"_tmp_subtitles_{run_id}.ass"))
+    ass_out = os.path.join(config.VIDEO_DIR, f"_tmp_subtitles_{run_id}.ass")
+    if montage_info:
+        ass_path = subtitles.build_long_dynamic_ass(
+            word_boundaries, ass_out, montage_info["scene_starts"], montage_info["duration"])
+    else:
+        ass_path = subtitles.build_ass_from_timing_file(timing_path, ass_out)
     video_path = video_assembler.burn_subtitles(
         raw_video_path, ass_path, os.path.join(video_folder, "video.mp4")
     )
     print(f"    Video finale (avec sous-titres) -> {video_path}")
 
     # Nettoyage des fichiers de travail intermediaires (le dossier de la video ne garde que le resultat fini)
-    for tmp_file in (raw_video_path, ass_path, raw_audio_path, audio_path, timing_path):
+    for tmp_file in {raw_video_path, ass_path, raw_audio_path, audio_path, timing_path}:
         try:
             os.remove(tmp_file)
         except OSError:
